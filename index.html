@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ma-borne-electrique.com : Bientôt en ligne</title>
+<meta name="description" content="Le futur site pour localiser une station de recharge, connaître sa disponibilité en temps réel et recharger votre véhicule électrique partout en France.">
+<!-- Remplacer par la balise fournie par Google Search Console (Ajouter une propriété > Balise HTML) -->
+<!-- <meta name="google-site-verification" content="COLLER_LE_CODE_ICI" /> -->
+<link rel="canonical" href="https://ma-borne-electrique.com/">
+<style>
+  :root {
+    --bg: #ffffff;
+    --green: #2e7d4f;
+    --green-dark: #235f3d;
+    --green-accent: #3fae63;
+    --green-pale: #e1f5e8;
+    --green-fluo: #2ee673;
+    --green-fluo-text: #123a22;
+    --ink: #17211c;
+    --ink-muted: #5b6b62;
+    --line: #e3ece6;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+
+  a { color: inherit; }
+
+  .wrap {
+    max-width: 1040px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+
+  /* header */
+  .band-top {
+    background: var(--green-fluo);
+    color: var(--green-fluo-text);
+  }
+  .band-top .wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1.1rem 1.5rem;
+  }
+  .wordmark {
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    color: var(--green-fluo-text);
+  }
+  .status-text {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--green-fluo-text);
+    opacity: 0.75;
+  }
+
+  /* hero */
+  .hero {
+    padding: 4.5rem 0 3.5rem;
+    max-width: 640px;
+  }
+  .eyebrow {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--green);
+    margin: 0 0 0.9rem;
+    padding-left: 0.9rem;
+    border-left: 3px solid var(--green-accent);
+  }
+  h1 {
+    font-size: clamp(2rem, 4.4vw, 3.1rem);
+    font-weight: 700;
+    line-height: 1.18;
+    letter-spacing: -0.01em;
+    margin: 0 0 1.25rem;
+    text-wrap: balance;
+  }
+  h1 em { font-style: normal; color: var(--green); }
+  .lede {
+    font-size: 1.08rem;
+    line-height: 1.65;
+    color: var(--ink-muted);
+    max-width: 50ch;
+    margin: 0 0 2.25rem;
+  }
+
+  .email-link {
+    display: inline-block;
+    font-size: 0.98rem;
+    font-weight: 500;
+    color: var(--ink-muted);
+    text-decoration: none;
+    border-bottom: 1px solid var(--line);
+    padding-bottom: 2px;
+  }
+  .email-link:hover { border-color: var(--green); color: var(--green); }
+  .email-link:focus-visible { outline: 3px solid var(--green-accent); outline-offset: 3px; }
+
+  /* features */
+  .features {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0;
+    padding: 3rem 0 4.5rem;
+    border-top: 1px solid var(--line);
+  }
+  @media (max-width: 760px) {
+    .features { grid-template-columns: 1fr; }
+  }
+  .feature {
+    padding: 2.25rem 1.75rem 0 0;
+  }
+  .feature:not(:first-child) {
+    border-left: 1px solid var(--line);
+    padding-left: 1.75rem;
+  }
+  @media (max-width: 760px) {
+    .feature:not(:first-child) {
+      border-left: none;
+      border-top: 1px solid var(--line);
+      padding-left: 0;
+      padding-top: 2rem;
+    }
+  }
+  .feature svg {
+    width: 20px;
+    height: 20px;
+    stroke: var(--green);
+    margin-bottom: 0.9rem;
+  }
+  .feature h3 {
+    font-size: 1.02rem;
+    font-weight: 700;
+    margin: 0 0 0.55rem;
+    letter-spacing: -0.01em;
+  }
+  .feature p {
+    font-size: 0.94rem;
+    line-height: 1.6;
+    color: var(--ink-muted);
+    margin: 0;
+  }
+
+  /* footer */
+  .band-bottom {
+    background: var(--green-fluo);
+    color: var(--green-fluo-text);
+  }
+  .band-bottom .wrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem 1.5rem;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.6rem 1.5rem;
+    font-size: 0.9rem;
+  }
+  .band-bottom a {
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--green-fluo-text);
+  }
+  .band-bottom a:hover { text-decoration: underline; }
+  .band-bottom a:focus-visible { outline: 3px solid var(--green-fluo-text); outline-offset: 3px; }
+  .band-bottom .muted { color: var(--green-fluo-text); opacity: 0.75; }
+</style>
+</head>
+<body>
+
+<div class="band-top">
+  <div class="wrap">
+    <div class="wordmark">ma-borne-electrique.com</div>
+    <span class="status-text">Bientôt en ligne</span>
+  </div>
+</div>
+
+<div class="wrap">
+  <section class="hero">
+    <p class="eyebrow">Bornes de recharge électrique en France</p>
+    <h1>La recharge électrique, <em>simple</em> et accessible.</h1>
+    <p class="lede">
+      Le futur site pour trouver une borne disponible et recharger votre
+      véhicule électrique, partout en France.
+      Une énergie plus propre, à portée de main.
+    </p>
+    <p class="lede">
+      ma-borne-electrique.com sera bientôt la plateforme de référence pour
+      localiser une station de recharge près de chez vous, connaître sa
+      disponibilité en temps réel et recharger votre véhicule électrique en
+      toute simplicité, où que vous soyez en France.
+    </p>
+    <a class="email-link" href="mailto:contact@ma-borne-electrique.com">contact@ma-borne-electrique.com</a>
+  </section>
+
+  <section class="features">
+    <div class="feature">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
+      <h3>Localisation simple</h3>
+      <p>Repérez une borne disponible en un clin d'œil, partout en France.</p>
+    </div>
+    <div class="feature">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 5.1 2 8.9a7 7 0 0 1-7 7 5.5 5.5 0 0 1-5-3"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 11 13 11 11"/></svg>
+      <h3>Énergie positive</h3>
+      <p>Un réseau pensé pour une mobilité plus propre, au quotidien.</p>
+    </div>
+  </section>
+</div>
+
+<div class="band-bottom">
+  <div class="wrap">
+    <span>ma-borne-electrique.com</span>
+    <a href="mailto:contact@ma-borne-electrique.com">contact@ma-borne-electrique.com</a>
+    <span class="muted">Site en construction. Le lancement approche.</span>
+  </div>
+</div>
+
+</body>
+</html>
