@@ -1,0 +1,353 @@
+@import "tailwindcss";
+@import "leaflet/dist/leaflet.css";
+
+:root {
+  --cream: #f7f6ef;
+  --cream-dim: #eef0e4;
+  --card: #ffffff;
+  --forest-950: #0c1f15;
+  --forest-900: #123a22;
+  --forest-800: #1a4f2e;
+  --green-700: #1f5c3a;
+  --green-600: #2e7d4f;
+  --green-500: #3fae63;
+  --lime-400: #2ee673;
+  --lime-300: #6bf29a;
+  --sand-200: #e1f5e8;
+  --ink-900: #14231b;
+  --ink-600: #52685c;
+  --ink-400: #7c9086;
+  --line: #dfe6de;
+
+  --font-display: "Fraunces", ui-serif, Georgia, serif;
+  --font-body: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+@theme inline {
+  --color-cream: var(--cream);
+  --color-cream-dim: var(--cream-dim);
+  --color-card: var(--card);
+  --color-forest-950: var(--forest-950);
+  --color-forest-900: var(--forest-900);
+  --color-forest-800: var(--forest-800);
+  --color-green-700: var(--green-700);
+  --color-green-600: var(--green-600);
+  --color-green-500: var(--green-500);
+  --color-lime-400: var(--lime-400);
+  --color-lime-300: var(--lime-300);
+  --color-sand-200: var(--sand-200);
+  --color-ink-900: var(--ink-900);
+  --color-ink-600: var(--ink-600);
+  --color-ink-400: var(--ink-400);
+  --color-line: var(--line);
+  --font-display: var(--font-display);
+  --font-body: var(--font-body);
+}
+
+/* Kept inside Tailwind's own `base` layer (rather than as unlayered CSS) so
+   that any Tailwind utility - `.text-white`, `.text-ink-900`, etc., which are
+   generated inside `@layer utilities` - can override these defaults as
+   expected. Unlayered CSS always wins over layered CSS regardless of
+   specificity, so leaving `a { color: inherit }` unlayered silently defeated
+   every text-color utility ever applied to a link. */
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background: var(--cream);
+    color: var(--ink-900);
+    font-family: var(--font-body);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  h1, h2, h3, .font-display {
+    font-family: var(--font-display);
+    letter-spacing: -0.01em;
+  }
+
+  em, .accent {
+    font-style: italic;
+    color: var(--green-600);
+  }
+
+  ::selection {
+    background: var(--lime-400);
+    color: var(--forest-950);
+  }
+
+  a {
+    color: inherit;
+  }
+}
+
+/* faint drawn road in the hero background, slowly tracing forward */
+@keyframes road-draw {
+  to {
+    stroke-dashoffset: -300;
+  }
+}
+.road-line .road-path {
+  animation: road-draw 22s linear infinite;
+}
+
+/* the little car driving along the road */
+@keyframes drive {
+  to {
+    offset-distance: 100%;
+  }
+}
+.road-line .car {
+  transform-box: fill-box;
+  transform-origin: center;
+  offset-path: path(
+    "M-40 380 C 170 380, 220 170, 430 190 S 710 380, 910 250 S 1050 130, 1100 110 S 1180 80, 1260 60"
+  );
+  offset-rotate: auto;
+  animation: drive 16s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .road-line .road-path,
+  .road-line .car {
+    animation: none;
+  }
+}
+
+/* Entrance animations for popovers. The hero board's bubble is positioned via
+   an inline `transform` (row-anchoring, edge-clamping): animating opacity only
+   there avoids fighting that transform mid-animation. The map's side panel
+   has no such inline transform, so it can also slide in. */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+}
+.fade-in {
+  animation: fade-in 700ms ease-in-out;
+}
+
+@keyframes panel-slide-in {
+  from {
+    opacity: 0;
+    transform: translateX(24px);
+  }
+}
+.panel-slide-in {
+  animation: panel-slide-in 700ms ease-in-out;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fade-in,
+  .panel-slide-in {
+    animation: none;
+  }
+}
+
+/* subtle grain texture used on dark sections */
+.grain {
+  position: relative;
+  isolation: isolate;
+}
+.grain::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.06;
+  mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+/* Leaflet overrides to match brand */
+.leaflet-container {
+  font-family: var(--font-body);
+  background: var(--cream-dim);
+}
+.leaflet-popup-content-wrapper {
+  border-radius: 14px;
+  box-shadow: 0 12px 28px rgba(12, 31, 21, 0.18);
+}
+.leaflet-popup-content {
+  margin: 0.85rem 1rem;
+  font-size: 0.88rem;
+  color: var(--ink-900);
+}
+
+/* Station popup: sized to fit its content rather than scrolling internally.
+   On the map, Leaflet's own autoPan keeps it in view; the hero board's bubble
+   clears the header/viewport edges itself (see HeroBoard.tsx). */
+.bornes-popup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.bornes-popup__title {
+  margin: 0;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 0.98rem;
+  line-height: 1.25;
+}
+.bornes-popup__address {
+  margin: -0.35rem 0 0;
+  color: var(--ink-600);
+  font-size: 0.82rem;
+}
+.bornes-popup__badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+}
+.bornes-popup__badge {
+  border-radius: 999px;
+  padding: 0.15rem 0.55rem;
+  font-size: 0.72rem;
+  font-weight: 600;
+  background: var(--sand-200);
+  color: var(--ink-600);
+  white-space: nowrap;
+}
+.bornes-popup__badge--power {
+  background: var(--forest-900);
+  color: var(--lime-300);
+}
+.bornes-popup__badge--good {
+  background: #dcf1e3;
+  color: #17603a;
+}
+.bornes-popup__badge--warn {
+  background: #fdeed3;
+  color: #8a5a09;
+}
+.bornes-popup__badge--bad {
+  background: #fbdedd;
+  color: #8f2420;
+}
+.bornes-popup__section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+.bornes-popup__heading {
+  margin: 0;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--ink-400);
+}
+.bornes-popup__connectors {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+.bornes-popup__connector {
+  display: flex;
+  align-items: baseline;
+  gap: 0.4rem;
+  font-size: 0.82rem;
+}
+.bornes-popup__connector-name {
+  flex: 1;
+  min-width: 0;
+}
+.bornes-popup__connector-current {
+  color: var(--ink-400);
+  font-size: 0.74rem;
+  white-space: nowrap;
+}
+.bornes-popup__connector-power {
+  font-weight: 700;
+  color: var(--green-700);
+  white-space: nowrap;
+}
+.bornes-popup__meta,
+.bornes-popup__detail {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+.bornes-popup__detail:empty {
+  display: none;
+}
+.bornes-popup__row {
+  margin: 0;
+  font-size: 0.8rem;
+  overflow-wrap: anywhere;
+}
+.bornes-popup__row-label {
+  font-weight: 600;
+  color: var(--ink-600);
+}
+.bornes-popup__row-label::after {
+  content: ":";
+  margin-right: 0.3em;
+}
+/* French typography puts a no-break space before a colon. */
+:lang(fr) .bornes-popup__row-label::after {
+  content: "\00a0:";
+}
+.bornes-popup__muted {
+  margin: 0;
+  color: var(--ink-400);
+  font-size: 0.76rem;
+}
+.bornes-popup__link {
+  color: var(--green-700);
+  font-weight: 600;
+  text-decoration: underline;
+}
+.bornes-popup__actions {
+  display: flex;
+  gap: 0.4rem;
+  padding-top: 0.1rem;
+}
+.bornes-popup__action {
+  flex: 1;
+  border-radius: 999px;
+  background: var(--forest-900);
+  color: var(--lime-300);
+  padding: 0.4rem 0.75rem;
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.15s ease;
+}
+.bornes-popup__action:hover {
+  background: var(--forest-800);
+}
+.leaflet-popup-tip {
+  box-shadow: 0 6px 14px rgba(12, 31, 21, 0.12);
+}
+.bornes-pin {
+  filter: drop-shadow(0 3px 6px rgba(12, 31, 21, 0.35));
+}
+.bornes-cluster {
+  background: var(--forest-900);
+  color: var(--lime-300);
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 0.78rem;
+  border: 2px solid var(--lime-400);
+  box-shadow: 0 6px 16px rgba(12, 31, 21, 0.3);
+}
+
+@media (max-width: 640px) {
+  html {
+    scroll-behavior: auto;
+  }
+}

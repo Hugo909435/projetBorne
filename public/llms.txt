@@ -1,0 +1,22 @@
+# ma-borne-electrique.com
+
+> Electric vehicle charging station locator with a live worldwide map and a practical guide to charging connectors (Type 2, CCS, CHAdeMO). Available in French, English, German, and Spanish.
+
+Station data comes from Open Charge Map (openchargemap.org), an open, collaborative database. Map tiles are provided by OpenStreetMap contributors.
+
+## Languages
+
+- French (default): https://ma-borne-electrique.com/fr
+- English: https://ma-borne-electrique.com/en
+- German: https://ma-borne-electrique.com/de
+- Spanish: https://ma-borne-electrique.com/es
+
+## Main pages (French URLs shown; replace /fr with /en, /de, or /es)
+
+- [Home and world map](https://ma-borne-electrique.com/fr): search and map of charging stations anywhere in the world.
+- [Connector guide](https://ma-borne-electrique.com/fr/blog/types-de-bornes-electriques): explains Type 2, Combo CCS, and CHAdeMO standards, power output, and charging times.
+- [About](https://ma-borne-electrique.com/fr/a-propos): project background and data sources.
+
+## Contact
+
+contact@ma-borne-electrique.com
