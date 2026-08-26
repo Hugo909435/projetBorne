@@ -29,7 +29,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: `${site.url}/${locale}/blog/${post.slug}`,
       changeFrequency: "monthly" as const,
       priority: 0.6,
-      lastModified: post.publishedAt,
+      lastModified: post.updatedAt ?? post.publishedAt,
       alternates: { languages: languageAlternates(`/blog/${post.slug}`) },
     }))
   );

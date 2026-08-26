@@ -14,6 +14,13 @@ const FAQ_HEADING: Record<Locale, string> = {
   es: "Preguntas frecuentes",
 };
 
+const UPDATED_LABEL: Record<Locale, string> = {
+  fr: "Mis à jour le",
+  en: "Updated",
+  de: "Aktualisiert am",
+  es: "Actualizado el",
+};
+
 export async function generateStaticParams() {
   return blogPosts.map((post) => ({ slug: post.slug }));
 }
@@ -65,7 +72,7 @@ export default async function BlogPostPage({
     mainEntityOfPage: `${site.url}/${locale}/blog/${post.slug}`,
     inLanguage: locale,
     datePublished: post.publishedAt,
-    dateModified: post.publishedAt,
+    dateModified: post.updatedAt ?? post.publishedAt,
   };
 
   const faqJsonLd =
@@ -155,7 +162,12 @@ export default async function BlogPostPage({
         {content.eyebrow}
       </p>
       <h1 className="text-3xl font-semibold text-ink-900 sm:text-4xl">{content.title}</h1>
-      <p className="mt-3 text-sm text-ink-400">{formatBlogDate(locale, post.publishedAt)}</p>
+      <p className="mt-3 text-sm text-ink-400">
+        {formatBlogDate(locale, post.publishedAt)}
+        {post.updatedAt && (
+          <> · {UPDATED_LABEL[locale as Locale]} {formatBlogDate(locale, post.updatedAt)}</>
+        )}
+      </p>
       <p className="mt-1 text-sm text-ink-400">
         {byLabel[locale as Locale]} {author.name}, {author.role[locale as Locale]}
       </p>

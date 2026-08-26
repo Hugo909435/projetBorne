@@ -19,11 +19,12 @@ export async function generateMetadata({
   const { page } = await searchParams;
   const t = await getTranslations({ locale, namespace: "Meta" });
   const pageNumber = Number(page) || 1;
-  const canonical = pageNumber > 1 ? `/${locale}/blog?page=${pageNumber}` : `/${locale}/blog`;
+  const blogPath = pageNumber > 1 ? `/blog?page=${pageNumber}` : "/blog";
+  const canonical = `/${locale}${blogPath}`;
   return {
     title: t("blogTitle"),
     description: t("blogDescription"),
-    alternates: { canonical, languages: languageAlternates("/blog") },
+    alternates: { canonical, languages: languageAlternates(blogPath) },
     openGraph: { url: `${site.url}${canonical}` },
   };
 }

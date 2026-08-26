@@ -36,6 +36,8 @@ export type BlogLocaleContent = {
 export type BlogPost = {
   slug: string;
   publishedAt: string;
+  /** Set only when the post is meaningfully revised after publishing. */
+  updatedAt?: string;
   image: BlogImage;
   content: Record<Locale, BlogLocaleContent>;
 };
