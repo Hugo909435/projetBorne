@@ -37,6 +37,7 @@ export default async function HomePage({
         email: site.email,
         description: t("description"),
         sameAs: [author.linkedin],
+        founder: { "@type": "Person", name: author.name, url: author.url, sameAs: [author.linkedin] },
       },
       {
         "@type": "WebSite",

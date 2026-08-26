@@ -3,6 +3,7 @@ import Image from "next/image";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { site, languageAlternates, author, byLabel } from "@/lib/site";
+import { formatBlogDate } from "@/lib/blogPosts";
 import type { Locale } from "@/i18n/routing";
 
 const FAQ_HEADING: Record<Locale, string> = {
@@ -11,6 +12,8 @@ const FAQ_HEADING: Record<Locale, string> = {
   de: "Häufig gestellte Fragen",
   es: "Preguntas frecuentes",
 };
+
+const PUBLISHED_AT = "2026-08-26";
 
 const HERO_IMAGE = {
   src: "/blog/voiture-electrique.jpg",
@@ -69,10 +72,12 @@ export default async function EVGuidePage({
     "@type": "Article",
     headline: t("title"),
     description: t("intro"),
-    author: { "@type": "Person", name: author.name, url: author.url },
+    author: { "@type": "Person", name: author.name, url: author.url, sameAs: [author.linkedin] },
     publisher: { "@type": "Organization", name: site.shortName },
     mainEntityOfPage: `${site.url}/${locale}/blog/voiture-electrique`,
     inLanguage: locale,
+    datePublished: PUBLISHED_AT,
+    dateModified: PUBLISHED_AT,
   };
 
   const faqJsonLd = {
@@ -85,6 +90,21 @@ export default async function EVGuidePage({
     })),
   };
 
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: tNav("home"), item: `${site.url}/${locale}` },
+      { "@type": "ListItem", position: 2, name: tNav("blog"), item: `${site.url}/${locale}/blog` },
+      {
+        "@type": "ListItem",
+        position: 3,
+        name: t("breadcrumb"),
+        item: `${site.url}/${locale}/blog/voiture-electrique`,
+      },
+    ],
+  };
+
   return (
     <article className="mx-auto max-w-3xl px-5 py-16">
       <script
@@ -94,6 +114,10 @@ export default async function EVGuidePage({
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
       />
 
       <nav aria-label="Breadcrumb" className="mb-6 text-xs text-ink-400">
@@ -132,7 +156,8 @@ export default async function EVGuidePage({
         {t("eyebrow")}
       </p>
       <h1 className="text-3xl font-semibold text-ink-900 sm:text-4xl">{t("title")}</h1>
-      <p className="mt-3 text-sm text-ink-400">
+      <p className="mt-3 text-sm text-ink-400">{formatBlogDate(locale, PUBLISHED_AT)}</p>
+      <p className="mt-1 text-sm text-ink-400">
         {byLabel[locale as Locale]} {author.name}, {author.role[locale as Locale]}
       </p>
       <p className="mt-4 text-ink-600">{t("intro")}</p>

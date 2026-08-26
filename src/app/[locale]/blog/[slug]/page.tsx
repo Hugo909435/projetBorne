@@ -67,7 +67,7 @@ export default async function BlogPostPage({
     "@type": "Article",
     headline: content.title,
     description: content.metaDescription,
-    author: { "@type": "Person", name: author.name, url: author.url },
+    author: { "@type": "Person", name: author.name, url: author.url, sameAs: [author.linkedin] },
     publisher: { "@type": "Organization", name: site.shortName },
     mainEntityOfPage: `${site.url}/${locale}/blog/${post.slug}`,
     inLanguage: locale,
