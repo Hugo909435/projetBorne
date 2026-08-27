@@ -4,13 +4,7 @@ import { useRef } from "react";
 import { useLocale } from "next-intl";
 import { usePathname, useRouter } from "@/i18n/navigation";
 import { routing } from "@/i18n/routing";
-
-const LANGUAGE_FLAGS: Record<string, string> = {
-  fr: "🇫🇷",
-  en: "🇬🇧",
-  de: "🇩🇪",
-  es: "🇪🇸",
-};
+import FlagIcon from "@/components/FlagIcon";
 
 const LANGUAGE_NAMES: Record<string, string> = {
   fr: "Français",
@@ -49,7 +43,7 @@ export default function LanguageSwitcher({
         aria-label="Language"
         className={`flex cursor-pointer list-none items-center gap-1.5 rounded-full border bg-transparent px-3 py-1.5 text-sm font-medium outline-none transition ${variantClasses}`}
       >
-        <span aria-hidden="true">{LANGUAGE_FLAGS[locale]}</span>
+        <FlagIcon code={locale} />
         <span className="uppercase">{locale}</span>
       </summary>
       <div
@@ -67,7 +61,7 @@ export default function LanguageSwitcher({
               code === locale ? "" : "opacity-80"
             }`}
           >
-            <span aria-hidden="true">{LANGUAGE_FLAGS[code]}</span>
+            <FlagIcon code={code} />
             {LANGUAGE_NAMES[code]}
           </button>
         ))}
