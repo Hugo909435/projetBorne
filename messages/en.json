@@ -54,7 +54,7 @@
   },
   "Hero": {
     "eyebrow": "EV charging stations and electric car guides, worldwide",
-    "title": "Charging made <em>simple</em>, wherever you are.",
+    "title": "Charging made <em>simple,</em> wherever you are.",
     "lede": "Find an available charging station, compare power output and connectors (Type 2, CCS, CHAdeMO), and charge your electric car across Europe and beyond, with no account and no app to install.",
     "ctaMap": "View the charging map",
     "ctaGuide": "Understand connectors",
@@ -391,6 +391,14 @@
     "faq3A": "The main schemes are the ecological bonus, the scrappage bonus, and social leasing for lower-income households, though their amounts and conditions change every year.",
     "faq4Q": "Where do most people charge their electric car?",
     "faq4A": "About 80 to 90% of charging happens at home or at work, on a reinforced outlet or a wallbox, while the fast-charging network is mostly used for long trips."
+  },
+  "NotFoundPage": {
+    "metaTitle": "Page not found",
+    "eyebrow": "Error 404",
+    "title": "This page doesn't exist anymore.",
+    "body": "We couldn't find the page you're looking for. It may have been moved or never existed. Head back home or check out our blog to find what you need.",
+    "ctaHome": "Back to home",
+    "ctaBlog": "Read the blog"
   },
   "Map": {
     "searchPlaceholder": "A city, an address…",

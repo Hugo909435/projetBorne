@@ -54,7 +54,7 @@
   },
   "Hero": {
     "eyebrow": "Bornes de recharge électrique et conseils voiture électrique",
-    "title": "La recharge <em>simple</em>, où que vous soyez.",
+    "title": "La recharge <em>simple,</em> où que vous soyez.",
     "lede": "Localisez une borne de recharge disponible, comparez les puissances et les connecteurs (Type 2, CCS, CHAdeMO), et rechargez votre voiture électrique partout en France et en Europe, sans compte ni application à installer.",
     "ctaMap": "Voir la carte des bornes",
     "ctaGuide": "Comprendre les connecteurs",
@@ -391,6 +391,14 @@
     "faq3A": "Le bonus écologique, la prime à la conversion et le leasing social pour les ménages modestes sont les principaux dispositifs, mais leurs montants et conditions évoluent chaque année.",
     "faq4Q": "Où recharge-t-on le plus souvent une voiture électrique ?",
     "faq4A": "Environ 80 à 90 % des recharges se font à domicile ou au travail, sur une prise renforcée ou une borne murale, le réseau de bornes rapides étant surtout utilisé pour les longs trajets."
+  },
+  "NotFoundPage": {
+    "metaTitle": "Page introuvable",
+    "eyebrow": "Erreur 404",
+    "title": "Cette page n'existe pas ou plus.",
+    "body": "L'adresse demandée est introuvable. Elle a peut-être été déplacée ou n'a jamais existé. Retournez à l'accueil ou consultez notre blog pour trouver ce que vous cherchez.",
+    "ctaHome": "Retour à l'accueil",
+    "ctaBlog": "Voir le blog"
   },
   "Map": {
     "searchPlaceholder": "Une ville, une adresse…",

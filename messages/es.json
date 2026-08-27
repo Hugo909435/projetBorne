@@ -54,7 +54,7 @@
   },
   "Hero": {
     "eyebrow": "Puntos de recarga y guías de coche eléctrico, en todo el mundo",
-    "title": "Recargar, de forma <em>sencilla</em>, estés donde estés.",
+    "title": "Recargar, de forma <em>sencilla,</em> estés donde estés.",
     "lede": "Localiza un punto de recarga disponible, compara potencias y conectores (Tipo 2, CCS, CHAdeMO), y recarga tu coche eléctrico en toda Europa y más allá, sin cuenta ni aplicación que instalar.",
     "ctaMap": "Ver el mapa de recarga",
     "ctaGuide": "Entender los conectores",
@@ -391,6 +391,14 @@
     "faq3A": "Las principales son el bono ecológico, la prima por achatarrar un vehículo antiguo y el leasing social para hogares modestos, aunque sus importes y condiciones cambian cada año.",
     "faq4Q": "¿Dónde se recarga con más frecuencia un coche eléctrico?",
     "faq4A": "Entre el 80 y el 90 % de las recargas se hacen en casa o en el trabajo, con un enchufe reforzado o una wallbox, mientras que la red de carga rápida se usa sobre todo en los trayectos largos."
+  },
+  "NotFoundPage": {
+    "metaTitle": "Página no encontrada",
+    "eyebrow": "Error 404",
+    "title": "Esta página ya no existe.",
+    "body": "No hemos encontrado la página que buscas. Puede que se haya movido o que nunca haya existido. Vuelve al inicio o consulta nuestro blog para encontrar lo que necesitas.",
+    "ctaHome": "Volver al inicio",
+    "ctaBlog": "Ver el blog"
   },
   "Map": {
     "searchPlaceholder": "Una ciudad, una dirección…",

@@ -54,7 +54,7 @@
   },
   "Hero": {
     "eyebrow": "Ladestationen und Elektroauto-Ratgeber, weltweit",
-    "title": "Laden, ganz <em>einfach</em>, wo immer Sie sind.",
+    "title": "Laden, ganz <em>einfach,</em> wo immer Sie sind.",
     "lede": "Finden Sie eine verfügbare Ladestation, vergleichen Sie Ladeleistung und Stecker (Typ 2, CCS, CHAdeMO) und laden Sie Ihr Elektroauto in ganz Europa und darüber hinaus, ganz ohne Konto und ohne App-Installation.",
     "ctaMap": "Ladekarte ansehen",
     "ctaGuide": "Stecker verstehen",
@@ -391,6 +391,14 @@
     "faq3A": "Die wichtigsten Programme sind der Umweltbonus, die Abwrackprämie und das soziale Leasing für einkommensschwächere Haushalte, wobei sich Höhe und Bedingungen jedes Jahr ändern.",
     "faq4Q": "Wo wird ein Elektroauto meistens geladen?",
     "faq4A": "Etwa 80 bis 90 Prozent der Ladevorgänge finden zu Hause oder am Arbeitsplatz statt, an einer verstärkten Steckdose oder einer Wallbox, während das Schnellladenetz vor allem für lange Fahrten genutzt wird."
+  },
+  "NotFoundPage": {
+    "metaTitle": "Seite nicht gefunden",
+    "eyebrow": "Fehler 404",
+    "title": "Diese Seite existiert nicht mehr.",
+    "body": "Die gesuchte Seite konnte nicht gefunden werden. Sie wurde vielleicht verschoben oder hat nie existiert. Kehren Sie zur Startseite zurück oder besuchen Sie unseren Blog.",
+    "ctaHome": "Zur Startseite",
+    "ctaBlog": "Zum Blog"
   },
   "Map": {
     "searchPlaceholder": "Eine Stadt, eine Adresse…",
