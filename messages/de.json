@@ -41,6 +41,7 @@
   },
   "CookieConsent": {
     "title": "Cookie-Einstellungen",
+    "body": "Wir verwenden essenzielle Cookies für den Betrieb der Website und, mit Ihrer Zustimmung, Analyse-Cookies, um deren Nutzung besser zu verstehen.",
     "customize": "Anpassen",
     "essentialTitle": "Essenzielle Cookies",
     "essentialBody": "Notwendig für die ordnungsgemäße Funktion der Website: Speicherung Ihrer Präferenzen. Diese können nicht deaktiviert werden.",

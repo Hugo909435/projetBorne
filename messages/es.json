@@ -41,6 +41,7 @@
   },
   "CookieConsent": {
     "title": "Preferencias de cookies",
+    "body": "Utilizamos cookies esenciales para el funcionamiento del sitio y, si lo aceptas, cookies de análisis para comprender mejor su uso.",
     "customize": "Personalizar",
     "essentialTitle": "Cookies esenciales",
     "essentialBody": "Necesarias para el buen funcionamiento del sitio: recordar tus preferencias. No se pueden desactivar.",

@@ -41,6 +41,7 @@
   },
   "CookieConsent": {
     "title": "Cookie preferences",
+    "body": "We use essential cookies to run the site and, if you agree, analytics cookies to help us understand how it's used.",
     "customize": "Customize",
     "essentialTitle": "Essential cookies",
     "essentialBody": "Required for the site to work properly: remembering your preferences. These cannot be disabled.",
