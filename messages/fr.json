@@ -41,6 +41,7 @@
   },
   "CookieConsent": {
     "title": "Préférences des cookies",
+    "customize": "Personnaliser",
     "essentialTitle": "Cookies essentiels",
     "essentialBody": "Nécessaires au bon fonctionnement du site : mémorisation de vos préférences. Ils ne peuvent pas être désactivés.",
     "alwaysActive": "Toujours actifs",
