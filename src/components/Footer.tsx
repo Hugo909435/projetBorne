@@ -14,7 +14,7 @@ export default function Footer() {
         <div className="grid gap-10 md:grid-cols-4">
           <div className="md:col-span-2">
             <div className="flex items-center gap-2.5">
-              <Image src="/logo.png" alt="" width={81} height={96} className="h-8 w-auto" />
+              <Image src="/logo.png" alt="" width={81} height={96} className="h-11 w-auto" />
               <p className="font-display text-lg font-semibold text-lime-300">
                 ma-borne-électrique
               </p>
@@ -27,6 +27,17 @@ export default function Footer() {
               className="mt-4 inline-block text-sm font-medium text-lime-300 underline decoration-lime-300/40 underline-offset-4 hover:decoration-lime-300"
             >
               {site.email}
+            </a>
+            <a
+              href={site.facebook}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Facebook"
+              className="mt-4 flex h-9 w-9 items-center justify-center rounded-full border border-cream/20 text-cream/80 transition hover:border-lime-300 hover:text-lime-300"
+            >
+              <svg viewBox="0 0 24 24" fill="currentColor" className="h-4 w-4" aria-hidden="true">
+                <path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5.02 3.66 9.18 8.44 9.94v-7.03H7.9v-2.91h2.54V9.85c0-2.51 1.49-3.89 3.77-3.89 1.09 0 2.24.2 2.24.2v2.47h-1.26c-1.24 0-1.63.78-1.63 1.57v1.89h2.78l-.44 2.91h-2.34V22c4.78-.76 8.44-4.92 8.44-9.94Z" />
+              </svg>
             </a>
           </div>
 

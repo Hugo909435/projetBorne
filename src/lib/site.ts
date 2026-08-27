@@ -6,6 +6,7 @@ export const site = {
   url: "https://ma-borne-electrique.com",
   email: "contact@ma-borne-electrique.com",
   contactUserAgent: "ma-borne-electrique.com/1.0 (contact@ma-borne-electrique.com)",
+  facebook: "https://www.facebook.com/profile.php?id=61594071351854",
 };
 
 export const ogLocales: Record<string, string> = {
