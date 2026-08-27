@@ -1,9 +1,14 @@
 import { ImageResponse } from "next/og";
+import { readFile } from "node:fs/promises";
+import { join } from "node:path";
 
 export const size = { width: 512, height: 512 };
 export const contentType = "image/png";
 
-export default function Icon() {
+export default async function Icon() {
+  const logo = await readFile(join(process.cwd(), "public", "logo.png"));
+  const logoSrc = `data:image/png;base64,${logo.toString("base64")}`;
+
   return new ImageResponse(
     (
       <div
@@ -17,15 +22,8 @@ export default function Icon() {
           borderRadius: 96,
         }}
       >
-        <svg width="280" height="280" viewBox="0 0 24 24" fill="none">
-          <path
-            d="M13 2 4 14h6l-1 8 9-12h-6l1-8Z"
-            fill="#6bf29a"
-            stroke="#6bf29a"
-            strokeWidth="1"
-            strokeLinejoin="round"
-          />
-        </svg>
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img src={logoSrc} width={340} height={403} alt="" />
       </div>
     ),
     { ...size }

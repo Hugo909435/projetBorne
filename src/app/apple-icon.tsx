@@ -1,9 +1,14 @@
 import { ImageResponse } from "next/og";
+import { readFile } from "node:fs/promises";
+import { join } from "node:path";
 
 export const size = { width: 180, height: 180 };
 export const contentType = "image/png";
 
-export default function AppleIcon() {
+export default async function AppleIcon() {
+  const logo = await readFile(join(process.cwd(), "public", "logo.png"));
+  const logoSrc = `data:image/png;base64,${logo.toString("base64")}`;
+
   return new ImageResponse(
     (
       <div
@@ -16,15 +21,8 @@ export default function AppleIcon() {
           background: "#0c1f15",
         }}
       >
-        <svg width="100" height="100" viewBox="0 0 24 24" fill="none">
-          <path
-            d="M13 2 4 14h6l-1 8 9-12h-6l1-8Z"
-            fill="#6bf29a"
-            stroke="#6bf29a"
-            strokeWidth="1"
-            strokeLinejoin="round"
-          />
-        </svg>
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img src={logoSrc} width={110} height={130} alt="" />
       </div>
     ),
     { ...size }

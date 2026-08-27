@@ -35,6 +35,7 @@ export default async function HomePage({
         name: site.shortName,
         url: site.url,
         email: site.email,
+        logo: `${site.url}/logo.png`,
         description: t("description"),
         sameAs: [author.linkedin],
         founder: { "@type": "Person", name: author.name, url: author.url, sameAs: [author.linkedin] },

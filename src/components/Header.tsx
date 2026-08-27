@@ -1,15 +1,7 @@
 import { useTranslations } from "next-intl";
+import Image from "next/image";
 import { Link } from "@/i18n/navigation";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
-
-function BoltMark() {
-  return (
-    <svg width="26" height="26" viewBox="0 0 26 26" fill="none" aria-hidden="true">
-      <circle cx="13" cy="13" r="13" fill="#f7f6ef" />
-      <path d="M14.6 5.5 8 14.8h4.3l-1.1 6.7 7.4-9.6h-4.6z" fill="#123a22" />
-    </svg>
-  );
-}
 
 export default function Header() {
   const t = useTranslations("Nav");
@@ -24,7 +16,7 @@ export default function Header() {
     <header className="sticky top-0 z-40 border-b border-white/10 bg-forest-900/95 backdrop-blur">
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-5 py-3.5">
         <Link href="/" className="flex items-center gap-2.5">
-          <BoltMark />
+          <Image src="/logo.png" alt="" width={81} height={96} className="h-8 w-auto" priority />
           <span className="font-display text-[1.05rem] font-semibold text-white">
             MaBorne<em className="text-lime-300">Electrique</em>
           </span>

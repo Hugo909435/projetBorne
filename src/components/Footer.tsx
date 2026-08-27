@@ -1,4 +1,5 @@
 import { useTranslations } from "next-intl";
+import Image from "next/image";
 import { Link } from "@/i18n/navigation";
 import { site } from "@/lib/site";
 import CookieSettingsLink from "@/components/cookies/CookieSettingsLink";
@@ -12,9 +13,12 @@ export default function Footer() {
       <div className="mx-auto max-w-6xl px-5 py-14">
         <div className="grid gap-10 md:grid-cols-4">
           <div className="md:col-span-2">
-            <p className="font-display text-lg font-semibold text-lime-300">
-              ma-borne-électrique
-            </p>
+            <div className="flex items-center gap-2.5">
+              <Image src="/logo.png" alt="" width={81} height={96} className="h-8 w-auto" />
+              <p className="font-display text-lg font-semibold text-lime-300">
+                ma-borne-électrique
+              </p>
+            </div>
             <p className="mt-3 max-w-sm text-sm leading-relaxed text-cream/70">
               {tMeta("description")}
             </p>

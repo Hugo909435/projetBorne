@@ -35,11 +35,11 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "Meta" });
-  const title = `${site.name} | ${t("homeTagline")}`;
+  const title = `${site.name} - ${t("homeTagline")}`;
 
   return {
     metadataBase: new URL(site.url),
-    title: { default: title, template: `%s | ${site.shortName}` },
+    title: { default: title, template: `%s - ${site.shortName}` },
     description: t("description"),
     alternates: { canonical: `/${locale}`, languages: languageAlternates("/") },
     openGraph: {

@@ -1,5 +1,7 @@
 import { ImageResponse } from "next/og";
 import { getTranslations } from "next-intl/server";
+import { readFile } from "node:fs/promises";
+import { join } from "node:path";
 import { site } from "@/lib/site";
 import type { Locale } from "@/i18n/routing";
 
@@ -14,6 +16,8 @@ export default async function OpengraphImage({
 }) {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "Meta" });
+  const logo = await readFile(join(process.cwd(), "public", "logo.png"));
+  const logoSrc = `data:image/png;base64,${logo.toString("base64")}`;
 
   return new ImageResponse(
     (
@@ -40,15 +44,8 @@ export default async function OpengraphImage({
             background: "#123a22",
           }}
         >
-          <svg width="76" height="76" viewBox="0 0 24 24" fill="none">
-            <path
-              d="M13 2 4 14h6l-1 8 9-12h-6l1-8Z"
-              fill="#6bf29a"
-              stroke="#6bf29a"
-              strokeWidth="1"
-              strokeLinejoin="round"
-            />
-          </svg>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src={logoSrc} width={68} height={80} alt="" />
         </div>
         <div style={{ display: "flex", fontSize: 56, fontWeight: 700, color: "#f7f6ef" }}>
           {site.name}
