@@ -5,7 +5,7 @@ import HomeIntro from "@/components/home/HomeIntro";
 import GuideTeaser from "@/components/home/GuideTeaser";
 import Faq from "@/components/home/Faq";
 import MapSection from "@/components/home/MapSection";
-import { site, author } from "@/lib/site";
+import { site, author, organizationLogo } from "@/lib/site";
 
 export default async function HomePage({
   params,
@@ -35,9 +35,9 @@ export default async function HomePage({
         name: site.shortName,
         url: site.url,
         email: site.email,
-        logo: `${site.url}/logo.png`,
+        logo: organizationLogo,
         description: t("description"),
-        sameAs: [author.linkedin],
+        sameAs: [author.linkedin, site.facebook],
         founder: { "@type": "Person", name: author.name, url: author.url, sameAs: [author.linkedin] },
       },
       {
@@ -46,6 +46,15 @@ export default async function HomePage({
         url: site.url,
         description: t("description"),
         inLanguage: locale,
+      },
+      {
+        "@type": "WebApplication",
+        name: site.shortName,
+        url: `${site.url}/${locale}#carte`,
+        applicationCategory: "UtilitiesApplication",
+        operatingSystem: "Any (web-based)",
+        description: t("description"),
+        offers: { "@type": "Offer", price: "0", priceCurrency: "EUR" },
       },
     ],
   };

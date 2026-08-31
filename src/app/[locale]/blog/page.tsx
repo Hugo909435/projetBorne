@@ -40,6 +40,25 @@ export default async function BlogPage({
   const { page } = await searchParams;
   setRequestLocale(locale);
   const t = await getTranslations({ locale, namespace: "BlogPage" });
+  const tNav = await getTranslations({ locale, namespace: "Nav" });
+
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    name: t("title"),
+    description: t("intro"),
+    url: `${site.url}/${locale}/blog`,
+    inLanguage: locale,
+  };
+
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: tNav("home"), item: `${site.url}/${locale}` },
+      { "@type": "ListItem", position: 2, name: tNav("blog"), item: `${site.url}/${locale}/blog` },
+    ],
+  };
 
   const sortedPosts = [...blogPosts].sort(
     (a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime()
@@ -56,6 +75,14 @@ export default async function BlogPage({
 
   return (
     <div className="mx-auto max-w-3xl px-5 py-16">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+      />
       <h1 className="text-3xl font-semibold text-ink-900 sm:text-4xl">{t("title")}</h1>
       <p className="mt-4 text-ink-600">{t("intro")}</p>
 

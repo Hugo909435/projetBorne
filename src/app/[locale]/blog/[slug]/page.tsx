@@ -3,7 +3,7 @@ import Image from "next/image";
 import { notFound } from "next/navigation";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
-import { site, languageAlternates, author, byLabel } from "@/lib/site";
+import { site, languageAlternates, author, byLabel, publisherJsonLd } from "@/lib/site";
 import { blogPosts, formatBlogDate } from "@/lib/blogPosts";
 import type { Locale } from "@/i18n/routing";
 
@@ -67,8 +67,9 @@ export default async function BlogPostPage({
     "@type": "Article",
     headline: content.title,
     description: content.metaDescription,
+    image: post.image.src ? [`${site.url}${post.image.src}`] : undefined,
     author: { "@type": "Person", name: author.name, url: author.url, sameAs: [author.linkedin] },
-    publisher: { "@type": "Organization", name: site.shortName },
+    publisher: publisherJsonLd,
     mainEntityOfPage: `${site.url}/${locale}/blog/${post.slug}`,
     inLanguage: locale,
     datePublished: post.publishedAt,

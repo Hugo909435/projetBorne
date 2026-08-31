@@ -27,9 +27,37 @@ export default async function AProposPage({
   setRequestLocale(locale);
   const t = await getTranslations({ locale, namespace: "AProposPage" });
   const tMeta = await getTranslations({ locale, namespace: "Meta" });
+  const tNav = await getTranslations({ locale, namespace: "Nav" });
+
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    name: t("title"),
+    description: tMeta("aproposDescription"),
+    url: `${site.url}/${locale}/a-propos`,
+    inLanguage: locale,
+    mainEntity: { "@type": "Organization", name: site.shortName, url: site.url },
+  };
+
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: tNav("home"), item: `${site.url}/${locale}` },
+      { "@type": "ListItem", position: 2, name: t("title"), item: `${site.url}/${locale}/a-propos` },
+    ],
+  };
 
   return (
     <div className="mx-auto max-w-2xl px-5 py-16">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+      />
       <p className="mb-3 border-l-[3px] border-green-500 pl-3 text-sm font-semibold text-green-700">
         {tMeta("aproposTitle")}
       </p>

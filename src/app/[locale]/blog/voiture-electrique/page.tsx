@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
-import { site, languageAlternates, author, byLabel } from "@/lib/site";
+import { site, languageAlternates, author, byLabel, publisherJsonLd } from "@/lib/site";
 import { formatBlogDate } from "@/lib/blogPosts";
 import type { Locale } from "@/i18n/routing";
 
@@ -72,8 +72,9 @@ export default async function EVGuidePage({
     "@type": "Article",
     headline: t("title"),
     description: t("intro"),
+    image: [`${site.url}${HERO_IMAGE.src}`],
     author: { "@type": "Person", name: author.name, url: author.url, sameAs: [author.linkedin] },
-    publisher: { "@type": "Organization", name: site.shortName },
+    publisher: publisherJsonLd,
     mainEntityOfPage: `${site.url}/${locale}/blog/voiture-electrique`,
     inLanguage: locale,
     datePublished: PUBLISHED_AT,

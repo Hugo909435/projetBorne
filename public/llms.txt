@@ -14,8 +14,43 @@ Station data comes from Open Charge Map (openchargemap.org), an open, collaborat
 ## Main pages (French URLs shown; replace /fr with /en, /de, or /es)
 
 - [Home and world map](https://ma-borne-electrique.com/fr): search and map of charging stations anywhere in the world.
+- [Blog](https://ma-borne-electrique.com/fr/blog): practical guides and news on EV charging, costs, and French regulation.
 - [Connector guide](https://ma-borne-electrique.com/fr/blog/types-de-bornes-electriques): explains Type 2, Combo CCS, and CHAdeMO standards, power output, and charging times.
+- [Electric car guide](https://ma-borne-electrique.com/fr/blog/voiture-electrique): range, pricing, and buying-decision basics for EVs.
 - [About](https://ma-borne-electrique.com/fr/a-propos): project background and data sources.
+- [Contact](https://ma-borne-electrique.com/fr/contact)
+
+## Blog articles
+
+### Charging costs and practical use
+- [Combien coûte vraiment la recharge d'une voiture électrique en France ?](https://ma-borne-electrique.com/fr/blog/cout-recharge-voiture-electrique)
+- [Combien de temps pour recharger une voiture électrique ? Le guide par puissance](https://ma-borne-electrique.com/fr/blog/temps-de-recharge-voiture-electrique)
+- [Abonnements de recharge : comparatif des tarifs en France en 2026](https://ma-borne-electrique.com/fr/blog/comparatif-abonnements-recharge)
+- [Recharge gratuite en France : une carte qui se réduit en 2026](https://ma-borne-electrique.com/fr/blog/recharge-gratuite-carte-2026)
+- [Électricité : ce que la hausse du tarif réglementé change pour la recharge à domicile](https://ma-borne-electrique.com/fr/blog/tarif-electricite-aout-2026-recharge)
+- [Carrefour baisse de 30 % le prix de la recharge sur ses bornes 22 kW](https://ma-borne-electrique.com/fr/blog/carrefour-prix-recharge-bornes)
+- [Autonomie en hiver : les bons réflexes à adopter avant l'arrivée du froid](https://ma-borne-electrique.com/fr/blog/autonomie-hiver-voiture-electrique)
+- [Bornes rapides sur autoroute : comment éviter la file d'attente cet été 2026](https://ma-borne-electrique.com/fr/blog/bornes-rapides-autoroute-ete-2026)
+
+### Home installation and rights
+- [Installer une borne de recharge chez soi : le guide étape par étape](https://ma-borne-electrique.com/fr/blog/installer-borne-recharge-maison)
+- [Droit à la prise en copropriété : comment installer sa borne en 2026](https://ma-borne-electrique.com/fr/blog/droit-a-la-prise-copropriete)
+- [Vol de câbles de recharge : le cuivre attise la convoitise](https://ma-borne-electrique.com/fr/blog/vol-cables-recharge-electrique)
+
+### French regulation and incentives (2026)
+- [Bonus écologique 2026 : les montants revalorisés pour l'achat d'une voiture électrique](https://ma-borne-electrique.com/fr/blog/bonus-ecologique-2026)
+- [Malus écologique 2026 : les voitures électriques ne sont plus toutes épargnées](https://ma-borne-electrique.com/fr/blog/malus-ecologique-2026-voitures-electriques)
+- [Leasing social 2026 : la voiture électrique de retour dès 94 € par mois](https://ma-borne-electrique.com/fr/blog/leasing-social-2026)
+- [ZFE en 2026 : où en est-on après la décision du Conseil constitutionnel](https://ma-borne-electrique.com/fr/blog/zfe-2026-vehicules-electriques)
+
+### Market and infrastructure news
+- [La France franchit le cap des 200 000 bornes de recharge publiques](https://ma-borne-electrique.com/fr/blog/cap-200000-bornes-recharge-france)
+- [Voitures électriques chinoises : la percée se confirme sur le marché français](https://ma-borne-electrique.com/fr/blog/voitures-electriques-chinoises-france)
+- [Vehicle-to-Grid (V2G) : quand la voiture électrique devient batterie de secours](https://ma-borne-electrique.com/fr/blog/vehicle-to-grid-v2g)
+
+### Buying and mythbusting
+- [Acheter une voiture électrique d'occasion : les points à vérifier avant de vous décider](https://ma-borne-electrique.com/fr/blog/acheter-voiture-electrique-occasion)
+- [Voiture électrique : 6 idées reçues qui ont la vie dure](https://ma-borne-electrique.com/fr/blog/idees-recues-voiture-electrique)
 
 ## Contact
 

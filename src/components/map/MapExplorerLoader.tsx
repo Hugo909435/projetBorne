@@ -9,7 +9,7 @@ const MapExplorer = dynamic(() => import("./MapExplorer"), {
   loading: () => <MapSkeleton />,
 });
 
-function MapSkeleton() {
+export function MapSkeleton() {
   const t = useTranslations("Map");
   return (
     <div className="flex h-full w-full animate-pulse items-center justify-center rounded-[28px] bg-sand-200">

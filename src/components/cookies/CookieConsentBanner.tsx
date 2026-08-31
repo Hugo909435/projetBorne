@@ -46,12 +46,12 @@ export default function CookieConsentBanner() {
       role="dialog"
       aria-live="polite"
       aria-label={t("title")}
-      className="fixed inset-x-0 bottom-0 z-50 max-h-[90vh] overflow-y-auto rounded-t-3xl border-t border-cream/10 bg-forest-950 text-cream shadow-[0_-12px_30px_rgba(12,31,21,0.35)] sm:inset-x-auto sm:bottom-6 sm:left-6 sm:max-w-sm sm:rounded-3xl sm:border sm:shadow-2xl"
+      className="fixed inset-x-0 bottom-0 z-50 max-h-[70vh] overflow-y-auto rounded-t-3xl border-t border-cream/10 bg-forest-950 text-cream shadow-[0_-12px_30px_rgba(12,31,21,0.35)] sm:inset-x-auto sm:bottom-6 sm:left-6 sm:max-h-[90vh] sm:max-w-sm sm:rounded-3xl sm:border sm:shadow-2xl"
     >
-      <div className="grain relative px-6 pt-6 pb-[calc(1.5rem+env(safe-area-inset-bottom))] sm:px-7 sm:py-7">
-        <div className="flex items-start gap-3.5">
-          <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-cream/10 text-lime-300">
-            <svg viewBox="0 0 24 24" fill="none" className="h-5 w-5" aria-hidden="true">
+      <div className="grain relative px-5 pt-4 pb-[calc(1rem+env(safe-area-inset-bottom))] sm:px-7 sm:pt-6 sm:pb-7">
+        <div className="flex items-center gap-3">
+          <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-cream/10 text-lime-300 sm:h-10 sm:w-10">
+            <svg viewBox="0 0 24 24" fill="none" className="h-4 w-4 sm:h-5 sm:w-5" aria-hidden="true">
               <path
                 d="M12 3c-.8 1.6-2.6 2.2-4 1.2-.3 1.7-1.8 2.9-3.5 2.6C3.6 8.4 3 10.1 3 12c0 5 4 9 9 9s9-4 9-9c0-1-.2-2-.5-2.9-1.6.3-3.1-.9-3-2.6-1.5.3-3-.7-3.2-2.2C13.6 3.5 12.9 3.1 12 3Z"
                 stroke="currentColor"
@@ -64,12 +64,14 @@ export default function CookieConsentBanner() {
               <circle cx="10" cy="16" r="1" fill="currentColor" />
             </svg>
           </span>
-          <p className="pt-1.5 font-display text-lg font-semibold leading-tight text-cream">{t("title")}</p>
+          <p className="font-display text-base font-semibold leading-tight text-cream sm:text-lg">
+            {t("title")}
+          </p>
         </div>
 
         {detailsOpen ? (
-          <div className="mt-5 divide-y divide-cream/10 border-y border-cream/10">
-            <div className="flex items-start justify-between gap-4 py-4">
+          <div className="mt-4 divide-y divide-cream/10 border-y border-cream/10">
+            <div className="flex items-start justify-between gap-4 py-3">
               <div className="min-w-0">
                 <p className="text-sm font-semibold text-cream">{t("essentialTitle")}</p>
                 <p className="mt-1 text-[13px] leading-relaxed text-cream/50">{t("essentialBody")}</p>
@@ -78,7 +80,7 @@ export default function CookieConsentBanner() {
                 {t("alwaysActive")}
               </span>
             </div>
-            <div className="flex items-start justify-between gap-4 py-4">
+            <div className="flex items-start justify-between gap-4 py-3">
               <div className="min-w-0">
                 <p className="text-sm font-semibold text-cream">{t("analyticsTitle")}</p>
                 <p className="mt-1 text-[13px] leading-relaxed text-cream/50">{t("analyticsBody")}</p>
@@ -87,7 +89,7 @@ export default function CookieConsentBanner() {
             </div>
           </div>
         ) : (
-          <p className="mt-3 text-[13px] leading-relaxed text-cream/60">
+          <p className="mt-2 text-[13px] leading-relaxed text-cream/60">
             {t("body")}{" "}
             <button
               type="button"
@@ -99,18 +101,18 @@ export default function CookieConsentBanner() {
           </p>
         )}
 
-        <div className="mt-6 flex items-center gap-2.5">
+        <div className="mt-4 flex items-center gap-2.5">
           <button
             type="button"
             onClick={detailsOpen ? () => savePreferences(analyticsEnabled) : acceptAll}
-            className="flex-1 rounded-full bg-lime-300 px-5 py-2.5 text-sm font-semibold text-forest-950 transition hover:bg-lime-400"
+            className="flex min-h-11 flex-1 items-center justify-center rounded-full bg-lime-300 px-5 py-2.5 text-sm font-semibold text-forest-950 transition hover:bg-lime-400"
           >
             {detailsOpen ? t("save") : t("accept")}
           </button>
           <button
             type="button"
             onClick={rejectAll}
-            className="flex-1 rounded-full border border-cream/20 px-5 py-2.5 text-sm font-semibold text-cream transition hover:border-cream/40"
+            className="flex min-h-11 flex-1 items-center justify-center rounded-full border border-cream/20 px-5 py-2.5 text-sm font-semibold text-cream transition hover:border-cream/40"
           >
             {t("reject")}
           </button>

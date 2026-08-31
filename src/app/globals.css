@@ -180,6 +180,14 @@
   color: var(--ink-900);
 }
 
+/* Bump zoom control hit area to the 44px touch-target guideline (default Leaflet is 30x30). */
+.leaflet-control-zoom-in,
+.leaflet-control-zoom-out {
+  width: 44px !important;
+  height: 44px !important;
+  line-height: 44px !important;
+}
+
 /* Station popup: sized to fit its content rather than scrolling internally.
    On the map, Leaflet's own autoPan keeps it in view; the hero board's bubble
    clears the header/viewport edges itself (see HeroBoard.tsx). */

@@ -9,6 +9,20 @@ export const site = {
   facebook: "https://www.facebook.com/profile.php?id=61594071351854",
 };
 
+export const organizationLogo = {
+  "@type": "ImageObject",
+  url: `${site.url}/logo-schema.png`,
+  width: 1254,
+  height: 1254,
+} as const;
+
+export const publisherJsonLd = {
+  "@type": "Organization",
+  name: site.shortName,
+  url: site.url,
+  logo: organizationLogo,
+} as const;
+
 export const ogLocales: Record<string, string> = {
   fr: "fr_FR",
   en: "en_US",

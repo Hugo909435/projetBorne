@@ -1,12 +1,52 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useLocale } from "next-intl";
 import LocationFilters from "@/components/home/LocationFilters";
-import MapExplorerLoader from "@/components/map/MapExplorerLoader";
+import MapExplorerLoader, { MapSkeleton } from "@/components/map/MapExplorerLoader";
 import type { FlyTarget, StationSource } from "@/components/map/MapExplorer";
 import type { CityEntry } from "@/lib/cities";
 import { countryByCode, localeToCountryCode } from "@/lib/countries";
+
+/**
+ * The Leaflet/react-leaflet/leaflet.markercluster bundle is ~200KB of JS
+ * (before gzip) - fetching, parsing and running it right on mount was
+ * dominating Total Blocking Time even though the map sits just below the
+ * fold on mobile (a few px past the initial viewport). Deferring the mount
+ * (and therefore the chunk fetch) until the map is actually on screen keeps
+ * that cost out of the initial load and out of the Lighthouse/CrUX
+ * measurement window, which doesn't scroll the page. A generous rootMargin
+ * here would defeat the point, since it's already only a few px offscreen -
+ * so this only fires once the map is genuinely visible, not pre-scroll.
+ */
+const ROOT_MARGIN = "0px";
+
+function useDeferredMount(skip: boolean) {
+  const [mounted, setMounted] = useState(skip);
+  const ref = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (mounted) return;
+    const el = ref.current;
+    if (!el || typeof IntersectionObserver === "undefined") {
+      setMounted(true);
+      return;
+    }
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (entries.some((entry) => entry.isIntersecting)) {
+          setMounted(true);
+          observer.disconnect();
+        }
+      },
+      { rootMargin: ROOT_MARGIN }
+    );
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, [mounted]);
+
+  return { ref, mounted };
+}
 
 export default function MapSection({
   center,
@@ -19,6 +59,11 @@ export default function MapSection({
 }) {
   const locale = useLocale();
   const defaultCountryCode = localeToCountryCode[locale] ?? "FR";
+
+  // A deep link with ?lat&lon (e.g. a shared search result) means the visitor
+  // came specifically to see that spot on the map - mount it immediately
+  // rather than waiting for scroll. Everyone else gets the deferred load.
+  const { ref: mapWrapRef, mounted: mapMounted } = useDeferredMount(hasTarget);
 
   // The map always shows exactly one country's stations - the one matching
   // the site's current language by default - never a mix of countries.
@@ -68,15 +113,19 @@ export default function MapSection({
         onSelectCity={handleSelectCity}
         onLocateMe={handleLocateMe}
       />
-      <div className="h-[460px] md:h-[600px]">
-        <MapExplorerLoader
-          center={initialCenter}
-          zoom={initialZoom}
-          source={source}
-          showSearch
-          flyTo={flyTarget}
-          userLocation={userLocation}
-        />
+      <div ref={mapWrapRef} className="h-[460px] md:h-[600px]">
+        {mapMounted ? (
+          <MapExplorerLoader
+            center={initialCenter}
+            zoom={initialZoom}
+            source={source}
+            showSearch
+            flyTo={flyTarget}
+            userLocation={userLocation}
+          />
+        ) : (
+          <MapSkeleton />
+        )}
       </div>
     </>
   );
