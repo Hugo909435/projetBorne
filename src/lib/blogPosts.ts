@@ -3998,4 +3998,504 @@ export const blogPosts: BlogPost[] = [
       },
     },
   },
+  {
+    slug: "road-trip-france-recharge-voiture-electrique",
+    publishedAt: "2026-09-08",
+    image: {
+      src: "/blog/road-trip-france-recharge-voiture-electrique.jpg",
+      alt: {
+        fr: "Trois bornes de recharge rapide sur une aire de service en bord de route en France",
+        en: "Three fast-charging stations at a roadside service area in France",
+        de: "Drei Schnellladesäulen an einer Raststätte entlang einer Straße in Frankreich",
+        es: "Tres puntos de recarga rápida en un área de servicio junto a una carretera en Francia",
+      },
+      credit: {
+        name: "Bibounette clochette",
+        url: "https://commons.wikimedia.org/wiki/File:Borne_%C3%A9lectrique_hyperchargeur_du_Mans.jpg",
+        license: "CC BY-SA 4.0",
+      },
+    },
+    content: {
+      fr: {
+        eyebrow: "Voyage",
+        title: "Road trip en France : bien recharger sa voiture électrique sans mauvaise surprise",
+        excerpt:
+          "Type de prise, paiement sans abonnement, applications utiles : ce qu'il faut savoir pour recharger sereinement sa voiture électrique pendant un road trip en France.",
+        metaTitle: "Road trip en France en voiture électrique : guide de recharge 2026",
+        metaDescription:
+          "Bornes rapides sur autoroute, paiement sans abonnement, applications indispensables et types de prises : le guide complet pour recharger sa voiture électrique en road trip en France.",
+        body: [
+          {
+            type: "p",
+            text: "De plus en plus de conducteurs, français comme étrangers, parcourent la France en voiture électrique le temps d'un été ou d'un long week-end. Le réseau de recharge s'est beaucoup développé ces dernières années, mais quelques repères simples suffisent pour partir sans stress.",
+          },
+          { type: "h2", text: "Un réseau de recharge rapide prêt pour la route" },
+          {
+            type: "p",
+            text: "La quasi-totalité des aires d'autoroute françaises sont aujourd'hui équipées de bornes rapides ou très rapides, exploitées par plusieurs opérateurs comme Ionity, Fastned, Atlante, TotalEnergies ou Electra. Les puissances vont généralement de 150 à 400 kW, de quoi retrouver 20 à 30 minutes suffisantes pour la plupart des arrêts d'un trajet.",
+          },
+          { type: "h2", text: "Quel type de prise pour recharger en France ?" },
+          {
+            type: "p",
+            text: "La France utilise le même standard que le reste de l'Europe : la prise Type 2 en courant alternatif pour la recharge normale, et le connecteur Combo CCS2 pour la recharge rapide en courant continu. La plupart des véhicules européens n'ont donc besoin d'aucun adaptateur. Les rares exceptions concernent certains modèles plus anciens équipés d'un connecteur CHAdeMO, à vérifier avant de partir si votre véhicule ne date pas d'hier.",
+          },
+          { type: "h2", text: "Recharger sans abonnement, la norme en France" },
+          {
+            type: "p",
+            text: "Contrairement à certains pays où un abonnement ou une carte RFID reste indispensable, les opérateurs de bornes rapides en France ont l'obligation de proposer un paiement direct par carte bancaire, sans abonnement ni application, généralement via un terminal sans contact intégré à la borne. Pratique pour un road trip ponctuel : inutile de créer un compte avant de partir.",
+          },
+          { type: "h2", text: "Les applications qui simplifient le trajet" },
+          {
+            type: "p",
+            text: "Même avec un paiement par carte, une application facilite grandement la préparation de l'itinéraire : Chargemap pour repérer les bornes et lire les avis, PlugShare pour la communauté internationale, ou A Better Route Planner pour calculer automatiquement les arrêts nécessaires selon votre véhicule et la météo. La carte de ma-borne-electrique.com permet ensuite de repérer une borne disponible en temps réel juste avant de dévier de sa route.",
+          },
+          { type: "h3", text: "Nos conseils pour un road trip sans accroc" },
+          {
+            type: "ul",
+            items: [
+              "Rechargez idéalement entre 20 % et 80 % : la vitesse de charge ralentit nettement au-delà de ce seuil.",
+              "Prévoyez une marge d'autonomie plus large en cas de forte chaleur ou de grand froid.",
+              "Vérifiez la disponibilité en temps réel d'une borne avant de faire un détour pour l'atteindre.",
+              "En haute saison, privilégiez les aires équipées de plusieurs bornes pour limiter l'attente.",
+            ],
+          },
+          { type: "h2", text: "Des tarifs qui varient selon l'opérateur et l'heure" },
+          {
+            type: "p",
+            text: "Le prix au kWh varie sensiblement d'un opérateur à l'autre, et parfois selon l'heure de la journée. Sur autoroute, la recharge rapide reste en général plus chère qu'à domicile ou sur une borne de ville, ce qui reflète la puissance délivrée. Pour un trajet ponctuel, le paiement à la carte reste la solution la plus simple, même s'il est un peu plus cher qu'un tarif d'abonné.",
+          },
+        ],
+        faq: [
+          { question: "Ai-je besoin d'un abonnement pour recharger ma voiture électrique en France ?", answer: "Non, la loi impose aux opérateurs de bornes rapides de proposer un paiement direct par carte bancaire sans abonnement ni application obligatoire." },
+          { question: "Quel type de connecteur est utilisé pour recharger en France ?", answer: "La prise Type 2 en courant alternatif pour la recharge normale, et le connecteur Combo CCS2 en courant continu pour la recharge rapide : le même standard que dans le reste de l'Europe." },
+          { question: "Le réseau de bornes rapides couvre-t-il bien les autoroutes françaises ?", answer: "Oui, la quasi-totalité des aires d'autoroute françaises sont désormais équipées de bornes rapides ou très rapides, avec des puissances allant généralement de 150 à 400 kW." },
+          { question: "Quelles applications utiliser pour planifier un road trip en voiture électrique en France ?", answer: "Chargemap, PlugShare et A Better Route Planner, complétées par la carte de ma-borne-electrique.com pour repérer une borne disponible en temps réel." },
+        ],
+        ...cta.fr,
+      },
+      en: {
+        eyebrow: "Road Trip",
+        title: "Road-Tripping Through France: How to Charge Your EV Without the Stress",
+        excerpt:
+          "Connector types, paying without a subscription, useful apps: what you need to know to charge your EV with confidence during a road trip through France.",
+        metaTitle: "EV Road Trip in France, 2026: The Complete Charging Guide",
+        metaDescription:
+          "Fast chargers on French motorways, subscription-free payment, must-have apps and connector types: the complete guide to charging your EV on a road trip through France.",
+        body: [
+          {
+            type: "p",
+            text: "More and more drivers, French and foreign alike, cross France by electric car for a summer trip or a long weekend. The charging network has grown a lot in recent years, but a few simple pointers are enough to set off without stress.",
+          },
+          { type: "h2", text: "A fast-charging network ready for the road" },
+          {
+            type: "p",
+            text: "Nearly every French motorway service area is now equipped with fast or ultra-fast chargers, run by several operators such as Ionity, Fastned, Atlante, TotalEnergies or Electra. Power output generally ranges from 150 to 400 kW, enough for a 20 to 30 minute stop to cover most legs of a trip.",
+          },
+          { type: "h2", text: "What connector do you need to charge in France?" },
+          {
+            type: "p",
+            text: "France uses the same standard as the rest of Europe: the Type 2 connector for AC charging, and the CCS2 combo connector for DC fast charging. Most European vehicles need no adapter at all. The rare exceptions are some older models fitted with a CHAdeMO connector, worth checking before you leave if your car isn't a recent one.",
+          },
+          { type: "h2", text: "Charging without a subscription is the norm in France" },
+          {
+            type: "p",
+            text: "Unlike some countries where a subscription or an RFID card is still required, fast-charging operators in France must offer direct payment by bank card, with no subscription or app required, usually via a contactless terminal built into the charger. Handy for a one-off road trip: no need to create an account before you leave.",
+          },
+          { type: "h2", text: "The apps that make the trip easier" },
+          {
+            type: "p",
+            text: "Even with card payment available, an app makes route planning much easier: Chargemap to locate chargers and read reviews, PlugShare for its international community, or A Better Route Planner to automatically calculate the stops your specific car needs based on the weather. The map on ma-borne-electrique.com then lets you spot an available charger in real time right before you'd need to detour to reach it.",
+          },
+          { type: "h3", text: "Tips for a smooth road trip" },
+          {
+            type: "ul",
+            items: [
+              "Aim to charge between 20% and 80%: charging speed drops noticeably beyond that point.",
+              "Plan for a wider safety margin on range in very hot or very cold weather.",
+              "Check a charger's real-time availability before detouring to reach it.",
+              "During peak season, favor service areas with several chargers to cut down on waiting.",
+            ],
+          },
+          { type: "h2", text: "Prices vary by operator and time of day" },
+          {
+            type: "p",
+            text: "The price per kWh varies noticeably between operators, and sometimes by time of day too. On motorways, fast charging is generally more expensive than charging at home or at a city charger, which reflects the power being delivered. For a one-off trip, paying by card remains the simplest option, even if it costs a little more than a subscriber rate.",
+          },
+        ],
+        faq: [
+          { question: "Do I need a subscription to charge my EV in France?", answer: "No, French law requires fast-charging operators to offer direct payment by bank card, with no subscription or app required." },
+          { question: "What connector type is used to charge in France?", answer: "The Type 2 connector for AC charging, and the CCS2 combo connector for DC fast charging: the same standard used across the rest of Europe." },
+          { question: "Does the fast-charging network cover French motorways well?", answer: "Yes, nearly every French motorway service area is now equipped with fast or ultra-fast chargers, generally rated from 150 to 400 kW." },
+          { question: "Which apps are useful for planning an EV road trip in France?", answer: "Chargemap, PlugShare and A Better Route Planner, complemented by the map on ma-borne-electrique.com to spot an available charger in real time." },
+        ],
+        ...cta.en,
+      },
+      de: {
+        eyebrow: "Reise",
+        title: "Roadtrip durch Frankreich: Ihr Elektroauto stressfrei unterwegs laden",
+        excerpt:
+          "Steckertyp, Bezahlen ohne Abo, nützliche Apps: Was Sie wissen müssen, um Ihr Elektroauto während eines Roadtrips durch Frankreich sorgenfrei zu laden.",
+        metaTitle: "Elektroauto-Roadtrip durch Frankreich 2026: Der Ladeleitfaden",
+        metaDescription:
+          "Schnellladesäulen auf französischen Autobahnen, Bezahlen ohne Abo, unverzichtbare Apps und Steckertypen: der komplette Leitfaden zum Laden Ihres Elektroautos auf einem Roadtrip durch Frankreich.",
+        body: [
+          {
+            type: "p",
+            text: "Immer mehr Fahrerinnen und Fahrer, Franzosen wie Ausländer, durchqueren Frankreich für einen Sommerurlaub oder ein langes Wochenende mit dem Elektroauto. Das Ladenetz ist in den letzten Jahren stark gewachsen, doch ein paar einfache Anhaltspunkte reichen, um stressfrei loszufahren.",
+          },
+          { type: "h2", text: "Ein Schnellladenetz, das für die Reise bereit ist" },
+          {
+            type: "p",
+            text: "Fast jede französische Autobahnraststätte ist heute mit Schnell- oder Ultraschnellladern ausgestattet, betrieben von mehreren Anbietern wie Ionity, Fastned, Atlante, TotalEnergies oder Electra. Die Leistung liegt meist zwischen 150 und 400 kW, sodass ein Stopp von 20 bis 30 Minuten für die meisten Etappen ausreicht.",
+          },
+          { type: "h2", text: "Welcher Stecker wird zum Laden in Frankreich benötigt?" },
+          {
+            type: "p",
+            text: "Frankreich nutzt denselben Standard wie der Rest Europas: den Typ-2-Stecker für Wechselstromladen und den CCS2-Combo-Stecker für das Schnellladen mit Gleichstrom. Die meisten europäischen Fahrzeuge brauchen daher keinen Adapter. Die seltenen Ausnahmen sind ältere Modelle mit CHAdeMO-Anschluss, das sollten Sie vor der Abfahrt prüfen, falls Ihr Auto nicht ganz neu ist.",
+          },
+          { type: "h2", text: "Laden ohne Abo ist in Frankreich der Standard" },
+          {
+            type: "p",
+            text: "Anders als in manchen Ländern, in denen weiterhin ein Abo oder eine RFID-Karte nötig ist, müssen Schnellladeanbieter in Frankreich eine direkte Bezahlung per Bankkarte anbieten, ohne Abo oder App, meist über ein kontaktloses Terminal direkt an der Ladesäule. Praktisch für einen einmaligen Roadtrip: Sie müssen vor der Abfahrt kein Konto anlegen.",
+          },
+          { type: "h2", text: "Die Apps, die die Fahrt erleichtern" },
+          {
+            type: "p",
+            text: "Auch wenn Sie mit Karte bezahlen können, erleichtert eine App die Routenplanung deutlich: Chargemap, um Ladesäulen zu finden und Bewertungen zu lesen, PlugShare mit seiner internationalen Community, oder A Better Route Planner, das automatisch die nötigen Stopps für Ihr Fahrzeug je nach Wetter berechnet. Die Karte von ma-borne-electrique.com zeigt Ihnen dann kurzfristig eine verfügbare Ladesäule, bevor Sie für einen Umweg von Ihrer Route abweichen müssten.",
+          },
+          { type: "h3", text: "Tipps für einen reibungslosen Roadtrip" },
+          {
+            type: "ul",
+            items: [
+              "Laden Sie idealerweise zwischen 20 % und 80 %: darüber hinaus sinkt die Ladegeschwindigkeit spürbar.",
+              "Planen Sie bei großer Hitze oder Kälte eine größere Reichweitenreserve ein.",
+              "Prüfen Sie die Echtzeit-Verfügbarkeit einer Ladesäule, bevor Sie einen Umweg dorthin machen.",
+              "Bevorzugen Sie in der Hochsaison Raststätten mit mehreren Ladesäulen, um Wartezeiten zu vermeiden.",
+            ],
+          },
+          { type: "h2", text: "Die Preise unterscheiden sich je nach Anbieter und Uhrzeit" },
+          {
+            type: "p",
+            text: "Der Preis pro kWh unterscheidet sich spürbar zwischen den Anbietern und teils auch nach Tageszeit. Auf der Autobahn ist Schnellladen in der Regel teurer als zu Hause oder an einer städtischen Ladesäule, was die gelieferte Leistung widerspiegelt. Für eine einmalige Fahrt bleibt die Kartenzahlung die einfachste Lösung, auch wenn sie etwas teurer ist als ein Abo-Tarif.",
+          },
+        ],
+        faq: [
+          { question: "Brauche ich ein Abo, um mein Elektroauto in Frankreich zu laden?", answer: "Nein, das französische Recht verpflichtet Schnellladeanbieter zu einer direkten Bezahlung per Bankkarte, ohne Abo oder App." },
+          { question: "Welcher Steckertyp wird zum Laden in Frankreich verwendet?", answer: "Der Typ-2-Stecker für Wechselstromladen und der CCS2-Combo-Stecker für Schnellladen mit Gleichstrom, derselbe Standard wie im übrigen Europa." },
+          { question: "Deckt das Schnellladenetz die französischen Autobahnen gut ab?", answer: "Ja, fast jede französische Autobahnraststätte ist inzwischen mit Schnell- oder Ultraschnellladern ausgestattet, meist mit 150 bis 400 kW Leistung." },
+          { question: "Welche Apps sind für die Planung eines Elektroauto-Roadtrips in Frankreich nützlich?", answer: "Chargemap, PlugShare und A Better Route Planner, ergänzt durch die Karte von ma-borne-electrique.com, um in Echtzeit eine verfügbare Ladesäule zu finden." },
+        ],
+        ...cta.de,
+      },
+      es: {
+        eyebrow: "Viaje",
+        title: "Road trip por Francia: cómo recargar tu coche eléctrico sin sorpresas",
+        excerpt:
+          "Tipo de conector, pago sin abono, aplicaciones útiles: lo que hay que saber para recargar tu coche eléctrico con tranquilidad durante un road trip por Francia.",
+        metaTitle: "Road trip en coche eléctrico por Francia 2026: guía de recarga",
+        metaDescription:
+          "Cargadores rápidos en autopistas francesas, pago sin abono, aplicaciones imprescindibles y tipos de conector: la guía completa para recargar tu coche eléctrico en un road trip por Francia.",
+        body: [
+          {
+            type: "p",
+            text: "Cada vez más conductores, franceses y extranjeros, recorren Francia en coche eléctrico durante un verano o un fin de semana largo. La red de recarga ha crecido mucho en los últimos años, pero basta con conocer unos pocos puntos clave para salir sin estrés.",
+          },
+          { type: "h2", text: "Una red de carga rápida lista para la carretera" },
+          {
+            type: "p",
+            text: "Casi todas las áreas de servicio de las autopistas francesas cuentan ya con cargadores rápidos o ultrarrápidos, operados por varias empresas como Ionity, Fastned, Atlante, TotalEnergies o Electra. La potencia suele oscilar entre 150 y 400 kW, suficiente para que una parada de 20 a 30 minutos cubra la mayoría de los tramos de un viaje.",
+          },
+          { type: "h2", text: "¿Qué conector necesitas para recargar en Francia?" },
+          {
+            type: "p",
+            text: "Francia utiliza el mismo estándar que el resto de Europa: el conector Tipo 2 para la carga en corriente alterna, y el conector combinado CCS2 para la carga rápida en corriente continua. La mayoría de los vehículos europeos no necesitan ningún adaptador. Las escasas excepciones son algunos modelos más antiguos con conector CHAdeMO, conviene comprobarlo antes de salir si tu coche no es muy reciente.",
+          },
+          { type: "h2", text: "Recargar sin abono es la norma en Francia" },
+          {
+            type: "p",
+            text: "A diferencia de otros países donde sigue siendo necesario un abono o una tarjeta RFID, los operadores de carga rápida en Francia están obligados a ofrecer el pago directo con tarjeta bancaria, sin abono ni aplicación obligatoria, normalmente mediante un terminal sin contacto integrado en el propio cargador. Muy práctico para un road trip puntual: no hace falta crear ninguna cuenta antes de salir.",
+          },
+          { type: "h2", text: "Las aplicaciones que facilitan el trayecto" },
+          {
+            type: "p",
+            text: "Aunque puedas pagar con tarjeta, una aplicación facilita mucho la planificación de la ruta: Chargemap para localizar cargadores y leer opiniones, PlugShare por su comunidad internacional, o A Better Route Planner para calcular automáticamente las paradas que necesita tu vehículo según el clima. El mapa de ma-borne-electrique.com te permite después localizar un cargador disponible en tiempo real justo antes de desviarte de tu ruta.",
+          },
+          { type: "h3", text: "Consejos para un road trip sin contratiempos" },
+          {
+            type: "ul",
+            items: [
+              "Recarga idealmente entre el 20 % y el 80 %: la velocidad de carga se reduce notablemente por encima de ese umbral.",
+              "Prevé un margen de autonomía mayor si hace mucho calor o mucho frío.",
+              "Comprueba la disponibilidad en tiempo real de un cargador antes de desviarte para llegar hasta él.",
+              "En temporada alta, elige áreas de servicio con varios cargadores para reducir la espera.",
+            ],
+          },
+          { type: "h2", text: "Los precios varían según el operador y la hora" },
+          {
+            type: "p",
+            text: "El precio por kWh varía notablemente de un operador a otro, y a veces también según la hora del día. En autopista, la carga rápida suele ser más cara que en casa o en un cargador urbano, lo que refleja la potencia entregada. Para un trayecto puntual, pagar con tarjeta sigue siendo la opción más sencilla, aunque sea algo más cara que una tarifa de abonado.",
+          },
+        ],
+        faq: [
+          { question: "¿Necesito un abono para recargar mi coche eléctrico en Francia?", answer: "No, la ley francesa obliga a los operadores de carga rápida a ofrecer el pago directo con tarjeta bancaria, sin abono ni aplicación obligatoria." },
+          { question: "¿Qué tipo de conector se usa para recargar en Francia?", answer: "El conector Tipo 2 para la carga en corriente alterna, y el conector combinado CCS2 para la carga rápida en corriente continua: el mismo estándar que en el resto de Europa." },
+          { question: "¿La red de carga rápida cubre bien las autopistas francesas?", answer: "Sí, casi todas las áreas de servicio de las autopistas francesas cuentan ya con cargadores rápidos o ultrarrápidos, generalmente entre 150 y 400 kW." },
+          { question: "¿Qué aplicaciones son útiles para planificar un road trip en coche eléctrico por Francia?", answer: "Chargemap, PlugShare y A Better Route Planner, junto con el mapa de ma-borne-electrique.com para localizar un cargador disponible en tiempo real." },
+        ],
+        ...cta.es,
+      },
+    },
+  },
+  {
+    slug: "prolonger-duree-vie-batterie-voiture-electrique",
+    publishedAt: "2026-09-10",
+    image: {
+      src: "/blog/prolonger-duree-vie-batterie-voiture-electrique.jpg",
+      alt: {
+        fr: "Câble de recharge branché sur la prise d'une voiture électrique",
+        en: "A charging cable plugged into an electric car's charging port",
+        de: "Ein Ladekabel, das an der Ladebuchse eines Elektroautos angeschlossen ist",
+        es: "Un cable de recarga conectado a la toma de un coche eléctrico",
+      },
+      credit: {
+        name: "Pamsimhaho",
+        url: "https://commons.wikimedia.org/wiki/File:EV_Type2_Charging_Cable.jpg",
+        license: "CC0",
+      },
+    },
+    content: {
+      fr: {
+        eyebrow: "Conseils pratiques",
+        title: "Batterie de voiture électrique : les bons réflexes pour la faire durer",
+        excerpt:
+          "Charge quotidienne, recharge rapide, températures extrêmes : les habitudes qui font une vraie différence sur la durée de vie d'une batterie.",
+        metaTitle: "Faire durer la batterie de sa voiture électrique : le guide",
+        metaDescription:
+          "Niveau de charge quotidien, recharge rapide, stockage longue durée, températures extrêmes : les bons réflexes pour ralentir l'usure d'une batterie de voiture électrique.",
+        body: [
+          {
+            type: "p",
+            text: "Comme toute batterie lithium-ion, celle d'une voiture électrique s'use naturellement avec le temps et les cycles de charge. Cette usure est inévitable, mais quelques habitudes simples permettent de la ralentir sensiblement sur plusieurs années d'utilisation.",
+          },
+          { type: "h2", text: "Éviter les charges à 100 % au quotidien" },
+          {
+            type: "p",
+            text: "La plupart des véhicules et de leurs applications permettent de plafonner la charge, souvent entre 80 et 90 %. Réserver les 100 % aux longs trajets, plutôt que d'en faire une habitude quotidienne, limite le temps passé par la batterie dans sa zone de tension la plus contraignante.",
+          },
+          { type: "h2", text: "Ne pas laisser la batterie immobilisée à un niveau extrême" },
+          {
+            type: "p",
+            text: "Si le véhicule doit rester à l'arrêt plusieurs semaines, mieux vaut le laisser autour de 50 à 60 % de charge plutôt qu'à 0 % ou 100 %. Un niveau intermédiaire limite le stress chimique sur la batterie pendant une immobilisation prolongée.",
+          },
+          { type: "h2", text: "Limiter les recharges rapides répétées" },
+          {
+            type: "p",
+            text: "La recharge rapide en courant continu génère plus de chaleur que la recharge lente à domicile, ce qui accélère un peu l'usure sur le long terme. Un usage occasionnel, en trajet, n'a pas d'impact significatif : c'est surtout un usage exclusif et répété au quotidien qui pèse sur la durée de vie de la batterie.",
+          },
+          { type: "h2", text: "Protéger la batterie des températures extrêmes" },
+          {
+            type: "p",
+            text: "Le grand froid comme la forte chaleur sollicitent davantage la batterie. Se garer à l'ombre ou au garage lorsque c'est possible, et activer le préconditionnement avant une recharge rapide par temps froid, aide à limiter cet effet sur la durée.",
+          },
+          { type: "h3", text: "Les bons réflexes en résumé" },
+          {
+            type: "ul",
+            items: [
+              "Plafonner la charge quotidienne autour de 80-90 %, réserver 100 % aux longs trajets.",
+              "Éviter de laisser le véhicule immobilisé longtemps proche de 0 % ou 100 %.",
+              "Privilégier la recharge lente pour l'usage courant, réserver la recharge rapide aux déplacements.",
+              "Garer si possible à l'abri des températures extrêmes.",
+              "Activer le préconditionnement avant une recharge rapide par temps froid.",
+            ],
+          },
+          { type: "h2", text: "Une dégradation lente, déjà anticipée par les constructeurs" },
+          {
+            type: "p",
+            text: "Ces habitudes restent des optimisations, pas des obligations : les systèmes de gestion de batterie modernes et les garanties constructeur, généralement autour de 8 ans ou 160 000 km, sont conçus pour une large marge d'usage réel, y compris sans habitudes parfaites.",
+          },
+        ],
+        faq: [
+          { question: "Faut-il éviter de recharger sa voiture électrique à 100 % tous les jours ?", answer: "Idéalement oui : mieux vaut plafonner la charge quotidienne autour de 80-90 % et réserver les 100 % aux longs trajets." },
+          { question: "La recharge rapide abîme-t-elle la batterie ?", answer: "Un peu plus que la recharge lente sur le long terme, mais un usage occasionnel en trajet n'a pas d'impact significatif : c'est l'usage exclusif et répété qui pèse le plus." },
+          { question: "Comment bien conserver la batterie si la voiture reste longtemps à l'arrêt ?", answer: "Il vaut mieux la stocker autour de 50 à 60 % de charge plutôt qu'à 0 % ou 100 % pour limiter le stress chimique pendant l'immobilisation." },
+          { question: "Les températures extrêmes affectent-elles la durée de vie de la batterie ?", answer: "Oui, une exposition prolongée au grand froid ou à la forte chaleur peut accélérer l'usure : se garer à l'abri et préconditionner la batterie avant une recharge rapide par temps froid limitent cet effet." },
+        ],
+        ...cta.fr,
+      },
+      en: {
+        eyebrow: "Practical Tips",
+        title: "EV Battery Care: Habits That Actually Make It Last Longer",
+        excerpt:
+          "Daily charge limits, fast charging, extreme temperatures: the habits that make a real difference to how long an EV battery lasts.",
+        metaTitle: "How to Make Your EV Battery Last Longer: The Guide",
+        metaDescription:
+          "Daily charge level, fast charging, long-term storage, extreme temperatures: the habits that slow down wear on an electric car's battery over time.",
+        body: [
+          {
+            type: "p",
+            text: "Like any lithium-ion battery, an EV's battery wears down naturally with time and charge cycles. That wear is unavoidable, but a few simple habits can noticeably slow it down over years of use.",
+          },
+          { type: "h2", text: "Avoid charging to 100% every day" },
+          {
+            type: "p",
+            text: "Most vehicles and their apps let you cap charging, often between 80% and 90%. Saving 100% for long trips, rather than making it a daily habit, limits the time the battery spends in its most demanding voltage range.",
+          },
+          { type: "h2", text: "Don't leave the battery parked at an extreme level" },
+          {
+            type: "p",
+            text: "If the car will sit unused for several weeks, it's better to leave it around 50% to 60% charge rather than at 0% or 100%. A mid-range level reduces chemical stress on the battery during extended downtime.",
+          },
+          { type: "h2", text: "Limit repeated fast charging" },
+          {
+            type: "p",
+            text: "DC fast charging generates more heat than slow charging at home, which speeds up wear slightly over the long run. Occasional use on a trip has no meaningful impact: it's mainly exclusive, repeated daily use that weighs on battery lifespan.",
+          },
+          { type: "h2", text: "Protect the battery from extreme temperatures" },
+          {
+            type: "p",
+            text: "Both severe cold and intense heat put extra strain on the battery. Parking in the shade or in a garage when possible, and turning on preconditioning before a fast charge in cold weather, helps limit that effect over time.",
+          },
+          { type: "h3", text: "The key habits, at a glance" },
+          {
+            type: "ul",
+            items: [
+              "Cap daily charging around 80-90%, and save 100% for long trips.",
+              "Avoid leaving the car parked for long stretches near 0% or 100%.",
+              "Favor slow charging for everyday use, and save fast charging for trips.",
+              "Park out of extreme heat or cold whenever possible.",
+              "Turn on preconditioning before a fast charge in cold weather.",
+            ],
+          },
+          { type: "h2", text: "Slow degradation, already accounted for by manufacturers" },
+          {
+            type: "p",
+            text: "These habits are optimizations, not requirements: modern battery management systems and manufacturer warranties, typically around 8 years or 160,000km, are designed with a wide margin for real-world use, even without perfect habits.",
+          },
+        ],
+        faq: [
+          { question: "Should I avoid charging my EV to 100% every day?", answer: "Ideally yes: it's better to cap daily charging around 80-90% and save 100% for long trips." },
+          { question: "Does fast charging damage the battery?", answer: "A little more than slow charging over the long run, but occasional use on a trip has no meaningful impact: it's exclusive, repeated use that weighs the most." },
+          { question: "How should I store the battery if the car sits unused for a long time?", answer: "It's best to store it around 50% to 60% charge rather than at 0% or 100%, to limit chemical stress during the downtime." },
+          { question: "Do extreme temperatures affect battery lifespan?", answer: "Yes, prolonged exposure to severe cold or heat can speed up wear: parking out of extreme temperatures and preconditioning before a fast charge in cold weather help limit that effect." },
+        ],
+        ...cta.en,
+      },
+      de: {
+        eyebrow: "Praktische Tipps",
+        title: "Elektroauto-Batterie schonen: Diese Gewohnheiten machen wirklich einen Unterschied",
+        excerpt:
+          "Tägliches Ladelimit, Schnellladen, extreme Temperaturen: die Gewohnheiten, die wirklich einen Unterschied für die Lebensdauer einer Elektroauto-Batterie machen.",
+        metaTitle: "Elektroauto-Batterie länger halten lassen: Der Leitfaden",
+        metaDescription:
+          "Tägliches Ladelevel, Schnellladen, Langzeitlagerung, extreme Temperaturen: die Gewohnheiten, die den Verschleiß einer Elektroauto-Batterie im Lauf der Zeit verlangsamen.",
+        body: [
+          {
+            type: "p",
+            text: "Wie jede Lithium-Ionen-Batterie verschleißt auch die eines Elektroautos mit der Zeit und den Ladezyklen ganz natürlich. Dieser Verschleiß lässt sich nicht vermeiden, doch ein paar einfache Gewohnheiten können ihn über Jahre der Nutzung spürbar verlangsamen.",
+          },
+          { type: "h2", text: "Nicht jeden Tag auf 100 % laden" },
+          {
+            type: "p",
+            text: "Bei den meisten Fahrzeugen und ihren Apps lässt sich die Ladung begrenzen, oft auf 80 bis 90 Prozent. Wenn Sie 100 Prozent langen Fahrten vorbehalten, statt es zur täglichen Gewohnheit zu machen, verbringt die Batterie weniger Zeit in ihrem anspruchsvollsten Spannungsbereich.",
+          },
+          { type: "h2", text: "Die Batterie nicht dauerhaft auf einem Extremniveau stehen lassen" },
+          {
+            type: "p",
+            text: "Steht das Auto mehrere Wochen ungenutzt, ist es besser, es bei etwa 50 bis 60 Prozent Ladung stehen zu lassen statt bei 0 oder 100 Prozent. Ein mittlerer Ladestand reduziert die chemische Belastung der Batterie während der längeren Standzeit.",
+          },
+          { type: "h2", text: "Wiederholtes Schnellladen begrenzen" },
+          {
+            type: "p",
+            text: "Schnellladen mit Gleichstrom erzeugt mehr Wärme als langsames Laden zu Hause, was den Verschleiß langfristig etwas beschleunigt. Gelegentliches Laden unterwegs hat keine spürbare Auswirkung: Vor allem der ausschließliche, wiederholte tägliche Einsatz belastet die Lebensdauer der Batterie.",
+          },
+          { type: "h2", text: "Die Batterie vor extremen Temperaturen schützen" },
+          {
+            type: "p",
+            text: "Sowohl starke Kälte als auch große Hitze belasten die Batterie zusätzlich. Wenn möglich im Schatten oder in der Garage parken und vor einer Schnellladung bei kaltem Wetter das Vorkonditionieren aktivieren, hilft, diesen Effekt langfristig zu begrenzen.",
+          },
+          { type: "h3", text: "Die wichtigsten Gewohnheiten im Überblick" },
+          {
+            type: "ul",
+            items: [
+              "Die tägliche Ladung auf etwa 80-90 % begrenzen, 100 % langen Fahrten vorbehalten.",
+              "Das Auto nicht lange bei nahezu 0 % oder 100 % stehen lassen.",
+              "Für den Alltag langsames Laden bevorzugen, Schnellladen für Fahrten aufheben.",
+              "Wenn möglich vor extremer Hitze oder Kälte geschützt parken.",
+              "Vor einer Schnellladung bei kaltem Wetter das Vorkonditionieren aktivieren.",
+            ],
+          },
+          { type: "h2", text: "Ein langsamer Verschleiß, den Hersteller bereits einplanen" },
+          {
+            type: "p",
+            text: "Diese Gewohnheiten sind Optimierungen, keine Pflicht: Moderne Batteriemanagementsysteme und Herstellergarantien, meist rund 8 Jahre oder 160.000 km, sind mit einem großzügigen Spielraum für den realen Alltag ausgelegt, auch ohne perfekte Gewohnheiten.",
+          },
+        ],
+        faq: [
+          { question: "Sollte ich mein Elektroauto nicht jeden Tag auf 100 % laden?", answer: "Idealerweise ja: Besser ist es, die tägliche Ladung auf etwa 80-90 % zu begrenzen und 100 % langen Fahrten vorzubehalten." },
+          { question: "Schadet Schnellladen der Batterie?", answer: "Etwas mehr als langsames Laden auf lange Sicht, aber gelegentliches Laden unterwegs hat keine spürbare Auswirkung: Vor allem ausschließliche, wiederholte Nutzung belastet am meisten." },
+          { question: "Wie lagere ich die Batterie am besten, wenn das Auto lange ungenutzt steht?", answer: "Am besten bei etwa 50 bis 60 % Ladung statt bei 0 oder 100 %, um die chemische Belastung während der Standzeit zu begrenzen." },
+          { question: "Beeinflussen extreme Temperaturen die Lebensdauer der Batterie?", answer: "Ja, anhaltende starke Kälte oder Hitze kann den Verschleiß beschleunigen: geschützt parken und vor einer Schnellladung bei Kälte vorkonditionieren begrenzen diesen Effekt." },
+        ],
+        ...cta.de,
+      },
+      es: {
+        eyebrow: "Consejos prácticos",
+        title: "Batería del coche eléctrico: los hábitos que realmente alargan su vida",
+        excerpt:
+          "Límite de carga diario, carga rápida, temperaturas extremas: los hábitos que marcan una diferencia real en la duración de la batería.",
+        metaTitle: "Cómo alargar la vida de la batería de tu coche eléctrico: la guía",
+        metaDescription:
+          "Nivel de carga diario, carga rápida, almacenamiento prolongado, temperaturas extremas: los hábitos que ralentizan el desgaste de la batería de un coche eléctrico.",
+        body: [
+          {
+            type: "p",
+            text: "Como cualquier batería de iones de litio, la de un coche eléctrico se desgasta de forma natural con el tiempo y los ciclos de carga. Ese desgaste es inevitable, pero unos pocos hábitos sencillos pueden ralentizarlo notablemente a lo largo de años de uso.",
+          },
+          { type: "h2", text: "Evitar cargar al 100 % todos los días" },
+          {
+            type: "p",
+            text: "La mayoría de los vehículos y sus aplicaciones permiten limitar la carga, a menudo entre el 80 % y el 90 %. Reservar el 100 % para los trayectos largos, en lugar de convertirlo en un hábito diario, reduce el tiempo que la batería pasa en su rango de tensión más exigente.",
+          },
+          { type: "h2", text: "No dejar la batería parada en un nivel extremo" },
+          {
+            type: "p",
+            text: "Si el coche va a estar varias semanas sin usarse, conviene dejarlo con un 50-60 % de carga en lugar de al 0 % o al 100 %. Un nivel intermedio reduce el estrés químico de la batería durante una parada prolongada.",
+          },
+          { type: "h2", text: "Limitar las recargas rápidas repetidas" },
+          {
+            type: "p",
+            text: "La carga rápida en corriente continua genera más calor que la carga lenta en casa, lo que acelera algo el desgaste a largo plazo. Un uso ocasional durante un viaje no tiene un impacto significativo: es sobre todo el uso exclusivo y repetido a diario lo que más pesa en la vida útil de la batería.",
+          },
+          { type: "h2", text: "Proteger la batería de las temperaturas extremas" },
+          {
+            type: "p",
+            text: "Tanto el frío intenso como el calor fuerte exigen más a la batería. Aparcar a la sombra o en garaje cuando sea posible, y activar el precondicionamiento antes de una carga rápida con frío, ayuda a limitar este efecto con el tiempo.",
+          },
+          { type: "h3", text: "Los hábitos clave, de un vistazo" },
+          {
+            type: "ul",
+            items: [
+              "Limita la carga diaria a un 80-90 % aproximadamente, y reserva el 100 % para trayectos largos.",
+              "Evita dejar el coche parado mucho tiempo cerca del 0 % o del 100 %.",
+              "Prioriza la carga lenta para el uso diario y reserva la carga rápida para los viajes.",
+              "Aparca a resguardo de temperaturas extremas siempre que puedas.",
+              "Activa el precondicionamiento antes de una carga rápida con frío.",
+            ],
+          },
+          { type: "h2", text: "Un desgaste lento, ya previsto por los fabricantes" },
+          {
+            type: "p",
+            text: "Estos hábitos son optimizaciones, no obligaciones: los sistemas modernos de gestión de batería y las garantías de los fabricantes, normalmente en torno a 8 años o 160.000 km, están pensados con un amplio margen para el uso real, incluso sin hábitos perfectos.",
+          },
+        ],
+        faq: [
+          { question: "¿Debo evitar cargar mi coche eléctrico al 100 % todos los días?", answer: "Idealmente sí: es mejor limitar la carga diaria a un 80-90 % aproximadamente y reservar el 100 % para los trayectos largos." },
+          { question: "¿La carga rápida daña la batería?", answer: "Un poco más que la carga lenta a largo plazo, pero un uso ocasional durante un viaje no tiene un impacto significativo: lo que más pesa es el uso exclusivo y repetido." },
+          { question: "¿Cómo conservar bien la batería si el coche va a estar mucho tiempo parado?", answer: "Es mejor guardarlo con un 50-60 % de carga en lugar de al 0 % o al 100 %, para limitar el estrés químico durante la parada." },
+          { question: "¿Afectan las temperaturas extremas a la vida útil de la batería?", answer: "Sí, una exposición prolongada a mucho frío o calor puede acelerar el desgaste: aparcar a resguardo y precondicionar la batería antes de una carga rápida con frío ayudan a limitar ese efecto." },
+        ],
+        ...cta.es,
+      },
+    },
+  },
 ];
