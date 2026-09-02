@@ -3544,7 +3544,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "idees-recues-voiture-electrique",
-    publishedAt: "2026-09-03",
+    publishedAt: "2026-08-31",
     image: {
       src: "/blog/idees-recues-voiture-electrique.jpg",
       alt: {
@@ -3772,7 +3772,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "acheter-voiture-electrique-occasion",
-    publishedAt: "2026-09-05",
+    publishedAt: "2026-09-01",
     image: {
       src: "/blog/acheter-voiture-electrique-occasion.jpg",
       alt: {
@@ -4000,7 +4000,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "road-trip-france-recharge-voiture-electrique",
-    publishedAt: "2026-09-08",
+    publishedAt: "2026-09-02",
     image: {
       src: "/blog/road-trip-france-recharge-voiture-electrique.jpg",
       alt: {
@@ -4248,7 +4248,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "prolonger-duree-vie-batterie-voiture-electrique",
-    publishedAt: "2026-09-10",
+    publishedAt: "2026-09-02",
     image: {
       src: "/blog/prolonger-duree-vie-batterie-voiture-electrique.jpg",
       alt: {
