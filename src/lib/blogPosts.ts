@@ -4498,4 +4498,300 @@ export const blogPosts: BlogPost[] = [
       },
     },
   },
+  {
+    slug: "etiquette-recharge-publique-voiture-electrique",
+    publishedAt: "2026-09-07",
+    image: {
+      src: "/blog/etiquette-recharge-publique-voiture-electrique.jpg",
+      alt: {
+        fr: "Rangée de bornes de recharge rapide dans un parking public, sous des ombrières photovoltaïques",
+        en: "A row of public fast-charging stations in a parking lot, shaded by solar canopies",
+        de: "Eine Reihe öffentlicher Schnellladestationen auf einem Parkplatz unter Solar-Carports",
+        es: "Una fila de puntos de recarga rápida públicos en un aparcamiento, bajo marquesinas solares",
+      },
+      credit: {
+        name: "G. Edward Johnson",
+        url: "https://commons.wikimedia.org/wiki/File:DC_fast_charging_at_Ikea_College_Park_MD_2026-01-20_13-23-57.jpg",
+        license: "CC BY 4.0",
+      },
+    },
+    content: {
+      fr: {
+        eyebrow: "Conseils pratiques",
+        title: "Étiquette de la recharge publique : les règles non-écrites que tout conducteur devrait connaître",
+        excerpt:
+          "Temps de branchement, charge à 100 %, câble laissé au sol : les bonnes pratiques qui évitent les tensions aux bornes de recharge partagées, où que vous rouliez.",
+        metaTitle: "Étiquette de la recharge publique : les règles à connaître",
+        metaDescription:
+          "Durée de branchement, seuil de charge aux heures de pointe, câbles, places bloquées : le guide des bonnes pratiques à la borne de recharge publique, valable dans tous les pays.",
+        body: [
+          {
+            type: "p",
+            text: "À mesure que le nombre de voitures électriques augmente, de plus en plus de conducteurs se partagent les mêmes bornes de recharge. Il n'existe aucun règlement officiel, seulement une poignée d'habitudes qui gardent l'attente courte pour tout le monde, où que l'on branche son véhicule.",
+          },
+          { type: "h2", text: "Déplacer sa voiture dès la charge terminée" },
+          {
+            type: "p",
+            text: "Une fois la charge finie, la borne reste occupée tant que le véhicule y est branché, même si plus aucun courant ne passe. Sur les bornes rapides très fréquentées, laisser sa voiture en place « au cas où » prive quelqu'un d'autre d'une place. La plupart des applications envoient une notification de fin de charge : le bon réflexe est de revenir déplacer le véhicule dans les minutes qui suivent, pas dans l'heure.",
+          },
+          { type: "h2", text: "Ne pas viser 100 % sur une borne rapide très demandée" },
+          {
+            type: "p",
+            text: "Sur un chargeur en courant continu, la vitesse de charge ralentit fortement après 80 %, pour protéger la batterie. Pousser jusqu'à 100 % peut doubler ou tripler le temps passé branché, pour un gain d'autonomie minime en comparaison. Quand une file d'attente commence à se former, débrancher autour de 80 % libère la place plus vite, et le complément peut se faire sur une borne lente ailleurs.",
+          },
+          { type: "h2", text: "Respecter l'ordre d'arrivée, sans se garer sans charger" },
+          {
+            type: "p",
+            text: "Que ce soit via une file d'attente physique ou une réservation dans une application, l'ordre d'arrivée reste la règle la plus largement admise. Se garer sur une place de recharge libre « en attendant » sans brancher son véhicule, ou pire, alors qu'elle est déjà réservée par quelqu'un dans l'appli, prive un autre conducteur d'un accès qu'il attendait légitimement.",
+          },
+          { type: "h2", text: "Ranger le câble après usage" },
+          {
+            type: "p",
+            text: "Un câble laissé au sol ou enroulé n'importe comment gêne le prochain utilisateur, abîme prématurément la gaine et représente un risque de chute pour les piétons. Le remettre sur son support, quand la borne en a un, prend quelques secondes et évite ces désagréments.",
+          },
+          { type: "h2", text: "Ne pas débrancher le véhicule d'un autre conducteur" },
+          {
+            type: "p",
+            text: "Même si une voiture semble avoir fini de charger, débrancher le câble à la place de son propriétaire reste risqué : la charge peut être en pause, ou le conducteur peut revenir d'un instant à l'autre. Mieux vaut vérifier le statut affiché sur la borne ou dans l'application, et contacter l'opérateur en cas de doute plutôt que d'agir soi-même.",
+          },
+          { type: "h2", text: "Signaler une borne en panne plutôt que de la laisser occupée" },
+          {
+            type: "p",
+            text: "Une borne défectueuse mais toujours branchée à un véhicule peut faire perdre du temps à plusieurs personnes avant d'être repérée. Signaler le problème via l'application ou le numéro affiché sur la borne aide l'opérateur à intervenir plus vite, et évite que d'autres conducteurs ne perdent du temps à essayer de l'utiliser.",
+          },
+          { type: "h3", text: "Les bons réflexes en résumé" },
+          {
+            type: "ul",
+            items: [
+              "Déplacer son véhicule dès la fin de charge, surtout aux heures d'affluence.",
+              "Débrancher autour de 80 % sur une borne rapide très demandée s'il y a une file d'attente.",
+              "Respecter l'ordre d'arrivée ou la réservation, sans occuper une place sans y charger.",
+              "Ranger le câble sur son support après usage.",
+              "Ne jamais débrancher le véhicule d'un autre conducteur sans certitude.",
+              "Signaler une borne en panne via l'application plutôt que de la laisser telle quelle.",
+            ],
+          },
+          { type: "h2", text: "Une courtoisie qui ne dépend d'aucune frontière" },
+          {
+            type: "p",
+            text: "Ces habitudes ne reposent sur aucune réglementation particulière : elles fonctionnent aussi bien sur un réseau français, allemand, espagnol qu'américain, parce qu'elles répondent à un problème universel, celui de se partager un nombre limité de bornes. Les adopter, c'est réduire l'attente pour soi-même autant que pour les autres.",
+          },
+        ],
+        faq: [
+          { question: "Combien de temps peut-on laisser sa voiture branchée après la fin de la charge ?", answer: "Le plus tôt possible, idéalement dans les minutes qui suivent la notification de fin de charge, surtout si la borne est très fréquentée ou qu'une file d'attente s'est formée." },
+          { question: "Faut-il charger jusqu'à 100 % sur une borne rapide ?", answer: "Ce n'est pas nécessaire dans la plupart des cas : au-delà de 80 %, la vitesse de charge ralentit fortement, donc débrancher à ce seuil libère la place plus vite pour un gain de temps de trajet minime." },
+          { question: "Peut-on débrancher la voiture de quelqu'un d'autre si elle semble avoir fini de charger ?", answer: "Mieux vaut éviter : la charge peut être simplement en pause, et le conducteur peut revenir à tout moment. Vérifier le statut sur l'application ou contacter l'opérateur est plus sûr." },
+          { question: "Que faire si une borne semble en panne ?", answer: "La signaler via l'application ou le numéro indiqué sur la borne, plutôt que de la laisser occupée ou d'insister à l'utiliser : cela permet à l'opérateur d'intervenir plus vite." },
+        ],
+        ...cta.fr,
+      },
+      en: {
+        eyebrow: "Practical Tips",
+        title: "EV Charging Etiquette: The Unwritten Rules Every Driver Should Know",
+        excerpt:
+          "How long to stay plugged in, whether to charge to 100%, where to put the cable: the habits that keep shared charging stations running smoothly, wherever you drive.",
+        metaTitle: "EV Charging Etiquette: The Rules Every Driver Should Know",
+        metaDescription:
+          "Plug-in time, charging past 80% at busy stations, cables, blocked spots: a guide to good manners at public EV chargers that applies in every country.",
+        body: [
+          {
+            type: "p",
+            text: "As more EVs hit the road, more drivers end up sharing the same charging bays. There's no official rulebook, just a handful of habits that keep the wait short for everyone, no matter where you plug in.",
+          },
+          { type: "h2", text: "Move your car as soon as charging is done" },
+          {
+            type: "p",
+            text: "A charging bay stays occupied as long as a car is plugged in, even once no current is flowing. At busy fast chargers, leaving your car in place \"just in case\" blocks the spot for someone else. Most apps send a charging-complete notification: the right move is to come back and move the car within a few minutes, not an hour later.",
+          },
+          { type: "h2", text: "Don't push to 100% on a busy fast charger" },
+          {
+            type: "p",
+            text: "On a DC fast charger, charging speed drops sharply past 80%, to protect the battery. Pushing to 100% can double or triple the time spent plugged in for a small gain in range. When a queue starts forming, unplugging around 80% frees up the spot faster, and any extra range can be topped up on a slower charger elsewhere.",
+          },
+          { type: "h2", text: "Respect arrival order, and don't park without charging" },
+          {
+            type: "p",
+            text: "Whether it's a physical queue or an app-based reservation, first-come-first-served is the most widely accepted rule. Parking in an open charging spot \"just for a moment\" without plugging in, or worse, when it's already reserved by someone else in the app, blocks a driver who was legitimately waiting for it.",
+          },
+          { type: "h2", text: "Coil the cable when you're done" },
+          {
+            type: "p",
+            text: "A cable left on the ground, or tangled up, gets in the way of the next driver, wears out faster, and can trip a passerby. Putting it back on its holster, when the station has one, takes a few seconds and avoids all of that.",
+          },
+          { type: "h2", text: "Don't unplug someone else's car" },
+          {
+            type: "p",
+            text: "Even if a car looks like it's done charging, unplugging it on someone else's behalf is risky: charging could just be paused, or the driver could be back any moment. It's safer to check the status shown on the charger or in the app, and contact the operator if in doubt, rather than acting on your own.",
+          },
+          { type: "h2", text: "Report a broken charger instead of leaving it occupied" },
+          {
+            type: "p",
+            text: "A faulty charger that's still plugged into a car can waste several drivers' time before anyone notices. Reporting it through the app or the number posted on the unit helps the operator step in faster, and saves other drivers from wasting time trying to use it.",
+          },
+          { type: "h3", text: "The key habits, at a glance" },
+          {
+            type: "ul",
+            items: [
+              "Move your car as soon as charging finishes, especially during busy hours.",
+              "Unplug around 80% on a busy fast charger if a queue is forming.",
+              "Respect arrival order or reservations, and don't occupy a spot without charging.",
+              "Coil the cable back onto its holster after use.",
+              "Never unplug someone else's car unless you're certain it's safe to.",
+              "Report a broken charger through the app rather than leaving it as is.",
+            ],
+          },
+          { type: "h2", text: "A courtesy that doesn't depend on any border" },
+          {
+            type: "p",
+            text: "None of these habits rely on a specific regulation: they work just as well on a French, German, Spanish, or American network, because they answer a universal problem, sharing a limited number of chargers. Following them cuts the wait for everyone, yourself included.",
+          },
+        ],
+        faq: [
+          { question: "How long can I leave my car plugged in after charging finishes?", answer: "As briefly as possible, ideally within a few minutes of the charging-complete notification, especially if the station is busy or a queue has formed." },
+          { question: "Should I charge to 100% on a fast charger?", answer: "Usually not necessary: past 80%, charging speed drops sharply, so unplugging at that point frees up the spot faster for a minimal difference in trip time." },
+          { question: "Can I unplug someone else's car if it looks done charging?", answer: "Better not to: charging could simply be paused, and the driver may be back any moment. Checking the status on the app or contacting the operator is the safer option." },
+          { question: "What should I do if a charger looks broken?", answer: "Report it through the app or the number listed on the unit rather than leaving it occupied or trying to force it to work: that lets the operator step in faster." },
+        ],
+        ...cta.en,
+      },
+      de: {
+        eyebrow: "Praktische Tipps",
+        title: "Ladeetikette: Die ungeschriebenen Regeln, die jeder E-Auto-Fahrer kennen sollte",
+        excerpt:
+          "Wie lange man angeschlossen bleibt, ob man auf 100 % lädt, wohin mit dem Kabel: die Gewohnheiten, die öffentliche Ladestationen für alle reibungslos halten, egal wo man unterwegs ist.",
+        metaTitle: "Ladeetikette: Die Regeln, die jeder E-Auto-Fahrer kennen sollte",
+        metaDescription:
+          "Standzeit an der Ladesäule, Laden über 80 % bei viel Andrang, Kabel, blockierte Plätze: der Leitfaden für gutes Benehmen an öffentlichen Ladestationen, überall gültig.",
+        body: [
+          {
+            type: "p",
+            text: "Je mehr Elektroautos unterwegs sind, desto mehr Fahrerinnen und Fahrer teilen sich dieselben Ladeplätze. Ein offizielles Regelwerk gibt es nicht, nur eine Handvoll Gewohnheiten, die die Wartezeit für alle kurz halten, egal wo man ansteckt.",
+          },
+          { type: "h2", text: "Das Auto wegfahren, sobald der Ladevorgang beendet ist" },
+          {
+            type: "p",
+            text: "Ein Ladeplatz bleibt belegt, solange ein Auto angeschlossen ist, auch wenn längst kein Strom mehr fließt. An gut besuchten Schnellladern blockiert man mit dem Auto „vorsichtshalber” einen Platz für jemand anderen. Die meisten Apps schicken eine Benachrichtigung, wenn der Ladevorgang beendet ist: Der richtige Reflex ist, das Auto innerhalb weniger Minuten wegzufahren, nicht erst nach einer Stunde.",
+          },
+          { type: "h2", text: "An stark frequentierten Schnellladern nicht auf 100 % laden" },
+          {
+            type: "p",
+            text: "An einer Gleichstrom-Schnellladesäule sinkt die Ladegeschwindigkeit ab etwa 80 % deutlich, um die Batterie zu schonen. Bis auf 100 % zu laden kann die Standzeit verdoppeln oder verdreifachen, für einen im Vergleich geringen Reichweitengewinn. Bildet sich eine Warteschlange, gibt das Abstecken bei etwa 80 % den Platz schneller frei, den Rest kann man später an einer langsameren Ladestation nachladen.",
+          },
+          { type: "h2", text: "Die Reihenfolge respektieren und nicht ohne zu laden parken" },
+          {
+            type: "p",
+            text: "Ob physische Warteschlange oder Reservierung per App, wer zuerst da ist, wird zuerst bedient, das ist die am weitesten anerkannte Regel. Einen freien Ladeplatz „nur kurz” ohne anzuschließen zu belegen, oder schlimmer, obwohl er bereits über die App reserviert ist, blockiert jemanden, der eigentlich zu Recht darauf gewartet hat.",
+          },
+          { type: "h2", text: "Das Kabel nach der Nutzung ordentlich verstauen" },
+          {
+            type: "p",
+            text: "Ein auf dem Boden liegendes oder wirr aufgewickeltes Kabel behindert die nächste Person, verschleißt schneller und kann für Fußgänger zur Stolperfalle werden. Es nach der Nutzung an seine Halterung zurückzuhängen, sofern die Säule eine hat, dauert nur Sekunden und erspart all das.",
+          },
+          { type: "h2", text: "Nicht das Auto einer anderen Person abstecken" },
+          {
+            type: "p",
+            text: "Auch wenn ein Auto fertig geladen zu sein scheint, ist es riskant, es an jemandes Stelle abzustecken: Der Ladevorgang könnte einfach pausiert sein, und der Fahrer oder die Fahrerin könnte jeden Moment zurückkommen. Sicherer ist es, den Status an der Säule oder in der App zu prüfen und im Zweifel den Betreiber zu kontaktieren, statt selbst zu handeln.",
+          },
+          { type: "h2", text: "Eine defekte Ladesäule melden, statt sie belegt zu lassen" },
+          {
+            type: "p",
+            text: "Eine defekte, aber noch an ein Auto angeschlossene Ladesäule kann mehrere Personen Zeit kosten, bevor das Problem auffällt. Es über die App oder die auf der Säule angegebene Nummer zu melden, hilft dem Betreiber, schneller einzugreifen, und erspart anderen Fahrern den vergeblichen Versuch, sie zu nutzen.",
+          },
+          { type: "h3", text: "Die wichtigsten Gewohnheiten im Überblick" },
+          {
+            type: "ul",
+            items: [
+              "Das Auto wegfahren, sobald der Ladevorgang beendet ist, besonders zu Stoßzeiten.",
+              "An stark frequentierten Schnellladern bei etwa 80 % abstecken, wenn sich eine Warteschlange bildet.",
+              "Die Reihenfolge oder Reservierungen respektieren und keinen Platz ohne zu laden belegen.",
+              "Das Kabel nach der Nutzung an seine Halterung zurückhängen.",
+              "Nie das Auto einer anderen Person abstecken, außer man ist sich sicher.",
+              "Eine defekte Ladesäule über die App melden, statt sie so zu belassen.",
+            ],
+          },
+          { type: "h2", text: "Eine Höflichkeit ohne Landesgrenzen" },
+          {
+            type: "p",
+            text: "Keine dieser Gewohnheiten beruht auf einer bestimmten Vorschrift: Sie funktionieren an einem französischen, deutschen, spanischen oder amerikanischen Ladenetz gleichermaßen, weil sie ein universelles Problem lösen, sich eine begrenzte Zahl an Ladesäulen zu teilen. Sie zu befolgen, verkürzt die Wartezeit für alle, auch für einen selbst.",
+          },
+        ],
+        faq: [
+          { question: "Wie lange darf ich mein Auto nach dem Ladevorgang angeschlossen lassen?", answer: "So kurz wie möglich, idealerweise innerhalb weniger Minuten nach der Benachrichtigung über das Ladeende, besonders wenn die Station stark frequentiert ist oder sich eine Warteschlange bildet." },
+          { question: "Sollte ich an einer Schnellladesäule auf 100 % laden?", answer: "Meist nicht nötig: Ab etwa 80 % sinkt die Ladegeschwindigkeit deutlich, daher gibt das Abstecken an diesem Punkt den Platz schneller frei, bei nur geringem Unterschied für die Fahrtzeit." },
+          { question: "Darf ich das Auto einer anderen Person abstecken, wenn es fertig geladen aussieht?", answer: "Besser nicht: Der Ladevorgang könnte einfach pausiert sein, und die Person könnte jeden Moment zurückkommen. Den Status in der App zu prüfen oder den Betreiber zu kontaktieren ist die sicherere Option." },
+          { question: "Was tun, wenn eine Ladesäule defekt zu sein scheint?", answer: "Über die App oder die auf der Säule angegebene Nummer melden, statt sie belegt zu lassen oder es weiter zu versuchen: So kann der Betreiber schneller eingreifen." },
+        ],
+        ...cta.de,
+      },
+      es: {
+        eyebrow: "Consejos prácticos",
+        title: "Etiqueta de la recarga pública: las reglas no escritas que todo conductor debería conocer",
+        excerpt:
+          "Cuánto tiempo quedarse enchufado, si cargar hasta el 100 %, dónde dejar el cable: los hábitos que mantienen los puntos de recarga compartidos funcionando bien, estés donde estés.",
+        metaTitle: "Etiqueta de la recarga pública: las reglas que hay que conocer",
+        metaDescription:
+          "Tiempo enchufado, cargar más allá del 80 % en horas punta, cables, plazas ocupadas sin cargar: la guía de buenas prácticas en los puntos de recarga públicos, válida en cualquier país.",
+        body: [
+          {
+            type: "p",
+            text: "A medida que crece el número de coches eléctricos en la carretera, más conductores acaban compartiendo los mismos puntos de recarga. No existe un reglamento oficial, solo un puñado de hábitos que mantienen la espera corta para todos, sea cual sea el país donde enchufes.",
+          },
+          { type: "h2", text: "Mover el coche en cuanto termine la carga" },
+          {
+            type: "p",
+            text: "Un punto de recarga sigue ocupado mientras el coche esté enchufado, aunque ya no pase corriente. En los cargadores rápidos con más demanda, dejar el coche aparcado «por si acaso» bloquea la plaza para otra persona. La mayoría de las aplicaciones envían una notificación cuando la carga termina: lo correcto es volver a mover el coche en los minutos siguientes, no una hora después.",
+          },
+          { type: "h2", text: "No apurar hasta el 100 % en un cargador rápido muy solicitado" },
+          {
+            type: "p",
+            text: "En un cargador de corriente continua, la velocidad de carga se reduce mucho a partir del 80 %, para proteger la batería. Llegar hasta el 100 % puede duplicar o triplicar el tiempo enchufado, por una ganancia de autonomía pequeña en comparación. Cuando empieza a formarse una cola, desenchufar en torno al 80 % libera la plaza antes, y el resto se puede completar en un cargador más lento en otro momento.",
+          },
+          { type: "h2", text: "Respetar el orden de llegada, sin aparcar sin cargar" },
+          {
+            type: "p",
+            text: "Ya sea con una cola física o una reserva por aplicación, el orden de llegada es la regla más aceptada. Aparcar en una plaza de recarga libre «solo un momento» sin enchufar el coche, o peor, cuando ya está reservada por otra persona en la app, deja sin acceso a alguien que la esperaba legítimamente.",
+          },
+          { type: "h2", text: "Recoger el cable después de usarlo" },
+          {
+            type: "p",
+            text: "Un cable tirado en el suelo o mal enrollado estorba al siguiente usuario, se desgasta antes y puede hacer tropezar a los peatones. Devolverlo a su soporte, cuando el punto de recarga tiene uno, lleva solo unos segundos y evita todo esto.",
+          },
+          { type: "h2", text: "No desenchufar el coche de otra persona" },
+          {
+            type: "p",
+            text: "Aunque un coche parezca haber terminado de cargar, desenchufarlo en lugar de su propietario es arriesgado: la carga podría estar simplemente en pausa, y el conductor podría volver en cualquier momento. Es más seguro comprobar el estado en el punto de recarga o en la app, y contactar con el operador si hay dudas, en lugar de actuar por cuenta propia.",
+          },
+          { type: "h2", text: "Avisar de un punto de recarga averiado en vez de dejarlo ocupado" },
+          {
+            type: "p",
+            text: "Un cargador averiado pero todavía enchufado a un coche puede hacer perder tiempo a varias personas antes de que se detecte el problema. Notificarlo a través de la app o del número indicado en el equipo ayuda al operador a intervenir antes, y evita que otros conductores pierdan el tiempo intentando usarlo.",
+          },
+          { type: "h3", text: "Los hábitos clave, de un vistazo" },
+          {
+            type: "ul",
+            items: [
+              "Mover el coche en cuanto termine la carga, sobre todo en horas de más afluencia.",
+              "Desenchufar en torno al 80 % en un cargador rápido muy solicitado si se está formando una cola.",
+              "Respetar el orden de llegada o las reservas, y no ocupar una plaza sin cargar.",
+              "Recoger el cable y devolverlo a su soporte después de usarlo.",
+              "No desenchufar nunca el coche de otra persona salvo que sea evidente que se puede.",
+              "Avisar de un punto de recarga averiado a través de la app en vez de dejarlo tal cual.",
+            ],
+          },
+          { type: "h2", text: "Una cortesía que no depende de ninguna frontera" },
+          {
+            type: "p",
+            text: "Ninguno de estos hábitos depende de una normativa concreta: funcionan igual de bien en una red francesa, alemana, española o estadounidense, porque responden a un problema universal, compartir un número limitado de puntos de recarga. Seguirlos reduce la espera para todos, empezando por uno mismo.",
+          },
+        ],
+        faq: [
+          { question: "¿Cuánto tiempo puedo dejar el coche enchufado después de que termine la carga?", answer: "El menor tiempo posible, idealmente en los minutos siguientes a la notificación de fin de carga, sobre todo si el punto de recarga tiene mucha afluencia o se ha formado una cola." },
+          { question: "¿Debo cargar hasta el 100 % en un cargador rápido?", answer: "Normalmente no hace falta: a partir del 80 % la velocidad de carga baja mucho, así que desenchufar en ese punto libera la plaza antes, con una diferencia mínima en el tiempo de viaje." },
+          { question: "¿Puedo desenchufar el coche de otra persona si parece haber terminado de cargar?", answer: "Mejor evitarlo: la carga podría estar simplemente en pausa, y el conductor podría volver en cualquier momento. Comprobar el estado en la app o contactar con el operador es la opción más segura." },
+          { question: "¿Qué hacer si un punto de recarga parece averiado?", answer: "Notificarlo a través de la app o del número indicado en el equipo, en lugar de dejarlo ocupado o insistir en usarlo: así el operador puede intervenir antes." },
+        ],
+        ...cta.es,
+      },
+    },
+  },
 ];
