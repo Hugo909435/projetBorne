@@ -4794,4 +4794,300 @@ export const blogPosts: BlogPost[] = [
       },
     },
   },
+  {
+    slug: "anxiete-autonomie-voiture-electrique",
+    publishedAt: "2026-09-14",
+    image: {
+      src: "/blog/anxiete-autonomie-voiture-electrique.jpg",
+      alt: {
+        fr: "Tableau de bord d'une voiture électrique affichant l'indicateur de charge de la batterie au maximum",
+        en: "Electric car dashboard showing the battery charge indicator at full",
+        de: "Armaturenbrett eines Elektroautos mit voll aufgeladener Batterieanzeige",
+        es: "Salpicadero de un coche eléctrico con el indicador de batería a carga completa",
+      },
+      credit: {
+        name: "Kiwiev",
+        url: "https://commons.wikimedia.org/wiki/File:Battery_indicator_on_a_Nissan_Leaf.JPG",
+        license: "CC0",
+      },
+    },
+    content: {
+      fr: {
+        eyebrow: "Conseils pratiques",
+        title: "Anxiété de l'autonomie : comment la surmonter et rouler sans stress",
+        excerpt:
+          "Peur de tomber en panne, marge de sécurité, applications de planification : les réflexes qui font disparaître l'anxiété de l'autonomie, quelle que soit la voiture ou le pays.",
+        metaTitle: "Anxiété de l'autonomie : comment la surmonter",
+        metaDescription:
+          "Marge de sécurité, planification d'itinéraire, autonomie réelle : le guide pour vaincre l'anxiété de l'autonomie et rouler en voiture électrique sans stress, où que vous soyez.",
+        body: [
+          {
+            type: "p",
+            text: "L'anxiété de l'autonomie, cette crainte de tomber en panne de batterie avant d'arriver à destination, reste le premier frein cité par les automobilistes qui hésitent à passer à l'électrique. Elle touche des conducteurs en France, en Allemagne, en Espagne ou ailleurs de la même façon, et elle se dissout presque toujours avec quelques habitudes simples.",
+          },
+          { type: "h2", text: "D'où vient vraiment cette peur" },
+          {
+            type: "p",
+            text: "Elle vient rarement d'un vrai manque d'autonomie et presque toujours d'un manque de repères. Avec un moteur thermique, des décennies d'expérience et un réseau de stations-service dense rendent le calcul instinctif. Avec l'électrique, le conducteur découvre un nouveau vocabulaire (kWh, courbe de charge, autonomie WLTP) et un réseau encore inégal selon les zones, ce qui suffit à créer un sentiment d'incertitude, même quand l'autonomie réelle du véhicule couvre largement le trajet prévu.",
+          },
+          { type: "h2", text: "Garder une marge de sécurité, toujours" },
+          {
+            type: "p",
+            text: "La règle la plus simple reste la plus efficace : ne jamais planifier un trajet en comptant arriver avec moins de 15 à 20 % de batterie. Cette marge absorbe les imprévus (déviation, vent de face, chauffage ou climatisation, autoroute plutôt que route) sans jamais transformer une estimation optimiste en panne réelle. Elle doit être encore plus large en hiver, quand le froid réduit l'autonomie de 15 à 30 % selon les modèles.",
+          },
+          { type: "h2", text: "S'appuyer sur une application de planification d'itinéraire" },
+          {
+            type: "p",
+            text: "Des outils comme A Better Route Planner, PlugShare ou la navigation intégrée de nombreux véhicules récents calculent automatiquement les arrêts de recharge nécessaires en tenant compte du dénivelé, de la météo et de la vitesse prévue, quel que soit le pays traversé. Croiser ces applications avec une carte des bornes disponibles en temps réel permet de visualiser d'un coup d'œil les options de repli si un arrêt prévu est occupé ou hors service.",
+          },
+          { type: "h2", text: "Changer de logique : recharger souvent, pas seulement quand c'est vide" },
+          {
+            type: "p",
+            text: "Le réflexe hérité du plein d'essence, attendre que le réservoir soit presque vide, ne s'applique pas à l'électrique. Brancher sa voiture chaque fois que l'occasion se présente (au travail, en faisant les courses, une nuit sur deux à domicile) maintient une batterie presque toujours à un niveau confortable, et rend chaque trajet imprévu beaucoup moins stressant qu'en partant d'un réservoir proche de zéro.",
+          },
+          { type: "h2", text: "Connaître l'autonomie réelle de sa voiture, pas celle du catalogue" },
+          {
+            type: "p",
+            text: "Le chiffre d'autonomie affiché à l'achat correspond à un cycle de test standardisé, rarement représentatif d'un usage réel. La vitesse sur autoroute, le froid, le vent et le poids embarqué peuvent faire chuter cette autonomie de 20 à 40 %. Observer sa consommation réelle sur ses trajets habituels pendant les premières semaines donne un chiffre bien plus fiable que celui du constructeur pour planifier n'importe quel trajet plus long.",
+          },
+          { type: "h2", text: "Repérer ses bornes de secours avant d'en avoir besoin" },
+          {
+            type: "p",
+            text: "Identifier à l'avance deux ou trois bornes fiables sur son trajet quotidien ou sa zone habituelle, plutôt que de les chercher au moment où la batterie s'affole, retire une bonne partie du stress. Ce repérage, fait une seule fois au calme, transforme un imprévu en simple détour connu d'avance.",
+          },
+          { type: "h3", text: "Les réflexes anti-anxiété en résumé" },
+          {
+            type: "ul",
+            items: [
+              "Ne jamais planifier un trajet avec moins de 15 à 20 % de marge à l'arrivée.",
+              "Utiliser une application de planification d'itinéraire pour les longs trajets.",
+              "Recharger dès que l'occasion se présente, sans attendre que la batterie soit vide.",
+              "Se fier à sa consommation réelle observée plutôt qu'au chiffre du constructeur.",
+              "Repérer à l'avance deux ou trois bornes de secours sur son trajet habituel.",
+              "Élargir sa marge de sécurité en hiver ou par mauvais temps.",
+            ],
+          },
+          { type: "h2", text: "Une peur qui s'efface avec les kilomètres" },
+          {
+            type: "p",
+            text: "Plusieurs enquêtes menées auprès de conducteurs de voitures électriques, dans des pays aux réseaux de recharge très différents, montrent le même schéma : l'anxiété de l'autonomie est la plus forte avant l'achat et dans les toutes premières semaines, puis recule fortement une fois que les repères se mettent en place. Ce n'est pas la voiture qui change, mais la connaissance qu'on en a.",
+          },
+        ],
+        faq: [
+          { question: "Qu'est-ce que l'anxiété de l'autonomie ?", answer: "C'est la crainte de tomber en panne de batterie avant d'arriver à destination ou avant de trouver une borne de recharge. Elle touche surtout les nouveaux conducteurs de voitures électriques et diminue nettement avec l'expérience." },
+          { question: "Quelle marge de sécurité faut-il garder sur un trajet ?", answer: "Entre 15 et 20 % de batterie à l'arrivée dans des conditions normales, et davantage en hiver ou par mauvais temps, pour absorber les imprévus sans risque de panne." },
+          { question: "Pourquoi l'autonomie réelle est-elle différente de celle annoncée ?", answer: "L'autonomie affichée vient d'un cycle de test standardisé. La vitesse sur autoroute, le froid, le vent et la charge du véhicule peuvent la réduire de 20 à 40 % en usage réel." },
+          { question: "L'anxiété de l'autonomie disparaît-elle avec le temps ?", answer: "Oui, dans la grande majorité des cas. Les enquêtes montrent qu'elle est la plus forte avant l'achat et dans les premières semaines, puis recule fortement une fois que le conducteur connaît bien l'autonomie réelle de son véhicule et son réseau de recharge habituel." },
+        ],
+        ...cta.fr,
+      },
+      en: {
+        eyebrow: "Practical Tips",
+        title: "Range Anxiety: How to Overcome It and Drive Stress-Free",
+        excerpt:
+          "Fear of running out of charge, safety margins, route-planning apps: the habits that make range anxiety disappear, whatever car you drive or country you're in.",
+        metaTitle: "Range Anxiety: How to Overcome It",
+        metaDescription:
+          "Safety margins, route planning, real-world range: the guide to beating range anxiety and driving an electric car stress-free, wherever you are.",
+        body: [
+          {
+            type: "p",
+            text: "Range anxiety, the fear of running out of battery before reaching a destination, is the number one reason drivers cite for hesitating to go electric. It affects drivers in the US, the UK, Germany, or anywhere else in much the same way, and it almost always fades with a handful of simple habits.",
+          },
+          { type: "h2", text: "Where the fear actually comes from" },
+          {
+            type: "p",
+            text: "It rarely comes from a genuine lack of range and almost always from a lack of reference points. With a gas engine, decades of experience and a dense network of gas stations make the math instinctive. With an EV, drivers face a new vocabulary (kWh, charging curves, WLTP range) and a charging network that's still uneven from one area to the next, which is enough to create a sense of uncertainty even when the car's real range comfortably covers the planned trip.",
+          },
+          { type: "h2", text: "Always keep a safety margin" },
+          {
+            type: "p",
+            text: "The simplest rule remains the most effective one: never plan a trip expecting to arrive with less than 15 to 20% battery left. That margin absorbs the unexpected (a detour, headwind, heating or air conditioning, a motorway instead of back roads) without ever turning an optimistic estimate into an actual breakdown. Widen that margin further in winter, when cold weather can cut range by 15 to 30% depending on the model.",
+          },
+          { type: "h2", text: "Lean on a route-planning app" },
+          {
+            type: "p",
+            text: "Tools like A Better Route Planner, PlugShare, or the built-in navigation on many recent EVs automatically calculate the charging stops a trip needs, factoring in elevation, weather, and expected speed, regardless of the country. Cross-referencing these apps with a live map of available chargers makes it easy to spot backup options at a glance if a planned stop turns out to be busy or out of service.",
+          },
+          { type: "h2", text: "Shift the mindset: top up often, don't wait until empty" },
+          {
+            type: "p",
+            text: "The habit carried over from filling a gas tank, waiting until it's nearly empty, doesn't translate well to EVs. Plugging in whenever the chance arises (at work, while running errands, every other night at home) keeps the battery at a comfortable level most of the time, and makes any unplanned trip far less stressful than starting from a near-empty tank ever was.",
+          },
+          { type: "h2", text: "Know your car's real range, not the brochure figure" },
+          {
+            type: "p",
+            text: "The range figure quoted at purchase comes from a standardized test cycle that rarely matches real-world driving. Motorway speeds, cold weather, wind, and a loaded car can cut that range by 20 to 40%. Tracking actual consumption on regular routes for the first few weeks gives a far more reliable number than the manufacturer's figure for planning any longer trip.",
+          },
+          { type: "h2", text: "Scout backup chargers before you ever need them" },
+          {
+            type: "p",
+            text: "Identifying two or three reliable chargers along a daily commute or home area ahead of time, rather than searching for one the moment the battery gauge starts dropping fast, removes a good chunk of the stress. Doing this scouting once, calmly, turns an unexpected situation into a detour you already know.",
+          },
+          { type: "h3", text: "The anti-anxiety habits, at a glance" },
+          {
+            type: "ul",
+            items: [
+              "Never plan a trip with less than a 15 to 20% margin left on arrival.",
+              "Use a route-planning app for longer trips.",
+              "Plug in whenever the chance arises, without waiting for the battery to run low.",
+              "Trust your observed real-world consumption over the manufacturer's figure.",
+              "Scout two or three backup chargers along your usual routes ahead of time.",
+              "Widen your safety margin in winter or bad weather.",
+            ],
+          },
+          { type: "h2", text: "A fear that fades with the miles" },
+          {
+            type: "p",
+            text: "Several surveys of EV drivers, across countries with very different charging networks, show the same pattern: range anxiety peaks before purchase and in the very first weeks, then drops sharply once the driver builds up the right reference points. It isn't the car that changes, it's the familiarity with it.",
+          },
+        ],
+        faq: [
+          { question: "What is range anxiety?", answer: "It's the fear of running out of battery before reaching a destination or finding a charger. It mostly affects new EV drivers and fades noticeably with experience." },
+          { question: "What safety margin should I keep on a trip?", answer: "Between 15 and 20% battery on arrival under normal conditions, and more in winter or bad weather, to absorb the unexpected without any real risk of running out." },
+          { question: "Why is real-world range different from the advertised figure?", answer: "The advertised figure comes from a standardized test cycle. Motorway speeds, cold weather, wind, and vehicle load can cut it by 20 to 40% in real-world driving." },
+          { question: "Does range anxiety go away over time?", answer: "Yes, in the vast majority of cases. Surveys show it peaks before purchase and in the first few weeks, then drops sharply once the driver knows their car's real range and their usual charging network well." },
+        ],
+        ...cta.en,
+      },
+      de: {
+        eyebrow: "Praktische Tipps",
+        title: "Reichweitenangst: So überwinden Sie sie und fahren stressfrei",
+        excerpt:
+          "Angst, mit leerer Batterie liegenzubleiben, Sicherheitsreserve, Routenplaner-Apps: die Gewohnheiten, die Reichweitenangst verschwinden lassen, egal welches Auto und welches Land.",
+        metaTitle: "Reichweitenangst: So überwinden Sie sie",
+        metaDescription:
+          "Sicherheitsreserve, Routenplanung, reale Reichweite: der Leitfaden gegen Reichweitenangst, damit Elektroauto-Fahren überall stressfrei bleibt.",
+        body: [
+          {
+            type: "p",
+            text: "Reichweitenangst, die Sorge, vor dem Ziel mit leerer Batterie liegenzubleiben, ist der meistgenannte Grund, warum Autofahrer vor dem Umstieg auf Elektro zögern. Sie betrifft Fahrerinnen und Fahrer in Deutschland, Österreich, der Schweiz oder anderswo auf dieselbe Weise, und sie verschwindet fast immer mit ein paar einfachen Gewohnheiten.",
+          },
+          { type: "h2", text: "Woher die Angst wirklich kommt" },
+          {
+            type: "p",
+            text: "Sie entsteht selten aus echtem Reichweitenmangel und fast immer aus fehlenden Erfahrungswerten. Bei einem Verbrenner machen jahrzehntelange Erfahrung und ein dichtes Tankstellennetz die Rechnung zur Routine. Beim Elektroauto begegnen Fahrer einem neuen Vokabular (kWh, Ladekurve, WLTP-Reichweite) und einem Ladenetz, das von Region zu Region noch ungleich ausgebaut ist, was schon reicht, um Unsicherheit zu erzeugen, selbst wenn die reale Reichweite die geplante Strecke locker abdeckt.",
+          },
+          { type: "h2", text: "Immer eine Sicherheitsreserve einplanen" },
+          {
+            type: "p",
+            text: "Die einfachste Regel bleibt die wirksamste: Eine Fahrt nie so planen, dass man mit weniger als 15 bis 20 % Batterie ankommt. Diese Reserve fängt Unvorhergesehenes ab (Umleitung, Gegenwind, Heizung oder Klimaanlage, Autobahn statt Landstraße), ohne dass aus einer optimistischen Schätzung je eine echte Panne wird. Im Winter sollte die Reserve noch größer sein, wenn Kälte die Reichweite je nach Modell um 15 bis 30 % senkt.",
+          },
+          { type: "h2", text: "Auf eine Routenplaner-App setzen" },
+          {
+            type: "p",
+            text: "Werkzeuge wie A Better Route Planner, PlugShare oder die eingebaute Navigation vieler neuerer Elektroautos berechnen automatisch die nötigen Ladestopps und berücksichtigen dabei Höhenprofil, Wetter und erwartete Geschwindigkeit, unabhängig vom Land. Diese Apps mit einer Live-Karte verfügbarer Ladesäulen zu kombinieren, zeigt auf einen Blick Ausweichmöglichkeiten, falls ein geplanter Stopp belegt oder außer Betrieb ist.",
+          },
+          { type: "h2", text: "Umdenken: oft nachladen, nicht erst bei leerer Batterie" },
+          {
+            type: "p",
+            text: "Die vom Tanken übernommene Gewohnheit, zu warten, bis der Tank fast leer ist, passt nicht zum Elektroauto. Immer dann anzustecken, wenn sich die Gelegenheit bietet (bei der Arbeit, beim Einkaufen, jede zweite Nacht zu Hause), hält die Batterie meist auf einem komfortablen Niveau und macht jede spontane Fahrt deutlich weniger stressig, als es mit einem fast leeren Tank je der Fall war.",
+          },
+          { type: "h2", text: "Die reale Reichweite kennen, nicht die aus dem Prospekt" },
+          {
+            type: "p",
+            text: "Die beim Kauf angegebene Reichweite stammt aus einem standardisierten Testzyklus, der selten dem realen Fahralltag entspricht. Autobahntempo, Kälte, Wind und Zuladung können diese Reichweite um 20 bis 40 % senken. Wer in den ersten Wochen den tatsächlichen Verbrauch auf gewohnten Strecken beobachtet, erhält einen deutlich verlässlicheren Wert als den Herstellerangabe, um längere Fahrten zu planen.",
+          },
+          { type: "h2", text: "Ausweich-Ladesäulen kennen, bevor man sie braucht" },
+          {
+            type: "p",
+            text: "Zwei oder drei zuverlässige Ladesäulen entlang der täglichen Pendelstrecke oder im Wohnumfeld vorab zu kennen, statt erst danach zu suchen, wenn die Batterieanzeige schnell fällt, nimmt einen großen Teil des Stresses. Diese einmalige, entspannte Recherche macht aus einer unerwarteten Situation nur einen bereits bekannten Umweg.",
+          },
+          { type: "h3", text: "Die Anti-Angst-Gewohnheiten im Überblick" },
+          {
+            type: "ul",
+            items: [
+              "Eine Fahrt nie mit weniger als 15 bis 20 % Reserve bei Ankunft planen.",
+              "Für längere Fahrten eine Routenplaner-App nutzen.",
+              "Anstecken, sobald sich die Gelegenheit bietet, statt auf eine fast leere Batterie zu warten.",
+              "Sich auf den selbst beobachteten Verbrauch verlassen statt auf die Herstellerangabe.",
+              "Vorab zwei oder drei Ausweich-Ladesäulen entlang der gewohnten Strecken kennen.",
+              "Die Sicherheitsreserve im Winter oder bei schlechtem Wetter vergrößern.",
+            ],
+          },
+          { type: "h2", text: "Eine Angst, die mit den Kilometern schwindet" },
+          {
+            type: "p",
+            text: "Mehrere Umfragen unter Elektroauto-Fahrern, in Ländern mit sehr unterschiedlichen Ladenetzen, zeigen dasselbe Muster: Die Reichweitenangst ist vor dem Kauf und in den ersten Wochen am stärksten und geht danach deutlich zurück, sobald die richtigen Erfahrungswerte da sind. Nicht das Auto verändert sich, sondern die Vertrautheit damit.",
+          },
+        ],
+        faq: [
+          { question: "Was ist Reichweitenangst?", answer: "Die Sorge, vor dem Ziel oder vor Erreichen einer Ladestation mit leerer Batterie liegenzubleiben. Sie betrifft vor allem neue Elektroauto-Fahrer und lässt mit der Erfahrung deutlich nach." },
+          { question: "Welche Sicherheitsreserve sollte man bei einer Fahrt einplanen?", answer: "Unter normalen Bedingungen 15 bis 20 % Batterie bei Ankunft, im Winter oder bei schlechtem Wetter mehr, um Unvorhergesehenes ohne echtes Panne-Risiko abzufangen." },
+          { question: "Warum weicht die reale Reichweite von der angegebenen ab?", answer: "Die angegebene Reichweite stammt aus einem standardisierten Testzyklus. Autobahntempo, Kälte, Wind und Zuladung können sie im Alltag um 20 bis 40 % senken." },
+          { question: "Verschwindet Reichweitenangst mit der Zeit?", answer: "Ja, in den allermeisten Fällen. Umfragen zeigen, dass sie vor dem Kauf und in den ersten Wochen am stärksten ist und danach deutlich zurückgeht, sobald der Fahrer die reale Reichweite seines Autos und sein gewohntes Ladenetz gut kennt." },
+        ],
+        ...cta.de,
+      },
+      es: {
+        eyebrow: "Consejos prácticos",
+        title: "Ansiedad por la autonomía: cómo superarla y conducir sin estrés",
+        excerpt:
+          "Miedo a quedarse sin batería, margen de seguridad, aplicaciones de planificación de ruta: los hábitos que hacen desaparecer la ansiedad por la autonomía, sea cual sea el coche o el país.",
+        metaTitle: "Ansiedad por la autonomía: cómo superarla",
+        metaDescription:
+          "Margen de seguridad, planificación de ruta, autonomía real: la guía para vencer la ansiedad por la autonomía y conducir un coche eléctrico sin estrés, estés donde estés.",
+        body: [
+          {
+            type: "p",
+            text: "La ansiedad por la autonomía, el miedo a quedarse sin batería antes de llegar al destino, es el primer motivo que citan los conductores que dudan en pasarse al eléctrico. Afecta por igual a conductores en España, México, Argentina o cualquier otro país, y casi siempre se disuelve con unos pocos hábitos sencillos.",
+          },
+          { type: "h2", text: "De dónde viene realmente este miedo" },
+          {
+            type: "p",
+            text: "Raramente viene de una falta real de autonomía, y casi siempre de una falta de referencias. Con un motor de combustión, décadas de experiencia y una red densa de gasolineras hacen que el cálculo sea instintivo. Con el eléctrico, el conductor descubre un vocabulario nuevo (kWh, curva de carga, autonomía WLTP) y una red de recarga todavía desigual según la zona, algo que basta para generar incertidumbre incluso cuando la autonomía real del coche cubre de sobra el trayecto previsto.",
+          },
+          { type: "h2", text: "Mantener siempre un margen de seguridad" },
+          {
+            type: "p",
+            text: "La regla más simple sigue siendo la más eficaz: no planificar nunca un trayecto contando con llegar con menos de un 15 a un 20 % de batería. Ese margen absorbe los imprevistos (un desvío, viento en contra, calefacción o aire acondicionado, autopista en vez de carretera) sin que una estimación optimista se convierta nunca en una avería real. Conviene ampliarlo todavía más en invierno, cuando el frío puede reducir la autonomía entre un 15 y un 30 % según el modelo.",
+          },
+          { type: "h2", text: "Apoyarse en una aplicación de planificación de ruta" },
+          {
+            type: "p",
+            text: "Herramientas como A Better Route Planner, PlugShare o la navegación integrada de muchos coches recientes calculan automáticamente las paradas de recarga necesarias teniendo en cuenta el desnivel, el clima y la velocidad prevista, sea cual sea el país por el que se circule. Cruzar estas aplicaciones con un mapa de puntos de recarga en tiempo real permite ver de un vistazo alternativas si una parada prevista está ocupada o averiada.",
+          },
+          { type: "h2", text: "Cambiar de lógica: recargar a menudo, no solo cuando se agota" },
+          {
+            type: "p",
+            text: "El hábito heredado del depósito de gasolina, esperar a que esté casi vacío, no se aplica bien al eléctrico. Enchufar el coche cada vez que surge la ocasión (en el trabajo, haciendo la compra, una noche sí y otra no en casa) mantiene la batería casi siempre en un nivel cómodo, y hace que cualquier trayecto imprevisto resulte mucho menos estresante que partir con un depósito casi vacío.",
+          },
+          { type: "h2", text: "Conocer la autonomía real del coche, no la del folleto" },
+          {
+            type: "p",
+            text: "La cifra de autonomía que se anuncia en la compra procede de un ciclo de prueba estandarizado, que rara vez coincide con el uso real. La velocidad en autopista, el frío, el viento y la carga del vehículo pueden reducir esa autonomía entre un 20 y un 40 %. Observar el consumo real en los trayectos habituales durante las primeras semanas da una cifra mucho más fiable que la del fabricante a la hora de planificar cualquier trayecto más largo.",
+          },
+          { type: "h2", text: "Localizar puntos de recarga de reserva antes de necesitarlos" },
+          {
+            type: "p",
+            text: "Identificar de antemano dos o tres puntos de recarga fiables en el trayecto diario o en la zona habitual, en lugar de buscarlos cuando la batería empieza a bajar deprisa, elimina buena parte del estrés. Hacer esta búsqueda una sola vez, con calma, convierte un imprevisto en un simple desvío ya conocido.",
+          },
+          { type: "h3", text: "Los hábitos anti-ansiedad, de un vistazo" },
+          {
+            type: "ul",
+            items: [
+              "No planificar nunca un trayecto con menos de un 15 a un 20 % de margen a la llegada.",
+              "Usar una aplicación de planificación de ruta en los trayectos largos.",
+              "Recargar cada vez que surja la ocasión, sin esperar a que la batería esté baja.",
+              "Confiar en el consumo real observado antes que en la cifra del fabricante.",
+              "Localizar de antemano dos o tres puntos de recarga de reserva en los trayectos habituales.",
+              "Ampliar el margen de seguridad en invierno o con mal tiempo.",
+            ],
+          },
+          { type: "h2", text: "Un miedo que se desvanece con los kilómetros" },
+          {
+            type: "p",
+            text: "Varias encuestas realizadas entre conductores de coches eléctricos, en países con redes de recarga muy distintas, muestran el mismo patrón: la ansiedad por la autonomía es más fuerte antes de la compra y en las primeras semanas, y luego retrocede claramente en cuanto el conductor adquiere las referencias adecuadas. No es el coche lo que cambia, sino el conocimiento que se tiene de él.",
+          },
+        ],
+        faq: [
+          { question: "¿Qué es la ansiedad por la autonomía?", answer: "Es el miedo a quedarse sin batería antes de llegar al destino o de encontrar un punto de recarga. Afecta sobre todo a los conductores nuevos de coches eléctricos y disminuye claramente con la experiencia." },
+          { question: "¿Qué margen de seguridad conviene mantener en un trayecto?", answer: "Entre un 15 y un 20 % de batería a la llegada en condiciones normales, y más en invierno o con mal tiempo, para absorber los imprevistos sin riesgo real de quedarse tirado." },
+          { question: "¿Por qué la autonomía real es distinta de la anunciada?", answer: "La cifra anunciada procede de un ciclo de prueba estandarizado. La velocidad en autopista, el frío, el viento y la carga del vehículo pueden reducirla entre un 20 y un 40 % en uso real." },
+          { question: "¿La ansiedad por la autonomía desaparece con el tiempo?", answer: "Sí, en la gran mayoría de los casos. Las encuestas muestran que es más fuerte antes de la compra y en las primeras semanas, y luego retrocede claramente en cuanto el conductor conoce bien la autonomía real de su coche y su red de recarga habitual." },
+        ],
+        ...cta.es,
+      },
+    },
+  },
 ];
