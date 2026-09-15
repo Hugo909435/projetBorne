@@ -5090,4 +5090,252 @@ export const blogPosts: BlogPost[] = [
       },
     },
   },
+  {
+    slug: "recharge-ac-dc-voiture-electrique",
+    publishedAt: "2026-09-15",
+    image: {
+      src: "/blog/recharge-ac-dc-voiture-electrique.jpg",
+      alt: {
+        fr: "Connecteur Type 2 (courant alternatif) et connecteur CCS Combo (courant continu) présentés côte à côte",
+        en: "A Type 2 (AC) connector and a CCS Combo (DC) connector shown side by side",
+        de: "Ein Typ-2-Stecker (Wechselstrom) und ein CCS-Combo-Stecker (Gleichstrom) nebeneinander",
+        es: "Un conector Tipo 2 (corriente alterna) y un conector CCS Combo (corriente continua) uno junto al otro",
+      },
+      credit: {
+        name: "Paul Sladen",
+        url: "https://commons.wikimedia.org/wiki/File:Iec-type2-ccs-combo2-and-iec-type2-charging-connectors-side-by-side.jpg",
+        license: "CC0 1.0",
+      },
+    },
+    content: {
+      fr: {
+        eyebrow: "Comprendre la recharge",
+        title: "Recharge AC ou DC : quelle différence, et laquelle vous faut-il ?",
+        excerpt:
+          "Courant alternatif ou courant continu, chargeur embarqué contre recharge directe de la batterie : ce qui explique vraiment l'écart entre une recharge lente et une recharge rapide, où que vous rouliez.",
+        metaTitle: "Recharge AC vs DC : la différence expliquée simplement",
+        metaDescription:
+          "Courant alternatif (AC) ou continu (DC), chargeur embarqué, vitesse réelle de charge, connecteurs : tout comprendre avant de choisir sa borne, dans n'importe quel pays.",
+        body: [
+          {
+            type: "p",
+            text: "AC, DC, kW affichés sur la borne mais vitesse de charge bien plus faible dans la pratique : ces sigles reviennent partout dès qu'on s'intéresse à la recharge, sans toujours être expliqués clairement. Comprendre la différence entre les deux permet surtout d'éviter deux erreurs fréquentes, payer pour une borne trop puissante pour son véhicule, ou s'étonner qu'une recharge dure bien plus longtemps que prévu.",
+          },
+          { type: "h2", text: "Le courant alternatif (AC) : la recharge du quotidien" },
+          {
+            type: "p",
+            text: "Une prise domestique, une borne murale à la maison ou au travail, la plupart des bornes de parking délivrent du courant alternatif. Ce courant ne peut pas remplir directement la batterie, qui fonctionne en courant continu : il passe d'abord par le chargeur embarqué du véhicule, un boîtier électronique qui le convertit. C'est ce chargeur embarqué, et non la borne, qui plafonne la puissance réellement reçue, le plus souvent entre 3,7 et 22 kW selon les véhicules.",
+          },
+          { type: "h2", text: "Le courant continu (DC) : la recharge rapide en route" },
+          {
+            type: "p",
+            text: "Sur une borne rapide ou ultra-rapide, en station-service ou le long d'une autoroute, le courant continu est produit directement par la borne et envoyé dans la batterie sans passer par le chargeur embarqué. Cette étape de conversion évitée, ainsi que des puissances bien supérieures, en général de 50 à plus de 350 kW, expliquent pourquoi une recharge DC prend des minutes là où une recharge AC prend des heures.",
+          },
+          { type: "h2", text: "Pourquoi la puissance affichée n'est pas toujours celle reçue" },
+          {
+            type: "p",
+            text: "Une borne AC annoncée à 22 kW ne servira à rien de plus qu'une borne à 7 kW si le véhicule n'accepte que 7 kW en courant alternatif, une limite propre à chaque modèle, indiquée dans sa fiche technique. Côté DC, la puissance maximale que la batterie peut absorber diminue aussi avec l'état de charge, ce qui explique pourquoi la vitesse ralentit nettement après 80 %.",
+          },
+          { type: "h2", text: "Quel connecteur pour quel type de courant ?" },
+          {
+            type: "p",
+            text: "Le connecteur Type 2 est le standard européen pour le courant alternatif. Le connecteur CCS Combo ajoute deux broches supplémentaires au Type 2 pour transporter le courant continu, un même port peut donc souvent accepter les deux. Le CHAdeMO, d'origine japonaise, ne transporte que du courant continu et devient progressivement moins courant sur les nouveaux véhicules.",
+          },
+          { type: "h3", text: "Lequel choisir selon la situation" },
+          {
+            type: "ul",
+            items: [
+              "Recharge à domicile ou au travail pendant plusieurs heures, la nuit ou pendant la journée de travail : courant alternatif.",
+              "Recharge sur autoroute au milieu d'un long trajet, en 20 à 40 minutes : courant continu rapide.",
+              "Recharge pendant les courses ou une pause courte, en fonction de ce que propose le parking : AC ou DC selon la borne disponible.",
+              "Avant d'installer une borne à domicile, vérifier la puissance AC maximale acceptée par son véhicule pour ne pas payer une borne surdimensionnée.",
+            ],
+          },
+          { type: "h2", text: "Une distinction qui ne dépend d'aucun marché" },
+          {
+            type: "p",
+            text: "Que le réseau de recharge soit français, allemand, espagnol ou nord-américain, cette même logique s'applique partout, seuls les connecteurs physiques varient d'une région à l'autre. Comprendre la différence entre AC et DC aide surtout à choisir le bon type de borne selon le trajet, plutôt que de se fier uniquement au chiffre en kW affiché.",
+          },
+        ],
+        faq: [
+          { question: "Quelle est la différence entre recharge AC et DC ?", answer: "Le courant alternatif (AC) passe par le chargeur embarqué du véhicule avant de remplir la batterie, ce qui limite sa vitesse. Le courant continu (DC) va directement dans la batterie sans cette étape, ce qui permet des puissances bien plus élevées et une recharge beaucoup plus rapide." },
+          { question: "Pourquoi ma voiture charge-t-elle moins vite que la puissance affichée sur la borne ?", answer: "En AC, c'est le chargeur embarqué du véhicule qui plafonne la puissance réellement reçue, pas la borne. En DC, la vitesse maximale que la batterie peut absorber diminue avec l'état de charge, d'où un net ralentissement après 80 %." },
+          { question: "Le courant continu abîme-t-il la batterie plus vite que le courant alternatif ?", answer: "Un usage exclusif et répété de recharge rapide DC peut accélérer légèrement l'usure de la batterie par rapport à une recharge AC quotidienne, mais l'impact reste limité si l'on évite de pousser systématiquement jusqu'à 100 %." },
+          { question: "Quel connecteur choisir, Type 2 ou CCS Combo ?", answer: "Le Type 2 transporte uniquement du courant alternatif. Le CCS Combo ajoute deux broches au Type 2 pour aussi transporter le courant continu : un même port CCS Combo accepte donc généralement les deux types de recharge." },
+        ],
+        ...cta.fr,
+      },
+      en: {
+        eyebrow: "Understanding Charging",
+        title: "AC vs DC Charging: What's the Difference, and Which Do You Need?",
+        excerpt:
+          "Alternating current versus direct current, onboard converter versus charging the battery directly: what actually separates a slow charge from a fast one, wherever you drive.",
+        metaTitle: "AC vs DC Charging: The Difference, Explained Simply",
+        metaDescription:
+          "AC or DC, onboard charger, real-world charging speed, connectors: everything to understand before choosing a charging station, in any country.",
+        body: [
+          {
+            type: "p",
+            text: "AC, DC, a kW number posted on the charger that never quite matches the speed you actually get: these terms show up everywhere once you start looking into EV charging, without always being explained clearly. Understanding the difference mostly helps avoid two common mistakes, paying for a charger more powerful than your car can use, or being surprised that a charge takes far longer than expected.",
+          },
+          { type: "h2", text: "Alternating current (AC): everyday charging" },
+          {
+            type: "p",
+            text: "A home outlet, a wallbox at home or at work, most parking lot chargers all deliver alternating current. That current can't fill the battery directly, since batteries store energy as direct current: it first passes through the car's onboard charger, an electronic unit that converts it. That onboard charger, not the charging station, is what caps the power actually received, usually somewhere between 3.7 and 22 kW depending on the vehicle.",
+          },
+          { type: "h2", text: "Direct current (DC): fast charging on the road" },
+          {
+            type: "p",
+            text: "At a fast or ultra-fast charger, at a service station or along a highway, direct current is produced by the charger itself and sent straight into the battery, skipping the onboard charger entirely. That skipped conversion step, combined with much higher power levels, typically 50 to over 350 kW, is why a DC charge takes minutes where an AC charge takes hours.",
+          },
+          { type: "h2", text: "Why the number on the charger isn't always the speed you get" },
+          {
+            type: "p",
+            text: "A 22 kW AC charger won't do anything more than a 7 kW one if the car only accepts 7 kW of AC power, a limit that's specific to each model and listed in its spec sheet. On the DC side, the maximum power a battery can absorb also drops as the charge level rises, which is why speed slows down noticeably past 80%.",
+          },
+          { type: "h2", text: "Which connector carries which current" },
+          {
+            type: "p",
+            text: "The Type 2 connector is the European standard for alternating current. The CCS Combo connector adds two extra pins to a Type 2 to also carry direct current, so a single CCS Combo port can usually handle both. CHAdeMO, originally from Japan, carries direct current only and is gradually becoming less common on new vehicles.",
+          },
+          { type: "h3", text: "Which one to use, depending on the situation" },
+          {
+            type: "ul",
+            items: [
+              "Charging at home or at work over several hours, overnight or during the workday: alternating current.",
+              "Charging on the highway in the middle of a long trip, in 20 to 40 minutes: fast direct current.",
+              "Charging while running errands or on a short break, depending on what the parking lot offers: AC or DC, whichever is available.",
+              "Before installing a home charger, check the maximum AC power your car actually accepts so you don't pay for a station it can't fully use.",
+            ],
+          },
+          { type: "h2", text: "A distinction that doesn't depend on any market" },
+          {
+            type: "p",
+            text: "Whether the charging network is French, German, Spanish, or North American, the same logic applies everywhere, only the physical connectors differ from one region to another. Understanding AC versus DC mostly helps in picking the right type of charger for the trip at hand, rather than relying on the kW number alone.",
+          },
+        ],
+        faq: [
+          { question: "What's the difference between AC and DC charging?", answer: "Alternating current (AC) passes through the car's onboard charger before reaching the battery, which limits its speed. Direct current (DC) goes straight into the battery without that step, allowing much higher power levels and a far faster charge." },
+          { question: "Why does my car charge slower than the power shown on the charger?", answer: "With AC, it's the car's onboard charger that caps the power actually received, not the station. With DC, the maximum power the battery can absorb drops as the charge level rises, which is why speed slows down noticeably past 80%." },
+          { question: "Does DC charging wear out the battery faster than AC?", answer: "Relying exclusively and repeatedly on fast DC charging can slightly speed up battery wear compared to daily AC charging, but the impact stays limited as long as you avoid routinely charging all the way to 100%." },
+          { question: "Which connector should I look for, Type 2 or CCS Combo?", answer: "Type 2 carries alternating current only. CCS Combo adds two pins to a Type 2 to also carry direct current, so a single CCS Combo port generally handles both types of charging." },
+        ],
+        ...cta.en,
+      },
+      de: {
+        eyebrow: "Laden verstehen",
+        title: "AC- oder DC-Laden: Was ist der Unterschied, und was brauchen Sie?",
+        excerpt:
+          "Wechselstrom oder Gleichstrom, Onboard-Ladegerät oder direktes Laden der Batterie: was den Unterschied zwischen langsamem und schnellem Laden wirklich ausmacht, egal wo man unterwegs ist.",
+        metaTitle: "AC vs. DC Laden: Der Unterschied einfach erklärt",
+        metaDescription:
+          "Wechselstrom (AC) oder Gleichstrom (DC), Onboard-Ladegerät, tatsächliche Ladegeschwindigkeit, Steckertypen: alles Wichtige vor der Wahl der Ladestation, in jedem Land.",
+        body: [
+          {
+            type: "p",
+            text: "AC, DC, eine auf der Ladesäule angezeigte kW-Zahl, die in der Praxis nie ganz der tatsächlichen Ladegeschwindigkeit entspricht: Diese Begriffe tauchen überall auf, sobald man sich mit dem Laden von Elektroautos beschäftigt, ohne immer klar erklärt zu werden. Den Unterschied zu verstehen hilft vor allem, zwei häufige Fehler zu vermeiden, für eine Ladestation zu bezahlen, die leistungsstärker ist, als das eigene Auto nutzen kann, oder sich zu wundern, warum ein Ladevorgang viel länger dauert als erwartet.",
+          },
+          { type: "h2", text: "Wechselstrom (AC): das Laden im Alltag" },
+          {
+            type: "p",
+            text: "Eine Haushaltssteckdose, eine Wallbox zu Hause oder bei der Arbeit, die meisten Ladesäulen auf Parkplätzen liefern Wechselstrom. Dieser Strom kann die Batterie nicht direkt füllen, da sie Energie als Gleichstrom speichert: Er durchläuft zunächst das Onboard-Ladegerät des Fahrzeugs, eine elektronische Einheit, die ihn umwandelt. Dieses Onboard-Ladegerät, nicht die Ladesäule, begrenzt die tatsächlich empfangene Leistung, meist zwischen 3,7 und 22 kW, je nach Fahrzeug.",
+          },
+          { type: "h2", text: "Gleichstrom (DC): schnelles Laden unterwegs" },
+          {
+            type: "p",
+            text: "An einer Schnell- oder Ultraschnellladesäule, an einer Raststätte oder entlang einer Autobahn, wird Gleichstrom direkt von der Ladesäule erzeugt und fließt ohne Umweg über das Onboard-Ladegerät in die Batterie. Dieser übersprungene Umwandlungsschritt, zusammen mit deutlich höheren Leistungen, meist 50 bis über 350 kW, erklärt, warum ein DC-Ladevorgang Minuten dauert, wo ein AC-Ladevorgang Stunden braucht.",
+          },
+          { type: "h2", text: "Warum die angezeigte Zahl nicht immer die tatsächliche Geschwindigkeit ist" },
+          {
+            type: "p",
+            text: "Eine 22-kW-AC-Ladesäule bringt keinen Vorteil gegenüber einer mit 7 kW, wenn das Auto nur 7 kW Wechselstrom aufnimmt, ein Grenzwert, der von Modell zu Modell unterschiedlich und im Datenblatt angegeben ist. Bei DC sinkt zudem die maximale Leistung, die die Batterie aufnehmen kann, mit steigendem Ladestand, weshalb die Geschwindigkeit ab etwa 80 % spürbar nachlässt.",
+          },
+          { type: "h2", text: "Welcher Stecker für welche Stromart" },
+          {
+            type: "p",
+            text: "Der Typ-2-Stecker ist der europäische Standard für Wechselstrom. Der CCS-Combo-Stecker fügt zwei zusätzliche Kontakte hinzu, um auch Gleichstrom zu übertragen, ein einziger CCS-Combo-Anschluss deckt also meist beides ab. CHAdeMO, ursprünglich aus Japan, überträgt ausschließlich Gleichstrom und wird bei neuen Fahrzeugen zunehmend seltener.",
+          },
+          { type: "h3", text: "Was je nach Situation die richtige Wahl ist" },
+          {
+            type: "ul",
+            items: [
+              "Laden zu Hause oder bei der Arbeit über mehrere Stunden, über Nacht oder während der Arbeitszeit: Wechselstrom.",
+              "Laden auf der Autobahn mitten auf einer langen Fahrt, in 20 bis 40 Minuten: schneller Gleichstrom.",
+              "Laden beim Einkaufen oder einer kurzen Pause, je nachdem, was der Parkplatz bietet: AC oder DC, je nach verfügbarer Säule.",
+              "Vor der Installation einer Wallbox die maximale AC-Leistung des eigenen Autos prüfen, um keine überdimensionierte Ladesäule zu bezahlen.",
+            ],
+          },
+          { type: "h2", text: "Ein Unterschied, der von keinem Markt abhängt" },
+          {
+            type: "p",
+            text: "Ob das Ladenetz französisch, deutsch, spanisch oder nordamerikanisch ist, dieselbe Logik gilt überall, nur die physischen Stecker unterscheiden sich von Region zu Region. Den Unterschied zwischen AC und DC zu verstehen hilft vor allem dabei, die richtige Ladeart für die jeweilige Fahrt zu wählen, statt sich allein auf die kW-Zahl zu verlassen.",
+          },
+        ],
+        faq: [
+          { question: "Was ist der Unterschied zwischen AC- und DC-Laden?", answer: "Wechselstrom (AC) durchläuft vor der Batterie das Onboard-Ladegerät des Autos, was die Geschwindigkeit begrenzt. Gleichstrom (DC) fließt ohne diesen Schritt direkt in die Batterie, was deutlich höhere Leistungen und ein viel schnelleres Laden ermöglicht." },
+          { question: "Warum lädt mein Auto langsamer als die auf der Ladesäule angezeigte Leistung?", answer: "Bei AC begrenzt das Onboard-Ladegerät des Autos die tatsächlich empfangene Leistung, nicht die Ladesäule. Bei DC sinkt die maximale Aufnahmeleistung der Batterie mit steigendem Ladestand, weshalb die Geschwindigkeit ab etwa 80 % spürbar nachlässt." },
+          { question: "Verschleißt DC-Laden die Batterie schneller als AC-Laden?", answer: "Ausschließliches und wiederholtes Schnellladen mit Gleichstrom kann den Batterieverschleiß im Vergleich zu täglichem AC-Laden leicht beschleunigen, der Effekt bleibt aber begrenzt, solange man nicht regelmäßig bis 100 % lädt." },
+          { question: "Welcher Stecker ist der richtige, Typ 2 oder CCS Combo?", answer: "Typ 2 überträgt ausschließlich Wechselstrom. CCS Combo fügt zwei Kontakte hinzu, um auch Gleichstrom zu übertragen, ein einziger CCS-Combo-Anschluss deckt daher in der Regel beide Ladearten ab." },
+        ],
+        ...cta.de,
+      },
+      es: {
+        eyebrow: "Entender la recarga",
+        title: "Recarga en AC o en DC: ¿cuál es la diferencia y cuál necesitas?",
+        excerpt:
+          "Corriente alterna o corriente continua, cargador integrado frente a carga directa de la batería: lo que realmente explica la diferencia entre una recarga lenta y una rápida, estés donde estés.",
+        metaTitle: "Recarga AC vs DC: la diferencia explicada con sencillez",
+        metaDescription:
+          "Corriente alterna (AC) o continua (DC), cargador integrado, velocidad real de recarga, conectores: todo lo necesario antes de elegir un punto de recarga, en cualquier país.",
+        body: [
+          {
+            type: "p",
+            text: "AC, DC, una cifra en kW indicada en el punto de recarga que nunca coincide del todo con la velocidad real obtenida: estos términos aparecen por todas partes en cuanto uno se interesa por la recarga, sin que siempre se expliquen con claridad. Entender la diferencia ayuda sobre todo a evitar dos errores frecuentes, pagar por un punto de recarga más potente de lo que el coche puede aprovechar, o sorprenderse de que una recarga dure mucho más de lo esperado.",
+          },
+          { type: "h2", text: "Corriente alterna (AC): la recarga del día a día" },
+          {
+            type: "p",
+            text: "Un enchufe doméstico, un wallbox en casa o en el trabajo, la mayoría de los puntos de recarga en aparcamientos entregan corriente alterna. Esa corriente no puede llenar la batería directamente, ya que esta almacena energía en corriente continua: primero pasa por el cargador integrado del vehículo, un componente electrónico que la convierte. Es ese cargador integrado, y no el punto de recarga, el que limita la potencia realmente recibida, normalmente entre 3,7 y 22 kW según el vehículo.",
+          },
+          { type: "h2", text: "Corriente continua (DC): la recarga rápida en ruta" },
+          {
+            type: "p",
+            text: "En un cargador rápido o ultrarrápido, en una estación de servicio o a lo largo de una autopista, la corriente continua se genera directamente en el punto de recarga y llega a la batería sin pasar por el cargador integrado. Ese paso de conversión que se evita, junto con potencias mucho más altas, normalmente entre 50 y más de 350 kW, explica por qué una recarga en DC dura minutos donde una en AC dura horas.",
+          },
+          { type: "h2", text: "Por qué la cifra indicada no siempre es la velocidad real" },
+          {
+            type: "p",
+            text: "Un punto de recarga AC de 22 kW no aporta nada más que uno de 7 kW si el coche solo admite 7 kW en corriente alterna, un límite propio de cada modelo que figura en su ficha técnica. En DC, la potencia máxima que la batería puede absorber también disminuye a medida que sube el nivel de carga, lo que explica que la velocidad baje claramente a partir del 80 %.",
+          },
+          { type: "h2", text: "Qué conector transporta cada tipo de corriente" },
+          {
+            type: "p",
+            text: "El conector Tipo 2 es el estándar europeo para la corriente alterna. El conector CCS Combo añade dos contactos adicionales al Tipo 2 para transportar también corriente continua, por lo que un mismo puerto CCS Combo suele admitir ambos tipos. El CHAdeMO, de origen japonés, transporta únicamente corriente continua y cada vez es menos habitual en los vehículos nuevos.",
+          },
+          { type: "h3", text: "Cuál elegir según la situación" },
+          {
+            type: "ul",
+            items: [
+              "Recarga en casa o en el trabajo durante varias horas, por la noche o durante la jornada laboral: corriente alterna.",
+              "Recarga en autopista en mitad de un trayecto largo, en 20 a 40 minutos: corriente continua rápida.",
+              "Recarga mientras se hacen recados o en una pausa corta, según lo que ofrezca el aparcamiento: AC o DC, según el punto disponible.",
+              "Antes de instalar un punto de recarga en casa, comprobar la potencia AC máxima que admite el coche para no pagar por un equipo sobredimensionado.",
+            ],
+          },
+          { type: "h2", text: "Una diferencia que no depende de ningún mercado" },
+          {
+            type: "p",
+            text: "Ya sea la red de recarga francesa, alemana, española o norteamericana, la misma lógica se aplica en todas partes, solo los conectores físicos cambian de una región a otra. Entender la diferencia entre AC y DC ayuda sobre todo a elegir el tipo de recarga adecuado según el trayecto, en lugar de fiarse únicamente de la cifra en kW.",
+          },
+        ],
+        faq: [
+          { question: "¿Cuál es la diferencia entre la recarga en AC y en DC?", answer: "La corriente alterna (AC) pasa por el cargador integrado del vehículo antes de llegar a la batería, lo que limita su velocidad. La corriente continua (DC) llega directamente a la batería sin ese paso, lo que permite potencias mucho más altas y una recarga mucho más rápida." },
+          { question: "¿Por qué mi coche carga más despacio que la potencia indicada en el punto de recarga?", answer: "En AC, es el cargador integrado del coche el que limita la potencia realmente recibida, no el punto de recarga. En DC, la potencia máxima que la batería puede absorber baja a medida que sube el nivel de carga, por eso la velocidad se reduce claramente a partir del 80 %." },
+          { question: "¿La recarga en DC desgasta la batería más rápido que en AC?", answer: "Usar de forma exclusiva y repetida la recarga rápida en DC puede acelerar ligeramente el desgaste de la batería frente a una recarga diaria en AC, pero el efecto se mantiene limitado si se evita llegar sistemáticamente al 100 %." },
+          { question: "¿Qué conector elegir, Tipo 2 o CCS Combo?", answer: "El Tipo 2 transporta únicamente corriente alterna. El CCS Combo añade dos contactos al Tipo 2 para transportar también corriente continua, por lo que un mismo puerto CCS Combo admite generalmente ambos tipos de recarga." },
+        ],
+        ...cta.es,
+      },
+    },
+  },
 ];
