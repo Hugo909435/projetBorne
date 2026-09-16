@@ -11,6 +11,15 @@ const nextConfig: NextConfig = {
   images: {
     qualities: [75, 90],
   },
+  experimental: {
+    // The ~500 statically generated pages include 384 department pages that
+    // each call the Open Charge Map API. Multiple build workers hitting it
+    // in parallel multiply past this app's own in-process rate limiting and
+    // OCM starts 429-ing, which can starve individual pages past their
+    // generation budget. Keeping generation on effectively one worker lets
+    // that in-process pacing actually govern the request rate.
+    staticGenerationMinPagesPerWorker: 1000,
+  },
   async headers() {
     return [
       {

@@ -23,7 +23,8 @@
     "blog": "Blog",
     "about": "Acerca de",
     "contact": "Contacto",
-    "menu": "Menú"
+    "menu": "Menú",
+    "departments": "Departamentos"
   },
   "Footer": {
     "resourcesHeading": "Recursos",
@@ -451,5 +452,35 @@
       "20": "AC trifásico",
       "30": "DC"
     }
+  },
+  "DepartmentsIndex": {
+    "metaTitle": "Puntos de recarga por departamento francés",
+    "metaDescription": "Descubre cuántos puntos de recarga para coches eléctricos hay en cada departamento francés, con el mapa interactivo.",
+    "title": "Puntos de recarga por departamento",
+    "intro": "Elige un departamento para consultar el número de puntos de recarga disponibles, el desglose por tipo de conector y las ciudades mejor equipadas."
+  },
+  "DepartmentPage": {
+    "eyebrow": "Localización por departamento",
+    "metaTitle": "Puntos de recarga: {name} ({code}) — mapa y estadísticas",
+    "metaDescription": "Número de puntos de recarga, recarga rápida y ciudades mejor equipadas en el departamento {name} ({code}), Francia. Datos de Open Charge Map.",
+    "title": "Puntos de recarga: {name} ({code})",
+    "introWithStats": "El departamento {name} ({code}) registra {total} puntos de recarga catalogados por Open Charge Map, en un radio de {radius} km alrededor del centro del departamento.",
+    "introFallback": "El departamento {name} ({code}) está cubierto por nuestro mapa de puntos de recarga, alimentado por Open Charge Map.",
+    "fastCountLabel": "De los cuales {fastCount} son puntos de recarga rápida (corriente continua, 50 kW o más).",
+    "connectorsHeading": "Tipos de conectores disponibles",
+    "townsHeading": "Ciudades mejor equipadas",
+    "mapCta": "Ver estos puntos en el mapa",
+    "faqHeading": "Preguntas frecuentes",
+    "faq1Question": "¿Cuánto cuesta recargar un coche eléctrico en el departamento {name}?",
+    "faq1AnswerBefore": "El precio depende del operador y de la potencia del punto de recarga. Nuestro ",
+    "faq1AnswerLink": "comparativo de precios de recarga",
+    "faq1AnswerAfter": " detalla las tarifas de las principales redes en Francia.",
+    "faq2Question": "¿Cómo encuentro un punto de recarga rápida en el departamento {name}?",
+    "faq2Answer": "Abre el mapa interactivo y filtra por potencia para localizar los puntos de recarga rápida (corriente continua, 50 kW o más) del departamento {name}.",
+    "faq3Question": "¿Estos datos están actualizados?",
+    "faq3Answer": "Las cifras de esta página proceden de Open Charge Map, una base de datos colaborativa actualizada continuamente por sus colaboradores. El número exacto de puntos puede variar de un día a otro.",
+    "sourceNote": "Datos: Open Charge Map (openchargemap.org), una base de datos colaborativa y libre.",
+    "backToIndex": "Todos los departamentos",
+    "placeName": "{name} ({code}), Francia"
   }
 }

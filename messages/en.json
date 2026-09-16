@@ -23,7 +23,8 @@
     "blog": "Blog",
     "about": "About",
     "contact": "Contact",
-    "menu": "Menu"
+    "menu": "Menu",
+    "departments": "Departments"
   },
   "Footer": {
     "resourcesHeading": "Resources",
@@ -451,5 +452,35 @@
       "20": "AC three-phase",
       "30": "DC"
     }
+  },
+  "DepartmentsIndex": {
+    "metaTitle": "EV charging stations by French department",
+    "metaDescription": "Find out how many EV charging stations are available in each French department, with the interactive map.",
+    "title": "Charging stations by department",
+    "intro": "Pick a department to see how many charging stations are available, the breakdown by connector type, and the best-covered towns."
+  },
+  "DepartmentPage": {
+    "eyebrow": "Location by department",
+    "metaTitle": "EV charging stations: {name} ({code}) — map and stats",
+    "metaDescription": "Number of charging stations, fast chargers, and best-covered towns in the {name} ({code}) department, France. Data from Open Charge Map.",
+    "title": "EV charging stations: {name} ({code})",
+    "introWithStats": "The {name} ({code}) department has {total} charging stations listed on Open Charge Map, within a {radius} km radius of the department's centre.",
+    "introFallback": "The {name} ({code}) department is covered by our charging station map, powered by Open Charge Map.",
+    "fastCountLabel": "Including {fastCount} fast-charging stations (DC, 50 kW or more).",
+    "connectorsHeading": "Connector types available",
+    "townsHeading": "Best-covered towns",
+    "mapCta": "See these stations on the map",
+    "faqHeading": "Frequently asked questions",
+    "faq1Question": "How much does it cost to charge an EV in the {name} department?",
+    "faq1AnswerBefore": "The price depends on the operator and the station's power output. Our ",
+    "faq1AnswerLink": "charging price comparison",
+    "faq1AnswerAfter": " breaks down the rates of the main networks in France.",
+    "faq2Question": "How do I find a fast-charging station in the {name} department?",
+    "faq2Answer": "Open the interactive map and filter by power output to spot the fast (DC, 50 kW and above) stations in the {name} department.",
+    "faq3Question": "Is this data up to date?",
+    "faq3Answer": "The figures on this page come from Open Charge Map, a collaborative database continuously updated by its contributors. The exact station count can vary from one day to the next.",
+    "sourceNote": "Data: Open Charge Map (openchargemap.org), a free collaborative database.",
+    "backToIndex": "All departments",
+    "placeName": "{name} ({code}), France"
   }
 }

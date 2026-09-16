@@ -6,7 +6,7 @@ import type { Station } from "@/lib/openChargeMap";
  * state, and a missing status is treated as available (the common case -
  * most OCM stations carry no status at all).
  */
-const OUT_OF_SERVICE_STATUSES = [100, 150, 200, 210];
+export const OUT_OF_SERVICE_STATUSES = [100, 150, 200, 210];
 const WARNING_STATUSES = [20, 30, 75];
 
 export type NearbyRow = {

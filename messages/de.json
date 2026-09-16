@@ -23,7 +23,8 @@
     "blog": "Blog",
     "about": "Über uns",
     "contact": "Kontakt",
-    "menu": "Menü"
+    "menu": "Menü",
+    "departments": "Départements"
   },
   "Footer": {
     "resourcesHeading": "Ressourcen",
@@ -451,5 +452,35 @@
       "20": "AC dreiphasig",
       "30": "DC"
     }
+  },
+  "DepartmentsIndex": {
+    "metaTitle": "Ladestationen nach französischem Département",
+    "metaDescription": "Finden Sie heraus, wie viele Ladestationen für Elektroautos in jedem französischen Département verfügbar sind, mit interaktiver Karte.",
+    "title": "Ladestationen nach Département",
+    "intro": "Wählen Sie ein Département, um die Anzahl der verfügbaren Ladestationen, die Aufteilung nach Steckertyp und die am besten versorgten Städte zu sehen."
+  },
+  "DepartmentPage": {
+    "eyebrow": "Standort nach Département",
+    "metaTitle": "Ladestationen: {name} ({code}) — Karte und Statistiken",
+    "metaDescription": "Anzahl der Ladestationen, Schnellladestationen und am besten versorgte Städte im Département {name} ({code}), Frankreich. Daten von Open Charge Map.",
+    "title": "Ladestationen: {name} ({code})",
+    "introWithStats": "Das Département {name} ({code}) verzeichnet {total} bei Open Charge Map gelistete Ladestationen, in einem Umkreis von {radius} km um das Zentrum des Départements.",
+    "introFallback": "Das Département {name} ({code}) wird von unserer Ladestationskarte abgedeckt, die auf Open Charge Map basiert.",
+    "fastCountLabel": "Davon {fastCount} Schnellladestationen (Gleichstrom, 50 kW oder mehr).",
+    "connectorsHeading": "Verfügbare Steckertypen",
+    "townsHeading": "Am besten versorgte Städte",
+    "mapCta": "Diese Stationen auf der Karte ansehen",
+    "faqHeading": "Häufig gestellte Fragen",
+    "faq1Question": "Wie viel kostet das Laden eines Elektroautos im Département {name}?",
+    "faq1AnswerBefore": "Der Preis hängt vom Betreiber und der Ladeleistung ab. Unser ",
+    "faq1AnswerLink": "Preisvergleich für das Laden",
+    "faq1AnswerAfter": " zeigt die Tarife der wichtigsten Netzbetreiber in Frankreich im Detail.",
+    "faq2Question": "Wie finde ich eine Schnellladestation im Département {name}?",
+    "faq2Answer": "Öffnen Sie die interaktive Karte und filtern Sie nach Leistung, um die Schnellladestationen (Gleichstrom, ab 50 kW) im Département {name} zu finden.",
+    "faq3Question": "Sind diese Daten aktuell?",
+    "faq3Answer": "Die Zahlen auf dieser Seite stammen von Open Charge Map, einer kollaborativen Datenbank, die laufend von ihren Mitwirkenden aktualisiert wird. Die genaue Anzahl der Ladestationen kann von Tag zu Tag variieren.",
+    "sourceNote": "Daten: Open Charge Map (openchargemap.org), eine freie kollaborative Datenbank.",
+    "backToIndex": "Alle Départements",
+    "placeName": "{name} ({code}), Frankreich"
   }
 }

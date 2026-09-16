@@ -12,10 +12,10 @@ export default async function HomePage({
   searchParams,
 }: {
   params: Promise<{ locale: string }>;
-  searchParams: Promise<{ lat?: string; lon?: string }>;
+  searchParams: Promise<{ lat?: string; lon?: string; zoom?: string }>;
 }) {
   const { locale } = await params;
-  const { lat, lon } = await searchParams;
+  const { lat, lon, zoom: zoomParam } = await searchParams;
   setRequestLocale(locale);
   const t = await getTranslations({ locale, namespace: "Meta" });
 
@@ -24,8 +24,12 @@ export default async function HomePage({
   const hasTarget =
     parsedLat != null && parsedLon != null && Number.isFinite(parsedLat) && Number.isFinite(parsedLon);
 
+  const parsedZoom = zoomParam ? Number(zoomParam) : null;
+  const customZoom =
+    parsedZoom != null && Number.isFinite(parsedZoom) ? Math.min(18, Math.max(5, parsedZoom)) : null;
+
   const center: [number, number] = hasTarget ? [parsedLat!, parsedLon!] : [46.7, 2.5];
-  const zoom = hasTarget ? 12 : 6;
+  const zoom = hasTarget ? (customZoom ?? 12) : 6;
 
   const jsonLd = {
     "@context": "https://schema.org",

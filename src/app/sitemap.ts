@@ -2,10 +2,17 @@ import type { MetadataRoute } from "next";
 import { routing } from "@/i18n/routing";
 import { site, languageAlternates } from "@/lib/site";
 import { blogPosts } from "@/lib/blogPosts";
+import { departments } from "@/lib/departments";
 
 const staticPaths = [
   { path: "/", changeFrequency: "daily" as const, priority: 1, lastModified: "2026-08-27" },
   { path: "/blog", changeFrequency: "weekly" as const, priority: 0.7, lastModified: "2026-08-26" },
+  {
+    path: "/bornes-recharge",
+    changeFrequency: "weekly" as const,
+    priority: 0.7,
+    lastModified: "2026-09-16",
+  },
   {
     path: "/blog/types-de-bornes-electriques",
     changeFrequency: "monthly" as const,
@@ -58,5 +65,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }));
   });
 
-  return [...staticEntries, ...blogEntries];
+  const departmentEntries = departments.flatMap((dept) =>
+    routing.locales.map((locale) => ({
+      url: `${site.url}/${locale}/bornes-recharge/${dept.slug}`,
+      changeFrequency: "weekly" as const,
+      priority: 0.5,
+      lastModified: "2026-09-16",
+      alternates: { languages: languageAlternates(`/bornes-recharge/${dept.slug}`) },
+    }))
+  );
+
+  return [...staticEntries, ...blogEntries, ...departmentEntries];
 }

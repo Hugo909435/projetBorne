@@ -14,6 +14,7 @@ Station data comes from Open Charge Map (openchargemap.org), an open, collaborat
 ## Main pages (French URLs shown; replace /fr with /en, /de, or /es)
 
 - [Home and world map](https://ma-borne-electrique.com/fr): search and map of charging stations anywhere in the world.
+- [Charging stations by French department](https://ma-borne-electrique.com/fr/bornes-recharge): live station counts, fast-charger share, and top-covered towns for each of the 96 metropolitan French departments, sourced from Open Charge Map.
 - [Blog](https://ma-borne-electrique.com/fr/blog): practical guides and news on EV charging, costs, and French regulation.
 - [Connector guide](https://ma-borne-electrique.com/fr/blog/types-de-bornes-electriques): explains Type 2, Combo CCS, and CHAdeMO standards, power output, and charging times.
 - [Electric car guide](https://ma-borne-electrique.com/fr/blog/voiture-electrique): range, pricing, and buying-decision basics for EVs.
@@ -31,6 +32,8 @@ Station data comes from Open Charge Map (openchargemap.org), an open, collaborat
 - [Carrefour baisse de 30 % le prix de la recharge sur ses bornes 22 kW](https://ma-borne-electrique.com/fr/blog/carrefour-prix-recharge-bornes)
 - [Autonomie en hiver : les bons réflexes à adopter avant l'arrivée du froid](https://ma-borne-electrique.com/fr/blog/autonomie-hiver-voiture-electrique)
 - [Bornes rapides sur autoroute : comment éviter la file d'attente cet été 2026](https://ma-borne-electrique.com/fr/blog/bornes-rapides-autoroute-ete-2026)
+- [Road trip en France : bien recharger sa voiture électrique sans mauvaise surprise](https://ma-borne-electrique.com/fr/blog/road-trip-france-recharge-voiture-electrique)
+- [Batterie de voiture électrique : les bons réflexes pour la faire durer](https://ma-borne-electrique.com/fr/blog/prolonger-duree-vie-batterie-voiture-electrique)
 
 ### Home installation and rights
 - [Installer une borne de recharge chez soi : le guide étape par étape](https://ma-borne-electrique.com/fr/blog/installer-borne-recharge-maison)
@@ -51,6 +54,11 @@ Station data comes from Open Charge Map (openchargemap.org), an open, collaborat
 ### Buying and mythbusting
 - [Acheter une voiture électrique d'occasion : les points à vérifier avant de vous décider](https://ma-borne-electrique.com/fr/blog/acheter-voiture-electrique-occasion)
 - [Voiture électrique : 6 idées reçues qui ont la vie dure](https://ma-borne-electrique.com/fr/blog/idees-recues-voiture-electrique)
+
+### International EV charging guides (not France-specific)
+- [Étiquette de la recharge publique : les règles non-écrites que tout conducteur devrait connaître](https://ma-borne-electrique.com/fr/blog/etiquette-recharge-publique-voiture-electrique)
+- [Anxiété de l'autonomie : comment la surmonter et rouler sans stress](https://ma-borne-electrique.com/fr/blog/anxiete-autonomie-voiture-electrique)
+- [Recharge AC ou DC : quelle différence, et laquelle vous faut-il ?](https://ma-borne-electrique.com/fr/blog/recharge-ac-dc-voiture-electrique)
 
 ## Contact
 
