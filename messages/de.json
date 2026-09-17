@@ -460,7 +460,10 @@
     "intro": "Wählen Sie zunächst ein Land und dann eine Region, um die Anzahl der verfügbaren Ladestationen, die Aufteilung nach Steckertyp und die am besten versorgten Städte zu sehen.",
     "franceHeading": "Frankreich (Départements)",
     "germanyHeading": "Deutschland (Bundesländer)",
-    "spainHeading": "Spanien (Autonome Gemeinschaften)"
+    "spainHeading": "Spanien (Autonome Gemeinschaften)",
+    "franceShort": "Frankreich",
+    "germanyShort": "Deutschland",
+    "spainShort": "Spanien"
   },
   "DepartmentPage": {
     "eyebrow": "Standort nach Département",

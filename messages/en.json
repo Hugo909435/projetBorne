@@ -460,7 +460,10 @@
     "intro": "Pick a country, then a region, to see how many charging stations are available, the breakdown by connector type, and the best-covered towns.",
     "franceHeading": "France (departments)",
     "germanyHeading": "Germany (states)",
-    "spainHeading": "Spain (autonomous communities)"
+    "spainHeading": "Spain (autonomous communities)",
+    "franceShort": "France",
+    "germanyShort": "Germany",
+    "spainShort": "Spain"
   },
   "DepartmentPage": {
     "eyebrow": "Location by department",

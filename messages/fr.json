@@ -460,7 +460,10 @@
     "intro": "Choisissez un pays puis une région pour consulter le nombre de bornes de recharge disponibles, la répartition par type de connecteur et les villes les mieux équipées.",
     "franceHeading": "France (départements)",
     "germanyHeading": "Allemagne (Länder)",
-    "spainHeading": "Espagne (communautés autonomes)"
+    "spainHeading": "Espagne (communautés autonomes)",
+    "franceShort": "France",
+    "germanyShort": "Allemagne",
+    "spainShort": "Espagne"
   },
   "DepartmentPage": {
     "eyebrow": "Localisation par département",

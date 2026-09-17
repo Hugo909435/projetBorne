@@ -80,7 +80,30 @@ export default async function DepartmentsIndexPage({
       <h1 className="text-3xl font-semibold text-ink-900 sm:text-4xl">{t("title")}</h1>
       <p className="mt-4 max-w-2xl text-ink-600">{t("intro")}</p>
 
-      <h2 className="mt-12 font-display text-xl font-semibold text-ink-900">{t("franceHeading")}</h2>
+      <div className="mt-6 flex flex-wrap gap-2.5">
+        <a
+          href="#france"
+          className="rounded-full border border-line bg-card px-4 py-2 text-sm font-semibold text-ink-900 transition hover:border-green-600 hover:text-green-700"
+        >
+          {t("franceShort")}
+        </a>
+        <a
+          href="#germany"
+          className="rounded-full border border-line bg-card px-4 py-2 text-sm font-semibold text-ink-900 transition hover:border-green-600 hover:text-green-700"
+        >
+          {t("germanyShort")}
+        </a>
+        <a
+          href="#spain"
+          className="rounded-full border border-line bg-card px-4 py-2 text-sm font-semibold text-ink-900 transition hover:border-green-600 hover:text-green-700"
+        >
+          {t("spainShort")}
+        </a>
+      </div>
+
+      <h2 id="france" className="mt-12 scroll-mt-24 font-display text-xl font-semibold text-ink-900">
+        {t("franceHeading")}
+      </h2>
       <ul className="mt-4 grid grid-cols-2 gap-x-6 gap-y-2 sm:grid-cols-3 lg:grid-cols-4">
         {sortedDepartments.map((dept) => (
           <li key={dept.slug}>
@@ -95,7 +118,9 @@ export default async function DepartmentsIndexPage({
         ))}
       </ul>
 
-      <h2 className="mt-12 font-display text-xl font-semibold text-ink-900">{t("germanyHeading")}</h2>
+      <h2 id="germany" className="mt-12 scroll-mt-24 font-display text-xl font-semibold text-ink-900">
+        {t("germanyHeading")}
+      </h2>
       <ul className="mt-4 grid grid-cols-2 gap-x-6 gap-y-2 sm:grid-cols-3 lg:grid-cols-4">
         {sortedGermanStates.map((region) => (
           <li key={region.slug}>
@@ -109,7 +134,9 @@ export default async function DepartmentsIndexPage({
         ))}
       </ul>
 
-      <h2 className="mt-12 font-display text-xl font-semibold text-ink-900">{t("spainHeading")}</h2>
+      <h2 id="spain" className="mt-12 scroll-mt-24 font-display text-xl font-semibold text-ink-900">
+        {t("spainHeading")}
+      </h2>
       <ul className="mt-4 grid grid-cols-2 gap-x-6 gap-y-2 sm:grid-cols-3 lg:grid-cols-4">
         {sortedSpanishRegions.map((region) => (
           <li key={region.slug}>

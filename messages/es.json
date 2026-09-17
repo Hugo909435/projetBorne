@@ -460,7 +460,10 @@
     "intro": "Elige primero un país y luego una región para consultar el número de puntos de recarga disponibles, el desglose por tipo de conector y las ciudades mejor equipadas.",
     "franceHeading": "Francia (departamentos)",
     "germanyHeading": "Alemania (estados federados)",
-    "spainHeading": "España (comunidades autónomas)"
+    "spainHeading": "España (comunidades autónomas)",
+    "franceShort": "Francia",
+    "germanyShort": "Alemania",
+    "spainShort": "España"
   },
   "DepartmentPage": {
     "eyebrow": "Localización por departamento",
