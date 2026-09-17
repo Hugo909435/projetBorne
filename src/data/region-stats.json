@@ -1,0 +1,1774 @@
+{
+  "baden-wurttemberg": {
+    "total": 4615,
+    "fastCount": 713,
+    "connectorBreakdown": [
+      {
+        "name": "Type 2 (Socket Only)",
+        "count": 3441
+      },
+      {
+        "name": "CEE 7/4 - Schuko - Type F",
+        "count": 1179
+      },
+      {
+        "name": "CCS (Type 2)",
+        "count": 841
+      },
+      {
+        "name": "Type 2 (Tethered Connector)",
+        "count": 504
+      },
+      {
+        "name": "CHAdeMO",
+        "count": 454
+      }
+    ],
+    "topTowns": [
+      {
+        "name": "Stuttgart",
+        "count": 281
+      },
+      {
+        "name": "Mannheim",
+        "count": 78
+      },
+      {
+        "name": "Karlsruhe",
+        "count": 70
+      },
+      {
+        "name": "Ulm",
+        "count": 48
+      },
+      {
+        "name": "Heidelberg",
+        "count": 43
+      },
+      {
+        "name": "Reutlingen",
+        "count": 43
+      }
+    ]
+  },
+  "bayern": {
+    "total": 6736,
+    "fastCount": 892,
+    "connectorBreakdown": [
+      {
+        "name": "Type 2 (Socket Only)",
+        "count": 5022
+      },
+      {
+        "name": "CEE 7/4 - Schuko - Type F",
+        "count": 1255
+      },
+      {
+        "name": "CCS (Type 2)",
+        "count": 1129
+      },
+      {
+        "name": "CHAdeMO",
+        "count": 573
+      },
+      {
+        "name": "Type 2 (Tethered Connector)",
+        "count": 512
+      }
+    ],
+    "topTowns": [
+      {
+        "name": "München",
+        "count": 509
+      },
+      {
+        "name": "Stuttgart",
+        "count": 281
+      },
+      {
+        "name": "Nürnberg",
+        "count": 100
+      },
+      {
+        "name": "Regensburg",
+        "count": 83
+      },
+      {
+        "name": "Augsburg",
+        "count": 52
+      },
+      {
+        "name": "Ulm",
+        "count": 48
+      }
+    ]
+  },
+  "berlin": {
+    "total": 1031,
+    "fastCount": 109,
+    "connectorBreakdown": [
+      {
+        "name": "Type 2 (Socket Only)",
+        "count": 911
+      },
+      {
+        "name": "CCS (Type 2)",
+        "count": 125
+      },
+      {
+        "name": "Type 2 (Tethered Connector)",
+        "count": 88
+      },
+      {
+        "name": "CHAdeMO",
+        "count": 86
+      },
+      {
+        "name": "CEE 7/4 - Schuko - Type F",
+        "count": 54
+      }
+    ],
+    "topTowns": [
+      {
+        "name": "Berlin",
+        "count": 850
+      },
+      {
+        "name": "Potsdam",
+        "count": 17
+      },
+      {
+        "name": "Kleinmachnow",
+        "count": 11
+      },
+      {
+        "name": "Teltow",
+        "count": 10
+      },
+      {
+        "name": "Schönefeld",
+        "count": 6
+      },
+      {
+        "name": "Vogelsdorf",
+        "count": 5
+      }
+    ]
+  },
+  "brandenburg": {
+    "total": 2100,
+    "fastCount": 277,
+    "connectorBreakdown": [
+      {
+        "name": "Type 2 (Socket Only)",
+        "count": 1686
+      },
+      {
+        "name": "CCS (Type 2)",
+        "count": 333
+      },
+      {
+        "name": "Type 2 (Tethered Connector)",
+        "count": 196
+      },
+      {
+        "name": "CEE 7/4 - Schuko - Type F",
+        "count": 196
+      },
+      {
+        "name": "CHAdeMO",
+        "count": 194
+      }
+    ],
+    "topTowns": [
+      {
+        "name": "Berlin",
+        "count": 851
+      },
+      {
+        "name": "Potsdam",
+        "count": 63
+      },
+      {
+        "name": "Magdeburg",
+        "count": 43
+      },
+      {
+        "name": "Halle (Saale)",
+        "count": 39
+      },
+      {
+        "name": "Brandenburg an der Havel",
+        "count": 22
+      },
+      {
+        "name": "Cottbus",
+        "count": 21
+      }
+    ]
+  },
+  "bremen": {
+    "total": 275,
+    "fastCount": 65,
+    "connectorBreakdown": [
+      {
+        "name": "Type 2 (Socket Only)",
+        "count": 205
+      },
+      {
+        "name": "CCS (Type 2)",
+        "count": 72
+      },
+      {
+        "name": "CHAdeMO",
+        "count": 41
+      },
+      {
+        "name": "Type 2 (Tethered Connector)",
+        "count": 35
+      },
+      {
+        "name": "CEE 7/4 - Schuko - Type F",
+        "count": 23
+      }
+    ],
+    "topTowns": [
+      {
+        "name": "Bremen",
+        "count": 143
+      },
+      {
+        "name": "Bremerhaven",
+        "count": 37
+      },
+      {
+        "name": "Delmenhorst",
+        "count": 20
+      },
+      {
+        "name": "Osterholz-Scharmbeck",
+        "count": 12
+      },
+      {
+        "name": "Stuhr",
+        "count": 10
+      },
+      {
+        "name": "Ritterhude",
+        "count": 9
+      }
+    ]
+  },
+  "hamburg": {
+    "total": 986,
+    "fastCount": 172,
+    "connectorBreakdown": [
+      {
+        "name": "Type 2 (Socket Only)",
+        "count": 844
+      },
+      {
+        "name": "CEE 7/4 - Schuko - Type F",
+        "count": 579
+      },
+      {
+        "name": "CCS (Type 2)",
+        "count": 187
+      },
+      {
+        "name": "CHAdeMO",
+        "count": 144
+      },
+      {
+        "name": "Type 2 (Tethered Connector)",
+        "count": 56
+      }
+    ],
+    "topTowns": [
+      {
+        "name": "Hamburg",
+        "count": 620
+      },
+      {
+        "name": "Norderstedt",
+        "count": 33
+      },
+      {
+        "name": "Altona",
+        "count": 28
+      },
+      {
+        "name": "Eimsbüttel",
+        "count": 28
+      },
+      {
+        "name": "Mitte",
+        "count": 25
+      },
+      {
+        "name": "Wandsbek",
+        "count": 22
+      }
+    ]
+  },
+  "hessen": {
+    "total": 3291,
+    "fastCount": 393,
+    "connectorBreakdown": [
+      {
+        "name": "Type 2 (Socket Only)",
+        "count": 2430
+      },
+      {
+        "name": "CEE 7/4 - Schuko - Type F",
+        "count": 694
+      },
+      {
+        "name": "CCS (Type 2)",
+        "count": 484
+      },
+      {
+        "name": "Type 2 (Tethered Connector)",
+        "count": 292
+      },
+      {
+        "name": "CHAdeMO",
+        "count": 262
+      }
+    ],
+    "topTowns": [
+      {
+        "name": "Frankfurt am Main",
+        "count": 91
+      },
+      {
+        "name": "Mannheim",
+        "count": 78
+      },
+      {
+        "name": "Wiesbaden",
+        "count": 66
+      },
+      {
+        "name": "Darmstadt",
+        "count": 53
+      },
+      {
+        "name": "Göttingen",
+        "count": 49
+      },
+      {
+        "name": "Mainz",
+        "count": 42
+      }
+    ]
+  },
+  "mecklenburg-vorpommern": {
+    "total": 708,
+    "fastCount": 104,
+    "connectorBreakdown": [
+      {
+        "name": "Type 2 (Socket Only)",
+        "count": 465
+      },
+      {
+        "name": "CEE 7/4 - Schuko - Type F",
+        "count": 137
+      },
+      {
+        "name": "CCS (Type 2)",
+        "count": 122
+      },
+      {
+        "name": "Type 2 (Tethered Connector)",
+        "count": 82
+      },
+      {
+        "name": "CHAdeMO",
+        "count": 79
+      }
+    ],
+    "topTowns": [
+      {
+        "name": "Rostock",
+        "count": 55
+      },
+      {
+        "name": "Lübeck",
+        "count": 38
+      },
+      {
+        "name": "Timmendorfer Strand",
+        "count": 23
+      },
+      {
+        "name": "Stralsund",
+        "count": 18
+      },
+      {
+        "name": "Mölln",
+        "count": 15
+      },
+      {
+        "name": "Schwerin",
+        "count": 14
+      }
+    ]
+  },
+  "niedersachsen": {
+    "total": 7233,
+    "fastCount": 985,
+    "connectorBreakdown": [
+      {
+        "name": "Type 2 (Socket Only)",
+        "count": 5606
+      },
+      {
+        "name": "CEE 7/4 - Schuko - Type F",
+        "count": 1532
+      },
+      {
+        "name": "CCS (Type 2)",
+        "count": 1205
+      },
+      {
+        "name": "CHAdeMO",
+        "count": 679
+      },
+      {
+        "name": "Type 2 (Tethered Connector)",
+        "count": 598
+      }
+    ],
+    "topTowns": [
+      {
+        "name": "Hamburg",
+        "count": 622
+      },
+      {
+        "name": "Essen",
+        "count": 254
+      },
+      {
+        "name": "Hannover",
+        "count": 197
+      },
+      {
+        "name": "Bremen",
+        "count": 144
+      },
+      {
+        "name": "Dortmund",
+        "count": 125
+      },
+      {
+        "name": "Bielefeld",
+        "count": 86
+      }
+    ]
+  },
+  "nordrhein-westfalen": {
+    "total": 6467,
+    "fastCount": 642,
+    "connectorBreakdown": [
+      {
+        "name": "Type 2 (Socket Only)",
+        "count": 5152
+      },
+      {
+        "name": "CEE 7/4 - Schuko - Type F",
+        "count": 1060
+      },
+      {
+        "name": "CCS (Type 2)",
+        "count": 794
+      },
+      {
+        "name": "Type 2 (Tethered Connector)",
+        "count": 442
+      },
+      {
+        "name": "CHAdeMO",
+        "count": 432
+      }
+    ],
+    "topTowns": [
+      {
+        "name": "Essen",
+        "count": 254
+      },
+      {
+        "name": "Düsseldorf",
+        "count": 150
+      },
+      {
+        "name": "Köln",
+        "count": 128
+      },
+      {
+        "name": "Dortmund",
+        "count": 125
+      },
+      {
+        "name": "Bielefeld",
+        "count": 86
+      },
+      {
+        "name": "Arnhem",
+        "count": 83
+      }
+    ]
+  },
+  "rheinland-pfalz": {
+    "total": 2705,
+    "fastCount": 430,
+    "connectorBreakdown": [
+      {
+        "name": "Type 2 (Socket Only)",
+        "count": 1909
+      },
+      {
+        "name": "CEE 7/4 - Schuko - Type F",
+        "count": 576
+      },
+      {
+        "name": "CCS (Type 2)",
+        "count": 487
+      },
+      {
+        "name": "CHAdeMO",
+        "count": 275
+      },
+      {
+        "name": "Type 2 (Tethered Connector)",
+        "count": 263
+      }
+    ],
+    "topTowns": [
+      {
+        "name": "Köln",
+        "count": 74
+      },
+      {
+        "name": "Bonn",
+        "count": 74
+      },
+      {
+        "name": "Karlsruhe",
+        "count": 69
+      },
+      {
+        "name": "Wiesbaden",
+        "count": 66
+      },
+      {
+        "name": "Mannheim",
+        "count": 54
+      },
+      {
+        "name": "Mainz",
+        "count": 42
+      }
+    ]
+  },
+  "saarland": {
+    "total": 261,
+    "fastCount": 53,
+    "connectorBreakdown": [
+      {
+        "name": "Type 2 (Socket Only)",
+        "count": 196
+      },
+      {
+        "name": "CCS (Type 2)",
+        "count": 57
+      },
+      {
+        "name": "CEE 7/4 - Schuko - Type F",
+        "count": 56
+      },
+      {
+        "name": "Type 2 (Tethered Connector)",
+        "count": 37
+      },
+      {
+        "name": "CHAdeMO",
+        "count": 34
+      }
+    ],
+    "topTowns": [
+      {
+        "name": "Saarbrücken",
+        "count": 39
+      },
+      {
+        "name": "Völklingen",
+        "count": 25
+      },
+      {
+        "name": "St. Ingbert",
+        "count": 13
+      },
+      {
+        "name": "Saarlouis",
+        "count": 11
+      },
+      {
+        "name": "Homburg",
+        "count": 8
+      },
+      {
+        "name": "Zweibrücken",
+        "count": 8
+      }
+    ]
+  },
+  "sachsen": {
+    "total": 1317,
+    "fastCount": 236,
+    "connectorBreakdown": [
+      {
+        "name": "Type 2 (Socket Only)",
+        "count": 1019
+      },
+      {
+        "name": "CCS (Type 2)",
+        "count": 299
+      },
+      {
+        "name": "CEE 7/4 - Schuko - Type F",
+        "count": 260
+      },
+      {
+        "name": "Type 2 (Tethered Connector)",
+        "count": 159
+      },
+      {
+        "name": "CHAdeMO",
+        "count": 156
+      }
+    ],
+    "topTowns": [
+      {
+        "name": "Leipzig",
+        "count": 137
+      },
+      {
+        "name": "Dresden",
+        "count": 117
+      },
+      {
+        "name": "Chemnitz",
+        "count": 76
+      },
+      {
+        "name": "Halle (Saale)",
+        "count": 39
+      },
+      {
+        "name": "Gera",
+        "count": 26
+      },
+      {
+        "name": "Zwickau",
+        "count": 25
+      }
+    ]
+  },
+  "sachsen-anhalt": {
+    "total": 1364,
+    "fastCount": 228,
+    "connectorBreakdown": [
+      {
+        "name": "Type 2 (Socket Only)",
+        "count": 1020
+      },
+      {
+        "name": "CCS (Type 2)",
+        "count": 298
+      },
+      {
+        "name": "CEE 7/4 - Schuko - Type F",
+        "count": 207
+      },
+      {
+        "name": "Type 2 (Tethered Connector)",
+        "count": 157
+      },
+      {
+        "name": "CHAdeMO",
+        "count": 150
+      }
+    ],
+    "topTowns": [
+      {
+        "name": "Leipzig",
+        "count": 137
+      },
+      {
+        "name": "Potsdam",
+        "count": 63
+      },
+      {
+        "name": "Erfurt",
+        "count": 50
+      },
+      {
+        "name": "Wolfsburg",
+        "count": 50
+      },
+      {
+        "name": "Magdeburg",
+        "count": 43
+      },
+      {
+        "name": "Halle (Saale)",
+        "count": 39
+      }
+    ]
+  },
+  "schleswig-holstein": {
+    "total": 2396,
+    "fastCount": 379,
+    "connectorBreakdown": [
+      {
+        "name": "Type 2 (Socket Only)",
+        "count": 1891
+      },
+      {
+        "name": "CEE 7/4 - Schuko - Type F",
+        "count": 812
+      },
+      {
+        "name": "CCS (Type 2)",
+        "count": 418
+      },
+      {
+        "name": "CHAdeMO",
+        "count": 280
+      },
+      {
+        "name": "Type 2 (Tethered Connector)",
+        "count": 197
+      }
+    ],
+    "topTowns": [
+      {
+        "name": "Hamburg",
+        "count": 620
+      },
+      {
+        "name": "Kiel",
+        "count": 58
+      },
+      {
+        "name": "Lübeck",
+        "count": 38
+      },
+      {
+        "name": "Bremerhaven",
+        "count": 37
+      },
+      {
+        "name": "Norderstedt",
+        "count": 34
+      },
+      {
+        "name": "Flensburg",
+        "count": 30
+      }
+    ]
+  },
+  "thuringen": {
+    "total": 1395,
+    "fastCount": 245,
+    "connectorBreakdown": [
+      {
+        "name": "Type 2 (Socket Only)",
+        "count": 1053
+      },
+      {
+        "name": "CCS (Type 2)",
+        "count": 313
+      },
+      {
+        "name": "CEE 7/4 - Schuko - Type F",
+        "count": 268
+      },
+      {
+        "name": "Type 2 (Tethered Connector)",
+        "count": 168
+      },
+      {
+        "name": "CHAdeMO",
+        "count": 162
+      }
+    ],
+    "topTowns": [
+      {
+        "name": "Leipzig",
+        "count": 137
+      },
+      {
+        "name": "Erfurt",
+        "count": 51
+      },
+      {
+        "name": "Göttingen",
+        "count": 48
+      },
+      {
+        "name": "Halle (Saale)",
+        "count": 39
+      },
+      {
+        "name": "Jena",
+        "count": 31
+      },
+      {
+        "name": "Gera",
+        "count": 26
+      }
+    ]
+  },
+  "andalucia": {
+    "total": 3049,
+    "fastCount": 1023,
+    "connectorBreakdown": [
+      {
+        "name": "Type 2 (Socket Only)",
+        "count": 1932
+      },
+      {
+        "name": "CCS (Type 2)",
+        "count": 1047
+      },
+      {
+        "name": "CHAdeMO",
+        "count": 581
+      },
+      {
+        "name": "Type 2 (Tethered Connector)",
+        "count": 546
+      },
+      {
+        "name": "CEE 7/4 - Schuko - Type F",
+        "count": 206
+      }
+    ],
+    "topTowns": [
+      {
+        "name": "Málaga",
+        "count": 91
+      },
+      {
+        "name": "Sevilla",
+        "count": 87
+      },
+      {
+        "name": "Granada",
+        "count": 71
+      },
+      {
+        "name": "Seville",
+        "count": 56
+      },
+      {
+        "name": "Jerez",
+        "count": 44
+      },
+      {
+        "name": "Chiclana de la Frontera",
+        "count": 43
+      }
+    ]
+  },
+  "aragon": {
+    "total": 1607,
+    "fastCount": 636,
+    "connectorBreakdown": [
+      {
+        "name": "Type 2 (Socket Only)",
+        "count": 950
+      },
+      {
+        "name": "CCS (Type 2)",
+        "count": 651
+      },
+      {
+        "name": "Type 2 (Tethered Connector)",
+        "count": 351
+      },
+      {
+        "name": "CHAdeMO",
+        "count": 317
+      },
+      {
+        "name": "CEE 7/4 - Schuko - Type F",
+        "count": 160
+      }
+    ],
+    "topTowns": [
+      {
+        "name": "Zaragoza",
+        "count": 73
+      },
+      {
+        "name": "Pamplona",
+        "count": 50
+      },
+      {
+        "name": "Tudela",
+        "count": 27
+      },
+      {
+        "name": "Lleida",
+        "count": 23
+      },
+      {
+        "name": "Tortosa",
+        "count": 21
+      },
+      {
+        "name": "Jaca",
+        "count": 18
+      }
+    ]
+  },
+  "asturias": {
+    "total": 582,
+    "fastCount": 199,
+    "connectorBreakdown": [
+      {
+        "name": "Type 2 (Socket Only)",
+        "count": 379
+      },
+      {
+        "name": "CCS (Type 2)",
+        "count": 203
+      },
+      {
+        "name": "Type 2 (Tethered Connector)",
+        "count": 110
+      },
+      {
+        "name": "CHAdeMO",
+        "count": 93
+      },
+      {
+        "name": "CEE 7/4 - Schuko - Type F",
+        "count": 42
+      }
+    ],
+    "topTowns": [
+      {
+        "name": "Gijón/Xixón",
+        "count": 42
+      },
+      {
+        "name": "Avilés",
+        "count": 32
+      },
+      {
+        "name": "Oviedo",
+        "count": 21
+      },
+      {
+        "name": "Llanes",
+        "count": 16
+      },
+      {
+        "name": "Siero",
+        "count": 14
+      },
+      {
+        "name": "Gijón",
+        "count": 14
+      }
+    ]
+  },
+  "islas-baleares": {
+    "total": 952,
+    "fastCount": 154,
+    "connectorBreakdown": [
+      {
+        "name": "Type 2 (Socket Only)",
+        "count": 800
+      },
+      {
+        "name": "CEE 7/4 - Schuko - Type F",
+        "count": 167
+      },
+      {
+        "name": "CCS (Type 2)",
+        "count": 162
+      },
+      {
+        "name": "CHAdeMO",
+        "count": 85
+      },
+      {
+        "name": "Type 2 (Tethered Connector)",
+        "count": 74
+      }
+    ],
+    "topTowns": [
+      {
+        "name": "Palma",
+        "count": 101
+      },
+      {
+        "name": "Maó",
+        "count": 32
+      },
+      {
+        "name": "Llucmajor",
+        "count": 29
+      },
+      {
+        "name": "Inca",
+        "count": 25
+      },
+      {
+        "name": "Manacor",
+        "count": 22
+      },
+      {
+        "name": "Ciutadella",
+        "count": 22
+      }
+    ]
+  },
+  "canarias": {
+    "total": 863,
+    "fastCount": 240,
+    "connectorBreakdown": [
+      {
+        "name": "Type 2 (Socket Only)",
+        "count": 649
+      },
+      {
+        "name": "CCS (Type 2)",
+        "count": 253
+      },
+      {
+        "name": "CHAdeMO",
+        "count": 128
+      },
+      {
+        "name": "CEE 7/4 - Schuko - Type F",
+        "count": 117
+      },
+      {
+        "name": "Type 2 (Tethered Connector)",
+        "count": 101
+      }
+    ],
+    "topTowns": [
+      {
+        "name": "Adeje",
+        "count": 48
+      },
+      {
+        "name": "Las Palmas de Gran Canaria",
+        "count": 46
+      },
+      {
+        "name": "Telde",
+        "count": 36
+      },
+      {
+        "name": "San Bartolomé de Tirajana",
+        "count": 32
+      },
+      {
+        "name": "Arrecife",
+        "count": 25
+      },
+      {
+        "name": "San Miguel de Abona",
+        "count": 21
+      }
+    ]
+  },
+  "cantabria": {
+    "total": 276,
+    "fastCount": 57,
+    "connectorBreakdown": [
+      {
+        "name": "Type 2 (Socket Only)",
+        "count": 202
+      },
+      {
+        "name": "CCS (Type 2)",
+        "count": 57
+      },
+      {
+        "name": "Type 2 (Tethered Connector)",
+        "count": 44
+      },
+      {
+        "name": "CHAdeMO",
+        "count": 26
+      },
+      {
+        "name": "CEE 7/4 - Schuko - Type F",
+        "count": 25
+      }
+    ],
+    "topTowns": [
+      {
+        "name": "Torrelavega",
+        "count": 18
+      },
+      {
+        "name": "Reinosa",
+        "count": 11
+      },
+      {
+        "name": "Muskiz",
+        "count": 5
+      },
+      {
+        "name": "Los Corrales de Buelna",
+        "count": 4
+      },
+      {
+        "name": "Reocín",
+        "count": 3
+      },
+      {
+        "name": "Santillana del Mar",
+        "count": 3
+      }
+    ]
+  },
+  "castilla-la-mancha": {
+    "total": 2907,
+    "fastCount": 1148,
+    "connectorBreakdown": [
+      {
+        "name": "Type 2 (Socket Only)",
+        "count": 1832
+      },
+      {
+        "name": "CCS (Type 2)",
+        "count": 1175
+      },
+      {
+        "name": "CHAdeMO",
+        "count": 596
+      },
+      {
+        "name": "Type 2 (Tethered Connector)",
+        "count": 554
+      },
+      {
+        "name": "CEE 7/4 - Schuko - Type F",
+        "count": 186
+      }
+    ],
+    "topTowns": [
+      {
+        "name": "Madrid",
+        "count": 434
+      },
+      {
+        "name": "Alcobendas",
+        "count": 52
+      },
+      {
+        "name": "Rivas-Vaciamadrid",
+        "count": 41
+      },
+      {
+        "name": "Boadilla del Monte",
+        "count": 37
+      },
+      {
+        "name": "Majadahonda",
+        "count": 36
+      },
+      {
+        "name": "Alcalá de Henares",
+        "count": 34
+      }
+    ]
+  },
+  "castilla-y-leon": {
+    "total": 4130,
+    "fastCount": 1565,
+    "connectorBreakdown": [
+      {
+        "name": "Type 2 (Socket Only)",
+        "count": 2504
+      },
+      {
+        "name": "CCS (Type 2)",
+        "count": 1605
+      },
+      {
+        "name": "Type 2 (Tethered Connector)",
+        "count": 891
+      },
+      {
+        "name": "CHAdeMO",
+        "count": 791
+      },
+      {
+        "name": "CEE 7/4 - Schuko - Type F",
+        "count": 303
+      }
+    ],
+    "topTowns": [
+      {
+        "name": "Madrid",
+        "count": 434
+      },
+      {
+        "name": "Alcobendas",
+        "count": 52
+      },
+      {
+        "name": "Rivas-Vaciamadrid",
+        "count": 41
+      },
+      {
+        "name": "Boadilla del Monte",
+        "count": 37
+      },
+      {
+        "name": "Majadahonda",
+        "count": 36
+      },
+      {
+        "name": "Alcalá de Henares",
+        "count": 34
+      }
+    ]
+  },
+  "cataluna": {
+    "total": 3956,
+    "fastCount": 1273,
+    "connectorBreakdown": [
+      {
+        "name": "Type 2 (Socket Only)",
+        "count": 2635
+      },
+      {
+        "name": "CCS (Type 2)",
+        "count": 1327
+      },
+      {
+        "name": "CHAdeMO",
+        "count": 777
+      },
+      {
+        "name": "Type 2 (Tethered Connector)",
+        "count": 733
+      },
+      {
+        "name": "CEE 7/4 - Schuko - Type F",
+        "count": 568
+      }
+    ],
+    "topTowns": [
+      {
+        "name": "Barcelona",
+        "count": 336
+      },
+      {
+        "name": "Tarragona",
+        "count": 47
+      },
+      {
+        "name": "Sant Cugat del Vallès",
+        "count": 45
+      },
+      {
+        "name": "Manresa",
+        "count": 40
+      },
+      {
+        "name": "Vic",
+        "count": 40
+      },
+      {
+        "name": "Reus",
+        "count": 34
+      }
+    ]
+  },
+  "comunidad-valenciana": {
+    "total": 2687,
+    "fastCount": 944,
+    "connectorBreakdown": [
+      {
+        "name": "Type 2 (Socket Only)",
+        "count": 1754
+      },
+      {
+        "name": "CCS (Type 2)",
+        "count": 1007
+      },
+      {
+        "name": "CHAdeMO",
+        "count": 519
+      },
+      {
+        "name": "Type 2 (Tethered Connector)",
+        "count": 509
+      },
+      {
+        "name": "CEE 7/4 - Schuko - Type F",
+        "count": 187
+      }
+    ],
+    "topTowns": [
+      {
+        "name": "Benidorm",
+        "count": 63
+      },
+      {
+        "name": "Murcia",
+        "count": 50
+      },
+      {
+        "name": "Valencia",
+        "count": 39
+      },
+      {
+        "name": "Dénia",
+        "count": 30
+      },
+      {
+        "name": "Orihuela",
+        "count": 28
+      },
+      {
+        "name": "Paterna",
+        "count": 27
+      }
+    ]
+  },
+  "extremadura": {
+    "total": 650,
+    "fastCount": 263,
+    "connectorBreakdown": [
+      {
+        "name": "Type 2 (Socket Only)",
+        "count": 369
+      },
+      {
+        "name": "CCS (Type 2)",
+        "count": 276
+      },
+      {
+        "name": "CHAdeMO",
+        "count": 193
+      },
+      {
+        "name": "Type 2 (Tethered Connector)",
+        "count": 160
+      },
+      {
+        "name": "CEE 7/4 - Schuko - Type F",
+        "count": 48
+      }
+    ],
+    "topTowns": [
+      {
+        "name": "Badajoz",
+        "count": 32
+      },
+      {
+        "name": "Mérida",
+        "count": 21
+      },
+      {
+        "name": "Cáceres",
+        "count": 21
+      },
+      {
+        "name": "Talavera de la Reina",
+        "count": 17
+      },
+      {
+        "name": "Castelo Branco",
+        "count": 16
+      },
+      {
+        "name": "Covilhã",
+        "count": 14
+      }
+    ]
+  },
+  "galicia": {
+    "total": 957,
+    "fastCount": 357,
+    "connectorBreakdown": [
+      {
+        "name": "Type 2 (Socket Only)",
+        "count": 517
+      },
+      {
+        "name": "CCS (Type 2)",
+        "count": 381
+      },
+      {
+        "name": "Type 2 (Tethered Connector)",
+        "count": 221
+      },
+      {
+        "name": "CHAdeMO",
+        "count": 193
+      },
+      {
+        "name": "CEE 7/4 - Schuko - Type F",
+        "count": 76
+      }
+    ],
+    "topTowns": [
+      {
+        "name": "Vigo",
+        "count": 49
+      },
+      {
+        "name": "Santiago de Compostela",
+        "count": 31
+      },
+      {
+        "name": "Oleiros",
+        "count": 18
+      },
+      {
+        "name": "Pontevedra",
+        "count": 17
+      },
+      {
+        "name": "A Coruña",
+        "count": 17
+      },
+      {
+        "name": "Vilagarcía de Arousa",
+        "count": 17
+      }
+    ]
+  },
+  "madrid": {
+    "total": 2307,
+    "fastCount": 850,
+    "connectorBreakdown": [
+      {
+        "name": "Type 2 (Socket Only)",
+        "count": 1540
+      },
+      {
+        "name": "CCS (Type 2)",
+        "count": 869
+      },
+      {
+        "name": "CHAdeMO",
+        "count": 420
+      },
+      {
+        "name": "Type 2 (Tethered Connector)",
+        "count": 394
+      },
+      {
+        "name": "CEE 7/4 - Schuko - Type F",
+        "count": 137
+      }
+    ],
+    "topTowns": [
+      {
+        "name": "Madrid",
+        "count": 434
+      },
+      {
+        "name": "Alcobendas",
+        "count": 52
+      },
+      {
+        "name": "Rivas-Vaciamadrid",
+        "count": 41
+      },
+      {
+        "name": "Boadilla del Monte",
+        "count": 37
+      },
+      {
+        "name": "Majadahonda",
+        "count": 36
+      },
+      {
+        "name": "Alcalá de Henares",
+        "count": 34
+      }
+    ]
+  },
+  "murcia": {
+    "total": 838,
+    "fastCount": 307,
+    "connectorBreakdown": [
+      {
+        "name": "Type 2 (Socket Only)",
+        "count": 480
+      },
+      {
+        "name": "CCS (Type 2)",
+        "count": 322
+      },
+      {
+        "name": "Type 2 (Tethered Connector)",
+        "count": 180
+      },
+      {
+        "name": "CHAdeMO",
+        "count": 174
+      },
+      {
+        "name": "CEE 7/4 - Schuko - Type F",
+        "count": 78
+      }
+    ],
+    "topTowns": [
+      {
+        "name": "Murcia",
+        "count": 50
+      },
+      {
+        "name": "Orihuela",
+        "count": 28
+      },
+      {
+        "name": "Torre Pacheco",
+        "count": 21
+      },
+      {
+        "name": "Torrevieja",
+        "count": 18
+      },
+      {
+        "name": "San Javier",
+        "count": 18
+      },
+      {
+        "name": "Elda",
+        "count": 16
+      }
+    ]
+  },
+  "navarra": {
+    "total": 679,
+    "fastCount": 268,
+    "connectorBreakdown": [
+      {
+        "name": "Type 2 (Socket Only)",
+        "count": 404
+      },
+      {
+        "name": "CCS (Type 2)",
+        "count": 267
+      },
+      {
+        "name": "Type 2 (Tethered Connector)",
+        "count": 161
+      },
+      {
+        "name": "CHAdeMO",
+        "count": 120
+      },
+      {
+        "name": "CEE 7/4 - Schuko - Type F",
+        "count": 58
+      }
+    ],
+    "topTowns": [
+      {
+        "name": "Pamplona",
+        "count": 50
+      },
+      {
+        "name": "Tudela",
+        "count": 27
+      },
+      {
+        "name": "San Sebastián",
+        "count": 14
+      },
+      {
+        "name": "Oiartzun",
+        "count": 12
+      },
+      {
+        "name": "Calahorra",
+        "count": 11
+      },
+      {
+        "name": "Hernani",
+        "count": 9
+      }
+    ]
+  },
+  "pais-vasco": {
+    "total": 732,
+    "fastCount": 274,
+    "connectorBreakdown": [
+      {
+        "name": "Type 2 (Socket Only)",
+        "count": 457
+      },
+      {
+        "name": "CCS (Type 2)",
+        "count": 272
+      },
+      {
+        "name": "Type 2 (Tethered Connector)",
+        "count": 141
+      },
+      {
+        "name": "CHAdeMO",
+        "count": 131
+      },
+      {
+        "name": "CEE 7/4 - Schuko - Type F",
+        "count": 55
+      }
+    ],
+    "topTowns": [
+      {
+        "name": "Bilbao",
+        "count": 47
+      },
+      {
+        "name": "Irun",
+        "count": 20
+      },
+      {
+        "name": "San Sebastián",
+        "count": 16
+      },
+      {
+        "name": "Azpeitia",
+        "count": 14
+      },
+      {
+        "name": "Basauri",
+        "count": 12
+      },
+      {
+        "name": "Santurtzi",
+        "count": 12
+      }
+    ]
+  },
+  "la-rioja": {
+    "total": 236,
+    "fastCount": 87,
+    "connectorBreakdown": [
+      {
+        "name": "Type 2 (Socket Only)",
+        "count": 140
+      },
+      {
+        "name": "CCS (Type 2)",
+        "count": 87
+      },
+      {
+        "name": "Type 2 (Tethered Connector)",
+        "count": 59
+      },
+      {
+        "name": "CHAdeMO",
+        "count": 27
+      },
+      {
+        "name": "CEE 7/4 - Schuko - Type F",
+        "count": 21
+      }
+    ],
+    "topTowns": [
+      {
+        "name": "Logroño",
+        "count": 31
+      },
+      {
+        "name": "Haro",
+        "count": 11
+      },
+      {
+        "name": "Calahorra",
+        "count": 11
+      },
+      {
+        "name": "Alfaro",
+        "count": 5
+      },
+      {
+        "name": "Villamediana de Iregua",
+        "count": 5
+      },
+      {
+        "name": "Arnedo",
+        "count": 4
+      }
+    ]
+  },
+  "ceuta": {
+    "total": 7,
+    "fastCount": 1,
+    "connectorBreakdown": [
+      {
+        "name": "Type 2 (Socket Only)",
+        "count": 3
+      },
+      {
+        "name": "CEE 7/4 - Schuko - Type F",
+        "count": 2
+      },
+      {
+        "name": "Type 2 (Tethered Connector)",
+        "count": 2
+      },
+      {
+        "name": "CCS (Type 2)",
+        "count": 1
+      },
+      {
+        "name": "CHAdeMO",
+        "count": 1
+      }
+    ],
+    "topTowns": [
+      {
+        "name": "Ceuta",
+        "count": 2
+      }
+    ]
+  },
+  "melilla": {
+    "total": 9,
+    "fastCount": 0,
+    "connectorBreakdown": [
+      {
+        "name": "Type 2 (Socket Only)",
+        "count": 8
+      },
+      {
+        "name": "Type 2 (Tethered Connector)",
+        "count": 1
+      },
+      {
+        "name": "CEE 7/4 - Schuko - Type F",
+        "count": 1
+      }
+    ],
+    "topTowns": [
+      {
+        "name": "Melilla",
+        "count": 6
+      }
+    ]
+  }
+}

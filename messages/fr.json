@@ -24,7 +24,7 @@
     "about": "À propos",
     "contact": "Contact",
     "menu": "Menu",
-    "departments": "Départements"
+    "departments": "Régions"
   },
   "Footer": {
     "resourcesHeading": "Ressources",
@@ -454,10 +454,13 @@
     }
   },
   "DepartmentsIndex": {
-    "metaTitle": "Bornes de recharge par département en France",
-    "metaDescription": "Retrouvez le nombre de bornes de recharge pour voiture électrique dans chacun des départements français, avec la carte interactive.",
-    "title": "Bornes de recharge par département",
-    "intro": "Choisissez un département pour consulter le nombre de bornes de recharge disponibles, la répartition par type de connecteur et les villes les mieux équipées."
+    "metaTitle": "Bornes de recharge par région : France, Allemagne, Espagne",
+    "metaDescription": "Retrouvez le nombre de bornes de recharge par département français, par Land allemand et par communauté autonome espagnole, avec la carte interactive.",
+    "title": "Bornes de recharge par région",
+    "intro": "Choisissez un pays puis une région pour consulter le nombre de bornes de recharge disponibles, la répartition par type de connecteur et les villes les mieux équipées.",
+    "franceHeading": "France (départements)",
+    "germanyHeading": "Allemagne (Länder)",
+    "spainHeading": "Espagne (communautés autonomes)"
   },
   "DepartmentPage": {
     "eyebrow": "Localisation par département",
@@ -482,5 +485,49 @@
     "sourceNote": "Données : Open Charge Map (openchargemap.org), une base collaborative libre.",
     "backToIndex": "Tous les départements",
     "placeName": "{name} ({code})"
+  },
+  "GermanyRegionPage": {
+    "eyebrow": "Localisation par Land allemand",
+    "metaTitle": "Bornes de recharge en Allemagne : {name} — carte et statistiques",
+    "metaDescription": "Nombre de bornes de recharge, recharge rapide et villes les mieux équipées dans le Land allemand {name}. Données Open Charge Map à jour.",
+    "title": "Bornes de recharge : {name} (Allemagne)",
+    "introWithStats": "Le Land {name} recense {total} bornes de recharge répertoriées par Open Charge Map sur son territoire.",
+    "introFallback": "Le Land {name} est couvert par notre carte de bornes de recharge, alimentée par Open Charge Map.",
+    "fastCountLabel": "Dont {fastCount} bornes de recharge rapide (courant continu, 50 kW ou plus).",
+    "connectorsHeading": "Types de connecteurs disponibles",
+    "townsHeading": "Villes les mieux équipées",
+    "mapCta": "Voir ces bornes sur la carte",
+    "faqHeading": "Questions fréquentes",
+    "faq1Question": "Combien coûte la recharge d'une voiture électrique en {name} ?",
+    "faq1Answer": "Le tarif dépend de l'opérateur du réseau et de la puissance de la borne : il est généralement affiché dans l'application de l'opérateur avant de lancer la recharge.",
+    "faq2Question": "Comment trouver une borne de recharge rapide en {name} ?",
+    "faq2Answer": "Ouvrez la carte interactive et filtrez par puissance pour repérer les bornes rapides (courant continu, 50 kW et plus) du Land {name}.",
+    "faq3Question": "Ces données sont-elles à jour ?",
+    "faq3Answer": "Les chiffres de cette page proviennent d'Open Charge Map, une base collaborative mise à jour en continu par ses contributeurs. Le nombre exact de bornes peut varier d'un jour à l'autre et cette page ne couvre que le territoire du Land {name}.",
+    "sourceNote": "Données : Open Charge Map (openchargemap.org), une base collaborative libre.",
+    "backToIndex": "Tous les Länder allemands",
+    "placeName": "{name}, Allemagne"
+  },
+  "SpainRegionPage": {
+    "eyebrow": "Localisation par communauté autonome espagnole",
+    "metaTitle": "Bornes de recharge en Espagne : {name} — carte et statistiques",
+    "metaDescription": "Nombre de bornes de recharge, recharge rapide et villes les mieux équipées dans la communauté autonome {name}. Données Open Charge Map à jour.",
+    "title": "Bornes de recharge : {name} (Espagne)",
+    "introWithStats": "La communauté autonome {name} recense {total} bornes de recharge répertoriées par Open Charge Map sur son territoire.",
+    "introFallback": "La communauté autonome {name} est couverte par notre carte de bornes de recharge, alimentée par Open Charge Map.",
+    "fastCountLabel": "Dont {fastCount} bornes de recharge rapide (courant continu, 50 kW ou plus).",
+    "connectorsHeading": "Types de connecteurs disponibles",
+    "townsHeading": "Villes les mieux équipées",
+    "mapCta": "Voir ces bornes sur la carte",
+    "faqHeading": "Questions fréquentes",
+    "faq1Question": "Combien coûte la recharge d'une voiture électrique en {name} ?",
+    "faq1Answer": "Le tarif dépend de l'opérateur du réseau et de la puissance de la borne : il est généralement affiché dans l'application de l'opérateur avant de lancer la recharge.",
+    "faq2Question": "Comment trouver une borne de recharge rapide en {name} ?",
+    "faq2Answer": "Ouvrez la carte interactive et filtrez par puissance pour repérer les bornes rapides (courant continu, 50 kW et plus) de {name}.",
+    "faq3Question": "Ces données sont-elles à jour ?",
+    "faq3Answer": "Les chiffres de cette page proviennent d'Open Charge Map, une base collaborative mise à jour en continu par ses contributeurs. Le nombre exact de bornes peut varier d'un jour à l'autre et cette page ne couvre que le territoire de {name}.",
+    "sourceNote": "Données : Open Charge Map (openchargemap.org), une base collaborative libre.",
+    "backToIndex": "Toutes les communautés autonomes",
+    "placeName": "{name}, Espagne"
   }
 }

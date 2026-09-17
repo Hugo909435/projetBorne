@@ -24,7 +24,7 @@
     "about": "About",
     "contact": "Contact",
     "menu": "Menu",
-    "departments": "Departments"
+    "departments": "Regions"
   },
   "Footer": {
     "resourcesHeading": "Resources",
@@ -388,8 +388,8 @@
     "faq1A": "Real-world range is usually 10 to 20% lower than the advertised WLTP figure, and the gap can widen in cold weather or on the motorway.",
     "faq2Q": "Is an electric car more expensive than an equivalent petrol or diesel model?",
     "faq2A": "Yes, upfront, typically 20 to 40% more, but the gap narrows a lot in use thanks to cheaper charging and maintenance, around 150 to 300 euros a year versus 400 to 600 euros for a combustion car.",
-    "faq3Q": "What financial incentives exist for buying an electric car in France?",
-    "faq3A": "The main schemes are the ecological bonus, the scrappage bonus, and social leasing for lower-income households, though their amounts and conditions change every year.",
+    "faq3Q": "What financial incentives exist for buying an electric car?",
+    "faq3A": "Many countries offer purchase grants, scrappage bonuses, or subsidized leasing for lower-income households, but the schemes, amounts, and eligibility rules vary widely and change every year, so check your country's current official rules.",
     "faq4Q": "Where do most people charge their electric car?",
     "faq4A": "About 80 to 90% of charging happens at home or at work, on a reinforced outlet or a wallbox, while the fast-charging network is mostly used for long trips."
   },
@@ -454,10 +454,13 @@
     }
   },
   "DepartmentsIndex": {
-    "metaTitle": "EV charging stations by French department",
-    "metaDescription": "Find out how many EV charging stations are available in each French department, with the interactive map.",
-    "title": "Charging stations by department",
-    "intro": "Pick a department to see how many charging stations are available, the breakdown by connector type, and the best-covered towns."
+    "metaTitle": "EV charging stations by region: France, Germany, Spain",
+    "metaDescription": "Number of EV charging stations by French department, German state, and Spanish autonomous community, with the interactive map.",
+    "title": "Charging stations by region",
+    "intro": "Pick a country, then a region, to see how many charging stations are available, the breakdown by connector type, and the best-covered towns.",
+    "franceHeading": "France (departments)",
+    "germanyHeading": "Germany (states)",
+    "spainHeading": "Spain (autonomous communities)"
   },
   "DepartmentPage": {
     "eyebrow": "Location by department",
@@ -482,5 +485,49 @@
     "sourceNote": "Data: Open Charge Map (openchargemap.org), a free collaborative database.",
     "backToIndex": "All departments",
     "placeName": "{name} ({code}), France"
+  },
+  "GermanyRegionPage": {
+    "eyebrow": "Location by German state",
+    "metaTitle": "EV charging stations in Germany: {name} — map and stats",
+    "metaDescription": "Number of charging stations, fast chargers, and best-covered towns in the German state of {name}. Data from Open Charge Map.",
+    "title": "EV charging stations: {name} (Germany)",
+    "introWithStats": "The state of {name} has {total} charging stations listed on Open Charge Map across its territory.",
+    "introFallback": "The state of {name} is covered by our charging station map, powered by Open Charge Map.",
+    "fastCountLabel": "Including {fastCount} fast-charging stations (DC, 50 kW or more).",
+    "connectorsHeading": "Connector types available",
+    "townsHeading": "Best-covered towns",
+    "mapCta": "See these stations on the map",
+    "faqHeading": "Frequently asked questions",
+    "faq1Question": "How much does it cost to charge an EV in {name}?",
+    "faq1Answer": "The price depends on the network operator and the station's power output; it's usually shown in the operator's app before you start charging.",
+    "faq2Question": "How do I find a fast-charging station in {name}?",
+    "faq2Answer": "Open the interactive map and filter by power output to spot the fast (DC, 50 kW and above) stations in {name}.",
+    "faq3Question": "Is this data up to date?",
+    "faq3Answer": "The figures on this page come from Open Charge Map, a collaborative database continuously updated by its contributors. The exact station count can vary from one day to the next, and this page only covers the territory of {name}.",
+    "sourceNote": "Data: Open Charge Map (openchargemap.org), a free collaborative database.",
+    "backToIndex": "All German states",
+    "placeName": "{name}, Germany"
+  },
+  "SpainRegionPage": {
+    "eyebrow": "Location by Spanish autonomous community",
+    "metaTitle": "EV charging stations in Spain: {name} — map and stats",
+    "metaDescription": "Number of charging stations, fast chargers, and best-covered towns in the Spanish autonomous community of {name}. Data from Open Charge Map.",
+    "title": "EV charging stations: {name} (Spain)",
+    "introWithStats": "The autonomous community of {name} has {total} charging stations listed on Open Charge Map across its territory.",
+    "introFallback": "The autonomous community of {name} is covered by our charging station map, powered by Open Charge Map.",
+    "fastCountLabel": "Including {fastCount} fast-charging stations (DC, 50 kW or more).",
+    "connectorsHeading": "Connector types available",
+    "townsHeading": "Best-covered towns",
+    "mapCta": "See these stations on the map",
+    "faqHeading": "Frequently asked questions",
+    "faq1Question": "How much does it cost to charge an EV in {name}?",
+    "faq1Answer": "The price depends on the network operator and the station's power output; it's usually shown in the operator's app before you start charging.",
+    "faq2Question": "How do I find a fast-charging station in {name}?",
+    "faq2Answer": "Open the interactive map and filter by power output to spot the fast (DC, 50 kW and above) stations in {name}.",
+    "faq3Question": "Is this data up to date?",
+    "faq3Answer": "The figures on this page come from Open Charge Map, a collaborative database continuously updated by its contributors. The exact station count can vary from one day to the next, and this page only covers the territory of {name}.",
+    "sourceNote": "Data: Open Charge Map (openchargemap.org), a free collaborative database.",
+    "backToIndex": "All Spanish autonomous communities",
+    "placeName": "{name}, Spain"
   }
 }

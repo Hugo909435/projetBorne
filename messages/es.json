@@ -24,7 +24,7 @@
     "about": "Acerca de",
     "contact": "Contacto",
     "menu": "Menú",
-    "departments": "Departamentos"
+    "departments": "Regiones"
   },
   "Footer": {
     "resourcesHeading": "Recursos",
@@ -388,8 +388,8 @@
     "faq1A": "La autonomía real suele ser entre un 10 y un 20 % inferior a la cifra WLTP anunciada, y la diferencia puede ser mayor con frío o en autopista.",
     "faq2Q": "¿Es un coche eléctrico más caro que un modelo equivalente de combustión?",
     "faq2A": "Al comprarlo sí, de media entre un 20 y un 40 % más, pero la diferencia se reduce mucho en el uso gracias a un coste de recarga y mantenimiento menor, unos 150 a 300 euros de mantenimiento anual frente a 400 a 600 euros en uno de combustión.",
-    "faq3Q": "¿Qué ayudas existen para comprar un coche eléctrico en Francia?",
-    "faq3A": "Las principales son el bono ecológico, la prima por achatarrar un vehículo antiguo y el leasing social para hogares modestos, aunque sus importes y condiciones cambian cada año.",
+    "faq3Q": "¿Qué ayudas existen para comprar un coche eléctrico?",
+    "faq3A": "Muchos países ofrecen ayudas a la compra, primas por achatarrar un vehículo antiguo o leasing subvencionado para hogares modestos, pero los programas, importes y requisitos varían mucho y cambian cada año, así que conviene consultar las normas oficiales vigentes en tu país.",
     "faq4Q": "¿Dónde se recarga con más frecuencia un coche eléctrico?",
     "faq4A": "Entre el 80 y el 90 % de las recargas se hacen en casa o en el trabajo, con un enchufe reforzado o una wallbox, mientras que la red de carga rápida se usa sobre todo en los trayectos largos."
   },
@@ -454,10 +454,13 @@
     }
   },
   "DepartmentsIndex": {
-    "metaTitle": "Puntos de recarga por departamento francés",
-    "metaDescription": "Descubre cuántos puntos de recarga para coches eléctricos hay en cada departamento francés, con el mapa interactivo.",
-    "title": "Puntos de recarga por departamento",
-    "intro": "Elige un departamento para consultar el número de puntos de recarga disponibles, el desglose por tipo de conector y las ciudades mejor equipadas."
+    "metaTitle": "Puntos de recarga por región: Francia, Alemania, España",
+    "metaDescription": "Número de puntos de recarga por departamento francés, estado alemán y comunidad autónoma española, con el mapa interactivo.",
+    "title": "Puntos de recarga por región",
+    "intro": "Elige primero un país y luego una región para consultar el número de puntos de recarga disponibles, el desglose por tipo de conector y las ciudades mejor equipadas.",
+    "franceHeading": "Francia (departamentos)",
+    "germanyHeading": "Alemania (estados federados)",
+    "spainHeading": "España (comunidades autónomas)"
   },
   "DepartmentPage": {
     "eyebrow": "Localización por departamento",
@@ -482,5 +485,49 @@
     "sourceNote": "Datos: Open Charge Map (openchargemap.org), una base de datos colaborativa y libre.",
     "backToIndex": "Todos los departamentos",
     "placeName": "{name} ({code}), Francia"
+  },
+  "GermanyRegionPage": {
+    "eyebrow": "Localización por estado federado alemán",
+    "metaTitle": "Puntos de recarga en Alemania: {name} — mapa y estadísticas",
+    "metaDescription": "Número de puntos de recarga, recarga rápida y ciudades mejor equipadas en el estado federado alemán de {name}. Datos de Open Charge Map.",
+    "title": "Puntos de recarga: {name} (Alemania)",
+    "introWithStats": "El estado federado de {name} registra {total} puntos de recarga catalogados por Open Charge Map en su territorio.",
+    "introFallback": "El estado federado de {name} está cubierto por nuestro mapa de puntos de recarga, alimentado por Open Charge Map.",
+    "fastCountLabel": "De los cuales {fastCount} son puntos de recarga rápida (corriente continua, 50 kW o más).",
+    "connectorsHeading": "Tipos de conectores disponibles",
+    "townsHeading": "Ciudades mejor equipadas",
+    "mapCta": "Ver estos puntos en el mapa",
+    "faqHeading": "Preguntas frecuentes",
+    "faq1Question": "¿Cuánto cuesta recargar un coche eléctrico en {name}?",
+    "faq1Answer": "El precio depende del operador de la red y de la potencia del punto de recarga; suele mostrarse en la app del operador antes de iniciar la recarga.",
+    "faq2Question": "¿Cómo encuentro un punto de recarga rápida en {name}?",
+    "faq2Answer": "Abre el mapa interactivo y filtra por potencia para localizar los puntos de recarga rápida (corriente continua, 50 kW o más) de {name}.",
+    "faq3Question": "¿Estos datos están actualizados?",
+    "faq3Answer": "Las cifras de esta página proceden de Open Charge Map, una base de datos colaborativa actualizada continuamente por sus colaboradores. El número exacto puede variar de un día a otro, y esta página solo cubre el territorio de {name}.",
+    "sourceNote": "Datos: Open Charge Map (openchargemap.org), una base de datos colaborativa y libre.",
+    "backToIndex": "Todos los estados federados alemanes",
+    "placeName": "{name}, Alemania"
+  },
+  "SpainRegionPage": {
+    "eyebrow": "Localización por comunidad autónoma",
+    "metaTitle": "Puntos de recarga: {name} — mapa y estadísticas",
+    "metaDescription": "Número de puntos de recarga, recarga rápida y ciudades mejor equipadas en la comunidad autónoma de {name}. Datos de Open Charge Map.",
+    "title": "Puntos de recarga: {name}",
+    "introWithStats": "La comunidad autónoma de {name} registra {total} puntos de recarga catalogados por Open Charge Map en su territorio.",
+    "introFallback": "La comunidad autónoma de {name} está cubierta por nuestro mapa de puntos de recarga, alimentado por Open Charge Map.",
+    "fastCountLabel": "De los cuales {fastCount} son puntos de recarga rápida (corriente continua, 50 kW o más).",
+    "connectorsHeading": "Tipos de conectores disponibles",
+    "townsHeading": "Ciudades mejor equipadas",
+    "mapCta": "Ver estos puntos en el mapa",
+    "faqHeading": "Preguntas frecuentes",
+    "faq1Question": "¿Cuánto cuesta recargar un coche eléctrico en {name}?",
+    "faq1Answer": "El precio depende del operador de la red y de la potencia del punto de recarga; suele mostrarse en la app del operador antes de iniciar la recarga.",
+    "faq2Question": "¿Cómo encuentro un punto de recarga rápida en {name}?",
+    "faq2Answer": "Abre el mapa interactivo y filtra por potencia para localizar los puntos de recarga rápida (corriente continua, 50 kW o más) de {name}.",
+    "faq3Question": "¿Estos datos están actualizados?",
+    "faq3Answer": "Las cifras de esta página proceden de Open Charge Map, una base de datos colaborativa actualizada continuamente por sus colaboradores. El número exacto puede variar de un día a otro, y esta página solo cubre el territorio de {name}.",
+    "sourceNote": "Datos: Open Charge Map (openchargemap.org), una base de datos colaborativa y libre.",
+    "backToIndex": "Todas las comunidades autónomas",
+    "placeName": "{name}"
   }
 }

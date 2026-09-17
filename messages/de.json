@@ -24,7 +24,7 @@
     "about": "Über uns",
     "contact": "Kontakt",
     "menu": "Menü",
-    "departments": "Départements"
+    "departments": "Regionen"
   },
   "Footer": {
     "resourcesHeading": "Ressourcen",
@@ -388,8 +388,8 @@
     "faq1A": "Die reale Reichweite liegt meist 10 bis 20 Prozent unter dem angegebenen WLTP-Wert, und der Unterschied kann bei Kälte oder auf der Autobahn noch größer ausfallen.",
     "faq2Q": "Ist ein Elektroauto teurer als ein vergleichbares Verbrennermodell?",
     "faq2A": "Beim Kauf ja, im Schnitt 20 bis 40 Prozent mehr, doch der Abstand verringert sich im Betrieb deutlich dank günstigerer Lade- und Wartungskosten, etwa 150 bis 300 Euro Wartung im Jahr gegenüber 400 bis 600 Euro bei einem Verbrenner.",
-    "faq3Q": "Welche Förderungen gibt es für den Kauf eines Elektroautos in Frankreich?",
-    "faq3A": "Die wichtigsten Programme sind der Umweltbonus, die Abwrackprämie und das soziale Leasing für einkommensschwächere Haushalte, wobei sich Höhe und Bedingungen jedes Jahr ändern.",
+    "faq3Q": "Welche Förderungen gibt es für den Kauf eines Elektroautos?",
+    "faq3A": "Viele Länder bieten Kaufprämien, Abwrackprämien oder vergünstigtes Leasing für einkommensschwächere Haushalte an, doch die Programme, Beträge und Voraussetzungen unterscheiden sich stark und ändern sich jedes Jahr. Prüfen Sie die aktuellen offiziellen Regelungen Ihres Landes.",
     "faq4Q": "Wo wird ein Elektroauto meistens geladen?",
     "faq4A": "Etwa 80 bis 90 Prozent der Ladevorgänge finden zu Hause oder am Arbeitsplatz statt, an einer verstärkten Steckdose oder einer Wallbox, während das Schnellladenetz vor allem für lange Fahrten genutzt wird."
   },
@@ -454,10 +454,13 @@
     }
   },
   "DepartmentsIndex": {
-    "metaTitle": "Ladestationen nach französischem Département",
-    "metaDescription": "Finden Sie heraus, wie viele Ladestationen für Elektroautos in jedem französischen Département verfügbar sind, mit interaktiver Karte.",
-    "title": "Ladestationen nach Département",
-    "intro": "Wählen Sie ein Département, um die Anzahl der verfügbaren Ladestationen, die Aufteilung nach Steckertyp und die am besten versorgten Städte zu sehen."
+    "metaTitle": "Ladestationen nach Region: Frankreich, Deutschland, Spanien",
+    "metaDescription": "Anzahl der Ladestationen nach französischem Département, deutschem Bundesland und spanischer autonomer Gemeinschaft, mit interaktiver Karte.",
+    "title": "Ladestationen nach Region",
+    "intro": "Wählen Sie zunächst ein Land und dann eine Region, um die Anzahl der verfügbaren Ladestationen, die Aufteilung nach Steckertyp und die am besten versorgten Städte zu sehen.",
+    "franceHeading": "Frankreich (Départements)",
+    "germanyHeading": "Deutschland (Bundesländer)",
+    "spainHeading": "Spanien (Autonome Gemeinschaften)"
   },
   "DepartmentPage": {
     "eyebrow": "Standort nach Département",
@@ -482,5 +485,49 @@
     "sourceNote": "Daten: Open Charge Map (openchargemap.org), eine freie kollaborative Datenbank.",
     "backToIndex": "Alle Départements",
     "placeName": "{name} ({code}), Frankreich"
+  },
+  "GermanyRegionPage": {
+    "eyebrow": "Standort nach Bundesland",
+    "metaTitle": "Ladestationen: {name} — Karte und Statistiken",
+    "metaDescription": "Anzahl der Ladestationen, Schnellladestationen und am besten versorgten Städte im Bundesland {name}. Daten von Open Charge Map.",
+    "title": "Ladestationen: {name}",
+    "introWithStats": "Das Bundesland {name} verzeichnet {total} bei Open Charge Map gelistete Ladestationen auf seinem Gebiet.",
+    "introFallback": "Das Bundesland {name} wird von unserer Ladestationskarte abgedeckt, die auf Open Charge Map basiert.",
+    "fastCountLabel": "Davon {fastCount} Schnellladestationen (Gleichstrom, 50 kW oder mehr).",
+    "connectorsHeading": "Verfügbare Steckertypen",
+    "townsHeading": "Am besten versorgte Städte",
+    "mapCta": "Diese Stationen auf der Karte ansehen",
+    "faqHeading": "Häufig gestellte Fragen",
+    "faq1Question": "Wie viel kostet das Laden eines Elektroautos in {name}?",
+    "faq1Answer": "Der Preis hängt vom Netzbetreiber und der Ladeleistung ab; er wird in der Regel in der App des Betreibers vor dem Ladevorgang angezeigt.",
+    "faq2Question": "Wie finde ich eine Schnellladestation in {name}?",
+    "faq2Answer": "Öffnen Sie die interaktive Karte und filtern Sie nach Leistung, um die Schnellladestationen (Gleichstrom, ab 50 kW) in {name} zu finden.",
+    "faq3Question": "Sind diese Daten aktuell?",
+    "faq3Answer": "Die Zahlen auf dieser Seite stammen von Open Charge Map, einer kollaborativen Datenbank, die laufend von ihren Mitwirkenden aktualisiert wird. Die genaue Anzahl kann von Tag zu Tag variieren, und diese Seite deckt nur das Gebiet von {name} ab.",
+    "sourceNote": "Daten: Open Charge Map (openchargemap.org), eine freie kollaborative Datenbank.",
+    "backToIndex": "Alle Bundesländer",
+    "placeName": "{name}"
+  },
+  "SpainRegionPage": {
+    "eyebrow": "Standort nach spanischer Autonomer Gemeinschaft",
+    "metaTitle": "Ladestationen in Spanien: {name} — Karte und Statistiken",
+    "metaDescription": "Anzahl der Ladestationen, Schnellladestationen und am besten versorgten Städte in der spanischen Autonomen Gemeinschaft {name}. Daten von Open Charge Map.",
+    "title": "Ladestationen: {name} (Spanien)",
+    "introWithStats": "Die Autonome Gemeinschaft {name} verzeichnet {total} bei Open Charge Map gelistete Ladestationen auf ihrem Gebiet.",
+    "introFallback": "Die Autonome Gemeinschaft {name} wird von unserer Ladestationskarte abgedeckt, die auf Open Charge Map basiert.",
+    "fastCountLabel": "Davon {fastCount} Schnellladestationen (Gleichstrom, 50 kW oder mehr).",
+    "connectorsHeading": "Verfügbare Steckertypen",
+    "townsHeading": "Am besten versorgte Städte",
+    "mapCta": "Diese Stationen auf der Karte ansehen",
+    "faqHeading": "Häufig gestellte Fragen",
+    "faq1Question": "Wie viel kostet das Laden eines Elektroautos in {name}?",
+    "faq1Answer": "Der Preis hängt vom Netzbetreiber und der Ladeleistung ab; er wird in der Regel in der App des Betreibers vor dem Ladevorgang angezeigt.",
+    "faq2Question": "Wie finde ich eine Schnellladestation in {name}?",
+    "faq2Answer": "Öffnen Sie die interaktive Karte und filtern Sie nach Leistung, um die Schnellladestationen (Gleichstrom, ab 50 kW) in {name} zu finden.",
+    "faq3Question": "Sind diese Daten aktuell?",
+    "faq3Answer": "Die Zahlen auf dieser Seite stammen von Open Charge Map, einer kollaborativen Datenbank, die laufend von ihren Mitwirkenden aktualisiert wird. Die genaue Anzahl kann von Tag zu Tag variieren, und diese Seite deckt nur das Gebiet von {name} ab.",
+    "sourceNote": "Daten: Open Charge Map (openchargemap.org), eine freie kollaborative Datenbank.",
+    "backToIndex": "Alle spanischen Autonomen Gemeinschaften",
+    "placeName": "{name}, Spanien"
   }
 }

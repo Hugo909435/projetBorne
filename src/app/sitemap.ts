@@ -3,6 +3,7 @@ import { routing } from "@/i18n/routing";
 import { site, languageAlternates } from "@/lib/site";
 import { blogPosts } from "@/lib/blogPosts";
 import { departments } from "@/lib/departments";
+import { germanStates, spanishRegions } from "@/lib/regions";
 
 const staticPaths = [
   { path: "/", changeFrequency: "daily" as const, priority: 1, lastModified: "2026-08-27" },
@@ -75,5 +76,31 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }))
   );
 
-  return [...staticEntries, ...blogEntries, ...departmentEntries];
+  const germanRegionEntries = germanStates.flatMap((region) =>
+    routing.locales.map((locale) => ({
+      url: `${site.url}/${locale}/bornes-recharge/de/${region.slug}`,
+      changeFrequency: "weekly" as const,
+      priority: 0.5,
+      lastModified: "2026-09-17",
+      alternates: { languages: languageAlternates(`/bornes-recharge/de/${region.slug}`) },
+    }))
+  );
+
+  const spanishRegionEntries = spanishRegions.flatMap((region) =>
+    routing.locales.map((locale) => ({
+      url: `${site.url}/${locale}/bornes-recharge/es/${region.slug}`,
+      changeFrequency: "weekly" as const,
+      priority: 0.5,
+      lastModified: "2026-09-17",
+      alternates: { languages: languageAlternates(`/bornes-recharge/es/${region.slug}`) },
+    }))
+  );
+
+  return [
+    ...staticEntries,
+    ...blogEntries,
+    ...departmentEntries,
+    ...germanRegionEntries,
+    ...spanishRegionEntries,
+  ];
 }

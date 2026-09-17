@@ -4,12 +4,13 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "prebuild": "tsx scripts/generate-department-stats.ts",
+    "prebuild": "tsx scripts/generate-department-stats.ts && tsx scripts/generate-region-stats.ts",
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
     "package": "node scripts/package-deploy.mjs",
-    "generate:department-stats": "tsx scripts/generate-department-stats.ts"
+    "generate:department-stats": "tsx scripts/generate-department-stats.ts",
+    "generate:region-stats": "tsx scripts/generate-region-stats.ts"
   },
   "dependencies": {
     "@types/leaflet": "^1.9.22",
