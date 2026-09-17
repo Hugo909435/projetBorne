@@ -17,7 +17,7 @@ export type Region = {
   bbox: RegionBbox;
 };
 
-export type RegionCountry = "de" | "es";
+export type RegionCountry = "de" | "es" | "gb";
 
 function makeRegion(name: string, code: string, bbox: RegionBbox): Region {
   return { name, code, slug: slugify(name), bbox };
@@ -66,9 +66,31 @@ export const spanishRegions: Region[] = [
   makeRegion("Melilla", "ML", { south: 35.27, west: -2.97, north: 35.31, east: -2.92 }),
 ];
 
+/**
+ * The 9 official regions of England plus Scotland, Wales, and Northern
+ * Ireland - the standard breakdown for UK-wide statistics (ONS regions +
+ * the other 3 nations), rather than England's ~90 smaller counties/unitary
+ * authorities, which have no equivalent single tier across all four nations.
+ */
+export const ukRegions: Region[] = [
+  makeRegion("London", "LDN", { south: 51.28, west: -0.51, north: 51.7, east: 0.33 }),
+  makeRegion("South East England", "SE", { south: 50.75, west: -1.8, north: 51.9, east: 1.45 }),
+  makeRegion("South West England", "SW", { south: 49.86, west: -6.42, north: 52.0, east: -1.5 }),
+  makeRegion("East of England", "EE", { south: 51.38, west: -0.55, north: 53.0, east: 1.77 }),
+  makeRegion("East Midlands", "EM", { south: 51.9, west: -1.8, north: 53.6, east: 0.5 }),
+  makeRegion("West Midlands", "WM", { south: 51.9, west: -3.2, north: 53.3, east: -1.0 }),
+  makeRegion("Yorkshire and the Humber", "YH", { south: 53.3, west: -2.6, north: 54.6, east: -0.1 }),
+  makeRegion("North West England", "NW", { south: 52.9, west: -3.65, north: 55.05, east: -1.9 }),
+  makeRegion("North East England", "NE", { south: 54.45, west: -2.7, north: 55.8, east: -1.15 }),
+  makeRegion("Scotland", "SCT", { south: 54.63, west: -8.65, north: 60.86, east: -0.73 }),
+  makeRegion("Wales", "WLS", { south: 51.38, west: -5.32, north: 53.43, east: -2.65 }),
+  makeRegion("Northern Ireland", "NIR", { south: 54.0, west: -8.18, north: 55.25, east: -5.43 }),
+];
+
 export const regionsByCountry: Record<RegionCountry, Region[]> = {
   de: germanStates,
   es: spanishRegions,
+  gb: ukRegions,
 };
 
 export function findRegionBySlug(country: RegionCountry, slug: string): Region | undefined {

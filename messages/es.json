@@ -454,8 +454,8 @@
     }
   },
   "DepartmentsIndex": {
-    "metaTitle": "Puntos de recarga por región: Francia, Alemania, España",
-    "metaDescription": "Número de puntos de recarga por departamento francés, estado alemán y comunidad autónoma española, con el mapa interactivo.",
+    "metaTitle": "Puntos de recarga por región: Francia, Alemania, España, Reino Unido",
+    "metaDescription": "Número de puntos de recarga por departamento francés, estado alemán, comunidad autónoma española y región británica, con el mapa interactivo.",
     "title": "Puntos de recarga por región",
     "intro": "Elige primero un país y luego una región para consultar el número de puntos de recarga disponibles, el desglose por tipo de conector y las ciudades mejor equipadas.",
     "franceHeading": "Francia (departamentos)",
@@ -463,7 +463,9 @@
     "spainHeading": "España (comunidades autónomas)",
     "franceShort": "Francia",
     "germanyShort": "Alemania",
-    "spainShort": "España"
+    "spainShort": "España",
+    "ukHeading": "Reino Unido (regiones)",
+    "ukShort": "Reino Unido"
   },
   "DepartmentPage": {
     "eyebrow": "Localización por departamento",
@@ -532,5 +534,27 @@
     "sourceNote": "Datos: Open Charge Map (openchargemap.org), una base de datos colaborativa y libre.",
     "backToIndex": "Todas las comunidades autónomas",
     "placeName": "{name}"
+  },
+  "UKRegionPage": {
+    "eyebrow": "Localización por región del Reino Unido",
+    "metaTitle": "Puntos de recarga en el Reino Unido: {name} — mapa y estadísticas",
+    "metaDescription": "Número de puntos de recarga, recarga rápida y ciudades mejor equipadas en la región de {name}. Datos de Open Charge Map.",
+    "title": "Puntos de recarga: {name} (Reino Unido)",
+    "introWithStats": "La región de {name} registra {total} puntos de recarga catalogados por Open Charge Map en su territorio.",
+    "introFallback": "La región de {name} está cubierta por nuestro mapa de puntos de recarga, alimentado por Open Charge Map.",
+    "fastCountLabel": "De los cuales {fastCount} son puntos de recarga rápida (corriente continua, 50 kW o más).",
+    "connectorsHeading": "Tipos de conectores disponibles",
+    "townsHeading": "Ciudades mejor equipadas",
+    "mapCta": "Ver estos puntos en el mapa",
+    "faqHeading": "Preguntas frecuentes",
+    "faq1Question": "¿Cuánto cuesta recargar un coche eléctrico en {name}?",
+    "faq1Answer": "El precio depende del operador de la red y de la potencia del punto de recarga; suele mostrarse en la app del operador antes de iniciar la recarga.",
+    "faq2Question": "¿Cómo encuentro un punto de recarga rápida en {name}?",
+    "faq2Answer": "Abre el mapa interactivo y filtra por potencia para localizar los puntos de recarga rápida (corriente continua, 50 kW o más) de {name}.",
+    "faq3Question": "¿Estos datos están actualizados?",
+    "faq3Answer": "Las cifras de esta página proceden de Open Charge Map, una base de datos colaborativa actualizada continuamente por sus colaboradores. El número exacto puede variar de un día a otro, y esta página solo cubre el territorio de {name}.",
+    "sourceNote": "Datos: Open Charge Map (openchargemap.org), una base de datos colaborativa y libre.",
+    "backToIndex": "Todas las regiones del Reino Unido",
+    "placeName": "{name}, Reino Unido"
   }
 }

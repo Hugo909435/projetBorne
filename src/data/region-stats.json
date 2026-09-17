@@ -52,28 +52,28 @@
     ]
   },
   "bayern": {
-    "total": 6736,
-    "fastCount": 892,
+    "total": 7189,
+    "fastCount": 944,
     "connectorBreakdown": [
       {
         "name": "Type 2 (Socket Only)",
-        "count": 5022
+        "count": 5319
       },
       {
         "name": "CEE 7/4 - Schuko - Type F",
-        "count": 1255
+        "count": 1397
       },
       {
         "name": "CCS (Type 2)",
-        "count": 1129
+        "count": 1197
       },
       {
         "name": "CHAdeMO",
-        "count": 573
+        "count": 612
       },
       {
         "name": "Type 2 (Tethered Connector)",
-        "count": 512
+        "count": 550
       }
     ],
     "topTowns": [
@@ -1768,6 +1768,630 @@
       {
         "name": "Melilla",
         "count": 6
+      }
+    ]
+  },
+  "london": {
+    "total": 12521,
+    "fastCount": 596,
+    "connectorBreakdown": [
+      {
+        "name": "Type 2 (Socket Only)",
+        "count": 11764
+      },
+      {
+        "name": "Type 1 (J1772)",
+        "count": 645
+      },
+      {
+        "name": "CHAdeMO",
+        "count": 554
+      },
+      {
+        "name": "CCS (Type 2)",
+        "count": 449
+      },
+      {
+        "name": "Type 2 (Tethered Connector)",
+        "count": 399
+      }
+    ],
+    "topTowns": [
+      {
+        "name": "London",
+        "count": 7636
+      },
+      {
+        "name": "Hammersmith",
+        "count": 1340
+      },
+      {
+        "name": "Kingston",
+        "count": 195
+      },
+      {
+        "name": "Hounslow",
+        "count": 165
+      },
+      {
+        "name": "Ealing",
+        "count": 134
+      },
+      {
+        "name": "Camden Town",
+        "count": 93
+      }
+    ]
+  },
+  "south-east-england": {
+    "total": 15318,
+    "fastCount": 1218,
+    "connectorBreakdown": [
+      {
+        "name": "Type 2 (Socket Only)",
+        "count": 13930
+      },
+      {
+        "name": "CHAdeMO",
+        "count": 1078
+      },
+      {
+        "name": "CCS (Type 2)",
+        "count": 1012
+      },
+      {
+        "name": "Type 1 (J1772)",
+        "count": 647
+      },
+      {
+        "name": "Type 2 (Tethered Connector)",
+        "count": 638
+      }
+    ],
+    "topTowns": [
+      {
+        "name": "London",
+        "count": 7640
+      },
+      {
+        "name": "Hammersmith",
+        "count": 1340
+      },
+      {
+        "name": "Brighton",
+        "count": 284
+      },
+      {
+        "name": "Kingston",
+        "count": 195
+      },
+      {
+        "name": "Hounslow",
+        "count": 165
+      },
+      {
+        "name": "Ealing",
+        "count": 135
+      }
+    ]
+  },
+  "south-west-england": {
+    "total": 2323,
+    "fastCount": 571,
+    "connectorBreakdown": [
+      {
+        "name": "Type 2 (Socket Only)",
+        "count": 1626
+      },
+      {
+        "name": "CCS (Type 2)",
+        "count": 518
+      },
+      {
+        "name": "CHAdeMO",
+        "count": 501
+      },
+      {
+        "name": "Type 2 (Tethered Connector)",
+        "count": 213
+      },
+      {
+        "name": "BS1363 3 Pin 13 Amp",
+        "count": 161
+      }
+    ],
+    "topTowns": [
+      {
+        "name": "Bristol",
+        "count": 140
+      },
+      {
+        "name": "Cardiff",
+        "count": 96
+      },
+      {
+        "name": "Plymouth",
+        "count": 75
+      },
+      {
+        "name": "Exeter",
+        "count": 68
+      },
+      {
+        "name": "Swindon",
+        "count": 66
+      },
+      {
+        "name": "Newport",
+        "count": 56
+      }
+    ]
+  },
+  "east-of-england": {
+    "total": 13484,
+    "fastCount": 857,
+    "connectorBreakdown": [
+      {
+        "name": "Type 2 (Socket Only)",
+        "count": 12471
+      },
+      {
+        "name": "CHAdeMO",
+        "count": 760
+      },
+      {
+        "name": "CCS (Type 2)",
+        "count": 692
+      },
+      {
+        "name": "Type 1 (J1772)",
+        "count": 633
+      },
+      {
+        "name": "Type 2 (Tethered Connector)",
+        "count": 462
+      }
+    ],
+    "topTowns": [
+      {
+        "name": "London",
+        "count": 7513
+      },
+      {
+        "name": "Hammersmith",
+        "count": 1340
+      },
+      {
+        "name": "Kingston",
+        "count": 167
+      },
+      {
+        "name": "Hounslow",
+        "count": 165
+      },
+      {
+        "name": "Ealing",
+        "count": 135
+      },
+      {
+        "name": "Camden Town",
+        "count": 93
+      }
+    ]
+  },
+  "east-midlands": {
+    "total": 2739,
+    "fastCount": 709,
+    "connectorBreakdown": [
+      {
+        "name": "Type 2 (Socket Only)",
+        "count": 2078
+      },
+      {
+        "name": "CHAdeMO",
+        "count": 630
+      },
+      {
+        "name": "CCS (Type 2)",
+        "count": 615
+      },
+      {
+        "name": "Type 2 (Tethered Connector)",
+        "count": 348
+      },
+      {
+        "name": "BS1363 3 Pin 13 Amp",
+        "count": 96
+      }
+    ],
+    "topTowns": [
+      {
+        "name": "Coventry",
+        "count": 501
+      },
+      {
+        "name": "Milton Keynes",
+        "count": 149
+      },
+      {
+        "name": "Nottingham",
+        "count": 92
+      },
+      {
+        "name": "Leicester",
+        "count": 79
+      },
+      {
+        "name": "Cambridge",
+        "count": 77
+      },
+      {
+        "name": "Sheffield",
+        "count": 64
+      }
+    ]
+  },
+  "west-midlands": {
+    "total": 2357,
+    "fastCount": 633,
+    "connectorBreakdown": [
+      {
+        "name": "Type 2 (Socket Only)",
+        "count": 1785
+      },
+      {
+        "name": "CHAdeMO",
+        "count": 584
+      },
+      {
+        "name": "CCS (Type 2)",
+        "count": 528
+      },
+      {
+        "name": "Type 2 (Tethered Connector)",
+        "count": 307
+      },
+      {
+        "name": "BS1363 3 Pin 13 Amp",
+        "count": 77
+      }
+    ],
+    "topTowns": [
+      {
+        "name": "Coventry",
+        "count": 501
+      },
+      {
+        "name": "Birmingham",
+        "count": 120
+      },
+      {
+        "name": "Nottingham",
+        "count": 89
+      },
+      {
+        "name": "Leicester",
+        "count": 77
+      },
+      {
+        "name": "Derby",
+        "count": 52
+      },
+      {
+        "name": "Solihull",
+        "count": 41
+      }
+    ]
+  },
+  "yorkshire-and-the-humber": {
+    "total": 1707,
+    "fastCount": 580,
+    "connectorBreakdown": [
+      {
+        "name": "Type 2 (Socket Only)",
+        "count": 1315
+      },
+      {
+        "name": "CHAdeMO",
+        "count": 522
+      },
+      {
+        "name": "CCS (Type 2)",
+        "count": 475
+      },
+      {
+        "name": "Type 2 (Tethered Connector)",
+        "count": 198
+      },
+      {
+        "name": "BS1363 3 Pin 13 Amp",
+        "count": 57
+      }
+    ],
+    "topTowns": [
+      {
+        "name": "Manchester",
+        "count": 135
+      },
+      {
+        "name": "Leeds",
+        "count": 129
+      },
+      {
+        "name": "Sheffield",
+        "count": 64
+      },
+      {
+        "name": "Bradford",
+        "count": 62
+      },
+      {
+        "name": "York",
+        "count": 60
+      },
+      {
+        "name": "Doncaster",
+        "count": 35
+      }
+    ]
+  },
+  "north-west-england": {
+    "total": 1903,
+    "fastCount": 467,
+    "connectorBreakdown": [
+      {
+        "name": "Type 2 (Socket Only)",
+        "count": 1546
+      },
+      {
+        "name": "CHAdeMO",
+        "count": 426
+      },
+      {
+        "name": "CCS (Type 2)",
+        "count": 390
+      },
+      {
+        "name": "Type 2 (Tethered Connector)",
+        "count": 170
+      },
+      {
+        "name": "BS1363 3 Pin 13 Amp",
+        "count": 57
+      }
+    ],
+    "topTowns": [
+      {
+        "name": "Liverpool",
+        "count": 357
+      },
+      {
+        "name": "Manchester",
+        "count": 135
+      },
+      {
+        "name": "Preston",
+        "count": 43
+      },
+      {
+        "name": "Carlisle",
+        "count": 37
+      },
+      {
+        "name": "Warrington",
+        "count": 34
+      },
+      {
+        "name": "Salford",
+        "count": 31
+      }
+    ]
+  },
+  "north-east-england": {
+    "total": 853,
+    "fastCount": 190,
+    "connectorBreakdown": [
+      {
+        "name": "Type 2 (Socket Only)",
+        "count": 640
+      },
+      {
+        "name": "CHAdeMO",
+        "count": 177
+      },
+      {
+        "name": "CCS (Type 2)",
+        "count": 150
+      },
+      {
+        "name": "Type 2 (Tethered Connector)",
+        "count": 106
+      },
+      {
+        "name": "BS1363 3 Pin 13 Amp",
+        "count": 93
+      }
+    ],
+    "topTowns": [
+      {
+        "name": "Sunderland",
+        "count": 74
+      },
+      {
+        "name": "Newcastle upon Tyne",
+        "count": 66
+      },
+      {
+        "name": "Gateshead",
+        "count": 43
+      },
+      {
+        "name": "Durham",
+        "count": 38
+      },
+      {
+        "name": "Stockton-on-Tees",
+        "count": 30
+      },
+      {
+        "name": "Darlington",
+        "count": 27
+      }
+    ]
+  },
+  "scotland": {
+    "total": 2915,
+    "fastCount": 801,
+    "connectorBreakdown": [
+      {
+        "name": "Type 2 (Socket Only)",
+        "count": 2198
+      },
+      {
+        "name": "CHAdeMO",
+        "count": 725
+      },
+      {
+        "name": "CCS (Type 2)",
+        "count": 684
+      },
+      {
+        "name": "Type 2 (Tethered Connector)",
+        "count": 520
+      },
+      {
+        "name": "BS1363 3 Pin 13 Amp",
+        "count": 126
+      }
+    ],
+    "topTowns": [
+      {
+        "name": "Glasgow",
+        "count": 186
+      },
+      {
+        "name": "Edinburgh",
+        "count": 85
+      },
+      {
+        "name": "Aberdeen",
+        "count": 80
+      },
+      {
+        "name": "Sunderland",
+        "count": 73
+      },
+      {
+        "name": "Newcastle upon Tyne",
+        "count": 66
+      },
+      {
+        "name": "Dundee",
+        "count": 59
+      }
+    ]
+  },
+  "wales": {
+    "total": 1481,
+    "fastCount": 252,
+    "connectorBreakdown": [
+      {
+        "name": "Type 2 (Socket Only)",
+        "count": 1243
+      },
+      {
+        "name": "CHAdeMO",
+        "count": 227
+      },
+      {
+        "name": "CCS (Type 2)",
+        "count": 211
+      },
+      {
+        "name": "Type 2 (Tethered Connector)",
+        "count": 92
+      },
+      {
+        "name": "BS1363 3 Pin 13 Amp",
+        "count": 78
+      }
+    ],
+    "topTowns": [
+      {
+        "name": "Liverpool",
+        "count": 308
+      },
+      {
+        "name": "Cardiff",
+        "count": 96
+      },
+      {
+        "name": "Newport",
+        "count": 58
+      },
+      {
+        "name": "Swansea",
+        "count": 42
+      },
+      {
+        "name": "Hereford",
+        "count": 27
+      },
+      {
+        "name": "Barry",
+        "count": 20
+      }
+    ]
+  },
+  "northern-ireland": {
+    "total": 544,
+    "fastCount": 158,
+    "connectorBreakdown": [
+      {
+        "name": "Type 2 (Socket Only)",
+        "count": 384
+      },
+      {
+        "name": "CCS (Type 2)",
+        "count": 179
+      },
+      {
+        "name": "CHAdeMO",
+        "count": 67
+      },
+      {
+        "name": "Type 2 (Tethered Connector)",
+        "count": 12
+      },
+      {
+        "name": "Tesla (Model S/X)",
+        "count": 9
+      }
+    ],
+    "topTowns": [
+      {
+        "name": "Belfast",
+        "count": 68
+      },
+      {
+        "name": "Antrim",
+        "count": 22
+      },
+      {
+        "name": "Newry",
+        "count": 15
+      },
+      {
+        "name": "Dungannon",
+        "count": 14
+      },
+      {
+        "name": "Ballymena",
+        "count": 13
+      },
+      {
+        "name": "Craigavon",
+        "count": 13
       }
     ]
   }

@@ -3,7 +3,7 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { site, languageAlternates } from "@/lib/site";
 import { departments } from "@/lib/departments";
-import { germanStates, spanishRegions } from "@/lib/regions";
+import { germanStates, spanishRegions, ukRegions } from "@/lib/regions";
 
 export async function generateMetadata({
   params,
@@ -34,6 +34,7 @@ export default async function DepartmentsIndexPage({
   const sortedDepartments = [...departments].sort((a, b) => a.name.localeCompare(b.name, "fr"));
   const sortedGermanStates = [...germanStates].sort((a, b) => a.name.localeCompare(b.name, "de"));
   const sortedSpanishRegions = [...spanishRegions].sort((a, b) => a.name.localeCompare(b.name, "es"));
+  const sortedUkRegions = [...ukRegions].sort((a, b) => a.name.localeCompare(b.name, "en"));
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -99,6 +100,12 @@ export default async function DepartmentsIndexPage({
         >
           {t("spainShort")}
         </a>
+        <a
+          href="#uk"
+          className="rounded-full border border-line bg-card px-4 py-2 text-sm font-semibold text-ink-900 transition hover:border-green-600 hover:text-green-700"
+        >
+          {t("ukShort")}
+        </a>
       </div>
 
       <h2 id="france" className="mt-12 scroll-mt-24 font-display text-xl font-semibold text-ink-900">
@@ -142,6 +149,22 @@ export default async function DepartmentsIndexPage({
           <li key={region.slug}>
             <Link
               href={`/bornes-recharge/es/${region.slug}`}
+              className="flex items-baseline gap-1.5 py-1.5 text-sm text-ink-600 hover:text-green-700"
+            >
+              <span className="font-medium">{region.name}</span>
+            </Link>
+          </li>
+        ))}
+      </ul>
+
+      <h2 id="uk" className="mt-12 scroll-mt-24 font-display text-xl font-semibold text-ink-900">
+        {t("ukHeading")}
+      </h2>
+      <ul className="mt-4 grid grid-cols-2 gap-x-6 gap-y-2 sm:grid-cols-3 lg:grid-cols-4">
+        {sortedUkRegions.map((region) => (
+          <li key={region.slug}>
+            <Link
+              href={`/bornes-recharge/gb/${region.slug}`}
               className="flex items-baseline gap-1.5 py-1.5 text-sm text-ink-600 hover:text-green-700"
             >
               <span className="font-medium">{region.name}</span>

@@ -19,14 +19,14 @@ try {
 
 import fs from "node:fs";
 import path from "node:path";
-import { germanStates, spanishRegions, type Region } from "../src/lib/regions";
+import { germanStates, spanishRegions, ukRegions, type Region } from "../src/lib/regions";
 import { fetchRegionStats, type StationAggregate } from "../src/lib/regionStats";
 
 async function main() {
   const results: Record<string, StationAggregate> = {};
   let failures = 0;
 
-  const allRegions: Region[] = [...germanStates, ...spanishRegions];
+  const allRegions: Region[] = [...germanStates, ...spanishRegions, ...ukRegions];
 
   for (const region of allRegions) {
     try {

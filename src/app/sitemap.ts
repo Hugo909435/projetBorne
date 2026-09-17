@@ -3,7 +3,7 @@ import { routing } from "@/i18n/routing";
 import { site, languageAlternates } from "@/lib/site";
 import { blogPosts } from "@/lib/blogPosts";
 import { departments } from "@/lib/departments";
-import { germanStates, spanishRegions } from "@/lib/regions";
+import { germanStates, spanishRegions, ukRegions } from "@/lib/regions";
 
 const staticPaths = [
   { path: "/", changeFrequency: "daily" as const, priority: 1, lastModified: "2026-08-27" },
@@ -96,11 +96,22 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }))
   );
 
+  const ukRegionEntries = ukRegions.flatMap((region) =>
+    routing.locales.map((locale) => ({
+      url: `${site.url}/${locale}/bornes-recharge/gb/${region.slug}`,
+      changeFrequency: "weekly" as const,
+      priority: 0.5,
+      lastModified: "2026-09-17",
+      alternates: { languages: languageAlternates(`/bornes-recharge/gb/${region.slug}`) },
+    }))
+  );
+
   return [
     ...staticEntries,
     ...blogEntries,
     ...departmentEntries,
     ...germanRegionEntries,
     ...spanishRegionEntries,
+    ...ukRegionEntries,
   ];
 }

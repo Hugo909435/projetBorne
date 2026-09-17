@@ -454,8 +454,8 @@
     }
   },
   "DepartmentsIndex": {
-    "metaTitle": "Ladestationen nach Region: Frankreich, Deutschland, Spanien",
-    "metaDescription": "Anzahl der Ladestationen nach französischem Département, deutschem Bundesland und spanischer autonomer Gemeinschaft, mit interaktiver Karte.",
+    "metaTitle": "Ladestationen nach Region: Frankreich, Deutschland, Spanien, Vereinigtes Königreich",
+    "metaDescription": "Anzahl der Ladestationen nach französischem Département, deutschem Bundesland, spanischer autonomer Gemeinschaft und britischer Region, mit interaktiver Karte.",
     "title": "Ladestationen nach Region",
     "intro": "Wählen Sie zunächst ein Land und dann eine Region, um die Anzahl der verfügbaren Ladestationen, die Aufteilung nach Steckertyp und die am besten versorgten Städte zu sehen.",
     "franceHeading": "Frankreich (Départements)",
@@ -463,7 +463,9 @@
     "spainHeading": "Spanien (Autonome Gemeinschaften)",
     "franceShort": "Frankreich",
     "germanyShort": "Deutschland",
-    "spainShort": "Spanien"
+    "spainShort": "Spanien",
+    "ukHeading": "Vereinigtes Königreich (Regionen)",
+    "ukShort": "Vereinigtes Königreich"
   },
   "DepartmentPage": {
     "eyebrow": "Standort nach Département",
@@ -532,5 +534,27 @@
     "sourceNote": "Daten: Open Charge Map (openchargemap.org), eine freie kollaborative Datenbank.",
     "backToIndex": "Alle spanischen Autonomen Gemeinschaften",
     "placeName": "{name}, Spanien"
+  },
+  "UKRegionPage": {
+    "eyebrow": "Standort nach Region im Vereinigten Königreich",
+    "metaTitle": "Ladestationen im Vereinigten Königreich: {name} — Karte und Statistiken",
+    "metaDescription": "Anzahl der Ladestationen, Schnellladestationen und am besten versorgten Städte in der Region {name}. Daten von Open Charge Map.",
+    "title": "Ladestationen: {name} (Vereinigtes Königreich)",
+    "introWithStats": "Die Region {name} verzeichnet {total} bei Open Charge Map gelistete Ladestationen auf ihrem Gebiet.",
+    "introFallback": "Die Region {name} wird von unserer Ladestationskarte abgedeckt, die auf Open Charge Map basiert.",
+    "fastCountLabel": "Davon {fastCount} Schnellladestationen (Gleichstrom, 50 kW oder mehr).",
+    "connectorsHeading": "Verfügbare Steckertypen",
+    "townsHeading": "Am besten versorgte Städte",
+    "mapCta": "Diese Stationen auf der Karte ansehen",
+    "faqHeading": "Häufig gestellte Fragen",
+    "faq1Question": "Wie viel kostet das Laden eines Elektroautos in {name}?",
+    "faq1Answer": "Der Preis hängt vom Netzbetreiber und der Ladeleistung ab; er wird in der Regel in der App des Betreibers vor dem Ladevorgang angezeigt.",
+    "faq2Question": "Wie finde ich eine Schnellladestation in {name}?",
+    "faq2Answer": "Öffnen Sie die interaktive Karte und filtern Sie nach Leistung, um die Schnellladestationen (Gleichstrom, ab 50 kW) in {name} zu finden.",
+    "faq3Question": "Sind diese Daten aktuell?",
+    "faq3Answer": "Die Zahlen auf dieser Seite stammen von Open Charge Map, einer kollaborativen Datenbank, die laufend von ihren Mitwirkenden aktualisiert wird. Die genaue Anzahl kann von Tag zu Tag variieren, und diese Seite deckt nur das Gebiet von {name} ab.",
+    "sourceNote": "Daten: Open Charge Map (openchargemap.org), eine freie kollaborative Datenbank.",
+    "backToIndex": "Alle Regionen des Vereinigten Königreichs",
+    "placeName": "{name}, Vereinigtes Königreich"
   }
 }

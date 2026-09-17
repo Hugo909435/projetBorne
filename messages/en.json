@@ -454,8 +454,8 @@
     }
   },
   "DepartmentsIndex": {
-    "metaTitle": "EV charging stations by region: France, Germany, Spain",
-    "metaDescription": "Number of EV charging stations by French department, German state, and Spanish autonomous community, with the interactive map.",
+    "metaTitle": "EV charging stations by region: France, Germany, Spain, UK",
+    "metaDescription": "Number of EV charging stations by French department, German state, Spanish autonomous community, and UK region, with the interactive map.",
     "title": "Charging stations by region",
     "intro": "Pick a country, then a region, to see how many charging stations are available, the breakdown by connector type, and the best-covered towns.",
     "franceHeading": "France (departments)",
@@ -463,7 +463,9 @@
     "spainHeading": "Spain (autonomous communities)",
     "franceShort": "France",
     "germanyShort": "Germany",
-    "spainShort": "Spain"
+    "spainShort": "Spain",
+    "ukHeading": "United Kingdom (regions)",
+    "ukShort": "United Kingdom"
   },
   "DepartmentPage": {
     "eyebrow": "Location by department",
@@ -532,5 +534,27 @@
     "sourceNote": "Data: Open Charge Map (openchargemap.org), a free collaborative database.",
     "backToIndex": "All Spanish autonomous communities",
     "placeName": "{name}, Spain"
+  },
+  "UKRegionPage": {
+    "eyebrow": "Location by UK region",
+    "metaTitle": "EV charging stations: {name} — map and stats",
+    "metaDescription": "Number of charging stations, fast chargers, and best-covered towns in {name}. Data from Open Charge Map.",
+    "title": "EV charging stations: {name}",
+    "introWithStats": "{name} has {total} charging stations listed on Open Charge Map across its territory.",
+    "introFallback": "{name} is covered by our charging station map, powered by Open Charge Map.",
+    "fastCountLabel": "Including {fastCount} fast-charging stations (DC, 50 kW or more).",
+    "connectorsHeading": "Connector types available",
+    "townsHeading": "Best-covered towns",
+    "mapCta": "See these stations on the map",
+    "faqHeading": "Frequently asked questions",
+    "faq1Question": "How much does it cost to charge an EV in {name}?",
+    "faq1Answer": "The price depends on the network operator and the station's power output; it's usually shown in the operator's app before you start charging.",
+    "faq2Question": "How do I find a fast-charging station in {name}?",
+    "faq2Answer": "Open the interactive map and filter by power output to spot the fast (DC, 50 kW and above) stations in {name}.",
+    "faq3Question": "Is this data up to date?",
+    "faq3Answer": "The figures on this page come from Open Charge Map, a collaborative database continuously updated by its contributors. The exact station count can vary from one day to the next, and this page only covers the territory of {name}.",
+    "sourceNote": "Data: Open Charge Map (openchargemap.org), a free collaborative database.",
+    "backToIndex": "All UK regions",
+    "placeName": "{name}"
   }
 }

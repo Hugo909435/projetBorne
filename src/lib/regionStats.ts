@@ -64,7 +64,7 @@ export async function aggregateStations(
  */
 export async function fetchRegionStats(region: Region): Promise<StationAggregate> {
   const [stations, reference] = await Promise.all([
-    fetchStations({ bbox: region.bbox, maxResults: 8000 }),
+    fetchStations({ bbox: region.bbox, maxResults: 30000 }),
     fetchReferenceData(),
   ]);
 

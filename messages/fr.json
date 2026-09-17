@@ -454,8 +454,8 @@
     }
   },
   "DepartmentsIndex": {
-    "metaTitle": "Bornes de recharge par région : France, Allemagne, Espagne",
-    "metaDescription": "Retrouvez le nombre de bornes de recharge par département français, par Land allemand et par communauté autonome espagnole, avec la carte interactive.",
+    "metaTitle": "Bornes de recharge par région : France, Allemagne, Espagne, Royaume-Uni",
+    "metaDescription": "Retrouvez le nombre de bornes de recharge par département français, par Land allemand, par communauté autonome espagnole et par région britannique, avec la carte interactive.",
     "title": "Bornes de recharge par région",
     "intro": "Choisissez un pays puis une région pour consulter le nombre de bornes de recharge disponibles, la répartition par type de connecteur et les villes les mieux équipées.",
     "franceHeading": "France (départements)",
@@ -463,7 +463,9 @@
     "spainHeading": "Espagne (communautés autonomes)",
     "franceShort": "France",
     "germanyShort": "Allemagne",
-    "spainShort": "Espagne"
+    "spainShort": "Espagne",
+    "ukHeading": "Royaume-Uni (régions)",
+    "ukShort": "Royaume-Uni"
   },
   "DepartmentPage": {
     "eyebrow": "Localisation par département",
@@ -532,5 +534,27 @@
     "sourceNote": "Données : Open Charge Map (openchargemap.org), une base collaborative libre.",
     "backToIndex": "Toutes les communautés autonomes",
     "placeName": "{name}, Espagne"
+  },
+  "UKRegionPage": {
+    "eyebrow": "Localisation par région du Royaume-Uni",
+    "metaTitle": "Bornes de recharge au Royaume-Uni : {name} — carte et statistiques",
+    "metaDescription": "Nombre de bornes de recharge, recharge rapide et villes les mieux équipées dans la région {name}. Données Open Charge Map à jour.",
+    "title": "Bornes de recharge : {name} (Royaume-Uni)",
+    "introWithStats": "La région {name} recense {total} bornes de recharge répertoriées par Open Charge Map sur son territoire.",
+    "introFallback": "La région {name} est couverte par notre carte de bornes de recharge, alimentée par Open Charge Map.",
+    "fastCountLabel": "Dont {fastCount} bornes de recharge rapide (courant continu, 50 kW ou plus).",
+    "connectorsHeading": "Types de connecteurs disponibles",
+    "townsHeading": "Villes les mieux équipées",
+    "mapCta": "Voir ces bornes sur la carte",
+    "faqHeading": "Questions fréquentes",
+    "faq1Question": "Combien coûte la recharge d'une voiture électrique en {name} ?",
+    "faq1Answer": "Le tarif dépend de l'opérateur du réseau et de la puissance de la borne : il est généralement affiché dans l'application de l'opérateur avant de lancer la recharge.",
+    "faq2Question": "Comment trouver une borne de recharge rapide en {name} ?",
+    "faq2Answer": "Ouvrez la carte interactive et filtrez par puissance pour repérer les bornes rapides (courant continu, 50 kW et plus) de {name}.",
+    "faq3Question": "Ces données sont-elles à jour ?",
+    "faq3Answer": "Les chiffres de cette page proviennent d'Open Charge Map, une base collaborative mise à jour en continu par ses contributeurs. Le nombre exact de bornes peut varier d'un jour à l'autre et cette page ne couvre que le territoire de {name}.",
+    "sourceNote": "Données : Open Charge Map (openchargemap.org), une base collaborative libre.",
+    "backToIndex": "Toutes les régions du Royaume-Uni",
+    "placeName": "{name}, Royaume-Uni"
   }
 }
