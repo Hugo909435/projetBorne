@@ -12,7 +12,7 @@ export default function ContactForm() {
 
   function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
-    const subject = `${t("title")} — ${name}`;
+    const subject = `${t("title")} - ${name}`;
     const body = `${message}\n\n${email}`;
     window.location.href = `mailto:${site.email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
   }

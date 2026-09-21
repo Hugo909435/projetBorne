@@ -38,6 +38,8 @@ export type BlogPost = {
   publishedAt: string;
   /** Set only when the post is meaningfully revised after publishing. */
   updatedAt?: string;
+  /** Slugs of related posts, rendered as a "Read also" list under the FAQ. */
+  related?: string[];
   image: BlogImage;
   content: Record<Locale, BlogLocaleContent>;
 };
@@ -517,6 +519,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "bornes-rapides-autoroute-ete-2026",
     publishedAt: "2026-07-25",
+    related: ["road-trip-france-recharge-voiture-electrique", "electric-car-in-france-charging-guide", "comparatif-abonnements-recharge"],
     image: {
       src: "/blog/bornes-rapides-autoroute-ete-2026.jpg",
       alt: {
@@ -1269,9 +1272,9 @@ export const blogPosts: BlogPost[] = [
         title: "Carrefour baisse de 30 % le prix de la recharge sur ses bornes 22 kW",
         excerpt:
           "Depuis le 1er août 2026, Carrefour applique un tarif de 0,23 € TTC/kWh sur l'ensemble de ses bornes 22 kW, une baisse de 30 %.",
-        metaTitle: "Carrefour recharge 2026 : tarif à 0,23 €/kWh sur les bornes 22 kW",
+        metaTitle: "Bornes de recharge Carrefour : 0,23 €/kWh en 2026",
         metaDescription:
-          "Carrefour baisse de 30 % le prix de la recharge sur ses bornes 22 kW depuis août 2026, un signal fort dans la guerre des prix entre réseaux de recharge.",
+          "Carrefour baisse de 30 % le prix de la recharge sur ses bornes 22 kW : 0,23 € TTC le kWh depuis le 1er août 2026, dans la guerre des prix entre réseaux.",
         body: [
           {
             type: "p",
@@ -1561,6 +1564,8 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "comparatif-abonnements-recharge",
     publishedAt: "2026-08-08",
+    updatedAt: "2026-09-21",
+    related: ["cout-recharge-voiture-electrique", "carrefour-prix-recharge-bornes", "electric-car-in-france-charging-guide"],
     image: {
       src: "/blog/comparatif-abonnements-recharge.jpg",
       alt: {
@@ -1577,9 +1582,9 @@ export const blogPosts: BlogPost[] = [
         title: "Abonnements de recharge : comparatif des tarifs en France en 2026",
         excerpt:
           "Domicile, borne publique 22 kW ou recharge rapide sur autoroute : les écarts de prix sont importants, voici comment choisir la bonne formule.",
-        metaTitle: "Comparatif des abonnements de recharge électrique en 2026",
+        metaTitle: "Meilleur abonnement de recharge électrique 2026",
         metaDescription:
-          "Recharge à domicile, bornes publiques 22 kW, recharge rapide sur autoroute : comparatif des tarifs de recharge en France en 2026 et conseils pour choisir son abonnement.",
+          "Quel abonnement choisir pour recharger sa voiture électrique ? Comparatif des tarifs en 2026 : domicile, bornes 22 kW, recharge rapide sur autoroute.",
         body: [
           {
             type: "p",
@@ -1614,7 +1619,7 @@ export const blogPosts: BlogPost[] = [
           { question: "Quelle est la solution de recharge la moins chère au quotidien ?", answer: "La recharge à domicile en heures creuses, à 0,1589 € le kWh depuis août 2026, reste de loin l'option la moins chère." },
           { question: "Combien coûte 100 km avec une recharge à domicile en heures creuses ?", answer: "Pour une citadine consommant environ 16 kWh aux 100 km, cela revient à environ 2,54 € à domicile en heures creuses." },
           { question: "Combien coûte 100 km sur une borne publique 22 kW ?", answer: "Sur une borne publique 22 kW facturée 0,23 € le kWh, comptez environ 3,68 € pour 100 km." },
-          { question: "La recharge rapide sur autoroute coûte-t-elle plus cher que la recharge à domicile ?", answer: "Oui, sans abonnement, elle peut coûter deux à trois fois plus cher que la recharge à domicile en heures creuses." },
+          { question: "La recharge rapide sur autoroute coûte-t-elle plus cher que la recharge à domicile ?", answer: "Oui. Sans abonnement, comptez généralement 0,50 à 0,70 € le kWh sur autoroute selon l'opérateur, soit environ trois à quatre fois le tarif heures creuses à domicile (0,1589 €)." },
         ],
         ...cta.fr,
       },
@@ -1660,7 +1665,7 @@ export const blogPosts: BlogPost[] = [
           { question: "What's the cheapest way to charge an EV day to day?", answer: "Home charging on an off-peak tariff, at 0.1589 euros per kWh since August 2026, remains by far the cheapest option." },
           { question: "How much does 100km cost charging at home off-peak?", answer: "For a compact EV using about 16 kWh per 100km, that works out to roughly 2.54 euros at home on the off-peak rate." },
           { question: "How much does 100km cost on a public 22kW station?", answer: "On a public 22kW station priced at 0.23 euros per kWh, expect around 3.68 euros per 100km." },
-          { question: "Is motorway fast charging more expensive than charging at home?", answer: "Yes, without a subscription it can cost two to three times more than charging at home on an off-peak tariff." },
+          { question: "Is motorway fast charging more expensive than charging at home?", answer: "Yes. Without a subscription, expect roughly 0.50 to 0.70 euros per kWh on the motorway depending on the operator, about three to four times the home off-peak rate (0.1589 euros)." },
         ],
         ...cta.en,
       },
@@ -1669,9 +1674,9 @@ export const blogPosts: BlogPost[] = [
         title: "Lade-Abonnements im Vergleich: Was Laden in Frankreich 2026 wirklich kostet",
         excerpt:
           "Laden zu Hause, öffentliche 22-kW-Stationen oder Schnellladen auf der Autobahn: die Preisunterschiede sind erheblich, so finden Sie den passenden Tarif.",
-        metaTitle: "Lade-Abonnements im Vergleich: Frankreich 2026",
+        metaTitle: "Ladekarte für Frankreich: Tarife im Vergleich 2026",
         metaDescription:
-          "Laden zu Hause, öffentliche 22-kW-Stationen, Schnellladen auf der Autobahn: ein Kostenvergleich für Frankreich 2026 und Tipps zur Tarifwahl.",
+          "Welche Ladekarte oder welches Abo passt? Kosten beim Laden zu Hause, an 22-kW-Stationen und an Autobahn-Schnellladern in Frankreich 2026 im Vergleich.",
         body: [
           {
             type: "p",
@@ -1706,7 +1711,7 @@ export const blogPosts: BlogPost[] = [
           { question: "Was ist die günstigste Lademöglichkeit im Alltag?", answer: "Das Laden zu Hause im Nebenzeittarif, zu 0,1589 Euro pro kWh seit August 2026, bleibt mit Abstand die günstigste Option." },
           { question: "Wie viel kosten 100 km beim Laden zu Hause in der Nebenzeit?", answer: "Für ein kompaktes Elektroauto mit etwa 16 kWh Verbrauch pro 100 km sind das zu Hause in der Nebenzeit rund 2,54 Euro." },
           { question: "Wie viel kosten 100 km an einer öffentlichen 22-kW-Station?", answer: "An einer öffentlichen 22-kW-Station zu 0,23 Euro pro kWh sind es rund 3,68 Euro pro 100 km." },
-          { question: "Ist Schnellladen auf der Autobahn teurer als Laden zu Hause?", answer: "Ja, ohne Abonnement kann es zwei- bis dreimal so teuer sein wie das Laden zu Hause im Nebenzeittarif." },
+          { question: "Ist Schnellladen auf der Autobahn teurer als Laden zu Hause?", answer: "Ja. Ohne Abonnement sind je nach Anbieter auf der Autobahn meist 0,50 bis 0,70 Euro pro kWh üblich, etwa das Drei- bis Vierfache des Nebenzeittarifs zu Hause (0,1589 Euro)." },
         ],
         ...cta.de,
       },
@@ -1752,7 +1757,7 @@ export const blogPosts: BlogPost[] = [
           { question: "¿Cuál es la forma más barata de recargar un eléctrico en el día a día?", answer: "La recarga en casa con tarifa valle, a 0,1589 euros por kWh desde agosto de 2026, sigue siendo la opción más barata con diferencia." },
           { question: "¿Cuánto cuestan 100 km recargando en casa en horas valle?", answer: "Para un eléctrico compacto que consume unos 16 kWh cada 100 km, eso supone unos 2,54 euros en casa en horas valle." },
           { question: "¿Cuánto cuestan 100 km en un punto público de 22 kW?", answer: "En un punto público de 22 kW a 0,23 euros por kWh, cuenta con unos 3,68 euros cada 100 km." },
-          { question: "¿Es la carga rápida en autopista más cara que cargar en casa?", answer: "Sí, sin abono puede costar de dos a tres veces más que cargar en casa con tarifa valle." },
+          { question: "¿Es la carga rápida en autopista más cara que cargar en casa?", answer: "Sí. Sin abono, lo habitual en autopista son entre 0,50 y 0,70 euros por kWh según el operador, unas tres a cuatro veces la tarifa valle en casa (0,1589 euros)." },
         ],
         ...cta.es,
       },
@@ -2097,6 +2102,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "zfe-2026-vehicules-electriques",
     publishedAt: "2026-08-14",
+    related: ["electric-car-in-france-charging-guide", "malus-ecologique-2026-voitures-electriques", "bonus-ecologique-2026"],
     image: {
       src: "/blog/zfe-2026-vehicules-electriques.png",
       alt: {
@@ -2861,6 +2867,8 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "cout-recharge-voiture-electrique",
     publishedAt: "2026-08-27",
+    updatedAt: "2026-09-21",
+    related: ["comparatif-abonnements-recharge", "tarif-electricite-aout-2026-recharge", "electric-car-in-france-charging-guide"],
     image: {
       src: "/blog/cout-recharge-voiture-electrique.jpg",
       alt: {
@@ -2902,12 +2910,12 @@ export const blogPosts: BlogPost[] = [
           { type: "h2", text: "La recharge rapide sur autoroute, nettement plus chère" },
           {
             type: "p",
-            text: "Sur les bornes rapides et ultra-rapides du réseau autoroutier, le tarif au kWh grimpe sensiblement, surtout en paiement à l'acte sans abonnement, où il peut facilement atteindre deux à trois fois le tarif heures creuses pratiqué à domicile.",
+            text: "Sur les bornes rapides et ultra-rapides du réseau autoroutier, le tarif au kWh grimpe sensiblement, surtout en paiement à l'acte sans abonnement, où il se situe généralement entre 0,50 et 0,70 € le kWh selon l'opérateur, soit environ trois à quatre fois le tarif heures creuses pratiqué à domicile.",
           },
           { type: "h2", text: "Un exemple chiffré pour se rendre compte" },
           {
             type: "p",
-            text: "Prenons une citadine électrique consommant environ 16 kWh aux 100 km. À domicile en heures creuses, le plein de 100 km revient à environ 2,54 €. Sur une borne publique 22 kW facturée 0,23 € le kWh, comptez plutôt environ 3,68 €. Sur une borne rapide d'autoroute sans abonnement, la facture peut être deux à trois fois supérieure à celle de la recharge à domicile, ce qui change nettement le calcul sur un long trajet.",
+            text: "Prenons une citadine électrique consommant environ 16 kWh aux 100 km. À domicile en heures creuses, le plein de 100 km revient à environ 2,54 €. Sur une borne publique 22 kW facturée 0,23 € le kWh, comptez plutôt environ 3,68 €. Sur une borne rapide d'autoroute sans abonnement, à 0,50 à 0,70 € le kWh, comptez plutôt 8 à 11 € les 100 km, soit trois à quatre fois le coût à domicile, ce qui change nettement le calcul sur un long trajet.",
           },
           { type: "h3", text: "Ce qu'il faut retenir" },
           {
@@ -2924,7 +2932,7 @@ export const blogPosts: BlogPost[] = [
           { question: "Combien coûte le kWh en heures creuses à domicile en 2026 ?", answer: "Le tarif heures creuses s'établit à 0,1589 € le kWh depuis août 2026, contre 0,2142 € en heures pleines." },
           { question: "Combien coûte une recharge sur une borne publique 22 kW ?", answer: "Sur les bornes 22 kW de Carrefour, le tarif est de 0,23 € TTC le kWh depuis le 1er août 2026, une baisse de 30 %." },
           { question: "Combien coûtent 100 km avec une voiture électrique ?", answer: "Pour une citadine consommant environ 16 kWh aux 100 km, cela revient à environ 2,54 € à domicile en heures creuses, contre environ 3,68 € sur une borne publique 22 kW." },
-          { question: "La recharge rapide sur autoroute coûte-t-elle beaucoup plus cher ?", answer: "Oui, sans abonnement, elle peut coûter deux à trois fois plus cher que la recharge à domicile en heures creuses." },
+          { question: "La recharge rapide sur autoroute coûte-t-elle beaucoup plus cher ?", answer: "Oui. Sans abonnement, comptez généralement 0,50 à 0,70 € le kWh sur autoroute selon l'opérateur, soit environ trois à quatre fois le tarif heures creuses à domicile (0,1589 €)." },
         ],
         ...cta.fr,
       },
@@ -2933,9 +2941,9 @@ export const blogPosts: BlogPost[] = [
         title: "How Much Does It Really Cost to Charge an Electric Car in France?",
         excerpt:
           "From a home outlet to a fast charger on the motorway, the price per kWh can triple. Here's how to make sense of it.",
-        metaTitle: "The Real Cost of Charging an EV in France in 2026",
+        metaTitle: "How Much Does It Cost to Charge an EV in France?",
         metaDescription:
-          "Off-peak home tariffs, public 22kW stations, motorway fast charging: a cost comparison for charging an electric car in France in 2026.",
+          "Home off-peak at about 0.16 euros/kWh, public 22kW stations at 0.23, motorway fast charging typically 0.50 to 0.70. Real 2026 prices in France.",
         body: [
           {
             type: "p",
@@ -2954,12 +2962,12 @@ export const blogPosts: BlogPost[] = [
           { type: "h2", text: "Motorway fast charging costs noticeably more" },
           {
             type: "p",
-            text: "On fast and ultra-fast motorway chargers, the price per kWh climbs significantly, especially with pay-as-you-go pricing and no subscription, where it can easily reach two to three times the home off-peak rate.",
+            text: "On fast and ultra-fast motorway chargers, the price per kWh climbs significantly, especially with pay-as-you-go pricing and no subscription, where it typically runs from 0.50 to 0.70 euros per kWh depending on the operator, roughly three to four times the home off-peak rate.",
           },
           { type: "h2", text: "A concrete example" },
           {
             type: "p",
-            text: "Take a compact EV using roughly 16 kWh per 100km. At home on an off-peak tariff, that's about 2.54 euros. On a public 22kW station at 0.23 euros per kWh, it's closer to 3.68 euros. On a motorway fast charger without a subscription, the bill can run two to three times higher than charging at home, a real factor to weigh on a long trip.",
+            text: "Take a compact EV using roughly 16 kWh per 100km. At home on an off-peak tariff, that's about 2.54 euros. On a public 22kW station at 0.23 euros per kWh, it's closer to 3.68 euros. On a motorway fast charger without a subscription, at 0.50 to 0.70 euros per kWh, expect roughly 8 to 11 euros per 100km, three to four times the cost of charging at home, a real factor to weigh on a long trip.",
           },
           { type: "h3", text: "The key takeaways" },
           {
@@ -2976,7 +2984,7 @@ export const blogPosts: BlogPost[] = [
           { question: "How much does off-peak home electricity cost per kWh in 2026?", answer: "The off-peak rate is 0.1589 euros per kWh since August 2026, compared to 0.2142 euros at peak hours." },
           { question: "How much does charging cost on a public 22kW station?", answer: "On Carrefour's 22kW stations, the rate is 0.23 euros including tax per kWh since August 1, 2026, a 30% cut." },
           { question: "How much does 100km cost in an electric car?", answer: "For a compact EV using about 16 kWh per 100km, that's roughly 2.54 euros at home on the off-peak rate, versus about 3.68 euros on a public 22kW station." },
-          { question: "Is motorway fast charging a lot more expensive?", answer: "Yes, without a subscription it can cost two to three times more than charging at home on an off-peak tariff." },
+          { question: "Is motorway fast charging a lot more expensive?", answer: "Yes. Without a subscription, expect roughly 0.50 to 0.70 euros per kWh on the motorway depending on the operator, about three to four times the home off-peak rate (0.1589 euros)." },
         ],
         ...cta.en,
       },
@@ -2985,9 +2993,9 @@ export const blogPosts: BlogPost[] = [
         title: "Was kostet das Laden eines Elektroautos in Frankreich wirklich?",
         excerpt:
           "Von der Haussteckdose bis zum Schnelllader auf der Autobahn kann sich der Preis pro kWh verdreifachen. So behalten Sie den Überblick.",
-        metaTitle: "Die tatsächlichen Ladekosten eines Elektroautos in Frankreich 2026",
+        metaTitle: "Was kostet das Laden eines E-Autos in Frankreich?",
         metaDescription:
-          "Nebenzeittarif zu Hause, öffentliche 22-kW-Stationen, Schnellladen auf der Autobahn: ein Kostenvergleich für das Laden eines Elektroautos in Frankreich 2026.",
+          "Nebenzeit zu Hause ca. 0,16 Euro/kWh, öffentliche 22-kW-Stationen 0,23 Euro, Schnelllader an der Autobahn meist 0,50 bis 0,70 Euro. Preise 2026.",
         body: [
           {
             type: "p",
@@ -3006,12 +3014,12 @@ export const blogPosts: BlogPost[] = [
           { type: "h2", text: "Schnellladen auf der Autobahn kostet spürbar mehr" },
           {
             type: "p",
-            text: "An Schnell- und Ultraschnellladern auf Autobahnen steigt der Preis pro kWh deutlich, besonders bei spontanem Laden ohne Abonnement, wo er leicht das Zwei- bis Dreifache des heimischen Nebenzeittarifs erreichen kann.",
+            text: "An Schnell- und Ultraschnellladern auf Autobahnen steigt der Preis pro kWh deutlich, besonders bei spontanem Laden ohne Abonnement, wo er je nach Anbieter meist zwischen 0,50 und 0,70 Euro pro kWh liegt, etwa das Drei- bis Vierfache des heimischen Nebenzeittarifs.",
           },
           { type: "h2", text: "Ein konkretes Beispiel" },
           {
             type: "p",
-            text: "Nehmen wir ein kompaktes Elektroauto mit einem Verbrauch von etwa 16 kWh pro 100 km. Zu Hause in der Nebenzeit kostet das rund 2,54 Euro. An einer öffentlichen 22-kW-Station zu 0,23 Euro pro kWh sind es eher 3,68 Euro. An einem Autobahn-Schnelllader ohne Abonnement kann die Rechnung zwei- bis dreimal höher ausfallen als beim Laden zu Hause, ein Faktor, der auf langen Fahrten spürbar ins Gewicht fällt.",
+            text: "Nehmen wir ein kompaktes Elektroauto mit einem Verbrauch von etwa 16 kWh pro 100 km. Zu Hause in der Nebenzeit kostet das rund 2,54 Euro. An einer öffentlichen 22-kW-Station zu 0,23 Euro pro kWh sind es eher 3,68 Euro. An einem Autobahn-Schnelllader ohne Abonnement sind es bei 0,50 bis 0,70 Euro pro kWh eher 8 bis 11 Euro pro 100 km, also das Drei- bis Vierfache des Ladens zu Hause, ein Faktor, der auf langen Fahrten spürbar ins Gewicht fällt.",
           },
           { type: "h3", text: "Die wichtigsten Erkenntnisse" },
           {
@@ -3028,7 +3036,7 @@ export const blogPosts: BlogPost[] = [
           { question: "Wie viel kostet der Nebenzeittarif zu Hause pro kWh 2026?", answer: "Der Nebenzeittarif liegt seit August 2026 bei 0,1589 Euro pro kWh, gegenüber 0,2142 Euro in der Hauptzeit." },
           { question: "Wie viel kostet Laden an einer öffentlichen 22-kW-Station?", answer: "An den 22-kW-Stationen von Carrefour liegt der Preis seit dem 1. August 2026 bei 0,23 Euro brutto pro kWh, ein Nachlass von 30 Prozent." },
           { question: "Wie viel kosten 100 km mit einem Elektroauto?", answer: "Für ein kompaktes Elektroauto mit etwa 16 kWh Verbrauch pro 100 km sind das zu Hause in der Nebenzeit rund 2,54 Euro, gegenüber etwa 3,68 Euro an einer öffentlichen 22-kW-Station." },
-          { question: "Ist Schnellladen auf der Autobahn deutlich teurer?", answer: "Ja, ohne Abonnement kann es zwei- bis dreimal so teuer sein wie das Laden zu Hause im Nebenzeittarif." },
+          { question: "Ist Schnellladen auf der Autobahn deutlich teurer?", answer: "Ja. Ohne Abonnement sind je nach Anbieter auf der Autobahn meist 0,50 bis 0,70 Euro pro kWh üblich, etwa das Drei- bis Vierfache des Nebenzeittarifs zu Hause (0,1589 Euro)." },
         ],
         ...cta.de,
       },
@@ -3058,12 +3066,12 @@ export const blogPosts: BlogPost[] = [
           { type: "h2", text: "La carga rápida en autopista cuesta notablemente más" },
           {
             type: "p",
-            text: "En los cargadores rápidos y ultrarrápidos de autopista, el precio por kWh sube de forma clara, sobre todo pagando por uso sin abono, donde puede alcanzar fácilmente entre dos y tres veces la tarifa valle del hogar.",
+            text: "En los cargadores rápidos y ultrarrápidos de autopista, el precio por kWh sube de forma clara, sobre todo pagando por uso sin abono, donde suele situarse entre 0,50 y 0,70 euros por kWh según el operador, unas tres a cuatro veces la tarifa valle del hogar.",
           },
           { type: "h2", text: "Un ejemplo concreto" },
           {
             type: "p",
-            text: "Tomemos un eléctrico compacto con un consumo de unos 16 kWh cada 100 km. En casa, en horas valle, eso cuesta unos 2,54 euros. En un punto público de 22 kW a 0,23 euros por kWh, ronda más bien los 3,68 euros. En un cargador rápido de autopista sin abono, la factura puede ser de dos a tres veces mayor que en casa, un factor que pesa bastante en un trayecto largo.",
+            text: "Tomemos un eléctrico compacto con un consumo de unos 16 kWh cada 100 km. En casa, en horas valle, eso cuesta unos 2,54 euros. En un punto público de 22 kW a 0,23 euros por kWh, ronda más bien los 3,68 euros. En un cargador rápido de autopista sin abono, a entre 0,50 y 0,70 euros por kWh, calcula más bien de 8 a 11 euros por 100 km, unas tres a cuatro veces el coste de cargar en casa, un factor que pesa bastante en un trayecto largo.",
           },
           { type: "h3", text: "Lo que hay que recordar" },
           {
@@ -3080,7 +3088,7 @@ export const blogPosts: BlogPost[] = [
           { question: "¿Cuánto cuesta la electricidad en horas valle en casa en 2026?", answer: "La tarifa valle es de 0,1589 euros por kWh desde agosto de 2026, frente a 0,2142 euros en horas punta." },
           { question: "¿Cuánto cuesta recargar en un punto público de 22 kW?", answer: "En los puntos de 22 kW de Carrefour, la tarifa es de 0,23 euros con impuestos por kWh desde el 1 de agosto de 2026, una rebaja del 30 %." },
           { question: "¿Cuánto cuestan 100 km con un coche eléctrico?", answer: "Para un eléctrico compacto que consume unos 16 kWh cada 100 km, son unos 2,54 euros en casa en horas valle, frente a unos 3,68 euros en un punto público de 22 kW." },
-          { question: "¿Es mucho más cara la carga rápida en autopista?", answer: "Sí, sin abono puede costar de dos a tres veces más que cargar en casa con tarifa valle." },
+          { question: "¿Es mucho más cara la carga rápida en autopista?", answer: "Sí. Sin abono, lo habitual en autopista son entre 0,50 y 0,70 euros por kWh según el operador, unas tres a cuatro veces la tarifa valle en casa (0,1589 euros)." },
         ],
         ...cta.es,
       },
@@ -3089,6 +3097,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "temps-de-recharge-voiture-electrique",
     publishedAt: "2026-08-29",
+    related: ["recharge-ac-dc-voiture-electrique", "bornes-rapides-autoroute-ete-2026", "cout-recharge-voiture-electrique"],
     image: {
       src: "/blog/temps-de-recharge-voiture-electrique.jpg",
       alt: {
@@ -3211,9 +3220,9 @@ export const blogPosts: BlogPost[] = [
         title: "Wie lange dauert das Laden eines Elektroautos? Der Leitfaden nach Ladeleistung",
         excerpt:
           "Haushaltssteckdose, heimische Wallbox, öffentliche Station oder Ultraschnelllader: Die Ladezeit reicht von mehreren Tagen bis zu wenigen Minuten.",
-        metaTitle: "Ladezeiten von Elektroautos nach Ladeleistung 2026",
+        metaTitle: "Ladezeit Elektroauto: Wie lange dauert das Laden?",
         metaDescription:
-          "2,3 kW, 7,4 kW, 22 kW, 150 kW: Wie lange dauert das Laden eines Elektroautos wirklich? Der vollständige Leitfaden nach Ladeleistung.",
+          "2,3 kW, 7,4 kW, 22 kW, 150 kW: So lange lädt ein Elektroauto wirklich. Ladezeit nach Ladeleistung, von der Steckdose bis zum Schnelllader.",
         body: [
           {
             type: "p",
@@ -3313,6 +3322,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "installer-borne-recharge-maison",
     publishedAt: "2026-09-01",
+    related: ["droit-a-la-prise-copropriete", "tarif-electricite-aout-2026-recharge", "cout-recharge-voiture-electrique"],
     image: {
       src: "/blog/installer-borne-recharge-maison.jpg",
       alt: {
@@ -3386,9 +3396,9 @@ export const blogPosts: BlogPost[] = [
         title: "Installing a Home EV Charger in France: A Step-by-Step Guide",
         excerpt:
           "A certified IRVE installer, the right power level, 5.5% VAT: what to know before installing a home charger in France in 2026.",
-        metaTitle: "Installing a Home EV Charger in France in 2026: The Guide",
+        metaTitle: "Home EV Charger Installation in France: 2026 Guide",
         metaDescription:
-          "Certified installers, choosing the power level, tax rules: France's tax credit ended in 2025, reduced VAT remains the main benefit in 2026.",
+          "IRVE-certified installer, power level, 5.5% VAT: how to install a home EV charger in France. The tax credit ended in 2025.",
         body: [
           {
             type: "p",
@@ -3439,9 +3449,9 @@ export const blogPosts: BlogPost[] = [
         title: "Eine Ladestation zu Hause installieren: Der Schritt-für-Schritt-Leitfaden für Frankreich",
         excerpt:
           "Zertifizierter IRVE-Installateur, passende Ladeleistung, 5,5 Prozent Mehrwertsteuer: Was Sie 2026 vor der Installation einer Wallbox wissen sollten.",
-        metaTitle: "Eine Wallbox zu Hause installieren in Frankreich 2026: Der Leitfaden",
+        metaTitle: "Wallbox in Frankreich installieren: Leitfaden 2026",
         metaDescription:
-          "Zertifizierte Installateure, passende Leistung, Steuerregeln: Frankreichs Steuergutschrift endete 2025, die reduzierte Mehrwertsteuer bleibt 2026 der Hauptvorteil.",
+          "IRVE-zertifizierter Installateur, passende Leistung, 5,5 % MwSt.: So installieren Sie eine Wallbox in Frankreich. Steuergutschrift endete 2025.",
         body: [
           {
             type: "p",
@@ -4001,6 +4011,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "road-trip-france-recharge-voiture-electrique",
     publishedAt: "2026-09-02",
+    related: ["electric-car-in-france-charging-guide", "bornes-rapides-autoroute-ete-2026", "cout-recharge-voiture-electrique"],
     image: {
       src: "/blog/road-trip-france-recharge-voiture-electrique.jpg",
       alt: {
@@ -4042,7 +4053,7 @@ export const blogPosts: BlogPost[] = [
           { type: "h2", text: "Recharger sans abonnement, la norme en France" },
           {
             type: "p",
-            text: "Contrairement à certains pays où un abonnement ou une carte RFID reste indispensable, les opérateurs de bornes rapides en France ont l'obligation de proposer un paiement direct par carte bancaire, sans abonnement ni application, généralement via un terminal sans contact intégré à la borne. Pratique pour un road trip ponctuel : inutile de créer un compte avant de partir.",
+            text: "Le paiement sans abonnement devient la norme : depuis avril 2024, les règles européennes imposent aux bornes publiques d'accepter un paiement sans contrat préalable, et les bornes rapides se dotent progressivement d'un lecteur de carte bancaire sans contact jusqu'en 2027. Sur une borne plus ancienne, une application ou un QR code peut rester nécessaire. Pratique pour un road trip ponctuel : dans la plupart des cas, inutile de créer un compte avant de partir.",
           },
           { type: "h2", text: "Les applications qui simplifient le trajet" },
           {
@@ -4066,7 +4077,7 @@ export const blogPosts: BlogPost[] = [
           },
         ],
         faq: [
-          { question: "Ai-je besoin d'un abonnement pour recharger ma voiture électrique en France ?", answer: "Non, la loi impose aux opérateurs de bornes rapides de proposer un paiement direct par carte bancaire sans abonnement ni application obligatoire." },
+          { question: "Ai-je besoin d'un abonnement pour recharger ma voiture électrique en France ?", answer: "Non. Depuis avril 2024, les règles européennes imposent aux bornes publiques d'accepter un paiement sans contrat préalable, et les bornes rapides se dotent progressivement d'un lecteur de carte jusqu'en 2027. Sur une borne plus ancienne, une application ou un QR code peut rester nécessaire." },
           { question: "Quel type de connecteur est utilisé pour recharger en France ?", answer: "La prise Type 2 en courant alternatif pour la recharge normale, et le connecteur Combo CCS2 en courant continu pour la recharge rapide : le même standard que dans le reste de l'Europe." },
           { question: "Le réseau de bornes rapides couvre-t-il bien les autoroutes françaises ?", answer: "Oui, la quasi-totalité des aires d'autoroute françaises sont désormais équipées de bornes rapides ou très rapides, avec des puissances allant généralement de 150 à 400 kW." },
           { question: "Quelles applications utiliser pour planifier un road trip en voiture électrique en France ?", answer: "Chargemap, PlugShare et A Better Route Planner, complétées par la carte de ma-borne-electrique.com pour repérer une borne disponible en temps réel." },
@@ -4099,7 +4110,7 @@ export const blogPosts: BlogPost[] = [
           { type: "h2", text: "Charging without a subscription is the norm in France" },
           {
             type: "p",
-            text: "Unlike some countries where a subscription or an RFID card is still required, fast-charging operators in France must offer direct payment by bank card, with no subscription or app required, usually via a contactless terminal built into the charger. Handy for a one-off road trip: no need to create an account before you leave.",
+            text: "Paying without a subscription is becoming the norm: since April 2024, EU rules require public chargers to accept payment without a prior contract, and fast chargers are gradually being fitted with a contactless card reader through 2027. On an older station, an app or a QR code may still be needed. Handy for a one-off road trip: in most cases there is no need to create an account before you leave.",
           },
           { type: "h2", text: "The apps that make the trip easier" },
           {
@@ -4123,7 +4134,7 @@ export const blogPosts: BlogPost[] = [
           },
         ],
         faq: [
-          { question: "Do I need a subscription to charge my EV in France?", answer: "No, French law requires fast-charging operators to offer direct payment by bank card, with no subscription or app required." },
+          { question: "Do I need a subscription to charge my EV in France?", answer: "No. Since April 2024, EU rules require public chargers to accept payment without a prior contract, and fast chargers are gradually being fitted with card readers through 2027. On an older station, an app or a QR code may still be needed." },
           { question: "What connector type is used to charge in France?", answer: "The Type 2 connector for AC charging, and the CCS2 combo connector for DC fast charging: the same standard used across the rest of Europe." },
           { question: "Does the fast-charging network cover French motorways well?", answer: "Yes, nearly every French motorway service area is now equipped with fast or ultra-fast chargers, generally rated from 150 to 400 kW." },
           { question: "Which apps are useful for planning an EV road trip in France?", answer: "Chargemap, PlugShare and A Better Route Planner, complemented by the map on ma-borne-electrique.com to spot an available charger in real time." },
@@ -4156,7 +4167,7 @@ export const blogPosts: BlogPost[] = [
           { type: "h2", text: "Laden ohne Abo ist in Frankreich der Standard" },
           {
             type: "p",
-            text: "Anders als in manchen Ländern, in denen weiterhin ein Abo oder eine RFID-Karte nötig ist, müssen Schnellladeanbieter in Frankreich eine direkte Bezahlung per Bankkarte anbieten, ohne Abo oder App, meist über ein kontaktloses Terminal direkt an der Ladesäule. Praktisch für einen einmaligen Roadtrip: Sie müssen vor der Abfahrt kein Konto anlegen.",
+            text: "Bezahlen ohne Abo wird zum Standard: Seit April 2024 verlangen EU-Regeln, dass öffentliche Ladesäulen Zahlung ohne vorherigen Vertrag akzeptieren, und Schnelllader werden bis 2027 schrittweise mit einem kontaktlosen Kartenleser ausgestattet. An älteren Säulen kann weiterhin eine App oder ein QR-Code nötig sein. Praktisch für einen einmaligen Roadtrip: in den meisten Fällen müssen Sie vor der Abfahrt kein Konto anlegen.",
           },
           { type: "h2", text: "Die Apps, die die Fahrt erleichtern" },
           {
@@ -4180,7 +4191,7 @@ export const blogPosts: BlogPost[] = [
           },
         ],
         faq: [
-          { question: "Brauche ich ein Abo, um mein Elektroauto in Frankreich zu laden?", answer: "Nein, das französische Recht verpflichtet Schnellladeanbieter zu einer direkten Bezahlung per Bankkarte, ohne Abo oder App." },
+          { question: "Brauche ich ein Abo, um mein Elektroauto in Frankreich zu laden?", answer: "Nein. Seit April 2024 verlangen EU-Regeln, dass öffentliche Ladesäulen Zahlung ohne vorherigen Vertrag akzeptieren, und Schnelllader werden bis 2027 schrittweise mit Kartenlesern ausgestattet. An älteren Säulen kann eine App oder ein QR-Code nötig sein." },
           { question: "Welcher Steckertyp wird zum Laden in Frankreich verwendet?", answer: "Der Typ-2-Stecker für Wechselstromladen und der CCS2-Combo-Stecker für Schnellladen mit Gleichstrom, derselbe Standard wie im übrigen Europa." },
           { question: "Deckt das Schnellladenetz die französischen Autobahnen gut ab?", answer: "Ja, fast jede französische Autobahnraststätte ist inzwischen mit Schnell- oder Ultraschnellladern ausgestattet, meist mit 150 bis 400 kW Leistung." },
           { question: "Welche Apps sind für die Planung eines Elektroauto-Roadtrips in Frankreich nützlich?", answer: "Chargemap, PlugShare und A Better Route Planner, ergänzt durch die Karte von ma-borne-electrique.com, um in Echtzeit eine verfügbare Ladesäule zu finden." },
@@ -4213,7 +4224,7 @@ export const blogPosts: BlogPost[] = [
           { type: "h2", text: "Recargar sin abono es la norma en Francia" },
           {
             type: "p",
-            text: "A diferencia de otros países donde sigue siendo necesario un abono o una tarjeta RFID, los operadores de carga rápida en Francia están obligados a ofrecer el pago directo con tarjeta bancaria, sin abono ni aplicación obligatoria, normalmente mediante un terminal sin contacto integrado en el propio cargador. Muy práctico para un road trip puntual: no hace falta crear ninguna cuenta antes de salir.",
+            text: "Pagar sin abono se está convirtiendo en la norma: desde abril de 2024, la normativa europea exige que los cargadores públicos acepten pago sin contrato previo, y los cargadores rápidos se dotan poco a poco de un lector de tarjeta sin contacto hasta 2027. En una estación antigua, puede seguir haciendo falta una aplicación o un código QR. Muy práctico para un road trip puntual: en la mayoría de los casos no hace falta crear ninguna cuenta antes de salir.",
           },
           { type: "h2", text: "Las aplicaciones que facilitan el trayecto" },
           {
@@ -4237,7 +4248,7 @@ export const blogPosts: BlogPost[] = [
           },
         ],
         faq: [
-          { question: "¿Necesito un abono para recargar mi coche eléctrico en Francia?", answer: "No, la ley francesa obliga a los operadores de carga rápida a ofrecer el pago directo con tarjeta bancaria, sin abono ni aplicación obligatoria." },
+          { question: "¿Necesito un abono para recargar mi coche eléctrico en Francia?", answer: "No. Desde abril de 2024, la normativa europea exige que los cargadores públicos acepten pago sin contrato previo, y los cargadores rápidos se dotan poco a poco de lectores de tarjeta hasta 2027. En una estación antigua puede hacer falta una aplicación o un código QR." },
           { question: "¿Qué tipo de conector se usa para recargar en Francia?", answer: "El conector Tipo 2 para la carga en corriente alterna, y el conector combinado CCS2 para la carga rápida en corriente continua: el mismo estándar que en el resto de Europa." },
           { question: "¿La red de carga rápida cubre bien las autopistas francesas?", answer: "Sí, casi todas las áreas de servicio de las autopistas francesas cuentan ya con cargadores rápidos o ultrarrápidos, generalmente entre 150 y 400 kW." },
           { question: "¿Qué aplicaciones son útiles para planificar un road trip en coche eléctrico por Francia?", answer: "Chargemap, PlugShare y A Better Route Planner, junto con el mapa de ma-borne-electrique.com para localizar un cargador disponible en tiempo real." },
@@ -5333,6 +5344,259 @@ export const blogPosts: BlogPost[] = [
           { question: "¿Por qué mi coche carga más despacio que la potencia indicada en el punto de recarga?", answer: "En AC, es el cargador integrado del coche el que limita la potencia realmente recibida, no el punto de recarga. En DC, la potencia máxima que la batería puede absorber baja a medida que sube el nivel de carga, por eso la velocidad se reduce claramente a partir del 80 %." },
           { question: "¿La recarga en DC desgasta la batería más rápido que en AC?", answer: "Usar de forma exclusiva y repetida la recarga rápida en DC puede acelerar ligeramente el desgaste de la batería frente a una recarga diaria en AC, pero el efecto se mantiene limitado si se evita llegar sistemáticamente al 100 %." },
           { question: "¿Qué conector elegir, Tipo 2 o CCS Combo?", answer: "El Tipo 2 transporta únicamente corriente alterna. El CCS Combo añade dos contactos al Tipo 2 para transportar también corriente continua, por lo que un mismo puerto CCS Combo admite generalmente ambos tipos de recarga." },
+        ],
+        ...cta.es,
+      },
+    },
+  },
+  {
+    slug: "electric-car-in-france-charging-guide",
+    publishedAt: "2026-09-21",
+    related: ["road-trip-france-recharge-voiture-electrique", "cout-recharge-voiture-electrique", "comparatif-abonnements-recharge", "zfe-2026-vehicules-electriques"],
+    image: {
+      src: "/blog/electric-car-in-france-charging-guide.jpg",
+      alt: {
+        fr: "Quatre bornes de recharge rapide Ionity face aux montagnes à l'autoport du Fréjus, en Savoie",
+        en: "Four Ionity fast chargers facing the mountains at the Fréjus autoport in Savoie, France",
+        de: "Vier Ionity-Schnellladesäulen vor Bergkulisse am Autoport Fréjus in Savoyen, Frankreich",
+        es: "Cuatro cargadores rápidos Ionity frente a las montañas en el autoport de Fréjus, en Saboya, Francia",
+      },
+      credit: {
+        name: "Sebleouf",
+        url: "https://commons.wikimedia.org/wiki/File:Autoport_du_Fr%C3%A9jus_-_Bornes_chargement_%C3%A9lectrique_Ionity_(mai_2022).jpg",
+        license: "CC BY-SA 4.0",
+      },
+    },
+    content: {
+      fr: {
+        eyebrow: "Voyage",
+        title: "Visiter la France en voiture électrique : recharge, cartes de paiement et prix",
+        excerpt:
+          "Quelle prise, comment payer sans compte français, combien coûte une charge et quelle vignette commander avant de passer la frontière : le guide pratique des visiteurs.",
+        metaTitle: "Voiture électrique en France : recharge, cartes, prix",
+        metaDescription:
+          "Prises compatibles, paiement sans compte français, prix d'une charge et vignette Crit'Air à commander avant le départ : le guide des visiteurs pour recharger en France.",
+        body: [
+          {
+            type: "p",
+            text: "Avec plus de 200 000 points de recharge publics, la France se parcourt sans difficulté en voiture électrique. Pour un visiteur, la vraie différence avec son pays d'origine tient moins à la prise qu'au paiement et aux démarches. Voici ce qu'il faut régler avant de passer la frontière.",
+          },
+          { type: "h2", text: "Votre prise est la bonne" },
+          {
+            type: "p",
+            text: "La France suit le standard européen : prise Type 2 en courant alternatif, connecteur Combo CCS2 en courant continu. Sur beaucoup de bornes en courant alternatif, seule la prise est fournie, sans câble : emportez votre propre câble Type 2. Une prise domestique ne délivre qu'environ 2,3 kW, ce qui la réserve à un dépannage.",
+          },
+          { type: "h2", text: "Comment payer quand on n'a pas de compte français" },
+          {
+            type: "p",
+            text: "Trois solutions coexistent. Vous pouvez payer par carte bancaire aux bornes rapides équipées d'un lecteur, utiliser la carte ou l'application de recharge de votre pays si elle fonctionne en itinérance en France, ou passer par l'application d'un opérateur français. Depuis avril 2024, les règles européennes imposent aux bornes publiques d'accepter un paiement sans contrat préalable, et les lecteurs de carte sur les bornes rapides se généralisent jusqu'en 2027 : sur une borne plus ancienne, prévoyez une application ou un QR code. Vérifiez le prix affiché avant de brancher, car il peut différer de celui de votre pays.",
+          },
+          { type: "h2", text: "Ce que coûte une charge en France" },
+          {
+            type: "p",
+            text: "Sur une borne publique de 22 kW comme celles de Carrefour, le kWh est facturé 0,23 € TTC depuis le 1er août 2026. Pour une compacte qui consomme environ 16 kWh aux 100 km, cela représente à peu près 3,68 € les 100 km. Sur autoroute, la recharge rapide sans abonnement coûte en général entre 0,50 et 0,70 € le kWh selon l'opérateur, soit environ trois à quatre fois le tarif heures creuses des foyers français (0,1589 € le kWh).",
+          },
+          { type: "h2", text: "Zones à faibles émissions : commandez la vignette Crit'Air" },
+          {
+            type: "p",
+            text: "Les zones à faibles émissions (ZFE) s'appliquent aussi aux véhicules immatriculés à l'étranger. Une voiture 100 % électrique relève de la catégorie Crit'Air la plus favorable et n'est pas concernée par les restrictions, mais la vignette doit être commandée à l'avance, uniquement sur le site officiel certificat-air.gouv.fr, avec la plaque et la date de première immatriculation. Un certificat provisoire arrive par e-mail et la vignette par courrier en quelques jours à quelques semaines. Les contrôles restent progressifs pour l'instant, mais la commander lève tout doute avant d'entrer dans des villes comme Paris, Lyon ou Grenoble.",
+          },
+          { type: "h2", text: "Trouver une borne sur votre trajet" },
+          {
+            type: "p",
+            text: "La carte de ma-borne-electrique.com localise les bornes, et l'annuaire par région indique le nombre de bornes, la part de recharge rapide et les villes les mieux équipées pour chaque département français. Ces données viennent d'Open Charge Map et peuvent être en retard sur le décompte officiel : vérifiez toujours la disponibilité en temps réel dans une application de trajet avant un détour.",
+          },
+          { type: "h3", text: "Checklist avant le départ" },
+          {
+            type: "ul",
+            items: [
+              "Vérifiez votre connecteur (Type 2 ou CCS2) et emportez votre câble Type 2.",
+              "Activez une carte ou une application de recharge compatible avec la France, et gardez une carte bancaire en secours.",
+              "Commandez la vignette Crit'Air sur certificat-air.gouv.fr avant de partir.",
+              "Planifiez vos arrêts avec une application d'itinéraire et notez une borne de secours par étape.",
+              "Sur borne rapide, visez entre 20 % et 80 % : la vitesse de charge chute au-delà.",
+            ],
+          },
+        ],
+        faq: [
+          { question: "Faut-il une carte de recharge française pour recharger en France ?", answer: "Non. Depuis avril 2024, les règles européennes imposent aux bornes publiques d'accepter un paiement sans contrat, et les bornes rapides se dotent progressivement de lecteurs de carte jusqu'en 2027. Sur une borne plus ancienne, une application ou un QR code peut être nécessaire." },
+          { question: "Ma voiture électrique étrangère est-elle compatible avec les bornes françaises ?", answer: "Oui si elle utilise la prise Type 2 en courant alternatif ou le connecteur CCS2 en courant continu, le standard européen. Emportez votre câble Type 2, car de nombreuses bornes n'en fournissent pas." },
+          { question: "Combien coûte une recharge en France ?", answer: "Environ 0,23 € TTC le kWh sur les bornes 22 kW de Carrefour depuis le 1er août 2026, soit à peu près 3,68 € les 100 km pour une compacte. La recharge rapide sur autoroute sans abonnement coûte en général entre 0,50 et 0,70 € le kWh selon l'opérateur, soit environ trois à quatre fois le tarif heures creuses des foyers français." },
+          { question: "Faut-il une vignette Crit'Air avec une voiture électrique étrangère ?", answer: "Les zones à faibles émissions s'appliquent aux véhicules étrangers. Une voiture électrique relève de la catégorie la plus favorable, mais il est conseillé de commander la vignette à l'avance sur le site officiel certificat-air.gouv.fr." },
+        ],
+        ...cta.fr,
+      },
+      en: {
+        eyebrow: "Travel",
+        title: "Driving an Electric Car in France: Charging, Cards and Prices",
+        excerpt:
+          "Which plug fits, how to pay without a French account, what a charge costs and which sticker to order before you cross the border: a practical guide for visitors.",
+        metaTitle: "Electric Car in France: Charging, Cards, Prices",
+        metaDescription:
+          "Plugs, payment without a French account, typical prices and the Crit'Air sticker to order before you leave: a visitor's guide to charging an EV in France.",
+        body: [
+          {
+            type: "p",
+            text: "With more than 200,000 public charging points, France is easy to cross in an electric car. For a visitor, the real difference from home is less the plug than the payment and the paperwork. Here is what to sort out before you cross the border.",
+          },
+          { type: "h2", text: "Your plug already fits" },
+          {
+            type: "p",
+            text: "France follows the European standard: the Type 2 connector for AC charging and the CCS2 combo connector for DC fast charging. Many AC stations only provide the socket, not the cable, so pack your own Type 2 charging cable. A household socket delivers only about 2.3 kW, which makes it a last resort rather than a real way to charge.",
+          },
+          { type: "h2", text: "How to pay when you have no French account" },
+          {
+            type: "p",
+            text: "Three options exist. You can pay by bank card at fast chargers that have a card reader, use your home country's charging card or app if it roams in France, or go through a French operator's app. Since April 2024, EU rules require public chargers to accept payment without a prior contract, and card readers on fast chargers are being rolled out through 2027, so on an older station expect to need an app or a QR code. Check the price shown before you plug in, because it can differ from what you pay at home.",
+          },
+          { type: "h2", text: "What a charge costs in France" },
+          {
+            type: "p",
+            text: "On a public 22kW station such as Carrefour's, electricity costs 0.23 euros including tax per kWh since August 1, 2026. For a compact EV using about 16 kWh per 100km, that is roughly 3.68 euros per 100km. On the motorway, pay-as-you-go fast charging without a subscription generally costs 0.50 to 0.70 euros per kWh depending on the operator, about three to four times the off-peak rate French households pay at home (0.1589 euros per kWh).",
+          },
+          { type: "h2", text: "Low-emission zones: order the Crit'Air sticker" },
+          {
+            type: "p",
+            text: "French low-emission zones (ZFE) also apply to foreign-registered vehicles. A fully electric car falls into the most favorable Crit'Air category and is not affected by the restrictions, but the sticker has to be ordered in advance, only on the official site certificat-air.gouv.fr, using your plate and first registration date. A provisional certificate arrives by email and the sticker by post within a few days to a few weeks. Checks remain gradual for now, but ordering it removes any doubt before you drive into cities such as Paris, Lyon or Grenoble.",
+          },
+          { type: "h2", text: "Finding a charger along your route" },
+          {
+            type: "p",
+            text: "The map on ma-borne-electrique.com locates chargers, and the regional directory shows the number of stations, the share of fast charging and the best-covered towns for every French department. That data comes from Open Charge Map and can lag behind the official count, so always check real-time availability in a route-planning app before you detour.",
+          },
+          { type: "h3", text: "Checklist before you leave" },
+          {
+            type: "ul",
+            items: [
+              "Check your connector (Type 2 or CCS2) and pack your Type 2 cable.",
+              "Activate a charging card or app that works in France, and keep a bank card as a backup.",
+              "Order the Crit'Air sticker on certificat-air.gouv.fr before you go.",
+              "Plan your stops with a route-planning app and note a backup charger for each one.",
+              "On fast chargers, aim for 20% to 80%: charging speed drops beyond that.",
+            ],
+          },
+        ],
+        faq: [
+          { question: "Do I need a French charging card to charge my EV in France?", answer: "No. Since April 2024, EU rules require public chargers to accept payment without a contract, and fast chargers are gradually being fitted with card readers through 2027. On an older station you may need an app or a QR code." },
+          { question: "Will my foreign electric car fit French chargers?", answer: "Yes if it uses the Type 2 connector for AC or the CCS2 connector for DC, the European standard. Pack your Type 2 cable, since many stations do not supply one." },
+          { question: "How much does it cost to charge in France?", answer: "About 0.23 euros including tax per kWh on Carrefour's 22kW stations since August 1, 2026, roughly 3.68 euros per 100km for a compact EV. Motorway fast charging without a subscription generally costs 0.50 to 0.70 euros per kWh depending on the operator, about three to four times the off-peak rate French households pay at home." },
+          { question: "Do I need a Crit'Air sticker with a foreign electric car?", answer: "French low-emission zones apply to foreign vehicles. An electric car falls into the most favorable category, but ordering the sticker in advance on the official site certificat-air.gouv.fr is advisable." },
+        ],
+        ...cta.en,
+      },
+      de: {
+        eyebrow: "Reise",
+        title: "Elektroauto in Frankreich: Laden, Karten und Preise im Überblick",
+        excerpt:
+          "Welcher Stecker passt, wie zahlt man ohne französisches Konto, was kostet eine Ladung und welche Plakette sollten Sie vor der Einreise bestellen: der praktische Leitfaden für Reisende.",
+        metaTitle: "Elektroauto in Frankreich: Laden, Karten, Preise",
+        metaDescription:
+          "Stecker, Bezahlen ohne französisches Konto, typische Preise und die Crit'Air-Plakette, die Sie vor der Abreise bestellen sollten: der Leitfaden zum Laden in Frankreich.",
+        body: [
+          {
+            type: "p",
+            text: "Mit mehr als 200.000 öffentlichen Ladepunkten lässt sich Frankreich problemlos mit dem Elektroauto bereisen. Für Reisende liegt der eigentliche Unterschied zur Heimat weniger im Stecker als im Bezahlen und im Papierkram. Das sollten Sie vor der Grenze klären.",
+          },
+          { type: "h2", text: "Ihr Stecker passt bereits" },
+          {
+            type: "p",
+            text: "Frankreich folgt dem europäischen Standard: Typ-2-Stecker für Wechselstrom und CCS2-Combo-Stecker für das Schnellladen mit Gleichstrom. An vielen Wechselstrom-Ladesäulen gibt es nur die Buchse, aber kein Kabel, nehmen Sie deshalb Ihr eigenes Typ-2-Ladekabel mit. Eine Haushaltssteckdose liefert nur etwa 2,3 kW und taugt daher höchstens als Notlösung.",
+          },
+          { type: "h2", text: "Bezahlen ohne französisches Konto" },
+          {
+            type: "p",
+            text: "Es gibt drei Möglichkeiten. Sie können an Schnellladern mit Kartenleser per Bankkarte zahlen, die Ladekarte oder App aus Ihrem Heimatland nutzen, sofern sie in Frankreich per Roaming funktioniert, oder die App eines französischen Anbieters verwenden. Seit April 2024 verlangen EU-Regeln, dass öffentliche Ladesäulen Zahlung ohne vorherigen Vertrag akzeptieren, und Kartenleser an Schnellladern werden bis 2027 schrittweise eingeführt: An älteren Säulen brauchen Sie womöglich eine App oder einen QR-Code. Prüfen Sie den angezeigten Preis vor dem Einstecken, denn er kann von Ihrem Heimatpreis abweichen.",
+          },
+          { type: "h2", text: "Was das Laden in Frankreich kostet" },
+          {
+            type: "p",
+            text: "An einer öffentlichen 22-kW-Station wie denen von Carrefour kostet die kWh seit dem 1. August 2026 0,23 Euro inklusive Steuern. Für einen Kompaktwagen mit rund 16 kWh pro 100 km sind das etwa 3,68 Euro pro 100 km. Auf der Autobahn kostet Schnellladen ohne Abo je nach Anbieter in der Regel 0,50 bis 0,70 Euro pro kWh, etwa das Drei- bis Vierfache des Nebenzeittarifs französischer Haushalte (0,1589 Euro pro kWh).",
+          },
+          { type: "h2", text: "Umweltzonen: die Crit'Air-Plakette bestellen" },
+          {
+            type: "p",
+            text: "Frankreichs Umweltzonen (ZFE) gelten auch für im Ausland zugelassene Fahrzeuge. Ein reines Elektroauto fällt in die günstigste Crit'Air-Kategorie und ist von den Einschränkungen nicht betroffen, doch die Plakette muss vorab bestellt werden, ausschließlich auf der offiziellen Seite certificat-air.gouv.fr, mit Kennzeichen und Datum der Erstzulassung. Eine vorläufige Bescheinigung kommt per E-Mail, die Plakette per Post innerhalb weniger Tage bis Wochen. Die Kontrollen laufen bislang schrittweise, doch mit der Plakette sind Sie beim Einfahren in Städte wie Paris, Lyon oder Grenoble auf der sicheren Seite.",
+          },
+          { type: "h2", text: "Ladesäulen entlang der Route finden" },
+          {
+            type: "p",
+            text: "Die Karte von ma-borne-electrique.com zeigt Ladesäulen, und das Regionsverzeichnis nennt für jedes französische Département die Zahl der Stationen, den Schnellladeanteil und die am besten versorgten Städte. Die Daten stammen von Open Charge Map und können dem offiziellen Bestand hinterherhinken: Prüfen Sie die Echtzeit-Verfügbarkeit in einer Routenplaner-App, bevor Sie einen Umweg fahren.",
+          },
+          { type: "h3", text: "Checkliste vor der Abreise" },
+          {
+            type: "ul",
+            items: [
+              "Prüfen Sie Ihren Anschluss (Typ 2 oder CCS2) und nehmen Sie Ihr Typ-2-Kabel mit.",
+              "Aktivieren Sie eine Ladekarte oder App, die in Frankreich funktioniert, und halten Sie eine Bankkarte als Reserve bereit.",
+              "Bestellen Sie die Crit'Air-Plakette vor der Abreise auf certificat-air.gouv.fr.",
+              "Planen Sie Ihre Stopps mit einer Routenplaner-App und notieren Sie pro Etappe eine Ausweichsäule.",
+              "Laden Sie an Schnellladern idealerweise zwischen 20 % und 80 %: darüber sinkt die Ladegeschwindigkeit.",
+            ],
+          },
+        ],
+        faq: [
+          { question: "Brauche ich eine französische Ladekarte, um in Frankreich zu laden?", answer: "Nein. Seit April 2024 verlangen EU-Regeln, dass öffentliche Ladesäulen Zahlung ohne Vertrag akzeptieren, und Schnelllader werden bis 2027 schrittweise mit Kartenlesern ausgestattet. An älteren Säulen kann eine App oder ein QR-Code nötig sein." },
+          { question: "Passt mein Elektroauto aus dem Ausland an französische Ladesäulen?", answer: "Ja, wenn es den Typ-2-Stecker für Wechselstrom oder den CCS2-Stecker für Gleichstrom nutzt, den europäischen Standard. Nehmen Sie Ihr Typ-2-Kabel mit, denn viele Säulen stellen keines bereit." },
+          { question: "Was kostet das Laden in Frankreich?", answer: "Etwa 0,23 Euro inklusive Steuern pro kWh an den 22-kW-Stationen von Carrefour seit dem 1. August 2026, also rund 3,68 Euro pro 100 km für einen Kompaktwagen. Schnellladen auf der Autobahn ohne Abo kostet je nach Anbieter in der Regel 0,50 bis 0,70 Euro pro kWh, etwa das Drei- bis Vierfache des Nebenzeittarifs französischer Haushalte." },
+          { question: "Brauche ich mit einem ausländischen Elektroauto eine Crit'Air-Plakette?", answer: "Frankreichs Umweltzonen gelten auch für ausländische Fahrzeuge. Ein Elektroauto fällt in die günstigste Kategorie, dennoch ist es ratsam, die Plakette vorab auf der offiziellen Seite certificat-air.gouv.fr zu bestellen." },
+        ],
+        ...cta.de,
+      },
+      es: {
+        eyebrow: "Viaje",
+        title: "Coche eléctrico en Francia: recargar, tarjetas de pago y precios",
+        excerpt:
+          "Qué conector usar, cómo pagar sin cuenta francesa, cuánto cuesta una carga y qué pegatina pedir antes de cruzar la frontera: la guía práctica para visitantes.",
+        metaTitle: "Coche eléctrico en Francia: recarga, tarjetas, precios",
+        metaDescription:
+          "Conectores, pago sin cuenta francesa, precios habituales y la pegatina Crit'Air que conviene pedir antes de salir: la guía para recargar tu coche eléctrico en Francia.",
+        body: [
+          {
+            type: "p",
+            text: "Con más de 200.000 puntos de recarga públicos, recorrer Francia en coche eléctrico es sencillo. Para un visitante, la verdadera diferencia con su país está menos en el conector que en el pago y los trámites. Esto es lo que conviene resolver antes de cruzar la frontera.",
+          },
+          { type: "h2", text: "Tu conector ya es el adecuado" },
+          {
+            type: "p",
+            text: "Francia sigue el estándar europeo: conector Tipo 2 en corriente alterna y conector combinado CCS2 en corriente continua. En muchos cargadores de corriente alterna solo hay toma, sin cable, así que lleva tu propio cable Tipo 2. Un enchufe doméstico entrega apenas unos 2,3 kW, por lo que sirve solo como recurso de emergencia.",
+          },
+          { type: "h2", text: "Cómo pagar sin cuenta francesa" },
+          {
+            type: "p",
+            text: "Hay tres opciones. Puedes pagar con tarjeta bancaria en los cargadores rápidos que tienen lector, usar la tarjeta o la aplicación de recarga de tu país si funciona en itinerancia en Francia, o recurrir a la aplicación de un operador francés. Desde abril de 2024, la normativa europea exige que los cargadores públicos acepten pago sin contrato previo, y los lectores de tarjeta en los cargadores rápidos se van implantando hasta 2027: en una estación antigua, prevé necesitar una aplicación o un código QR. Comprueba el precio indicado antes de conectar, porque puede diferir del que pagas en tu país.",
+          },
+          { type: "h2", text: "Cuánto cuesta cargar en Francia" },
+          {
+            type: "p",
+            text: "En un punto público de 22 kW como los de Carrefour, el kWh cuesta 0,23 euros con impuestos desde el 1 de agosto de 2026. Para un compacto que consume unos 16 kWh cada 100 km, son aproximadamente 3,68 euros por 100 km. En autopista, la carga rápida sin abono suele costar entre 0,50 y 0,70 euros por kWh según el operador, unas tres a cuatro veces la tarifa nocturna que pagan los hogares franceses (0,1589 euros por kWh).",
+          },
+          { type: "h2", text: "Zonas de bajas emisiones: pide la pegatina Crit'Air" },
+          {
+            type: "p",
+            text: "Las zonas de bajas emisiones francesas (ZFE) también se aplican a los vehículos matriculados en el extranjero. Un coche 100 % eléctrico entra en la categoría Crit'Air más favorable y no está afectado por las restricciones, pero la pegatina hay que pedirla con antelación, solo en el sitio oficial certificat-air.gouv.fr, con la matrícula y la fecha de primera matriculación. Un certificado provisional llega por correo electrónico y la pegatina por correo postal en unos días o unas semanas. Los controles siguen siendo graduales por ahora, pero tenerla evita dudas al entrar en ciudades como París, Lyon o Grenoble.",
+          },
+          { type: "h2", text: "Encontrar un cargador en tu ruta" },
+          {
+            type: "p",
+            text: "El mapa de ma-borne-electrique.com localiza los cargadores, y el directorio por región indica el número de estaciones, la proporción de carga rápida y las ciudades mejor equipadas de cada departamento francés. Los datos proceden de Open Charge Map y pueden ir por detrás del recuento oficial: comprueba siempre la disponibilidad en tiempo real en una aplicación de rutas antes de desviarte.",
+          },
+          { type: "h3", text: "Lista de comprobación antes de salir" },
+          {
+            type: "ul",
+            items: [
+              "Comprueba tu conector (Tipo 2 o CCS2) y lleva tu cable Tipo 2.",
+              "Activa una tarjeta o aplicación de recarga que funcione en Francia y ten una tarjeta bancaria de reserva.",
+              "Pide la pegatina Crit'Air en certificat-air.gouv.fr antes de salir.",
+              "Planifica las paradas con una aplicación de rutas y anota un cargador alternativo para cada etapa.",
+              "En cargadores rápidos, apunta al 20 %-80 %: por encima de ese umbral la velocidad de carga baja.",
+            ],
+          },
+        ],
+        faq: [
+          { question: "¿Necesito una tarjeta de recarga francesa para cargar en Francia?", answer: "No. Desde abril de 2024, la normativa europea exige que los cargadores públicos acepten pago sin contrato, y los cargadores rápidos se dotan poco a poco de lectores de tarjeta hasta 2027. En una estación antigua puede hacer falta una aplicación o un código QR." },
+          { question: "¿Mi coche eléctrico extranjero es compatible con los cargadores franceses?", answer: "Sí, si usa el conector Tipo 2 en corriente alterna o el CCS2 en corriente continua, el estándar europeo. Lleva tu cable Tipo 2, porque muchos cargadores no lo incluyen." },
+          { question: "¿Cuánto cuesta cargar en Francia?", answer: "Unos 0,23 euros con impuestos por kWh en los cargadores de 22 kW de Carrefour desde el 1 de agosto de 2026, es decir, unos 3,68 euros por 100 km para un compacto. La carga rápida en autopista sin abono suele costar entre 0,50 y 0,70 euros por kWh según el operador, unas tres a cuatro veces la tarifa nocturna de los hogares franceses." },
+          { question: "¿Necesito la pegatina Crit'Air con un coche eléctrico extranjero?", answer: "Las zonas de bajas emisiones francesas se aplican a los vehículos extranjeros. Un coche eléctrico entra en la categoría más favorable, pero conviene pedir la pegatina con antelación en el sitio oficial certificat-air.gouv.fr." },
         ],
         ...cta.es,
       },

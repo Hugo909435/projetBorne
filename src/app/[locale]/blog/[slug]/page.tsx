@@ -21,6 +21,20 @@ const UPDATED_LABEL: Record<Locale, string> = {
   es: "Actualizado el",
 };
 
+const READ_ALSO_HEADING: Record<Locale, string> = {
+  fr: "À lire aussi",
+  en: "Read also",
+  de: "Weiterlesen",
+  es: "Sigue leyendo",
+};
+
+const DIRECTORY_LINK: Record<Locale, string> = {
+  fr: "Bornes de recharge par région : nombre de bornes, recharge rapide et villes les mieux équipées",
+  en: "Charging stations by region: station counts, fast charging and best-covered towns",
+  de: "Ladestationen nach Region: Anzahl, Schnellladen und am besten versorgte Städte",
+  es: "Puntos de recarga por región: número, carga rápida y ciudades mejor equipadas",
+};
+
 export async function generateStaticParams() {
   return blogPosts.map((post) => ({ slug: post.slug }));
 }
@@ -61,6 +75,10 @@ export default async function BlogPostPage({
 
   const content = post.content[locale as Locale];
   const tNav = await getTranslations({ locale, namespace: "Nav" });
+
+  const relatedPosts = (post.related ?? [])
+    .map((relatedSlug) => blogPosts.find((p) => p.slug === relatedSlug))
+    .filter((p): p is (typeof blogPosts)[number] => p !== undefined);
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -220,6 +238,29 @@ export default async function BlogPostPage({
           ))}
         </>
       )}
+
+      <div className="mt-10">
+        <h2 className="font-display text-2xl font-semibold text-ink-900">
+          {READ_ALSO_HEADING[locale as Locale]}
+        </h2>
+        <ul className="mt-3 space-y-2 text-ink-600">
+          {relatedPosts.map((related) => (
+            <li key={related.slug}>
+              <Link
+                href={`/blog/${related.slug}`}
+                className="font-semibold text-green-700 underline"
+              >
+                {related.content[locale as Locale].title}
+              </Link>
+            </li>
+          ))}
+          <li>
+            <Link href="/bornes-recharge" className="font-semibold text-green-700 underline">
+              {DIRECTORY_LINK[locale as Locale]}
+            </Link>
+          </li>
+        </ul>
+      </div>
 
       <div className="mt-10 rounded-2xl border border-line bg-card p-6">
         <p className="text-sm text-ink-600">

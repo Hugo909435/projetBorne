@@ -38,7 +38,7 @@ function subscribeToStorage(callback: () => void) {
 }
 
 // The server can't know localStorage, so it reports "not read yet" rather than
-// guessing "no consent" — the latter would flash the banner open for visitors
+// guessing "no consent", the latter would flash the banner open for visitors
 // who already answered, right before the real value swaps it away.
 function getServerSnapshot(): StoredChoice {
   return undefined;
@@ -64,7 +64,7 @@ export function CookieConsentProvider({ children }: { children: React.ReactNode 
     try {
       window.localStorage.setItem(CONSENT_STORAGE_KEY, JSON.stringify({ analytics }));
     } catch {
-      // localStorage unavailable (private browsing, quota) — consent still applies for this session.
+      // localStorage unavailable (private browsing, quota) - consent still applies for this session.
     }
   }, []);
 

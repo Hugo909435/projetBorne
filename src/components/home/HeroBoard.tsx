@@ -214,7 +214,7 @@ export default function HeroBoard() {
                       </span>
                     </span>
                     <span className="block text-[0.72rem] text-white/45">
-                      {row.powerKw != null ? `${row.powerKw} kW` : "—"}
+                      {row.powerKw != null ? `${row.powerKw} kW` : "-"}
                     </span>
                   </span>
                   <span
