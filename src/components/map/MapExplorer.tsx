@@ -330,7 +330,7 @@ function TileLoader({
   const firstRunRef = useRef(true);
   // The one pre-loaded country, if any: lets any view inside its box skip
   // loading entirely.
-  const seedRef = useRef<{ tile: Tile; box: Box | null } | null>(null);
+  const seedRef = useRef<{ tile: Tile; box: Box | null; sampled: boolean } | null>(null);
 
   function schedule() {
     if (timerRef.current) clearTimeout(timerRef.current);
@@ -368,6 +368,9 @@ function TileLoader({
         // it and let the normal grid fill in the detail.
         if (seed && seed.tile.key === tile.key && stations.length >= COUNTRY_MAX_RESULTS) {
           seed.box = null;
+          // ...but the answer is thinned evenly across the whole country, which
+          // is all an overview zoom needs (see `refresh`).
+          seed.sampled = true;
         }
         store.put(tile.key, stations);
         onChange(store.prune(keepRef.current));
@@ -414,7 +417,17 @@ function TileLoader({
     // Outside that box (a wide overview, a border, or a seed that came back
     // truncated) any further request still carries the country code, so it
     // never pulls in a neighbouring country's stations while one is selected.
-    const wanted = insideSeed
+    // A country with more stations than the seed's cap (France, Germany) gets a
+    // thinned but evenly spread sample of everything. At overview zooms that is
+    // exactly enough: clusters look the same and panning costs nothing. Asking
+    // for a fresh multi-thousand-station "overview" tile on every pan instead
+    // re-downloads megabytes and re-clusters them, freezing the map for up to a
+    // second per move. Detail is fetched by the tile grid once zoomed in.
+    // Until the seed has arrived, wait for it rather than firing a second,
+    // overlapping request for the same stations.
+    const seedCoversOverview =
+      !tiled && seed != null && (seed.sampled || !store.has(seed.tile.key));
+    const wanted = insideSeed || seedCoversOverview
       ? [seed!.tile]
       : tiled
         ? gridTiles(view, zoom, seed?.tile.country)
@@ -449,7 +462,7 @@ function TileLoader({
     // bounding box can't guarantee, and it is what later lets any view
     // inside that country skip loading entirely.
     if (countryCode) {
-      const seed = { tile: countryTile(countryCode), box: seedBoxFor(countryCode) };
+      const seed = { tile: countryTile(countryCode), box: seedBoxFor(countryCode), sampled: false };
       seedRef.current = seed;
       store.pin(seed.tile.key);
     }
