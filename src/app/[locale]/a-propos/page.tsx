@@ -84,6 +84,22 @@ export default async function AProposPage({
       <div className="mt-3 space-y-4 leading-relaxed text-ink-600">
         <p>
           {t.rich("engagementP1", {
+            irve: (chunks) => (
+              <a
+                href="https://www.data.gouv.fr/datasets/beta-bases-nationales-des-points-de-recharge-pour-vehicules-electriques-en-france-irve"
+                className="underline text-green-700"
+              >
+                {chunks}
+              </a>
+            ),
+            bnetza: (chunks) => (
+              <a
+                href="https://www.bundesnetzagentur.de/DE/Fachthemen/ElektrizitaetundGas/E-Mobilitaet/Ladesaeulenkarte/start.html"
+                className="underline text-green-700"
+              >
+                {chunks}
+              </a>
+            ),
             ocm: (chunks) => (
               <a href="https://openchargemap.org" className="underline text-green-700">
                 {chunks}

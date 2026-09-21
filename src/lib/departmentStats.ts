@@ -1,28 +1,45 @@
-import { fetchStations } from "@/lib/openChargeMap";
-import { fetchReferenceData } from "@/lib/ocmReference";
-import { aggregateStations, type StationAggregate } from "@/lib/regionStats";
-import type { Department } from "@/lib/departments";
-
 /**
- * Departments have no single coordinate or clean bounding box in `cities.ts`
- * (only the prefecture's point). A fixed radius around that point is an
- * approximation, not the administrative boundary - the copy that uses this
- * data says "within N km", never "in the department", to stay accurate.
+ * Per-department charging statistics, generated from the official French
+ * national IRVE base by `scripts/generate_irve_data.py` and read
+ * from `src/data/department-stats.json` at build time.
+ *
+ * "Points" are individual plugs that can serve one car; a station groups
+ * several points. Only points open to the public are counted, and the
+ * department is the real administrative one (from the station's postal code),
+ * not a radius around the prefecture.
  */
-export const DEPARTMENT_RADIUS_KM = 30;
+export type DepartmentStats = {
+  stations: number;
+  points: number;
+  /** Points delivering DC power at or above `fastThresholdKw`. */
+  fastPoints: number;
+  connectorBreakdown: { name: string; count: number }[];
+  topTowns: { name: string; count: number }[];
+};
 
-export type DepartmentStats = StationAggregate;
+/** Same statistics shape for the German states, from the Bundesnetzagentur register. */
+export type AreaStats = DepartmentStats;
 
-export async function fetchDepartmentStats(dept: Department): Promise<DepartmentStats> {
-  const [stations, reference] = await Promise.all([
-    fetchStations({
-      lat: dept.lat,
-      lon: dept.lon,
-      distanceKm: DEPARTMENT_RADIUS_KM,
-      maxResults: 500,
-    }),
-    fetchReferenceData(),
-  ]);
+export type GermanStatsMeta = {
+  source: string;
+  sourceUrl: string;
+  license: string;
+  attribution: string;
+  /** ISO date of the register release the statistics come from. */
+  registerDate: string;
+  generatedAt: string;
+  fastThresholdKw: number;
+  nationalPoints: number;
+  nationalLocations: number;
+};
 
-  return aggregateStations(stations, reference);
-}
+export type DepartmentStatsMeta = {
+  source: string;
+  sourceUrl: string;
+  license: string;
+  /** ISO date the statistics were generated, shown on each page. */
+  generatedAt: string;
+  fastThresholdKw: number;
+  nationalPublicPoints: number;
+  nationalPublicStations: number;
+};

@@ -100,6 +100,22 @@ export default function Footer() {
           <p>{t("rights", { year: new Date().getFullYear() })}</p>
           <p>
             {t.rich("attribution", {
+              irve: (chunks) => (
+                <a
+                  href="https://www.data.gouv.fr/datasets/beta-bases-nationales-des-points-de-recharge-pour-vehicules-electriques-en-france-irve"
+                  className="underline hover:text-lime-300"
+                >
+                  {chunks}
+                </a>
+              ),
+              bnetza: (chunks) => (
+                <a
+                  href="https://www.bundesnetzagentur.de/DE/Fachthemen/ElektrizitaetundGas/E-Mobilitaet/Ladesaeulenkarte/start.html"
+                  className="underline hover:text-lime-300"
+                >
+                  {chunks}
+                </a>
+              ),
               ocm: (chunks) => (
                 <a href="https://openchargemap.org" className="underline hover:text-lime-300">
                   {chunks}

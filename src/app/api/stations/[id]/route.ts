@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-import { fetchStationDetail } from "@/lib/openChargeMap";
+import { fetchStationDetail } from "@/lib/stationSource";
 
 export const revalidate = 3600;
 

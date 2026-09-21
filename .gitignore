@@ -43,3 +43,6 @@ next-env.d.ts
 
 # Dossier de deploiement genere par "npm run package"
 /deploy
+
+# python (data generator scripts)
+__pycache__/

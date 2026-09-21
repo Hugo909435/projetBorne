@@ -1,0 +1,16 @@
+{
+  "source": "Ladesaeulenregister der Bundesnetzagentur",
+  "sourceUrl": "https://www.bundesnetzagentur.de/DE/Fachthemen/ElektrizitaetundGas/E-Mobilitaet/Ladesaeulenkarte/start.html",
+  "license": "CC BY 4.0",
+  "attribution": "Bundesnetzagentur.de",
+  "registerDate": "2026-09-01",
+  "generatedAt": "2026-09-21",
+  "fastThresholdKw": 50,
+  "devices": 116443,
+  "devicesKept": 116420,
+  "nationalPoints": 209092,
+  "nationalLocations": 73952,
+  "skippedNotInOperation": 20,
+  "skippedBadCoordinates": 3,
+  "skippedUnknownState": 0
+}

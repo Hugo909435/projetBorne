@@ -4,10 +4,12 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { site, languageAlternates } from "@/lib/site";
 import { departments, findDepartmentBySlug } from "@/lib/departments";
-import { DEPARTMENT_RADIUS_KM, type DepartmentStats } from "@/lib/departmentStats";
+import type { DepartmentStats, DepartmentStatsMeta } from "@/lib/departmentStats";
 import departmentStatsData from "@/data/department-stats.json";
+import departmentStatsMetaData from "@/data/department-stats-meta.json";
 
 const departmentStats = departmentStatsData as Record<string, DepartmentStats>;
+const departmentStatsMeta = departmentStatsMetaData as DepartmentStatsMeta;
 
 export async function generateStaticParams() {
   return departments.map((d) => ({ departement: d.slug }));
@@ -46,12 +48,14 @@ export default async function DepartmentPage({
   const t = await getTranslations({ locale, namespace: "DepartmentPage" });
   const tNav = await getTranslations({ locale, namespace: "Nav" });
 
-  // Pre-fetched by `scripts/generate-department-stats.ts` (npm `prebuild`)
-  // in one sequential pass, not live here: 384 department x locale pages
-  // each hitting Open Charge Map from `next build`'s parallel workers
-  // overwhelmed its rate limit badly enough that a random subset of pages
-  // silently failed to prerender on every run.
+  // Generated offline from the official national IRVE base by
+  // `scripts/generate_irve_data.py` (`npm run generate:irve`),
+  // so page generation just reads a local JSON file: fast and deterministic.
   const stats: DepartmentStats | null = departmentStats[dept.slug] ?? null;
+  const formatNumber = (n: number) => new Intl.NumberFormat(locale).format(n);
+  const dataDate = new Intl.DateTimeFormat(locale, { dateStyle: "long" }).format(
+    new Date(departmentStatsMeta.generatedAt)
+  );
 
   const path = `/bornes-recharge/${dept.slug}`;
 
@@ -141,12 +145,23 @@ export default async function DepartmentPage({
 
       <p className="mt-4 text-ink-600">
         {stats
-          ? t("introWithStats", { name: dept.name, code: dept.code, total: stats.total, radius: DEPARTMENT_RADIUS_KM })
+          ? t("introWithStats", {
+              name: dept.name,
+              code: dept.code,
+              points: formatNumber(stats.points),
+              stations: formatNumber(stats.stations),
+              date: dataDate,
+            })
           : t("introFallback", { name: dept.name, code: dept.code })}
       </p>
 
-      {stats && stats.fastCount > 0 && (
-        <p className="mt-2 text-ink-600">{t("fastCountLabel", { fastCount: stats.fastCount })}</p>
+      {stats && stats.fastPoints > 0 && (
+        <p className="mt-2 text-ink-600">
+          {t("fastCountLabel", {
+            fastCount: formatNumber(stats.fastPoints),
+            share: Math.round((stats.fastPoints / stats.points) * 100),
+          })}
+        </p>
       )}
 
       <div className="mt-6 rounded-2xl border border-line bg-card p-6">
@@ -215,7 +230,17 @@ export default async function DepartmentPage({
         <p className="mt-2 text-ink-600">{t("faq3Answer")}</p>
       </details>
 
-      <p className="mt-10 text-xs text-ink-400">{t("sourceNote")}</p>
+      <p className="mt-10 text-xs text-ink-400">
+        {t("sourceNote", { date: dataDate })}{" "}
+        <a
+          href={departmentStatsMeta.sourceUrl}
+          className="underline"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          data.gouv.fr
+        </a>
+      </p>
 
       <Link href="/bornes-recharge" className="mt-2 inline-block text-sm font-semibold text-green-700 underline">
         {t("backToIndex")}

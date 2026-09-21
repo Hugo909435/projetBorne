@@ -1,4623 +1,4357 @@
 {
   "ain": {
-    "total": 37,
-    "fastCount": 17,
+    "stations": 475,
+    "points": 2010,
+    "fastPoints": 1283,
     "connectorBreakdown": [
       {
-        "name": "CCS (Type 2)",
-        "count": 18
+        "name": "CCS Combo",
+        "count": 1310
       },
       {
-        "name": "Type 2 (Tethered Connector)",
-        "count": 18
+        "name": "Type 2",
+        "count": 658
       },
       {
-        "name": "Type 2 (Socket Only)",
-        "count": 11
-      },
-      {
-        "name": "CEE 7/4 - Schuko - Type F",
-        "count": 9
+        "name": "Type E/F (Schuko)",
+        "count": 304
       },
       {
         "name": "CHAdeMO",
-        "count": 7
+        "count": 52
       }
     ],
     "topTowns": [
       {
+        "name": "Saint-Vulbas",
+        "count": 43
+      },
+      {
+        "name": "Oyonnax",
+        "count": 19
+      },
+      {
         "name": "Bourg-en-Bresse",
-        "count": 4
+        "count": 18
       },
       {
-        "name": "Viriat",
-        "count": 3
+        "name": "Ferney-Voltaire",
+        "count": 15
       },
       {
-        "name": "Vonnas",
-        "count": 2
+        "name": "Valserhône",
+        "count": 11
       },
       {
-        "name": "Ceignes",
-        "count": 2
-      },
-      {
-        "name": "Jasseron",
-        "count": 1
-      },
-      {
-        "name": "Montagnat",
-        "count": 1
+        "name": "Ambérieu-en-Bugey",
+        "count": 10
       }
     ]
   },
   "aisne": {
-    "total": 74,
-    "fastCount": 15,
+    "stations": 206,
+    "points": 873,
+    "fastPoints": 352,
     "connectorBreakdown": [
       {
-        "name": "Type 2 (Tethered Connector)",
-        "count": 61
+        "name": "Type 2",
+        "count": 532
       },
       {
-        "name": "CEE 7/4 - Schuko - Type F",
-        "count": 54
+        "name": "CCS Combo",
+        "count": 318
       },
       {
-        "name": "CCS (Type 2)",
-        "count": 15
-      },
-      {
-        "name": "Type 2 (Socket Only)",
-        "count": 12
+        "name": "Type E/F (Schuko)",
+        "count": 210
       },
       {
         "name": "CHAdeMO",
-        "count": 11
+        "count": 66
       }
     ],
     "topTowns": [
       {
+        "name": "Saint-Quentin",
+        "count": 40
+      },
+      {
+        "name": "Soissons",
+        "count": 25
+      },
+      {
+        "name": "Château-Thierry",
+        "count": 19
+      },
+      {
         "name": "Laon",
-        "count": 7
+        "count": 13
       },
       {
-        "name": "Viry-Noureuil",
-        "count": 2
+        "name": "Hirson",
+        "count": 8
       },
       {
-        "name": "Chamouille",
-        "count": 1
-      },
-      {
-        "name": "Sainte-Preuve",
-        "count": 1
-      },
-      {
-        "name": "Le Prieuré",
-        "count": 1
-      },
-      {
-        "name": "Juvincourt-et-Damary",
-        "count": 1
+        "name": "Chambry",
+        "count": 4
       }
     ]
   },
   "allier": {
-    "total": 33,
-    "fastCount": 10,
+    "stations": 293,
+    "points": 801,
+    "fastPoints": 278,
     "connectorBreakdown": [
       {
-        "name": "Type 2 (Tethered Connector)",
-        "count": 17
+        "name": "Type 2",
+        "count": 526
       },
       {
-        "name": "CEE 7/4 - Schuko - Type F",
-        "count": 16
+        "name": "Type E/F (Schuko)",
+        "count": 308
       },
       {
-        "name": "SCAME Type 3C (Schneider-Legrand)",
-        "count": 14
+        "name": "CCS Combo",
+        "count": 247
       },
       {
-        "name": "CCS (Type 2)",
-        "count": 9
-      },
-      {
-        "name": "Type 2 (Socket Only)",
-        "count": 7
+        "name": "CHAdeMO",
+        "count": 54
       }
     ],
     "topTowns": [
       {
-        "name": "Moulins",
-        "count": 2
-      },
-      {
-        "name": "Toulon-sur-Allier",
-        "count": 2
-      },
-      {
         "name": "Avermes",
-        "count": 1
+        "count": 83
       },
       {
-        "name": "Yzeure",
-        "count": 1
+        "name": "Montluçon",
+        "count": 23
       },
       {
-        "name": "Bourbon L'archambault",
-        "count": 1
+        "name": "Bellerive-sur-Allier",
+        "count": 21
       },
       {
-        "name": "Bourbon l'Archimault",
-        "count": 1
+        "name": "Vichy",
+        "count": 17
+      },
+      {
+        "name": "Moulins",
+        "count": 9
+      },
+      {
+        "name": "Saint-Pourçain-sur-Sioule",
+        "count": 8
       }
     ]
   },
   "alpes-de-haute-provence": {
-    "total": 32,
-    "fastCount": 5,
+    "stations": 181,
+    "points": 527,
+    "fastPoints": 180,
     "connectorBreakdown": [
       {
-        "name": "Type 2 (Tethered Connector)",
-        "count": 15
+        "name": "Type 2",
+        "count": 328
       },
       {
-        "name": "Type 0",
-        "count": 14
+        "name": "CCS Combo",
+        "count": 185
       },
       {
-        "name": "CEE 7/4 - Schuko - Type F",
-        "count": 11
+        "name": "Type E/F (Schuko)",
+        "count": 155
       },
       {
-        "name": "Type 2 (Socket Only)",
-        "count": 5
-      },
-      {
-        "name": "CCS (Type 2)",
-        "count": 5
+        "name": "CHAdeMO",
+        "count": 34
       }
     ],
     "topTowns": [
       {
+        "name": "Manosque",
+        "count": 25
+      },
+      {
         "name": "Digne-les-Bains",
-        "count": 3
-      },
-      {
-        "name": "Aubignosc",
-        "count": 2
-      },
-      {
-        "name": "Digne les Bains",
-        "count": 1
-      },
-      {
-        "name": "Digne",
-        "count": 1
-      },
-      {
-        "name": "Moustiers-Sainte-Marie",
-        "count": 1
+        "count": 16
       },
       {
         "name": "Sisteron",
-        "count": 1
+        "count": 9
+      },
+      {
+        "name": "Allos",
+        "count": 6
+      },
+      {
+        "name": "Forcalquier",
+        "count": 6
+      },
+      {
+        "name": "Volx",
+        "count": 6
       }
     ]
   },
   "hautes-alpes": {
-    "total": 44,
-    "fastCount": 12,
+    "stations": 215,
+    "points": 580,
+    "fastPoints": 155,
     "connectorBreakdown": [
       {
-        "name": "Type 2 (Tethered Connector)",
-        "count": 36
+        "name": "Type 2",
+        "count": 396
       },
       {
-        "name": "CEE 7/4 - Schuko - Type F",
-        "count": 29
+        "name": "Type E/F (Schuko)",
+        "count": 197
       },
       {
-        "name": "CCS (Type 2)",
-        "count": 10
+        "name": "CCS Combo",
+        "count": 140
       },
       {
         "name": "CHAdeMO",
-        "count": 8
-      },
-      {
-        "name": "Type 2 (Socket Only)",
-        "count": 5
+        "count": 25
       }
     ],
     "topTowns": [
       {
         "name": "Gap",
-        "count": 4
+        "count": 33
       },
       {
-        "name": "Espinasses",
-        "count": 1
+        "name": "La Salle-les-Alpes",
+        "count": 13
       },
       {
-        "name": "Veynes",
-        "count": 1
+        "name": "Embrun",
+        "count": 10
+      },
+      {
+        "name": "Briançon",
+        "count": 9
+      },
+      {
+        "name": "Le Monêtier-les-Bains",
+        "count": 9
+      },
+      {
+        "name": "Tallard",
+        "count": 8
       }
     ]
   },
   "alpes-maritimes": {
-    "total": 334,
-    "fastCount": 35,
+    "stations": 910,
+    "points": 3252,
+    "fastPoints": 358,
     "connectorBreakdown": [
       {
-        "name": "CEE 7/4 - Schuko - Type F",
-        "count": 138
+        "name": "Type 2",
+        "count": 2865
       },
       {
-        "name": "Type 2 (Tethered Connector)",
-        "count": 135
+        "name": "Type E/F (Schuko)",
+        "count": 354
       },
       {
-        "name": "Type 2 (Socket Only)",
-        "count": 44
+        "name": "CCS Combo",
+        "count": 319
       },
       {
-        "name": "Europlug 2-Pin (CEE 7/16)",
-        "count": 42
-      },
-      {
-        "name": "Type 0",
-        "count": 38
+        "name": "CHAdeMO",
+        "count": 67
       }
     ],
     "topTowns": [
       {
         "name": "Nice",
-        "count": 36
-      },
-      {
-        "name": "NICE",
-        "count": 36
+        "count": 191
       },
       {
         "name": "Antibes",
-        "count": 10
-      },
-      {
-        "name": "Mougins",
-        "count": 9
-      },
-      {
-        "name": "Monte-Carlo",
-        "count": 8
+        "count": 62
       },
       {
         "name": "Cannes",
-        "count": 8
+        "count": 40
+      },
+      {
+        "name": "Grasse",
+        "count": 37
+      },
+      {
+        "name": "Cagnes-sur-Mer",
+        "count": 33
+      },
+      {
+        "name": "Valbonne",
+        "count": 30
       }
     ]
   },
   "ardeche": {
-    "total": 102,
-    "fastCount": 32,
+    "stations": 238,
+    "points": 584,
+    "fastPoints": 110,
     "connectorBreakdown": [
       {
-        "name": "Type 2 (Tethered Connector)",
-        "count": 69
+        "name": "Type 2",
+        "count": 423
       },
       {
-        "name": "CEE 7/4 - Schuko - Type F",
-        "count": 55
+        "name": "Type E/F (Schuko)",
+        "count": 265
       },
       {
-        "name": "CCS (Type 2)",
-        "count": 32
+        "name": "CCS Combo",
+        "count": 112
       },
       {
         "name": "CHAdeMO",
-        "count": 24
-      },
-      {
-        "name": "Type 2 (Socket Only)",
-        "count": 17
+        "count": 35
       }
     ],
     "topTowns": [
       {
-        "name": "Valence",
-        "count": 7
-      },
-      {
-        "name": "Montélimar",
-        "count": 6
-      },
-      {
-        "name": "Privas",
-        "count": 5
+        "name": "Lagorce",
+        "count": 22
       },
       {
         "name": "Aubenas",
-        "count": 5
+        "count": 9
       },
       {
-        "name": "Allan",
-        "count": 3
+        "name": "Davézieux",
+        "count": 9
       },
       {
-        "name": "Saulce-sur-Rhône",
-        "count": 2
+        "name": "Cruas-Meysse",
+        "count": 8
+      },
+      {
+        "name": "Privas",
+        "count": 8
+      },
+      {
+        "name": "Saint-Péray",
+        "count": 7
       }
     ]
   },
   "ardennes": {
-    "total": 14,
-    "fastCount": 7,
+    "stations": 326,
+    "points": 729,
+    "fastPoints": 134,
     "connectorBreakdown": [
       {
-        "name": "CCS (Type 2)",
-        "count": 7
+        "name": "Type 2",
+        "count": 603
       },
       {
-        "name": "Type 2 (Socket Only)",
-        "count": 6
+        "name": "Type E/F (Schuko)",
+        "count": 486
       },
       {
-        "name": "CHAdeMO",
-        "count": 4
-      },
-      {
-        "name": "Type 2 (Tethered Connector)",
-        "count": 4
-      },
-      {
-        "name": "CEE 7/4 - Schuko - Type F",
-        "count": 3
-      }
-    ],
-    "topTowns": [
-      {
-        "name": "Charleville-Mézières",
-        "count": 2
-      },
-      {
-        "name": "Villers-Semeuse",
-        "count": 2
-      },
-      {
-        "name": "Donchery",
-        "count": 1
-      },
-      {
-        "name": "Sedan",
-        "count": 1
-      },
-      {
-        "name": "Bazeilles",
-        "count": 1
-      },
-      {
-        "name": "Rochehaut",
-        "count": 1
-      }
-    ]
-  },
-  "ariege": {
-    "total": 44,
-    "fastCount": 9,
-    "connectorBreakdown": [
-      {
-        "name": "Type 2 (Tethered Connector)",
-        "count": 29
-      },
-      {
-        "name": "CEE 7/4 - Schuko - Type F",
-        "count": 29
-      },
-      {
-        "name": "CCS (Type 2)",
-        "count": 9
-      },
-      {
-        "name": "CHAdeMO",
-        "count": 6
-      },
-      {
-        "name": "Type 2 (Socket Only)",
-        "count": 6
-      }
-    ],
-    "topTowns": [
-      {
-        "name": "Foix",
-        "count": 3
-      },
-      {
-        "name": "Pamiers",
-        "count": 3
-      },
-      {
-        "name": "Verniolle",
-        "count": 1
-      },
-      {
-        "name": "Delta",
-        "count": 1
-      }
-    ]
-  },
-  "aube": {
-    "total": 93,
-    "fastCount": 27,
-    "connectorBreakdown": [
-      {
-        "name": "Type 2 (Socket Only)",
-        "count": 76
-      },
-      {
-        "name": "CEE 7/4 - Schuko - Type F",
-        "count": 59
-      },
-      {
-        "name": "CCS (Type 2)",
-        "count": 27
+        "name": "CCS Combo",
+        "count": 126
       },
       {
         "name": "CHAdeMO",
         "count": 15
+      }
+    ],
+    "topTowns": [
+      {
+        "name": "Givet",
+        "count": 118
       },
       {
-        "name": "Type 2 (Tethered Connector)",
-        "count": 11
+        "name": "Charleville-Mézières",
+        "count": 57
+      },
+      {
+        "name": "Sedan",
+        "count": 18
+      },
+      {
+        "name": "Bazeilles",
+        "count": 6
+      },
+      {
+        "name": "Flize",
+        "count": 5
+      },
+      {
+        "name": "Villers-Semeuse",
+        "count": 5
+      }
+    ]
+  },
+  "ariege": {
+    "stations": 117,
+    "points": 315,
+    "fastPoints": 80,
+    "connectorBreakdown": [
+      {
+        "name": "Type 2",
+        "count": 230
+      },
+      {
+        "name": "Type E/F (Schuko)",
+        "count": 111
+      },
+      {
+        "name": "CCS Combo",
+        "count": 77
+      },
+      {
+        "name": "CHAdeMO",
+        "count": 24
+      }
+    ],
+    "topTowns": [
+      {
+        "name": "Pamiers",
+        "count": 23
+      },
+      {
+        "name": "Ax-les-Thermes",
+        "count": 8
+      },
+      {
+        "name": "Foix",
+        "count": 7
+      },
+      {
+        "name": "Tarascon-sur-Ariege",
+        "count": 7
+      },
+      {
+        "name": "Saint-Lizier",
+        "count": 5
+      },
+      {
+        "name": "La Tour-du-Crieu",
+        "count": 4
+      }
+    ]
+  },
+  "aube": {
+    "stations": 346,
+    "points": 980,
+    "fastPoints": 285,
+    "connectorBreakdown": [
+      {
+        "name": "Type 2",
+        "count": 708
+      },
+      {
+        "name": "Type E/F (Schuko)",
+        "count": 511
+      },
+      {
+        "name": "CCS Combo",
+        "count": 272
+      },
+      {
+        "name": "CHAdeMO",
+        "count": 46
       }
     ],
     "topTowns": [
       {
         "name": "Troyes",
-        "count": 5
+        "count": 29
       },
       {
         "name": "La Chapelle-Saint-Luc",
-        "count": 4
+        "count": 14
       },
       {
-        "name": "Saint-Parres-aux-Tertres",
-        "count": 3
+        "name": "Romilly-sur-Seine",
+        "count": 14
       },
       {
-        "name": "Saint-Julien-les-Villas",
-        "count": 2
+        "name": "Barberey-Saint-Sulpice",
+        "count": 10
       },
       {
         "name": "Saint-André-les-Vergers",
-        "count": 2
+        "count": 10
       },
       {
-        "name": "Lavau",
-        "count": 2
+        "name": "Sainte-Savine",
+        "count": 10
       }
     ]
   },
   "aude": {
-    "total": 67,
-    "fastCount": 11,
+    "stations": 374,
+    "points": 1276,
+    "fastPoints": 461,
     "connectorBreakdown": [
       {
-        "name": "CEE 7/4 - Schuko - Type F",
-        "count": 47
+        "name": "Type 2",
+        "count": 808
       },
       {
-        "name": "SCAME Type 3C (Schneider-Legrand)",
-        "count": 38
+        "name": "CCS Combo",
+        "count": 431
       },
       {
-        "name": "Type 2 (Socket Only)",
-        "count": 31
+        "name": "Type E/F (Schuko)",
+        "count": 350
       },
       {
-        "name": "Type 2 (Tethered Connector)",
-        "count": 30
-      },
-      {
-        "name": "CCS (Type 2)",
-        "count": 10
+        "name": "CHAdeMO",
+        "count": 52
       }
     ],
     "topTowns": [
       {
         "name": "Carcassonne",
-        "count": 7
+        "count": 80
       },
       {
-        "name": "Capendu",
-        "count": 3
+        "name": "Narbonne",
+        "count": 43
       },
       {
-        "name": "Trèbes",
-        "count": 1
+        "name": "Sigean",
+        "count": 15
       },
       {
-        "name": "Arzens",
-        "count": 1
+        "name": "Castelnaudary",
+        "count": 12
+      },
+      {
+        "name": "Gruissan",
+        "count": 12
       },
       {
         "name": "Limoux",
-        "count": 1
+        "count": 12
       }
     ]
   },
   "aveyron": {
-    "total": 37,
-    "fastCount": 8,
+    "stations": 271,
+    "points": 633,
+    "fastPoints": 127,
     "connectorBreakdown": [
       {
-        "name": "Type 2 (Tethered Connector)",
-        "count": 27
+        "name": "Type 2",
+        "count": 513
       },
       {
-        "name": "CEE 7/4 - Schuko - Type F",
-        "count": 27
+        "name": "Type E/F (Schuko)",
+        "count": 263
       },
       {
-        "name": "CCS (Type 2)",
-        "count": 7
+        "name": "CCS Combo",
+        "count": 112
       },
       {
         "name": "CHAdeMO",
-        "count": 6
-      },
-      {
-        "name": "Type 2 (Socket Only)",
-        "count": 5
+        "count": 29
       }
     ],
     "topTowns": [
       {
         "name": "Onet-le-Château",
-        "count": 3
+        "count": 22
+      },
+      {
+        "name": "Millau",
+        "count": 17
+      },
+      {
+        "name": "Villefranche-de-Rouergue",
+        "count": 17
       },
       {
         "name": "Rodez",
-        "count": 2
+        "count": 9
       },
       {
-        "name": "Sébazac-Concourès",
-        "count": 2
+        "name": "Saint Affrique",
+        "count": 9
       },
       {
-        "name": "Onet le Chateau",
-        "count": 1
+        "name": "Espalion",
+        "count": 6
       }
     ]
   },
   "bouches-du-rhone": {
-    "total": 325,
-    "fastCount": 72,
+    "stations": 1222,
+    "points": 3911,
+    "fastPoints": 1032,
     "connectorBreakdown": [
       {
-        "name": "Type 2 (Tethered Connector)",
-        "count": 198
+        "name": "Type 2",
+        "count": 2768
       },
       {
-        "name": "CEE 7/4 - Schuko - Type F",
-        "count": 185
+        "name": "Type E/F (Schuko)",
+        "count": 1091
       },
       {
-        "name": "CCS (Type 2)",
-        "count": 71
-      },
-      {
-        "name": "Type 2 (Socket Only)",
-        "count": 52
+        "name": "CCS Combo",
+        "count": 1049
       },
       {
         "name": "CHAdeMO",
-        "count": 35
+        "count": 175
       }
     ],
     "topTowns": [
       {
         "name": "Marseille",
-        "count": 37
+        "count": 279
       },
       {
         "name": "Aix-en-Provence",
-        "count": 24
+        "count": 136
       },
       {
         "name": "Vitrolles",
-        "count": 6
+        "count": 52
       },
       {
-        "name": "Les Pennes-Mirabeau",
-        "count": 5
+        "name": "Marignane",
+        "count": 38
       },
       {
-        "name": "La Destrousse",
-        "count": 4
+        "name": "Arles",
+        "count": 32
       },
       {
-        "name": "Bouc-Bel-Air",
-        "count": 3
+        "name": "Aubagne",
+        "count": 30
       }
     ]
   },
   "calvados": {
-    "total": 193,
-    "fastCount": 33,
+    "stations": 1011,
+    "points": 2842,
+    "fastPoints": 747,
     "connectorBreakdown": [
       {
-        "name": "CEE 7/4 - Schuko - Type F",
-        "count": 134
+        "name": "Type 2",
+        "count": 1852
       },
       {
-        "name": "Type 2 (Tethered Connector)",
-        "count": 97
+        "name": "CCS Combo",
+        "count": 827
       },
       {
-        "name": "CCS (Type 2)",
-        "count": 31
-      },
-      {
-        "name": "Type 2 (Socket Only)",
-        "count": 15
+        "name": "Type E/F (Schuko)",
+        "count": 453
       },
       {
         "name": "CHAdeMO",
-        "count": 15
+        "count": 114
       }
     ],
     "topTowns": [
       {
-        "name": "Mondeville",
-        "count": 4
-      },
-      {
         "name": "Caen",
-        "count": 2
+        "count": 55
       },
       {
-        "name": "Saint-Contest",
-        "count": 2
+        "name": "Lisieux",
+        "count": 45
       },
       {
-        "name": "Fleury-sur-Orne",
-        "count": 2
+        "name": "Cabourg",
+        "count": 28
       },
       {
-        "name": "Bretteville-sur-Odon",
-        "count": 2
+        "name": "Hérouville-Saint-Clair",
+        "count": 27
       },
       {
-        "name": "Rots",
-        "count": 2
+        "name": "Bayeux",
+        "count": 26
+      },
+      {
+        "name": "Honfleur",
+        "count": 25
       }
     ]
   },
   "cantal": {
-    "total": 14,
-    "fastCount": 5,
+    "stations": 87,
+    "points": 321,
+    "fastPoints": 107,
     "connectorBreakdown": [
       {
-        "name": "Type 2 (Tethered Connector)",
-        "count": 8
+        "name": "Type 2",
+        "count": 207
       },
       {
-        "name": "CEE 7/4 - Schuko - Type F",
-        "count": 7
+        "name": "CCS Combo",
+        "count": 106
       },
       {
-        "name": "CCS (Type 2)",
-        "count": 5
+        "name": "Type E/F (Schuko)",
+        "count": 57
       },
       {
         "name": "CHAdeMO",
-        "count": 4
-      },
-      {
-        "name": "Tesla (Model S/X)",
-        "count": 3
+        "count": 20
       }
     ],
     "topTowns": [
       {
         "name": "Aurillac",
+        "count": 19
+      },
+      {
+        "name": "Saint-Flour",
+        "count": 8
+      },
+      {
+        "name": "Saint Etienne de Maurs",
+        "count": 5
+      },
+      {
+        "name": "Massiac",
+        "count": 4
+      },
+      {
+        "name": "Murat",
+        "count": 4
+      },
+      {
+        "name": "Anglards de Saint Flour",
         "count": 3
-      },
-      {
-        "name": "Marcoles",
-        "count": 1
-      },
-      {
-        "name": "Saint-Martin-Valmeroux",
-        "count": 1
       }
     ]
   },
   "charente": {
-    "total": 66,
-    "fastCount": 21,
+    "stations": 315,
+    "points": 939,
+    "fastPoints": 276,
     "connectorBreakdown": [
       {
-        "name": "CEE 7/4 - Schuko - Type F",
-        "count": 39
+        "name": "Type 2",
+        "count": 626
       },
       {
-        "name": "Type 2 (Tethered Connector)",
-        "count": 39
+        "name": "CCS Combo",
+        "count": 284
       },
       {
-        "name": "Type 2 (Socket Only)",
-        "count": 23
-      },
-      {
-        "name": "CCS (Type 2)",
-        "count": 21
+        "name": "Type E/F (Schuko)",
+        "count": 239
       },
       {
         "name": "CHAdeMO",
-        "count": 8
+        "count": 23
       }
     ],
     "topTowns": [
       {
-        "name": "Champniers",
-        "count": 10
+        "name": "Angoulême",
+        "count": 31
       },
       {
-        "name": "Angoulême",
-        "count": 3
+        "name": "Cognac",
+        "count": 26
+      },
+      {
+        "name": "Champniers",
+        "count": 22
+      },
+      {
+        "name": "Châteaubernard",
+        "count": 12
       },
       {
         "name": "Soyaux",
-        "count": 3
+        "count": 11
       },
       {
-        "name": "Saint-Yrieix-sur-Charente",
-        "count": 2
-      },
-      {
-        "name": "Rivières",
-        "count": 2
-      },
-      {
-        "name": "L'Isle-d'Espagnac",
-        "count": 1
+        "name": "Barbezieux-Saint-Hilaire",
+        "count": 10
       }
     ]
   },
   "charente-maritime": {
-    "total": 66,
-    "fastCount": 34,
+    "stations": 427,
+    "points": 1390,
+    "fastPoints": 436,
     "connectorBreakdown": [
       {
-        "name": "CCS (Type 2)",
-        "count": 31
+        "name": "Type 2",
+        "count": 808
       },
       {
-        "name": "Type 2 (Tethered Connector)",
-        "count": 29
+        "name": "CCS Combo",
+        "count": 466
       },
       {
-        "name": "Type 2 (Socket Only)",
-        "count": 16
+        "name": "Type E/F (Schuko)",
+        "count": 272
       },
       {
         "name": "CHAdeMO",
-        "count": 12
-      },
-      {
-        "name": "CEE 7/4 - Schuko - Type F",
-        "count": 7
+        "count": 94
       }
     ],
     "topTowns": [
       {
         "name": "La Rochelle",
-        "count": 9
+        "count": 30
       },
       {
-        "name": "Puilboreau",
-        "count": 4
+        "name": "Saintes",
+        "count": 28
       },
       {
-        "name": "Angoulins",
-        "count": 3
-      },
-      {
-        "name": "Lagord",
-        "count": 2
-      },
-      {
-        "name": "Aytré",
-        "count": 2
+        "name": "Mirambeau",
+        "count": 16
       },
       {
         "name": "Rochefort",
-        "count": 2
+        "count": 11
+      },
+      {
+        "name": "Royan",
+        "count": 11
+      },
+      {
+        "name": "Saujon",
+        "count": 11
       }
     ]
   },
   "cher": {
-    "total": 76,
-    "fastCount": 18,
+    "stations": 151,
+    "points": 576,
+    "fastPoints": 330,
     "connectorBreakdown": [
       {
-        "name": "Type 2 (Socket Only)",
-        "count": 53
+        "name": "CCS Combo",
+        "count": 329
       },
       {
-        "name": "CEE 7/4 - Schuko - Type F",
-        "count": 51
+        "name": "Type 2",
+        "count": 265
       },
       {
-        "name": "CCS (Type 2)",
-        "count": 18
+        "name": "Type E/F (Schuko)",
+        "count": 118
       },
       {
         "name": "CHAdeMO",
-        "count": 10
-      },
-      {
-        "name": "Type 2 (Tethered Connector)",
-        "count": 9
+        "count": 53
       }
     ],
     "topTowns": [
       {
+        "name": "Belleville-sur-Loire",
+        "count": 37
+      },
+      {
         "name": "Bourges",
-        "count": 10
+        "count": 20
       },
       {
         "name": "Saint-Doulchard",
-        "count": 2
-      },
-      {
-        "name": "Marmagne",
-        "count": 2
-      },
-      {
-        "name": "Mehun-sur-Yevre",
-        "count": 2
+        "count": 10
       },
       {
         "name": "Vierzon",
-        "count": 2
+        "count": 8
       },
       {
-        "name": "Saint-Germain-du-Puy",
-        "count": 1
+        "name": "Dun-sur-Auron",
+        "count": 7
+      },
+      {
+        "name": "Sancoins",
+        "count": 5
       }
     ]
   },
   "correze": {
-    "total": 47,
-    "fastCount": 27,
+    "stations": 179,
+    "points": 606,
+    "fastPoints": 247,
     "connectorBreakdown": [
       {
-        "name": "CCS (Type 2)",
-        "count": 27
+        "name": "Type 2",
+        "count": 362
       },
       {
-        "name": "Type 2 (Tethered Connector)",
-        "count": 21
+        "name": "CCS Combo",
+        "count": 223
+      },
+      {
+        "name": "Type E/F (Schuko)",
+        "count": 184
       },
       {
         "name": "CHAdeMO",
-        "count": 19
-      },
-      {
-        "name": "CEE 7/4 - Schuko - Type F",
-        "count": 15
-      },
-      {
-        "name": "Type 2 (Socket Only)",
-        "count": 15
+        "count": 42
       }
     ],
     "topTowns": [
       {
         "name": "Brive-la-Gaillarde",
+        "count": 36
+      },
+      {
+        "name": "Ussel",
         "count": 8
       },
       {
-        "name": "Ussac",
-        "count": 3
+        "name": "Malemort",
+        "count": 6
       },
       {
         "name": "Tulle",
-        "count": 1
+        "count": 6
       },
       {
-        "name": "Laguenne",
-        "count": 1
+        "name": "Bort-les-Orgues",
+        "count": 5
       },
       {
-        "name": "Vitrac-sur-Montane",
-        "count": 1
-      },
-      {
-        "name": "Saint-Pardoux-l'Ortigier",
-        "count": 1
+        "name": "Altillac",
+        "count": 4
       }
     ]
   },
   "corse-du-sud": {
-    "total": 36,
-    "fastCount": 16,
+    "stations": 107,
+    "points": 377,
+    "fastPoints": 86,
     "connectorBreakdown": [
       {
-        "name": "CCS (Type 2)",
-        "count": 17
+        "name": "Type 2",
+        "count": 276
       },
       {
-        "name": "Type 2 (Tethered Connector)",
-        "count": 11
+        "name": "CCS Combo",
+        "count": 92
       },
       {
-        "name": "Type 2 (Socket Only)",
-        "count": 10
-      },
-      {
-        "name": "CEE 7/4 - Schuko - Type F",
-        "count": 9
-      },
-      {
-        "name": "CHAdeMO",
-        "count": 3
+        "name": "Type E/F (Schuko)",
+        "count": 61
       }
     ],
     "topTowns": [
       {
         "name": "Ajaccio",
+        "count": 26
+      },
+      {
+        "name": "Porto-Vecchio",
+        "count": 12
+      },
+      {
+        "name": "Propriano",
         "count": 8
       },
       {
-        "name": "Grosseto Prugna",
-        "count": 2
+        "name": "Zonza",
+        "count": 8
       },
       {
-        "name": "Vico",
-        "count": 2
+        "name": "Bonifacio",
+        "count": 6
       },
       {
-        "name": "Mezzavia",
-        "count": 1
-      },
-      {
-        "name": "Grosseto-Prugna",
-        "count": 1
-      },
-      {
-        "name": "Sarrola-Carcopino",
-        "count": 1
+        "name": "Olmeto",
+        "count": 4
       }
     ]
   },
   "haute-corse": {
-    "total": 31,
-    "fastCount": 11,
+    "stations": 125,
+    "points": 338,
+    "fastPoints": 95,
     "connectorBreakdown": [
       {
-        "name": "Type 2 (Socket Only)",
-        "count": 13
+        "name": "Type 2",
+        "count": 246
       },
       {
-        "name": "CCS (Type 2)",
-        "count": 11
+        "name": "CCS Combo",
+        "count": 89
       },
       {
-        "name": "Type 2 (Tethered Connector)",
-        "count": 5
+        "name": "Type E/F (Schuko)",
+        "count": 65
       },
       {
-        "name": "CEE 7/4 - Schuko - Type F",
-        "count": 4
-      },
-      {
-        "name": "Tesla (Model S/X)",
-        "count": 4
+        "name": "CHAdeMO",
+        "count": 8
       }
     ],
     "topTowns": [
       {
         "name": "Biguglia",
-        "count": 3
+        "count": 10
       },
       {
         "name": "Bastia",
-        "count": 2
+        "count": 8
       },
       {
-        "name": "Brando",
-        "count": 2
+        "name": "Lucciana",
+        "count": 8
       },
       {
-        "name": "Brandu",
-        "count": 1
+        "name": "Calvi",
+        "count": 7
       },
       {
-        "name": "Patrimonio",
-        "count": 1
+        "name": "Corte",
+        "count": 7
       },
       {
-        "name": "Oletta",
-        "count": 1
+        "name": "Furiani",
+        "count": 7
       }
     ]
   },
   "cote-d-or": {
-    "total": 57,
-    "fastCount": 33,
+    "stations": 343,
+    "points": 1548,
+    "fastPoints": 608,
     "connectorBreakdown": [
       {
-        "name": "CCS (Type 2)",
-        "count": 31
+        "name": "Type 2",
+        "count": 950
       },
       {
-        "name": "Type 2 (Tethered Connector)",
-        "count": 25
+        "name": "CCS Combo",
+        "count": 549
+      },
+      {
+        "name": "Type E/F (Schuko)",
+        "count": 313
       },
       {
         "name": "CHAdeMO",
-        "count": 22
-      },
-      {
-        "name": "Type 2 (Socket Only)",
-        "count": 21
-      },
-      {
-        "name": "Tesla (Model S/X)",
-        "count": 7
+        "count": 101
       }
     ],
     "topTowns": [
       {
         "name": "Dijon",
-        "count": 11
+        "count": 60
       },
       {
-        "name": "Marsannay-la-Côte",
-        "count": 4
-      },
-      {
-        "name": "Longvic",
-        "count": 3
-      },
-      {
-        "name": "Brognon",
-        "count": 3
+        "name": "Beaune",
+        "count": 29
       },
       {
         "name": "Chenôve",
-        "count": 2
+        "count": 17
+      },
+      {
+        "name": "Semur-en-Auxois",
+        "count": 11
       },
       {
         "name": "Gevrey-Chambertin",
-        "count": 2
+        "count": 9
+      },
+      {
+        "name": "Marsannay-la-Côte",
+        "count": 9
       }
     ]
   },
   "cotes-d-armor": {
-    "total": 93,
-    "fastCount": 26,
+    "stations": 441,
+    "points": 1383,
+    "fastPoints": 432,
     "connectorBreakdown": [
       {
-        "name": "Type 2 (Tethered Connector)",
-        "count": 62
+        "name": "Type 2",
+        "count": 912
       },
       {
-        "name": "CEE 7/4 - Schuko - Type F",
-        "count": 52
+        "name": "CCS Combo",
+        "count": 441
       },
       {
-        "name": "CCS (Type 2)",
-        "count": 27
-      },
-      {
-        "name": "Type 2 (Socket Only)",
-        "count": 20
+        "name": "Type E/F (Schuko)",
+        "count": 129
       },
       {
         "name": "CHAdeMO",
-        "count": 10
+        "count": 46
       }
     ],
     "topTowns": [
       {
-        "name": "Saint-Brieuc",
-        "count": 4
+        "name": "Saint Brieuc",
+        "count": 39
       },
       {
-        "name": "Plérin",
-        "count": 3
+        "name": "Lannion",
+        "count": 22
       },
       {
         "name": "Trégueux",
-        "count": 2
+        "count": 12
       },
       {
-        "name": "Langueux",
-        "count": 2
+        "name": "Dinan",
+        "count": 10
       },
       {
-        "name": "Yffiniac",
-        "count": 2
+        "name": "Perros-Guirec",
+        "count": 10
       },
       {
-        "name": "SAINT BRIEUC",
-        "count": 1
+        "name": "Loudéac",
+        "count": 8
       }
     ]
   },
   "creuse": {
-    "total": 21,
-    "fastCount": 7,
+    "stations": 126,
+    "points": 327,
+    "fastPoints": 92,
     "connectorBreakdown": [
       {
-        "name": "Type 2 (Tethered Connector)",
-        "count": 16
+        "name": "Type 2",
+        "count": 250
       },
       {
-        "name": "CEE 7/4 - Schuko - Type F",
-        "count": 13
+        "name": "Type E/F (Schuko)",
+        "count": 129
       },
       {
-        "name": "CCS (Type 2)",
-        "count": 8
+        "name": "CCS Combo",
+        "count": 94
       },
       {
         "name": "CHAdeMO",
-        "count": 5
-      },
-      {
-        "name": "Type 2 (Socket Only)",
-        "count": 4
+        "count": 47
       }
     ],
     "topTowns": [
       {
         "name": "Guéret",
-        "count": 4
+        "count": 13
       },
       {
-        "name": "Bonnat",
-        "count": 1
+        "name": "La Souterraine",
+        "count": 10
       },
       {
-        "name": "Dun-le-Palestel",
-        "count": 1
+        "name": "Bourganeuf",
+        "count": 5
       },
       {
-        "name": "Parsac",
-        "count": 1
+        "name": "Aubusson",
+        "count": 3
+      },
+      {
+        "name": "Boussac",
+        "count": 3
+      },
+      {
+        "name": "Sainte-Feyre",
+        "count": 3
       }
     ]
   },
   "dordogne": {
-    "total": 77,
-    "fastCount": 9,
+    "stations": 351,
+    "points": 917,
+    "fastPoints": 218,
     "connectorBreakdown": [
       {
-        "name": "CEE 7/4 - Schuko - Type F",
-        "count": 58
+        "name": "Type 2",
+        "count": 664
       },
       {
-        "name": "Type 2 (Socket Only)",
-        "count": 55
+        "name": "Type E/F (Schuko)",
+        "count": 402
       },
       {
-        "name": "Type 2 (Tethered Connector)",
-        "count": 12
-      },
-      {
-        "name": "CCS (Type 2)",
-        "count": 9
+        "name": "CCS Combo",
+        "count": 206
       },
       {
         "name": "CHAdeMO",
-        "count": 4
+        "count": 59
       }
     ],
     "topTowns": [
       {
-        "name": "Périgueux",
-        "count": 3
+        "name": "Bergerac",
+        "count": 21
       },
       {
         "name": "Trélissac",
-        "count": 2
+        "count": 17
       },
       {
-        "name": "Boulazac-Isle-Manoire",
-        "count": 2
+        "name": "Perigueux",
+        "count": 15
+      },
+      {
+        "name": "Sarlat-la-Canéda",
+        "count": 15
       },
       {
         "name": "Boulazac Isle Manoire",
-        "count": 1
+        "count": 11
       },
       {
-        "name": "Marsac-sur-l'Isle",
-        "count": 1
-      },
-      {
-        "name": "Notre-Dame-de-Sanilhac",
-        "count": 1
+        "name": "Marsac-sur-Lisle",
+        "count": 8
       }
     ]
   },
   "doubs": {
-    "total": 52,
-    "fastCount": 18,
+    "stations": 289,
+    "points": 973,
+    "fastPoints": 424,
     "connectorBreakdown": [
       {
-        "name": "Type 2 (Tethered Connector)",
-        "count": 34
+        "name": "Type 2",
+        "count": 563
       },
       {
-        "name": "CCS (Type 2)",
-        "count": 18
+        "name": "CCS Combo",
+        "count": 401
       },
       {
-        "name": "Type 2 (Socket Only)",
-        "count": 15
+        "name": "Type E/F (Schuko)",
+        "count": 199
       },
       {
         "name": "CHAdeMO",
-        "count": 7
-      },
-      {
-        "name": "CEE 7/4 - Schuko - Type F",
-        "count": 2
+        "count": 30
       }
     ],
     "topTowns": [
       {
         "name": "Besançon",
-        "count": 6
+        "count": 55
       },
       {
-        "name": "Marchaux-Chaudefontaine",
-        "count": 2
+        "name": "Pontarlier",
+        "count": 17
       },
       {
-        "name": "Chalezeule",
-        "count": 1
+        "name": "Valentigney",
+        "count": 12
+      },
+      {
+        "name": "Lisle-sur-le-Doubs",
+        "count": 11
       },
       {
         "name": "École-Valentin",
-        "count": 1
+        "count": 11
       },
       {
-        "name": "Ecole-Valentin",
-        "count": 1
-      },
-      {
-        "name": "Ecole Valentin",
-        "count": 1
+        "name": "Marchaux-Chaudefontaine",
+        "count": 7
       }
     ]
   },
   "drome": {
-    "total": 129,
-    "fastCount": 41,
+    "stations": 366,
+    "points": 1433,
+    "fastPoints": 547,
     "connectorBreakdown": [
       {
-        "name": "Type 2 (Tethered Connector)",
-        "count": 87
+        "name": "Type 2",
+        "count": 890
       },
       {
-        "name": "CEE 7/4 - Schuko - Type F",
-        "count": 73
+        "name": "CCS Combo",
+        "count": 522
       },
       {
-        "name": "CCS (Type 2)",
-        "count": 41
+        "name": "Type E/F (Schuko)",
+        "count": 388
       },
       {
         "name": "CHAdeMO",
-        "count": 25
-      },
-      {
-        "name": "Type 2 (Socket Only)",
-        "count": 23
+        "count": 63
       }
     ],
     "topTowns": [
       {
         "name": "Valence",
+        "count": 49
+      },
+      {
+        "name": "Montélimar",
+        "count": 27
+      },
+      {
+        "name": "Romans-sur-Isère",
         "count": 16
       },
       {
         "name": "Bourg-lès-Valence",
-        "count": 3
+        "count": 13
       },
       {
-        "name": "Pont-de-l'Isère",
-        "count": 3
-      },
-      {
-        "name": "Bourg-de-Péage",
-        "count": 3
-      },
-      {
-        "name": "Soyons",
-        "count": 2
+        "name": "Pierrelatte",
+        "count": 11
       },
       {
         "name": "Alixan",
-        "count": 2
+        "count": 9
       }
     ]
   },
   "eure": {
-    "total": 111,
-    "fastCount": 27,
+    "stations": 347,
+    "points": 1252,
+    "fastPoints": 404,
     "connectorBreakdown": [
       {
-        "name": "CEE 7/4 - Schuko - Type F",
-        "count": 70
+        "name": "Type 2",
+        "count": 838
       },
       {
-        "name": "Type 2 (Tethered Connector)",
-        "count": 45
+        "name": "Type E/F (Schuko)",
+        "count": 499
       },
       {
-        "name": "SCAME Type 3C (Schneider-Legrand)",
-        "count": 35
+        "name": "CCS Combo",
+        "count": 377
       },
       {
-        "name": "CCS (Type 2)",
-        "count": 27
-      },
-      {
-        "name": "Type 2 (Socket Only)",
-        "count": 21
+        "name": "CHAdeMO",
+        "count": 63
       }
     ],
     "topTowns": [
       {
         "name": "Évreux",
-        "count": 4
+        "count": 30
       },
       {
-        "name": "Vironvay",
-        "count": 4
+        "name": "Saint-Marcel",
+        "count": 21
       },
       {
-        "name": "Val De Reuil",
-        "count": 3
-      },
-      {
-        "name": "Evreux",
-        "count": 2
+        "name": "Pont-Audemer",
+        "count": 15
       },
       {
         "name": "Vernon",
-        "count": 2
+        "count": 14
+      },
+      {
+        "name": "Saint Aubin sur Gaillon",
+        "count": 8
       },
       {
         "name": "Val-de-Reuil",
-        "count": 2
+        "count": 8
       }
     ]
   },
   "eure-et-loir": {
-    "total": 95,
-    "fastCount": 14,
+    "stations": 158,
+    "points": 827,
+    "fastPoints": 303,
     "connectorBreakdown": [
       {
-        "name": "Type 2 (Tethered Connector)",
-        "count": 78
+        "name": "Type 2",
+        "count": 491
       },
       {
-        "name": "CEE 7/4 - Schuko - Type F",
-        "count": 68
+        "name": "CCS Combo",
+        "count": 293
       },
       {
-        "name": "SCAME Type 3C (Schneider-Legrand)",
-        "count": 53
+        "name": "Type E/F (Schuko)",
+        "count": 216
       },
       {
-        "name": "CCS (Type 2)",
-        "count": 14
-      },
-      {
-        "name": "Type 2 (Socket Only)",
-        "count": 12
+        "name": "CHAdeMO",
+        "count": 35
       }
     ],
     "topTowns": [
       {
         "name": "Chartres",
+        "count": 30
+      },
+      {
+        "name": "Dreux",
+        "count": 19
+      },
+      {
+        "name": "Vernouillet",
+        "count": 9
+      },
+      {
+        "name": "Auneau-Bleury-Saint-Symphorien",
         "count": 5
       },
       {
-        "name": "Le Coudray",
-        "count": 2
-      },
-      {
-        "name": "Gasville-Oisème",
-        "count": 2
-      },
-      {
-        "name": "Mainvilliers",
-        "count": 1
+        "name": "Châteaudun",
+        "count": 5
       },
       {
         "name": "Barjouville",
-        "count": 1
-      },
-      {
-        "name": "Fontenay-sur-Eure",
-        "count": 1
+        "count": 3
       }
     ]
   },
   "finistere": {
-    "total": 112,
-    "fastCount": 22,
+    "stations": 533,
+    "points": 1594,
+    "fastPoints": 394,
     "connectorBreakdown": [
       {
-        "name": "CEE 7/4 - Schuko - Type F",
-        "count": 78
+        "name": "Type 2",
+        "count": 1141
       },
       {
-        "name": "Type 2 (Tethered Connector)",
-        "count": 75
+        "name": "CCS Combo",
+        "count": 401
       },
       {
-        "name": "SCAME Type 3C (Schneider-Legrand)",
-        "count": 30
+        "name": "Type E/F (Schuko)",
+        "count": 233
       },
       {
-        "name": "CCS (Type 2)",
-        "count": 26
-      },
-      {
-        "name": "Type 0",
-        "count": 24
+        "name": "CHAdeMO",
+        "count": 69
       }
     ],
     "topTowns": [
       {
-        "name": "Quimper",
-        "count": 11
+        "name": "Brest",
+        "count": 28
       },
       {
-        "name": "Pont-l'Abbé",
-        "count": 4
+        "name": "Quimper",
+        "count": 28
       },
       {
         "name": "Concarneau",
-        "count": 3
+        "count": 14
       },
       {
-        "name": "Châteaulin",
-        "count": 2
+        "name": "Landerneau",
+        "count": 13
       },
       {
-        "name": "Saint-Yvi",
-        "count": 1
+        "name": "Morlaix",
+        "count": 12
       },
       {
-        "name": "Plonéour-Lanvern",
-        "count": 1
+        "name": "Pont-Labbe",
+        "count": 12
       }
     ]
   },
   "gard": {
-    "total": 147,
-    "fastCount": 39,
+    "stations": 499,
+    "points": 1585,
+    "fastPoints": 463,
     "connectorBreakdown": [
       {
-        "name": "Type 2 (Socket Only)",
-        "count": 104
+        "name": "Type 2",
+        "count": 1121
       },
       {
-        "name": "CEE 7/4 - Schuko - Type F",
-        "count": 88
+        "name": "Type E/F (Schuko)",
+        "count": 543
       },
       {
-        "name": "SCAME Type 3C (Schneider-Legrand)",
-        "count": 82
+        "name": "CCS Combo",
+        "count": 420
       },
       {
-        "name": "CCS (Type 2)",
-        "count": 40
-      },
-      {
-        "name": "Type 2 (Tethered Connector)",
-        "count": 24
+        "name": "CHAdeMO",
+        "count": 70
       }
     ],
     "topTowns": [
       {
         "name": "Nîmes",
+        "count": 115
+      },
+      {
+        "name": "Alès",
+        "count": 36
+      },
+      {
+        "name": "Le Grau du Roi",
+        "count": 22
+      },
+      {
+        "name": "Bagnols-sur-Cèze",
         "count": 14
       },
       {
-        "name": "Marguerittes",
-        "count": 5
+        "name": "Codolet",
+        "count": 9
       },
       {
-        "name": "Nimes",
-        "count": 4
-      },
-      {
-        "name": "Arles",
-        "count": 4
-      },
-      {
-        "name": "Uzès",
-        "count": 3
-      },
-      {
-        "name": "Villetelle",
-        "count": 2
+        "name": "Les Angles",
+        "count": 9
       }
     ]
   },
   "haute-garonne": {
-    "total": 238,
-    "fastCount": 76,
+    "stations": 816,
+    "points": 2939,
+    "fastPoints": 1001,
     "connectorBreakdown": [
       {
-        "name": "Type 2 (Socket Only)",
-        "count": 127
+        "name": "Type 2",
+        "count": 1969
       },
       {
-        "name": "CEE 7/4 - Schuko - Type F",
-        "count": 113
+        "name": "Type E/F (Schuko)",
+        "count": 1007
       },
       {
-        "name": "CCS (Type 2)",
-        "count": 76
-      },
-      {
-        "name": "Type 2 (Tethered Connector)",
-        "count": 67
+        "name": "CCS Combo",
+        "count": 900
       },
       {
         "name": "CHAdeMO",
-        "count": 45
+        "count": 143
       }
     ],
     "topTowns": [
       {
         "name": "Toulouse",
-        "count": 31
-      },
-      {
-        "name": "Blagnac",
-        "count": 7
-      },
-      {
-        "name": "Portet-sur-Garonne",
-        "count": 7
-      },
-      {
-        "name": "Ramonville-Saint-Agne",
-        "count": 5
-      },
-      {
-        "name": "Castelnau-d'Estrétefonds",
-        "count": 4
+        "count": 246
       },
       {
         "name": "Colomiers",
-        "count": 3
+        "count": 41
+      },
+      {
+        "name": "Labège",
+        "count": 39
+      },
+      {
+        "name": "Blagnac",
+        "count": 30
+      },
+      {
+        "name": "Muret",
+        "count": 20
+      },
+      {
+        "name": "Balma",
+        "count": 16
       }
     ]
   },
   "gers": {
-    "total": 11,
-    "fastCount": 4,
+    "stations": 139,
+    "points": 332,
+    "fastPoints": 96,
     "connectorBreakdown": [
       {
-        "name": "CCS (Type 2)",
-        "count": 4
+        "name": "Type 2",
+        "count": 232
       },
       {
-        "name": "Type 2 (Socket Only)",
-        "count": 4
+        "name": "Type E/F (Schuko)",
+        "count": 157
       },
       {
-        "name": "CEE 7/4 - Schuko - Type F",
-        "count": 3
+        "name": "CCS Combo",
+        "count": 89
+      },
+      {
+        "name": "CHAdeMO",
+        "count": 22
       }
     ],
     "topTowns": [
       {
         "name": "Auch",
-        "count": 3
+        "count": 19
       },
       {
-        "name": "Mirande",
-        "count": 1
+        "name": "Nogaro",
+        "count": 8
+      },
+      {
+        "name": "L'Isle-Jourdain",
+        "count": 7
+      },
+      {
+        "name": "St Mont",
+        "count": 6
+      },
+      {
+        "name": "Fleurance",
+        "count": 5
+      },
+      {
+        "name": "Mauvezin",
+        "count": 5
       }
     ]
   },
   "gironde": {
-    "total": 202,
-    "fastCount": 69,
+    "stations": 1378,
+    "points": 5477,
+    "fastPoints": 1082,
     "connectorBreakdown": [
       {
-        "name": "Type 2 (Socket Only)",
-        "count": 96
+        "name": "Type 2",
+        "count": 4177
       },
       {
-        "name": "CCS (Type 2)",
-        "count": 68
+        "name": "Type E/F (Schuko)",
+        "count": 1347
       },
       {
-        "name": "CEE 7/4 - Schuko - Type F",
-        "count": 56
-      },
-      {
-        "name": "Type 2 (Tethered Connector)",
-        "count": 46
+        "name": "CCS Combo",
+        "count": 1165
       },
       {
         "name": "CHAdeMO",
-        "count": 34
+        "count": 163
       }
     ],
     "topTowns": [
       {
         "name": "Bordeaux",
+        "count": 135
+      },
+      {
+        "name": "Braud-et-Saint-Louis",
+        "count": 103
+      },
+      {
+        "name": "Merignac",
+        "count": 82
+      },
+      {
+        "name": "Ares",
+        "count": 81
+      },
+      {
+        "name": "La Teste-de-Buch",
+        "count": 55
+      },
+      {
+        "name": "Gujan-Mestras",
         "count": 29
-      },
-      {
-        "name": "Mérignac",
-        "count": 8
-      },
-      {
-        "name": "Pessac",
-        "count": 7
-      },
-      {
-        "name": "Gradignan",
-        "count": 4
-      },
-      {
-        "name": "Lormont",
-        "count": 4
-      },
-      {
-        "name": "Villenave-d'Ornon",
-        "count": 3
       }
     ]
   },
   "herault": {
-    "total": 185,
-    "fastCount": 44,
+    "stations": 752,
+    "points": 3006,
+    "fastPoints": 765,
     "connectorBreakdown": [
       {
-        "name": "CEE 7/4 - Schuko - Type F",
-        "count": 112
+        "name": "Type 2",
+        "count": 2150
       },
       {
-        "name": "Type 2 (Tethered Connector)",
-        "count": 105
+        "name": "CCS Combo",
+        "count": 692
       },
       {
-        "name": "SCAME Type 3C (Schneider-Legrand)",
-        "count": 56
+        "name": "Type E/F (Schuko)",
+        "count": 665
       },
       {
-        "name": "Type 2 (Socket Only)",
-        "count": 52
-      },
-      {
-        "name": "CCS (Type 2)",
-        "count": 43
+        "name": "CHAdeMO",
+        "count": 95
       }
     ],
     "topTowns": [
       {
         "name": "Montpellier",
-        "count": 18
+        "count": 80
       },
       {
-        "name": "Lattes",
-        "count": 3
-      },
-      {
-        "name": "Sète",
-        "count": 3
-      },
-      {
-        "name": "Castelnau-le-Lez",
-        "count": 2
+        "name": "Béziers",
+        "count": 60
       },
       {
         "name": "Saint-Jean-de-Védas",
-        "count": 2
+        "count": 25
       },
       {
-        "name": "Le Crès",
-        "count": 2
+        "name": "Lattes",
+        "count": 23
+      },
+      {
+        "name": "Vias",
+        "count": 23
+      },
+      {
+        "name": "Sète",
+        "count": 22
       }
     ]
   },
   "ille-et-vilaine": {
-    "total": 121,
-    "fastCount": 38,
+    "stations": 572,
+    "points": 2080,
+    "fastPoints": 612,
     "connectorBreakdown": [
       {
-        "name": "CEE 7/4 - Schuko - Type F",
-        "count": 49
+        "name": "Type 2",
+        "count": 1361
       },
       {
-        "name": "CCS (Type 2)",
-        "count": 41
+        "name": "CCS Combo",
+        "count": 682
       },
       {
-        "name": "Type 2 (Tethered Connector)",
-        "count": 40
-      },
-      {
-        "name": "Type 2 (Socket Only)",
-        "count": 30
+        "name": "Type E/F (Schuko)",
+        "count": 394
       },
       {
         "name": "CHAdeMO",
-        "count": 13
+        "count": 85
       }
     ],
     "topTowns": [
       {
         "name": "Rennes",
-        "count": 20
+        "count": 48
+      },
+      {
+        "name": "Saint-Malo",
+        "count": 38
       },
       {
         "name": "Cesson-Sévigné",
-        "count": 7
+        "count": 19
       },
       {
-        "name": "Saint-Grégoire",
-        "count": 3
+        "name": "Vitré",
+        "count": 19
       },
       {
-        "name": "Pacé",
-        "count": 3
+        "name": "Bruz",
+        "count": 13
       },
       {
-        "name": "Mordelles",
-        "count": 3
-      },
-      {
-        "name": "Vezin-le-Coquet",
-        "count": 2
+        "name": "Fougères",
+        "count": 13
       }
     ]
   },
   "indre": {
-    "total": 16,
-    "fastCount": 12,
+    "stations": 169,
+    "points": 562,
+    "fastPoints": 158,
     "connectorBreakdown": [
       {
-        "name": "CCS (Type 2)",
-        "count": 12
+        "name": "Type 2",
+        "count": 425
       },
       {
-        "name": "Type 2 (Socket Only)",
-        "count": 8
+        "name": "CCS Combo",
+        "count": 151
       },
       {
-        "name": "Type 2 (Tethered Connector)",
-        "count": 5
+        "name": "Type E/F (Schuko)",
+        "count": 56
       },
       {
         "name": "CHAdeMO",
-        "count": 5
-      },
-      {
-        "name": "Tesla (Model S/X)",
-        "count": 1
+        "count": 20
       }
     ],
     "topTowns": [
       {
-        "name": "Châteauroux",
-        "count": 5
+        "name": "Chateauroux",
+        "count": 17
       },
       {
         "name": "Déols",
-        "count": 3
+        "count": 13
       },
       {
         "name": "Saint-Maur",
-        "count": 1
+        "count": 10
       },
       {
-        "name": "Le Poinçonnet",
-        "count": 1
+        "name": "Issoudun",
+        "count": 5
       },
       {
-        "name": "Coings",
-        "count": 1
+        "name": "Argenton-sur-Creuse",
+        "count": 2
       },
       {
-        "name": "Luant",
-        "count": 1
+        "name": "Le Blanc",
+        "count": 2
       }
     ]
   },
   "indre-et-loire": {
-    "total": 179,
-    "fastCount": 35,
+    "stations": 172,
+    "points": 956,
+    "fastPoints": 471,
     "connectorBreakdown": [
       {
-        "name": "Type 2 (Socket Only)",
-        "count": 141
+        "name": "Type 2",
+        "count": 490
       },
       {
-        "name": "CEE 7/4 - Schuko - Type F",
-        "count": 118
+        "name": "CCS Combo",
+        "count": 433
       },
       {
-        "name": "CCS (Type 2)",
-        "count": 35
+        "name": "Type E/F (Schuko)",
+        "count": 189
       },
       {
         "name": "CHAdeMO",
-        "count": 24
-      },
-      {
-        "name": "Type 2 (Tethered Connector)",
-        "count": 19
+        "count": 57
       }
     ],
     "topTowns": [
       {
         "name": "Chambray-lès-Tours",
-        "count": 10
+        "count": 18
       },
       {
         "name": "Tours",
-        "count": 8
+        "count": 16
       },
       {
         "name": "Joué-lès-Tours",
-        "count": 5
+        "count": 13
       },
       {
-        "name": "Monnaie",
-        "count": 3
-      },
-      {
-        "name": "Nazelles-Négron",
-        "count": 2
+        "name": "Bourgueil",
+        "count": 7
       },
       {
         "name": "Azay-le-Rideau",
-        "count": 2
+        "count": 5
+      },
+      {
+        "name": "Bléré",
+        "count": 5
       }
     ]
   },
   "isere": {
-    "total": 142,
-    "fastCount": 36,
+    "stations": 699,
+    "points": 2611,
+    "fastPoints": 743,
     "connectorBreakdown": [
       {
-        "name": "Type 2 (Tethered Connector)",
-        "count": 94
+        "name": "Type 2",
+        "count": 1707
       },
       {
-        "name": "CEE 7/4 - Schuko - Type F",
-        "count": 76
+        "name": "CCS Combo",
+        "count": 842
       },
       {
-        "name": "Type 2 (Socket Only)",
-        "count": 55
-      },
-      {
-        "name": "CCS (Type 2)",
-        "count": 47
+        "name": "Type E/F (Schuko)",
+        "count": 673
       },
       {
         "name": "CHAdeMO",
-        "count": 33
+        "count": 142
       }
     ],
     "topTowns": [
       {
         "name": "Grenoble",
-        "count": 24
+        "count": 54
+      },
+      {
+        "name": "Bourgoin-Jallieu",
+        "count": 30
+      },
+      {
+        "name": "Vienne",
+        "count": 20
       },
       {
         "name": "Échirolles",
-        "count": 7
+        "count": 20
       },
       {
         "name": "Saint-Martin-d'Hères",
-        "count": 5
+        "count": 19
       },
       {
-        "name": "Crolles",
-        "count": 4
-      },
-      {
-        "name": "Seyssins",
-        "count": 3
-      },
-      {
-        "name": "Saint-Égrève",
-        "count": 3
+        "name": "Voiron",
+        "count": 15
       }
     ]
   },
   "jura": {
-    "total": 14,
-    "fastCount": 7,
+    "stations": 155,
+    "points": 420,
+    "fastPoints": 136,
     "connectorBreakdown": [
       {
-        "name": "CCS (Type 2)",
-        "count": 7
+        "name": "Type 2",
+        "count": 268
       },
       {
-        "name": "Type 2 (Socket Only)",
-        "count": 6
+        "name": "CCS Combo",
+        "count": 149
       },
       {
-        "name": "Type 2 (Tethered Connector)",
-        "count": 4
+        "name": "Type E/F (Schuko)",
+        "count": 101
       },
       {
         "name": "CHAdeMO",
-        "count": 4
-      },
-      {
-        "name": "Tesla (Model S/X)",
-        "count": 3
+        "count": 31
       }
     ],
     "topTowns": [
       {
         "name": "Lons-le-Saunier",
-        "count": 2
+        "count": 40
       },
       {
-        "name": "Arlay",
-        "count": 2
+        "name": "Dole",
+        "count": 20
       },
       {
-        "name": "Louhans",
-        "count": 2
+        "name": "Choisey",
+        "count": 7
       },
       {
-        "name": "Passenans",
-        "count": 1
+        "name": "Montmorot",
+        "count": 7
       },
       {
-        "name": "Orgelet",
-        "count": 1
+        "name": "Arbois",
+        "count": 5
       },
       {
-        "name": "Toulouse-le-Château",
-        "count": 1
+        "name": "Saint-Claude",
+        "count": 5
       }
     ]
   },
   "landes": {
-    "total": 37,
-    "fastCount": 19,
+    "stations": 401,
+    "points": 1333,
+    "fastPoints": 378,
     "connectorBreakdown": [
       {
-        "name": "CEE 7/4 - Schuko - Type F",
-        "count": 23
+        "name": "Type 2",
+        "count": 797
       },
       {
-        "name": "CCS (Type 2)",
-        "count": 19
+        "name": "CCS Combo",
+        "count": 407
       },
       {
-        "name": "Type 2 (Socket Only)",
-        "count": 18
-      },
-      {
-        "name": "Type 2 (Tethered Connector)",
-        "count": 15
+        "name": "Type E/F (Schuko)",
+        "count": 365
       },
       {
         "name": "CHAdeMO",
-        "count": 15
+        "count": 92
       }
     ],
     "topTowns": [
       {
+        "name": "Dax",
+        "count": 32
+      },
+      {
+        "name": "Biscarrosse",
+        "count": 26
+      },
+      {
+        "name": "Saint-Paul-lès-Dax",
+        "count": 24
+      },
+      {
         "name": "Mont-de-Marsan",
-        "count": 4
+        "count": 17
       },
       {
-        "name": "Hagetmau",
-        "count": 4
+        "name": "Soustons",
+        "count": 13
       },
       {
-        "name": "Aire-sur-l'Adour",
-        "count": 3
-      },
-      {
-        "name": "Saint-Pierre-du-Mont",
-        "count": 2
-      },
-      {
-        "name": "Saint-Avit",
-        "count": 1
-      },
-      {
-        "name": "Eugénie-les-Bains",
-        "count": 1
+        "name": "Mimizan",
+        "count": 11
       }
     ]
   },
   "loir-et-cher": {
-    "total": 86,
-    "fastCount": 20,
+    "stations": 476,
+    "points": 927,
+    "fastPoints": 233,
     "connectorBreakdown": [
       {
-        "name": "Type 2 (Socket Only)",
-        "count": 71
+        "name": "Type 2",
+        "count": 691
       },
       {
-        "name": "CEE 7/4 - Schuko - Type F",
-        "count": 59
+        "name": "Type E/F (Schuko)",
+        "count": 444
       },
       {
-        "name": "CCS (Type 2)",
-        "count": 20
+        "name": "CCS Combo",
+        "count": 211
       },
       {
         "name": "CHAdeMO",
-        "count": 11
-      },
-      {
-        "name": "Type 2 (Tethered Connector)",
-        "count": 9
+        "count": 30
       }
     ],
     "topTowns": [
       {
+        "name": "Saint-Laurent-Nouan",
+        "count": 202
+      },
+      {
+        "name": "Saint-Aignan",
+        "count": 152
+      },
+      {
         "name": "Blois",
+        "count": 22
+      },
+      {
+        "name": "Vendôme",
+        "count": 9
+      },
+      {
+        "name": "Lamotte-Beuvron",
         "count": 8
       },
       {
-        "name": "Vineuil",
-        "count": 2
-      },
-      {
-        "name": "Villebarou",
-        "count": 2
-      },
-      {
-        "name": "Villerbon",
-        "count": 2
-      },
-      {
-        "name": "Auzouer-en-Touraine",
-        "count": 2
-      },
-      {
-        "name": "Tavers",
-        "count": 2
+        "name": "Romorantin-Lanthenay",
+        "count": 8
       }
     ]
   },
   "loire": {
-    "total": 121,
-    "fastCount": 35,
+    "stations": 430,
+    "points": 1468,
+    "fastPoints": 493,
     "connectorBreakdown": [
       {
-        "name": "Type 2 (Tethered Connector)",
-        "count": 79
+        "name": "Type 2",
+        "count": 907
       },
       {
-        "name": "CEE 7/4 - Schuko - Type F",
-        "count": 66
+        "name": "Type E/F (Schuko)",
+        "count": 501
       },
       {
-        "name": "CCS (Type 2)",
-        "count": 36
+        "name": "CCS Combo",
+        "count": 433
       },
       {
         "name": "CHAdeMO",
-        "count": 22
-      },
-      {
-        "name": "Type 2 (Socket Only)",
-        "count": 22
+        "count": 64
       }
     ],
     "topTowns": [
       {
         "name": "Saint-Étienne",
-        "count": 5
+        "count": 97
       },
       {
-        "name": "Villars",
-        "count": 5
+        "name": "Roanne",
+        "count": 29
+      },
+      {
+        "name": "Andrézieux-Bouthéon",
+        "count": 19
       },
       {
         "name": "Saint-Chamond",
-        "count": 5
+        "count": 17
       },
       {
-        "name": "Saint-Jean-Bonnefonds",
-        "count": 3
+        "name": "Rive-de-Gier",
+        "count": 11
       },
       {
-        "name": "SAINT-ETIENNE",
-        "count": 2
-      },
-      {
-        "name": "Firminy",
-        "count": 2
+        "name": "Feurs",
+        "count": 10
       }
     ]
   },
   "haute-loire": {
-    "total": 31,
-    "fastCount": 6,
+    "stations": 129,
+    "points": 325,
+    "fastPoints": 73,
     "connectorBreakdown": [
       {
-        "name": "Type 2 (Tethered Connector)",
-        "count": 14
+        "name": "Type 2",
+        "count": 213
       },
       {
-        "name": "Type 0",
-        "count": 14
+        "name": "Type E/F (Schuko)",
+        "count": 130
       },
       {
-        "name": "CCS (Type 2)",
-        "count": 9
-      },
-      {
-        "name": "CEE 7/4 - Schuko - Type F",
-        "count": 9
+        "name": "CCS Combo",
+        "count": 80
       },
       {
         "name": "CHAdeMO",
-        "count": 7
+        "count": 29
       }
     ],
     "topTowns": [
       {
+        "name": "Le Puy-en-Velay",
+        "count": 12
+      },
+      {
+        "name": "Brioude",
+        "count": 11
+      },
+      {
         "name": "Brives-Charensac",
-        "count": 2
+        "count": 9
       },
       {
         "name": "Yssingeaux",
-        "count": 2
+        "count": 7
       },
       {
-        "name": "Vorey",
-        "count": 1
+        "name": "Saint-Germain-Laprade",
+        "count": 6
       },
       {
-        "name": "Chamalières-sur-Loire",
-        "count": 1
-      },
-      {
-        "name": "Retournac",
-        "count": 1
+        "name": "Monistrol-sur-Loire",
+        "count": 5
       }
     ]
   },
   "loire-atlantique": {
-    "total": 167,
-    "fastCount": 53,
+    "stations": 1024,
+    "points": 2981,
+    "fastPoints": 652,
     "connectorBreakdown": [
       {
-        "name": "Type 2 (Socket Only)",
-        "count": 109
+        "name": "Type 2",
+        "count": 2222
       },
       {
-        "name": "CEE 7/4 - Schuko - Type F",
-        "count": 84
+        "name": "Type E/F (Schuko)",
+        "count": 1153
       },
       {
-        "name": "CCS (Type 2)",
-        "count": 51
-      },
-      {
-        "name": "Type 2 (Tethered Connector)",
-        "count": 26
+        "name": "CCS Combo",
+        "count": 597
       },
       {
         "name": "CHAdeMO",
-        "count": 26
+        "count": 112
       }
     ],
     "topTowns": [
       {
-        "name": "Nantes",
-        "count": 8
+        "name": "Saint-Herblain",
+        "count": 77
       },
       {
-        "name": "Saint-Herblain",
-        "count": 8
+        "name": "Nantes",
+        "count": 64
       },
       {
         "name": "Rezé",
-        "count": 4
+        "count": 31
       },
       {
-        "name": "Saint-Sébastien-sur-Loire",
-        "count": 4
+        "name": "La Baule-Escoublac",
+        "count": 28
       },
       {
-        "name": "Treillières",
-        "count": 3
+        "name": "Treillieres",
+        "count": 25
       },
       {
-        "name": "La Chapelle-sur-Erdre",
-        "count": 2
+        "name": "Pornic",
+        "count": 24
       }
     ]
   },
   "loiret": {
-    "total": 75,
-    "fastCount": 34,
+    "stations": 413,
+    "points": 1212,
+    "fastPoints": 500,
     "connectorBreakdown": [
       {
-        "name": "Type 2 (Tethered Connector)",
-        "count": 35
+        "name": "Type 2",
+        "count": 728
       },
       {
-        "name": "CCS (Type 2)",
-        "count": 35
+        "name": "CCS Combo",
+        "count": 470
       },
       {
-        "name": "Type 2 (Socket Only)",
-        "count": 30
-      },
-      {
-        "name": "CEE 7/4 - Schuko - Type F",
-        "count": 25
+        "name": "Type E/F (Schuko)",
+        "count": 362
       },
       {
         "name": "CHAdeMO",
-        "count": 20
+        "count": 54
       }
     ],
     "topTowns": [
       {
-        "name": "Saran",
-        "count": 13
+        "name": "Dampierre en Burly",
+        "count": 128
       },
       {
         "name": "Orléans",
-        "count": 4
+        "count": 30
       },
       {
-        "name": "Olivet",
-        "count": 3
+        "name": "Saran",
+        "count": 26
+      },
+      {
+        "name": "Gien",
+        "count": 18
+      },
+      {
+        "name": "Amilly",
+        "count": 15
       },
       {
         "name": "La Chapelle-Saint-Mesmin",
-        "count": 3
-      },
-      {
-        "name": "Saint-Jean-de-Braye",
-        "count": 2
-      },
-      {
-        "name": "Chécy",
-        "count": 2
+        "count": 10
       }
     ]
   },
   "lot": {
-    "total": 33,
-    "fastCount": 3,
+    "stations": 132,
+    "points": 462,
+    "fastPoints": 129,
     "connectorBreakdown": [
       {
-        "name": "Type 2 (Tethered Connector)",
-        "count": 22
+        "name": "Type 2",
+        "count": 188
       },
       {
-        "name": "CEE 7/4 - Schuko - Type F",
-        "count": 21
+        "name": "CCS Combo",
+        "count": 165
+      },
+      {
+        "name": "Type E/F (Schuko)",
+        "count": 119
       },
       {
         "name": "CHAdeMO",
-        "count": 20
-      },
-      {
-        "name": "CCS (Type 2)",
-        "count": 19
-      },
-      {
-        "name": "SCAME Type 3C (Schneider-Legrand)",
-        "count": 4
+        "count": 72
       }
     ],
     "topTowns": [
       {
         "name": "Cahors",
-        "count": 2
+        "count": 18
       },
       {
-        "name": "Lascabanes",
-        "count": 1
+        "name": "Figeac",
+        "count": 6
       },
       {
-        "name": "Cœur de Causse",
-        "count": 1
+        "name": "Gourdon",
+        "count": 6
       },
       {
-        "name": "Montalzat",
-        "count": 1
+        "name": "Gramat",
+        "count": 6
       },
       {
-        "name": "Coeur-de-Causse",
-        "count": 1
+        "name": "Souillac",
+        "count": 6
+      },
+      {
+        "name": "Prayssac",
+        "count": 4
       }
     ]
   },
   "lot-et-garonne": {
-    "total": 95,
-    "fastCount": 17,
+    "stations": 256,
+    "points": 736,
+    "fastPoints": 190,
     "connectorBreakdown": [
       {
-        "name": "Type 2 (Socket Only)",
-        "count": 73
+        "name": "Type 2",
+        "count": 531
       },
       {
-        "name": "CEE 7/4 - Schuko - Type F",
-        "count": 68
+        "name": "Type E/F (Schuko)",
+        "count": 352
       },
       {
-        "name": "CCS (Type 2)",
-        "count": 17
-      },
-      {
-        "name": "Type 2 (Tethered Connector)",
-        "count": 12
+        "name": "CCS Combo",
+        "count": 164
       },
       {
         "name": "CHAdeMO",
-        "count": 10
+        "count": 25
       }
     ],
     "topTowns": [
       {
         "name": "Agen",
-        "count": 3
+        "count": 25
       },
       {
-        "name": "Boé",
-        "count": 3
+        "name": "Marmande",
+        "count": 19
       },
       {
-        "name": "Le Passage",
-        "count": 3
+        "name": "Sainte-Bazeille",
+        "count": 16
       },
       {
         "name": "Villeneuve-sur-Lot",
-        "count": 3
+        "count": 16
       },
       {
-        "name": "Castelculier",
-        "count": 1
+        "name": "Le Passage",
+        "count": 12
       },
       {
-        "name": "Sainte-Colombe-en-Bruilhois",
-        "count": 1
+        "name": "Boé",
+        "count": 11
       }
     ]
   },
   "lozere": {
-    "total": 25,
-    "fastCount": 2,
+    "stations": 76,
+    "points": 197,
+    "fastPoints": 68,
     "connectorBreakdown": [
       {
-        "name": "CEE 7/4 - Schuko - Type F",
-        "count": 18
+        "name": "Type 2",
+        "count": 142
       },
       {
-        "name": "Type 2 (Socket Only)",
-        "count": 10
+        "name": "Type E/F (Schuko)",
+        "count": 82
       },
       {
-        "name": "SCAME Type 3C (Schneider-Legrand)",
-        "count": 8
+        "name": "CCS Combo",
+        "count": 63
       },
       {
-        "name": "Type 2 (Tethered Connector)",
-        "count": 4
-      },
-      {
-        "name": "Tesla (Model S/X)",
-        "count": 3
+        "name": "CHAdeMO",
+        "count": 7
       }
     ],
     "topTowns": [
       {
         "name": "Mende",
+        "count": 12
+      },
+      {
+        "name": "Meyrueis",
+        "count": 3
+      },
+      {
+        "name": "Saint Chely D'Apcher",
+        "count": 3
+      },
+      {
+        "name": "Albaret Sainte Marie",
         "count": 2
       },
       {
-        "name": "Châteauneuf-de-Randon",
-        "count": 1
+        "name": "La Canourgue",
+        "count": 2
       },
       {
-        "name": "Banassac",
-        "count": 1
-      },
-      {
-        "name": "Aumont-Aubrac",
-        "count": 1
+        "name": "Marvejols",
+        "count": 2
       }
     ]
   },
   "maine-et-loire": {
-    "total": 151,
-    "fastCount": 31,
+    "stations": 583,
+    "points": 1633,
+    "fastPoints": 468,
     "connectorBreakdown": [
       {
-        "name": "Type 2 (Socket Only)",
-        "count": 121
+        "name": "Type 2",
+        "count": 1126
       },
       {
-        "name": "CEE 7/4 - Schuko - Type F",
-        "count": 108
+        "name": "Type E/F (Schuko)",
+        "count": 625
       },
       {
-        "name": "CCS (Type 2)",
-        "count": 30
-      },
-      {
-        "name": "Type 2 (Tethered Connector)",
-        "count": 15
+        "name": "CCS Combo",
+        "count": 418
       },
       {
         "name": "CHAdeMO",
-        "count": 12
+        "count": 84
       }
     ],
     "topTowns": [
       {
         "name": "Angers",
-        "count": 12
+        "count": 65
       },
       {
-        "name": "Beaucouzé",
-        "count": 2
+        "name": "Cholet",
+        "count": 45
       },
       {
-        "name": "Saint-Barthélémy-d'Anjou",
-        "count": 1
+        "name": "Saumur",
+        "count": 32
       },
       {
-        "name": "Saint-Barthélemy-d'Anjou",
-        "count": 1
+        "name": "Beaucouze",
+        "count": 17
       },
       {
-        "name": "Avrillé",
-        "count": 1
+        "name": "Avrille",
+        "count": 16
       },
       {
-        "name": "Verrières-en-Anjou",
-        "count": 1
+        "name": "Murs-Erigne",
+        "count": 16
       }
     ]
   },
   "manche": {
-    "total": 81,
-    "fastCount": 16,
+    "stations": 549,
+    "points": 1621,
+    "fastPoints": 300,
     "connectorBreakdown": [
       {
-        "name": "CEE 7/4 - Schuko - Type F",
-        "count": 59
+        "name": "Type 2",
+        "count": 1165
       },
       {
-        "name": "Type 2 (Tethered Connector)",
-        "count": 52
+        "name": "Type E/F (Schuko)",
+        "count": 460
       },
       {
-        "name": "CCS (Type 2)",
-        "count": 16
-      },
-      {
-        "name": "Type 2 (Socket Only)",
-        "count": 11
+        "name": "CCS Combo",
+        "count": 334
       },
       {
         "name": "CHAdeMO",
-        "count": 10
+        "count": 55
       }
     ],
     "topTowns": [
       {
+        "name": "Flamanville",
+        "count": 72
+      },
+      {
+        "name": "Les Pieux",
+        "count": 45
+      },
+      {
         "name": "Saint-Lô",
-        "count": 4
+        "count": 28
       },
       {
-        "name": "Agneaux",
-        "count": 2
+        "name": "Cherbourg-en-Cotentin",
+        "count": 24
       },
       {
-        "name": "Coutances",
-        "count": 2
+        "name": "Cherbourg-en-Contentin",
+        "count": 22
       },
       {
-        "name": "Torigny-les-Villes",
-        "count": 1
-      },
-      {
-        "name": "Caumont sur Aure",
-        "count": 1
-      },
-      {
-        "name": "Le Molay-Littry",
-        "count": 1
+        "name": "Granville",
+        "count": 17
       }
     ]
   },
   "marne": {
-    "total": 23,
-    "fastCount": 13,
+    "stations": 269,
+    "points": 1255,
+    "fastPoints": 559,
     "connectorBreakdown": [
       {
-        "name": "CCS (Type 2)",
-        "count": 13
+        "name": "Type 2",
+        "count": 710
       },
       {
-        "name": "Type 2 (Socket Only)",
-        "count": 12
+        "name": "CCS Combo",
+        "count": 534
       },
       {
-        "name": "Type 2 (Tethered Connector)",
-        "count": 9
+        "name": "Type E/F (Schuko)",
+        "count": 250
       },
       {
         "name": "CHAdeMO",
-        "count": 8
-      },
-      {
-        "name": "CEE 7/4 - Schuko - Type F",
-        "count": 3
+        "count": 78
       }
     ],
     "topTowns": [
       {
+        "name": "Reims",
+        "count": 58
+      },
+      {
         "name": "Châlons-en-Champagne",
-        "count": 4
+        "count": 16
       },
       {
-        "name": "Saint-Martin-sur-le-Pré",
-        "count": 2
+        "name": "Épernay",
+        "count": 14
       },
       {
-        "name": "Les Petites-Loges",
-        "count": 2
+        "name": "Thillois",
+        "count": 10
       },
       {
-        "name": "Châlons en Champagne",
-        "count": 1
+        "name": "Vitry-le-François",
+        "count": 10
       },
       {
-        "name": "Marne",
-        "count": 1
-      },
-      {
-        "name": "Sainte-Memmie",
-        "count": 1
+        "name": "Cormontreuil",
+        "count": 7
       }
     ]
   },
   "haute-marne": {
-    "total": 8,
-    "fastCount": 4,
+    "stations": 119,
+    "points": 475,
+    "fastPoints": 248,
     "connectorBreakdown": [
       {
-        "name": "Type 2 (Tethered Connector)",
-        "count": 4
+        "name": "Type 2",
+        "count": 237
       },
       {
-        "name": "CCS (Type 2)",
-        "count": 4
+        "name": "CCS Combo",
+        "count": 237
+      },
+      {
+        "name": "Type E/F (Schuko)",
+        "count": 131
       },
       {
         "name": "CHAdeMO",
-        "count": 4
-      },
-      {
-        "name": "Type 2 (Socket Only)",
-        "count": 4
-      },
-      {
-        "name": "CEE 7/4 - Schuko - Type F",
-        "count": 2
-      }
-    ],
-    "topTowns": [
-      {
-        "name": "Châteauvert",
-        "count": 2
-      },
-      {
-        "name": "Chaumont",
-        "count": 1
-      },
-      {
-        "name": "Nogent",
-        "count": 1
-      },
-      {
-        "name": "Montigny le Roi",
-        "count": 1
-      }
-    ]
-  },
-  "mayenne": {
-    "total": 63,
-    "fastCount": 16,
-    "connectorBreakdown": [
-      {
-        "name": "CEE 7/4 - Schuko - Type F",
-        "count": 40
-      },
-      {
-        "name": "Type 2 (Socket Only)",
-        "count": 23
-      },
-      {
-        "name": "CCS (Type 2)",
-        "count": 15
-      },
-      {
-        "name": "SCAME Type 3C (Schneider-Legrand)",
-        "count": 14
-      },
-      {
-        "name": "Type 2 (Tethered Connector)",
-        "count": 12
-      }
-    ],
-    "topTowns": [
-      {
-        "name": "Laval",
-        "count": 3
-      },
-      {
-        "name": "Changé",
-        "count": 2
-      },
-      {
-        "name": "Bonchamp-lès-Laval",
-        "count": 1
-      },
-      {
-        "name": "Mondevert",
-        "count": 1
-      },
-      {
-        "name": "Erbrée",
-        "count": 1
-      },
-      {
-        "name": "Ernée",
-        "count": 1
-      }
-    ]
-  },
-  "meurthe-et-moselle": {
-    "total": 108,
-    "fastCount": 44,
-    "connectorBreakdown": [
-      {
-        "name": "Type 2 (Tethered Connector)",
-        "count": 54
-      },
-      {
-        "name": "CCS (Type 2)",
-        "count": 48
-      },
-      {
-        "name": "CEE 7/4 - Schuko - Type F",
-        "count": 47
-      },
-      {
-        "name": "Type 2 (Socket Only)",
-        "count": 42
-      },
-      {
-        "name": "CHAdeMO",
-        "count": 32
-      }
-    ],
-    "topTowns": [
-      {
-        "name": "Vandœuvre-lès-Nancy",
-        "count": 4
-      },
-      {
-        "name": "Laxou",
-        "count": 3
-      },
-      {
-        "name": "Essey-lès-Nancy",
-        "count": 3
-      },
-      {
-        "name": "Houdemont",
-        "count": 3
-      },
-      {
-        "name": "Frouard",
-        "count": 3
-      },
-      {
-        "name": "Pont-à-Mousson",
-        "count": 3
-      }
-    ]
-  },
-  "meuse": {
-    "total": 12,
-    "fastCount": 12,
-    "connectorBreakdown": [
-      {
-        "name": "CCS (Type 2)",
-        "count": 12
-      },
-      {
-        "name": "Type 2 (Socket Only)",
-        "count": 8
-      },
-      {
-        "name": "CHAdeMO",
-        "count": 6
-      },
-      {
-        "name": "Type 2 (Tethered Connector)",
-        "count": 2
-      },
-      {
-        "name": "CEE 7/4 - Schuko - Type F",
-        "count": 1
+        "count": 35
       }
     ],
     "topTowns": [
       {
         "name": "Saint-Dizier",
+        "count": 18
+      },
+      {
+        "name": "Chaumont",
+        "count": 15
+      },
+      {
+        "name": "Joinville",
         "count": 7
       },
       {
-        "name": "Fains-Véel",
-        "count": 1
+        "name": "Langres",
+        "count": 7
       },
       {
-        "name": "Maulan",
-        "count": 1
+        "name": "Val-de-Meuse",
+        "count": 7
       },
       {
-        "name": "Bettancourt-la-Ferrée",
-        "count": 1
+        "name": "Chateauvillain",
+        "count": 4
+      }
+    ]
+  },
+  "mayenne": {
+    "stations": 197,
+    "points": 503,
+    "fastPoints": 114,
+    "connectorBreakdown": [
+      {
+        "name": "Type 2",
+        "count": 381
+      },
+      {
+        "name": "Type E/F (Schuko)",
+        "count": 206
+      },
+      {
+        "name": "CCS Combo",
+        "count": 117
+      },
+      {
+        "name": "CHAdeMO",
+        "count": 24
+      }
+    ],
+    "topTowns": [
+      {
+        "name": "Laval",
+        "count": 28
+      },
+      {
+        "name": "Mayenne",
+        "count": 21
+      },
+      {
+        "name": "Changé",
+        "count": 15
+      },
+      {
+        "name": "Evron",
+        "count": 14
+      },
+      {
+        "name": "Saint-Berthevin",
+        "count": 13
+      },
+      {
+        "name": "Château-Gontier-sur-Mayenne",
+        "count": 9
+      }
+    ]
+  },
+  "meurthe-et-moselle": {
+    "stations": 446,
+    "points": 1606,
+    "fastPoints": 601,
+    "connectorBreakdown": [
+      {
+        "name": "Type 2",
+        "count": 999
+      },
+      {
+        "name": "CCS Combo",
+        "count": 612
+      },
+      {
+        "name": "Type E/F (Schuko)",
+        "count": 478
+      },
+      {
+        "name": "CHAdeMO",
+        "count": 84
+      }
+    ],
+    "topTowns": [
+      {
+        "name": "Pont-à-Mousson",
+        "count": 33
+      },
+      {
+        "name": "Nancy",
+        "count": 16
+      },
+      {
+        "name": "Dombasle-sur-Meurthe",
+        "count": 14
+      },
+      {
+        "name": "Essey-lès-Nancy",
+        "count": 14
+      },
+      {
+        "name": "Laxou",
+        "count": 11
+      },
+      {
+        "name": "Luneville",
+        "count": 11
+      }
+    ]
+  },
+  "meuse": {
+    "stations": 68,
+    "points": 243,
+    "fastPoints": 101,
+    "connectorBreakdown": [
+      {
+        "name": "Type 2",
+        "count": 141
+      },
+      {
+        "name": "CCS Combo",
+        "count": 102
+      },
+      {
+        "name": "Type E/F (Schuko)",
+        "count": 42
+      },
+      {
+        "name": "CHAdeMO",
+        "count": 13
+      }
+    ],
+    "topTowns": [
+      {
+        "name": "Verdun",
+        "count": 11
+      },
+      {
+        "name": "Commercy",
+        "count": 6
+      },
+      {
+        "name": "Bar-le-Duc",
+        "count": 5
+      },
+      {
+        "name": "Belleville-sur-Meuse",
+        "count": 3
+      },
+      {
+        "name": "Montmedy",
+        "count": 3
+      },
+      {
+        "name": "Stenay",
+        "count": 3
       }
     ]
   },
   "morbihan": {
-    "total": 123,
-    "fastCount": 24,
+    "stations": 532,
+    "points": 1530,
+    "fastPoints": 522,
     "connectorBreakdown": [
       {
-        "name": "Type 2 (Socket Only)",
-        "count": 92
+        "name": "Type 2",
+        "count": 991
       },
       {
-        "name": "CEE 7/4 - Schuko - Type F",
-        "count": 72
+        "name": "Type E/F (Schuko)",
+        "count": 552
       },
       {
-        "name": "CCS (Type 2)",
-        "count": 33
+        "name": "CCS Combo",
+        "count": 543
       },
       {
         "name": "CHAdeMO",
-        "count": 15
-      },
-      {
-        "name": "Type 2 (Tethered Connector)",
-        "count": 13
+        "count": 87
       }
     ],
     "topTowns": [
       {
         "name": "Vannes",
-        "count": 8
+        "count": 53
+      },
+      {
+        "name": "Lorient",
+        "count": 23
       },
       {
         "name": "Auray",
-        "count": 4
+        "count": 17
       },
       {
-        "name": "Theix-Noyalo",
-        "count": 2
+        "name": "Lanester",
+        "count": 16
       },
       {
-        "name": "Sarzeau",
-        "count": 2
+        "name": "Ploërmel",
+        "count": 16
       },
       {
-        "name": "Plescop",
-        "count": 1
-      },
-      {
-        "name": "Ploeren",
-        "count": 1
+        "name": "Pontivy",
+        "count": 16
       }
     ]
   },
   "moselle": {
-    "total": 92,
-    "fastCount": 53,
+    "stations": 1073,
+    "points": 3082,
+    "fastPoints": 827,
     "connectorBreakdown": [
       {
-        "name": "CCS (Type 2)",
-        "count": 55
+        "name": "Type 2",
+        "count": 2141
       },
       {
-        "name": "Type 2 (Socket Only)",
-        "count": 47
+        "name": "Type E/F (Schuko)",
+        "count": 1373
+      },
+      {
+        "name": "CCS Combo",
+        "count": 894
       },
       {
         "name": "CHAdeMO",
-        "count": 42
-      },
-      {
-        "name": "Type 2 (Tethered Connector)",
-        "count": 19
-      },
-      {
-        "name": "Type 0",
-        "count": 12
+        "count": 192
       }
     ],
     "topTowns": [
       {
+        "name": "Cattenom",
+        "count": 208
+      },
+      {
         "name": "Metz",
-        "count": 13
+        "count": 123
       },
       {
-        "name": "Augny",
-        "count": 6
+        "name": "Thionville",
+        "count": 38
       },
       {
-        "name": "Moulins-lès-Metz",
-        "count": 4
+        "name": "Sarreguemines",
+        "count": 32
       },
       {
-        "name": "Woippy",
-        "count": 3
+        "name": "Amnéville",
+        "count": 30
       },
       {
-        "name": "Hauconcourt",
-        "count": 3
-      },
-      {
-        "name": "Pont-à-Mousson",
-        "count": 3
+        "name": "Forbach",
+        "count": 28
       }
     ]
   },
   "nievre": {
-    "total": 35,
-    "fastCount": 4,
+    "stations": 145,
+    "points": 428,
+    "fastPoints": 168,
     "connectorBreakdown": [
       {
-        "name": "CEE 7/4 - Schuko - Type F",
-        "count": 27
+        "name": "Type 2",
+        "count": 254
       },
       {
-        "name": "Type 2 (Tethered Connector)",
-        "count": 17
+        "name": "CCS Combo",
+        "count": 171
       },
       {
-        "name": "Type 2 (Socket Only)",
-        "count": 14
+        "name": "Type E/F (Schuko)",
+        "count": 140
       },
       {
-        "name": "CCS (Type 2)",
-        "count": 4
-      },
-      {
-        "name": "Type 0",
-        "count": 2
+        "name": "CHAdeMO",
+        "count": 20
       }
     ],
     "topTowns": [
       {
-        "name": "Varennes-Vauzelles",
-        "count": 2
-      },
-      {
         "name": "Nevers",
-        "count": 1
+        "count": 22
       },
       {
-        "name": "Saint-Pierre-le-Moûtier",
-        "count": 1
+        "name": "Varennes-Vauzelles",
+        "count": 12
+      },
+      {
+        "name": "Cosne-Cours-sur-Loire",
+        "count": 9
+      },
+      {
+        "name": "La Charité-Sur-Loire",
+        "count": 8
+      },
+      {
+        "name": "Clamecy",
+        "count": 6
+      },
+      {
+        "name": "Decize",
+        "count": 6
       }
     ]
   },
   "nord": {
-    "total": 409,
-    "fastCount": 108,
+    "stations": 1540,
+    "points": 5755,
+    "fastPoints": 1614,
     "connectorBreakdown": [
       {
-        "name": "Type 2 (Tethered Connector)",
-        "count": 201
+        "name": "Type 2",
+        "count": 3900
       },
       {
-        "name": "Type 2 (Socket Only)",
-        "count": 136
+        "name": "Type E/F (Schuko)",
+        "count": 1922
       },
       {
-        "name": "CEE 7/4 - Schuko - Type F",
-        "count": 132
-      },
-      {
-        "name": "CCS (Type 2)",
-        "count": 102
+        "name": "CCS Combo",
+        "count": 1563
       },
       {
         "name": "CHAdeMO",
-        "count": 62
+        "count": 175
       }
     ],
     "topTowns": [
       {
-        "name": "Tournai",
-        "count": 10
-      },
-      {
         "name": "Villeneuve-d'Ascq",
-        "count": 8
+        "count": 64
       },
       {
-        "name": "Kortrijk",
-        "count": 8
+        "name": "Roubaix",
+        "count": 57
+      },
+      {
+        "name": "Tourcoing",
+        "count": 49
+      },
+      {
+        "name": "Douai",
+        "count": 36
       },
       {
         "name": "Lille",
-        "count": 6
+        "count": 32
       },
       {
-        "name": "Lesquin",
-        "count": 5
-      },
-      {
-        "name": "Marcq-en-Barœul",
-        "count": 4
+        "name": "Dunkerque",
+        "count": 28
       }
     ]
   },
   "oise": {
-    "total": 88,
-    "fastCount": 23,
+    "stations": 529,
+    "points": 1708,
+    "fastPoints": 485,
     "connectorBreakdown": [
       {
-        "name": "Type 2 (Tethered Connector)",
-        "count": 61
+        "name": "Type 2",
+        "count": 1216
       },
       {
-        "name": "CEE 7/4 - Schuko - Type F",
-        "count": 57
+        "name": "Type E/F (Schuko)",
+        "count": 730
       },
       {
-        "name": "CCS (Type 2)",
-        "count": 23
-      },
-      {
-        "name": "Type 2 (Socket Only)",
-        "count": 17
+        "name": "CCS Combo",
+        "count": 534
       },
       {
         "name": "CHAdeMO",
-        "count": 12
+        "count": 109
       }
     ],
     "topTowns": [
       {
         "name": "Beauvais",
-        "count": 12
+        "count": 53
       },
       {
-        "name": "Allonne",
-        "count": 3
+        "name": "Compiègne",
+        "count": 25
       },
       {
-        "name": "Lormaison",
-        "count": 2
+        "name": "Saint-Maximin",
+        "count": 16
       },
       {
-        "name": "Méru",
-        "count": 2
+        "name": "Noyon",
+        "count": 15
       },
       {
-        "name": "Meru",
-        "count": 1
+        "name": "Chantilly",
+        "count": 14
       },
       {
-        "name": "Hardivillers",
-        "count": 1
+        "name": "Margny-les-Compiegne",
+        "count": 13
       }
     ]
   },
   "orne": {
-    "total": 43,
-    "fastCount": 8,
+    "stations": 96,
+    "points": 345,
+    "fastPoints": 135,
     "connectorBreakdown": [
       {
-        "name": "CEE 7/4 - Schuko - Type F",
-        "count": 31
+        "name": "Type 2",
+        "count": 207
       },
       {
-        "name": "Type 2 (Socket Only)",
-        "count": 20
+        "name": "CCS Combo",
+        "count": 117
       },
       {
-        "name": "SCAME Type 3C (Schneider-Legrand)",
-        "count": 15
+        "name": "Type E/F (Schuko)",
+        "count": 67
       },
       {
-        "name": "Type 2 (Tethered Connector)",
-        "count": 13
-      },
-      {
-        "name": "CCS (Type 2)",
-        "count": 8
+        "name": "CHAdeMO",
+        "count": 24
       }
     ],
     "topTowns": [
       {
+        "name": "Flers",
+        "count": 9
+      },
+      {
+        "name": "Mortagne-au-Perche",
+        "count": 9
+      },
+      {
         "name": "Valframbert",
-        "count": 3
+        "count": 9
+      },
+      {
+        "name": "La Lande de Goult",
+        "count": 6
+      },
+      {
+        "name": "Argentan",
+        "count": 5
       },
       {
         "name": "Alençon",
-        "count": 2
-      },
-      {
-        "name": "Arçonnay",
-        "count": 2
-      },
-      {
-        "name": "Maresché",
-        "count": 1
+        "count": 4
       }
     ]
   },
   "pas-de-calais": {
-    "total": 198,
-    "fastCount": 72,
+    "stations": 913,
+    "points": 3037,
+    "fastPoints": 961,
     "connectorBreakdown": [
       {
-        "name": "Type 2 (Tethered Connector)",
-        "count": 120
+        "name": "Type 2",
+        "count": 1936
       },
       {
-        "name": "CEE 7/4 - Schuko - Type F",
-        "count": 79
+        "name": "CCS Combo",
+        "count": 954
       },
       {
-        "name": "CCS (Type 2)",
-        "count": 68
-      },
-      {
-        "name": "Type 2 (Socket Only)",
-        "count": 53
+        "name": "Type E/F (Schuko)",
+        "count": 713
       },
       {
         "name": "CHAdeMO",
-        "count": 42
+        "count": 152
       }
     ],
     "topTowns": [
       {
         "name": "Arras",
-        "count": 5
+        "count": 43
       },
       {
-        "name": "Liévin",
-        "count": 5
+        "name": "Calais",
+        "count": 35
       },
       {
-        "name": "Hénin-Beaumont",
-        "count": 4
+        "name": "Boulogne-sur-Mer",
+        "count": 22
       },
       {
-        "name": "Noyelles-Godault",
-        "count": 4
+        "name": "Béthune",
+        "count": 20
       },
       {
-        "name": "Bruay-la-Buissière",
-        "count": 4
+        "name": "Longuenesse",
+        "count": 18
       },
       {
-        "name": "Douai",
-        "count": 3
+        "name": "Saint-Omer",
+        "count": 18
       }
     ]
   },
   "puy-de-dome": {
-    "total": 114,
-    "fastCount": 41,
+    "stations": 426,
+    "points": 1448,
+    "fastPoints": 444,
     "connectorBreakdown": [
       {
-        "name": "CCS (Type 2)",
-        "count": 60
+        "name": "Type 2",
+        "count": 834
       },
       {
-        "name": "Type 2 (Tethered Connector)",
-        "count": 44
+        "name": "CCS Combo",
+        "count": 507
       },
       {
-        "name": "Type 2 (Socket Only)",
-        "count": 40
+        "name": "Type E/F (Schuko)",
+        "count": 337
       },
       {
         "name": "CHAdeMO",
-        "count": 35
-      },
-      {
-        "name": "CEE 7/4 - Schuko - Type F",
-        "count": 31
+        "count": 156
       }
     ],
     "topTowns": [
       {
         "name": "Clermont-Ferrand",
-        "count": 16
+        "count": 83
       },
       {
         "name": "Aubière",
-        "count": 6
+        "count": 33
       },
       {
-        "name": "Riom",
-        "count": 5
+        "name": "Saint-Ours",
+        "count": 32
       },
       {
         "name": "Issoire",
-        "count": 4
+        "count": 18
       },
       {
-        "name": "Lempdes",
-        "count": 3
+        "name": "Thiers",
+        "count": 13
       },
       {
-        "name": "Mozac",
-        "count": 2
+        "name": "Ambert",
+        "count": 9
       }
     ]
   },
   "pyrenees-atlantiques": {
-    "total": 81,
-    "fastCount": 20,
+    "stations": 515,
+    "points": 1565,
+    "fastPoints": 363,
     "connectorBreakdown": [
       {
-        "name": "Type 2 (Socket Only)",
-        "count": 61
+        "name": "Type 2",
+        "count": 1156
       },
       {
-        "name": "CEE 7/4 - Schuko - Type F",
-        "count": 54
+        "name": "Type E/F (Schuko)",
+        "count": 579
       },
       {
-        "name": "CCS (Type 2)",
-        "count": 20
+        "name": "CCS Combo",
+        "count": 352
       },
       {
         "name": "CHAdeMO",
-        "count": 11
-      },
-      {
-        "name": "Type 2 (Tethered Connector)",
-        "count": 9
+        "count": 43
       }
     ],
     "topTowns": [
       {
         "name": "Pau",
-        "count": 3
+        "count": 41
       },
       {
-        "name": "Lescar",
-        "count": 3
+        "name": "Bayonne",
+        "count": 34
       },
       {
-        "name": "Lons",
-        "count": 2
+        "name": "Biarritz",
+        "count": 33
       },
       {
-        "name": "Lacq",
-        "count": 2
+        "name": "Bidart",
+        "count": 30
       },
       {
-        "name": "Gan",
-        "count": 1
+        "name": "Saint-Pierre-d'Irube",
+        "count": 27
       },
       {
-        "name": "Nousty",
-        "count": 1
+        "name": "Anglet",
+        "count": 25
       }
     ]
   },
   "hautes-pyrenees": {
-    "total": 91,
-    "fastCount": 19,
+    "stations": 217,
+    "points": 626,
+    "fastPoints": 139,
     "connectorBreakdown": [
       {
-        "name": "Type 2 (Socket Only)",
-        "count": 72
+        "name": "Type 2",
+        "count": 482
       },
       {
-        "name": "CEE 7/4 - Schuko - Type F",
-        "count": 65
+        "name": "Type E/F (Schuko)",
+        "count": 229
       },
       {
-        "name": "CCS (Type 2)",
-        "count": 19
+        "name": "CCS Combo",
+        "count": 101
       },
       {
         "name": "CHAdeMO",
-        "count": 11
-      },
-      {
-        "name": "SCAME Type 3C (Schneider-Legrand)",
-        "count": 9
+        "count": 26
       }
     ],
     "topTowns": [
       {
         "name": "Tarbes",
-        "count": 4
+        "count": 41
       },
       {
         "name": "Lourdes",
-        "count": 3
-      },
-      {
-        "name": "Ibos",
-        "count": 2
+        "count": 21
       },
       {
         "name": "Argelès-Gazost",
-        "count": 2
+        "count": 12
+      },
+      {
+        "name": "Juillan",
+        "count": 12
+      },
+      {
+        "name": "Lannemezan",
+        "count": 7
       },
       {
         "name": "Séméac",
-        "count": 1
-      },
-      {
-        "name": "Odos",
-        "count": 1
+        "count": 6
       }
     ]
   },
   "pyrenees-orientales": {
-    "total": 127,
-    "fastCount": 41,
+    "stations": 344,
+    "points": 1273,
+    "fastPoints": 485,
     "connectorBreakdown": [
       {
-        "name": "Type 2 (Tethered Connector)",
-        "count": 65
+        "name": "Type 2",
+        "count": 787
       },
       {
-        "name": "CEE 7/4 - Schuko - Type F",
-        "count": 62
+        "name": "CCS Combo",
+        "count": 452
       },
       {
-        "name": "Type 2 (Socket Only)",
-        "count": 48
-      },
-      {
-        "name": "CCS (Type 2)",
-        "count": 41
+        "name": "Type E/F (Schuko)",
+        "count": 286
       },
       {
         "name": "CHAdeMO",
-        "count": 34
+        "count": 51
       }
     ],
     "topTowns": [
       {
         "name": "Perpignan",
-        "count": 19
-      },
-      {
-        "name": "Rivesaltes",
-        "count": 7
-      },
-      {
-        "name": "Canet-en-Roussillon",
-        "count": 4
+        "count": 98
       },
       {
         "name": "Argelès-sur-Mer",
-        "count": 3
+        "count": 16
       },
       {
-        "name": "Le Boulou",
-        "count": 3
+        "name": "Saint-Cyprien",
+        "count": 12
       },
       {
-        "name": "Pia",
-        "count": 2
+        "name": "Canet-en-Roussillon",
+        "count": 11
+      },
+      {
+        "name": "Rivesaltes",
+        "count": 10
+      },
+      {
+        "name": "Le Barcares",
+        "count": 8
       }
     ]
   },
   "bas-rhin": {
-    "total": 203,
-    "fastCount": 68,
+    "stations": 771,
+    "points": 2373,
+    "fastPoints": 643,
     "connectorBreakdown": [
       {
-        "name": "Type 2 (Socket Only)",
-        "count": 112
+        "name": "Type 2",
+        "count": 1624
       },
       {
-        "name": "Type 2 (Tethered Connector)",
-        "count": 72
+        "name": "CCS Combo",
+        "count": 705
       },
       {
-        "name": "CCS (Type 2)",
-        "count": 68
+        "name": "Type E/F (Schuko)",
+        "count": 702
       },
       {
         "name": "CHAdeMO",
-        "count": 45
-      },
-      {
-        "name": "CEE 7/4 - Schuko - Type F",
-        "count": 32
+        "count": 99
       }
     ],
     "topTowns": [
       {
-        "name": "Offenburg",
-        "count": 19
-      },
-      {
-        "name": "Kehl",
-        "count": 11
-      },
-      {
-        "name": "Oberkirch",
-        "count": 9
-      },
-      {
-        "name": "Lahr/Schwarzwald",
-        "count": 9
-      },
-      {
         "name": "Strasbourg",
-        "count": 7
+        "count": 164
       },
       {
-        "name": "Lahr",
-        "count": 6
+        "name": "Haguenau",
+        "count": 68
+      },
+      {
+        "name": "Obernai",
+        "count": 27
+      },
+      {
+        "name": "Sélestat",
+        "count": 25
+      },
+      {
+        "name": "Schiltigheim",
+        "count": 23
+      },
+      {
+        "name": "Brumath",
+        "count": 19
       }
     ]
   },
   "haut-rhin": {
-    "total": 94,
-    "fastCount": 33,
+    "stations": 442,
+    "points": 1535,
+    "fastPoints": 540,
     "connectorBreakdown": [
       {
-        "name": "Type 2 (Socket Only)",
-        "count": 52
+        "name": "Type 2",
+        "count": 942
       },
       {
-        "name": "CCS (Type 2)",
-        "count": 34
+        "name": "CCS Combo",
+        "count": 551
       },
       {
-        "name": "Type 2 (Tethered Connector)",
-        "count": 26
+        "name": "Type E/F (Schuko)",
+        "count": 383
       },
       {
         "name": "CHAdeMO",
-        "count": 19
-      },
-      {
-        "name": "CEE 7/4 - Schuko - Type F",
-        "count": 17
+        "count": 83
       }
     ],
     "topTowns": [
       {
+        "name": "Mulhouse",
+        "count": 56
+      },
+      {
         "name": "Colmar",
+        "count": 33
+      },
+      {
+        "name": "Illzach",
+        "count": 28
+      },
+      {
+        "name": "Sausheim",
+        "count": 17
+      },
+      {
+        "name": "Fessenheim",
         "count": 12
       },
       {
-        "name": "Sélestat",
-        "count": 6
-      },
-      {
-        "name": "Houssen",
-        "count": 5
-      },
-      {
-        "name": "Bahlingen",
-        "count": 4
-      },
-      {
-        "name": "Rouffach",
-        "count": 3
-      },
-      {
-        "name": "Ihringen",
-        "count": 3
+        "name": "Ottmarsheim",
+        "count": 12
       }
     ]
   },
   "rhone": {
-    "total": 443,
-    "fastCount": 99,
+    "stations": 862,
+    "points": 3969,
+    "fastPoints": 950,
     "connectorBreakdown": [
       {
-        "name": "Type 2 (Socket Only)",
-        "count": 164
+        "name": "Type 2",
+        "count": 2924
       },
       {
-        "name": "CEE 7/4 - Schuko - Type F",
-        "count": 161
+        "name": "CCS Combo",
+        "count": 1006
       },
       {
-        "name": "Type 2 (Tethered Connector)",
-        "count": 137
-      },
-      {
-        "name": "CCS (Type 2)",
-        "count": 133
+        "name": "Type E/F (Schuko)",
+        "count": 348
       },
       {
         "name": "CHAdeMO",
-        "count": 82
+        "count": 258
       }
     ],
     "topTowns": [
       {
         "name": "Lyon",
-        "count": 44
+        "count": 135
       },
       {
         "name": "Saint-Priest",
-        "count": 9
+        "count": 31
       },
       {
-        "name": "Bron",
-        "count": 6
+        "name": "Villefranche-sur-Saône",
+        "count": 30
       },
       {
         "name": "Colombier-Saugnieu",
-        "count": 6
+        "count": 29
       },
       {
-        "name": "Genas",
-        "count": 5
+        "name": "Chassieu",
+        "count": 26
       },
       {
-        "name": "Chasse-sur-Rhône",
-        "count": 5
+        "name": "Villeurbanne",
+        "count": 26
       }
     ]
   },
   "haute-saone": {
-    "total": 39,
-    "fastCount": 10,
+    "stations": 102,
+    "points": 308,
+    "fastPoints": 134,
     "connectorBreakdown": [
       {
-        "name": "Type 2 (Tethered Connector)",
-        "count": 28
+        "name": "Type 2",
+        "count": 174
       },
       {
-        "name": "CCS (Type 2)",
-        "count": 10
+        "name": "CCS Combo",
+        "count": 127
       },
       {
-        "name": "Type 2 (Socket Only)",
-        "count": 8
+        "name": "Type E/F (Schuko)",
+        "count": 94
       },
       {
         "name": "CHAdeMO",
-        "count": 5
+        "count": 26
       }
     ],
     "topTowns": [
       {
         "name": "Vesoul",
-        "count": 4
+        "count": 15
       },
       {
         "name": "Lure",
-        "count": 3
+        "count": 10
+      },
+      {
+        "name": "Gray",
+        "count": 8
+      },
+      {
+        "name": "Luxeuil-les-Bains",
+        "count": 6
       },
       {
         "name": "Pusey",
-        "count": 1
+        "count": 6
       },
       {
-        "name": "Breurey-les-Faverney",
-        "count": 1
-      },
-      {
-        "name": "Arpenans",
-        "count": 1
-      },
-      {
-        "name": "Cuse-et-Adrisans",
-        "count": 1
+        "name": "Héricourt",
+        "count": 5
       }
     ]
   },
   "saone-et-loire": {
-    "total": 48,
-    "fastCount": 16,
+    "stations": 451,
+    "points": 1475,
+    "fastPoints": 628,
     "connectorBreakdown": [
       {
-        "name": "Type 2 (Tethered Connector)",
-        "count": 26
+        "name": "Type 2",
+        "count": 869
       },
       {
-        "name": "CCS (Type 2)",
-        "count": 16
+        "name": "CCS Combo",
+        "count": 596
       },
       {
-        "name": "CEE 7/4 - Schuko - Type F",
-        "count": 12
-      },
-      {
-        "name": "Type 2 (Socket Only)",
-        "count": 10
+        "name": "Type E/F (Schuko)",
+        "count": 209
       },
       {
         "name": "CHAdeMO",
-        "count": 9
+        "count": 58
       }
     ],
     "topTowns": [
       {
         "name": "Mâcon",
-        "count": 6
+        "count": 52
       },
       {
-        "name": "Crêches-sur-Saône",
-        "count": 3
+        "name": "Chalon-sur-Saône",
+        "count": 50
       },
       {
-        "name": "Sancé",
-        "count": 2
+        "name": "Le Creusot",
+        "count": 30
       },
       {
-        "name": "Vonnas",
-        "count": 2
+        "name": "Autun",
+        "count": 27
       },
       {
-        "name": "Igé",
-        "count": 1
+        "name": "Paray-le-Monial",
+        "count": 16
       },
       {
-        "name": "La Salle",
-        "count": 1
+        "name": "Montceau-les-Mines",
+        "count": 15
       }
     ]
   },
   "sarthe": {
-    "total": 54,
-    "fastCount": 24,
+    "stations": 208,
+    "points": 892,
+    "fastPoints": 434,
     "connectorBreakdown": [
       {
-        "name": "Type 2 (Socket Only)",
-        "count": 30
+        "name": "Type 2",
+        "count": 479
       },
       {
-        "name": "CCS (Type 2)",
-        "count": 24
+        "name": "CCS Combo",
+        "count": 415
+      },
+      {
+        "name": "Type E/F (Schuko)",
+        "count": 137
       },
       {
         "name": "CHAdeMO",
-        "count": 13
-      },
-      {
-        "name": "Type 2 (Tethered Connector)",
-        "count": 12
-      },
-      {
-        "name": "CEE 7/4 - Schuko - Type F",
-        "count": 2
+        "count": 47
       }
     ],
     "topTowns": [
       {
         "name": "Le Mans",
-        "count": 7
+        "count": 56
+      },
+      {
+        "name": "La Chapelle-Saint-Aubin",
+        "count": 9
+      },
+      {
+        "name": "Mamers",
+        "count": 9
+      },
+      {
+        "name": "Sablé-sur-Sarthe",
+        "count": 8
       },
       {
         "name": "Saint-Saturnin",
         "count": 7
       },
       {
-        "name": "Sargé-lès-le-Mans",
-        "count": 2
-      },
-      {
-        "name": "Yvré-l'Évêque",
-        "count": 2
-      },
-      {
-        "name": "Ruaudin",
-        "count": 2
-      },
-      {
-        "name": "Pirmil",
-        "count": 2
+        "name": "La Ferte Bernard",
+        "count": 6
       }
     ]
   },
   "savoie": {
-    "total": 92,
-    "fastCount": 27,
+    "stations": 497,
+    "points": 1569,
+    "fastPoints": 479,
     "connectorBreakdown": [
       {
-        "name": "Type 2 (Tethered Connector)",
-        "count": 52
+        "name": "Type 2",
+        "count": 1057
       },
       {
-        "name": "CEE 7/4 - Schuko - Type F",
-        "count": 35
+        "name": "CCS Combo",
+        "count": 499
       },
       {
-        "name": "CCS (Type 2)",
-        "count": 28
+        "name": "Type E/F (Schuko)",
+        "count": 414
       },
       {
         "name": "CHAdeMO",
-        "count": 18
-      },
-      {
-        "name": "Type 0",
-        "count": 17
+        "count": 43
       }
     ],
     "topTowns": [
       {
+        "name": "La Motte-Servolex",
+        "count": 66
+      },
+      {
         "name": "Chambéry",
-        "count": 7
+        "count": 43
+      },
+      {
+        "name": "Saint-Alban-Leysse",
+        "count": 36
+      },
+      {
+        "name": "Sainte-Marie-de-Cuines",
+        "count": 34
+      },
+      {
+        "name": "Albertville",
+        "count": 22
       },
       {
         "name": "Aix-les-Bains",
-        "count": 3
-      },
-      {
-        "name": "Saint-Jeoire-Prieuré",
-        "count": 2
-      },
-      {
-        "name": "Drumettaz-Clarafond",
-        "count": 2
-      },
-      {
-        "name": "Mouxy",
-        "count": 2
-      },
-      {
-        "name": "Le Pont-de-Beauvoisin",
-        "count": 2
+        "count": 12
       }
     ]
   },
   "haute-savoie": {
-    "total": 139,
-    "fastCount": 34,
+    "stations": 636,
+    "points": 2008,
+    "fastPoints": 576,
     "connectorBreakdown": [
       {
-        "name": "Type 2 (Tethered Connector)",
-        "count": 97
+        "name": "Type 2",
+        "count": 1308
       },
       {
-        "name": "CEE 7/4 - Schuko - Type F",
-        "count": 69
+        "name": "CCS Combo",
+        "count": 637
       },
       {
-        "name": "CCS (Type 2)",
-        "count": 34
+        "name": "Type E/F (Schuko)",
+        "count": 518
       },
       {
         "name": "CHAdeMO",
-        "count": 23
-      },
-      {
-        "name": "Type 2 (Socket Only)",
-        "count": 15
+        "count": 110
       }
     ],
     "topTowns": [
       {
         "name": "Annecy",
-        "count": 9
-      },
-      {
-        "name": "Seynod",
-        "count": 3
-      },
-      {
-        "name": "Chavanod",
-        "count": 2
+        "count": 57
       },
       {
         "name": "Epagny Metz-Tessy",
-        "count": 2
+        "count": 25
       },
       {
-        "name": "Groisy",
-        "count": 2
+        "name": "Annemasse",
+        "count": 21
       },
       {
-        "name": "La Clusaz",
-        "count": 2
+        "name": "Thonon-les-Bains",
+        "count": 20
+      },
+      {
+        "name": "Ville-la-Grand",
+        "count": 18
+      },
+      {
+        "name": "Évian-les-Bains",
+        "count": 16
       }
     ]
   },
   "paris": {
-    "total": 479,
-    "fastCount": 21,
+    "stations": 562,
+    "points": 5622,
+    "fastPoints": 132,
     "connectorBreakdown": [
       {
-        "name": "CEE 7/4 - Schuko - Type F",
-        "count": 309
+        "name": "Type 2",
+        "count": 5352
       },
       {
-        "name": "Type 2 (Socket Only)",
-        "count": 288
+        "name": "Type E/F (Schuko)",
+        "count": 4217
       },
       {
-        "name": "Type 2 (Tethered Connector)",
-        "count": 84
-      },
-      {
-        "name": "CCS (Type 2)",
-        "count": 76
+        "name": "CCS Combo",
+        "count": 314
       },
       {
         "name": "CHAdeMO",
-        "count": 68
+        "count": 210
       }
     ],
     "topTowns": [
       {
         "name": "Paris",
-        "count": 129
-      },
-      {
-        "name": "PARIS",
-        "count": 3
-      },
-      {
-        "name": "Montrouge",
-        "count": 3
-      },
-      {
-        "name": "Parijs",
-        "count": 1
-      },
-      {
-        "name": "Paris-17E-Arrondissement",
-        "count": 1
-      },
-      {
-        "name": "BAGNOLET",
-        "count": 1
+        "count": 561
       }
     ]
   },
   "seine-maritime": {
-    "total": 188,
-    "fastCount": 44,
+    "stations": 805,
+    "points": 2412,
+    "fastPoints": 650,
     "connectorBreakdown": [
       {
-        "name": "CEE 7/4 - Schuko - Type F",
-        "count": 98
+        "name": "Type 2",
+        "count": 1684
       },
       {
-        "name": "Type 2 (Tethered Connector)",
-        "count": 93
+        "name": "Type E/F (Schuko)",
+        "count": 758
       },
       {
-        "name": "CCS (Type 2)",
-        "count": 41
+        "name": "CCS Combo",
+        "count": 584
       },
       {
-        "name": "Type 2 (Socket Only)",
-        "count": 33
-      },
-      {
-        "name": "SCAME Type 3C (Schneider-Legrand)",
-        "count": 29
+        "name": "CHAdeMO",
+        "count": 92
       }
     ],
     "topTowns": [
       {
+        "name": "Petit-Caux",
+        "count": 80
+      },
+      {
+        "name": "Gonfreville-l'Orcher",
+        "count": 74
+      },
+      {
         "name": "Rouen",
-        "count": 6
+        "count": 71
       },
       {
-        "name": "Barentin",
-        "count": 4
+        "name": "Cany-Barville",
+        "count": 47
       },
       {
-        "name": "Vironvay",
-        "count": 4
+        "name": "Le Havre",
+        "count": 43
       },
       {
-        "name": "Le Grand-Quevilly",
-        "count": 3
-      },
-      {
-        "name": "Saint-Étienne-du-Rouvray",
-        "count": 3
-      },
-      {
-        "name": "Val De Reuil",
-        "count": 3
+        "name": "Gonfreville",
+        "count": 20
       }
     ]
   },
   "seine-et-marne": {
-    "total": 298,
-    "fastCount": 91,
+    "stations": 929,
+    "points": 3605,
+    "fastPoints": 933,
     "connectorBreakdown": [
       {
-        "name": "CEE 7/4 - Schuko - Type F",
-        "count": 155
+        "name": "Type 2",
+        "count": 2546
       },
       {
-        "name": "Type 2 (Tethered Connector)",
-        "count": 134
+        "name": "CCS Combo",
+        "count": 1046
       },
       {
-        "name": "Type 2 (Socket Only)",
-        "count": 128
-      },
-      {
-        "name": "CCS (Type 2)",
-        "count": 96
+        "name": "Type E/F (Schuko)",
+        "count": 565
       },
       {
         "name": "CHAdeMO",
-        "count": 55
+        "count": 132
       }
     ],
     "topTowns": [
       {
-        "name": "Villabé",
-        "count": 6
+        "name": "Meaux",
+        "count": 67
       },
       {
-        "name": "Évry-Courcouronnes",
-        "count": 6
+        "name": "Magny-le-Hongre",
+        "count": 26
       },
       {
-        "name": "Vert-Saint-Denis",
-        "count": 5
+        "name": "Nemours",
+        "count": 26
       },
       {
-        "name": "Bonneuil-sur-Marne",
-        "count": 5
+        "name": "Lieusaint",
+        "count": 19
       },
       {
-        "name": "Servon",
-        "count": 4
+        "name": "Provins",
+        "count": 19
       },
       {
-        "name": "Pontault-Combault",
-        "count": 4
+        "name": "Combs la Ville",
+        "count": 18
       }
     ]
   },
   "yvelines": {
-    "total": 492,
-    "fastCount": 58,
+    "stations": 1041,
+    "points": 3094,
+    "fastPoints": 684,
     "connectorBreakdown": [
       {
-        "name": "CEE 7/4 - Schuko - Type F",
-        "count": 231
+        "name": "Type 2",
+        "count": 2368
       },
       {
-        "name": "Type 2 (Socket Only)",
-        "count": 224
+        "name": "CCS Combo",
+        "count": 695
       },
       {
-        "name": "Type 2 (Tethered Connector)",
-        "count": 174
-      },
-      {
-        "name": "CCS (Type 2)",
-        "count": 97
+        "name": "Type E/F (Schuko)",
+        "count": 591
       },
       {
         "name": "CHAdeMO",
-        "count": 67
+        "count": 99
       }
     ],
     "topTowns": [
       {
-        "name": "Paris",
-        "count": 29
+        "name": "Saint-Germain-en-Laye",
+        "count": 45
       },
       {
         "name": "Vélizy-Villacoublay",
-        "count": 16
+        "count": 40
       },
       {
-        "name": "Issy-les-Moulineaux",
-        "count": 6
+        "name": "Clairefontaine-en-Yvelines",
+        "count": 33
+      },
+      {
+        "name": "Saint-Cyr-l'École",
+        "count": 22
       },
       {
         "name": "Plaisir",
-        "count": 5
+        "count": 21
       },
       {
-        "name": "Le Chesnay",
-        "count": 3
-      },
-      {
-        "name": "Viroflay",
-        "count": 3
+        "name": "Trappes",
+        "count": 21
       }
     ]
   },
   "deux-sevres": {
-    "total": 59,
-    "fastCount": 16,
+    "stations": 421,
+    "points": 1337,
+    "fastPoints": 231,
     "connectorBreakdown": [
       {
-        "name": "CEE 7/4 - Schuko - Type F",
-        "count": 39
+        "name": "Type 2",
+        "count": 797
       },
       {
-        "name": "Type 2 (Socket Only)",
-        "count": 34
+        "name": "Type E/F (Schuko)",
+        "count": 504
       },
       {
-        "name": "SCAME Type 3C (Schneider-Legrand)",
-        "count": 25
+        "name": "CCS Combo",
+        "count": 212
       },
       {
-        "name": "CCS (Type 2)",
-        "count": 16
-      },
-      {
-        "name": "Type 2 (Tethered Connector)",
-        "count": 10
+        "name": "CHAdeMO",
+        "count": 56
       }
     ],
     "topTowns": [
       {
         "name": "Niort",
-        "count": 6
+        "count": 48
       },
       {
-        "name": "Chauray",
-        "count": 2
+        "name": "Bressuire",
+        "count": 20
       },
       {
-        "name": "Vouillé",
-        "count": 2
+        "name": "Thouars",
+        "count": 12
       },
       {
-        "name": "Bessines",
-        "count": 1
+        "name": "Melle",
+        "count": 9
       },
       {
-        "name": "Aiffres",
-        "count": 1
+        "name": "Parthenay",
+        "count": 8
       },
       {
-        "name": "Villiers-en-Plaine",
-        "count": 1
+        "name": "Mauleon",
+        "count": 5
       }
     ]
   },
   "somme": {
-    "total": 27,
-    "fastCount": 18,
+    "stations": 452,
+    "points": 1334,
+    "fastPoints": 465,
     "connectorBreakdown": [
       {
-        "name": "CCS (Type 2)",
-        "count": 18
+        "name": "Type 2",
+        "count": 907
       },
       {
-        "name": "Type 2 (Socket Only)",
-        "count": 13
+        "name": "Type E/F (Schuko)",
+        "count": 580
+      },
+      {
+        "name": "CCS Combo",
+        "count": 449
       },
       {
         "name": "CHAdeMO",
-        "count": 7
-      },
-      {
-        "name": "Type 2 (Tethered Connector)",
-        "count": 5
-      },
-      {
-        "name": "CEE 7/4 - Schuko - Type F",
-        "count": 3
+        "count": 37
       }
     ],
     "topTowns": [
       {
         "name": "Amiens",
+        "count": 68
+      },
+      {
+        "name": "Abbeville",
+        "count": 23
+      },
+      {
+        "name": "Péronne",
+        "count": 17
+      },
+      {
+        "name": "Roye",
+        "count": 9
+      },
+      {
+        "name": "Le Crotoy",
         "count": 8
       },
       {
-        "name": "Glisy",
-        "count": 3
-      },
-      {
-        "name": "Longueau",
-        "count": 2
-      },
-      {
-        "name": "Villers-Bretonneux",
-        "count": 2
-      },
-      {
-        "name": "Boves",
-        "count": 1
-      },
-      {
-        "name": "Croixrault",
-        "count": 1
+        "name": "Albert",
+        "count": 7
       }
     ]
   },
   "tarn": {
-    "total": 72,
-    "fastCount": 12,
+    "stations": 981,
+    "points": 1505,
+    "fastPoints": 302,
     "connectorBreakdown": [
       {
-        "name": "CEE 7/4 - Schuko - Type F",
-        "count": 49
+        "name": "Type 2",
+        "count": 946
       },
       {
-        "name": "SCAME Type 3C (Schneider-Legrand)",
-        "count": 37
+        "name": "Type E/F (Schuko)",
+        "count": 631
       },
       {
-        "name": "Type 2 (Tethered Connector)",
-        "count": 32
+        "name": "CCS Combo",
+        "count": 249
       },
       {
-        "name": "Type 2 (Socket Only)",
-        "count": 27
-      },
-      {
-        "name": "CCS (Type 2)",
-        "count": 18
+        "name": "CHAdeMO",
+        "count": 103
       }
     ],
     "topTowns": [
       {
+        "name": "Castres",
+        "count": 39
+      },
+      {
         "name": "Albi",
-        "count": 5
+        "count": 33
+      },
+      {
+        "name": "Lavaur",
+        "count": 9
+      },
+      {
+        "name": "Le Sequestre",
+        "count": 9
       },
       {
         "name": "Graulhet",
-        "count": 4
+        "count": 8
       },
       {
-        "name": "Lescure d'Albigeois",
-        "count": 1
-      },
-      {
-        "name": "Carmaux",
-        "count": 1
-      },
-      {
-        "name": "Lagrave",
-        "count": 1
-      },
-      {
-        "name": "Brens",
-        "count": 1
+        "name": "Lautrec",
+        "count": 6
       }
     ]
   },
   "tarn-et-garonne": {
-    "total": 50,
-    "fastCount": 33,
+    "stations": 211,
+    "points": 663,
+    "fastPoints": 237,
     "connectorBreakdown": [
       {
-        "name": "CCS (Type 2)",
-        "count": 32
+        "name": "Type 2",
+        "count": 404
       },
       {
-        "name": "Type 2 (Socket Only)",
-        "count": 32
+        "name": "Type E/F (Schuko)",
+        "count": 261
+      },
+      {
+        "name": "CCS Combo",
+        "count": 223
       },
       {
         "name": "CHAdeMO",
-        "count": 21
-      },
-      {
-        "name": "CEE 7/4 - Schuko - Type F",
-        "count": 11
-      },
-      {
-        "name": "Type 2 (Tethered Connector)",
-        "count": 8
+        "count": 42
       }
     ],
     "topTowns": [
       {
         "name": "Montauban",
-        "count": 17
-      },
-      {
-        "name": "Castelnau-d'Estrétefonds",
-        "count": 4
+        "count": 41
       },
       {
         "name": "Caussade",
-        "count": 2
+        "count": 14
       },
       {
-        "name": "Fronton",
-        "count": 2
+        "name": "Castelsarrasin",
+        "count": 10
+      },
+      {
+        "name": "Beaumont-de-Lomagne",
+        "count": 7
       },
       {
         "name": "Moissac",
-        "count": 2
+        "count": 7
       },
       {
-        "name": "Saint-Nicolas-de-la-Grave",
-        "count": 2
+        "name": "Valence",
+        "count": 6
       }
     ]
   },
   "var": {
-    "total": 174,
-    "fastCount": 24,
+    "stations": 824,
+    "points": 2504,
+    "fastPoints": 471,
     "connectorBreakdown": [
       {
-        "name": "CEE 7/4 - Schuko - Type F",
-        "count": 107
+        "name": "Type 2",
+        "count": 2024
       },
       {
-        "name": "Type 2 (Tethered Connector)",
-        "count": 102
+        "name": "Type E/F (Schuko)",
+        "count": 954
       },
       {
-        "name": "CCS (Type 2)",
-        "count": 28
+        "name": "CCS Combo",
+        "count": 456
       },
       {
-        "name": "Type 2 (Socket Only)",
-        "count": 27
-      },
-      {
-        "name": "Type 0",
-        "count": 15
+        "name": "CHAdeMO",
+        "count": 62
       }
     ],
     "topTowns": [
       {
-        "name": "La Valette-du-Var",
-        "count": 10
+        "name": "Toulon",
+        "count": 83
       },
       {
-        "name": "La Garde",
-        "count": 6
+        "name": "Saint Raphaël",
+        "count": 59
+      },
+      {
+        "name": "Frejus",
+        "count": 47
       },
       {
         "name": "Hyères",
-        "count": 5
+        "count": 31
       },
       {
         "name": "La Seyne-sur-Mer",
-        "count": 4
+        "count": 28
       },
       {
-        "name": "Toulon",
-        "count": 3
-      },
-      {
-        "name": "Bandol",
-        "count": 3
+        "name": "Grimaud",
+        "count": 27
       }
     ]
   },
   "vaucluse": {
-    "total": 189,
-    "fastCount": 42,
+    "stations": 429,
+    "points": 1546,
+    "fastPoints": 376,
     "connectorBreakdown": [
       {
-        "name": "Type 2 (Tethered Connector)",
-        "count": 79
+        "name": "Type 2",
+        "count": 1135
       },
       {
-        "name": "CEE 7/4 - Schuko - Type F",
-        "count": 73
+        "name": "Type E/F (Schuko)",
+        "count": 558
       },
       {
-        "name": "Type 2 (Socket Only)",
-        "count": 64
+        "name": "CCS Combo",
+        "count": 364
       },
       {
-        "name": "CCS (Type 2)",
-        "count": 41
-      },
-      {
-        "name": "SCAME Type 3C (Schneider-Legrand)",
-        "count": 30
+        "name": "CHAdeMO",
+        "count": 44
       }
     ],
     "topTowns": [
       {
         "name": "Avignon",
-        "count": 12
-      },
-      {
-        "name": "Le Pontet",
-        "count": 7
+        "count": 79
       },
       {
         "name": "Orange",
-        "count": 7
-      },
-      {
-        "name": "Sorgues",
-        "count": 4
+        "count": 23
       },
       {
         "name": "Cavaillon",
-        "count": 3
+        "count": 21
       },
       {
-        "name": "Les Baux-de-Provence",
-        "count": 3
+        "name": "Carpentras",
+        "count": 17
+      },
+      {
+        "name": "Sorgues",
+        "count": 17
+      },
+      {
+        "name": "Le Pontet",
+        "count": 13
       }
     ]
   },
   "vendee": {
-    "total": 84,
-    "fastCount": 35,
+    "stations": 463,
+    "points": 1218,
+    "fastPoints": 372,
     "connectorBreakdown": [
       {
-        "name": "Type 2 (Socket Only)",
-        "count": 46
+        "name": "Type 2",
+        "count": 794
       },
       {
-        "name": "CEE 7/4 - Schuko - Type F",
-        "count": 45
+        "name": "Type E/F (Schuko)",
+        "count": 347
       },
       {
-        "name": "CCS (Type 2)",
-        "count": 34
+        "name": "CCS Combo",
+        "count": 328
       },
       {
         "name": "CHAdeMO",
-        "count": 18
-      },
-      {
-        "name": "Type 2 (Tethered Connector)",
-        "count": 17
+        "count": 46
       }
     ],
     "topTowns": [
       {
         "name": "La Roche-sur-Yon",
-        "count": 11
+        "count": 61
       },
       {
-        "name": "Chantonnay",
-        "count": 4
+        "name": "Les Sables-d'Olonne",
+        "count": 27
       },
       {
-        "name": "Mouilleron-le-Captif",
-        "count": 2
+        "name": "Les Herbiers",
+        "count": 18
       },
       {
-        "name": "Les Achards",
-        "count": 2
+        "name": "Noirmoutier-en-l'Île",
+        "count": 18
       },
       {
-        "name": "Sainte-Hermine",
-        "count": 2
+        "name": "Barbatre",
+        "count": 15
       },
       {
-        "name": "La Roche sur Yon",
-        "count": 1
+        "name": "Challans",
+        "count": 14
       }
     ]
   },
   "vienne": {
-    "total": 123,
-    "fastCount": 28,
+    "stations": 1161,
+    "points": 2570,
+    "fastPoints": 691,
     "connectorBreakdown": [
       {
-        "name": "CEE 7/4 - Schuko - Type F",
-        "count": 84
+        "name": "Type 2",
+        "count": 1552
       },
       {
-        "name": "Type 2 (Socket Only)",
+        "name": "Type E/F (Schuko)",
+        "count": 727
+      },
+      {
+        "name": "CCS Combo",
+        "count": 717
+      },
+      {
+        "name": "CHAdeMO",
         "count": 69
-      },
-      {
-        "name": "SCAME Type 3C (Schneider-Legrand)",
-        "count": 30
-      },
-      {
-        "name": "CCS (Type 2)",
-        "count": 26
-      },
-      {
-        "name": "Type 2 (Tethered Connector)",
-        "count": 21
       }
     ],
     "topTowns": [
       {
+        "name": "Civaux",
+        "count": 254
+      },
+      {
         "name": "Poitiers",
-        "count": 10
+        "count": 36
       },
       {
         "name": "Chasseneuil-du-Poitou",
-        "count": 5
+        "count": 21
       },
       {
         "name": "Châtellerault",
-        "count": 2
+        "count": 14
       },
       {
-        "name": "Migne-auxances",
-        "count": 1
+        "name": "La Roche-Posay",
+        "count": 9
       },
       {
-        "name": "Croutelle",
-        "count": 1
-      },
-      {
-        "name": "Ligugé",
-        "count": 1
+        "name": "Pressac",
+        "count": 6
       }
     ]
   },
   "haute-vienne": {
-    "total": 28,
-    "fastCount": 21,
+    "stations": 269,
+    "points": 864,
+    "fastPoints": 256,
     "connectorBreakdown": [
       {
-        "name": "CCS (Type 2)",
-        "count": 21
+        "name": "Type 2",
+        "count": 557
       },
       {
-        "name": "Type 2 (Socket Only)",
-        "count": 14
+        "name": "CCS Combo",
+        "count": 287
       },
       {
-        "name": "Type 2 (Tethered Connector)",
-        "count": 7
+        "name": "Type E/F (Schuko)",
+        "count": 181
       },
       {
         "name": "CHAdeMO",
-        "count": 6
-      },
-      {
-        "name": "CEE 7/4 - Schuko - Type F",
-        "count": 3
+        "count": 82
       }
     ],
     "topTowns": [
       {
         "name": "Limoges",
-        "count": 15
-      },
-      {
-        "name": "Saint-Junien",
-        "count": 2
+        "count": 114
       },
       {
         "name": "Feytiat",
-        "count": 1
+        "count": 9
       },
       {
-        "name": "Couzeix",
-        "count": 1
+        "name": "Aixe-sur-Vienne",
+        "count": 6
+      },
+      {
+        "name": "Panazol",
+        "count": 6
+      },
+      {
+        "name": "Saint-Junien",
+        "count": 6
       },
       {
         "name": "Le Vigen",
-        "count": 1
-      },
-      {
-        "name": "Boisseuil",
-        "count": 1
+        "count": 5
       }
     ]
   },
   "vosges": {
-    "total": 41,
-    "fastCount": 24,
+    "stations": 292,
+    "points": 914,
+    "fastPoints": 371,
     "connectorBreakdown": [
       {
-        "name": "CCS (Type 2)",
-        "count": 30
+        "name": "Type 2",
+        "count": 529
       },
       {
-        "name": "Type 2 (Socket Only)",
-        "count": 22
+        "name": "CCS Combo",
+        "count": 367
+      },
+      {
+        "name": "Type E/F (Schuko)",
+        "count": 175
       },
       {
         "name": "CHAdeMO",
-        "count": 19
-      },
-      {
-        "name": "Type 2 (Tethered Connector)",
-        "count": 13
-      },
-      {
-        "name": "Type 0",
-        "count": 1
+        "count": 76
       }
     ],
     "topTowns": [
       {
         "name": "Épinal",
-        "count": 6
+        "count": 37
       },
       {
-        "name": "Charmes",
-        "count": 4
-      },
-      {
-        "name": "Epinal",
-        "count": 3
-      },
-      {
-        "name": "Jeuxey",
-        "count": 3
+        "name": "Saint-Dié-des-Vosges",
+        "count": 19
       },
       {
         "name": "Golbey",
-        "count": 2
+        "count": 17
       },
       {
-        "name": "Thaon-les-Vosges",
-        "count": 2
+        "name": "Neufchâteau",
+        "count": 16
+      },
+      {
+        "name": "Gérardmer",
+        "count": 15
+      },
+      {
+        "name": "La Bresse",
+        "count": 11
       }
     ]
   },
   "yonne": {
-    "total": 67,
-    "fastCount": 20,
+    "stations": 297,
+    "points": 1049,
+    "fastPoints": 427,
     "connectorBreakdown": [
       {
-        "name": "Type 2 (Tethered Connector)",
-        "count": 50
+        "name": "Type 2",
+        "count": 592
       },
       {
-        "name": "CEE 7/4 - Schuko - Type F",
-        "count": 35
+        "name": "CCS Combo",
+        "count": 407
       },
       {
-        "name": "CHAdeMO",
-        "count": 21
-      },
-      {
-        "name": "CCS (Type 2)",
-        "count": 21
-      },
-      {
-        "name": "Type 2 (Socket Only)",
-        "count": 12
-      }
-    ],
-    "topTowns": [
-      {
-        "name": "Venoy",
-        "count": 4
-      },
-      {
-        "name": "Monéteau",
-        "count": 3
-      },
-      {
-        "name": "Appoigny",
-        "count": 2
-      },
-      {
-        "name": "Auxerre",
-        "count": 1
-      },
-      {
-        "name": "VENOY",
-        "count": 1
-      },
-      {
-        "name": "Champs-sur-Yonne",
-        "count": 1
-      }
-    ]
-  },
-  "territoire-de-belfort": {
-    "total": 78,
-    "fastCount": 28,
-    "connectorBreakdown": [
-      {
-        "name": "Type 2 (Tethered Connector)",
-        "count": 47
-      },
-      {
-        "name": "CCS (Type 2)",
-        "count": 30
-      },
-      {
-        "name": "Type 2 (Socket Only)",
-        "count": 25
-      },
-      {
-        "name": "CHAdeMO",
-        "count": 21
-      },
-      {
-        "name": "Tesla (Model S/X)",
-        "count": 2
-      }
-    ],
-    "topTowns": [
-      {
-        "name": "Montbéliard",
-        "count": 5
-      },
-      {
-        "name": "Bessoncourt",
-        "count": 4
-      },
-      {
-        "name": "Belfort",
-        "count": 3
-      },
-      {
-        "name": "Lure",
-        "count": 3
-      },
-      {
-        "name": "Danjoutin",
-        "count": 2
-      },
-      {
-        "name": "Andelnans",
-        "count": 2
-      }
-    ]
-  },
-  "essonne": {
-    "total": 496,
-    "fastCount": 134,
-    "connectorBreakdown": [
-      {
-        "name": "Type 2 (Tethered Connector)",
-        "count": 230
-      },
-      {
-        "name": "CEE 7/4 - Schuko - Type F",
-        "count": 226
-      },
-      {
-        "name": "Type 2 (Socket Only)",
-        "count": 176
-      },
-      {
-        "name": "CCS (Type 2)",
-        "count": 155
+        "name": "Type E/F (Schuko)",
+        "count": 316
       },
       {
         "name": "CHAdeMO",
@@ -4626,154 +4360,194 @@
     ],
     "topTowns": [
       {
-        "name": "Paris",
-        "count": 15
+        "name": "Sens",
+        "count": 39
+      },
+      {
+        "name": "Auxerre",
+        "count": 23
+      },
+      {
+        "name": "Avallon",
+        "count": 19
+      },
+      {
+        "name": "Moneteau",
+        "count": 9
+      },
+      {
+        "name": "Tonnerre",
+        "count": 6
+      },
+      {
+        "name": "Venoy",
+        "count": 6
+      }
+    ]
+  },
+  "territoire-de-belfort": {
+    "stations": 88,
+    "points": 309,
+    "fastPoints": 104,
+    "connectorBreakdown": [
+      {
+        "name": "Type 2",
+        "count": 204
+      },
+      {
+        "name": "Type E/F (Schuko)",
+        "count": 114
+      },
+      {
+        "name": "CCS Combo",
+        "count": 91
+      },
+      {
+        "name": "CHAdeMO",
+        "count": 12
+      }
+    ],
+    "topTowns": [
+      {
+        "name": "Belfort",
+        "count": 27
+      },
+      {
+        "name": "Delle",
+        "count": 7
+      },
+      {
+        "name": "Bessoncourt",
+        "count": 6
+      },
+      {
+        "name": "Andelnans",
+        "count": 5
+      },
+      {
+        "name": "Bavilliers",
+        "count": 4
+      },
+      {
+        "name": "Denney",
+        "count": 4
+      }
+    ]
+  },
+  "essonne": {
+    "stations": 591,
+    "points": 2005,
+    "fastPoints": 704,
+    "connectorBreakdown": [
+      {
+        "name": "Type 2",
+        "count": 1267
+      },
+      {
+        "name": "CCS Combo",
+        "count": 682
+      },
+      {
+        "name": "Type E/F (Schuko)",
+        "count": 587
+      },
+      {
+        "name": "CHAdeMO",
+        "count": 110
+      }
+    ],
+    "topTowns": [
+      {
+        "name": "Palaiseau",
+        "count": 58
       },
       {
         "name": "Évry-Courcouronnes",
-        "count": 6
+        "count": 24
       },
       {
-        "name": "Villabé",
-        "count": 6
+        "name": "Draveil",
+        "count": 21
       },
       {
-        "name": "Rungis",
-        "count": 6
+        "name": "Brétigny-sur-Orge",
+        "count": 20
       },
       {
-        "name": "Bonneuil-sur-Marne",
-        "count": 5
+        "name": "Les Ulis",
+        "count": 19
       },
       {
-        "name": "Vert-Saint-Denis",
-        "count": 5
+        "name": "Brunoy",
+        "count": 17
       }
     ]
   },
   "hauts-de-seine": {
-    "total": 493,
-    "fastCount": 45,
+    "stations": 686,
+    "points": 2553,
+    "fastPoints": 214,
     "connectorBreakdown": [
       {
-        "name": "Type 2 (Socket Only)",
-        "count": 256
+        "name": "Type 2",
+        "count": 2222
       },
       {
-        "name": "CEE 7/4 - Schuko - Type F",
-        "count": 240
+        "name": "Type E/F (Schuko)",
+        "count": 542
       },
       {
-        "name": "Type 2 (Tethered Connector)",
-        "count": 139
-      },
-      {
-        "name": "CCS (Type 2)",
-        "count": 85
+        "name": "CCS Combo",
+        "count": 309
       },
       {
         "name": "CHAdeMO",
-        "count": 62
+        "count": 124
       }
     ],
     "topTowns": [
       {
-        "name": "Paris",
-        "count": 62
-      },
-      {
-        "name": "Gennevilliers",
-        "count": 6
-      },
-      {
-        "name": "Issy-les-Moulineaux",
-        "count": 6
+        "name": "Puteaux",
+        "count": 49
       },
       {
         "name": "Courbevoie",
-        "count": 4
+        "count": 48
+      },
+      {
+        "name": "Issy-les-Moulineaux",
+        "count": 37
       },
       {
         "name": "Nanterre",
-        "count": 3
+        "count": 36
       },
       {
-        "name": "Rueil-Malmaison",
-        "count": 3
+        "name": "Asnieres-sur-Seine",
+        "count": 34
+      },
+      {
+        "name": "Levallois Perret",
+        "count": 30
       }
     ]
   },
   "seine-saint-denis": {
-    "total": 483,
-    "fastCount": 65,
+    "stations": 343,
+    "points": 1605,
+    "fastPoints": 375,
     "connectorBreakdown": [
       {
-        "name": "Type 2 (Socket Only)",
-        "count": 257
+        "name": "Type 2",
+        "count": 1122
       },
       {
-        "name": "CEE 7/4 - Schuko - Type F",
-        "count": 239
+        "name": "CCS Combo",
+        "count": 363
       },
       {
-        "name": "Type 2 (Tethered Connector)",
-        "count": 110
-      },
-      {
-        "name": "CCS (Type 2)",
-        "count": 102
-      },
-      {
-        "name": "CHAdeMO",
-        "count": 69
-      }
-    ],
-    "topTowns": [
-      {
-        "name": "Paris",
-        "count": 80
-      },
-      {
-        "name": "Livry-Gargan",
-        "count": 6
-      },
-      {
-        "name": "Gonesse",
-        "count": 5
-      },
-      {
-        "name": "Aulnay-sous-Bois",
-        "count": 4
-      },
-      {
-        "name": "Saint-Denis",
-        "count": 4
-      },
-      {
-        "name": "Vincennes",
-        "count": 4
-      }
-    ]
-  },
-  "val-de-marne": {
-    "total": 486,
-    "fastCount": 70,
-    "connectorBreakdown": [
-      {
-        "name": "CEE 7/4 - Schuko - Type F",
-        "count": 245
-      },
-      {
-        "name": "Type 2 (Socket Only)",
-        "count": 226
-      },
-      {
-        "name": "Type 2 (Tethered Connector)",
-        "count": 133
-      },
-      {
-        "name": "CCS (Type 2)",
-        "count": 108
+        "name": "Type E/F (Schuko)",
+        "count": 347
       },
       {
         "name": "CHAdeMO",
@@ -4782,80 +4556,126 @@
     ],
     "topTowns": [
       {
-        "name": "Paris",
-        "count": 76
+        "name": "Saint-Denis",
+        "count": 36
       },
       {
-        "name": "Rungis",
-        "count": 6
+        "name": "Aubervilliers",
+        "count": 23
       },
       {
-        "name": "Bonneuil-sur-Marne",
-        "count": 5
+        "name": "Drancy",
+        "count": 16
       },
       {
-        "name": "Vincennes",
-        "count": 4
+        "name": "Montreuil",
+        "count": 16
       },
       {
         "name": "Noisy-le-Grand",
-        "count": 4
+        "count": 15
       },
       {
-        "name": "Neuilly-sur-Marne",
-        "count": 4
+        "name": "Aulnay sous Bois",
+        "count": 14
       }
     ]
   },
-  "val-d-oise": {
-    "total": 494,
-    "fastCount": 96,
+  "val-de-marne": {
+    "stations": 533,
+    "points": 2722,
+    "fastPoints": 460,
     "connectorBreakdown": [
       {
-        "name": "Type 2 (Socket Only)",
-        "count": 195
+        "name": "Type 2",
+        "count": 2159
       },
       {
-        "name": "Type 2 (Tethered Connector)",
-        "count": 181
+        "name": "Type E/F (Schuko)",
+        "count": 763
       },
       {
-        "name": "CEE 7/4 - Schuko - Type F",
-        "count": 180
-      },
-      {
-        "name": "CCS (Type 2)",
-        "count": 116
+        "name": "CCS Combo",
+        "count": 438
       },
       {
         "name": "CHAdeMO",
-        "count": 64
+        "count": 53
       }
     ],
     "topTowns": [
       {
-        "name": "Paris",
-        "count": 23
+        "name": "Saint-Maur-des-Fossés",
+        "count": 45
       },
       {
-        "name": "Gennevilliers",
-        "count": 6
+        "name": "Creteil",
+        "count": 35
       },
       {
-        "name": "Taverny",
-        "count": 4
+        "name": "Rungis",
+        "count": 32
+      },
+      {
+        "name": "Chevilly-Larue",
+        "count": 28
+      },
+      {
+        "name": "Arcueil",
+        "count": 24
+      },
+      {
+        "name": "Vincennes",
+        "count": 19
+      }
+    ]
+  },
+  "val-d-oise": {
+    "stations": 602,
+    "points": 1845,
+    "fastPoints": 491,
+    "connectorBreakdown": [
+      {
+        "name": "Type 2",
+        "count": 1328
+      },
+      {
+        "name": "CCS Combo",
+        "count": 486
+      },
+      {
+        "name": "Type E/F (Schuko)",
+        "count": 205
+      },
+      {
+        "name": "CHAdeMO",
+        "count": 98
+      }
+    ],
+    "topTowns": [
+      {
+        "name": "Saint-Ouen-l'Aumône",
+        "count": 30
+      },
+      {
+        "name": "Éragny",
+        "count": 26
+      },
+      {
+        "name": "Roissy-en",
+        "count": 18
+      },
+      {
+        "name": "Argenteuil",
+        "count": 17
+      },
+      {
+        "name": "Gonesse",
+        "count": 16
       },
       {
         "name": "Franconville",
-        "count": 4
-      },
-      {
-        "name": "Courbevoie",
-        "count": 4
-      },
-      {
-        "name": "Osny",
-        "count": 3
+        "count": 15
       }
     ]
   }

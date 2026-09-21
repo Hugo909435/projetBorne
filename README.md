@@ -29,6 +29,37 @@ normalement mais la carte reste vide (0 borne).
 En production (Vercel ou autre), ajoutez `OCM_API_KEY` dans les variables
 d'environnement du projet.
 
+## Données officielles (France et Allemagne)
+
+Pour la France et l'Allemagne, la carte et les pages régionales n'utilisent pas
+Open Charge Map (trop incomplet) mais les registres officiels ouverts :
+
+| Pays | Source | Licence | Commande |
+|---|---|---|---|
+| France | Base nationale des IRVE (data.gouv.fr / transport.data.gouv.fr) | Licence Ouverte 2.0 | `npm run generate:irve` (~120 Mo) |
+| Allemagne | Ladesäulenregister de la Bundesnetzagentur | CC BY 4.0 | `npm run generate:de` (~55 Mo) |
+
+Chaque script Python (bibliothèque standard uniquement) télécharge le registre
+et écrit, commités dans le dépôt :
+
+- `src/data/*-stats*.json` : statistiques par département / Bundesland (pages) ;
+- `data/irve/` et `data/de/` : toutes les stations en JSON compressé (carte),
+  lues par le serveur au premier appel (`src/lib/officialStations.ts`) puis
+  gardées en mémoire. Elles sont embarquées dans `.next/standalone` grâce à
+  `outputFileTracingIncludes` (`next.config.ts`).
+
+À relancer une fois par mois environ, puis à commiter les fichiers générés.
+`src/lib/stationSource.ts` choisit la source : registre officiel pour FR et DE,
+Open Charge Map pour tout le reste, et se replie sur Open Charge Map si un
+fichier est illisible. Le registre français est une version beta appelée à
+remplacer l'ancienne consolidation data.gouv.fr, supprimée le 31/12/2026 : si
+l'URL change, mettre à jour `SOURCE_URL` dans `scripts/generate_irve_data.py`.
+
+L'Espagne et le Royaume-Uni restent sur Open Charge Map
+(`npm run generate:region-stats`, lancé automatiquement par `prebuild`) : le
+registre national espagnol (DGT, DATEX II) recense moins de sites qu'Open Charge
+Map, et le registre britannique (NCR) est fermé depuis le 28/11/2024.
+
 ## Déploiement
 
 Ce projet a besoin de **Node.js**, pas d'un hébergement statique. Il utilise
@@ -41,7 +72,7 @@ fichiers seuls » (ou GitHub Pages) ne peut pas le faire tourner.
 ```bash
 npm ci
 npm run build     # produit .next/standalone (output: "standalone")
-npm run package   # assemble le dossier deploy/ prêt à téléverser (~21 Mo)
+npm run package   # assemble le dossier deploy/ prêt à téléverser (~285 Mo depuis l'ajout des pages régionales : l'essentiel, ~255 Mo, est le HTML pré-rendu de 720 pages)
 ```
 
 Téléversez le contenu de `deploy/`, puis sur le serveur :

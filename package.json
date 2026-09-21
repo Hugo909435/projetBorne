@@ -4,12 +4,13 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "prebuild": "tsx scripts/generate-department-stats.ts && tsx scripts/generate-region-stats.ts",
+    "prebuild": "tsx scripts/generate-region-stats.ts",
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
     "package": "node scripts/package-deploy.mjs",
-    "generate:department-stats": "tsx scripts/generate-department-stats.ts",
+    "generate:irve": "python scripts/generate_irve_data.py",
+    "generate:de": "python scripts/generate_de_data.py",
     "generate:region-stats": "tsx scripts/generate-region-stats.ts"
   },
   "dependencies": {

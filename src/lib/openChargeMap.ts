@@ -95,6 +95,7 @@ type OcmRawConnection = {
 type OcmRawPoi = {
   ID: number;
   AddressInfo?: {
+    CountryID?: number;
     Title?: string;
     AddressLine1?: string;
     Town?: string;
@@ -123,7 +124,27 @@ function mapConnection(c: OcmRawConnection): StationConnection {
   };
 }
 
+/**
+ * Open Charge Map's own CountryID for each station. Kept beside the stations
+ * rather than on them: the map payload is paid for byte by byte, and the only
+ * consumer is the server-side merge with the official national datasets (see
+ * `stationSource.ts`). Keyed by object identity, which holds because the cache
+ * hands back the very same Station objects.
+ */
+const stationCountryId = new WeakMap<Station, number>();
+
+export function ocmCountryIdOf(station: Station): number | undefined {
+  return stationCountryId.get(station);
+}
+
 function mapPoi(poi: OcmRawPoi): Station | null {
+  const station = mapPoiFields(poi);
+  const countryId = num(poi.AddressInfo?.CountryID);
+  if (station && countryId != null) stationCountryId.set(station, countryId);
+  return station;
+}
+
+function mapPoiFields(poi: OcmRawPoi): Station | null {
   const lat = num(poi.AddressInfo?.Latitude);
   const lon = num(poi.AddressInfo?.Longitude);
   if (lat == null || lon == null) return null;

@@ -11,13 +11,19 @@ const nextConfig: NextConfig = {
   images: {
     qualities: [75, 90],
   },
+  // The official national station data (data/irve, data/de) is read from disk at runtime, not
+  // imported, so Next's file tracing can't see it: without this it would be
+  // missing from `.next/standalone` and the map would fall back to Open Charge Map.
+  outputFileTracingIncludes: {
+    "/api/stations": ["./data/**/*"],
+    "/api/stations/[id]": ["./data/**/*"],
+  },
   experimental: {
-    // The ~500 statically generated pages include 384 department pages that
-    // each call the Open Charge Map API. Multiple build workers hitting it
-    // in parallel multiply past this app's own in-process rate limiting and
-    // OCM starts 429-ing, which can starve individual pages past their
-    // generation budget. Keeping generation on effectively one worker lets
-    // that in-process pacing actually govern the request rate.
+    // Build workers hitting an external API in parallel would multiply past
+    // this app's own in-process rate limiting (Open Charge Map 429s and starves
+    // pages past their generation budget). Nothing calls it at build time any
+    // more (department pages read committed JSON), but keeping generation on
+    // effectively one worker preserves that safety margin if a page ever does.
     staticGenerationMinPagesPerWorker: 1000,
   },
   async headers() {

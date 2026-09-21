@@ -2,7 +2,7 @@
 
 > Electric vehicle charging station locator with a live worldwide map and a practical guide to charging connectors (Type 2, CCS, CHAdeMO). Available in French, English, German, and Spanish.
 
-Station data comes from Open Charge Map (openchargemap.org), an open, collaborative database. Map tiles are provided by OpenStreetMap contributors.
+Station data comes from official open registers where they are the most complete (France: national IRVE database on data.gouv.fr, Licence Ouverte 2.0; Germany: Bundesnetzagentur charging station register, CC BY 4.0) and from Open Charge Map (openchargemap.org), an open, collaborative database, for other countries. Map tiles are provided by OpenStreetMap contributors.
 
 ## Languages
 
@@ -14,7 +14,7 @@ Station data comes from Open Charge Map (openchargemap.org), an open, collaborat
 ## Main pages (French URLs shown; replace /fr with /en, /de, or /es)
 
 - [Home and world map](https://ma-borne-electrique.com/fr): search and map of charging stations anywhere in the world.
-- [Charging stations by French department](https://ma-borne-electrique.com/fr/bornes-recharge): live station counts, fast-charger share, and top-covered towns for each of the 96 metropolitan French departments, sourced from Open Charge Map.
+- [Charging stations by French department](https://ma-borne-electrique.com/fr/bornes-recharge): public charging point and station counts, fast-charger share, and top-covered towns for each of the 96 metropolitan French departments (French national IRVE database, Licence Ouverte 2.0) and the 16 German states (Bundesnetzagentur register, CC BY 4.0), plus Spanish and UK regions from Open Charge Map.
 - [Blog](https://ma-borne-electrique.com/fr/blog): practical guides and news on EV charging, costs, and French regulation.
 - [Connector guide](https://ma-borne-electrique.com/fr/blog/types-de-bornes-electriques): explains Type 2, Combo CCS, and CHAdeMO standards, power output, and charging times.
 - [Electric car guide](https://ma-borne-electrique.com/fr/blog/voiture-electrique): range, pricing, and buying-decision basics for EVs.
@@ -33,6 +33,7 @@ Station data comes from Open Charge Map (openchargemap.org), an open, collaborat
 - [Autonomie en hiver : les bons réflexes à adopter avant l'arrivée du froid](https://ma-borne-electrique.com/fr/blog/autonomie-hiver-voiture-electrique)
 - [Bornes rapides sur autoroute : comment éviter la file d'attente cet été 2026](https://ma-borne-electrique.com/fr/blog/bornes-rapides-autoroute-ete-2026)
 - [Road trip en France : bien recharger sa voiture électrique sans mauvaise surprise](https://ma-borne-electrique.com/fr/blog/road-trip-france-recharge-voiture-electrique)
+- [Visiter la France en voiture électrique : recharge, cartes de paiement et prix](https://ma-borne-electrique.com/fr/blog/electric-car-in-france-charging-guide) (also in EN, DE, ES: guide for foreign visitors on plugs, payment without a French account, prices and the Crit'Air sticker)
 - [Batterie de voiture électrique : les bons réflexes pour la faire durer](https://ma-borne-electrique.com/fr/blog/prolonger-duree-vie-batterie-voiture-electrique)
 
 ### Home installation and rights

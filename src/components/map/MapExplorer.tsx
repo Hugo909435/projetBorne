@@ -591,7 +591,7 @@ export default function MapExplorer({
 
   const attribution = `&copy; <a href="https://www.openstreetmap.org/copyright">${t(
     "attributionOsmLabel"
-  )}</a> | ${t("attributionStationsLabel")} © <a href="https://openchargemap.org">Open Charge Map</a>`;
+  )}</a> | ${t("attributionStationsLabel")} © <a href="https://www.data.gouv.fr/datasets/beta-bases-nationales-des-points-de-recharge-pour-vehicules-electriques-en-france-irve">IRVE (data.gouv.fr)</a>, <a href="https://www.bundesnetzagentur.de/DE/Fachthemen/ElektrizitaetundGas/E-Mobilitaet/Ladesaeulenkarte/start.html">Bundesnetzagentur</a>, <a href="https://openchargemap.org">Open Charge Map</a>`;
 
   return (
     <div className="relative flex h-full w-full gap-3">

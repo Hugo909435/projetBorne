@@ -4,10 +4,12 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { site, languageAlternates } from "@/lib/site";
 import { germanStates, findRegionBySlug } from "@/lib/regions";
-import type { StationAggregate } from "@/lib/regionStats";
-import regionStatsData from "@/data/region-stats.json";
+import type { AreaStats, GermanStatsMeta } from "@/lib/departmentStats";
+import stateStatsData from "@/data/de-state-stats.json";
+import stateStatsMetaData from "@/data/de-state-stats-meta.json";
 
-const regionStats = regionStatsData as Record<string, StationAggregate>;
+const stateStats = stateStatsData as Record<string, AreaStats>;
+const stateStatsMeta = stateStatsMetaData as GermanStatsMeta;
 
 export async function generateStaticParams() {
   return germanStates.map((r) => ({ bundesland: r.slug }));
@@ -46,7 +48,13 @@ export default async function GermanyRegionPage({
   const t = await getTranslations({ locale, namespace: "GermanyRegionPage" });
   const tNav = await getTranslations({ locale, namespace: "Nav" });
 
-  const stats: StationAggregate | null = regionStats[region.slug] ?? null;
+  // Generated offline from the Bundesnetzagentur register by
+  // `scripts/generate_de_data.py` (`npm run generate:de`).
+  const stats: AreaStats | null = stateStats[region.slug] ?? null;
+  const formatNumber = (n: number) => new Intl.NumberFormat(locale).format(n);
+  const dataDate = new Intl.DateTimeFormat(locale, { dateStyle: "long" }).format(
+    new Date(stateStatsMeta.registerDate)
+  );
   const path = `/bornes-recharge/de/${region.slug}`;
   const centerLat = (region.bbox.south + region.bbox.north) / 2;
   const centerLon = (region.bbox.west + region.bbox.east) / 2;
@@ -134,12 +142,22 @@ export default async function GermanyRegionPage({
 
       <p className="mt-4 text-ink-600">
         {stats
-          ? t("introWithStats", { name: region.name, total: stats.total })
+          ? t("introWithStats", {
+              name: region.name,
+              points: formatNumber(stats.points),
+              stations: formatNumber(stats.stations),
+              date: dataDate,
+            })
           : t("introFallback", { name: region.name })}
       </p>
 
-      {stats && stats.fastCount > 0 && (
-        <p className="mt-2 text-ink-600">{t("fastCountLabel", { fastCount: stats.fastCount })}</p>
+      {stats && stats.fastPoints > 0 && (
+        <p className="mt-2 text-ink-600">
+          {t("fastCountLabel", {
+            fastCount: formatNumber(stats.fastPoints),
+            share: Math.round((stats.fastPoints / stats.points) * 100),
+          })}
+        </p>
       )}
 
       <div className="mt-6 rounded-2xl border border-line bg-card p-6">
@@ -202,7 +220,17 @@ export default async function GermanyRegionPage({
         <p className="mt-2 text-ink-600">{t("faq3Answer", { name: region.name })}</p>
       </details>
 
-      <p className="mt-10 text-xs text-ink-400">{t("sourceNote")}</p>
+      <p className="mt-10 text-xs text-ink-400">
+        {t("sourceNote", { date: dataDate })}{" "}
+        <a
+          href={stateStatsMeta.sourceUrl}
+          className="underline"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Bundesnetzagentur.de
+        </a>
+      </p>
 
       <Link href="/bornes-recharge" className="mt-2 inline-block text-sm font-semibold text-green-700 underline">
         {t("backToIndex")}

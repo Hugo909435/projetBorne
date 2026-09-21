@@ -1,0 +1,17 @@
+{
+  "source": "Base nationale des IRVE (transport.data.gouv.fr, consolidation dedoublonnee, beta)",
+  "sourceUrl": "https://www.data.gouv.fr/datasets/beta-bases-nationales-des-points-de-recharge-pour-vehicules-electriques-en-france-irve",
+  "license": "Licence Ouverte 2.0",
+  "generatedAt": "2026-09-21",
+  "fastThresholdKw": 50,
+  "nationalPublicPoints": 148386,
+  "nationalPublicStations": 44271,
+  "metropolitanPublicPoints": 147261,
+  "metropolitanPublicStations": 43728,
+  "unassignedPublicPoints": 1125,
+  "assignedViaPostalCode": 128640,
+  "assignedViaInseeFallback": 18621,
+  "postalCodeOverrodeInsee": 1306,
+  "mapStations": 44203,
+  "mapStationsSkippedBadCoordinates": 68
+}

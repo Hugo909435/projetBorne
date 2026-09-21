@@ -1,0 +1,758 @@
+{
+  "baden-wurttemberg": {
+    "stations": 11394,
+    "points": 35200,
+    "fastPoints": 7462,
+    "connectorBreakdown": [
+      {
+        "name": "Type 2",
+        "count": 29277
+      },
+      {
+        "name": "CCS Combo",
+        "count": 6300
+      },
+      {
+        "name": "Type E/F (Schuko)",
+        "count": 2007
+      },
+      {
+        "name": "CHAdeMO",
+        "count": 359
+      }
+    ],
+    "topTowns": [
+      {
+        "name": "Stuttgart",
+        "count": 1408
+      },
+      {
+        "name": "Sindelfingen",
+        "count": 464
+      },
+      {
+        "name": "Mannheim",
+        "count": 232
+      },
+      {
+        "name": "Karlsruhe",
+        "count": 177
+      },
+      {
+        "name": "Freiburg im Breisgau",
+        "count": 176
+      },
+      {
+        "name": "Heidelberg",
+        "count": 156
+      }
+    ]
+  },
+  "bayern": {
+    "stations": 13275,
+    "points": 39819,
+    "fastPoints": 11492,
+    "connectorBreakdown": [
+      {
+        "name": "Type 2",
+        "count": 29953
+      },
+      {
+        "name": "CCS Combo",
+        "count": 10488
+      },
+      {
+        "name": "CHAdeMO",
+        "count": 489
+      },
+      {
+        "name": "Type E/F (Schuko)",
+        "count": 297
+      }
+    ],
+    "topTowns": [
+      {
+        "name": "München",
+        "count": 1135
+      },
+      {
+        "name": "Regensburg",
+        "count": 420
+      },
+      {
+        "name": "Nürnberg",
+        "count": 418
+      },
+      {
+        "name": "Dingolfing",
+        "count": 220
+      },
+      {
+        "name": "Augsburg",
+        "count": 183
+      },
+      {
+        "name": "Ingolstadt",
+        "count": 171
+      }
+    ]
+  },
+  "berlin": {
+    "stations": 3638,
+    "points": 7561,
+    "fastPoints": 1350,
+    "connectorBreakdown": [
+      {
+        "name": "Type 2",
+        "count": 6462
+      },
+      {
+        "name": "CCS Combo",
+        "count": 1225
+      },
+      {
+        "name": "CHAdeMO",
+        "count": 110
+      },
+      {
+        "name": "Type E/F (Schuko)",
+        "count": 3
+      }
+    ],
+    "topTowns": [
+      {
+        "name": "Berlin",
+        "count": 3634
+      },
+      {
+        "name": "Berlin Osterpreussen",
+        "count": 1
+      },
+      {
+        "name": "Berlin-Neukölln",
+        "count": 1
+      },
+      {
+        "name": "Berlin-Spandau",
+        "count": 1
+      },
+      {
+        "name": "Berlin-Weissensee",
+        "count": 1
+      }
+    ]
+  },
+  "brandenburg": {
+    "stations": 1730,
+    "points": 5002,
+    "fastPoints": 1909,
+    "connectorBreakdown": [
+      {
+        "name": "Type 2",
+        "count": 3323
+      },
+      {
+        "name": "CCS Combo",
+        "count": 1760
+      },
+      {
+        "name": "CHAdeMO",
+        "count": 118
+      },
+      {
+        "name": "Type E/F (Schuko)",
+        "count": 11
+      }
+    ],
+    "topTowns": [
+      {
+        "name": "Potsdam",
+        "count": 100
+      },
+      {
+        "name": "Cottbus",
+        "count": 67
+      },
+      {
+        "name": "Frankfurt",
+        "count": 53
+      },
+      {
+        "name": "Schwedt /Oder",
+        "count": 47
+      },
+      {
+        "name": "Eberswalde",
+        "count": 42
+      },
+      {
+        "name": "Oranienburg",
+        "count": 35
+      }
+    ]
+  },
+  "bremen": {
+    "stations": 521,
+    "points": 1584,
+    "fastPoints": 470,
+    "connectorBreakdown": [
+      {
+        "name": "Type 2",
+        "count": 1240
+      },
+      {
+        "name": "CCS Combo",
+        "count": 348
+      },
+      {
+        "name": "CHAdeMO",
+        "count": 19
+      }
+    ],
+    "topTowns": [
+      {
+        "name": "Bremen",
+        "count": 454
+      },
+      {
+        "name": "Bremerhaven",
+        "count": 66
+      },
+      {
+        "name": "Waldkirch",
+        "count": 1
+      }
+    ]
+  },
+  "hamburg": {
+    "stations": 2038,
+    "points": 5976,
+    "fastPoints": 983,
+    "connectorBreakdown": [
+      {
+        "name": "Type 2",
+        "count": 5087
+      },
+      {
+        "name": "CCS Combo",
+        "count": 932
+      },
+      {
+        "name": "CHAdeMO",
+        "count": 61
+      },
+      {
+        "name": "Type E/F (Schuko)",
+        "count": 40
+      }
+    ],
+    "topTowns": [
+      {
+        "name": "Hamburg",
+        "count": 2035
+      },
+      {
+        "name": "Hamburg-Duvenstedt",
+        "count": 1
+      },
+      {
+        "name": "Hamburg/ Moorfleet",
+        "count": 1
+      },
+      {
+        "name": "Wendlingen am Neckar",
+        "count": 1
+      }
+    ]
+  },
+  "hessen": {
+    "stations": 5046,
+    "points": 16105,
+    "fastPoints": 4913,
+    "connectorBreakdown": [
+      {
+        "name": "Type 2",
+        "count": 12182
+      },
+      {
+        "name": "CCS Combo",
+        "count": 4396
+      },
+      {
+        "name": "Type E/F (Schuko)",
+        "count": 267
+      },
+      {
+        "name": "CHAdeMO",
+        "count": 204
+      }
+    ],
+    "topTowns": [
+      {
+        "name": "Frankfurt am Main",
+        "count": 353
+      },
+      {
+        "name": "Wiesbaden",
+        "count": 297
+      },
+      {
+        "name": "Kassel",
+        "count": 183
+      },
+      {
+        "name": "Rüsselsheim am Main",
+        "count": 176
+      },
+      {
+        "name": "Darmstadt",
+        "count": 138
+      },
+      {
+        "name": "Baunatal",
+        "count": 95
+      }
+    ]
+  },
+  "mecklenburg-vorpommern": {
+    "stations": 1231,
+    "points": 3222,
+    "fastPoints": 1348,
+    "connectorBreakdown": [
+      {
+        "name": "Type 2",
+        "count": 2017
+      },
+      {
+        "name": "CCS Combo",
+        "count": 1265
+      },
+      {
+        "name": "CHAdeMO",
+        "count": 85
+      },
+      {
+        "name": "Type E/F (Schuko)",
+        "count": 34
+      }
+    ],
+    "topTowns": [
+      {
+        "name": "Rostock",
+        "count": 137
+      },
+      {
+        "name": "Binz Prora",
+        "count": 80
+      },
+      {
+        "name": "Schwerin",
+        "count": 67
+      },
+      {
+        "name": "Stralsund",
+        "count": 64
+      },
+      {
+        "name": "Neubrandenburg",
+        "count": 45
+      },
+      {
+        "name": "Wismar",
+        "count": 33
+      }
+    ]
+  },
+  "niedersachsen": {
+    "stations": 7781,
+    "points": 20783,
+    "fastPoints": 7376,
+    "connectorBreakdown": [
+      {
+        "name": "Type 2",
+        "count": 14264
+      },
+      {
+        "name": "CCS Combo",
+        "count": 6772
+      },
+      {
+        "name": "CHAdeMO",
+        "count": 302
+      },
+      {
+        "name": "Type E/F (Schuko)",
+        "count": 193
+      }
+    ],
+    "topTowns": [
+      {
+        "name": "Hannover",
+        "count": 883
+      },
+      {
+        "name": "Braunschweig",
+        "count": 377
+      },
+      {
+        "name": "Wolfsburg",
+        "count": 359
+      },
+      {
+        "name": "Osnabrück",
+        "count": 176
+      },
+      {
+        "name": "Salzgitter",
+        "count": 153
+      },
+      {
+        "name": "Göttingen",
+        "count": 152
+      }
+    ]
+  },
+  "nordrhein-westfalen": {
+    "stations": 15345,
+    "points": 41197,
+    "fastPoints": 11370,
+    "connectorBreakdown": [
+      {
+        "name": "Type 2",
+        "count": 31663
+      },
+      {
+        "name": "CCS Combo",
+        "count": 10335
+      },
+      {
+        "name": "CHAdeMO",
+        "count": 649
+      },
+      {
+        "name": "Type E/F (Schuko)",
+        "count": 539
+      }
+    ],
+    "topTowns": [
+      {
+        "name": "Köln",
+        "count": 755
+      },
+      {
+        "name": "Düsseldorf",
+        "count": 751
+      },
+      {
+        "name": "Dortmund",
+        "count": 635
+      },
+      {
+        "name": "Essen",
+        "count": 484
+      },
+      {
+        "name": "Duisburg",
+        "count": 399
+      },
+      {
+        "name": "Bonn",
+        "count": 394
+      }
+    ]
+  },
+  "rheinland-pfalz": {
+    "stations": 3017,
+    "points": 8021,
+    "fastPoints": 3351,
+    "connectorBreakdown": [
+      {
+        "name": "Type 2",
+        "count": 5146
+      },
+      {
+        "name": "CCS Combo",
+        "count": 2994
+      },
+      {
+        "name": "CHAdeMO",
+        "count": 227
+      },
+      {
+        "name": "Type E/F (Schuko)",
+        "count": 61
+      }
+    ],
+    "topTowns": [
+      {
+        "name": "Mainz",
+        "count": 194
+      },
+      {
+        "name": "Koblenz",
+        "count": 124
+      },
+      {
+        "name": "Kaiserslautern",
+        "count": 118
+      },
+      {
+        "name": "Ludwigshafen am Rhein",
+        "count": 82
+      },
+      {
+        "name": "Trier",
+        "count": 81
+      },
+      {
+        "name": "Bad Kreuznach",
+        "count": 59
+      }
+    ]
+  },
+  "saarland": {
+    "stations": 584,
+    "points": 1509,
+    "fastPoints": 540,
+    "connectorBreakdown": [
+      {
+        "name": "Type 2",
+        "count": 1173
+      },
+      {
+        "name": "CCS Combo",
+        "count": 463
+      },
+      {
+        "name": "CHAdeMO",
+        "count": 26
+      },
+      {
+        "name": "Type E/F (Schuko)",
+        "count": 5
+      }
+    ],
+    "topTowns": [
+      {
+        "name": "Saarbrücken",
+        "count": 90
+      },
+      {
+        "name": "Völklingen",
+        "count": 40
+      },
+      {
+        "name": "Homburg",
+        "count": 38
+      },
+      {
+        "name": "Saarlouis",
+        "count": 36
+      },
+      {
+        "name": "St. Ingbert",
+        "count": 33
+      },
+      {
+        "name": "Merzig",
+        "count": 25
+      }
+    ]
+  },
+  "sachsen": {
+    "stations": 2791,
+    "points": 7126,
+    "fastPoints": 2561,
+    "connectorBreakdown": [
+      {
+        "name": "Type 2",
+        "count": 4981
+      },
+      {
+        "name": "CCS Combo",
+        "count": 2270
+      },
+      {
+        "name": "CHAdeMO",
+        "count": 161
+      },
+      {
+        "name": "Type E/F (Schuko)",
+        "count": 139
+      }
+    ],
+    "topTowns": [
+      {
+        "name": "Leipzig",
+        "count": 542
+      },
+      {
+        "name": "Dresden",
+        "count": 350
+      },
+      {
+        "name": "Chemnitz",
+        "count": 188
+      },
+      {
+        "name": "Zwickau",
+        "count": 178
+      },
+      {
+        "name": "Kamenz",
+        "count": 46
+      },
+      {
+        "name": "Pirna",
+        "count": 45
+      }
+    ]
+  },
+  "sachsen-anhalt": {
+    "stations": 1314,
+    "points": 3739,
+    "fastPoints": 1650,
+    "connectorBreakdown": [
+      {
+        "name": "Type 2",
+        "count": 2268
+      },
+      {
+        "name": "CCS Combo",
+        "count": 1520
+      },
+      {
+        "name": "CHAdeMO",
+        "count": 119
+      },
+      {
+        "name": "Type E/F (Schuko)",
+        "count": 21
+      }
+    ],
+    "topTowns": [
+      {
+        "name": "Magdeburg",
+        "count": 137
+      },
+      {
+        "name": "Halle",
+        "count": 92
+      },
+      {
+        "name": "Stendal",
+        "count": 49
+      },
+      {
+        "name": "Dessau-Roßlau",
+        "count": 46
+      },
+      {
+        "name": "Wernigerode",
+        "count": 43
+      },
+      {
+        "name": "Köthen",
+        "count": 40
+      }
+    ]
+  },
+  "schleswig-holstein": {
+    "stations": 2865,
+    "points": 8037,
+    "fastPoints": 2440,
+    "connectorBreakdown": [
+      {
+        "name": "Type 2",
+        "count": 6039
+      },
+      {
+        "name": "CCS Combo",
+        "count": 2275
+      },
+      {
+        "name": "Type E/F (Schuko)",
+        "count": 173
+      },
+      {
+        "name": "CHAdeMO",
+        "count": 145
+      }
+    ],
+    "topTowns": [
+      {
+        "name": "Lübeck",
+        "count": 197
+      },
+      {
+        "name": "Kiel",
+        "count": 135
+      },
+      {
+        "name": "Flensburg",
+        "count": 114
+      },
+      {
+        "name": "Neumünster",
+        "count": 87
+      },
+      {
+        "name": "Elmshorn",
+        "count": 51
+      },
+      {
+        "name": "Norderstedt",
+        "count": 50
+      }
+    ]
+  },
+  "thuringen": {
+    "stations": 1398,
+    "points": 4211,
+    "fastPoints": 1810,
+    "connectorBreakdown": [
+      {
+        "name": "Type 2",
+        "count": 2607
+      },
+      {
+        "name": "CCS Combo",
+        "count": 1648
+      },
+      {
+        "name": "CHAdeMO",
+        "count": 117
+      },
+      {
+        "name": "Type E/F (Schuko)",
+        "count": 81
+      }
+    ],
+    "topTowns": [
+      {
+        "name": "Erfurt",
+        "count": 136
+      },
+      {
+        "name": "Gera",
+        "count": 92
+      },
+      {
+        "name": "Jena",
+        "count": 66
+      },
+      {
+        "name": "Weimar",
+        "count": 57
+      },
+      {
+        "name": "Gotha",
+        "count": 46
+      },
+      {
+        "name": "Eisenach",
+        "count": 43
+      }
+    ]
+  }
+}
