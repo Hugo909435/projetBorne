@@ -91,32 +91,21 @@ Pour que le site survive à un redémarrage, passez par un gestionnaire de
 processus (`pm2 start server.js --name bornes`) et mettez Nginx devant pour le
 HTTPS et le domaine.
 
-### Déploiement automatique (GitHub Actions → FTP → hPanel Node.js)
+### Mise à jour du site
 
-Un push sur `main` déclenche `.github/workflows/deploy.yml` :
+Il n'y a pas de déploiement automatique : un push sur `main` ne met pas le site
+à jour tout seul. Pour publier, faire `npm run build && npm run package` puis
+téléverser le contenu de `deploy/` sur le serveur (voir ci-dessus).
 
-1. `npm ci && npm run build && npm run package` (même étapes qu'en manuel).
-2. Le contenu de `deploy/` est envoyé en FTP vers le dossier de l'app Node.js
-   configurée dans hPanel (action
-   [`SamKirkland/FTP-Deploy-Action`](https://github.com/SamKirkland/FTP-Deploy-Action)).
-   Le `.env` du serveur n'est jamais écrasé.
-3. `npm run package` écrit `deploy/tmp/restart.txt` avec un horodatage à
-   chaque build : Passenger (le process manager derrière les apps Node.js
-   hPanel) surveille ce fichier et redémarre l'app dès que son contenu change.
+Construire sur une machine Linux (ou celle du serveur) plutôt que sous Windows :
+`sharp`, qui optimise les images, embarque un binaire propre à chaque système,
+et celui de Windows ne se charge pas sur un serveur Linux (le site marche, mais
+les images ne sont plus optimisées).
 
-**Mise en place initiale (une seule fois) :**
-
-- Dans hPanel, créez l'app Node.js (fichier de démarrage `server.js`,
-  version Node 20), notez le dossier racine qu'elle attend.
-- Sur le serveur, dans ce dossier racine, créez un `.env` avec `OCM_API_KEY`
-  (et `PORT`/`HOSTNAME` si besoin) — CI ne le touche jamais.
-- Dans GitHub, *Settings → Secrets and variables → Actions*, ajoutez :
-  - `FTP_SERVER` : hôte FTP (ex. `ftp://xxx.xxx.xxx.xxx` ou celui fourni par hPanel)
-  - `FTP_USERNAME` / `FTP_PASSWORD` : identifiants FTP hPanel
-  - `FTP_SERVER_DIR` : chemin absolu du dossier racine de l'app Node.js sur le serveur (avec un `/` final, ex. `/home/user/domains/ma-borne-electrique.com/app/`)
-
-Pour déclencher un déploiement sans push, utilisez l'onglet *Actions* du repo
-GitHub et lancez le workflow manuellement (`workflow_dispatch`).
+Sur le serveur, le fichier `.env` (avec `OCM_API_KEY`, et `PORT`/`HOSTNAME` si
+besoin) reste en place d'un déploiement à l'autre : ne pas le supprimer en
+remplaçant les fichiers. Passenger (hPanel) redémarre l'app quand
+`tmp/restart.txt` change, ce que `npm run package` écrit à chaque fois.
 
 ### Hébergement mutualisé Hostinger (fichiers statiques uniquement)
 
