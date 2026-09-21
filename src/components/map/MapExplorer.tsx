@@ -132,7 +132,12 @@ function ClusterLayer({
         return 45;
       },
       chunkedLoading: true,
-      chunkDelay: 20,
+      // The plugin builds its clusters in slices and only hands the thread back
+      // between slices. Its default slice is 200 ms, which the browser feels as
+      // a freeze (and a phone, several times slower, as a much longer one).
+      // Short slices add up to the same work but keep the map draggable.
+      chunkInterval: 25,
+      chunkDelay: 25,
       chunkProgress: onChunkProgress,
       iconCreateFunction: (cluster: { getChildCount: () => number }) => {
         const count = cluster.getChildCount();
@@ -474,7 +479,12 @@ function TileLoader({
     refresh();
 
     const seed = seedRef.current;
-    if (seed && !store.has(seed.tile.key) && !queueRef.current.some((t) => t.key === seed.tile.key)) {
+    if (
+      seed &&
+      !store.has(seed.tile.key) &&
+      !activeRef.current.has(seed.tile.key) &&
+      !queueRef.current.some((t) => t.key === seed.tile.key)
+    ) {
       keepRef.current.add(seed.tile.key);
       queueRef.current.push(seed.tile);
     }
