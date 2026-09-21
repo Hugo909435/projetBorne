@@ -4,8 +4,7 @@ import { useCallback, useEffect, useRef, useState } from "react";
 import { MapContainer, TileLayer, ZoomControl, useMap, useMapEvents } from "react-leaflet";
 import { useTranslations, useLocale } from "next-intl";
 import L from "leaflet";
-import "leaflet.markercluster";
-import "leaflet.markercluster/dist/MarkerCluster.css";
+import Supercluster from "supercluster";
 import type { Station } from "@/lib/openChargeMap";
 import { StationStore } from "@/lib/stationStore";
 import StationSidePanel from "@/components/map/StationSidePanel";
@@ -34,143 +33,215 @@ const PIN_SVG = (fill: string, ring: string) => `
 
 const pinIcon = L.divIcon({
   html: PIN_SVG("#1f5c3a", "#f7f6ef"),
-  className: "bornes-pin",
+  className: "bornes-pin bornes-appear",
   iconSize: [30, 38],
   iconAnchor: [15, 36],
 });
 
-type MarkerClusterGroupLike = L.LayerGroup & {
-  addLayers: (layers: L.Layer[]) => void;
-};
+/** Cluster radius in screen pixels: wide enough that neighbouring bubbles never overlap. */
+const CLUSTER_RADIUS_PX = 70;
+/** Above this zoom every station is drawn on its own. */
+const CLUSTER_MAX_ZOOM = 17;
+/** Markers are kept this far beyond the visible area, so a pan never shows bare edges. */
+const RENDER_PAD = 0.3;
+/**
+ * After the stations change, wait this long before re-indexing so a burst of
+ * arriving tiles costs one rebuild instead of one per tile.
+ */
+const REINDEX_DELAY_MS = 120;
+/** Must match the fade-out duration of `.bornes-leaving` in globals.css. */
+const LEAVE_MS = 220;
+
+type StationPoint = { id: number };
+
+function clusterIcon(count: number): L.DivIcon {
+  const size = count > 2000 ? 64 : count > 500 ? 56 : count > 50 ? 46 : count > 10 ? 38 : 32;
+  const label = count > 999 ? `${Math.round(count / 100) / 10}k` : String(count);
+  return L.divIcon({
+    html: `<div class="bornes-cluster" style="width:${size}px;height:${size}px">${label}</div>`,
+    className: "bornes-appear",
+    iconSize: [size, size],
+  });
+}
 
 /**
- * Renders the accumulated stations into a single, long-lived cluster group.
+ * Stations that share exact coordinates (several operators in one car park)
+ * would sit on top of each other and only the top one could be clicked. Each
+ * extra one is nudged a few metres along a small spiral, for display only.
+ */
+function spread(lat: number, lon: number, n: number): [number, number] {
+  const ring = Math.ceil(n / 6);
+  const angle = (n * 60 * Math.PI) / 180;
+  const distance = ring * 0.00003;
+  return [lat + distance * Math.sin(angle), lon + (distance * Math.cos(angle)) / Math.cos((lat * Math.PI) / 180)];
+}
+
+type Shown = { marker: L.Marker; clusterId?: number };
+
+/**
+ * Draws the accumulated stations as clusters and pins.
  *
- * Markers are added incrementally: a station that is already on the map is
- * never removed and re-added, which is what used to make pins flicker away on
- * every pan. The group is only rebuilt from scratch when `generation` changes,
- * i.e. when the store evicted tiles.
+ * Every station is indexed once (supercluster, a spatial index that answers
+ * "what clusters are in this box at this zoom" in about a millisecond). On each
+ * move the layer asks for exactly what should be visible and compares it with
+ * what is already drawn: markers that are still wanted are left untouched and
+ * only the differences are added or removed. That comparison is what keeps the
+ * map from blinking: the previous cluster plugin rebuilt the visible layer
+ * whenever stations were added, so nearly every pin was destroyed and redrawn
+ * on the first pan after new data arrived.
  */
 function ClusterLayer({
   stations,
-  generation,
   onSelect,
 }: {
   stations: Station[];
-  generation: number;
   onSelect: (station: Station) => void;
 }) {
   const map = useMap();
-  // Read inside the (possibly stale) closures below via a ref, so a marker
-  // created in an earlier render always calls the latest callback.
+  // Read inside long-lived closures via a ref, so a marker created in an earlier
+  // render always calls the latest callback.
   const onSelectRef = useRef(onSelect);
   useEffect(() => {
     onSelectRef.current = onSelect;
   });
 
-  const groupRef = useRef<MarkerClusterGroupLike | null>(null);
-  const markersRef = useRef(new Map<number, L.Marker>());
-  // chunkedLoading spreads addLayers() over several setTimeout ticks. Starting
-  // a second addLayers() (or clearing the group) while the first is still
-  // running leaves the interrupted continuation writing into a group whose
-  // state has moved on: the plugin throws, and markers handed to the aborted
-  // build silently never appear. So exactly one build runs at a time, and any
-  // update arriving mid-build is applied the moment that build reports done.
-  const busyRef = useRef(false);
-  const desiredRef = useRef<{ stations: Station[]; generation: number }>({
-    stations: [],
-    generation,
-  });
-  const appliedGenerationRef = useRef(generation);
+  const indexRef = useRef<Supercluster<StationPoint> | null>(null);
+  const stationsRef = useRef(new Map<number, Station>());
+  const layerRef = useRef<L.LayerGroup | null>(null);
+  const shownRef = useRef(new Map<string, Shown>());
+  const frameRef = useRef<number | null>(null);
 
-  const sync = useCallback(() => {
-    const group = groupRef.current;
-    if (!group || busyRef.current) return;
+  const render = useCallback(() => {
+    const index = indexRef.current;
+    const layer = layerRef.current;
+    if (!index || !layer) return;
 
-    const desired = desiredRef.current;
-    if (appliedGenerationRef.current !== desired.generation) {
-      appliedGenerationRef.current = desired.generation;
-      group.clearLayers();
-      markersRef.current.clear();
+    const bounds = map.getBounds().pad(RENDER_PAD);
+    const zoom = Math.max(0, Math.min(Math.round(map.getZoom()), CLUSTER_MAX_ZOOM + 1));
+    const features = index.getClusters(
+      [bounds.getWest(), bounds.getSouth(), bounds.getEast(), bounds.getNorth()],
+      zoom
+    );
+
+    const shown = shownRef.current;
+    const wanted = new Set<string>();
+
+    for (const feature of features) {
+      const [lon, lat] = feature.geometry.coordinates;
+      const props = feature.properties;
+
+      if ("cluster" in props && props.cluster) {
+        // Position and size identify a cluster, so the same group of stations
+        // keeps its marker even though the index numbers its clusters afresh
+        // every time it is rebuilt.
+        const key = `c:${lat.toFixed(4)}:${lon.toFixed(4)}:${props.point_count}`;
+        wanted.add(key);
+        const existing = shown.get(key);
+        if (existing) {
+          existing.clusterId = props.cluster_id;
+          continue;
+        }
+        const marker = L.marker([lat, lon], { icon: clusterIcon(props.point_count) });
+        const entry: Shown = { marker, clusterId: props.cluster_id };
+        marker.on("click", () => {
+          let target = map.getZoom() + 2;
+          try {
+            if (entry.clusterId != null) target = indexRef.current!.getClusterExpansionZoom(entry.clusterId);
+          } catch {
+            /* the index was rebuilt since: a two-level zoom is a fine fallback */
+          }
+          map.setView([lat, lon], Math.min(target, map.getMaxZoom()));
+        });
+        layer.addLayer(marker);
+        shown.set(key, entry);
+      } else {
+        const key = `p:${props.id}`;
+        wanted.add(key);
+        if (shown.has(key)) continue;
+        const marker = L.marker([lat, lon], { icon: pinIcon });
+        marker.on("click", () => {
+          const station = stationsRef.current.get(props.id);
+          if (station) onSelectRef.current(station);
+        });
+        layer.addLayer(marker);
+        shown.set(key, { marker });
+      }
     }
 
-    const markers = markersRef.current;
-    const fresh: L.Marker[] = [];
-    for (const station of desired.stations) {
-      if (markers.has(station.id)) continue;
-      const marker = L.marker([station.lat, station.lon], { icon: pinIcon });
-      marker.on("click", () => onSelectRef.current(station));
-      markers.set(station.id, marker);
-      fresh.push(marker);
+    for (const [key, entry] of shown) {
+      if (wanted.has(key)) continue;
+      shown.delete(key);
+      // Fade out instead of vanishing: when a cluster is replaced by finer ones
+      // (or by the same area's complete data) the two overlap for a moment, so
+      // the swap reads as a cross-fade rather than a blink.
+      const element = entry.marker.getElement();
+      if (element) {
+        element.classList.add("bornes-leaving");
+        setTimeout(() => layer.removeLayer(entry.marker), LEAVE_MS);
+      } else {
+        layer.removeLayer(entry.marker);
+      }
     }
+  }, [map]);
 
-    if (!fresh.length) return;
-    busyRef.current = true;
-    group.addLayers(fresh);
-  }, []);
+  // Throttled to one pass per frame: moving the map fires `move` continuously.
+  const schedule = useCallback(() => {
+    if (frameRef.current != null) return;
+    frameRef.current = requestAnimationFrame(() => {
+      frameRef.current = null;
+      render();
+    });
+  }, [render]);
 
   useEffect(() => {
-    const onChunkProgress = (processed: number, total: number) => {
-      if (processed < total) return;
-      busyRef.current = false;
-      // Escape the plugin's own call stack before starting the next build.
-      setTimeout(sync, 0);
-    };
-
-    const group = (
-      L as unknown as { markerClusterGroup: (opts: unknown) => MarkerClusterGroupLike }
-    ).markerClusterGroup({
-      showCoverageOnHover: false,
-      spiderfyOnMaxZoom: true,
-      removeOutsideVisibleBounds: true,
-      // Group more aggressively when zoomed out (fewer, bigger clusters); still
-      // group at city zoom, only settle into individual pins once you're close.
-      maxClusterRadius: (zoom: number) => {
-        if (zoom <= 6) return 140;
-        if (zoom <= 9) return 100;
-        if (zoom <= 12) return 70;
-        return 45;
-      },
-      chunkedLoading: true,
-      // The plugin builds its clusters in slices and only hands the thread back
-      // between slices. Its default slice is 200 ms, which the browser feels as
-      // a freeze (and a phone, several times slower, as a much longer one).
-      // Short slices add up to the same work but keep the map draggable.
-      chunkInterval: 25,
-      chunkDelay: 25,
-      chunkProgress: onChunkProgress,
-      iconCreateFunction: (cluster: { getChildCount: () => number }) => {
-        const count = cluster.getChildCount();
-        const size =
-          count > 2000 ? 64 : count > 500 ? 56 : count > 50 ? 46 : count > 10 ? 38 : 32;
-        const label = count > 999 ? `${Math.round(count / 100) / 10}k` : String(count);
-        return L.divIcon({
-          html: `<div class="bornes-cluster" style="width:${size}px;height:${size}px">${label}</div>`,
-          className: "",
-          iconSize: [size, size],
-        });
-      },
-    });
-
-    groupRef.current = group;
-    const markers = markersRef.current;
-    map.addLayer(group);
-    sync();
+    const layer = L.layerGroup().addTo(map);
+    layerRef.current = layer;
+    const shown = shownRef.current;
+    map.on("move zoomend", schedule);
+    schedule();
 
     return () => {
-      map.removeLayer(group);
-      groupRef.current = null;
-      markers.clear();
-      busyRef.current = false;
+      map.off("move zoomend", schedule);
+      if (frameRef.current != null) cancelAnimationFrame(frameRef.current);
+      frameRef.current = null;
+      map.removeLayer(layer);
+      layerRef.current = null;
+      shown.clear();
     };
-    // Created once per map instance: station updates are applied to this same
-    // persistent group in the effect below, not by recreating it.
-  }, [map, sync]);
+  }, [map, schedule]);
 
   useEffect(() => {
-    desiredRef.current = { stations, generation };
-    sync();
-  }, [stations, generation, sync]);
+    const rebuild = () => {
+      const byId = new Map<number, Station>();
+      const seen = new Map<string, number>();
+      const points: GeoJSON.Feature<GeoJSON.Point, StationPoint>[] = [];
+      for (const station of stations) {
+        byId.set(station.id, station);
+        const spot = `${station.lat}:${station.lon}`;
+        const n = seen.get(spot) ?? 0;
+        seen.set(spot, n + 1);
+        const [lat, lon] = n === 0 ? [station.lat, station.lon] : spread(station.lat, station.lon, n);
+        points.push({
+          type: "Feature",
+          properties: { id: station.id },
+          geometry: { type: "Point", coordinates: [lon, lat] },
+        });
+      }
+      const index = new Supercluster<StationPoint>({
+        radius: CLUSTER_RADIUS_PX,
+        maxZoom: CLUSTER_MAX_ZOOM,
+        minPoints: 2,
+      });
+      index.load(points);
+      indexRef.current = index;
+      stationsRef.current = byId;
+      render();
+    };
+
+    // The first build shows something straight away; later ones batch up.
+    const timer = setTimeout(rebuild, indexRef.current ? REINDEX_DELAY_MS : 0);
+    return () => clearTimeout(timer);
+  }, [stations, render]);
 
   return null;
 }
@@ -545,9 +616,6 @@ export default function MapExplorer({
   const [store] = useState(() => new StationStore());
 
   const [stations, setStations] = useState<Station[]>([]);
-  // Bumped whenever the store evicted tiles, telling the cluster layer that an
-  // incremental add is no longer enough and it has to rebuild.
-  const [generation, setGeneration] = useState(0);
   const [flyTarget, setFlyTarget] = useState<{ lat: number; lon: number; zoom: number } | null>(null);
   const [viewportLoading, setViewportLoading] = useState(true);
   const [tooFarOut, setTooFarOut] = useState(false);
@@ -559,13 +627,11 @@ export default function MapExplorer({
   const loading = source.kind === "point" ? settledPointKey !== pointKey : viewportLoading;
   const [selected, setSelected] = useState<Station | null>(null);
 
-  const handleChange = useCallback(
-    (rebuilt: boolean) => {
-      setStations(store.list());
-      if (rebuilt) setGeneration((value) => value + 1);
-    },
-    [store]
-  );
+  // The cluster layer re-indexes whenever the list changes, so it does not
+  // matter whether tiles were only added or some were evicted.
+  const handleChange = useCallback(() => {
+    setStations(store.list());
+  }, [store]);
 
   const handleLoadState = useCallback((state: LoadState) => {
     setViewportLoading(state.loading);
@@ -581,7 +647,7 @@ export default function MapExplorer({
       .then((data: { stations?: Station[] }) => {
         store.pin(key);
         store.put(key, data.stations ?? []);
-        handleChange(false);
+        handleChange();
       })
       .catch(() => {})
       .finally(() => {
@@ -651,7 +717,7 @@ export default function MapExplorer({
           {/* moved off the default top-left so it never fights the search bar
               for space on narrow screens */}
           <ZoomControl position="bottomright" />
-          <ClusterLayer stations={stations} generation={generation} onSelect={setSelected} />
+          <ClusterLayer stations={stations} onSelect={setSelected} />
           <FlyTo target={flyTarget} />
           <UserLocationMarker location={userLocation} />
           {source.kind === "viewport" && (

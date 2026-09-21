@@ -9,7 +9,7 @@ import type { CityEntry } from "@/lib/cities";
 import { countryByCode, localeToCountryCode } from "@/lib/countries";
 
 /**
- * The Leaflet/react-leaflet/leaflet.markercluster bundle is ~200KB of JS
+ * The Leaflet/react-leaflet/supercluster bundle is ~200KB of JS
  * (before gzip) - fetching, parsing and running it right on mount was
  * dominating Total Blocking Time even though the map sits just below the
  * fold on mobile (a few px past the initial viewport). Deferring the mount
