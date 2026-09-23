@@ -10,6 +10,7 @@ export default function Header() {
   const navLinks = [
     { href: "/#carte", label: t("map") },
     { href: "/bornes-recharge", label: t("departments") },
+    { href: "/recharge", label: t("models") },
     { href: "/blog", label: t("blog") },
     { href: "/a-propos", label: t("about") },
   ];

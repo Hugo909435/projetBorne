@@ -1,0 +1,62 @@
+{
+  "generatedAt": "2026-09-23",
+  "source": "Open Charge Map",
+  "sourceUrl": "https://openchargemap.org/",
+  "levelId": 3,
+  "countries": [
+    {
+      "countryCode": "FR",
+      "sample": 4798,
+      "outOfService": 103,
+      "warning": 13,
+      "outOfServiceRate": 2.1,
+      "recentlyVerified": 3085,
+      "capped": false
+    },
+    {
+      "countryCode": "DE",
+      "sample": 4183,
+      "outOfService": 43,
+      "warning": 11,
+      "outOfServiceRate": 1,
+      "recentlyVerified": 110,
+      "capped": false
+    },
+    {
+      "countryCode": "ES",
+      "sample": 7696,
+      "outOfService": 668,
+      "warning": 37,
+      "outOfServiceRate": 8.7,
+      "recentlyVerified": 4412,
+      "capped": false
+    },
+    {
+      "countryCode": "GB",
+      "sample": 4833,
+      "outOfService": 111,
+      "warning": 108,
+      "outOfServiceRate": 2.3,
+      "recentlyVerified": 311,
+      "capped": false
+    },
+    {
+      "countryCode": "BE",
+      "sample": 199,
+      "outOfService": 4,
+      "warning": 1,
+      "outOfServiceRate": 2,
+      "recentlyVerified": 28,
+      "capped": false
+    },
+    {
+      "countryCode": "CH",
+      "sample": 247,
+      "outOfService": 6,
+      "warning": 1,
+      "outOfServiceRate": 2.4,
+      "recentlyVerified": 21,
+      "capped": false
+    }
+  ]
+}

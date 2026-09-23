@@ -1,0 +1,392 @@
+{
+  "generatedAt": "2026-09-23",
+  "source": "Open Charge Map",
+  "sourceUrl": "https://openchargemap.org/",
+  "networks": {
+    "ionity": {
+      "countries": {
+        "FR": {
+          "stations": 178,
+          "fastStations": 178,
+          "maxPowerKw": 600
+        },
+        "DE": {
+          "stations": 144,
+          "fastStations": 141,
+          "maxPowerKw": 600
+        },
+        "ES": {
+          "stations": 49,
+          "fastStations": 49,
+          "maxPowerKw": 400
+        },
+        "GB": {
+          "stations": 30,
+          "fastStations": 30,
+          "maxPowerKw": 400
+        },
+        "BE": {
+          "stations": 13,
+          "fastStations": 13,
+          "maxPowerKw": 350
+        },
+        "CH": {
+          "stations": 15,
+          "fastStations": 15,
+          "maxPowerKw": 350
+        }
+      },
+      "connectors": [
+        "CCS (Type 2)",
+        "CHAdeMO",
+        "Type 2 (Tethered Connector)",
+        "Type 2 (Socket Only)"
+      ],
+      "total": 429,
+      "totalFast": 426
+    },
+    "fastned": {
+      "countries": {
+        "FR": {
+          "stations": 66,
+          "fastStations": 66,
+          "maxPowerKw": 400
+        },
+        "DE": {
+          "stations": 23,
+          "fastStations": 23,
+          "maxPowerKw": 300
+        },
+        "ES": {
+          "stations": 5,
+          "fastStations": 4,
+          "maxPowerKw": 400
+        },
+        "GB": {
+          "stations": 27,
+          "fastStations": 27,
+          "maxPowerKw": 400
+        },
+        "BE": {
+          "stations": 7,
+          "fastStations": 7,
+          "maxPowerKw": 400
+        },
+        "CH": {
+          "stations": 4,
+          "fastStations": 4,
+          "maxPowerKw": 300
+        }
+      },
+      "connectors": [
+        "CCS (Type 2)",
+        "CHAdeMO",
+        "Type 2 (Tethered Connector)",
+        "Type 2 (Socket Only)"
+      ],
+      "total": 132,
+      "totalFast": 131
+    },
+    "tesla-supercharger": {
+      "countries": {
+        "FR": {
+          "stations": 634,
+          "fastStations": 281,
+          "maxPowerKw": 500
+        },
+        "DE": {
+          "stations": 968,
+          "fastStations": 268,
+          "maxPowerKw": 250
+        },
+        "ES": {
+          "stations": 128,
+          "fastStations": 124,
+          "maxPowerKw": 250
+        },
+        "GB": {
+          "stations": 645,
+          "fastStations": 138,
+          "maxPowerKw": 300
+        },
+        "BE": {
+          "stations": 138,
+          "fastStations": 22,
+          "maxPowerKw": 250
+        },
+        "CH": {
+          "stations": 308,
+          "fastStations": 35,
+          "maxPowerKw": 250
+        }
+      },
+      "connectors": [
+        "Tesla (Model S/X)",
+        "CCS (Type 2)",
+        "NACS / Tesla Supercharger",
+        "Type 2 (Tethered Connector)"
+      ],
+      "total": 2821,
+      "totalFast": 868
+    },
+    "electra": {
+      "countries": {
+        "FR": {
+          "stations": 410,
+          "fastStations": 405,
+          "maxPowerKw": 600
+        },
+        "ES": {
+          "stations": 25,
+          "fastStations": 25,
+          "maxPowerKw": 600
+        },
+        "GB": {
+          "stations": 1,
+          "fastStations": 1,
+          "maxPowerKw": 300
+        },
+        "BE": {
+          "stations": 4,
+          "fastStations": 4,
+          "maxPowerKw": 400
+        },
+        "CH": {
+          "stations": 4,
+          "fastStations": 3,
+          "maxPowerKw": 300
+        }
+      },
+      "connectors": [
+        "CCS (Type 2)",
+        "Type 2 (Socket Only)",
+        "CHAdeMO"
+      ],
+      "total": 444,
+      "totalFast": 438
+    },
+    "allego": {
+      "countries": {
+        "FR": {
+          "stations": 320,
+          "fastStations": 320,
+          "maxPowerKw": 400
+        },
+        "DE": {
+          "stations": 547,
+          "fastStations": 273,
+          "maxPowerKw": 400
+        },
+        "ES": {
+          "stations": 77,
+          "fastStations": 76,
+          "maxPowerKw": 150
+        },
+        "GB": {
+          "stations": 25,
+          "fastStations": 24,
+          "maxPowerKw": 350
+        },
+        "BE": {
+          "stations": 164,
+          "fastStations": 27,
+          "maxPowerKw": 400
+        },
+        "CH": {
+          "stations": 1,
+          "fastStations": 1,
+          "maxPowerKw": 50
+        }
+      },
+      "connectors": [
+        "CCS (Type 2)",
+        "Type 2 (Socket Only)",
+        "CHAdeMO",
+        "Type 2 (Tethered Connector)"
+      ],
+      "total": 1134,
+      "totalFast": 721
+    },
+    "totalenergies": {
+      "countries": {
+        "FR": {
+          "stations": 289,
+          "fastStations": 286,
+          "maxPowerKw": 400
+        },
+        "DE": {
+          "stations": 7,
+          "fastStations": 6,
+          "maxPowerKw": 175
+        },
+        "ES": {
+          "stations": 279,
+          "fastStations": 229,
+          "maxPowerKw": 400
+        },
+        "GB": {
+          "stations": 1173,
+          "fastStations": 2,
+          "maxPowerKw": 50
+        },
+        "BE": {
+          "stations": 15,
+          "fastStations": 7,
+          "maxPowerKw": 175
+        }
+      },
+      "connectors": [
+        "Type 2 (Socket Only)",
+        "Type 1 (J1772)",
+        "CCS (Type 2)",
+        "CHAdeMO"
+      ],
+      "total": 1763,
+      "totalFast": 530
+    },
+    "shell-recharge": {
+      "countries": {
+        "FR": {
+          "stations": 8,
+          "fastStations": 1,
+          "maxPowerKw": 50
+        },
+        "DE": {
+          "stations": 834,
+          "fastStations": 28,
+          "maxPowerKw": 420
+        },
+        "GB": {
+          "stations": 5000,
+          "fastStations": 147,
+          "maxPowerKw": 300,
+          "capped": true
+        },
+        "BE": {
+          "stations": 27,
+          "fastStations": 1,
+          "maxPowerKw": 300
+        }
+      },
+      "connectors": [
+        "Type 2 (Socket Only)",
+        "CHAdeMO",
+        "CCS (Type 2)",
+        "Type 2 (Tethered Connector)"
+      ],
+      "total": 5869,
+      "totalFast": 177
+    },
+    "izivia": {
+      "countries": {
+        "FR": {
+          "stations": 1421,
+          "fastStations": 140,
+          "maxPowerKw": 380
+        }
+      },
+      "connectors": [
+        "CEE 7/4 - Schuko - Type F",
+        "Type 2 (Tethered Connector)",
+        "Type 2 (Socket Only)",
+        "CCS (Type 2)"
+      ],
+      "total": 1421,
+      "totalFast": 140
+    },
+    "enbw": {
+      "countries": {
+        "DE": {
+          "stations": 1295,
+          "fastStations": 524,
+          "maxPowerKw": 400
+        }
+      },
+      "connectors": [
+        "Type 2 (Socket Only)",
+        "CCS (Type 2)",
+        "CEE 7/4 - Schuko - Type F",
+        "CHAdeMO"
+      ],
+      "total": 1295,
+      "totalFast": 524
+    },
+    "zunder": {
+      "countries": {
+        "FR": {
+          "stations": 23,
+          "fastStations": 23,
+          "maxPowerKw": 560
+        },
+        "ES": {
+          "stations": 606,
+          "fastStations": 248,
+          "maxPowerKw": 480
+        }
+      },
+      "connectors": [
+        "Type 2 (Socket Only)",
+        "CCS (Type 2)",
+        "CHAdeMO",
+        "CEE 7/4 - Schuko - Type F"
+      ],
+      "total": 629,
+      "totalFast": 271
+    },
+    "instavolt": {
+      "countries": {
+        "ES": {
+          "stations": 4,
+          "fastStations": 4,
+          "maxPowerKw": 160
+        },
+        "GB": {
+          "stations": 437,
+          "fastStations": 433,
+          "maxPowerKw": 350
+        }
+      },
+      "connectors": [
+        "CCS (Type 2)",
+        "CHAdeMO",
+        "Type 2 (Tethered Connector)"
+      ],
+      "total": 441,
+      "totalFast": 437
+    },
+    "blue-corner": {
+      "countries": {
+        "BE": {
+          "stations": 169,
+          "fastStations": 0,
+          "maxPowerKw": 22
+        }
+      },
+      "connectors": [
+        "Type 2 (Socket Only)",
+        "CEE 7/5",
+        "CEE 7/4 - Schuko - Type F",
+        "Europlug 2-Pin (CEE 7/16)"
+      ],
+      "total": 169,
+      "totalFast": 0
+    },
+    "move": {
+      "countries": {
+        "CH": {
+          "stations": 31,
+          "fastStations": 18,
+          "maxPowerKw": 300
+        }
+      },
+      "connectors": [
+        "Type 2 (Socket Only)",
+        "CCS (Type 2)",
+        "CHAdeMO",
+        "Type 2 (Tethered Connector)"
+      ],
+      "total": 31,
+      "totalFast": 18
+    }
+  }
+}

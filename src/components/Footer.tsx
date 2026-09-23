@@ -62,6 +62,16 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/reseaux" className="text-cream/80 hover:text-lime-300">
+                  {t("networksLink")}
+                </Link>
+              </li>
+              <li>
+                <Link href="/fiabilite-bornes" className="text-cream/80 hover:text-lime-300">
+                  {t("reliabilityLink")}
+                </Link>
+              </li>
+              <li>
                 <Link href="/a-propos" className="text-cream/80 hover:text-lime-300">
                   {t("aboutLink")}
                 </Link>

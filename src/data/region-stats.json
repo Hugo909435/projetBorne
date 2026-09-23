@@ -1,23 +1,23 @@
 {
   "andalucia": {
-    "total": 3049,
-    "fastCount": 1023,
+    "total": 3052,
+    "fastCount": 1025,
     "connectorBreakdown": [
       {
         "name": "Type 2 (Socket Only)",
-        "count": 1932
+        "count": 1934
       },
       {
         "name": "CCS (Type 2)",
-        "count": 1047
+        "count": 1049
       },
       {
         "name": "CHAdeMO",
-        "count": 581
+        "count": 582
       },
       {
         "name": "Type 2 (Tethered Connector)",
-        "count": 546
+        "count": 547
       },
       {
         "name": "CEE 7/4 - Schuko - Type F",
@@ -104,16 +104,16 @@
     ]
   },
   "asturias": {
-    "total": 582,
-    "fastCount": 199,
+    "total": 584,
+    "fastCount": 201,
     "connectorBreakdown": [
       {
         "name": "Type 2 (Socket Only)",
-        "count": 379
+        "count": 381
       },
       {
         "name": "CCS (Type 2)",
-        "count": 203
+        "count": 205
       },
       {
         "name": "Type 2 (Tethered Connector)",
@@ -143,7 +143,7 @@
       },
       {
         "name": "Llanes",
-        "count": 16
+        "count": 17
       },
       {
         "name": "Siero",
@@ -156,8 +156,8 @@
     ]
   },
   "islas-baleares": {
-    "total": 952,
-    "fastCount": 154,
+    "total": 954,
+    "fastCount": 156,
     "connectorBreakdown": [
       {
         "name": "Type 2 (Socket Only)",
@@ -169,7 +169,7 @@
       },
       {
         "name": "CCS (Type 2)",
-        "count": 162
+        "count": 164
       },
       {
         "name": "CHAdeMO",
@@ -183,7 +183,7 @@
     "topTowns": [
       {
         "name": "Palma",
-        "count": 101
+        "count": 102
       },
       {
         "name": "Maó",
@@ -209,7 +209,7 @@
   },
   "canarias": {
     "total": 863,
-    "fastCount": 240,
+    "fastCount": 241,
     "connectorBreakdown": [
       {
         "name": "Type 2 (Socket Only)",
@@ -217,7 +217,7 @@
       },
       {
         "name": "CCS (Type 2)",
-        "count": 253
+        "count": 254
       },
       {
         "name": "CHAdeMO",
@@ -312,12 +312,12 @@
     ]
   },
   "castilla-la-mancha": {
-    "total": 2907,
+    "total": 2908,
     "fastCount": 1148,
     "connectorBreakdown": [
       {
         "name": "Type 2 (Socket Only)",
-        "count": 1832
+        "count": 1833
       },
       {
         "name": "CCS (Type 2)",
@@ -364,16 +364,16 @@
     ]
   },
   "castilla-y-leon": {
-    "total": 4130,
-    "fastCount": 1565,
+    "total": 4134,
+    "fastCount": 1568,
     "connectorBreakdown": [
       {
         "name": "Type 2 (Socket Only)",
-        "count": 2504
+        "count": 2505
       },
       {
         "name": "CCS (Type 2)",
-        "count": 1605
+        "count": 1608
       },
       {
         "name": "Type 2 (Tethered Connector)",
@@ -381,7 +381,7 @@
       },
       {
         "name": "CHAdeMO",
-        "count": 791
+        "count": 790
       },
       {
         "name": "CEE 7/4 - Schuko - Type F",
@@ -410,22 +410,22 @@
         "count": 36
       },
       {
-        "name": "Alcalá de Henares",
+        "name": "Valladolid",
         "count": 34
       }
     ]
   },
   "cataluna": {
-    "total": 3956,
-    "fastCount": 1273,
+    "total": 3958,
+    "fastCount": 1274,
     "connectorBreakdown": [
       {
         "name": "Type 2 (Socket Only)",
-        "count": 2635
+        "count": 2637
       },
       {
         "name": "CCS (Type 2)",
-        "count": 1327
+        "count": 1328
       },
       {
         "name": "CHAdeMO",
@@ -443,7 +443,7 @@
     "topTowns": [
       {
         "name": "Barcelona",
-        "count": 336
+        "count": 337
       },
       {
         "name": "Tarragona",
@@ -468,8 +468,8 @@
     ]
   },
   "comunidad-valenciana": {
-    "total": 2687,
-    "fastCount": 944,
+    "total": 2690,
+    "fastCount": 947,
     "connectorBreakdown": [
       {
         "name": "Type 2 (Socket Only)",
@@ -477,11 +477,11 @@
       },
       {
         "name": "CCS (Type 2)",
-        "count": 1007
+        "count": 1010
       },
       {
         "name": "CHAdeMO",
-        "count": 519
+        "count": 520
       },
       {
         "name": "Type 2 (Tethered Connector)",
@@ -520,12 +520,12 @@
     ]
   },
   "extremadura": {
-    "total": 650,
+    "total": 652,
     "fastCount": 263,
     "connectorBreakdown": [
       {
         "name": "Type 2 (Socket Only)",
-        "count": 369
+        "count": 371
       },
       {
         "name": "CCS (Type 2)",
@@ -573,7 +573,7 @@
   },
   "galicia": {
     "total": 957,
-    "fastCount": 357,
+    "fastCount": 358,
     "connectorBreakdown": [
       {
         "name": "Type 2 (Socket Only)",
@@ -624,12 +624,12 @@
     ]
   },
   "madrid": {
-    "total": 2307,
+    "total": 2308,
     "fastCount": 850,
     "connectorBreakdown": [
       {
         "name": "Type 2 (Socket Only)",
-        "count": 1540
+        "count": 1541
       },
       {
         "name": "CCS (Type 2)",
@@ -780,8 +780,8 @@
     ]
   },
   "pais-vasco": {
-    "total": 732,
-    "fastCount": 274,
+    "total": 733,
+    "fastCount": 275,
     "connectorBreakdown": [
       {
         "name": "Type 2 (Socket Only)",
@@ -789,7 +789,7 @@
       },
       {
         "name": "CCS (Type 2)",
-        "count": 272
+        "count": 273
       },
       {
         "name": "Type 2 (Tethered Connector)",
@@ -992,12 +992,12 @@
     ]
   },
   "south-east-england": {
-    "total": 15318,
+    "total": 15319,
     "fastCount": 1218,
     "connectorBreakdown": [
       {
         "name": "Type 2 (Socket Only)",
-        "count": 13930
+        "count": 13931
       },
       {
         "name": "CHAdeMO",
@@ -1096,12 +1096,12 @@
     ]
   },
   "east-of-england": {
-    "total": 13484,
+    "total": 13483,
     "fastCount": 857,
     "connectorBreakdown": [
       {
         "name": "Type 2 (Socket Only)",
-        "count": 12471
+        "count": 12470
       },
       {
         "name": "CHAdeMO",
@@ -1408,12 +1408,12 @@
     ]
   },
   "scotland": {
-    "total": 2915,
+    "total": 2918,
     "fastCount": 801,
     "connectorBreakdown": [
       {
         "name": "Type 2 (Socket Only)",
-        "count": 2198
+        "count": 2201
       },
       {
         "name": "CHAdeMO",
@@ -1512,16 +1512,16 @@
     ]
   },
   "northern-ireland": {
-    "total": 544,
-    "fastCount": 158,
+    "total": 545,
+    "fastCount": 159,
     "connectorBreakdown": [
       {
         "name": "Type 2 (Socket Only)",
-        "count": 384
+        "count": 385
       },
       {
         "name": "CCS (Type 2)",
-        "count": 179
+        "count": 180
       },
       {
         "name": "CHAdeMO",

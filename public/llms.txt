@@ -61,6 +61,46 @@ Station data comes from official open registers where they are the most complete
 - [Anxiété de l'autonomie : comment la surmonter et rouler sans stress](https://ma-borne-electrique.com/fr/blog/anxiete-autonomie-voiture-electrique)
 - [Recharge AC ou DC : quelle différence, et laquelle vous faut-il ?](https://ma-borne-electrique.com/fr/blog/recharge-ac-dc-voiture-electrique)
 
+## Charging by car model
+
+Per-model charging pages: connector types, charging time at each station power, energy and cost per charge. Manufacturer figures from EV Database, derived times computed from them with the method stated on each page. Country-neutral: the same figures apply in every country the map covers.
+
+- [All models](https://ma-borne-electrique.com/fr/recharge)
+- [Tesla Model Y](https://ma-borne-electrique.com/fr/recharge/tesla-model-y)
+- [Tesla Model 3](https://ma-borne-electrique.com/fr/recharge/tesla-model-3)
+- [Renault 5 E-Tech](https://ma-borne-electrique.com/fr/recharge/renault-5-e-tech)
+- [Renault Megane E-Tech](https://ma-borne-electrique.com/fr/recharge/renault-megane-e-tech)
+- [Peugeot e-208](https://ma-borne-electrique.com/fr/recharge/peugeot-e-208)
+- [Dacia Spring](https://ma-borne-electrique.com/fr/recharge/dacia-spring)
+- [Volkswagen ID.3](https://ma-borne-electrique.com/fr/recharge/volkswagen-id3)
+- [Volkswagen ID.4](https://ma-borne-electrique.com/fr/recharge/volkswagen-id4)
+- [Skoda Enyaq](https://ma-borne-electrique.com/fr/recharge/skoda-enyaq)
+- [Kia EV3](https://ma-borne-electrique.com/fr/recharge/kia-ev3)
+- [Hyundai Kona Electric](https://ma-borne-electrique.com/fr/recharge/hyundai-kona-electric)
+- [Volvo EX30](https://ma-borne-electrique.com/fr/recharge/volvo-ex30)
+
+## Charging networks
+
+Per-network pages: stations listed per country, share of rapid chargers, maximum power and connectors, measured with one identical query across the six countries on the map (France, Germany, Spain, United Kingdom, Belgium, Switzerland). Tariffs are linked to each operator's own page rather than quoted, because they change several times a year.
+
+- [All networks](https://ma-borne-electrique.com/fr/reseaux)
+- [Ionity](https://ma-borne-electrique.com/fr/reseaux/ionity)
+- [Fastned](https://ma-borne-electrique.com/fr/reseaux/fastned)
+- [Tesla Supercharger](https://ma-borne-electrique.com/fr/reseaux/tesla-supercharger)
+- [Electra](https://ma-borne-electrique.com/fr/reseaux/electra)
+- [Allego](https://ma-borne-electrique.com/fr/reseaux/allego)
+- [TotalEnergies](https://ma-borne-electrique.com/fr/reseaux/totalenergies)
+- [Shell Recharge](https://ma-borne-electrique.com/fr/reseaux/shell-recharge)
+- [Izivia](https://ma-borne-electrique.com/fr/reseaux/izivia)
+- [EnBW mobility+](https://ma-borne-electrique.com/fr/reseaux/enbw)
+- [Zunder](https://ma-borne-electrique.com/fr/reseaux/zunder)
+- [InstaVolt](https://ma-borne-electrique.com/fr/reseaux/instavolt)
+- [Blue Corner](https://ma-borne-electrique.com/fr/reseaux/blue-corner)
+- [MOVE](https://ma-borne-electrique.com/fr/reseaux/move)
+
+## Original data
+
+- [Rapid charger reliability barometer](https://ma-borne-electrique.com/fr/fiabilite-bornes): share of rapid chargers carrying a reported out-of-service status, in France, Germany, Spain, the United Kingdom, Belgium and Switzerland, collected the same day with one method. Includes the share of stations verified within the last twelve months, which is the figure needed to read the ranking honestly, plus a stated method and limits section. Measures reported faults, not live telemetry.
 ## Contact
 
 contact@ma-borne-electrique.com

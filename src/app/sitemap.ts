@@ -4,6 +4,9 @@ import { site, languageAlternates } from "@/lib/site";
 import { blogPosts } from "@/lib/blogPosts";
 import { departments } from "@/lib/departments";
 import { germanStates, spanishRegions, ukRegions } from "@/lib/regions";
+import { evModels } from "@/lib/evModels";
+import { chargingNetworks } from "@/lib/chargingNetworks";
+import reliabilityData from "@/data/reliability-stats.json";
 
 const staticPaths = [
   { path: "/", changeFrequency: "daily" as const, priority: 1, lastModified: "2026-08-27" },
@@ -39,6 +42,21 @@ const staticPaths = [
     changeFrequency: "yearly" as const,
     priority: 0.1,
     lastModified: "2026-08-26",
+  },
+  { path: "/recharge", changeFrequency: "monthly" as const, priority: 0.7, lastModified: "2026-09-23" },
+  {
+    path: "/reseaux",
+    changeFrequency: "monthly" as const,
+    priority: 0.7,
+    lastModified: reliabilityData.generatedAt,
+  },
+  {
+    // The barometer is only worth crawling as often as it is refreshed, and
+    // its lastModified is the reading date rather than a hand-kept constant.
+    path: "/fiabilite-bornes",
+    changeFrequency: "monthly" as const,
+    priority: 0.8,
+    lastModified: reliabilityData.generatedAt,
   },
 ];
 
@@ -106,6 +124,26 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }))
   );
 
+  const evModelEntries = evModels.flatMap((model) =>
+    routing.locales.map((locale) => ({
+      url: `${site.url}/${locale}/recharge/${model.slug}`,
+      changeFrequency: "monthly" as const,
+      priority: 0.6,
+      lastModified: "2026-09-23",
+      alternates: { languages: languageAlternates(`/recharge/${model.slug}`) },
+    }))
+  );
+
+  const networkEntries = chargingNetworks.flatMap((network) =>
+    routing.locales.map((locale) => ({
+      url: `${site.url}/${locale}/reseaux/${network.slug}`,
+      changeFrequency: "monthly" as const,
+      priority: 0.6,
+      lastModified: reliabilityData.generatedAt,
+      alternates: { languages: languageAlternates(`/reseaux/${network.slug}`) },
+    }))
+  );
+
   return [
     ...staticEntries,
     ...blogEntries,
@@ -113,5 +151,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...germanRegionEntries,
     ...spanishRegionEntries,
     ...ukRegionEntries,
+    ...evModelEntries,
+    ...networkEntries,
   ];
 }
