@@ -5352,7 +5352,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "electric-car-in-france-charging-guide",
     publishedAt: "2026-09-21",
-    related: ["road-trip-france-recharge-voiture-electrique", "cout-recharge-voiture-electrique", "comparatif-abonnements-recharge", "zfe-2026-vehicules-electriques"],
+    related: ["road-trip-france-recharge-voiture-electrique", "cout-recharge-voiture-electrique", "electric-car-in-germany-charging-guide", "electric-car-in-belgium-charging-guide", "electric-car-in-switzerland-charging-guide", "electric-car-in-spain-charging-guide", "electric-car-in-uk-charging-guide"],
     image: {
       src: "/blog/electric-car-in-france-charging-guide.jpg",
       alt: {
@@ -5597,6 +5597,1271 @@ export const blogPosts: BlogPost[] = [
           { question: "¿Mi coche eléctrico extranjero es compatible con los cargadores franceses?", answer: "Sí, si usa el conector Tipo 2 en corriente alterna o el CCS2 en corriente continua, el estándar europeo. Lleva tu cable Tipo 2, porque muchos cargadores no lo incluyen." },
           { question: "¿Cuánto cuesta cargar en Francia?", answer: "Unos 0,23 euros con impuestos por kWh en los cargadores de 22 kW de Carrefour desde el 1 de agosto de 2026, es decir, unos 3,68 euros por 100 km para un compacto. La carga rápida en autopista sin abono suele costar entre 0,50 y 0,70 euros por kWh según el operador, unas tres a cuatro veces la tarifa nocturna de los hogares franceses." },
           { question: "¿Necesito la pegatina Crit'Air con un coche eléctrico extranjero?", answer: "Las zonas de bajas emisiones francesas se aplican a los vehículos extranjeros. Un coche eléctrico entra en la categoría más favorable, pero conviene pedir la pegatina con antelación en el sitio oficial certificat-air.gouv.fr." },
+        ],
+        ...cta.es,
+      },
+    },
+  },
+  {
+    slug: "electric-car-in-germany-charging-guide",
+    publishedAt: "2026-10-01",
+    related: ["electric-car-in-france-charging-guide", "electric-car-in-switzerland-charging-guide", "electric-car-in-belgium-charging-guide", "electric-car-in-spain-charging-guide", "electric-car-in-uk-charging-guide"],
+    image: {
+      src: "/blog/electric-car-in-germany-charging-guide.jpg",
+      alt: {
+        fr: "Station de recharge rapide EnBW HyperNetz couverte de panneaux solaires à Hengersberg, en Bavière",
+        en: "EnBW HyperNetz fast-charging hub with a solar canopy in Hengersberg, Bavaria, Germany",
+        de: "EnBW-HyperNetz-Schnellladepark mit Solardach in Hengersberg, Bayern",
+        es: "Estación de carga rápida EnBW HyperNetz con cubierta solar en Hengersberg, Baviera, Alemania",
+      },
+      credit: {
+        name: "APneunzehn74",
+        url: "https://commons.wikimedia.org/wiki/File:EnBW_Schnellladepark_Hengersberg.jpg",
+        license: "CC0",
+      },
+    },
+    content: {
+      fr: {
+        eyebrow: "Voyage",
+        title: "Visiter l'Allemagne en voiture électrique : recharge, paiement et prix",
+        excerpt:
+          "Prises, paiement sans compte allemand, prix d'une charge rapide et vignette verte pour les zones environnementales : le guide pratique pour recharger en Allemagne.",
+        metaTitle: "Voiture électrique en Allemagne : recharge, prix",
+        metaDescription:
+          "Prises compatibles, paiement par carte bancaire, prix au kWh et vignette verte (Umweltplakette) pour les Umweltzonen : le guide des visiteurs pour recharger en Allemagne.",
+        body: [
+          {
+            type: "p",
+            text: "L'Allemagne comptait 212 064 points de recharge publics au 1er août 2026 selon la Bundesnetzagentur, dont environ 55 700 points de recharge rapide. Le réseau est dense, l'Autobahn reste gratuite pour les voitures, et la prise est la même que dans le reste de l'Europe continentale. Les vraies questions pour un visiteur sont le paiement, le prix et la vignette des zones environnementales.",
+          },
+          { type: "h2", text: "Votre prise est la bonne" },
+          {
+            type: "p",
+            text: "L'Allemagne suit le standard européen : prise Type 2 en courant alternatif, connecteur Combo CCS2 en courant continu. Les bornes rapides ont leur câble attaché, mais beaucoup de bornes en courant alternatif n'ont qu'une prise : emportez votre propre câble Type 2.",
+          },
+          { type: "h2", text: "Comment payer sans compte allemand" },
+          {
+            type: "p",
+            text: "L'Allemagne a été l'un des premiers pays à imposer un lecteur de carte bancaire sur les bornes neuves, dès juillet 2023. Le règlement européen AFIR va dans le même sens : depuis avril 2024, toute nouvelle borne rapide de 50 kW ou plus doit accepter la carte bancaire, et les bornes rapides existantes situées sur les grands axes européens doivent en être équipées avant le 1er janvier 2027. Sur une borne plus ancienne, prévoyez un QR code, l'application de l'opérateur ou une carte de recharge de votre pays qui fonctionne en itinérance en Allemagne.",
+          },
+          { type: "h2", text: "Ce que coûte une charge en Allemagne" },
+          {
+            type: "p",
+            text: "La recharge rapide sans contrat (ad hoc) coûte en général entre 0,69 et 0,89 € le kWh en 2026 selon l'opérateur, du bas de la fourchette chez Fastned au haut chez EnBW. À 0,79 € le kWh, une compacte qui consomme environ 16 kWh aux 100 km revient à près de 12,60 € les 100 km. Les abonnements des grands réseaux font nettement baisser le prix au kWh : si vous traversez le pays sur plusieurs jours, comparez avant de partir. Le prix doit être affiché avant le début de la charge, vérifiez-le à chaque arrêt.",
+          },
+          { type: "h2", text: "Zones environnementales : la vignette verte" },
+          {
+            type: "p",
+            text: "Plusieurs villes, comme Berlin, gardent une zone environnementale (Umweltzone) où il faut afficher la vignette verte (Umweltplakette), y compris avec une voiture immatriculée à l'étranger. Une réforme entrée en vigueur à l'automne 2026 dispense les voitures qui portent le E des plaques allemandes, mais elle ne vise pas clairement les plaques étrangères. Pour une voiture électrique immatriculée hors d'Allemagne, le plus sûr reste de commander la vignette verte avant le départ, auprès d'un organisme de contrôle technique allemand comme le TÜV ou la DEKRA, avec la carte grise du véhicule.",
+          },
+          { type: "h2", text: "Trouver une borne sur votre trajet" },
+          {
+            type: "p",
+            text: "La carte de ma-borne-electrique.com localise les bornes en Allemagne, et l'annuaire par Land indique pour chacun des 16 Länder le nombre de points de recharge, la part de recharge rapide et les villes les mieux équipées, à partir du registre officiel de la Bundesnetzagentur. Ce registre est mis à jour par l'administration et peut avoir quelques semaines de retard : vérifiez la disponibilité en temps réel dans une application de trajet avant un détour.",
+          },
+          { type: "h3", text: "Checklist avant le départ" },
+          {
+            type: "ul",
+            items: [
+              "Vérifiez votre connecteur (Type 2 ou CCS2) et emportez votre câble Type 2.",
+              "Gardez une carte bancaire à portée de main et installez l'application d'un grand réseau en secours.",
+              "Commandez la vignette verte (Umweltplakette) avant de partir si vous entrez dans une ville à zone environnementale.",
+              "Si vous restez plusieurs jours, comparez les abonnements des grands réseaux : l'écart avec le tarif ad hoc est important.",
+              "Sur borne rapide, visez entre 20 % et 80 % : la vitesse de charge chute au-delà.",
+            ],
+          },
+        ],
+        faq: [
+          { question: "Peut-on payer par carte bancaire aux bornes allemandes ?", answer: "Oui sur la plupart des bornes récentes : l'Allemagne impose un lecteur de carte sur les bornes neuves depuis juillet 2023, et les bornes rapides existantes des grands axes européens doivent en être équipées avant le 1er janvier 2027. Sur une borne plus ancienne, un QR code ou une application peut être nécessaire." },
+          { question: "Combien coûte une recharge rapide en Allemagne ?", answer: "Sans abonnement, en général entre 0,69 et 0,89 € le kWh en 2026 selon l'opérateur, soit près de 12,60 € les 100 km pour une compacte à 0,79 € le kWh. Un abonnement fait nettement baisser le prix." },
+          { question: "Faut-il la vignette verte avec une voiture électrique étrangère ?", answer: "Dans les villes qui ont une zone environnementale, oui par précaution. La dispense entrée en vigueur à l'automne 2026 concerne les voitures portant le E des plaques allemandes. Pour une plaque étrangère, commandez la vignette verte auprès du TÜV ou de la DEKRA avant le départ." },
+          { question: "Les autoroutes allemandes sont-elles payantes pour une voiture électrique ?", answer: "Non. L'Autobahn est gratuite pour les voitures, électriques ou non. Seuls les poids lourds paient un péage." },
+        ],
+        ...cta.fr,
+      },
+      en: {
+        eyebrow: "Travel",
+        title: "Driving an Electric Car in Germany: Charging, Payment and Prices",
+        excerpt:
+          "Plugs, paying without a German account, what a fast charge costs and the green sticker for low-emission zones: a practical guide to charging in Germany.",
+        metaTitle: "Electric Car in Germany: Charging, Payment, Prices",
+        metaDescription:
+          "Plugs, card payment, price per kWh and the green Umweltplakette sticker for low-emission zones: a visitor's guide to charging an EV in Germany.",
+        body: [
+          {
+            type: "p",
+            text: "Germany had 212,064 public charging points on August 1, 2026, according to the Bundesnetzagentur, the federal network agency, including about 55,700 fast-charging points. The network is dense, the Autobahn is still free for cars, and the plug is the same as in the rest of continental Europe. For a visitor, the real questions are payment, price and the sticker for low-emission zones.",
+          },
+          { type: "h2", text: "Your plug already fits" },
+          {
+            type: "p",
+            text: "Germany follows the European standard: the Type 2 connector for AC charging and the CCS2 combo connector for DC fast charging. Fast chargers have tethered cables, but many AC stations only provide a socket, so pack your own Type 2 cable.",
+          },
+          { type: "h2", text: "How to pay without a German account" },
+          {
+            type: "p",
+            text: "Germany was one of the first countries to require bank card readers on new chargers, from July 2023. The EU's AFIR regulation goes the same way: since April 2024, every new fast charger of 50 kW or more must accept bank cards, and existing fast chargers on the main European corridors must be fitted with readers before January 1, 2027. On an older station, expect to use a QR code, the operator's app or a charging card from your home country that roams in Germany.",
+          },
+          { type: "h2", text: "What a charge costs in Germany" },
+          {
+            type: "p",
+            text: "Pay-as-you-go (ad hoc) fast charging generally costs 0.69 to 0.89 euros per kWh in 2026 depending on the operator, from the low end at Fastned to the high end at EnBW. At 0.79 euros per kWh, a compact EV using about 16 kWh per 100km costs roughly 12.60 euros per 100km. Subscriptions from the big networks bring the price per kWh down sharply, so if you are crossing the country over several days, compare them before you go. The price must be shown before charging starts, so check it at every stop.",
+          },
+          { type: "h2", text: "Low-emission zones: the green sticker" },
+          {
+            type: "p",
+            text: "Several cities, such as Berlin, keep a low-emission zone (Umweltzone) where you must display the green sticker (Umweltplakette), including on a foreign-registered car. A reform that took effect in autumn 2026 exempts cars with the E on German plates, but it does not clearly cover foreign plates. For an electric car registered outside Germany, the safest option is still to order the green sticker before you leave, from a German vehicle inspection body such as TÜV or DEKRA, using the car's registration document.",
+          },
+          { type: "h2", text: "Finding a charger along your route" },
+          {
+            type: "p",
+            text: "The map on ma-borne-electrique.com locates chargers in Germany, and the state directory shows the number of charging points, the share of fast charging and the best-covered towns for each of the 16 German states, based on the Bundesnetzagentur's official register. That register is updated by the agency and can lag a few weeks behind, so check real-time availability in a route-planning app before you detour.",
+          },
+          { type: "h3", text: "Checklist before you leave" },
+          {
+            type: "ul",
+            items: [
+              "Check your connector (Type 2 or CCS2) and pack your Type 2 cable.",
+              "Keep a bank card handy and install a major network's app as a backup.",
+              "Order the green sticker (Umweltplakette) before you go if you will enter a city with a low-emission zone.",
+              "If you are staying several days, compare the big networks' subscriptions: the gap with ad hoc prices is large.",
+              "On fast chargers, aim for 20% to 80%: charging speed drops beyond that.",
+            ],
+          },
+        ],
+        faq: [
+          { question: "Can I pay by bank card at German chargers?", answer: "Yes at most recent stations: Germany has required card readers on new chargers since July 2023, and existing fast chargers on the main European corridors must be fitted with them before January 1, 2027. On an older station, you may need a QR code or an app." },
+          { question: "How much does fast charging cost in Germany?", answer: "Without a subscription, generally 0.69 to 0.89 euros per kWh in 2026 depending on the operator, roughly 12.60 euros per 100km for a compact EV at 0.79 euros per kWh. A subscription brings the price down sharply." },
+          { question: "Do I need the green sticker with a foreign electric car?", answer: "In cities with a low-emission zone, yes as a precaution. The exemption that took effect in autumn 2026 covers cars with the E on German plates. For a foreign plate, order the green sticker from TÜV or DEKRA before you leave." },
+          { question: "Are German motorways tolled for electric cars?", answer: "No. The Autobahn is free for cars, electric or not. Only heavy trucks pay a toll." },
+        ],
+        ...cta.en,
+      },
+      de: {
+        eyebrow: "Reise",
+        title: "Mit dem Elektroauto durch Deutschland: Laden, Bezahlen und Preise",
+        excerpt:
+          "Stecker, Bezahlen ohne Vertrag, Preise beim Schnellladen und die grüne Plakette für Umweltzonen: der praktische Leitfaden zum Laden in Deutschland für Reisende aus dem Ausland.",
+        metaTitle: "Elektroauto in Deutschland: Laden, Bezahlen, Preise",
+        metaDescription:
+          "Stecker, Kartenzahlung, Preise pro kWh und die grüne Umweltplakette für Umweltzonen: der Leitfaden für Reisende, die ihr Elektroauto in Deutschland laden.",
+        body: [
+          {
+            type: "p",
+            text: "Deutschland zählte laut Bundesnetzagentur zum 1. August 2026 genau 212.064 öffentliche Ladepunkte, darunter rund 55.700 Schnellladepunkte. Das Netz ist dicht, die Autobahn bleibt für Pkw kostenlos, und der Stecker ist derselbe wie im übrigen Kontinentaleuropa. Für Reisende aus dem Ausland geht es vor allem um das Bezahlen, den Preis und die Plakette für Umweltzonen.",
+          },
+          { type: "h2", text: "Ihr Stecker passt bereits" },
+          {
+            type: "p",
+            text: "Deutschland folgt dem europäischen Standard: Typ-2-Stecker für Wechselstrom und CCS2-Combo-Stecker für das Schnellladen mit Gleichstrom. Schnelllader haben fest angeschlagene Kabel, viele Wechselstrom-Ladesäulen bieten dagegen nur eine Buchse: Nehmen Sie Ihr eigenes Typ-2-Kabel mit.",
+          },
+          { type: "h2", text: "Bezahlen ohne deutschen Vertrag" },
+          {
+            type: "p",
+            text: "Deutschland hat als eines der ersten Länder Kartenleser an neuen Ladesäulen vorgeschrieben, bereits ab Juli 2023. Die EU-Verordnung AFIR geht in dieselbe Richtung: Seit April 2024 muss jeder neue Schnelllader ab 50 kW Bankkarten akzeptieren, und bestehende Schnelllader an den europäischen Hauptverkehrsachsen müssen bis zum 1. Januar 2027 nachgerüstet werden. An älteren Säulen brauchen Sie einen QR-Code, die App des Betreibers oder eine Ladekarte aus Ihrem Heimatland, die in Deutschland per Roaming funktioniert.",
+          },
+          { type: "h2", text: "Was das Laden in Deutschland kostet" },
+          {
+            type: "p",
+            text: "Schnellladen ohne Vertrag (ad hoc) kostet 2026 je nach Anbieter in der Regel zwischen 0,69 und 0,89 Euro pro kWh, vom unteren Ende bei Fastned bis zum oberen bei EnBW. Bei 0,79 Euro pro kWh kostet ein Kompaktwagen mit rund 16 kWh pro 100 km etwa 12,60 Euro pro 100 km. Abos der großen Netze senken den kWh-Preis deutlich: Wer mehrere Tage durch das Land fährt, sollte vorher vergleichen. Der Preis muss vor Ladebeginn angezeigt werden, prüfen Sie ihn bei jedem Stopp.",
+          },
+          { type: "h2", text: "Umweltzonen: die grüne Plakette" },
+          {
+            type: "p",
+            text: "Mehrere Städte wie Berlin haben weiterhin eine Umweltzone, in der die grüne Umweltplakette Pflicht ist, auch für im Ausland zugelassene Autos. Eine im Herbst 2026 in Kraft getretene Reform befreit Fahrzeuge mit E-Kennzeichen von der Plakette, ausländische Kennzeichen sind davon aber nicht eindeutig erfasst. Für ein im Ausland zugelassenes Elektroauto ist es am sichersten, die grüne Plakette vor der Reise bei einer Prüforganisation wie TÜV oder DEKRA mit dem Fahrzeugschein zu bestellen.",
+          },
+          { type: "h2", text: "Ladesäulen entlang der Route finden" },
+          {
+            type: "p",
+            text: "Die Karte von ma-borne-electrique.com zeigt Ladesäulen in Deutschland, und das Verzeichnis nach Bundesland nennt für jedes der 16 Länder die Zahl der Ladepunkte, den Schnellladeanteil und die am besten versorgten Städte, auf Basis des offiziellen Ladesäulenregisters der Bundesnetzagentur. Das Register wird von der Behörde gepflegt und kann einige Wochen hinterherhinken: Prüfen Sie die Echtzeit-Verfügbarkeit in einer Routenplaner-App, bevor Sie einen Umweg fahren.",
+          },
+          { type: "h3", text: "Checkliste vor der Abreise" },
+          {
+            type: "ul",
+            items: [
+              "Prüfen Sie Ihren Anschluss (Typ 2 oder CCS2) und nehmen Sie Ihr Typ-2-Kabel mit.",
+              "Halten Sie eine Bankkarte bereit und installieren Sie die App eines großen Netzes als Reserve.",
+              "Bestellen Sie die grüne Umweltplakette vor der Abreise, wenn Sie in eine Stadt mit Umweltzone fahren.",
+              "Bei mehreren Tagen Aufenthalt lohnt der Vergleich der Abos großer Netze: Der Abstand zum Ad-hoc-Preis ist groß.",
+              "Laden Sie an Schnellladern idealerweise zwischen 20 % und 80 %: darüber sinkt die Ladegeschwindigkeit.",
+            ],
+          },
+        ],
+        faq: [
+          { question: "Kann man an deutschen Ladesäulen mit Bankkarte bezahlen?", answer: "An den meisten neueren Säulen ja: Deutschland schreibt Kartenleser an neuen Ladesäulen seit Juli 2023 vor, und bestehende Schnelllader an den europäischen Hauptachsen müssen bis zum 1. Januar 2027 nachgerüstet werden. An älteren Säulen kann ein QR-Code oder eine App nötig sein." },
+          { question: "Was kostet Schnellladen in Deutschland?", answer: "Ohne Abo 2026 je nach Anbieter in der Regel 0,69 bis 0,89 Euro pro kWh, bei 0,79 Euro pro kWh also etwa 12,60 Euro pro 100 km für einen Kompaktwagen. Ein Abo senkt den Preis deutlich." },
+          { question: "Braucht ein ausländisches Elektroauto die grüne Plakette?", answer: "In Städten mit Umweltzone sicherheitshalber ja. Die seit Herbst 2026 geltende Befreiung betrifft Fahrzeuge mit deutschem E-Kennzeichen. Für ein ausländisches Kennzeichen bestellen Sie die Plakette vor der Reise bei TÜV oder DEKRA." },
+          { question: "Kostet die Autobahn für Elektroautos Maut?", answer: "Nein. Die Autobahn ist für Pkw kostenlos, egal mit welchem Antrieb. Maut zahlen nur Lkw." },
+        ],
+        ...cta.de,
+      },
+      es: {
+        eyebrow: "Viaje",
+        title: "Coche eléctrico en Alemania: recargar, pagar y precios",
+        excerpt:
+          "Conectores, pago sin cuenta alemana, precio de la carga rápida y la pegatina verde para las zonas ambientales: la guía práctica para recargar en Alemania.",
+        metaTitle: "Coche eléctrico en Alemania: recarga, pago, precios",
+        metaDescription:
+          "Conectores, pago con tarjeta, precio por kWh y la pegatina verde Umweltplakette para las zonas ambientales: la guía para recargar tu coche eléctrico en Alemania.",
+        body: [
+          {
+            type: "p",
+            text: "Alemania contaba con 212.064 puntos de recarga públicos a 1 de agosto de 2026 según la Bundesnetzagentur, la agencia federal de redes, de los que unos 55.700 son de carga rápida. La red es densa, la Autobahn sigue siendo gratuita para los turismos y el conector es el mismo que en el resto de la Europa continental. Para un visitante, las verdaderas preguntas son el pago, el precio y la pegatina de las zonas ambientales.",
+          },
+          { type: "h2", text: "Tu conector ya es el adecuado" },
+          {
+            type: "p",
+            text: "Alemania sigue el estándar europeo: conector Tipo 2 en corriente alterna y conector combinado CCS2 en corriente continua. Los cargadores rápidos llevan el cable integrado, pero muchos puntos de corriente alterna solo tienen toma: lleva tu propio cable Tipo 2.",
+          },
+          { type: "h2", text: "Cómo pagar sin cuenta alemana" },
+          {
+            type: "p",
+            text: "Alemania fue uno de los primeros países en exigir lectores de tarjeta bancaria en los cargadores nuevos, ya desde julio de 2023. El reglamento europeo AFIR va en la misma dirección: desde abril de 2024, todo cargador rápido nuevo de 50 kW o más debe aceptar tarjeta, y los cargadores rápidos existentes en los grandes ejes europeos deben equiparse antes del 1 de enero de 2027. En una estación antigua, cuenta con un código QR, la aplicación del operador o una tarjeta de recarga de tu país que funcione en itinerancia en Alemania.",
+          },
+          { type: "h2", text: "Cuánto cuesta cargar en Alemania" },
+          {
+            type: "p",
+            text: "La carga rápida sin contrato (ad hoc) suele costar entre 0,69 y 0,89 euros por kWh en 2026 según el operador, desde la parte baja en Fastned hasta la alta en EnBW. A 0,79 euros por kWh, un compacto que consume unos 16 kWh cada 100 km sale por unos 12,60 euros por 100 km. Los abonos de las grandes redes bajan mucho el precio por kWh: si vas a cruzar el país durante varios días, compáralos antes de salir. El precio debe mostrarse antes de empezar la carga, compruébalo en cada parada.",
+          },
+          { type: "h2", text: "Zonas ambientales: la pegatina verde" },
+          {
+            type: "p",
+            text: "Varias ciudades, como Berlín, mantienen una zona ambiental (Umweltzone) donde hay que llevar la pegatina verde (Umweltplakette), también en los coches con matrícula extranjera. Una reforma en vigor desde el otoño de 2026 exime a los coches con la E de las matrículas alemanas, pero no incluye claramente las matrículas extranjeras. Para un coche eléctrico matriculado fuera de Alemania, lo más seguro sigue siendo pedir la pegatina verde antes del viaje a un organismo de inspección alemán como TÜV o DEKRA, con el permiso de circulación del vehículo.",
+          },
+          { type: "h2", text: "Encontrar un cargador en tu ruta" },
+          {
+            type: "p",
+            text: "El mapa de ma-borne-electrique.com localiza los cargadores en Alemania, y el directorio por estado federado indica para cada uno de los 16 Länder el número de puntos de recarga, la proporción de carga rápida y las ciudades mejor equipadas, a partir del registro oficial de la Bundesnetzagentur. Ese registro lo actualiza la administración y puede ir unas semanas por detrás: comprueba la disponibilidad en tiempo real en una aplicación de rutas antes de desviarte.",
+          },
+          { type: "h3", text: "Lista de comprobación antes de salir" },
+          {
+            type: "ul",
+            items: [
+              "Comprueba tu conector (Tipo 2 o CCS2) y lleva tu cable Tipo 2.",
+              "Ten a mano una tarjeta bancaria e instala la aplicación de una gran red como reserva.",
+              "Pide la pegatina verde (Umweltplakette) antes de salir si vas a entrar en una ciudad con zona ambiental.",
+              "Si te quedas varios días, compara los abonos de las grandes redes: la diferencia con el precio ad hoc es grande.",
+              "En cargadores rápidos, apunta al 20 %-80 %: por encima de ese umbral la velocidad de carga baja.",
+            ],
+          },
+        ],
+        faq: [
+          { question: "¿Se puede pagar con tarjeta bancaria en los cargadores alemanes?", answer: "Sí en la mayoría de las estaciones recientes: Alemania exige lectores de tarjeta en los cargadores nuevos desde julio de 2023, y los cargadores rápidos existentes en los grandes ejes europeos deben equiparse antes del 1 de enero de 2027. En una estación antigua puede hacer falta un código QR o una aplicación." },
+          { question: "¿Cuánto cuesta la carga rápida en Alemania?", answer: "Sin abono, normalmente entre 0,69 y 0,89 euros por kWh en 2026 según el operador, es decir, unos 12,60 euros por 100 km para un compacto a 0,79 euros por kWh. Un abono baja mucho el precio." },
+          { question: "¿Necesita la pegatina verde un coche eléctrico extranjero?", answer: "En las ciudades con zona ambiental, sí por precaución. La exención en vigor desde el otoño de 2026 afecta a los coches con la E de las matrículas alemanas. Con matrícula extranjera, pide la pegatina a TÜV o DEKRA antes de salir." },
+          { question: "¿Las autopistas alemanas son de pago para un coche eléctrico?", answer: "No. La Autobahn es gratuita para los turismos, eléctricos o no. Solo los camiones pagan peaje." },
+        ],
+        ...cta.es,
+      },
+    },
+  },
+  {
+    slug: "electric-car-in-spain-charging-guide",
+    publishedAt: "2026-10-01",
+    related: ["electric-car-in-france-charging-guide", "electric-car-in-germany-charging-guide", "electric-car-in-uk-charging-guide", "electric-car-in-belgium-charging-guide", "electric-car-in-switzerland-charging-guide"],
+    image: {
+      src: "/blog/electric-car-in-spain-charging-guide.jpg",
+      alt: {
+        fr: "Borne de recharge Iberdrola sur un trottoir de Málaga, en Espagne, avec une voiture électrique branchée",
+        en: "Iberdrola charging post on a pavement in Málaga, Spain, with an electric car plugged in",
+        de: "Iberdrola-Ladesäule auf einem Gehweg in Málaga, Spanien, mit angeschlossenem Elektroauto",
+        es: "Punto de recarga de Iberdrola en una acera de Málaga con un coche eléctrico enchufado",
+      },
+      credit: {
+        name: "Daniel Capilla",
+        url: "https://commons.wikimedia.org/wiki/File:Electric_Vehicle_Charging_Station_in_M%C3%A1laga_01.jpg",
+        license: "CC BY-SA 4.0",
+      },
+    },
+    content: {
+      fr: {
+        eyebrow: "Voyage",
+        title: "Visiter l'Espagne en voiture électrique : recharge, paiement et prix",
+        excerpt:
+          "Prises, paiement sans compte espagnol, prix d'une charge rapide et zones à faibles émissions pour les plaques étrangères : le guide pratique pour recharger en Espagne.",
+        metaTitle: "Voiture électrique en Espagne : recharge, prix, ZBE",
+        metaDescription:
+          "Prises compatibles, paiement par carte, prix au kWh et règles des zones à faibles émissions (ZBE) pour les voitures étrangères : le guide des visiteurs pour recharger en Espagne.",
+        body: [
+          {
+            type: "p",
+            text: "L'Espagne comptait 56 682 points de recharge publics en service fin juin 2026 selon le baromètre de l'ANFAC, l'association des constructeurs. Le réseau est moins dense qu'en Europe du Nord, mais la recharge y est souvent moins chère. Un point à connaître : près d'un quart des bornes installées attendent encore leur raccordement, d'où l'intérêt de vérifier l'état d'une borne avant d'y compter.",
+          },
+          { type: "h2", text: "Votre prise est la bonne" },
+          {
+            type: "p",
+            text: "L'Espagne suit le standard européen : prise Type 2 en courant alternatif, connecteur Combo CCS2 en courant continu. Les bornes de ville, comme celles installées sur les trottoirs par les grands fournisseurs d'électricité, n'ont souvent qu'une prise : emportez votre propre câble Type 2.",
+          },
+          { type: "h2", text: "Comment payer sans compte espagnol" },
+          {
+            type: "p",
+            text: "Le règlement européen AFIR s'applique en Espagne : depuis avril 2024, toute nouvelle borne rapide de 50 kW ou plus doit accepter la carte bancaire, et les bornes rapides existantes des grands axes européens doivent en être équipées avant le 1er janvier 2027. Sur les bornes plus anciennes et sur beaucoup de bornes de ville, le paiement passe par un QR code ou l'application de l'opérateur. Une carte de recharge de votre pays peut aussi fonctionner en itinérance : vérifiez la couverture espagnole avant de partir.",
+          },
+          { type: "h2", text: "Ce que coûte une charge en Espagne" },
+          {
+            type: "p",
+            text: "Sans abonnement, la recharge rapide coûte en général entre 0,45 et 0,55 € le kWh en 2026 chez les grands réseaux comme Iberdrola ou Zunder, et peut monter vers 0,70 € sur certaines bornes de très haute puissance. À 0,50 € le kWh, une compacte qui consomme environ 16 kWh aux 100 km revient à environ 8 € les 100 km. Les tarifs changent d'un opérateur à l'autre : vérifiez le prix affiché avant de brancher.",
+          },
+          { type: "h2", text: "Zones à faibles émissions : les plaques étrangères à part" },
+          {
+            type: "p",
+            text: "Les grandes villes espagnoles ont des zones à faibles émissions (ZBE). Les voitures électriques espagnoles y circulent librement grâce à l'étiquette CERO de la DGT, mais cette étiquette n'est délivrée qu'aux véhicules immatriculés en Espagne. Pour une plaque étrangère, chaque ville fixe sa règle : Madrid et Barcelone demandent une inscription préalable sur leur registre des véhicules étrangers, avec la carte grise du véhicule, à faire si possible plusieurs jours à l'avance. Avant d'entrer dans une grande ville, consultez le site de la mairie ou, pour Barcelone, celui de l'Área Metropolitana.",
+          },
+          { type: "h2", text: "Trouver une borne sur votre trajet" },
+          {
+            type: "p",
+            text: "La carte de ma-borne-electrique.com localise les bornes en Espagne, et l'annuaire par communauté autonome indique le nombre de stations, la part de recharge rapide et les villes les mieux équipées. Ces données viennent d'Open Charge Map, une base collaborative qui peut être incomplète : en Espagne plus qu'ailleurs, vérifiez qu'une borne est bien en service dans une application de trajet avant un détour.",
+          },
+          { type: "h3", text: "Checklist avant le départ" },
+          {
+            type: "ul",
+            items: [
+              "Vérifiez votre connecteur (Type 2 ou CCS2) et emportez votre câble Type 2.",
+              "Installez l'application d'un grand réseau espagnol et gardez une carte bancaire en secours.",
+              "Inscrivez votre voiture sur le registre ZBE de Madrid ou de Barcelone si vous y entrez.",
+              "Vérifiez qu'une borne est en service avant d'y compter, surtout hors des grands axes.",
+              "En été, rechargez de préférence le matin ou le soir : la chaleur peut ralentir la charge rapide.",
+            ],
+          },
+        ],
+        faq: [
+          { question: "Peut-on payer par carte bancaire aux bornes espagnoles ?", answer: "Oui sur les bornes rapides récentes : depuis avril 2024, les nouvelles bornes de 50 kW ou plus doivent accepter la carte, et les bornes rapides des grands axes européens doivent en être équipées avant le 1er janvier 2027. Sur les bornes de ville, prévoyez un QR code ou une application." },
+          { question: "Combien coûte une recharge rapide en Espagne ?", answer: "Sans abonnement, en général entre 0,45 et 0,55 € le kWh en 2026 chez les grands réseaux, et jusqu'à environ 0,70 € sur certaines bornes de très haute puissance. Pour une compacte, cela représente environ 8 € les 100 km à 0,50 € le kWh." },
+          { question: "Une voiture électrique étrangère peut-elle entrer dans les ZBE espagnoles ?", answer: "Oui, mais l'étiquette CERO de la DGT n'est délivrée qu'aux véhicules espagnols. Madrid et Barcelone demandent une inscription préalable sur leur registre des véhicules étrangers. Vérifiez la règle de chaque ville avant d'y entrer." },
+          { question: "Combien y a-t-il de bornes publiques en Espagne ?", answer: "56 682 points de recharge publics en service fin juin 2026 selon l'ANFAC, auxquels s'ajoutent près de 18 000 points installés mais pas encore raccordés." },
+        ],
+        ...cta.fr,
+      },
+      en: {
+        eyebrow: "Travel",
+        title: "Driving an Electric Car in Spain: Charging, Payment and Prices",
+        excerpt:
+          "Plugs, paying without a Spanish account, what a fast charge costs and low-emission zone rules for foreign plates: a practical guide to charging in Spain.",
+        metaTitle: "Electric Car in Spain: Charging, Prices, ZBE Rules",
+        metaDescription:
+          "Plugs, card payment, price per kWh and low-emission zone (ZBE) rules for foreign cars: a visitor's guide to charging an EV in Spain.",
+        body: [
+          {
+            type: "p",
+            text: "Spain had 56,682 public charging points in service at the end of June 2026, according to the barometer published by ANFAC, the Spanish carmakers' association. The network is less dense than in northern Europe, but charging is often cheaper. One thing to know: nearly a quarter of installed chargers are still waiting to be connected to the grid, so it pays to check a station's status before relying on it.",
+          },
+          { type: "h2", text: "Your plug already fits" },
+          {
+            type: "p",
+            text: "Spain follows the European standard: the Type 2 connector for AC charging and the CCS2 combo connector for DC fast charging. City chargers, such as the kerbside posts installed by the big electricity companies, often only have a socket, so pack your own Type 2 cable.",
+          },
+          { type: "h2", text: "How to pay without a Spanish account" },
+          {
+            type: "p",
+            text: "The EU's AFIR regulation applies in Spain: since April 2024, every new fast charger of 50 kW or more must accept bank cards, and existing fast chargers on the main European corridors must be fitted with readers before January 1, 2027. At older stations and many city chargers, payment goes through a QR code or the operator's app. A charging card from your home country may also roam in Spain, so check its Spanish coverage before you leave.",
+          },
+          { type: "h2", text: "What a charge costs in Spain" },
+          {
+            type: "p",
+            text: "Without a subscription, fast charging generally costs 0.45 to 0.55 euros per kWh in 2026 on big networks such as Iberdrola or Zunder, and can rise toward 0.70 euros at some ultra-fast stations. At 0.50 euros per kWh, a compact EV using about 16 kWh per 100km costs around 8 euros per 100km. Prices vary from one operator to the next, so check the price shown before you plug in.",
+          },
+          { type: "h2", text: "Low-emission zones: foreign plates are a special case" },
+          {
+            type: "p",
+            text: "Spain's large cities have low-emission zones (ZBE). Spanish electric cars drive in freely thanks to the DGT's CERO label, but that label is only issued to vehicles registered in Spain. For a foreign plate, each city sets its own rule: Madrid and Barcelona require prior registration on their foreign-vehicle registers, using the car's registration document, ideally several days ahead. Before driving into a big city, check the city council's website or, for Barcelona, the Área Metropolitana's.",
+          },
+          { type: "h2", text: "Finding a charger along your route" },
+          {
+            type: "p",
+            text: "The map on ma-borne-electrique.com locates chargers in Spain, and the directory by autonomous community shows the number of stations, the share of fast charging and the best-covered towns. That data comes from Open Charge Map, a collaborative database that can be incomplete, so in Spain more than elsewhere, check that a station is actually in service in a route-planning app before you detour.",
+          },
+          { type: "h3", text: "Checklist before you leave" },
+          {
+            type: "ul",
+            items: [
+              "Check your connector (Type 2 or CCS2) and pack your Type 2 cable.",
+              "Install a major Spanish network's app and keep a bank card as a backup.",
+              "Register your car on the Madrid or Barcelona ZBE register if you are driving into either city.",
+              "Check that a charger is in service before relying on it, especially away from main routes.",
+              "In summer, charge in the morning or evening when you can: heat can slow fast charging.",
+            ],
+          },
+        ],
+        faq: [
+          { question: "Can I pay by bank card at Spanish chargers?", answer: "Yes at recent fast chargers: since April 2024, new chargers of 50 kW or more must accept cards, and fast chargers on the main European corridors must be fitted with readers before January 1, 2027. At city chargers, expect a QR code or an app." },
+          { question: "How much does fast charging cost in Spain?", answer: "Without a subscription, generally 0.45 to 0.55 euros per kWh in 2026 on big networks, and up to about 0.70 euros at some ultra-fast stations. For a compact EV, that is around 8 euros per 100km at 0.50 euros per kWh." },
+          { question: "Can a foreign electric car enter Spanish low-emission zones?", answer: "Yes, but the DGT's CERO label is only issued to Spanish vehicles. Madrid and Barcelona require prior registration on their foreign-vehicle registers. Check each city's rule before you drive in." },
+          { question: "How many public chargers are there in Spain?", answer: "56,682 public charging points in service at the end of June 2026 according to ANFAC, plus nearly 18,000 installed points not yet connected to the grid." },
+        ],
+        ...cta.en,
+      },
+      de: {
+        eyebrow: "Reise",
+        title: "Mit dem Elektroauto durch Spanien: Laden, Bezahlen und Preise",
+        excerpt:
+          "Stecker, Bezahlen ohne spanischen Vertrag, Preise beim Schnellladen und Umweltzonen-Regeln für ausländische Kennzeichen: der praktische Leitfaden zum Laden in Spanien.",
+        metaTitle: "Elektroauto in Spanien: Laden, Preise, Umweltzonen",
+        metaDescription:
+          "Stecker, Kartenzahlung, Preise pro kWh und die Regeln der spanischen Umweltzonen (ZBE) für ausländische Autos: der Leitfaden zum Laden in Spanien.",
+        body: [
+          {
+            type: "p",
+            text: "Spanien zählte Ende Juni 2026 laut dem Barometer des Herstellerverbands ANFAC 56.682 öffentliche Ladepunkte in Betrieb. Das Netz ist weniger dicht als in Nordeuropa, dafür ist das Laden oft günstiger. Wichtig zu wissen: Fast ein Viertel der installierten Ladepunkte wartet noch auf den Netzanschluss, deshalb lohnt es sich, den Status einer Säule vorher zu prüfen.",
+          },
+          { type: "h2", text: "Ihr Stecker passt bereits" },
+          {
+            type: "p",
+            text: "Spanien folgt dem europäischen Standard: Typ-2-Stecker für Wechselstrom und CCS2-Combo-Stecker für das Schnellladen mit Gleichstrom. Ladesäulen in der Stadt, etwa die der großen Stromversorger am Straßenrand, bieten oft nur eine Buchse: Nehmen Sie Ihr eigenes Typ-2-Kabel mit.",
+          },
+          { type: "h2", text: "Bezahlen ohne spanischen Vertrag" },
+          {
+            type: "p",
+            text: "Die EU-Verordnung AFIR gilt auch in Spanien: Seit April 2024 muss jeder neue Schnelllader ab 50 kW Bankkarten akzeptieren, und bestehende Schnelllader an den europäischen Hauptachsen müssen bis zum 1. Januar 2027 nachgerüstet werden. An älteren Säulen und vielen Stadtladern läuft die Zahlung über QR-Code oder die App des Betreibers. Auch eine Ladekarte aus Ihrem Heimatland kann per Roaming funktionieren: Prüfen Sie vor der Abreise die Abdeckung in Spanien.",
+          },
+          { type: "h2", text: "Was das Laden in Spanien kostet" },
+          {
+            type: "p",
+            text: "Ohne Abo kostet Schnellladen 2026 bei großen Netzen wie Iberdrola oder Zunder in der Regel 0,45 bis 0,55 Euro pro kWh, an manchen Ultraschnellladern bis etwa 0,70 Euro. Bei 0,50 Euro pro kWh kostet ein Kompaktwagen mit rund 16 kWh pro 100 km etwa 8 Euro pro 100 km. Die Preise unterscheiden sich je nach Betreiber: Prüfen Sie den angezeigten Preis vor dem Einstecken.",
+          },
+          { type: "h2", text: "Umweltzonen: Sonderfall ausländisches Kennzeichen" },
+          {
+            type: "p",
+            text: "Die großen spanischen Städte haben Umweltzonen (ZBE). Spanische Elektroautos fahren dank des CERO-Labels der Verkehrsbehörde DGT frei hinein, doch dieses Label wird nur an in Spanien zugelassene Fahrzeuge vergeben. Für ausländische Kennzeichen legt jede Stadt eigene Regeln fest: Madrid und Barcelona verlangen eine vorherige Eintragung in ihr Register für ausländische Fahrzeuge, mit dem Fahrzeugschein und möglichst einige Tage im Voraus. Prüfen Sie vor der Fahrt in eine Großstadt die Website der Stadt oder, für Barcelona, die der Área Metropolitana.",
+          },
+          { type: "h2", text: "Ladesäulen entlang der Route finden" },
+          {
+            type: "p",
+            text: "Die Karte von ma-borne-electrique.com zeigt Ladesäulen in Spanien, und das Verzeichnis nach autonomer Gemeinschaft nennt die Zahl der Stationen, den Schnellladeanteil und die am besten versorgten Städte. Die Daten stammen von Open Charge Map, einer gemeinschaftlichen Datenbank, die lückenhaft sein kann: Prüfen Sie in Spanien besonders sorgfältig in einer Routenplaner-App, ob eine Säule in Betrieb ist, bevor Sie einen Umweg fahren.",
+          },
+          { type: "h3", text: "Checkliste vor der Abreise" },
+          {
+            type: "ul",
+            items: [
+              "Prüfen Sie Ihren Anschluss (Typ 2 oder CCS2) und nehmen Sie Ihr Typ-2-Kabel mit.",
+              "Installieren Sie die App eines großen spanischen Netzes und halten Sie eine Bankkarte als Reserve bereit.",
+              "Tragen Sie Ihr Auto in das ZBE-Register von Madrid oder Barcelona ein, wenn Sie dorthin fahren.",
+              "Prüfen Sie vorab, ob eine Säule in Betrieb ist, vor allem abseits der Hauptrouten.",
+              "Laden Sie im Sommer möglichst morgens oder abends: Hitze kann das Schnellladen bremsen.",
+            ],
+          },
+        ],
+        faq: [
+          { question: "Kann man an spanischen Ladesäulen mit Bankkarte bezahlen?", answer: "An neueren Schnellladern ja: Seit April 2024 müssen neue Ladepunkte ab 50 kW Karten akzeptieren, und Schnelllader an den europäischen Hauptachsen müssen bis zum 1. Januar 2027 nachgerüstet werden. An Stadtladern brauchen Sie oft einen QR-Code oder eine App." },
+          { question: "Was kostet Schnellladen in Spanien?", answer: "Ohne Abo 2026 bei großen Netzen in der Regel 0,45 bis 0,55 Euro pro kWh, an manchen Ultraschnellladern bis etwa 0,70 Euro. Für einen Kompaktwagen sind das bei 0,50 Euro pro kWh etwa 8 Euro pro 100 km." },
+          { question: "Darf ein ausländisches Elektroauto in spanische Umweltzonen fahren?", answer: "Ja, aber das CERO-Label der DGT gibt es nur für spanische Fahrzeuge. Madrid und Barcelona verlangen eine vorherige Eintragung in ihr Register für ausländische Fahrzeuge. Prüfen Sie die Regel jeder Stadt vor der Einfahrt." },
+          { question: "Wie viele öffentliche Ladepunkte gibt es in Spanien?", answer: "56.682 öffentliche Ladepunkte in Betrieb Ende Juni 2026 laut ANFAC, dazu fast 18.000 installierte, aber noch nicht angeschlossene Ladepunkte." },
+        ],
+        ...cta.de,
+      },
+      es: {
+        eyebrow: "Viaje",
+        title: "Coche eléctrico en España: dónde recargar, cómo pagar y precios",
+        excerpt:
+          "Conectores, pago sin contrato, precio de la carga rápida y normas de las ZBE para matrículas extranjeras: la guía práctica para recargar en España si vienes de fuera.",
+        metaTitle: "Coche eléctrico en España: recarga, precios, ZBE",
+        metaDescription:
+          "Conectores, pago con tarjeta, precio por kWh y normas de las zonas de bajas emisiones (ZBE) para coches extranjeros: la guía para recargar en España.",
+        body: [
+          {
+            type: "p",
+            text: "España contaba con 56.682 puntos de recarga públicos en servicio a finales de junio de 2026, según el barómetro de ANFAC, la asociación de fabricantes. La red es menos densa que en el norte de Europa, pero cargar suele salir más barato. Un dato a tener en cuenta: casi una cuarta parte de los puntos instalados sigue pendiente de conexión a la red, así que conviene comprobar el estado de un cargador antes de contar con él.",
+          },
+          { type: "h2", text: "Tu conector ya es el adecuado" },
+          {
+            type: "p",
+            text: "España sigue el estándar europeo: conector Tipo 2 en corriente alterna y conector combinado CCS2 en corriente continua. Los cargadores urbanos, como los postes que instalan en las aceras las grandes eléctricas, a menudo solo tienen toma: lleva tu propio cable Tipo 2.",
+          },
+          { type: "h2", text: "Cómo pagar sin contrato" },
+          {
+            type: "p",
+            text: "El reglamento europeo AFIR se aplica en España: desde abril de 2024, todo cargador rápido nuevo de 50 kW o más debe aceptar tarjeta bancaria, y los cargadores rápidos existentes en los grandes ejes europeos deben equiparse antes del 1 de enero de 2027. En las estaciones antiguas y en muchos cargadores urbanos, el pago se hace con un código QR o la aplicación del operador. Una tarjeta de recarga de tu país también puede funcionar en itinerancia: comprueba su cobertura en España antes de salir.",
+          },
+          { type: "h2", text: "Cuánto cuesta cargar en España" },
+          {
+            type: "p",
+            text: "Sin abono, la carga rápida suele costar entre 0,45 y 0,55 euros por kWh en 2026 en grandes redes como Iberdrola o Zunder, y puede acercarse a 0,70 euros en algunos cargadores de muy alta potencia. A 0,50 euros por kWh, un compacto que consume unos 16 kWh cada 100 km sale por unos 8 euros por 100 km. Las tarifas cambian de un operador a otro: comprueba el precio indicado antes de conectar.",
+          },
+          { type: "h2", text: "Zonas de bajas emisiones: las matrículas extranjeras, aparte" },
+          {
+            type: "p",
+            text: "Las grandes ciudades españolas tienen zonas de bajas emisiones (ZBE). Los coches eléctricos españoles entran libremente gracias a la etiqueta CERO de la DGT, pero esa etiqueta solo se expide a vehículos matriculados en España. Para una matrícula extranjera, cada ciudad fija su norma: Madrid y Barcelona exigen la inscripción previa en su registro de vehículos extranjeros, con el permiso de circulación del vehículo y, a ser posible, con varios días de antelación. Antes de entrar en una gran ciudad, consulta la web del ayuntamiento o, en Barcelona, la del Área Metropolitana.",
+          },
+          { type: "h2", text: "Encontrar un cargador en tu ruta" },
+          {
+            type: "p",
+            text: "El mapa de ma-borne-electrique.com localiza los cargadores en España, y el directorio por comunidad autónoma indica el número de estaciones, la proporción de carga rápida y las ciudades mejor equipadas. Los datos proceden de Open Charge Map, una base colaborativa que puede estar incompleta: en España más que en otros países, comprueba en una aplicación de rutas que un cargador está en servicio antes de desviarte.",
+          },
+          { type: "h3", text: "Lista de comprobación antes de salir" },
+          {
+            type: "ul",
+            items: [
+              "Comprueba tu conector (Tipo 2 o CCS2) y lleva tu cable Tipo 2.",
+              "Instala la aplicación de una gran red española y ten una tarjeta bancaria de reserva.",
+              "Inscribe tu coche en el registro ZBE de Madrid o Barcelona si vas a entrar en alguna de las dos.",
+              "Comprueba que un cargador está en servicio antes de contar con él, sobre todo lejos de los grandes ejes.",
+              "En verano, carga por la mañana o por la tarde si puedes: el calor puede ralentizar la carga rápida.",
+            ],
+          },
+        ],
+        faq: [
+          { question: "¿Se puede pagar con tarjeta bancaria en los cargadores españoles?", answer: "Sí en los cargadores rápidos recientes: desde abril de 2024, los nuevos puntos de 50 kW o más deben aceptar tarjeta, y los cargadores rápidos de los grandes ejes europeos deben equiparse antes del 1 de enero de 2027. En los cargadores urbanos, cuenta con un código QR o una aplicación." },
+          { question: "¿Cuánto cuesta la carga rápida en España?", answer: "Sin abono, normalmente entre 0,45 y 0,55 euros por kWh en 2026 en las grandes redes, y hasta unos 0,70 euros en algunos cargadores de muy alta potencia. Para un compacto, son unos 8 euros por 100 km a 0,50 euros por kWh." },
+          { question: "¿Puede un coche eléctrico extranjero entrar en las ZBE españolas?", answer: "Sí, pero la etiqueta CERO de la DGT solo se expide a vehículos españoles. Madrid y Barcelona exigen la inscripción previa en su registro de vehículos extranjeros. Comprueba la norma de cada ciudad antes de entrar." },
+          { question: "¿Cuántos puntos de recarga públicos hay en España?", answer: "56.682 puntos de recarga públicos en servicio a finales de junio de 2026 según ANFAC, más casi 18.000 puntos instalados pendientes de conexión." },
+        ],
+        ...cta.es,
+      },
+    },
+  },
+  {
+    slug: "electric-car-in-uk-charging-guide",
+    publishedAt: "2026-10-01",
+    related: ["electric-car-in-france-charging-guide", "electric-car-in-belgium-charging-guide", "electric-car-in-germany-charging-guide", "electric-car-in-spain-charging-guide", "electric-car-in-switzerland-charging-guide"],
+    image: {
+      src: "/blog/electric-car-in-uk-charging-guide.jpg",
+      alt: {
+        fr: "Deux bornes de recharge rapide InstaVolt avec terminal de paiement sans contact sur un parking d'East Grinstead, en Angleterre",
+        en: "Two InstaVolt rapid chargers with contactless payment terminals in a car park in East Grinstead, England",
+        de: "Zwei InstaVolt-Schnelllader mit kontaktlosem Kartenterminal auf einem Parkplatz in East Grinstead, England",
+        es: "Dos cargadores rápidos InstaVolt con terminal de pago sin contacto en un aparcamiento de East Grinstead, Inglaterra",
+      },
+      credit: {
+        name: "OrangeStarling1997",
+        url: "https://commons.wikimedia.org/wiki/File:Instavolt_charging_station_at_McDonald%27s_East_Grinstead_(December_2023).jpg",
+        license: "CC BY-SA 4.0",
+      },
+    },
+    content: {
+      fr: {
+        eyebrow: "Voyage",
+        title: "Visiter le Royaume-Uni en voiture électrique : recharge, paiement et prix",
+        excerpt:
+          "Prises, paiement sans contact, prix en pence par kWh, ULEZ et péage urbain de Londres : le guide pratique pour recharger au Royaume-Uni avec une voiture venue du continent.",
+        metaTitle: "Voiture électrique au Royaume-Uni : recharge, prix",
+        metaDescription:
+          "Prises compatibles, paiement sans contact, prix au kWh, ULEZ et Congestion Charge à Londres : le guide des visiteurs pour recharger une voiture électrique au Royaume-Uni.",
+        body: [
+          {
+            type: "p",
+            text: "Le Royaume-Uni comptait 121 171 points de recharge publics répartis sur 46 731 sites fin juin 2026 selon Zapmap, l'application de référence du pays. Pour un conducteur venu du continent, la recharge elle-même ne change presque pas. Ce qui change : les prix en livres, la prise domestique et les règles de circulation à Londres.",
+          },
+          { type: "h2", text: "Votre prise est la bonne, pas votre câble de secours" },
+          {
+            type: "p",
+            text: "Le Royaume-Uni utilise les mêmes connecteurs que l'Europe continentale : Type 2 en courant alternatif, Combo CCS2 en courant continu. Beaucoup de bornes en courant alternatif n'ont pas de câble, emportez donc votre câble Type 2. En revanche, la prise domestique britannique (type G) est différente : un câble de recharge de secours à prise européenne ne s'y branche pas sans adaptateur adapté à cet usage.",
+          },
+          { type: "h2", text: "Payer : le sans contact est la règle" },
+          {
+            type: "p",
+            text: "La réglementation britannique sur les bornes publiques (Public Charge Point Regulations 2023) impose le paiement sans contact par carte bancaire sur toutes les bornes rapides de 50 kW ou plus et sur les nouvelles bornes de 8 kW ou plus. Elle oblige aussi les opérateurs à afficher le prix en pence par kWh, à garantir 99 % de disponibilité en moyenne sur leur réseau rapide et à proposer une assistance téléphonique gratuite 24 h/24. Votre carte bancaire suffit donc dans la plupart des cas : vérifiez seulement les frais de change de votre banque.",
+          },
+          { type: "h2", text: "Ce que coûte une charge au Royaume-Uni" },
+          {
+            type: "p",
+            text: "Selon l'indice des prix de Zapmap, la recharge sans abonnement coûtait en moyenne 77 pence le kWh sur les bornes rapides et ultra-rapides en août 2026, et 54 pence sur les bornes plus lentes. Une compacte qui consomme environ 16 kWh aux 100 km revient donc à environ 12,30 livres les 100 km en recharge rapide. Entre les dix plus grands réseaux rapides, le prix variait de 59 à 92 pence : l'écart justifie de comparer avant de s'arrêter.",
+          },
+          { type: "h2", text: "Londres : ULEZ et péage urbain" },
+          {
+            type: "p",
+            text: "Une voiture électrique respecte les normes de la zone à très faibles émissions de Londres (ULEZ), qui couvre tout le Grand Londres. Pour une plaque étrangère, vérifiez votre véhicule avec l'outil en ligne de Transport for London : s'il n'est pas reconnu, il faut l'enregistrer auprès de TfL, faute de quoi la taxe journalière de 12,50 livres s'applique. Le péage urbain du centre (Congestion Charge) est un dispositif distinct : depuis le 25 décembre 2025, les voitures électriques ne sont plus exemptées et paient 18 livres par jour, avec une réduction pour celles inscrites au paiement automatique Auto Pay.",
+          },
+          { type: "h2", text: "Trouver une borne sur votre trajet" },
+          {
+            type: "p",
+            text: "La carte de ma-borne-electrique.com localise les bornes au Royaume-Uni, et l'annuaire par région indique le nombre de stations, la part de recharge rapide et les villes les mieux équipées. Ces données viennent d'Open Charge Map et peuvent être incomplètes : vérifiez la disponibilité en temps réel dans une application de trajet avant un détour.",
+          },
+          { type: "h3", text: "Checklist avant le départ" },
+          {
+            type: "ul",
+            items: [
+              "Vérifiez votre connecteur (Type 2 ou CCS2) et emportez votre câble Type 2.",
+              "Prévoyez une carte bancaire sans frais de change pour payer en livres.",
+              "Vérifiez votre véhicule sur l'outil ULEZ de Transport for London avant d'entrer dans Londres.",
+              "Pensez au péage urbain du centre de Londres, qui s'applique désormais aussi aux voitures électriques.",
+              "Sur borne rapide, visez entre 20 % et 80 % : la vitesse de charge chute au-delà.",
+            ],
+          },
+        ],
+        faq: [
+          { question: "Peut-on payer par carte bancaire aux bornes britanniques ?", answer: "Oui. Depuis la réglementation de 2023, toutes les bornes rapides de 50 kW ou plus et les nouvelles bornes de 8 kW ou plus doivent accepter le paiement sans contact. Vérifiez les frais de change de votre banque." },
+          { question: "Combien coûte une recharge rapide au Royaume-Uni ?", answer: "En moyenne 77 pence le kWh sans abonnement en août 2026 selon Zapmap, soit environ 12,30 livres les 100 km pour une compacte. Les prix des grands réseaux rapides allaient de 59 à 92 pence." },
+          { question: "Une voiture électrique étrangère doit-elle payer l'ULEZ à Londres ?", answer: "Non si elle est reconnue comme conforme. Vérifiez-la avec l'outil de Transport for London et enregistrez-la auprès de TfL si elle n'est pas reconnue, sinon la taxe de 12,50 livres par jour s'applique." },
+          { question: "Les voitures électriques paient-elles la Congestion Charge ?", answer: "Oui depuis le 25 décembre 2025 : 18 livres par jour, avec une réduction pour les voitures électriques inscrites au paiement automatique Auto Pay." },
+        ],
+        ...cta.fr,
+      },
+      en: {
+        eyebrow: "Travel",
+        title: "Driving an Electric Car in the UK: Charging, Payment and Prices",
+        excerpt:
+          "Plugs, contactless payment, prices in pence per kWh, the ULEZ and London's Congestion Charge: a practical guide to charging in the UK with a car from continental Europe.",
+        metaTitle: "Electric Car in the UK: Charging, Payment, Prices",
+        metaDescription:
+          "Plugs, contactless payment, price per kWh, the ULEZ and London's Congestion Charge: a visitor's guide to charging an electric car in the UK.",
+        body: [
+          {
+            type: "p",
+            text: "The UK had 121,171 public chargers across 46,731 locations at the end of June 2026, according to Zapmap, the country's main charging app. For a driver coming from continental Europe, charging itself barely changes. What does change: prices in pounds, the household socket and the rules for driving in London.",
+          },
+          { type: "h2", text: "Your plug fits, your backup cable may not" },
+          {
+            type: "p",
+            text: "The UK uses the same connectors as continental Europe: Type 2 for AC charging and CCS2 for DC fast charging. Many AC chargers have no cable, so pack your Type 2 cable. The British household socket (type G), however, is different: a portable charging cable with a continental plug will not fit it without an adapter rated for that use.",
+          },
+          { type: "h2", text: "Paying: contactless is the rule" },
+          {
+            type: "p",
+            text: "The UK's Public Charge Point Regulations 2023 require contactless bank card payment at every rapid charger of 50 kW or more and at new chargers of 8 kW or more. They also require operators to show prices in pence per kWh, to keep their rapid network 99% reliable on average and to offer a free 24/7 phone helpline. Your bank card will work in most cases, so just check your bank's foreign exchange fees.",
+          },
+          { type: "h2", text: "What a charge costs in the UK" },
+          {
+            type: "p",
+            text: "According to Zapmap's price index, pay-as-you-go charging averaged 77p per kWh on rapid and ultra-rapid chargers in August 2026, and 54p on slower chargers. A compact EV using about 16 kWh per 100km therefore costs around 12.30 pounds per 100km on rapid chargers, or about 23p per mile. Across the ten biggest rapid networks, prices ranged from 59p to 92p, a gap that makes it worth comparing before you stop.",
+          },
+          { type: "h2", text: "London: the ULEZ and the Congestion Charge" },
+          {
+            type: "p",
+            text: "An electric car meets the standards of London's Ultra Low Emission Zone (ULEZ), which covers all of Greater London. For a foreign plate, check your vehicle with Transport for London's online checker: if it is not recognized, you need to register it with TfL, otherwise the 12.50-pound daily charge applies. The central Congestion Charge is a separate scheme: since December 25, 2025, electric cars are no longer exempt and pay 18 pounds a day, with a discount for those registered for Auto Pay.",
+          },
+          { type: "h2", text: "Finding a charger along your route" },
+          {
+            type: "p",
+            text: "The map on ma-borne-electrique.com locates chargers in the UK, and the regional directory shows the number of stations, the share of fast charging and the best-covered towns. That data comes from Open Charge Map and can be incomplete, so check real-time availability in a route-planning app before you detour.",
+          },
+          { type: "h3", text: "Checklist before you leave" },
+          {
+            type: "ul",
+            items: [
+              "Check your connector (Type 2 or CCS2) and pack your Type 2 cable.",
+              "Bring a bank card without foreign exchange fees to pay in pounds.",
+              "Check your vehicle on Transport for London's ULEZ checker before driving into London.",
+              "Remember the central London Congestion Charge, which now applies to electric cars too.",
+              "On rapid chargers, aim for 20% to 80%: charging speed drops beyond that.",
+            ],
+          },
+        ],
+        faq: [
+          { question: "Can I pay by bank card at UK chargers?", answer: "Yes. Under the 2023 regulations, every rapid charger of 50 kW or more and every new charger of 8 kW or more must accept contactless payment. Check your bank's foreign exchange fees." },
+          { question: "How much does rapid charging cost in the UK?", answer: "An average of 77p per kWh without a subscription in August 2026 according to Zapmap, around 12.30 pounds per 100km for a compact EV. Prices on the big rapid networks ranged from 59p to 92p." },
+          { question: "Does a foreign electric car have to pay the ULEZ charge in London?", answer: "Not if it is recognized as compliant. Check it with Transport for London's checker and register it with TfL if it is not recognized, otherwise the 12.50-pound daily charge applies." },
+          { question: "Do electric cars pay the Congestion Charge?", answer: "Yes since December 25, 2025: 18 pounds a day, with a discount for electric cars registered for Auto Pay." },
+        ],
+        ...cta.en,
+      },
+      de: {
+        eyebrow: "Reise",
+        title: "Mit dem Elektroauto durch Großbritannien: Laden, Bezahlen und Preise",
+        excerpt:
+          "Stecker, kontaktloses Bezahlen, Preise in Pence pro kWh, ULEZ und Londoner City-Maut: der praktische Leitfaden zum Laden in Großbritannien mit einem Auto vom Kontinent.",
+        metaTitle: "Elektroauto in Großbritannien: Laden, Preise",
+        metaDescription:
+          "Stecker, kontaktloses Bezahlen, Preise pro kWh, ULEZ und Congestion Charge in London: der Leitfaden für Reisende, die ihr Elektroauto in Großbritannien laden.",
+        body: [
+          {
+            type: "p",
+            text: "Großbritannien zählte Ende Juni 2026 laut Zapmap, der wichtigsten Lade-App des Landes, 121.171 öffentliche Ladepunkte an 46.731 Standorten. Für Fahrer vom Kontinent ändert sich beim Laden selbst kaum etwas. Anders sind die Preise in Pfund, die Haushaltssteckdose und die Regeln für Fahrten in London.",
+          },
+          { type: "h2", text: "Ihr Stecker passt, Ihr Notladekabel vielleicht nicht" },
+          {
+            type: "p",
+            text: "Großbritannien nutzt dieselben Anschlüsse wie Kontinentaleuropa: Typ 2 für Wechselstrom und CCS2 für das Schnellladen mit Gleichstrom. Viele Wechselstrom-Ladepunkte haben kein Kabel, nehmen Sie also Ihr Typ-2-Kabel mit. Die britische Haushaltssteckdose (Typ G) ist dagegen anders: Ein mobiles Ladekabel mit Schuko-Stecker passt dort nur mit einem für diesen Zweck geeigneten Adapter.",
+          },
+          { type: "h2", text: "Bezahlen: kontaktlos ist die Regel" },
+          {
+            type: "p",
+            text: "Die britischen Public Charge Point Regulations 2023 schreiben kontaktloses Bezahlen mit Bankkarte an allen Schnellladern ab 50 kW und an neuen Ladepunkten ab 8 kW vor. Außerdem müssen Betreiber den Preis in Pence pro kWh anzeigen, für ihr Schnellladenetz im Schnitt 99 % Verfügbarkeit garantieren und eine kostenlose Hotline rund um die Uhr anbieten. Ihre Bankkarte reicht also in den meisten Fällen: Prüfen Sie nur die Fremdwährungsgebühren Ihrer Bank.",
+          },
+          { type: "h2", text: "Was das Laden in Großbritannien kostet" },
+          {
+            type: "p",
+            text: "Laut dem Preisindex von Zapmap kostete Laden ohne Abo im August 2026 an Schnell- und Ultraschnellladern durchschnittlich 77 Pence pro kWh, an langsameren Ladepunkten 54 Pence. Ein Kompaktwagen mit rund 16 kWh pro 100 km kostet beim Schnellladen also etwa 12,30 Pfund pro 100 km. Zwischen den zehn größten Schnellladenetzen reichten die Preise von 59 bis 92 Pence: Ein Vergleich vor dem Stopp lohnt sich.",
+          },
+          { type: "h2", text: "London: ULEZ und City-Maut" },
+          {
+            type: "p",
+            text: "Ein Elektroauto erfüllt die Vorgaben der Londoner Ultra Low Emission Zone (ULEZ), die ganz Greater London umfasst. Bei ausländischem Kennzeichen prüfen Sie Ihr Fahrzeug mit dem Online-Tool von Transport for London: Wird es nicht erkannt, müssen Sie es bei TfL registrieren, sonst fällt die Tagesgebühr von 12,50 Pfund an. Die City-Maut im Zentrum (Congestion Charge) ist ein eigenes System: Seit dem 25. Dezember 2025 sind Elektroautos nicht mehr befreit und zahlen 18 Pfund pro Tag, mit Rabatt für Fahrzeuge, die für Auto Pay registriert sind.",
+          },
+          { type: "h2", text: "Ladesäulen entlang der Route finden" },
+          {
+            type: "p",
+            text: "Die Karte von ma-borne-electrique.com zeigt Ladesäulen in Großbritannien, und das Regionsverzeichnis nennt die Zahl der Stationen, den Schnellladeanteil und die am besten versorgten Städte. Die Daten stammen von Open Charge Map und können lückenhaft sein: Prüfen Sie die Echtzeit-Verfügbarkeit in einer Routenplaner-App, bevor Sie einen Umweg fahren.",
+          },
+          { type: "h3", text: "Checkliste vor der Abreise" },
+          {
+            type: "ul",
+            items: [
+              "Prüfen Sie Ihren Anschluss (Typ 2 oder CCS2) und nehmen Sie Ihr Typ-2-Kabel mit.",
+              "Nehmen Sie eine Bankkarte ohne Fremdwährungsgebühren mit, um in Pfund zu zahlen.",
+              "Prüfen Sie Ihr Fahrzeug vor der Fahrt nach London mit dem ULEZ-Tool von Transport for London.",
+              "Denken Sie an die Londoner City-Maut, die inzwischen auch für Elektroautos gilt.",
+              "Laden Sie an Schnellladern idealerweise zwischen 20 % und 80 %: darüber sinkt die Ladegeschwindigkeit.",
+            ],
+          },
+        ],
+        faq: [
+          { question: "Kann man an britischen Ladesäulen mit Bankkarte zahlen?", answer: "Ja. Seit den Vorschriften von 2023 müssen alle Schnelllader ab 50 kW und alle neuen Ladepunkte ab 8 kW kontaktloses Bezahlen akzeptieren. Prüfen Sie die Fremdwährungsgebühren Ihrer Bank." },
+          { question: "Was kostet Schnellladen in Großbritannien?", answer: "Im August 2026 laut Zapmap durchschnittlich 77 Pence pro kWh ohne Abo, also etwa 12,30 Pfund pro 100 km für einen Kompaktwagen. Bei den großen Schnellladenetzen reichten die Preise von 59 bis 92 Pence." },
+          { question: "Muss ein ausländisches Elektroauto in London die ULEZ-Gebühr zahlen?", answer: "Nicht, wenn es als konform erkannt wird. Prüfen Sie es mit dem Tool von Transport for London und registrieren Sie es bei TfL, falls es nicht erkannt wird, sonst fällt die Tagesgebühr von 12,50 Pfund an." },
+          { question: "Zahlen Elektroautos die Congestion Charge?", answer: "Ja, seit dem 25. Dezember 2025: 18 Pfund pro Tag, mit Rabatt für Elektroautos, die für Auto Pay registriert sind." },
+        ],
+        ...cta.de,
+      },
+      es: {
+        eyebrow: "Viaje",
+        title: "Coche eléctrico en el Reino Unido: recargar, pagar y precios",
+        excerpt:
+          "Conectores, pago sin contacto, precios en peniques por kWh, la ULEZ y el peaje urbano de Londres: la guía práctica para recargar en el Reino Unido con un coche del continente.",
+        metaTitle: "Coche eléctrico en el Reino Unido: recarga, precios",
+        metaDescription:
+          "Conectores, pago sin contacto, precio por kWh, la ULEZ y la Congestion Charge de Londres: la guía para recargar tu coche eléctrico en el Reino Unido.",
+        body: [
+          {
+            type: "p",
+            text: "El Reino Unido contaba con 121.171 puntos de recarga públicos repartidos en 46.731 ubicaciones a finales de junio de 2026, según Zapmap, la aplicación de referencia del país. Para un conductor que llega del continente, la recarga en sí apenas cambia. Lo que sí cambia: los precios en libras, el enchufe doméstico y las normas para circular por Londres.",
+          },
+          { type: "h2", text: "Tu conector sirve, tu cable de emergencia quizá no" },
+          {
+            type: "p",
+            text: "El Reino Unido usa los mismos conectores que la Europa continental: Tipo 2 en corriente alterna y CCS2 en corriente continua. Muchos puntos de corriente alterna no tienen cable, así que lleva tu cable Tipo 2. En cambio, el enchufe doméstico británico (tipo G) es distinto: un cable de carga portátil con enchufe europeo no encaja sin un adaptador apto para ese uso.",
+          },
+          { type: "h2", text: "Pagar: el sin contacto es la norma" },
+          {
+            type: "p",
+            text: "La normativa británica sobre puntos de recarga públicos (Public Charge Point Regulations 2023) exige el pago sin contacto con tarjeta bancaria en todos los cargadores rápidos de 50 kW o más y en los nuevos de 8 kW o más. También obliga a los operadores a mostrar el precio en peniques por kWh, a garantizar de media un 99 % de disponibilidad en su red rápida y a ofrecer asistencia telefónica gratuita las 24 horas. Tu tarjeta bancaria bastará en la mayoría de los casos: comprueba solo las comisiones de cambio de tu banco.",
+          },
+          { type: "h2", text: "Cuánto cuesta cargar en el Reino Unido" },
+          {
+            type: "p",
+            text: "Según el índice de precios de Zapmap, cargar sin abono costaba de media 77 peniques por kWh en los cargadores rápidos y ultrarrápidos en agosto de 2026, y 54 peniques en los más lentos. Un compacto que consume unos 16 kWh cada 100 km sale así por unas 12,30 libras por 100 km en carga rápida. Entre las diez mayores redes rápidas, el precio iba de 59 a 92 peniques: la diferencia justifica comparar antes de parar.",
+          },
+          { type: "h2", text: "Londres: ULEZ y peaje urbano" },
+          {
+            type: "p",
+            text: "Un coche eléctrico cumple las normas de la zona de emisiones ultrabajas de Londres (ULEZ), que abarca todo el Gran Londres. Con matrícula extranjera, comprueba tu vehículo con la herramienta en línea de Transport for London: si no aparece reconocido, hay que registrarlo ante TfL; si no, se aplica la tasa diaria de 12,50 libras. El peaje urbano del centro (Congestion Charge) es un sistema aparte: desde el 25 de diciembre de 2025, los coches eléctricos ya no están exentos y pagan 18 libras al día, con un descuento para los inscritos en el pago automático Auto Pay.",
+          },
+          { type: "h2", text: "Encontrar un cargador en tu ruta" },
+          {
+            type: "p",
+            text: "El mapa de ma-borne-electrique.com localiza los cargadores en el Reino Unido, y el directorio por región indica el número de estaciones, la proporción de carga rápida y las ciudades mejor equipadas. Los datos proceden de Open Charge Map y pueden estar incompletos: comprueba la disponibilidad en tiempo real en una aplicación de rutas antes de desviarte.",
+          },
+          { type: "h3", text: "Lista de comprobación antes de salir" },
+          {
+            type: "ul",
+            items: [
+              "Comprueba tu conector (Tipo 2 o CCS2) y lleva tu cable Tipo 2.",
+              "Lleva una tarjeta bancaria sin comisiones de cambio para pagar en libras.",
+              "Comprueba tu vehículo en la herramienta ULEZ de Transport for London antes de entrar en Londres.",
+              "Ten en cuenta el peaje urbano del centro de Londres, que ahora también pagan los coches eléctricos.",
+              "En cargadores rápidos, apunta al 20 %-80 %: por encima de ese umbral la velocidad de carga baja.",
+            ],
+          },
+        ],
+        faq: [
+          { question: "¿Se puede pagar con tarjeta bancaria en los cargadores británicos?", answer: "Sí. Desde la normativa de 2023, todos los cargadores rápidos de 50 kW o más y los nuevos de 8 kW o más deben aceptar el pago sin contacto. Comprueba las comisiones de cambio de tu banco." },
+          { question: "¿Cuánto cuesta la carga rápida en el Reino Unido?", answer: "De media 77 peniques por kWh sin abono en agosto de 2026 según Zapmap, unas 12,30 libras por 100 km para un compacto. En las grandes redes rápidas, los precios iban de 59 a 92 peniques." },
+          { question: "¿Tiene que pagar la ULEZ un coche eléctrico extranjero en Londres?", answer: "No, si se reconoce como conforme. Compruébalo con la herramienta de Transport for London y regístralo ante TfL si no aparece reconocido; si no, se aplica la tasa diaria de 12,50 libras." },
+          { question: "¿Pagan los coches eléctricos la Congestion Charge?", answer: "Sí, desde el 25 de diciembre de 2025: 18 libras al día, con un descuento para los coches eléctricos inscritos en Auto Pay." },
+        ],
+        ...cta.es,
+      },
+    },
+  },
+  {
+    slug: "electric-car-in-switzerland-charging-guide",
+    publishedAt: "2026-10-01",
+    related: ["electric-car-in-france-charging-guide", "electric-car-in-germany-charging-guide", "electric-car-in-belgium-charging-guide", "electric-car-in-spain-charging-guide", "electric-car-in-uk-charging-guide"],
+    image: {
+      src: "/blog/electric-car-in-switzerland-charging-guide.jpg",
+      alt: {
+        fr: "Places de recharge pour voitures électriques dans le parking relais de l'Étoile à Carouge, près de Genève",
+        en: "Electric car charging bays in the Étoile park-and-ride in Carouge, near Geneva, Switzerland",
+        de: "Ladeplätze für Elektroautos im Park-and-ride Étoile in Carouge bei Genf, Schweiz",
+        es: "Plazas de recarga para coches eléctricos en el aparcamiento disuasorio de Étoile, en Carouge, cerca de Ginebra, Suiza",
+      },
+      credit: {
+        name: "Guilhem Vellut",
+        url: "https://commons.wikimedia.org/wiki/File:Chargers_for_electric_cars_@_P%2BR_%C3%89toile_@_Carouge_(50514019621).jpg",
+        license: "CC BY 2.0",
+      },
+    },
+    content: {
+      fr: {
+        eyebrow: "Voyage",
+        title: "Visiter la Suisse en voiture électrique : recharge, vignette et prix",
+        excerpt:
+          "Prises, paiement hors Union européenne, prix en francs suisses, vignette autoroutière et prise domestique différente : le guide pratique pour recharger en Suisse.",
+        metaTitle: "Voiture électrique en Suisse : recharge, vignette",
+        metaDescription:
+          "Prises compatibles, paiement, prix au kWh en francs suisses, vignette autoroutière obligatoire et prise domestique T13 : le guide des visiteurs pour recharger en Suisse.",
+        body: [
+          {
+            type: "p",
+            text: "La Suisse comptait 18 284 points de recharge publics répartis sur 8 535 sites en avril 2026 selon l'Office fédéral de l'énergie. Le réseau est bien réparti, y compris sur les grands axes alpins. Pour un visiteur, la Suisse a trois particularités : elle ne fait pas partie de l'Union européenne, l'autoroute demande une vignette, et la prise domestique n'est pas la même que chez ses voisins.",
+          },
+          { type: "h2", text: "Votre prise est la bonne, pas forcément votre câble de secours" },
+          {
+            type: "p",
+            text: "Les bornes suisses utilisent le standard européen : prise Type 2 en courant alternatif, connecteur Combo CCS2 en courant continu. Emportez votre câble Type 2, car de nombreuses bornes en courant alternatif n'en fournissent pas. La prise domestique suisse (type J, dite T13) n'accepte pas les fiches de type E/F (Schuko) utilisées en France ou en Allemagne : un câble de recharge de secours ne s'y branche qu'avec un adaptateur prévu pour cet usage.",
+          },
+          { type: "h2", text: "Payer hors Union européenne" },
+          {
+            type: "p",
+            text: "Le règlement européen AFIR, qui impose la carte bancaire sur les nouvelles bornes rapides dans l'Union, ne s'applique pas en Suisse. Dans les faits, les bornes rapides récentes des grands réseaux acceptent souvent le paiement sans contact, et les autres se paient par QR code, application ou carte de recharge. Beaucoup de cartes de recharge européennes fonctionnent en itinérance en Suisse, mais vérifiez avant de partir. Attention aussi à votre forfait mobile : la Suisse est souvent exclue de l'itinérance européenne, installez et activez les applications avant de passer la frontière.",
+          },
+          { type: "h2", text: "Ce que coûte une charge en Suisse" },
+          {
+            type: "p",
+            text: "Les prix sont affichés en francs suisses. La recharge rapide coûte en général entre 0,65 et 1 franc le kWh, et peut atteindre environ 1,25 franc sur les bornes de très haute puissance. À 0,80 franc le kWh, une compacte qui consomme environ 16 kWh aux 100 km revient à environ 12,80 francs les 100 km. Le paiement par carte bancaire étrangère peut ajouter des frais de change : vérifiez-les auprès de votre banque.",
+          },
+          { type: "h2", text: "Vignette autoroutière et règles locales" },
+          {
+            type: "p",
+            text: "La vignette autoroutière est obligatoire pour les voitures électriques comme pour les autres. Elle coûte 40 francs et la vignette 2026 est valable jusqu'au 31 janvier 2027. La version électronique, liée à la plaque, s'achète sur le portail officiel de l'Office fédéral de la douane et de la sécurité des frontières (via.admin.ch) : méfiez-vous des sites qui la revendent plus cher. À Genève, le macaron Stick'AIR ne sert qu'en cas de pic de pollution, et les voitures électriques peuvent alors circuler ; la vignette française Crit'Air y est reconnue.",
+          },
+          { type: "h2", text: "Trouver une borne sur votre trajet" },
+          {
+            type: "p",
+            text: "La carte de ma-borne-electrique.com localise les bornes en Suisse à partir des données d'Open Charge Map, qui peuvent être incomplètes. En montagne, prévoyez une marge : le froid réduit l'autonomie, et les longues montées consomment beaucoup, même si les descentes rendent une partie de l'énergie grâce au freinage régénératif. Vérifiez la disponibilité en temps réel dans une application de trajet avant un détour.",
+          },
+          { type: "h3", text: "Checklist avant le départ" },
+          {
+            type: "ul",
+            items: [
+              "Vérifiez votre connecteur (Type 2 ou CCS2) et emportez votre câble Type 2.",
+              "Achetez la vignette autoroutière sur le portail officiel via.admin.ch.",
+              "Installez et activez vos applications de recharge avant la frontière, au cas où votre forfait mobile ne couvre pas la Suisse.",
+              "Prévoyez une carte bancaire sans frais de change pour payer en francs suisses.",
+              "En montagne, gardez une marge d'autonomie plus large qu'en plaine.",
+            ],
+          },
+        ],
+        faq: [
+          { question: "Faut-il une vignette autoroutière pour une voiture électrique en Suisse ?", answer: "Oui. La vignette est obligatoire pour toutes les voitures, électriques comprises. Elle coûte 40 francs ; la vignette 2026 est valable jusqu'au 31 janvier 2027 et s'achète en version électronique sur le portail officiel via.admin.ch." },
+          { question: "Peut-on payer par carte bancaire aux bornes suisses ?", answer: "Souvent sur les bornes rapides récentes, mais ce n'est pas une obligation comme dans l'Union européenne. Prévoyez une application ou une carte de recharge compatible, installée avant de passer la frontière." },
+          { question: "Combien coûte une recharge rapide en Suisse ?", answer: "En général entre 0,65 et 1 franc suisse le kWh, jusqu'à environ 1,25 franc sur les bornes de très haute puissance. Pour une compacte, cela représente environ 12,80 francs les 100 km à 0,80 franc le kWh." },
+          { question: "Mon câble de recharge de secours fonctionne-t-il en Suisse ?", answer: "Pas directement. La prise domestique suisse (type T13) n'accepte pas les fiches de type E/F (Schuko) utilisées en France et en Allemagne : il faut un adaptateur prévu pour la recharge. Sur les bornes, votre câble Type 2 fonctionne normalement." },
+        ],
+        ...cta.fr,
+      },
+      en: {
+        eyebrow: "Travel",
+        title: "Driving an Electric Car in Switzerland: Charging, Vignette and Prices",
+        excerpt:
+          "Plugs, paying outside the EU, prices in Swiss francs, the motorway vignette and a different household socket: a practical guide to charging in Switzerland.",
+        metaTitle: "Electric Car in Switzerland: Charging, Vignette",
+        metaDescription:
+          "Plugs, payment, price per kWh in Swiss francs, the mandatory motorway vignette and the T13 household socket: a visitor's guide to charging an EV in Switzerland.",
+        body: [
+          {
+            type: "p",
+            text: "Switzerland had 18,284 public charging points across 8,535 locations in April 2026, according to the Swiss Federal Office of Energy. The network is well spread, including on the main Alpine routes. For a visitor, Switzerland has three quirks: it is not part of the European Union, motorways require a vignette, and the household socket differs from its neighbors'.",
+          },
+          { type: "h2", text: "Your plug fits, your backup cable may not" },
+          {
+            type: "p",
+            text: "Swiss chargers use the European standard: the Type 2 connector for AC charging and the CCS2 combo connector for DC fast charging. Pack your Type 2 cable, since many AC stations do not supply one. The Swiss household socket (type J, known as T13) does not accept the type E/F (Schuko) plugs used in France or Germany, so a portable charging cable only fits with an adapter designed for that use.",
+          },
+          { type: "h2", text: "Paying outside the European Union" },
+          {
+            type: "p",
+            text: "The EU's AFIR regulation, which requires bank card payment at new fast chargers inside the Union, does not apply in Switzerland. In practice, recent fast chargers on the big networks often accept contactless payment, and others are paid by QR code, app or charging card. Many European charging cards roam in Switzerland, but check before you leave. Watch your mobile plan too: Switzerland is often excluded from EU roaming, so install and activate your apps before you cross the border.",
+          },
+          { type: "h2", text: "What a charge costs in Switzerland" },
+          {
+            type: "p",
+            text: "Prices are shown in Swiss francs. Fast charging generally costs 0.65 to 1 franc per kWh, and can reach about 1.25 francs at ultra-fast stations. At 0.80 francs per kWh, a compact EV using about 16 kWh per 100km costs around 12.80 francs per 100km. Paying with a foreign bank card may add exchange fees, so check with your bank.",
+          },
+          { type: "h2", text: "The motorway vignette and local rules" },
+          {
+            type: "p",
+            text: "The motorway vignette is mandatory for electric cars just like any other. It costs 40 francs, and the 2026 vignette is valid until January 31, 2027. The electronic version, linked to your plate, is sold on the official portal of the Federal Office for Customs and Border Security (via.admin.ch), so beware of sites that resell it at a markup. In Geneva, the Stick'AIR sticker only matters during pollution peaks, when electric cars are still allowed to drive, and the French Crit'Air sticker is recognized there.",
+          },
+          { type: "h2", text: "Finding a charger along your route" },
+          {
+            type: "p",
+            text: "The map on ma-borne-electrique.com locates chargers in Switzerland using Open Charge Map data, which can be incomplete. In the mountains, keep a margin: cold reduces range and long climbs use a lot of energy, even if descents give some back through regenerative braking. Check real-time availability in a route-planning app before you detour.",
+          },
+          { type: "h3", text: "Checklist before you leave" },
+          {
+            type: "ul",
+            items: [
+              "Check your connector (Type 2 or CCS2) and pack your Type 2 cable.",
+              "Buy the motorway vignette on the official via.admin.ch portal.",
+              "Install and activate your charging apps before the border, in case your mobile plan does not cover Switzerland.",
+              "Bring a bank card without foreign exchange fees to pay in Swiss francs.",
+              "In the mountains, keep a bigger range buffer than on the flat.",
+            ],
+          },
+        ],
+        faq: [
+          { question: "Does an electric car need a motorway vignette in Switzerland?", answer: "Yes. The vignette is mandatory for all cars, electric ones included. It costs 40 francs, and the 2026 vignette is valid until January 31, 2027. The electronic version is sold on the official via.admin.ch portal." },
+          { question: "Can I pay by bank card at Swiss chargers?", answer: "Often at recent fast chargers, but it is not a legal requirement as it is in the EU. Have a compatible app or charging card ready, installed before you cross the border." },
+          { question: "How much does fast charging cost in Switzerland?", answer: "Generally 0.65 to 1 Swiss franc per kWh, up to about 1.25 francs at ultra-fast stations. For a compact EV, that is around 12.80 francs per 100km at 0.80 francs per kWh." },
+          { question: "Will my portable charging cable work in Switzerland?", answer: "Not directly. The Swiss household socket (type T13) does not accept the type E/F (Schuko) plugs used in France and Germany, so you need an adapter designed for charging. At charging stations, your Type 2 cable works as usual." },
+        ],
+        ...cta.en,
+      },
+      de: {
+        eyebrow: "Reise",
+        title: "Mit dem Elektroauto durch die Schweiz: Laden, Vignette und Preise",
+        excerpt:
+          "Stecker, Bezahlen außerhalb der EU, Preise in Franken, Autobahnvignette und eine andere Haushaltssteckdose: der praktische Leitfaden zum Laden in der Schweiz für Reisende.",
+        metaTitle: "Elektroauto in der Schweiz: Laden, Vignette, Preise",
+        metaDescription:
+          "Stecker, Bezahlen, Preise pro kWh in Franken, Vignettenpflicht und die T13-Haushaltssteckdose: der Leitfaden für Reisende, die ihr Elektroauto in der Schweiz laden.",
+        body: [
+          {
+            type: "p",
+            text: "Die Schweiz zählte im April 2026 laut Bundesamt für Energie 18.284 öffentliche Ladepunkte an 8.535 Standorten. Das Netz ist gut verteilt, auch an den großen Alpenrouten. Für Reisende hat die Schweiz drei Besonderheiten: Sie gehört nicht zur Europäischen Union, die Autobahn ist vignettenpflichtig, und die Haushaltssteckdose unterscheidet sich von der der Nachbarländer.",
+          },
+          { type: "h2", text: "Ihr Stecker passt, Ihr Notladekabel vielleicht nicht" },
+          {
+            type: "p",
+            text: "Schweizer Ladesäulen nutzen den europäischen Standard: Typ-2-Stecker für Wechselstrom und CCS2-Combo-Stecker für das Schnellladen mit Gleichstrom. Nehmen Sie Ihr Typ-2-Kabel mit, denn viele Wechselstrom-Ladesäulen stellen keines bereit. Die Schweizer Haushaltssteckdose (Typ J, auch T13 genannt) nimmt keine Schuko-Stecker auf: Ein mobiles Ladekabel passt nur mit einem für diesen Zweck geeigneten Adapter.",
+          },
+          { type: "h2", text: "Bezahlen außerhalb der Europäischen Union" },
+          {
+            type: "p",
+            text: "Die EU-Verordnung AFIR, die in der Union Kartenzahlung an neuen Schnellladern vorschreibt, gilt in der Schweiz nicht. In der Praxis akzeptieren neuere Schnelllader der großen Netze oft kontaktloses Bezahlen, andere laufen über QR-Code, App oder Ladekarte. Viele europäische Ladekarten funktionieren per Roaming auch in der Schweiz, prüfen Sie das vor der Abreise. Achten Sie auch auf Ihren Mobilfunkvertrag: Die Schweiz ist oft vom EU-Roaming ausgenommen, installieren und aktivieren Sie Ihre Apps also vor der Grenze.",
+          },
+          { type: "h2", text: "Was das Laden in der Schweiz kostet" },
+          {
+            type: "p",
+            text: "Die Preise werden in Franken angezeigt. Schnellladen kostet in der Regel 0,65 bis 1 Franken pro kWh, an Ultraschnellladern bis etwa 1,25 Franken. Bei 0,80 Franken pro kWh kostet ein Kompaktwagen mit rund 16 kWh pro 100 km etwa 12,80 Franken pro 100 km. Die Zahlung mit einer ausländischen Bankkarte kann Fremdwährungsgebühren verursachen: Fragen Sie bei Ihrer Bank nach.",
+          },
+          { type: "h2", text: "Autobahnvignette und lokale Regeln" },
+          {
+            type: "p",
+            text: "Die Autobahnvignette ist für Elektroautos genauso Pflicht wie für alle anderen. Sie kostet 40 Franken, die Vignette 2026 gilt bis zum 31. Januar 2027. Die elektronische Version ist an das Kennzeichen gebunden und wird auf dem offiziellen Portal des Bundesamts für Zoll und Grenzsicherheit (via.admin.ch) verkauft: Vorsicht vor Seiten, die sie teurer weiterverkaufen. In Genf spielt die Plakette Stick'AIR nur bei Smogalarm eine Rolle, Elektroautos dürfen dann weiterhin fahren, und die französische Crit'Air-Plakette wird dort anerkannt.",
+          },
+          { type: "h2", text: "Ladesäulen entlang der Route finden" },
+          {
+            type: "p",
+            text: "Die Karte von ma-borne-electrique.com zeigt Ladesäulen in der Schweiz auf Basis von Open Charge Map, deren Daten lückenhaft sein können. Planen Sie in den Bergen Reserve ein: Kälte verringert die Reichweite, und lange Steigungen kosten viel Energie, auch wenn Abfahrten dank Rekuperation einen Teil zurückgeben. Prüfen Sie die Echtzeit-Verfügbarkeit in einer Routenplaner-App, bevor Sie einen Umweg fahren.",
+          },
+          { type: "h3", text: "Checkliste vor der Abreise" },
+          {
+            type: "ul",
+            items: [
+              "Prüfen Sie Ihren Anschluss (Typ 2 oder CCS2) und nehmen Sie Ihr Typ-2-Kabel mit.",
+              "Kaufen Sie die Autobahnvignette auf dem offiziellen Portal via.admin.ch.",
+              "Installieren und aktivieren Sie Ihre Lade-Apps vor der Grenze, falls Ihr Mobilfunkvertrag die Schweiz nicht abdeckt.",
+              "Nehmen Sie eine Bankkarte ohne Fremdwährungsgebühren mit, um in Franken zu zahlen.",
+              "Planen Sie in den Bergen mehr Reichweitenreserve ein als im Flachland.",
+            ],
+          },
+        ],
+        faq: [
+          { question: "Braucht ein Elektroauto in der Schweiz eine Autobahnvignette?", answer: "Ja. Die Vignette ist für alle Autos Pflicht, auch für Elektroautos. Sie kostet 40 Franken, die Vignette 2026 gilt bis zum 31. Januar 2027 und ist als E-Vignette auf dem offiziellen Portal via.admin.ch erhältlich." },
+          { question: "Kann man an Schweizer Ladesäulen mit Bankkarte bezahlen?", answer: "An neueren Schnellladern oft, aber anders als in der EU ist es keine Pflicht. Halten Sie eine passende App oder Ladekarte bereit, die Sie vor der Grenze eingerichtet haben." },
+          { question: "Was kostet Schnellladen in der Schweiz?", answer: "In der Regel 0,65 bis 1 Franken pro kWh, an Ultraschnellladern bis etwa 1,25 Franken. Für einen Kompaktwagen sind das bei 0,80 Franken pro kWh etwa 12,80 Franken pro 100 km." },
+          { question: "Funktioniert mein mobiles Ladekabel in der Schweiz?", answer: "Nicht direkt. Die Schweizer Haushaltssteckdose (Typ T13) nimmt keine Schuko-Stecker auf, Sie brauchen einen für das Laden geeigneten Adapter. An Ladesäulen funktioniert Ihr Typ-2-Kabel ganz normal." },
+        ],
+        ...cta.de,
+      },
+      es: {
+        eyebrow: "Viaje",
+        title: "Coche eléctrico en Suiza: recargar, viñeta y precios",
+        excerpt:
+          "Conectores, pago fuera de la Unión Europea, precios en francos suizos, viñeta de autopista y un enchufe doméstico distinto: la guía práctica para recargar en Suiza.",
+        metaTitle: "Coche eléctrico en Suiza: recarga, viñeta, precios",
+        metaDescription:
+          "Conectores, pago, precio por kWh en francos suizos, viñeta de autopista obligatoria y enchufe doméstico T13: la guía para recargar tu coche eléctrico en Suiza.",
+        body: [
+          {
+            type: "p",
+            text: "Suiza contaba con 18.284 puntos de recarga públicos repartidos en 8.535 ubicaciones en abril de 2026, según la Oficina Federal de Energía. La red está bien distribuida, también en los grandes ejes alpinos. Para un visitante, Suiza tiene tres particularidades: no forma parte de la Unión Europea, la autopista exige viñeta y el enchufe doméstico es distinto al de sus vecinos.",
+          },
+          { type: "h2", text: "Tu conector sirve, tu cable de emergencia quizá no" },
+          {
+            type: "p",
+            text: "Los cargadores suizos usan el estándar europeo: conector Tipo 2 en corriente alterna y conector combinado CCS2 en corriente continua. Lleva tu cable Tipo 2, porque muchos puntos de corriente alterna no lo incluyen. El enchufe doméstico suizo (tipo J, llamado T13) no admite las clavijas de tipo E/F (Schuko) habituales en España, Francia o Alemania: un cable de carga portátil solo encaja con un adaptador pensado para ese uso.",
+          },
+          { type: "h2", text: "Pagar fuera de la Unión Europea" },
+          {
+            type: "p",
+            text: "El reglamento europeo AFIR, que exige el pago con tarjeta en los nuevos cargadores rápidos de la Unión, no se aplica en Suiza. En la práctica, los cargadores rápidos recientes de las grandes redes suelen aceptar el pago sin contacto, y los demás se pagan con código QR, aplicación o tarjeta de recarga. Muchas tarjetas de recarga europeas funcionan en itinerancia en Suiza, pero compruébalo antes de salir. Cuidado también con tu tarifa móvil: Suiza suele quedar fuera de la itinerancia europea, así que instala y activa las aplicaciones antes de cruzar la frontera.",
+          },
+          { type: "h2", text: "Cuánto cuesta cargar en Suiza" },
+          {
+            type: "p",
+            text: "Los precios se muestran en francos suizos. La carga rápida suele costar entre 0,65 y 1 franco por kWh, y puede llegar a unos 1,25 francos en los cargadores de muy alta potencia. A 0,80 francos por kWh, un compacto que consume unos 16 kWh cada 100 km sale por unos 12,80 francos por 100 km. Pagar con una tarjeta bancaria extranjera puede añadir comisiones de cambio: consúltalo con tu banco.",
+          },
+          { type: "h2", text: "Viñeta de autopista y normas locales" },
+          {
+            type: "p",
+            text: "La viñeta de autopista es obligatoria para los coches eléctricos igual que para los demás. Cuesta 40 francos y la viñeta 2026 es válida hasta el 31 de enero de 2027. La versión electrónica, vinculada a la matrícula, se vende en el portal oficial de la Oficina Federal de Aduanas y Seguridad Fronteriza (via.admin.ch): desconfía de los sitios que la revenden más cara. En Ginebra, la pegatina Stick'AIR solo cuenta en episodios de contaminación, en los que los coches eléctricos pueden seguir circulando, y la pegatina francesa Crit'Air está reconocida.",
+          },
+          { type: "h2", text: "Encontrar un cargador en tu ruta" },
+          {
+            type: "p",
+            text: "El mapa de ma-borne-electrique.com localiza los cargadores en Suiza a partir de los datos de Open Charge Map, que pueden estar incompletos. En la montaña, deja margen: el frío reduce la autonomía y las subidas largas consumen mucho, aunque las bajadas devuelven parte de la energía gracias a la frenada regenerativa. Comprueba la disponibilidad en tiempo real en una aplicación de rutas antes de desviarte.",
+          },
+          { type: "h3", text: "Lista de comprobación antes de salir" },
+          {
+            type: "ul",
+            items: [
+              "Comprueba tu conector (Tipo 2 o CCS2) y lleva tu cable Tipo 2.",
+              "Compra la viñeta de autopista en el portal oficial via.admin.ch.",
+              "Instala y activa tus aplicaciones de recarga antes de la frontera, por si tu tarifa móvil no cubre Suiza.",
+              "Lleva una tarjeta bancaria sin comisiones de cambio para pagar en francos suizos.",
+              "En la montaña, deja más margen de autonomía que en llano.",
+            ],
+          },
+        ],
+        faq: [
+          { question: "¿Necesita un coche eléctrico la viñeta de autopista en Suiza?", answer: "Sí. La viñeta es obligatoria para todos los coches, incluidos los eléctricos. Cuesta 40 francos, la viñeta 2026 es válida hasta el 31 de enero de 2027 y se vende en versión electrónica en el portal oficial via.admin.ch." },
+          { question: "¿Se puede pagar con tarjeta bancaria en los cargadores suizos?", answer: "A menudo en los cargadores rápidos recientes, pero no es obligatorio como en la Unión Europea. Ten preparada una aplicación o tarjeta de recarga compatible, instalada antes de cruzar la frontera." },
+          { question: "¿Cuánto cuesta la carga rápida en Suiza?", answer: "Normalmente entre 0,65 y 1 franco suizo por kWh, hasta unos 1,25 francos en los cargadores de muy alta potencia. Para un compacto, son unos 12,80 francos por 100 km a 0,80 francos por kWh." },
+          { question: "¿Funciona mi cable de carga portátil en Suiza?", answer: "No directamente. El enchufe doméstico suizo (tipo T13) no admite las clavijas Schuko habituales en España, Francia y Alemania: hace falta un adaptador pensado para la recarga. En los cargadores, tu cable Tipo 2 funciona con normalidad." },
+        ],
+        ...cta.es,
+      },
+    },
+  },
+  {
+    slug: "electric-car-in-belgium-charging-guide",
+    publishedAt: "2026-10-01",
+    related: ["electric-car-in-france-charging-guide", "electric-car-in-germany-charging-guide", "electric-car-in-uk-charging-guide", "electric-car-in-switzerland-charging-guide", "electric-car-in-spain-charging-guide"],
+    image: {
+      src: "/blog/electric-car-in-belgium-charging-guide.jpg",
+      alt: {
+        fr: "Borne de recharge rapide sur une aire de l'autoroute E40 près de Drongen, en Belgique",
+        en: "Fast charger at a service area on the E40 motorway near Drongen, Belgium",
+        de: "Schnellladesäule an einer Raststätte der Autobahn E40 bei Drongen, Belgien",
+        es: "Cargador rápido en un área de servicio de la autopista E40 cerca de Drongen, Bélgica",
+      },
+      credit: {
+        name: "Aschroet",
+        url: "https://commons.wikimedia.org/wiki/File:Electric_vehicle_charging_station_in_Drongen,_Begium_-_1.jpg",
+        license: "CC0",
+      },
+    },
+    content: {
+      fr: {
+        eyebrow: "Voyage",
+        title: "Visiter la Belgique en voiture électrique : recharge, paiement et prix",
+        excerpt:
+          "Prises, paiement sans compte belge, prix d'une charge rapide et inscription obligatoire aux zones de basses émissions : le guide pratique pour recharger en Belgique.",
+        metaTitle: "Voiture électrique en Belgique : recharge, prix, LEZ",
+        metaDescription:
+          "Prises compatibles, paiement par carte, prix au kWh et inscription aux LEZ de Bruxelles, Anvers et Gand même en électrique : le guide des visiteurs pour recharger en Belgique.",
+        body: [
+          {
+            type: "p",
+            text: "La Belgique comptait 126 045 points de recharge publics fin juin 2026 selon la fédération EV Belgium, soit près de 20 000 de plus qu'au début de l'année. Le réseau est très dense en Flandre et se rattrape vite en Wallonie, et les autoroutes sont gratuites. Pour un visiteur, le piège n'est pas la recharge mais l'inscription aux zones de basses émissions, obligatoire même en voiture électrique.",
+          },
+          { type: "h2", text: "Votre prise est la bonne" },
+          {
+            type: "p",
+            text: "La Belgique suit le standard européen : prise Type 2 en courant alternatif, connecteur Combo CCS2 en courant continu. Une grande partie du réseau est composée de bornes en courant alternatif dans les rues et sur les parkings, souvent sans câble : emportez votre propre câble Type 2.",
+          },
+          { type: "h2", text: "Comment payer sans compte belge" },
+          {
+            type: "p",
+            text: "Le règlement européen AFIR s'applique en Belgique : depuis avril 2024, toute nouvelle borne rapide de 50 kW ou plus doit accepter la carte bancaire, et les bornes rapides existantes des grands axes européens doivent en être équipées avant le 1er janvier 2027. Sur les bornes de rue plus anciennes, le paiement passe par un QR code, une application ou une carte de recharge. Les cartes des pays voisins fonctionnent souvent en itinérance en Belgique : vérifiez la couverture avant de partir.",
+          },
+          { type: "h2", text: "Ce que coûte une charge en Belgique" },
+          {
+            type: "p",
+            text: "Sans abonnement, la recharge rapide coûte en général entre 0,60 et 0,80 € le kWh en 2026 selon l'opérateur. À 0,70 € le kWh, une compacte qui consomme environ 16 kWh aux 100 km revient à environ 11,20 € les 100 km. Les abonnements des grands réseaux font nettement baisser le prix si vous rechargez souvent, et les bornes de rue en courant alternatif sont en général moins chères que la recharge rapide.",
+          },
+          { type: "h2", text: "Zones de basses émissions : inscrivez-vous, même en électrique" },
+          {
+            type: "p",
+            text: "Bruxelles, Anvers et Gand ont chacune une zone de basses émissions (LEZ). Une voiture électrique y est autorisée, mais un véhicule immatriculé à l'étranger doit être inscrit en ligne sur le registre de chaque ville, gratuitement, faute de quoi une amende s'applique. Chaque ville gère son propre registre : si vous traversez les trois, il faut trois inscriptions. Les voitures néerlandaises conformes en sont en partie dispensées. À Bruxelles, l'inscription est valable cinq ans et peut se faire avant d'entrer dans la zone ou au plus tard dans les cinq jours.",
+          },
+          { type: "h2", text: "Trouver une borne sur votre trajet" },
+          {
+            type: "p",
+            text: "La carte de ma-borne-electrique.com localise les bornes en Belgique à partir des données d'Open Charge Map, qui peuvent être incomplètes. Vérifiez la disponibilité en temps réel dans une application de trajet avant un détour, en particulier dans les zones rurales de Wallonie où le réseau reste moins dense qu'en Flandre.",
+          },
+          { type: "h3", text: "Checklist avant le départ" },
+          {
+            type: "ul",
+            items: [
+              "Vérifiez votre connecteur (Type 2 ou CCS2) et emportez votre câble Type 2.",
+              "Inscrivez votre voiture sur le registre LEZ de Bruxelles, d'Anvers et de Gand si vous y passez.",
+              "Gardez une carte bancaire à portée de main et une application de recharge en secours.",
+              "Pour un séjour de plusieurs jours, comparez les abonnements des grands réseaux rapides.",
+              "Sur borne rapide, visez entre 20 % et 80 % : la vitesse de charge chute au-delà.",
+            ],
+          },
+        ],
+        faq: [
+          { question: "Faut-il inscrire une voiture électrique étrangère aux LEZ belges ?", answer: "Oui. À Bruxelles, Anvers et Gand, un véhicule immatriculé à l'étranger doit être inscrit en ligne, gratuitement, même s'il est électrique. Chaque ville a son propre registre, et un oubli expose à une amende." },
+          { question: "Peut-on payer par carte bancaire aux bornes belges ?", answer: "Oui sur les bornes rapides récentes : depuis avril 2024, les nouvelles bornes de 50 kW ou plus doivent accepter la carte, et les bornes rapides des grands axes européens doivent en être équipées avant le 1er janvier 2027. Sur les bornes de rue, prévoyez une application ou un QR code." },
+          { question: "Combien coûte une recharge rapide en Belgique ?", answer: "Sans abonnement, en général entre 0,60 et 0,80 € le kWh en 2026 selon l'opérateur, soit environ 11,20 € les 100 km pour une compacte à 0,70 € le kWh." },
+          { question: "Les autoroutes belges sont-elles payantes ?", answer: "Non pour les voitures : les autoroutes belges sont gratuites, électriques ou non. Seul le tunnel Liefkenshoek, à Anvers, est payant." },
+        ],
+        ...cta.fr,
+      },
+      en: {
+        eyebrow: "Travel",
+        title: "Driving an Electric Car in Belgium: Charging, Payment and Prices",
+        excerpt:
+          "Plugs, paying without a Belgian account, what a fast charge costs and the mandatory low-emission zone registration: a practical guide to charging in Belgium.",
+        metaTitle: "Electric Car in Belgium: Charging, Prices, LEZ",
+        metaDescription:
+          "Plugs, card payment, price per kWh and LEZ registration in Brussels, Antwerp and Ghent, even for EVs: a visitor's guide to charging an electric car in Belgium.",
+        body: [
+          {
+            type: "p",
+            text: "Belgium had 126,045 public charging points at the end of June 2026, according to the EV Belgium federation, nearly 20,000 more than at the start of the year. The network is very dense in Flanders and catching up fast in Wallonia, and motorways are free. For a visitor, the trap is not charging but low-emission zone registration, which is required even for an electric car.",
+          },
+          { type: "h2", text: "Your plug already fits" },
+          {
+            type: "p",
+            text: "Belgium follows the European standard: the Type 2 connector for AC charging and the CCS2 combo connector for DC fast charging. Much of the network is AC chargers on streets and in car parks, often without a cable, so pack your own Type 2 cable.",
+          },
+          { type: "h2", text: "How to pay without a Belgian account" },
+          {
+            type: "p",
+            text: "The EU's AFIR regulation applies in Belgium: since April 2024, every new fast charger of 50 kW or more must accept bank cards, and existing fast chargers on the main European corridors must be fitted with readers before January 1, 2027. At older street chargers, payment goes through a QR code, an app or a charging card. Cards from neighboring countries often roam in Belgium, so check coverage before you leave.",
+          },
+          { type: "h2", text: "What a charge costs in Belgium" },
+          {
+            type: "p",
+            text: "Without a subscription, fast charging generally costs 0.60 to 0.80 euros per kWh in 2026 depending on the operator. At 0.70 euros per kWh, a compact EV using about 16 kWh per 100km costs around 11.20 euros per 100km. Subscriptions from the big networks bring the price down sharply if you charge often, and AC street chargers are usually cheaper than fast charging.",
+          },
+          { type: "h2", text: "Low-emission zones: register, even with an EV" },
+          {
+            type: "p",
+            text: "Brussels, Antwerp and Ghent each have a low-emission zone (LEZ). An electric car is allowed in, but a foreign-registered vehicle must be registered online, free of charge, on each city's register, or a fine applies. Each city runs its own register, so crossing all three means three registrations. Compliant Dutch cars are partly exempt. In Brussels, registration is valid for five years and can be done before entering the zone or within five days at the latest.",
+          },
+          { type: "h2", text: "Finding a charger along your route" },
+          {
+            type: "p",
+            text: "The map on ma-borne-electrique.com locates chargers in Belgium using Open Charge Map data, which can be incomplete. Check real-time availability in a route-planning app before you detour, especially in rural Wallonia, where the network is still less dense than in Flanders.",
+          },
+          { type: "h3", text: "Checklist before you leave" },
+          {
+            type: "ul",
+            items: [
+              "Check your connector (Type 2 or CCS2) and pack your Type 2 cable.",
+              "Register your car on the Brussels, Antwerp and Ghent LEZ registers if you will pass through them.",
+              "Keep a bank card handy and a charging app as a backup.",
+              "For a stay of several days, compare the big fast-charging networks' subscriptions.",
+              "On fast chargers, aim for 20% to 80%: charging speed drops beyond that.",
+            ],
+          },
+        ],
+        faq: [
+          { question: "Does a foreign electric car need to register for Belgian LEZs?", answer: "Yes. In Brussels, Antwerp and Ghent, a foreign-registered vehicle must be registered online, free of charge, even if it is electric. Each city has its own register, and forgetting can lead to a fine." },
+          { question: "Can I pay by bank card at Belgian chargers?", answer: "Yes at recent fast chargers: since April 2024, new chargers of 50 kW or more must accept cards, and fast chargers on the main European corridors must be fitted with readers before January 1, 2027. At street chargers, expect an app or a QR code." },
+          { question: "How much does fast charging cost in Belgium?", answer: "Without a subscription, generally 0.60 to 0.80 euros per kWh in 2026 depending on the operator, around 11.20 euros per 100km for a compact EV at 0.70 euros per kWh." },
+          { question: "Are Belgian motorways tolled?", answer: "Not for cars: Belgian motorways are free, electric or not. Only the Liefkenshoek tunnel in Antwerp charges a toll." },
+        ],
+        ...cta.en,
+      },
+      de: {
+        eyebrow: "Reise",
+        title: "Mit dem Elektroauto durch Belgien: Laden, Bezahlen und Preise",
+        excerpt:
+          "Stecker, Bezahlen ohne belgischen Vertrag, Preise beim Schnellladen und die Registrierungspflicht für Umweltzonen: der praktische Leitfaden zum Laden in Belgien.",
+        metaTitle: "Elektroauto in Belgien: Laden, Preise, Umweltzonen",
+        metaDescription:
+          "Stecker, Kartenzahlung, Preise pro kWh und die Registrierung für die Umweltzonen in Brüssel, Antwerpen und Gent, auch für Elektroautos: der Leitfaden zum Laden in Belgien.",
+        body: [
+          {
+            type: "p",
+            text: "Belgien zählte Ende Juni 2026 laut dem Branchenverband EV Belgium 126.045 öffentliche Ladepunkte, fast 20.000 mehr als zu Jahresbeginn. Das Netz ist in Flandern sehr dicht und holt in der Wallonie schnell auf, die Autobahnen sind kostenlos. Für Reisende liegt die Falle nicht beim Laden, sondern bei der Registrierung für die Umweltzonen, die auch für Elektroautos Pflicht ist.",
+          },
+          { type: "h2", text: "Ihr Stecker passt bereits" },
+          {
+            type: "p",
+            text: "Belgien folgt dem europäischen Standard: Typ-2-Stecker für Wechselstrom und CCS2-Combo-Stecker für das Schnellladen mit Gleichstrom. Ein großer Teil des Netzes besteht aus Wechselstrom-Ladesäulen an Straßen und auf Parkplätzen, oft ohne Kabel: Nehmen Sie Ihr eigenes Typ-2-Kabel mit.",
+          },
+          { type: "h2", text: "Bezahlen ohne belgischen Vertrag" },
+          {
+            type: "p",
+            text: "Die EU-Verordnung AFIR gilt auch in Belgien: Seit April 2024 muss jeder neue Schnelllader ab 50 kW Bankkarten akzeptieren, und bestehende Schnelllader an den europäischen Hauptachsen müssen bis zum 1. Januar 2027 nachgerüstet werden. An älteren Straßenladern läuft die Zahlung über QR-Code, App oder Ladekarte. Karten aus den Nachbarländern funktionieren in Belgien oft per Roaming: Prüfen Sie die Abdeckung vor der Abreise.",
+          },
+          { type: "h2", text: "Was das Laden in Belgien kostet" },
+          {
+            type: "p",
+            text: "Ohne Abo kostet Schnellladen 2026 je nach Anbieter in der Regel 0,60 bis 0,80 Euro pro kWh. Bei 0,70 Euro pro kWh kostet ein Kompaktwagen mit rund 16 kWh pro 100 km etwa 11,20 Euro pro 100 km. Abos der großen Netze senken den Preis deutlich, wenn Sie oft laden, und Wechselstrom-Ladesäulen an der Straße sind meist günstiger als Schnellladen.",
+          },
+          { type: "h2", text: "Umweltzonen: registrieren, auch mit Elektroauto" },
+          {
+            type: "p",
+            text: "Brüssel, Antwerpen und Gent haben jeweils eine Umweltzone (LEZ). Elektroautos dürfen hinein, doch ein im Ausland zugelassenes Fahrzeug muss im Register jeder Stadt kostenlos online eingetragen werden, sonst droht ein Bußgeld. Jede Stadt führt ihr eigenes Register: Wer alle drei durchquert, braucht drei Eintragungen. Konforme niederländische Autos sind teilweise befreit. In Brüssel gilt die Eintragung fünf Jahre und ist vor der Einfahrt oder spätestens innerhalb von fünf Tagen möglich.",
+          },
+          { type: "h2", text: "Ladesäulen entlang der Route finden" },
+          {
+            type: "p",
+            text: "Die Karte von ma-borne-electrique.com zeigt Ladesäulen in Belgien auf Basis von Open Charge Map, deren Daten lückenhaft sein können. Prüfen Sie die Echtzeit-Verfügbarkeit in einer Routenplaner-App, bevor Sie einen Umweg fahren, vor allem in ländlichen Teilen der Wallonie, wo das Netz noch weniger dicht ist als in Flandern.",
+          },
+          { type: "h3", text: "Checkliste vor der Abreise" },
+          {
+            type: "ul",
+            items: [
+              "Prüfen Sie Ihren Anschluss (Typ 2 oder CCS2) und nehmen Sie Ihr Typ-2-Kabel mit.",
+              "Tragen Sie Ihr Auto in die LEZ-Register von Brüssel, Antwerpen und Gent ein, wenn Sie dort durchfahren.",
+              "Halten Sie eine Bankkarte und eine Lade-App als Reserve bereit.",
+              "Bei mehreren Tagen Aufenthalt lohnt der Vergleich der Abos großer Schnellladenetze.",
+              "Laden Sie an Schnellladern idealerweise zwischen 20 % und 80 %: darüber sinkt die Ladegeschwindigkeit.",
+            ],
+          },
+        ],
+        faq: [
+          { question: "Muss ein ausländisches Elektroauto für belgische Umweltzonen registriert werden?", answer: "Ja. In Brüssel, Antwerpen und Gent muss ein im Ausland zugelassenes Fahrzeug kostenlos online eingetragen werden, auch wenn es elektrisch fährt. Jede Stadt hat ihr eigenes Register, und wer es vergisst, riskiert ein Bußgeld." },
+          { question: "Kann man an belgischen Ladesäulen mit Bankkarte bezahlen?", answer: "An neueren Schnellladern ja: Seit April 2024 müssen neue Ladepunkte ab 50 kW Karten akzeptieren, und Schnelllader an den europäischen Hauptachsen müssen bis zum 1. Januar 2027 nachgerüstet werden. An Straßenladern brauchen Sie oft eine App oder einen QR-Code." },
+          { question: "Was kostet Schnellladen in Belgien?", answer: "Ohne Abo 2026 je nach Anbieter in der Regel 0,60 bis 0,80 Euro pro kWh, bei 0,70 Euro pro kWh also etwa 11,20 Euro pro 100 km für einen Kompaktwagen." },
+          { question: "Sind belgische Autobahnen mautpflichtig?", answer: "Für Pkw nicht: Belgische Autobahnen sind kostenlos, egal mit welchem Antrieb. Nur der Liefkenshoektunnel in Antwerpen kostet Maut." },
+        ],
+        ...cta.de,
+      },
+      es: {
+        eyebrow: "Viaje",
+        title: "Coche eléctrico en Bélgica: recargar, pagar y precios",
+        excerpt:
+          "Conectores, pago sin cuenta belga, precio de la carga rápida y la inscripción obligatoria en las zonas de bajas emisiones: la guía práctica para recargar en Bélgica.",
+        metaTitle: "Coche eléctrico en Bélgica: recarga, precios, LEZ",
+        metaDescription:
+          "Conectores, pago con tarjeta, precio por kWh e inscripción en las LEZ de Bruselas, Amberes y Gante, también para eléctricos: la guía para recargar en Bélgica.",
+        body: [
+          {
+            type: "p",
+            text: "Bélgica contaba con 126.045 puntos de recarga públicos a finales de junio de 2026, según la federación EV Belgium, casi 20.000 más que a principios de año. La red es muy densa en Flandes y avanza rápido en Valonia, y las autopistas son gratuitas. Para un visitante, la trampa no está en la recarga sino en la inscripción en las zonas de bajas emisiones, obligatoria incluso para un coche eléctrico.",
+          },
+          { type: "h2", text: "Tu conector ya es el adecuado" },
+          {
+            type: "p",
+            text: "Bélgica sigue el estándar europeo: conector Tipo 2 en corriente alterna y conector combinado CCS2 en corriente continua. Buena parte de la red son puntos de corriente alterna en calles y aparcamientos, a menudo sin cable: lleva tu propio cable Tipo 2.",
+          },
+          { type: "h2", text: "Cómo pagar sin cuenta belga" },
+          {
+            type: "p",
+            text: "El reglamento europeo AFIR se aplica en Bélgica: desde abril de 2024, todo cargador rápido nuevo de 50 kW o más debe aceptar tarjeta bancaria, y los cargadores rápidos existentes en los grandes ejes europeos deben equiparse antes del 1 de enero de 2027. En los cargadores de calle más antiguos, el pago se hace con código QR, aplicación o tarjeta de recarga. Las tarjetas de los países vecinos suelen funcionar en itinerancia en Bélgica: comprueba la cobertura antes de salir.",
+          },
+          { type: "h2", text: "Cuánto cuesta cargar en Bélgica" },
+          {
+            type: "p",
+            text: "Sin abono, la carga rápida suele costar entre 0,60 y 0,80 euros por kWh en 2026 según el operador. A 0,70 euros por kWh, un compacto que consume unos 16 kWh cada 100 km sale por unos 11,20 euros por 100 km. Los abonos de las grandes redes bajan mucho el precio si cargas a menudo, y los puntos de corriente alterna en la calle suelen ser más baratos que la carga rápida.",
+          },
+          { type: "h2", text: "Zonas de bajas emisiones: inscríbete, aunque sea eléctrico" },
+          {
+            type: "p",
+            text: "Bruselas, Amberes y Gante tienen cada una su zona de bajas emisiones (LEZ). Un coche eléctrico puede entrar, pero un vehículo con matrícula extranjera debe inscribirse en línea, gratis, en el registro de cada ciudad; si no, se expone a una multa. Cada ciudad gestiona su propio registro: si cruzas las tres, necesitas tres inscripciones. Los coches neerlandeses conformes están en parte exentos. En Bruselas, la inscripción es válida cinco años y puede hacerse antes de entrar en la zona o, como tarde, en los cinco días siguientes.",
+          },
+          { type: "h2", text: "Encontrar un cargador en tu ruta" },
+          {
+            type: "p",
+            text: "El mapa de ma-borne-electrique.com localiza los cargadores en Bélgica a partir de los datos de Open Charge Map, que pueden estar incompletos. Comprueba la disponibilidad en tiempo real en una aplicación de rutas antes de desviarte, sobre todo en las zonas rurales de Valonia, donde la red sigue siendo menos densa que en Flandes.",
+          },
+          { type: "h3", text: "Lista de comprobación antes de salir" },
+          {
+            type: "ul",
+            items: [
+              "Comprueba tu conector (Tipo 2 o CCS2) y lleva tu cable Tipo 2.",
+              "Inscribe tu coche en los registros LEZ de Bruselas, Amberes y Gante si vas a pasar por ellas.",
+              "Ten a mano una tarjeta bancaria y una aplicación de recarga de reserva.",
+              "Para una estancia de varios días, compara los abonos de las grandes redes de carga rápida.",
+              "En cargadores rápidos, apunta al 20 %-80 %: por encima de ese umbral la velocidad de carga baja.",
+            ],
+          },
+        ],
+        faq: [
+          { question: "¿Hay que inscribir un coche eléctrico extranjero en las LEZ belgas?", answer: "Sí. En Bruselas, Amberes y Gante, un vehículo con matrícula extranjera debe inscribirse en línea, gratis, aunque sea eléctrico. Cada ciudad tiene su propio registro, y olvidarlo puede acarrear una multa." },
+          { question: "¿Se puede pagar con tarjeta bancaria en los cargadores belgas?", answer: "Sí en los cargadores rápidos recientes: desde abril de 2024, los nuevos puntos de 50 kW o más deben aceptar tarjeta, y los cargadores rápidos de los grandes ejes europeos deben equiparse antes del 1 de enero de 2027. En los cargadores de calle, cuenta con una aplicación o un código QR." },
+          { question: "¿Cuánto cuesta la carga rápida en Bélgica?", answer: "Sin abono, normalmente entre 0,60 y 0,80 euros por kWh en 2026 según el operador, unos 11,20 euros por 100 km para un compacto a 0,70 euros por kWh." },
+          { question: "¿Las autopistas belgas son de pago?", answer: "No para los turismos: las autopistas belgas son gratuitas, eléctricos o no. Solo el túnel de Liefkenshoek, en Amberes, es de pago." },
         ],
         ...cta.es,
       },

@@ -33,8 +33,15 @@ Station data comes from official open registers where they are the most complete
 - [Autonomie en hiver : les bons réflexes à adopter avant l'arrivée du froid](https://ma-borne-electrique.com/fr/blog/autonomie-hiver-voiture-electrique)
 - [Bornes rapides sur autoroute : comment éviter la file d'attente cet été 2026](https://ma-borne-electrique.com/fr/blog/bornes-rapides-autoroute-ete-2026)
 - [Road trip en France : bien recharger sa voiture électrique sans mauvaise surprise](https://ma-borne-electrique.com/fr/blog/road-trip-france-recharge-voiture-electrique)
-- [Visiter la France en voiture électrique : recharge, cartes de paiement et prix](https://ma-borne-electrique.com/fr/blog/electric-car-in-france-charging-guide) (also in EN, DE, ES: guide for foreign visitors on plugs, payment without a French account, prices and the Crit'Air sticker)
 - [Batterie de voiture électrique : les bons réflexes pour la faire durer](https://ma-borne-electrique.com/fr/blog/prolonger-duree-vie-batterie-voiture-electrique)
+
+### Visitor charging guides by country (same structure for each country the map covers: plugs, payment without a local account, typical prices, low-emission zone and road rules for foreign cars; all in FR, EN, DE, ES)
+- [Visiter la France en voiture électrique : recharge, cartes de paiement et prix](https://ma-borne-electrique.com/fr/blog/electric-car-in-france-charging-guide)
+- [Visiter l'Allemagne en voiture électrique : recharge, paiement et prix](https://ma-borne-electrique.com/fr/blog/electric-car-in-germany-charging-guide)
+- [Visiter l'Espagne en voiture électrique : recharge, paiement et prix](https://ma-borne-electrique.com/fr/blog/electric-car-in-spain-charging-guide)
+- [Visiter le Royaume-Uni en voiture électrique : recharge, paiement et prix](https://ma-borne-electrique.com/fr/blog/electric-car-in-uk-charging-guide)
+- [Visiter la Suisse en voiture électrique : recharge, vignette et prix](https://ma-borne-electrique.com/fr/blog/electric-car-in-switzerland-charging-guide)
+- [Visiter la Belgique en voiture électrique : recharge, paiement et prix](https://ma-borne-electrique.com/fr/blog/electric-car-in-belgium-charging-guide)
 
 ### Home installation and rights
 - [Installer une borne de recharge chez soi : le guide étape par étape](https://ma-borne-electrique.com/fr/blog/installer-borne-recharge-maison)
