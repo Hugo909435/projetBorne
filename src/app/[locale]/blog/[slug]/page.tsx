@@ -216,6 +216,40 @@ export default async function BlogPostPage({
             </ul>
           );
         }
+        if (block.type === "table") {
+          return (
+            <div key={index} className="mt-4 overflow-x-auto rounded-xl border border-line">
+              <table className="w-full min-w-[36rem] text-left text-sm text-ink-600">
+                <thead className="bg-card text-ink-900">
+                  <tr>
+                    {block.headers.map((header, headerIndex) => (
+                      <th key={headerIndex} scope="col" className="px-4 py-3 font-semibold">
+                        {header}
+                      </th>
+                    ))}
+                  </tr>
+                </thead>
+                <tbody>
+                  {block.rows.map((row, rowIndex) => (
+                    <tr key={rowIndex} className="border-t border-line">
+                      {row.map((cell, cellIndex) =>
+                        cellIndex === 0 ? (
+                          <th key={cellIndex} scope="row" className="px-4 py-3 font-semibold text-ink-900">
+                            {cell}
+                          </th>
+                        ) : (
+                          <td key={cellIndex} className="px-4 py-3">
+                            {cell}
+                          </td>
+                        ),
+                      )}
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          );
+        }
         return (
           <p key={index} className="mt-3 leading-relaxed text-ink-600">
             {block.text}
