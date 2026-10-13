@@ -93,9 +93,17 @@ HTTPS et le domaine.
 
 ### Mise à jour du site
 
-Il n'y a pas de déploiement automatique : un push sur `main` ne met pas le site
-à jour tout seul. Pour publier, faire `npm run build && npm run package` puis
-téléverser le contenu de `deploy/` sur le serveur (voir ci-dessus).
+Hostinger est branché sur le dépôt GitHub : un push sur `main` lance un build
+sur leur serveur, puis met le site à jour. Si le build échoue, le site reste sur
+la version précédente sans autre signal : vérifier le journal de déploiement
+dans hPanel après chaque push.
+
+Le build de production utilise webpack (`next build --webpack`) : avec
+Turbopack, le build Hostinger plantait sur `globals.css` (le processus Node
+lancé pour PostCSS ne démarrait pas).
+
+En secours, on peut toujours publier à la main : `npm run build && npm run package`
+puis téléverser le contenu de `deploy/` sur le serveur (voir ci-dessus).
 
 Construire sur une machine Linux (ou celle du serveur) plutôt que sous Windows :
 `sharp`, qui optimise les images, embarque un binaire propre à chaque système,
