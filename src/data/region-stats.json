@@ -1,163 +1,304 @@
 {
   "andalucia": {
-    "total": 3052,
-    "fastCount": 1025,
+    "total": 2866,
+    "fastCount": 938,
     "connectorBreakdown": [
       {
         "name": "Type 2 (Socket Only)",
-        "count": 1934
+        "count": 1839
       },
       {
         "name": "CCS (Type 2)",
-        "count": 1049
+        "count": 959
       },
       {
         "name": "CHAdeMO",
-        "count": 582
+        "count": 526
       },
       {
         "name": "Type 2 (Tethered Connector)",
-        "count": 547
+        "count": 499
       },
       {
         "name": "CEE 7/4 - Schuko - Type F",
-        "count": 206
+        "count": 190
       }
     ],
     "topTowns": [
       {
         "name": "Málaga",
-        "count": 91
+        "count": 92,
+        "fastCount": 21
       },
       {
         "name": "Sevilla",
-        "count": 87
+        "count": 87,
+        "fastCount": 25
       },
       {
         "name": "Granada",
-        "count": 71
+        "count": 71,
+        "fastCount": 16
       },
       {
         "name": "Seville",
-        "count": 56
+        "count": 56,
+        "fastCount": 7
       },
       {
         "name": "Jerez",
-        "count": 44
+        "count": 44,
+        "fastCount": 17
       },
       {
         "name": "Chiclana de la Frontera",
-        "count": 43
+        "count": 43,
+        "fastCount": 12
+      },
+      {
+        "name": "Estepona",
+        "count": 39,
+        "fastCount": 13
+      },
+      {
+        "name": "Marbella",
+        "count": 37,
+        "fastCount": 3
       }
-    ]
+    ],
+    "powerBands": {
+      "upTo7": 401,
+      "upTo22": 1498,
+      "upTo49": 17,
+      "upTo149": 746,
+      "from150": 203
+    },
+    "maxPowerKw": 400,
+    "operators": [
+      {
+        "name": "Endesa",
+        "count": 352
+      },
+      {
+        "name": "Iberdrola | BP Pulse",
+        "count": 273
+      },
+      {
+        "name": "Mercadona",
+        "count": 245
+      },
+      {
+        "name": "Repsol - Ibil",
+        "count": 203
+      },
+      {
+        "name": "ACCIONA - Cargacoches",
+        "count": 168
+      }
+    ],
+    "operatorKnown": 2136
   },
   "aragon": {
-    "total": 1607,
-    "fastCount": 636,
+    "total": 642,
+    "fastCount": 263,
     "connectorBreakdown": [
       {
         "name": "Type 2 (Socket Only)",
-        "count": 950
+        "count": 373
       },
       {
         "name": "CCS (Type 2)",
-        "count": 651
-      },
-      {
-        "name": "Type 2 (Tethered Connector)",
-        "count": 351
+        "count": 268
       },
       {
         "name": "CHAdeMO",
-        "count": 317
+        "count": 130
+      },
+      {
+        "name": "Type 2 (Tethered Connector)",
+        "count": 128
       },
       {
         "name": "CEE 7/4 - Schuko - Type F",
-        "count": 160
+        "count": 73
       }
     ],
     "topTowns": [
       {
         "name": "Zaragoza",
-        "count": 73
-      },
-      {
-        "name": "Pamplona",
-        "count": 50
-      },
-      {
-        "name": "Tudela",
-        "count": 27
-      },
-      {
-        "name": "Lleida",
-        "count": 23
-      },
-      {
-        "name": "Tortosa",
-        "count": 21
+        "count": 73,
+        "fastCount": 23
       },
       {
         "name": "Jaca",
-        "count": 18
+        "count": 18,
+        "fastCount": 5
+      },
+      {
+        "name": "Huesca",
+        "count": 17,
+        "fastCount": 3
+      },
+      {
+        "name": "Calatayud",
+        "count": 16,
+        "fastCount": 7
+      },
+      {
+        "name": "Alcañiz",
+        "count": 12,
+        "fastCount": 3
+      },
+      {
+        "name": "Barbastro",
+        "count": 9,
+        "fastCount": 5
+      },
+      {
+        "name": "Binéfar",
+        "count": 8,
+        "fastCount": 3
+      },
+      {
+        "name": "Fraga",
+        "count": 7,
+        "fastCount": 3
       }
-    ]
+    ],
+    "powerBands": {
+      "upTo7": 115,
+      "upTo22": 257,
+      "upTo49": 4,
+      "upTo149": 178,
+      "from150": 88
+    },
+    "maxPowerKw": 480,
+    "operators": [
+      {
+        "name": "Endesa",
+        "count": 96
+      },
+      {
+        "name": "Iberdrola | BP Pulse",
+        "count": 61
+      },
+      {
+        "name": "Repsol - Ibil",
+        "count": 60
+      },
+      {
+        "name": "Electromaps",
+        "count": 57
+      },
+      {
+        "name": "Mercadona",
+        "count": 37
+      }
+    ],
+    "operatorKnown": 468
   },
   "asturias": {
-    "total": 584,
-    "fastCount": 201,
+    "total": 534,
+    "fastCount": 197,
     "connectorBreakdown": [
       {
         "name": "Type 2 (Socket Only)",
-        "count": 381
+        "count": 342
       },
       {
         "name": "CCS (Type 2)",
-        "count": 205
+        "count": 200
       },
       {
         "name": "Type 2 (Tethered Connector)",
-        "count": 110
+        "count": 104
       },
       {
         "name": "CHAdeMO",
-        "count": 93
+        "count": 87
       },
       {
         "name": "CEE 7/4 - Schuko - Type F",
-        "count": 42
+        "count": 29
       }
     ],
     "topTowns": [
       {
         "name": "Gijón/Xixón",
-        "count": 42
+        "count": 42,
+        "fastCount": 10
       },
       {
         "name": "Avilés",
-        "count": 32
+        "count": 31,
+        "fastCount": 7
       },
       {
         "name": "Oviedo",
-        "count": 21
+        "count": 21,
+        "fastCount": 4
       },
       {
         "name": "Llanes",
-        "count": 17
+        "count": 17,
+        "fastCount": 7
       },
       {
         "name": "Siero",
-        "count": 14
+        "count": 14,
+        "fastCount": 5
       },
       {
         "name": "Gijón",
-        "count": 14
+        "count": 14,
+        "fastCount": 7
+      },
+      {
+        "name": "Mieres",
+        "count": 12,
+        "fastCount": 5
+      },
+      {
+        "name": "Villaviciosa",
+        "count": 11,
+        "fastCount": 6
       }
-    ]
+    ],
+    "powerBands": {
+      "upTo7": 152,
+      "upTo22": 184,
+      "upTo49": 1,
+      "upTo149": 160,
+      "from150": 37
+    },
+    "maxPowerKw": 400,
+    "operators": [
+      {
+        "name": "EDP",
+        "count": 139
+      },
+      {
+        "name": "Iberdrola | BP Pulse",
+        "count": 89
+      },
+      {
+        "name": "Eranovum",
+        "count": 32
+      },
+      {
+        "name": "Repsol - Ibil",
+        "count": 24
+      },
+      {
+        "name": "Zunder",
+        "count": 22
+      }
+    ],
+    "operatorKnown": 441
   },
   "islas-baleares": {
-    "total": 954,
-    "fastCount": 156,
+    "total": 956,
+    "fastCount": 158,
     "connectorBreakdown": [
       {
         "name": "Type 2 (Socket Only)",
@@ -169,7 +310,7 @@
       },
       {
         "name": "CCS (Type 2)",
-        "count": 164
+        "count": 166
       },
       {
         "name": "CHAdeMO",
@@ -183,33 +324,80 @@
     "topTowns": [
       {
         "name": "Palma",
-        "count": 102
+        "count": 102,
+        "fastCount": 16
       },
       {
         "name": "Maó",
-        "count": 32
+        "count": 32,
+        "fastCount": 6
       },
       {
         "name": "Llucmajor",
-        "count": 29
+        "count": 30,
+        "fastCount": 1
       },
       {
         "name": "Inca",
-        "count": 25
+        "count": 25,
+        "fastCount": 8
       },
       {
         "name": "Manacor",
-        "count": 22
+        "count": 22,
+        "fastCount": 5
       },
       {
         "name": "Ciutadella",
-        "count": 22
+        "count": 22,
+        "fastCount": 4
+      },
+      {
+        "name": "Sant Llorenç des Cardassar",
+        "count": 20,
+        "fastCount": 2
+      },
+      {
+        "name": "Alcúdia",
+        "count": 18,
+        "fastCount": 4
       }
-    ]
+    ],
+    "powerBands": {
+      "upTo7": 390,
+      "upTo22": 399,
+      "upTo49": 8,
+      "upTo149": 134,
+      "from150": 25
+    },
+    "maxPowerKw": 320,
+    "operators": [
+      {
+        "name": "MELIB",
+        "count": 449
+      },
+      {
+        "name": "Endesa",
+        "count": 112
+      },
+      {
+        "name": "Iberdrola | BP Pulse",
+        "count": 62
+      },
+      {
+        "name": "Mercadona",
+        "count": 37
+      },
+      {
+        "name": "Repsol - Ibil",
+        "count": 27
+      }
+    ],
+    "operatorKnown": 817
   },
   "canarias": {
     "total": 863,
-    "fastCount": 241,
+    "fastCount": 243,
     "connectorBreakdown": [
       {
         "name": "Type 2 (Socket Only)",
@@ -217,15 +405,15 @@
       },
       {
         "name": "CCS (Type 2)",
-        "count": 254
+        "count": 257
       },
       {
         "name": "CHAdeMO",
-        "count": 128
+        "count": 129
       },
       {
         "name": "CEE 7/4 - Schuko - Type F",
-        "count": 117
+        "count": 116
       },
       {
         "name": "Type 2 (Tethered Connector)",
@@ -235,309 +423,888 @@
     "topTowns": [
       {
         "name": "Adeje",
-        "count": 48
+        "count": 48,
+        "fastCount": 9
       },
       {
         "name": "Las Palmas de Gran Canaria",
-        "count": 46
+        "count": 46,
+        "fastCount": 8
       },
       {
         "name": "Telde",
-        "count": 36
+        "count": 37,
+        "fastCount": 17
       },
       {
         "name": "San Bartolomé de Tirajana",
-        "count": 32
+        "count": 32,
+        "fastCount": 11
       },
       {
         "name": "Arrecife",
-        "count": 25
+        "count": 25,
+        "fastCount": 9
       },
       {
         "name": "San Miguel de Abona",
-        "count": 21
-      }
-    ]
-  },
-  "cantabria": {
-    "total": 276,
-    "fastCount": 57,
-    "connectorBreakdown": [
-      {
-        "name": "Type 2 (Socket Only)",
-        "count": 202
+        "count": 22,
+        "fastCount": 4
       },
       {
-        "name": "CCS (Type 2)",
+        "name": "Los Cristianos",
+        "count": 20,
+        "fastCount": 4
+      },
+      {
+        "name": "San Cristóbal de La Laguna",
+        "count": 19,
+        "fastCount": 1
+      }
+    ],
+    "powerBands": {
+      "upTo7": 262,
+      "upTo22": 345,
+      "upTo49": 11,
+      "upTo149": 196,
+      "from150": 49
+    },
+    "maxPowerKw": 350,
+    "operators": [
+      {
+        "name": "Endesa",
+        "count": 107
+      },
+      {
+        "name": "Iberdrola | BP Pulse",
         "count": 57
       },
       {
+        "name": "GC Movilidad Electrica",
+        "count": 53
+      },
+      {
+        "name": "Mercadona",
+        "count": 53
+      },
+      {
+        "name": "eTecnic",
+        "count": 46
+      }
+    ],
+    "operatorKnown": 552
+  },
+  "cantabria": {
+    "total": 408,
+    "fastCount": 99,
+    "connectorBreakdown": [
+      {
+        "name": "Type 2 (Socket Only)",
+        "count": 299
+      },
+      {
+        "name": "CCS (Type 2)",
+        "count": 99
+      },
+      {
         "name": "Type 2 (Tethered Connector)",
-        "count": 44
+        "count": 51
       },
       {
         "name": "CHAdeMO",
-        "count": 26
+        "count": 40
       },
       {
         "name": "CEE 7/4 - Schuko - Type F",
-        "count": 25
+        "count": 31
       }
     ],
     "topTowns": [
       {
+        "name": "Santander",
+        "count": 30,
+        "fastCount": 5
+      },
+      {
         "name": "Torrelavega",
-        "count": 18
+        "count": 18,
+        "fastCount": 5
       },
       {
         "name": "Reinosa",
-        "count": 11
+        "count": 11,
+        "fastCount": 2
       },
       {
-        "name": "Muskiz",
-        "count": 5
+        "name": "Camargo",
+        "count": 7,
+        "fastCount": 4
+      },
+      {
+        "name": "Santa Cruz de Bezana",
+        "count": 7,
+        "fastCount": 5
+      },
+      {
+        "name": "Laredo",
+        "count": 5,
+        "fastCount": 2
       },
       {
         "name": "Los Corrales de Buelna",
-        "count": 4
+        "count": 4,
+        "fastCount": 2
       },
       {
-        "name": "Reocín",
-        "count": 3
-      },
-      {
-        "name": "Santillana del Mar",
-        "count": 3
+        "name": "El Astillero",
+        "count": 4,
+        "fastCount": 1
       }
-    ]
+    ],
+    "powerBands": {
+      "upTo7": 90,
+      "upTo22": 219,
+      "upTo49": 0,
+      "upTo149": 75,
+      "from150": 24
+    },
+    "maxPowerKw": 360,
+    "operators": [
+      {
+        "name": "Zunder",
+        "count": 117
+      },
+      {
+        "name": "Iberdrola | BP Pulse",
+        "count": 36
+      },
+      {
+        "name": "Electromaps",
+        "count": 33
+      },
+      {
+        "name": "Repsol - Ibil",
+        "count": 29
+      },
+      {
+        "name": "Endesa",
+        "count": 14
+      }
+    ],
+    "operatorKnown": 312
   },
   "castilla-la-mancha": {
-    "total": 2908,
-    "fastCount": 1148,
+    "total": 707,
+    "fastCount": 346,
     "connectorBreakdown": [
       {
         "name": "Type 2 (Socket Only)",
-        "count": 1833
+        "count": 355
       },
       {
         "name": "CCS (Type 2)",
-        "count": 1175
+        "count": 353
       },
       {
         "name": "CHAdeMO",
-        "count": 596
+        "count": 186
       },
       {
         "name": "Type 2 (Tethered Connector)",
-        "count": 554
+        "count": 164
       },
       {
         "name": "CEE 7/4 - Schuko - Type F",
-        "count": 186
+        "count": 45
       }
     ],
     "topTowns": [
       {
-        "name": "Madrid",
-        "count": 434
+        "name": "Albacete",
+        "count": 26,
+        "fastCount": 10
       },
       {
-        "name": "Alcobendas",
-        "count": 52
+        "name": "Valdepeñas",
+        "count": 20,
+        "fastCount": 13
       },
       {
-        "name": "Rivas-Vaciamadrid",
-        "count": 41
+        "name": "Talavera de la Reina",
+        "count": 17,
+        "fastCount": 7
       },
       {
-        "name": "Boadilla del Monte",
-        "count": 37
+        "name": "Illescas",
+        "count": 17,
+        "fastCount": 5
       },
       {
-        "name": "Majadahonda",
-        "count": 36
+        "name": "Tomelloso",
+        "count": 16,
+        "fastCount": 5
       },
       {
-        "name": "Alcalá de Henares",
-        "count": 34
+        "name": "Guadalajara",
+        "count": 15,
+        "fastCount": 5
+      },
+      {
+        "name": "Ciudad Real",
+        "count": 14,
+        "fastCount": 11
+      },
+      {
+        "name": "Puertollano",
+        "count": 13,
+        "fastCount": 6
       }
-    ]
+    ],
+    "powerBands": {
+      "upTo7": 100,
+      "upTo22": 254,
+      "upTo49": 6,
+      "upTo149": 260,
+      "from150": 87
+    },
+    "maxPowerKw": 480,
+    "operators": [
+      {
+        "name": "Repsol - Ibil",
+        "count": 92
+      },
+      {
+        "name": "Iberdrola | BP Pulse",
+        "count": 80
+      },
+      {
+        "name": "Endesa",
+        "count": 66
+      },
+      {
+        "name": "Mercadona",
+        "count": 58
+      },
+      {
+        "name": "EDP",
+        "count": 41
+      }
+    ],
+    "operatorKnown": 562
   },
   "castilla-y-leon": {
-    "total": 4134,
-    "fastCount": 1568,
+    "total": 1243,
+    "fastCount": 523,
     "connectorBreakdown": [
       {
         "name": "Type 2 (Socket Only)",
-        "count": 2505
+        "count": 606
       },
       {
         "name": "CCS (Type 2)",
-        "count": 1608
+        "count": 539
       },
       {
         "name": "Type 2 (Tethered Connector)",
-        "count": 891
+        "count": 376
       },
       {
         "name": "CHAdeMO",
-        "count": 790
+        "count": 285
       },
       {
         "name": "CEE 7/4 - Schuko - Type F",
-        "count": 303
+        "count": 114
       }
     ],
     "topTowns": [
       {
-        "name": "Madrid",
-        "count": 434
-      },
-      {
-        "name": "Alcobendas",
-        "count": 52
-      },
-      {
-        "name": "Rivas-Vaciamadrid",
-        "count": 41
-      },
-      {
-        "name": "Boadilla del Monte",
-        "count": 37
-      },
-      {
-        "name": "Majadahonda",
-        "count": 36
-      },
-      {
         "name": "Valladolid",
-        "count": 34
+        "count": 34,
+        "fastCount": 22
+      },
+      {
+        "name": "Burgos",
+        "count": 34,
+        "fastCount": 16
+      },
+      {
+        "name": "Salamanca",
+        "count": 29,
+        "fastCount": 10
+      },
+      {
+        "name": "Ponferrada",
+        "count": 20,
+        "fastCount": 9
+      },
+      {
+        "name": "León",
+        "count": 19,
+        "fastCount": 6
+      },
+      {
+        "name": "Aranda de Duero",
+        "count": 18,
+        "fastCount": 10
+      },
+      {
+        "name": "Ávila",
+        "count": 16,
+        "fastCount": 10
+      },
+      {
+        "name": "Miranda de Ebro",
+        "count": 16,
+        "fastCount": 11
       }
-    ]
+    ],
+    "powerBands": {
+      "upTo7": 278,
+      "upTo22": 425,
+      "upTo49": 11,
+      "upTo149": 379,
+      "from150": 150
+    },
+    "maxPowerKw": 400,
+    "operators": [
+      {
+        "name": "Iberdrola | BP Pulse",
+        "count": 260
+      },
+      {
+        "name": "Repsol - Ibil",
+        "count": 147
+      },
+      {
+        "name": "Zunder",
+        "count": 91
+      },
+      {
+        "name": "Endesa",
+        "count": 84
+      },
+      {
+        "name": "Mercadona",
+        "count": 52
+      }
+    ],
+    "operatorKnown": 1007
   },
   "cataluna": {
-    "total": 3958,
-    "fastCount": 1274,
+    "total": 3588,
+    "fastCount": 1210,
     "connectorBreakdown": [
       {
         "name": "Type 2 (Socket Only)",
-        "count": 2637
+        "count": 2428
       },
       {
         "name": "CCS (Type 2)",
-        "count": 1328
+        "count": 1262
       },
       {
         "name": "CHAdeMO",
-        "count": 777
+        "count": 724
       },
       {
         "name": "Type 2 (Tethered Connector)",
-        "count": 733
+        "count": 614
       },
       {
         "name": "CEE 7/4 - Schuko - Type F",
-        "count": 568
+        "count": 442
       }
     ],
     "topTowns": [
       {
         "name": "Barcelona",
-        "count": 337
+        "count": 326,
+        "fastCount": 68
       },
       {
         "name": "Tarragona",
-        "count": 47
+        "count": 47,
+        "fastCount": 14
       },
       {
         "name": "Sant Cugat del Vallès",
-        "count": 45
+        "count": 45,
+        "fastCount": 15
       },
       {
         "name": "Manresa",
-        "count": 40
+        "count": 40,
+        "fastCount": 17
       },
       {
         "name": "Vic",
-        "count": 40
+        "count": 40,
+        "fastCount": 9
       },
       {
         "name": "Reus",
-        "count": 34
+        "count": 34,
+        "fastCount": 7
+      },
+      {
+        "name": "Salou",
+        "count": 33,
+        "fastCount": 3
+      },
+      {
+        "name": "el Prat de Llobregat",
+        "count": 29,
+        "fastCount": 9
       }
-    ]
-  },
-  "comunidad-valenciana": {
-    "total": 2690,
-    "fastCount": 947,
-    "connectorBreakdown": [
+    ],
+    "powerBands": {
+      "upTo7": 747,
+      "upTo22": 1557,
+      "upTo49": 64,
+      "upTo149": 986,
+      "from150": 229
+    },
+    "maxPowerKw": 600,
+    "operators": [
       {
-        "name": "Type 2 (Socket Only)",
-        "count": 1754
-      },
-      {
-        "name": "CCS (Type 2)",
-        "count": 1010
-      },
-      {
-        "name": "CHAdeMO",
+        "name": "eTecnic",
         "count": 520
       },
       {
+        "name": "Endesa",
+        "count": 392
+      },
+      {
+        "name": "Iberdrola | BP Pulse",
+        "count": 257
+      },
+      {
+        "name": "Repsol - Ibil",
+        "count": 214
+      },
+      {
+        "name": "Electromaps",
+        "count": 202
+      }
+    ],
+    "operatorKnown": 2822
+  },
+  "comunidad-valenciana": {
+    "total": 2314,
+    "fastCount": 798,
+    "connectorBreakdown": [
+      {
+        "name": "Type 2 (Socket Only)",
+        "count": 1534
+      },
+      {
+        "name": "CCS (Type 2)",
+        "count": 850
+      },
+      {
+        "name": "CHAdeMO",
+        "count": 418
+      },
+      {
         "name": "Type 2 (Tethered Connector)",
-        "count": 509
+        "count": 414
       },
       {
         "name": "CEE 7/4 - Schuko - Type F",
-        "count": 187
+        "count": 159
       }
     ],
     "topTowns": [
       {
         "name": "Benidorm",
-        "count": 63
-      },
-      {
-        "name": "Murcia",
-        "count": 50
+        "count": 63,
+        "fastCount": 7
       },
       {
         "name": "Valencia",
-        "count": 39
+        "count": 39,
+        "fastCount": 15
       },
       {
         "name": "Dénia",
-        "count": 30
+        "count": 30,
+        "fastCount": 8
       },
       {
         "name": "Orihuela",
-        "count": 28
+        "count": 28,
+        "fastCount": 6
       },
       {
         "name": "Paterna",
-        "count": 27
+        "count": 27,
+        "fastCount": 13
+      },
+      {
+        "name": "Torrent",
+        "count": 27,
+        "fastCount": 13
+      },
+      {
+        "name": "Gandia",
+        "count": 27,
+        "fastCount": 9
+      },
+      {
+        "name": "Torrevieja",
+        "count": 27,
+        "fastCount": 9
       }
-    ]
+    ],
+    "powerBands": {
+      "upTo7": 294,
+      "upTo22": 1173,
+      "upTo49": 46,
+      "upTo149": 659,
+      "from150": 142
+    },
+    "maxPowerKw": 400,
+    "operators": [
+      {
+        "name": "Iberdrola | BP Pulse",
+        "count": 595
+      },
+      {
+        "name": "Mercadona",
+        "count": 201
+      },
+      {
+        "name": "Repsol - Ibil",
+        "count": 142
+      },
+      {
+        "name": "Endesa",
+        "count": 126
+      },
+      {
+        "name": "Eranovum",
+        "count": 99
+      }
+    ],
+    "operatorKnown": 1886
   },
   "extremadura": {
-    "total": 652,
-    "fastCount": 263,
+    "total": 423,
+    "fastCount": 178,
     "connectorBreakdown": [
       {
         "name": "Type 2 (Socket Only)",
-        "count": 371
+        "count": 247
       },
       {
         "name": "CCS (Type 2)",
-        "count": 276
+        "count": 186
       },
       {
         "name": "CHAdeMO",
-        "count": 193
+        "count": 127
       },
       {
         "name": "Type 2 (Tethered Connector)",
-        "count": 160
+        "count": 103
+      },
+      {
+        "name": "CEE 7/4 - Schuko - Type F",
+        "count": 33
+      }
+    ],
+    "topTowns": [
+      {
+        "name": "Badajoz",
+        "count": 32,
+        "fastCount": 12
+      },
+      {
+        "name": "Mérida",
+        "count": 21,
+        "fastCount": 9
+      },
+      {
+        "name": "Cáceres",
+        "count": 21,
+        "fastCount": 10
+      },
+      {
+        "name": "Don Benito",
+        "count": 12,
+        "fastCount": 7
+      },
+      {
+        "name": "Miajadas",
+        "count": 10,
+        "fastCount": 3
+      },
+      {
+        "name": "Plasencia",
+        "count": 9,
+        "fastCount": 2
+      },
+      {
+        "name": "Trujillo",
+        "count": 8,
+        "fastCount": 3
+      },
+      {
+        "name": "Villanueva de la Serena",
+        "count": 7,
+        "fastCount": 3
+      }
+    ],
+    "powerBands": {
+      "upTo7": 48,
+      "upTo22": 186,
+      "upTo49": 6,
+      "upTo149": 141,
+      "from150": 41
+    },
+    "maxPowerKw": 360,
+    "operators": [
+      {
+        "name": "Repsol - Ibil",
+        "count": 93
+      },
+      {
+        "name": "Zunder",
+        "count": 51
+      },
+      {
+        "name": "Iberdrola | BP Pulse",
+        "count": 32
+      },
+      {
+        "name": "OESTE Movilidad",
+        "count": 28
+      },
+      {
+        "name": "Endesa",
+        "count": 26
+      }
+    ],
+    "operatorKnown": 343
+  },
+  "galicia": {
+    "total": 899,
+    "fastCount": 336,
+    "connectorBreakdown": [
+      {
+        "name": "Type 2 (Socket Only)",
+        "count": 485
+      },
+      {
+        "name": "CCS (Type 2)",
+        "count": 357
+      },
+      {
+        "name": "Type 2 (Tethered Connector)",
+        "count": 204
+      },
+      {
+        "name": "CHAdeMO",
+        "count": 170
+      },
+      {
+        "name": "CEE 7/4 - Schuko - Type F",
+        "count": 74
+      }
+    ],
+    "topTowns": [
+      {
+        "name": "Vigo",
+        "count": 49,
+        "fastCount": 12
+      },
+      {
+        "name": "Santiago de Compostela",
+        "count": 31,
+        "fastCount": 9
+      },
+      {
+        "name": "Oleiros",
+        "count": 18,
+        "fastCount": 6
+      },
+      {
+        "name": "Sanxenxo",
+        "count": 18,
+        "fastCount": 7
+      },
+      {
+        "name": "Pontevedra",
+        "count": 17,
+        "fastCount": 3
+      },
+      {
+        "name": "A Coruña",
+        "count": 17,
+        "fastCount": 2
+      },
+      {
+        "name": "Vilagarcía de Arousa",
+        "count": 17,
+        "fastCount": 2
+      },
+      {
+        "name": "Lugo",
+        "count": 17,
+        "fastCount": 6
+      }
+    ],
+    "powerBands": {
+      "upTo7": 158,
+      "upTo22": 386,
+      "upTo49": 16,
+      "upTo149": 265,
+      "from150": 74
+    },
+    "maxPowerKw": 600,
+    "operators": [
+      {
+        "name": "Repsol - Ibil",
+        "count": 95
+      },
+      {
+        "name": "Iberdrola | BP Pulse",
+        "count": 90
+      },
+      {
+        "name": "Endesa",
+        "count": 57
+      },
+      {
+        "name": "Mercadona",
+        "count": 48
+      },
+      {
+        "name": "ACCIONA - Cargacoches",
+        "count": 31
+      }
+    ],
+    "operatorKnown": 600
+  },
+  "madrid": {
+    "total": 2097,
+    "fastCount": 765,
+    "connectorBreakdown": [
+      {
+        "name": "Type 2 (Socket Only)",
+        "count": 1431
+      },
+      {
+        "name": "CCS (Type 2)",
+        "count": 780
+      },
+      {
+        "name": "CHAdeMO",
+        "count": 377
+      },
+      {
+        "name": "Type 2 (Tethered Connector)",
+        "count": 349
+      },
+      {
+        "name": "CEE 7/4 - Schuko - Type F",
+        "count": 121
+      }
+    ],
+    "topTowns": [
+      {
+        "name": "Madrid",
+        "count": 434,
+        "fastCount": 130
+      },
+      {
+        "name": "Alcobendas",
+        "count": 52,
+        "fastCount": 20
+      },
+      {
+        "name": "Rivas-Vaciamadrid",
+        "count": 41,
+        "fastCount": 14
+      },
+      {
+        "name": "Majadahonda",
+        "count": 38,
+        "fastCount": 22
+      },
+      {
+        "name": "Boadilla del Monte",
+        "count": 37,
+        "fastCount": 13
+      },
+      {
+        "name": "Alcalá de Henares",
+        "count": 34,
+        "fastCount": 12
+      },
+      {
+        "name": "Las Rozas de Madrid",
+        "count": 30,
+        "fastCount": 9
+      },
+      {
+        "name": "Pozuelo de Alarcón",
+        "count": 30,
+        "fastCount": 10
+      }
+    ],
+    "powerBands": {
+      "upTo7": 452,
+      "upTo22": 860,
+      "upTo49": 17,
+      "upTo149": 588,
+      "from150": 178
+    },
+    "maxPowerKw": 600,
+    "operators": [
+      {
+        "name": "Iberdrola | BP Pulse",
+        "count": 268
+      },
+      {
+        "name": "Endesa",
+        "count": 180
+      },
+      {
+        "name": "Repsol - Ibil",
+        "count": 157
+      },
+      {
+        "name": "Mercadona",
+        "count": 145
+      },
+      {
+        "name": "EDP",
+        "count": 136
+      }
+    ],
+    "operatorKnown": 1672
+  },
+  "murcia": {
+    "total": 502,
+    "fastCount": 196,
+    "connectorBreakdown": [
+      {
+        "name": "Type 2 (Socket Only)",
+        "count": 274
+      },
+      {
+        "name": "CCS (Type 2)",
+        "count": 208
+      },
+      {
+        "name": "Type 2 (Tethered Connector)",
+        "count": 128
+      },
+      {
+        "name": "CHAdeMO",
+        "count": 115
       },
       {
         "name": "CEE 7/4 - Schuko - Type F",
@@ -546,342 +1313,374 @@
     ],
     "topTowns": [
       {
-        "name": "Badajoz",
-        "count": 32
-      },
-      {
-        "name": "Mérida",
-        "count": 21
-      },
-      {
-        "name": "Cáceres",
-        "count": 21
-      },
-      {
-        "name": "Talavera de la Reina",
-        "count": 17
-      },
-      {
-        "name": "Castelo Branco",
-        "count": 16
-      },
-      {
-        "name": "Covilhã",
-        "count": 14
-      }
-    ]
-  },
-  "galicia": {
-    "total": 957,
-    "fastCount": 358,
-    "connectorBreakdown": [
-      {
-        "name": "Type 2 (Socket Only)",
-        "count": 517
-      },
-      {
-        "name": "CCS (Type 2)",
-        "count": 381
-      },
-      {
-        "name": "Type 2 (Tethered Connector)",
-        "count": 221
-      },
-      {
-        "name": "CHAdeMO",
-        "count": 193
-      },
-      {
-        "name": "CEE 7/4 - Schuko - Type F",
-        "count": 76
-      }
-    ],
-    "topTowns": [
-      {
-        "name": "Vigo",
-        "count": 49
-      },
-      {
-        "name": "Santiago de Compostela",
-        "count": 31
-      },
-      {
-        "name": "Oleiros",
-        "count": 18
-      },
-      {
-        "name": "Pontevedra",
-        "count": 17
-      },
-      {
-        "name": "A Coruña",
-        "count": 17
-      },
-      {
-        "name": "Vilagarcía de Arousa",
-        "count": 17
-      }
-    ]
-  },
-  "madrid": {
-    "total": 2308,
-    "fastCount": 850,
-    "connectorBreakdown": [
-      {
-        "name": "Type 2 (Socket Only)",
-        "count": 1541
-      },
-      {
-        "name": "CCS (Type 2)",
-        "count": 869
-      },
-      {
-        "name": "CHAdeMO",
-        "count": 420
-      },
-      {
-        "name": "Type 2 (Tethered Connector)",
-        "count": 394
-      },
-      {
-        "name": "CEE 7/4 - Schuko - Type F",
-        "count": 137
-      }
-    ],
-    "topTowns": [
-      {
-        "name": "Madrid",
-        "count": 434
-      },
-      {
-        "name": "Alcobendas",
-        "count": 52
-      },
-      {
-        "name": "Rivas-Vaciamadrid",
-        "count": 41
-      },
-      {
-        "name": "Boadilla del Monte",
-        "count": 37
-      },
-      {
-        "name": "Majadahonda",
-        "count": 36
-      },
-      {
-        "name": "Alcalá de Henares",
-        "count": 34
-      }
-    ]
-  },
-  "murcia": {
-    "total": 838,
-    "fastCount": 307,
-    "connectorBreakdown": [
-      {
-        "name": "Type 2 (Socket Only)",
-        "count": 480
-      },
-      {
-        "name": "CCS (Type 2)",
-        "count": 322
-      },
-      {
-        "name": "Type 2 (Tethered Connector)",
-        "count": 180
-      },
-      {
-        "name": "CHAdeMO",
-        "count": 174
-      },
-      {
-        "name": "CEE 7/4 - Schuko - Type F",
-        "count": 78
-      }
-    ],
-    "topTowns": [
-      {
         "name": "Murcia",
-        "count": 50
-      },
-      {
-        "name": "Orihuela",
-        "count": 28
+        "count": 50,
+        "fastCount": 23
       },
       {
         "name": "Torre Pacheco",
-        "count": 21
-      },
-      {
-        "name": "Torrevieja",
-        "count": 18
+        "count": 21,
+        "fastCount": 10
       },
       {
         "name": "San Javier",
-        "count": 18
+        "count": 18,
+        "fastCount": 5
       },
       {
-        "name": "Elda",
+        "name": "Águilas",
+        "count": 15,
+        "fastCount": 3
+      },
+      {
+        "name": "Lorca",
+        "count": 15,
+        "fastCount": 5
+      },
+      {
+        "name": "Mazarrón",
+        "count": 13,
+        "fastCount": 5
+      },
+      {
+        "name": "San Pedro del Pinatar",
+        "count": 12,
+        "fastCount": 4
+      },
+      {
+        "name": "Cartagena",
+        "count": 12,
+        "fastCount": 6
+      }
+    ],
+    "powerBands": {
+      "upTo7": 91,
+      "upTo22": 202,
+      "upTo49": 7,
+      "upTo149": 171,
+      "from150": 30
+    },
+    "maxPowerKw": 400,
+    "operators": [
+      {
+        "name": "Iberdrola | BP Pulse",
+        "count": 131
+      },
+      {
+        "name": "Mercadona",
+        "count": 49
+      },
+      {
+        "name": "Repsol - Ibil",
+        "count": 40
+      },
+      {
+        "name": "Endesa",
+        "count": 31
+      },
+      {
+        "name": "TotalEnergies",
         "count": 16
       }
-    ]
+    ],
+    "operatorKnown": 393
   },
   "navarra": {
-    "total": 679,
-    "fastCount": 268,
+    "total": 430,
+    "fastCount": 191,
     "connectorBreakdown": [
       {
         "name": "Type 2 (Socket Only)",
-        "count": 404
+        "count": 237
       },
       {
         "name": "CCS (Type 2)",
-        "count": 267
+        "count": 191
       },
       {
         "name": "Type 2 (Tethered Connector)",
-        "count": 161
-      },
-      {
-        "name": "CHAdeMO",
         "count": 120
       },
       {
+        "name": "CHAdeMO",
+        "count": 80
+      },
+      {
         "name": "CEE 7/4 - Schuko - Type F",
-        "count": 58
+        "count": 29
       }
     ],
     "topTowns": [
       {
         "name": "Pamplona",
-        "count": 50
+        "count": 50,
+        "fastCount": 16
       },
       {
         "name": "Tudela",
+        "count": 27,
+        "fastCount": 15
+      },
+      {
+        "name": "Egüés",
+        "count": 8,
+        "fastCount": 0
+      },
+      {
+        "name": "Tafalla",
+        "count": 8,
+        "fastCount": 4
+      },
+      {
+        "name": "Burlada / Burlata",
+        "count": 7,
+        "fastCount": 7
+      },
+      {
+        "name": "Estella-Lizarra",
+        "count": 5,
+        "fastCount": 3
+      },
+      {
+        "name": "Berrioplano",
+        "count": 4,
+        "fastCount": 1
+      },
+      {
+        "name": "Berriozar",
+        "count": 4,
+        "fastCount": 3
+      }
+    ],
+    "powerBands": {
+      "upTo7": 49,
+      "upTo22": 187,
+      "upTo49": 2,
+      "upTo149": 142,
+      "from150": 50
+    },
+    "maxPowerKw": 400,
+    "operators": [
+      {
+        "name": "Iberdrola | BP Pulse",
+        "count": 86
+      },
+      {
+        "name": "Repsol - Ibil",
+        "count": 34
+      },
+      {
+        "name": "Electromaps",
+        "count": 28
+      },
+      {
+        "name": "Vilalta Greenergy",
         "count": 27
       },
       {
-        "name": "San Sebastián",
-        "count": 14
-      },
-      {
-        "name": "Oiartzun",
-        "count": 12
-      },
-      {
-        "name": "Calahorra",
-        "count": 11
-      },
-      {
-        "name": "Hernani",
-        "count": 9
+        "name": "CEL TODA Navarra",
+        "count": 26
       }
-    ]
+    ],
+    "operatorKnown": 338
   },
   "pais-vasco": {
-    "total": 733,
-    "fastCount": 275,
+    "total": 809,
+    "fastCount": 307,
     "connectorBreakdown": [
       {
         "name": "Type 2 (Socket Only)",
-        "count": 457
+        "count": 490
       },
       {
         "name": "CCS (Type 2)",
-        "count": 273
+        "count": 314
       },
       {
         "name": "Type 2 (Tethered Connector)",
-        "count": 141
+        "count": 154
       },
       {
         "name": "CHAdeMO",
-        "count": 131
+        "count": 143
       },
       {
         "name": "CEE 7/4 - Schuko - Type F",
-        "count": 55
+        "count": 57
       }
     ],
     "topTowns": [
       {
         "name": "Bilbao",
-        "count": 47
+        "count": 47,
+        "fastCount": 13
+      },
+      {
+        "name": "Vitoria-Gasteiz",
+        "count": 30,
+        "fastCount": 6
       },
       {
         "name": "Irun",
-        "count": 20
+        "count": 20,
+        "fastCount": 11
       },
       {
         "name": "San Sebastián",
-        "count": 16
+        "count": 16,
+        "fastCount": 1
       },
       {
         "name": "Azpeitia",
-        "count": 14
+        "count": 14,
+        "fastCount": 1
+      },
+      {
+        "name": "Vitoria",
+        "count": 13,
+        "fastCount": 8
       },
       {
         "name": "Basauri",
-        "count": 12
+        "count": 12,
+        "fastCount": 5
       },
       {
         "name": "Santurtzi",
-        "count": 12
+        "count": 12,
+        "fastCount": 3
       }
-    ]
+    ],
+    "powerBands": {
+      "upTo7": 163,
+      "upTo22": 329,
+      "upTo49": 10,
+      "upTo149": 215,
+      "from150": 92
+    },
+    "maxPowerKw": 400,
+    "operators": [
+      {
+        "name": "Iberdrola | BP Pulse",
+        "count": 170
+      },
+      {
+        "name": "Repsol - Ibil",
+        "count": 148
+      },
+      {
+        "name": "Zunder",
+        "count": 89
+      },
+      {
+        "name": "Endesa",
+        "count": 39
+      },
+      {
+        "name": "Mercadona",
+        "count": 29
+      }
+    ],
+    "operatorKnown": 671
   },
   "la-rioja": {
-    "total": 236,
-    "fastCount": 87,
+    "total": 154,
+    "fastCount": 55,
     "connectorBreakdown": [
       {
         "name": "Type 2 (Socket Only)",
-        "count": 140
+        "count": 91
       },
       {
         "name": "CCS (Type 2)",
-        "count": 87
+        "count": 55
       },
       {
         "name": "Type 2 (Tethered Connector)",
-        "count": 59
+        "count": 35
       },
       {
         "name": "CHAdeMO",
-        "count": 27
+        "count": 21
       },
       {
         "name": "CEE 7/4 - Schuko - Type F",
-        "count": 21
+        "count": 12
       }
     ],
     "topTowns": [
       {
         "name": "Logroño",
-        "count": 31
+        "count": 30,
+        "fastCount": 10
       },
       {
         "name": "Haro",
-        "count": 11
+        "count": 11,
+        "fastCount": 3
       },
       {
         "name": "Calahorra",
-        "count": 11
+        "count": 11,
+        "fastCount": 7
       },
       {
         "name": "Alfaro",
-        "count": 5
+        "count": 5,
+        "fastCount": 1
       },
       {
         "name": "Villamediana de Iregua",
-        "count": 5
+        "count": 5,
+        "fastCount": 4
       },
       {
         "name": "Arnedo",
-        "count": 4
+        "count": 4,
+        "fastCount": 1
+      },
+      {
+        "name": "Briones",
+        "count": 3,
+        "fastCount": 0
+      },
+      {
+        "name": "Navarrete",
+        "count": 2,
+        "fastCount": 1
       }
-    ]
+    ],
+    "powerBands": {
+      "upTo7": 22,
+      "upTo22": 77,
+      "upTo49": 0,
+      "upTo149": 40,
+      "from150": 15
+    },
+    "maxPowerKw": 360,
+    "operators": [
+      {
+        "name": "Iberdrola | BP Pulse",
+        "count": 26
+      },
+      {
+        "name": "Repsol - Ibil",
+        "count": 19
+      },
+      {
+        "name": "Endesa",
+        "count": 15
+      },
+      {
+        "name": "Zunder",
+        "count": 8
+      },
+      {
+        "name": "Mercadona",
+        "count": 7
+      }
+    ],
+    "operatorKnown": 106
   },
   "ceuta": {
     "total": 7,
@@ -911,17 +1710,37 @@
     "topTowns": [
       {
         "name": "Ceuta",
-        "count": 2
+        "count": 2,
+        "fastCount": 0
       }
-    ]
+    ],
+    "powerBands": {
+      "upTo7": 3,
+      "upTo22": 3,
+      "upTo49": 0,
+      "upTo149": 1,
+      "from150": 0
+    },
+    "maxPowerKw": 50,
+    "operators": [
+      {
+        "name": "Mercadona",
+        "count": 2
+      },
+      {
+        "name": "ChargeGuru",
+        "count": 1
+      }
+    ],
+    "operatorKnown": 3
   },
   "melilla": {
-    "total": 9,
+    "total": 8,
     "fastCount": 0,
     "connectorBreakdown": [
       {
         "name": "Type 2 (Socket Only)",
-        "count": 8
+        "count": 7
       },
       {
         "name": "Type 2 (Tethered Connector)",
@@ -935,632 +1754,1220 @@
     "topTowns": [
       {
         "name": "Melilla",
-        "count": 6
+        "count": 5,
+        "fastCount": 0
       }
-    ]
+    ],
+    "powerBands": {
+      "upTo7": 1,
+      "upTo22": 7,
+      "upTo49": 0,
+      "upTo149": 0,
+      "from150": 0
+    },
+    "maxPowerKw": 22,
+    "operators": [
+      {
+        "name": "ChargeGuru",
+        "count": 1
+      },
+      {
+        "name": "Fenie Energía",
+        "count": 1
+      },
+      {
+        "name": "Mercadona",
+        "count": 1
+      }
+    ],
+    "operatorKnown": 3
   },
   "london": {
-    "total": 12521,
-    "fastCount": 596,
+    "total": 12196,
+    "fastCount": 498,
     "connectorBreakdown": [
       {
         "name": "Type 2 (Socket Only)",
-        "count": 11764
+        "count": 11534
       },
       {
         "name": "Type 1 (J1772)",
-        "count": 645
+        "count": 644
       },
       {
         "name": "CHAdeMO",
-        "count": 554
+        "count": 474
       },
       {
         "name": "CCS (Type 2)",
-        "count": 449
+        "count": 366
       },
       {
         "name": "Type 2 (Tethered Connector)",
-        "count": 399
+        "count": 358
       }
     ],
     "topTowns": [
       {
         "name": "London",
-        "count": 7636
+        "count": 7632,
+        "fastCount": 248
       },
       {
         "name": "Hammersmith",
-        "count": 1340
+        "count": 1339,
+        "fastCount": 2
       },
       {
         "name": "Kingston",
-        "count": 195
+        "count": 195,
+        "fastCount": 0
       },
       {
         "name": "Hounslow",
-        "count": 165
+        "count": 162,
+        "fastCount": 9
       },
       {
         "name": "Ealing",
-        "count": 134
+        "count": 134,
+        "fastCount": 2
       },
       {
         "name": "Camden Town",
-        "count": 93
+        "count": 93,
+        "fastCount": 1
+      },
+      {
+        "name": "Merton",
+        "count": 85,
+        "fastCount": 1
+      },
+      {
+        "name": "Croydon",
+        "count": 73,
+        "fastCount": 7
       }
-    ]
+    ],
+    "powerBands": {
+      "upTo7": 10688,
+      "upTo22": 952,
+      "upTo49": 9,
+      "upTo149": 424,
+      "from150": 75
+    },
+    "maxPowerKw": 350,
+    "operators": [
+      {
+        "name": "Shell Recharge Solutions",
+        "count": 4922
+      },
+      {
+        "name": "Char.gy",
+        "count": 2473
+      },
+      {
+        "name": "SureCharge (FM Conway)",
+        "count": 1779
+      },
+      {
+        "name": "Total Energies",
+        "count": 1146
+      },
+      {
+        "name": "BP Pulse",
+        "count": 451
+      }
+    ],
+    "operatorKnown": 12098
   },
   "south-east-england": {
-    "total": 15319,
-    "fastCount": 1218,
+    "total": 2778,
+    "fastCount": 638,
     "connectorBreakdown": [
       {
         "name": "Type 2 (Socket Only)",
-        "count": 13931
-      },
-      {
-        "name": "CHAdeMO",
-        "count": 1078
+        "count": 2111
       },
       {
         "name": "CCS (Type 2)",
-        "count": 1012
+        "count": 574
       },
       {
-        "name": "Type 1 (J1772)",
-        "count": 647
+        "name": "CHAdeMO",
+        "count": 546
       },
       {
         "name": "Type 2 (Tethered Connector)",
-        "count": 638
+        "count": 299
+      },
+      {
+        "name": "BS1363 3 Pin 13 Amp",
+        "count": 140
       }
     ],
     "topTowns": [
       {
-        "name": "London",
-        "count": 7640
-      },
-      {
-        "name": "Hammersmith",
-        "count": 1340
-      },
-      {
         "name": "Brighton",
-        "count": 284
+        "count": 284,
+        "fastCount": 1
       },
       {
-        "name": "Kingston",
-        "count": 195
+        "name": "Milton Keynes",
+        "count": 146,
+        "fastCount": 59
       },
       {
-        "name": "Hounslow",
-        "count": 165
+        "name": "Portsmouth",
+        "count": 119,
+        "fastCount": 6
       },
       {
-        "name": "Ealing",
-        "count": 135
+        "name": "Reading",
+        "count": 75,
+        "fastCount": 15
+      },
+      {
+        "name": "Oxford",
+        "count": 69,
+        "fastCount": 11
+      },
+      {
+        "name": "Southampton",
+        "count": 60,
+        "fastCount": 9
+      },
+      {
+        "name": "Winchester",
+        "count": 52,
+        "fastCount": 10
+      },
+      {
+        "name": "Newbury",
+        "count": 48,
+        "fastCount": 10
       }
-    ]
+    ],
+    "powerBands": {
+      "upTo7": 1497,
+      "upTo22": 594,
+      "upTo49": 14,
+      "upTo149": 509,
+      "from150": 131
+    },
+    "maxPowerKw": 400,
+    "operators": [
+      {
+        "name": "POD Point",
+        "count": 537
+      },
+      {
+        "name": "BP Pulse",
+        "count": 459
+      },
+      {
+        "name": "Blink Charging",
+        "count": 283
+      },
+      {
+        "name": "Joju Ltd",
+        "count": 189
+      },
+      {
+        "name": "Shell Recharge Solutions",
+        "count": 162
+      }
+    ],
+    "operatorKnown": 2681
   },
   "south-west-england": {
-    "total": 2323,
-    "fastCount": 571,
+    "total": 1592,
+    "fastCount": 429,
     "connectorBreakdown": [
       {
         "name": "Type 2 (Socket Only)",
-        "count": 1626
+        "count": 1048
       },
       {
         "name": "CCS (Type 2)",
-        "count": 518
+        "count": 398
       },
       {
         "name": "CHAdeMO",
-        "count": 501
+        "count": 376
       },
       {
         "name": "Type 2 (Tethered Connector)",
-        "count": 213
+        "count": 163
       },
       {
-        "name": "BS1363 3 Pin 13 Amp",
-        "count": 161
+        "name": "Tesla (Model S/X)",
+        "count": 124
       }
     ],
     "topTowns": [
       {
         "name": "Bristol",
-        "count": 140
-      },
-      {
-        "name": "Cardiff",
-        "count": 96
+        "count": 140,
+        "fastCount": 40
       },
       {
         "name": "Plymouth",
-        "count": 75
+        "count": 75,
+        "fastCount": 16
       },
       {
         "name": "Exeter",
-        "count": 68
+        "count": 68,
+        "fastCount": 12
       },
       {
         "name": "Swindon",
+        "count": 65,
+        "fastCount": 17
+      },
+      {
+        "name": "Bournemouth",
+        "count": 40,
+        "fastCount": 11
+      },
+      {
+        "name": "Gloucester",
+        "count": 35,
+        "fastCount": 9
+      },
+      {
+        "name": "Bath",
+        "count": 31,
+        "fastCount": 3
+      },
+      {
+        "name": "Taunton",
+        "count": 29,
+        "fastCount": 9
+      }
+    ],
+    "powerBands": {
+      "upTo7": 679,
+      "upTo22": 438,
+      "upTo49": 31,
+      "upTo149": 360,
+      "from150": 70
+    },
+    "maxPowerKw": 360,
+    "operators": [
+      {
+        "name": "POD Point",
+        "count": 382
+      },
+      {
+        "name": "The GeniePoint Network ( EQUANS EV Solutions )",
+        "count": 156
+      },
+      {
+        "name": "BP Pulse",
+        "count": 123
+      },
+      {
+        "name": "Zero Carbon World",
+        "count": 114
+      },
+      {
+        "name": "Tesla (Tesla-only charging)",
+        "count": 112
+      }
+    ],
+    "operatorKnown": 1511
+  },
+  "east-of-england": {
+    "total": 1392,
+    "fastCount": 354,
+    "connectorBreakdown": [
+      {
+        "name": "Type 2 (Socket Only)",
+        "count": 1044
+      },
+      {
+        "name": "CCS (Type 2)",
+        "count": 320
+      },
+      {
+        "name": "CHAdeMO",
+        "count": 289
+      },
+      {
+        "name": "Type 2 (Tethered Connector)",
+        "count": 116
+      },
+      {
+        "name": "BS1363 3 Pin 13 Amp",
+        "count": 83
+      }
+    ],
+    "topTowns": [
+      {
+        "name": "Cambridge",
+        "count": 77,
+        "fastCount": 11
+      },
+      {
+        "name": "Norwich",
+        "count": 62,
+        "fastCount": 14
+      },
+      {
+        "name": "Watford",
+        "count": 62,
+        "fastCount": 8
+      },
+      {
+        "name": "Colchester",
+        "count": 45,
+        "fastCount": 11
+      },
+      {
+        "name": "Ipswich",
+        "count": 44,
+        "fastCount": 11
+      },
+      {
+        "name": "Luton",
+        "count": 42,
+        "fastCount": 2
+      },
+      {
+        "name": "Bedford",
+        "count": 38,
+        "fastCount": 8
+      },
+      {
+        "name": "Peterborough",
+        "count": 33,
+        "fastCount": 11
+      }
+    ],
+    "powerBands": {
+      "upTo7": 782,
+      "upTo22": 233,
+      "upTo49": 6,
+      "upTo149": 249,
+      "from150": 110
+    },
+    "maxPowerKw": 400,
+    "operators": [
+      {
+        "name": "POD Point",
+        "count": 366
+      },
+      {
+        "name": "BP Pulse",
+        "count": 280
+      },
+      {
+        "name": "Blink Charging",
+        "count": 71
+      },
+      {
+        "name": "The GeniePoint Network ( EQUANS EV Solutions )",
         "count": 66
       },
       {
-        "name": "Newport",
-        "count": 56
+        "name": "ElectRoad",
+        "count": 59
       }
-    ]
+    ],
+    "operatorKnown": 1309
   },
-  "east-of-england": {
-    "total": 13483,
-    "fastCount": 857,
+  "east-midlands": {
+    "total": 1027,
+    "fastCount": 323,
     "connectorBreakdown": [
       {
         "name": "Type 2 (Socket Only)",
-        "count": 12470
+        "count": 753
       },
       {
         "name": "CHAdeMO",
-        "count": 760
+        "count": 296
       },
       {
         "name": "CCS (Type 2)",
-        "count": 692
-      },
-      {
-        "name": "Type 1 (J1772)",
-        "count": 633
+        "count": 285
       },
       {
         "name": "Type 2 (Tethered Connector)",
-        "count": 462
-      }
-    ],
-    "topTowns": [
-      {
-        "name": "London",
-        "count": 7513
-      },
-      {
-        "name": "Hammersmith",
-        "count": 1340
-      },
-      {
-        "name": "Kingston",
-        "count": 167
-      },
-      {
-        "name": "Hounslow",
-        "count": 165
-      },
-      {
-        "name": "Ealing",
         "count": 135
       },
       {
-        "name": "Camden Town",
-        "count": 93
-      }
-    ]
-  },
-  "east-midlands": {
-    "total": 2739,
-    "fastCount": 709,
-    "connectorBreakdown": [
-      {
-        "name": "Type 2 (Socket Only)",
-        "count": 2078
-      },
-      {
-        "name": "CHAdeMO",
-        "count": 630
-      },
-      {
-        "name": "CCS (Type 2)",
-        "count": 615
-      },
-      {
-        "name": "Type 2 (Tethered Connector)",
-        "count": 348
-      },
-      {
         "name": "BS1363 3 Pin 13 Amp",
-        "count": 96
+        "count": 38
       }
     ],
     "topTowns": [
       {
-        "name": "Coventry",
-        "count": 501
-      },
-      {
-        "name": "Milton Keynes",
-        "count": 149
-      },
-      {
         "name": "Nottingham",
-        "count": 92
+        "count": 92,
+        "fastCount": 38
       },
       {
         "name": "Leicester",
-        "count": 79
-      },
-      {
-        "name": "Cambridge",
-        "count": 77
-      },
-      {
-        "name": "Sheffield",
-        "count": 64
-      }
-    ]
-  },
-  "west-midlands": {
-    "total": 2357,
-    "fastCount": 633,
-    "connectorBreakdown": [
-      {
-        "name": "Type 2 (Socket Only)",
-        "count": 1785
-      },
-      {
-        "name": "CHAdeMO",
-        "count": 584
-      },
-      {
-        "name": "CCS (Type 2)",
-        "count": 528
-      },
-      {
-        "name": "Type 2 (Tethered Connector)",
-        "count": 307
-      },
-      {
-        "name": "BS1363 3 Pin 13 Amp",
-        "count": 77
-      }
-    ],
-    "topTowns": [
-      {
-        "name": "Coventry",
-        "count": 501
-      },
-      {
-        "name": "Birmingham",
-        "count": 120
-      },
-      {
-        "name": "Nottingham",
-        "count": 89
-      },
-      {
-        "name": "Leicester",
-        "count": 77
+        "count": 79,
+        "fastCount": 15
       },
       {
         "name": "Derby",
-        "count": 52
+        "count": 52,
+        "fastCount": 17
       },
       {
-        "name": "Solihull",
-        "count": 41
+        "name": "Lincoln",
+        "count": 42,
+        "fastCount": 9
+      },
+      {
+        "name": "Northampton",
+        "count": 39,
+        "fastCount": 16
+      },
+      {
+        "name": "Corby",
+        "count": 35,
+        "fastCount": 4
+      },
+      {
+        "name": "Chesterfield",
+        "count": 29,
+        "fastCount": 8
+      },
+      {
+        "name": "Kettering",
+        "count": 21,
+        "fastCount": 7
       }
-    ]
+    ],
+    "powerBands": {
+      "upTo7": 481,
+      "upTo22": 209,
+      "upTo49": 8,
+      "upTo149": 277,
+      "from150": 50
+    },
+    "maxPowerKw": 560,
+    "operators": [
+      {
+        "name": "POD Point",
+        "count": 218
+      },
+      {
+        "name": "BP Pulse",
+        "count": 183
+      },
+      {
+        "name": "Charge Your Car",
+        "count": 100
+      },
+      {
+        "name": "The GeniePoint Network ( EQUANS EV Solutions )",
+        "count": 46
+      },
+      {
+        "name": "InstaVolt Ltd",
+        "count": 44
+      }
+    ],
+    "operatorKnown": 978
   },
-  "yorkshire-and-the-humber": {
-    "total": 1707,
-    "fastCount": 580,
+  "west-midlands": {
+    "total": 1511,
+    "fastCount": 371,
     "connectorBreakdown": [
       {
         "name": "Type 2 (Socket Only)",
-        "count": 1315
+        "count": 1176
       },
       {
         "name": "CHAdeMO",
-        "count": 522
+        "count": 336
       },
       {
         "name": "CCS (Type 2)",
-        "count": 475
+        "count": 295
       },
       {
         "name": "Type 2 (Tethered Connector)",
-        "count": 198
+        "count": 184
       },
       {
         "name": "BS1363 3 Pin 13 Amp",
-        "count": 57
+        "count": 43
       }
     ],
     "topTowns": [
       {
-        "name": "Manchester",
-        "count": 135
+        "name": "Coventry",
+        "count": 501,
+        "fastCount": 32
       },
       {
-        "name": "Leeds",
-        "count": 129
+        "name": "Birmingham",
+        "count": 120,
+        "fastCount": 36
       },
       {
-        "name": "Sheffield",
-        "count": 64
+        "name": "Solihull",
+        "count": 41,
+        "fastCount": 6
       },
       {
-        "name": "Bradford",
-        "count": 62
+        "name": "Wolverhampton",
+        "count": 34,
+        "fastCount": 14
       },
       {
-        "name": "York",
-        "count": 60
+        "name": "Stafford",
+        "count": 33,
+        "fastCount": 5
       },
       {
-        "name": "Doncaster",
-        "count": 35
+        "name": "Hereford",
+        "count": 28,
+        "fastCount": 3
+      },
+      {
+        "name": "Warwick",
+        "count": 27,
+        "fastCount": 8
+      },
+      {
+        "name": "Worcester",
+        "count": 24,
+        "fastCount": 11
       }
-    ]
+    ],
+    "powerBands": {
+      "upTo7": 890,
+      "upTo22": 188,
+      "upTo49": 42,
+      "upTo149": 321,
+      "from150": 54
+    },
+    "maxPowerKw": 360,
+    "operators": [
+      {
+        "name": "Char.gy",
+        "count": 344
+      },
+      {
+        "name": "POD Point",
+        "count": 237
+      },
+      {
+        "name": "BP Pulse",
+        "count": 207
+      },
+      {
+        "name": "Connected Kerb",
+        "count": 142
+      },
+      {
+        "name": "The GeniePoint Network ( EQUANS EV Solutions )",
+        "count": 89
+      }
+    ],
+    "operatorKnown": 1414
   },
-  "north-west-england": {
-    "total": 1903,
-    "fastCount": 467,
+  "yorkshire-and-the-humber": {
+    "total": 1026,
+    "fastCount": 383,
     "connectorBreakdown": [
       {
         "name": "Type 2 (Socket Only)",
-        "count": 1546
+        "count": 785
       },
       {
         "name": "CHAdeMO",
-        "count": 426
+        "count": 338
       },
       {
         "name": "CCS (Type 2)",
-        "count": 390
+        "count": 313
       },
       {
         "name": "Type 2 (Tethered Connector)",
-        "count": 170
+        "count": 129
+      },
+      {
+        "name": "Tesla (Model S/X)",
+        "count": 29
+      }
+    ],
+    "topTowns": [
+      {
+        "name": "Leeds",
+        "count": 129,
+        "fastCount": 49
+      },
+      {
+        "name": "Sheffield",
+        "count": 64,
+        "fastCount": 15
+      },
+      {
+        "name": "Bradford",
+        "count": 62,
+        "fastCount": 31
+      },
+      {
+        "name": "York",
+        "count": 60,
+        "fastCount": 10
+      },
+      {
+        "name": "Doncaster",
+        "count": 35,
+        "fastCount": 12
+      },
+      {
+        "name": "Rotherham",
+        "count": 29,
+        "fastCount": 9
+      },
+      {
+        "name": "Barnsley",
+        "count": 26,
+        "fastCount": 4
+      },
+      {
+        "name": "Wakefield",
+        "count": 24,
+        "fastCount": 15
+      }
+    ],
+    "powerBands": {
+      "upTo7": 408,
+      "upTo22": 222,
+      "upTo49": 4,
+      "upTo149": 335,
+      "from150": 50
+    },
+    "maxPowerKw": 400,
+    "operators": [
+      {
+        "name": "POD Point",
+        "count": 241
+      },
+      {
+        "name": "The GeniePoint Network ( EQUANS EV Solutions )",
+        "count": 150
+      },
+      {
+        "name": "BP Pulse",
+        "count": 86
+      },
+      {
+        "name": "Blink Charging",
+        "count": 68
+      },
+      {
+        "name": "Zero Carbon World",
+        "count": 49
+      }
+    ],
+    "operatorKnown": 974
+  },
+  "north-west-england": {
+    "total": 1590,
+    "fastCount": 368,
+    "connectorBreakdown": [
+      {
+        "name": "Type 2 (Socket Only)",
+        "count": 1289
+      },
+      {
+        "name": "CHAdeMO",
+        "count": 337
+      },
+      {
+        "name": "CCS (Type 2)",
+        "count": 300
+      },
+      {
+        "name": "Type 2 (Tethered Connector)",
+        "count": 141
       },
       {
         "name": "BS1363 3 Pin 13 Amp",
-        "count": 57
+        "count": 47
       }
     ],
     "topTowns": [
       {
         "name": "Liverpool",
-        "count": 357
+        "count": 357,
+        "fastCount": 17
       },
       {
         "name": "Manchester",
-        "count": 135
+        "count": 135,
+        "fastCount": 31
       },
       {
         "name": "Preston",
-        "count": 43
+        "count": 43,
+        "fastCount": 13
       },
       {
         "name": "Carlisle",
-        "count": 37
+        "count": 37,
+        "fastCount": 11
       },
       {
         "name": "Warrington",
-        "count": 34
+        "count": 34,
+        "fastCount": 6
       },
       {
         "name": "Salford",
-        "count": 31
+        "count": 31,
+        "fastCount": 10
+      },
+      {
+        "name": "Stockport",
+        "count": 27,
+        "fastCount": 5
+      },
+      {
+        "name": "Wigan",
+        "count": 23,
+        "fastCount": 10
       }
-    ]
+    ],
+    "powerBands": {
+      "upTo7": 953,
+      "upTo22": 255,
+      "upTo49": 5,
+      "upTo149": 306,
+      "from150": 62
+    },
+    "maxPowerKw": 350,
+    "operators": [
+      {
+        "name": "Shell Recharge Solutions",
+        "count": 319
+      },
+      {
+        "name": "POD Point",
+        "count": 276
+      },
+      {
+        "name": "BP Pulse",
+        "count": 172
+      },
+      {
+        "name": "Charge Your Car",
+        "count": 125
+      },
+      {
+        "name": "The GeniePoint Network ( EQUANS EV Solutions )",
+        "count": 81
+      }
+    ],
+    "operatorKnown": 1530
   },
   "north-east-england": {
     "total": 853,
-    "fastCount": 190,
+    "fastCount": 183,
     "connectorBreakdown": [
       {
         "name": "Type 2 (Socket Only)",
-        "count": 640
+        "count": 653
       },
       {
         "name": "CHAdeMO",
-        "count": 177
+        "count": 171
       },
       {
         "name": "CCS (Type 2)",
-        "count": 150
+        "count": 144
       },
       {
         "name": "Type 2 (Tethered Connector)",
-        "count": 106
+        "count": 100
       },
       {
         "name": "BS1363 3 Pin 13 Amp",
-        "count": 93
+        "count": 89
       }
     ],
     "topTowns": [
       {
         "name": "Sunderland",
-        "count": 74
+        "count": 74,
+        "fastCount": 10
       },
       {
         "name": "Newcastle upon Tyne",
-        "count": 66
+        "count": 66,
+        "fastCount": 10
       },
       {
         "name": "Gateshead",
-        "count": 43
+        "count": 43,
+        "fastCount": 12
       },
       {
         "name": "Durham",
-        "count": 38
+        "count": 38,
+        "fastCount": 5
       },
       {
         "name": "Stockton-on-Tees",
-        "count": 30
+        "count": 30,
+        "fastCount": 10
       },
       {
         "name": "Darlington",
+        "count": 27,
+        "fastCount": 6
+      },
+      {
+        "name": "South Shields",
+        "count": 26,
+        "fastCount": 7
+      },
+      {
+        "name": "Middlesbrough",
+        "count": 25,
+        "fastCount": 7
+      }
+    ],
+    "powerBands": {
+      "upTo7": 497,
+      "upTo22": 150,
+      "upTo49": 3,
+      "upTo149": 163,
+      "from150": 22
+    },
+    "maxPowerKw": 350,
+    "operators": [
+      {
+        "name": "Charge Your Car",
+        "count": 351
+      },
+      {
+        "name": "POD Point",
+        "count": 127
+      },
+      {
+        "name": "MER",
+        "count": 63
+      },
+      {
+        "name": "BP Pulse",
+        "count": 54
+      },
+      {
+        "name": "Blink Charging",
         "count": 27
       }
-    ]
+    ],
+    "operatorKnown": 835
   },
   "scotland": {
-    "total": 2918,
-    "fastCount": 801,
+    "total": 1924,
+    "fastCount": 567,
     "connectorBreakdown": [
       {
         "name": "Type 2 (Socket Only)",
-        "count": 2201
+        "count": 1462
       },
       {
         "name": "CHAdeMO",
-        "count": 725
+        "count": 549
       },
       {
         "name": "CCS (Type 2)",
-        "count": 684
+        "count": 481
       },
       {
         "name": "Type 2 (Tethered Connector)",
-        "count": 520
+        "count": 414
       },
       {
-        "name": "BS1363 3 Pin 13 Amp",
-        "count": 126
+        "name": "Tesla (Model S/X)",
+        "count": 61
       }
     ],
     "topTowns": [
       {
         "name": "Glasgow",
-        "count": 186
+        "count": 186,
+        "fastCount": 40
       },
       {
         "name": "Edinburgh",
-        "count": 85
+        "count": 85,
+        "fastCount": 20
       },
       {
         "name": "Aberdeen",
-        "count": 80
-      },
-      {
-        "name": "Sunderland",
-        "count": 73
-      },
-      {
-        "name": "Newcastle upon Tyne",
-        "count": 66
+        "count": 80,
+        "fastCount": 24
       },
       {
         "name": "Dundee",
-        "count": 59
+        "count": 59,
+        "fastCount": 17
+      },
+      {
+        "name": "Stirling",
+        "count": 25,
+        "fastCount": 5
+      },
+      {
+        "name": "Perth",
+        "count": 24,
+        "fastCount": 8
+      },
+      {
+        "name": "Inverness",
+        "count": 23,
+        "fastCount": 10
+      },
+      {
+        "name": "Dumfries",
+        "count": 19,
+        "fastCount": 6
       }
-    ]
+    ],
+    "powerBands": {
+      "upTo7": 743,
+      "upTo22": 590,
+      "upTo49": 11,
+      "upTo149": 522,
+      "from150": 47
+    },
+    "maxPowerKw": 360,
+    "operators": [
+      {
+        "name": "Chargeplace Scotland",
+        "count": 1280
+      },
+      {
+        "name": "POD Point",
+        "count": 195
+      },
+      {
+        "name": "Tesla (Tesla-only charging)",
+        "count": 64
+      },
+      {
+        "name": "BP Pulse",
+        "count": 38
+      },
+      {
+        "name": "Osprey Charging",
+        "count": 32
+      }
+    ],
+    "operatorKnown": 1872
   },
   "wales": {
-    "total": 1481,
-    "fastCount": 252,
+    "total": 907,
+    "fastCount": 181,
     "connectorBreakdown": [
       {
         "name": "Type 2 (Socket Only)",
-        "count": 1243
+        "count": 733
       },
       {
         "name": "CHAdeMO",
-        "count": 227
+        "count": 166
       },
       {
         "name": "CCS (Type 2)",
-        "count": 211
-      },
-      {
-        "name": "Type 2 (Tethered Connector)",
-        "count": 92
+        "count": 151
       },
       {
         "name": "BS1363 3 Pin 13 Amp",
-        "count": 78
+        "count": 66
+      },
+      {
+        "name": "Type 2 (Tethered Connector)",
+        "count": 63
       }
     ],
     "topTowns": [
       {
-        "name": "Liverpool",
-        "count": 308
-      },
-      {
         "name": "Cardiff",
-        "count": 96
+        "count": 96,
+        "fastCount": 15
       },
       {
         "name": "Newport",
-        "count": 58
+        "count": 58,
+        "fastCount": 15
       },
       {
         "name": "Swansea",
-        "count": 42
+        "count": 42,
+        "fastCount": 4
       },
       {
-        "name": "Hereford",
-        "count": 27
+        "name": "Bridgend",
+        "count": 20,
+        "fastCount": 4
       },
       {
         "name": "Barry",
-        "count": 20
+        "count": 19,
+        "fastCount": 2
+      },
+      {
+        "name": "Wrexham",
+        "count": 18,
+        "fastCount": 4
+      },
+      {
+        "name": "Carmarthen",
+        "count": 17,
+        "fastCount": 5
+      },
+      {
+        "name": "Haverfordwest",
+        "count": 16,
+        "fastCount": 7
       }
-    ]
+    ],
+    "powerBands": {
+      "upTo7": 356,
+      "upTo22": 364,
+      "upTo49": 2,
+      "upTo149": 159,
+      "from150": 22
+    },
+    "maxPowerKw": 400,
+    "operators": [
+      {
+        "name": "POD Point",
+        "count": 144
+      },
+      {
+        "name": "Connected Kerb",
+        "count": 111
+      },
+      {
+        "name": "Silverstone Green Energy",
+        "count": 90
+      },
+      {
+        "name": "Zero Carbon World",
+        "count": 86
+      },
+      {
+        "name": "Evolt Network (Swarco E.Connect)",
+        "count": 58
+      }
+    ],
+    "operatorKnown": 871
   },
   "northern-ireland": {
-    "total": 545,
-    "fastCount": 159,
+    "total": 461,
+    "fastCount": 132,
     "connectorBreakdown": [
       {
         "name": "Type 2 (Socket Only)",
-        "count": 385
+        "count": 320
       },
       {
         "name": "CCS (Type 2)",
-        "count": 180
+        "count": 152
       },
       {
         "name": "CHAdeMO",
-        "count": 67
-      },
-      {
-        "name": "Type 2 (Tethered Connector)",
-        "count": 12
+        "count": 54
       },
       {
         "name": "Tesla (Model S/X)",
+        "count": 9
+      },
+      {
+        "name": "Type 2 (Tethered Connector)",
         "count": 9
       }
     ],
     "topTowns": [
       {
         "name": "Belfast",
-        "count": 68
+        "count": 69,
+        "fastCount": 23
       },
       {
         "name": "Antrim",
-        "count": 22
+        "count": 23,
+        "fastCount": 3
       },
       {
         "name": "Newry",
-        "count": 15
+        "count": 15,
+        "fastCount": 4
       },
       {
         "name": "Dungannon",
-        "count": 14
+        "count": 14,
+        "fastCount": 5
       },
       {
         "name": "Ballymena",
-        "count": 13
+        "count": 13,
+        "fastCount": 6
       },
       {
         "name": "Craigavon",
-        "count": 13
+        "count": 13,
+        "fastCount": 1
+      },
+      {
+        "name": "Newtownabbey",
+        "count": 13,
+        "fastCount": 4
+      },
+      {
+        "name": "Enniskillen",
+        "count": 12,
+        "fastCount": 1
       }
-    ]
+    ],
+    "powerBands": {
+      "upTo7": 74,
+      "upTo22": 216,
+      "upTo49": 20,
+      "upTo149": 88,
+      "from150": 45
+    },
+    "maxPowerKw": 400,
+    "operators": [
+      {
+        "name": "ESB Ecars",
+        "count": 128
+      },
+      {
+        "name": "Weev",
+        "count": 93
+      },
+      {
+        "name": "EZO",
+        "count": 45
+      },
+      {
+        "name": "POD Point",
+        "count": 33
+      },
+      {
+        "name": "BP Pulse",
+        "count": 24
+      }
+    ],
+    "operatorKnown": 421
   }
 }

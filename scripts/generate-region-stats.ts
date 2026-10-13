@@ -6,6 +6,10 @@
  * generated from the official registers (`generate_irve_data.py`,
  * `generate_de_data.py`). A sequential pass avoids hammering Open Charge Map
  * from several of `next build`'s parallel workers at once.
+ *
+ * A station is credited to the region whose real outline contains it
+ * (`data/geo/region-boundaries.json`), not to every region whose bounding box
+ * it falls in.
  */
 try {
   process.loadEnvFile(".env.local");
@@ -22,10 +26,19 @@ import fs from "node:fs";
 import path from "node:path";
 import { spanishRegions, ukRegions, type Region } from "../src/lib/regions";
 import { fetchRegionStats, type StationAggregate } from "../src/lib/regionStats";
+import { bboxOf, regionOfPoint, type RegionBoundariesFile } from "../src/lib/regionBoundaries";
+
+/** Degrees added around an outline's box, so that the coast tolerance of `regionOfPoint` has stations to work on. */
+const BBOX_MARGIN = 0.06;
 
 async function main() {
   const outPath = path.join(__dirname, "../src/data/region-stats.json");
-  const allRegions: Region[] = [...spanishRegions, ...ukRegions];
+  const boundaries: RegionBoundariesFile = JSON.parse(
+    fs.readFileSync(path.join(__dirname, "../data/geo/region-boundaries.json"), "utf8")
+  );
+  const withCountry = (regions: Region[], countryCode: string) =>
+    regions.map((region) => ({ ...region, countryCode, siblings: regions.map((r) => r.slug) }));
+  const allRegions = [...withCountry(spanishRegions, "ES"), ...withCountry(ukRegions, "GB")];
 
   // Start from what is already committed: CI has no Open Charge Map key, so
   // every request there fails, and writing back only the successes would wipe
@@ -41,7 +54,18 @@ async function main() {
 
   for (const region of allRegions) {
     try {
-      results[region.slug] = await fetchRegionStats(region);
+      const box = bboxOf(boundaries.regions[region.slug]);
+      results[region.slug] = await fetchRegionStats(
+        {
+          south: box.south - BBOX_MARGIN,
+          west: box.west - BBOX_MARGIN,
+          north: box.north + BBOX_MARGIN,
+          east: box.east + BBOX_MARGIN,
+        },
+        region.countryCode,
+        (station) =>
+          regionOfPoint(boundaries.regions, region.siblings, station.lon, station.lat) === region.slug
+      );
       process.stdout.write(`. ${region.slug}
 `);
     } catch (err) {

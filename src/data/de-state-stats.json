@@ -2,7 +2,7 @@
   "baden-wurttemberg": {
     "stations": 11394,
     "points": 35200,
-    "fastPoints": 7462,
+    "fastPoints": 6064,
     "connectorBreakdown": [
       {
         "name": "Type 2",
@@ -24,34 +24,90 @@
     "topTowns": [
       {
         "name": "Stuttgart",
-        "count": 1408
+        "count": 1408,
+        "points": 4254,
+        "fastPoints": 198
       },
       {
         "name": "Sindelfingen",
-        "count": 464
+        "count": 464,
+        "points": 1001,
+        "fastPoints": 63
       },
       {
         "name": "Mannheim",
-        "count": 232
+        "count": 232,
+        "points": 824,
+        "fastPoints": 223
       },
       {
         "name": "Karlsruhe",
-        "count": 177
+        "count": 177,
+        "points": 704,
+        "fastPoints": 189
       },
       {
         "name": "Freiburg im Breisgau",
-        "count": 176
+        "count": 176,
+        "points": 604,
+        "fastPoints": 121
+      },
+      {
+        "name": "Heilbronn",
+        "count": 156,
+        "points": 856,
+        "fastPoints": 65
       },
       {
         "name": "Heidelberg",
-        "count": 156
+        "count": 156,
+        "points": 778,
+        "fastPoints": 60
+      },
+      {
+        "name": "Ulm",
+        "count": 133,
+        "points": 621,
+        "fastPoints": 103
+      }
+    ],
+    "population": 11245898,
+    "areaKm2": 35745,
+    "maxPowerKw": 600.0,
+    "powerBands": {
+      "upTo7": 408,
+      "upTo22": 26933,
+      "upTo49": 1795,
+      "upTo149": 1570,
+      "from150": 4494
+    },
+    "networks": [
+      {
+        "name": "EnBW mobility+ AG und Co.KG",
+        "points": 2699
+      },
+      {
+        "name": "Mercedes-Benz AG",
+        "points": 2355
+      },
+      {
+        "name": "Team-Emobility GmbH",
+        "points": 1359
+      },
+      {
+        "name": "Robert Bosch GmbH",
+        "points": 1125
+      },
+      {
+        "name": "Stadtwerke Stuttgart GmbH",
+        "points": 1086
       }
     ]
   },
   "bayern": {
     "stations": 13275,
     "points": 39819,
-    "fastPoints": 11492,
+    "fastPoints": 10059,
     "connectorBreakdown": [
       {
         "name": "Type 2",
@@ -73,34 +129,90 @@
     "topTowns": [
       {
         "name": "München",
-        "count": 1135
+        "count": 1135,
+        "points": 3609,
+        "fastPoints": 447
       },
       {
         "name": "Regensburg",
-        "count": 420
+        "count": 420,
+        "points": 1169,
+        "fastPoints": 115
       },
       {
         "name": "Nürnberg",
-        "count": 418
+        "count": 418,
+        "points": 1700,
+        "fastPoints": 229
       },
       {
         "name": "Dingolfing",
-        "count": 220
+        "count": 220,
+        "points": 438,
+        "fastPoints": 57
       },
       {
         "name": "Augsburg",
-        "count": 183
+        "count": 183,
+        "points": 590,
+        "fastPoints": 149
       },
       {
         "name": "Ingolstadt",
-        "count": 171
+        "count": 171,
+        "points": 1524,
+        "fastPoints": 212
+      },
+      {
+        "name": "Würzburg",
+        "count": 166,
+        "points": 544,
+        "fastPoints": 132
+      },
+      {
+        "name": "Fürth",
+        "count": 152,
+        "points": 588,
+        "fastPoints": 86
+      }
+    ],
+    "population": 13248928,
+    "areaKm2": 70543,
+    "maxPowerKw": 600.0,
+    "powerBands": {
+      "upTo7": 1604,
+      "upTo22": 27624,
+      "upTo49": 532,
+      "upTo149": 2454,
+      "from150": 7605
+    },
+    "networks": [
+      {
+        "name": "E.ON Drive Germany GmbH",
+        "points": 1898
+      },
+      {
+        "name": "N-ERGIE Aktiengesellschaft",
+        "points": 1818
+      },
+      {
+        "name": "EnBW mobility+ AG und Co.KG",
+        "points": 1657
+      },
+      {
+        "name": "Energie Südbayern GmbH",
+        "points": 1550
+      },
+      {
+        "name": "SWM Versorgungs GmbH",
+        "points": 1487
       }
     ]
   },
   "berlin": {
     "stations": 3638,
     "points": 7561,
-    "fastPoints": 1350,
+    "fastPoints": 1230,
     "connectorBreakdown": [
       {
         "name": "Type 2",
@@ -122,30 +234,72 @@
     "topTowns": [
       {
         "name": "Berlin",
-        "count": 3634
-      },
-      {
-        "name": "Berlin Osterpreussen",
-        "count": 1
-      },
-      {
-        "name": "Berlin-Neukölln",
-        "count": 1
-      },
-      {
-        "name": "Berlin-Spandau",
-        "count": 1
+        "count": 3634,
+        "points": 7549,
+        "fastPoints": 1220
       },
       {
         "name": "Berlin-Weissensee",
-        "count": 1
+        "count": 1,
+        "points": 4,
+        "fastPoints": 2
+      },
+      {
+        "name": "Berlin-Neukölln",
+        "count": 1,
+        "points": 3,
+        "fastPoints": 3
+      },
+      {
+        "name": "Berlin-Spandau",
+        "count": 1,
+        "points": 3,
+        "fastPoints": 3
+      },
+      {
+        "name": "Berlin Osterpreussen",
+        "count": 1,
+        "points": 2,
+        "fastPoints": 2
+      }
+    ],
+    "population": 3685265,
+    "areaKm2": 891,
+    "maxPowerKw": 400.0,
+    "powerBands": {
+      "upTo7": 1064,
+      "upTo22": 5227,
+      "upTo49": 40,
+      "upTo149": 250,
+      "from150": 980
+    },
+    "networks": [
+      {
+        "name": "Berliner Stadtwerke KommunalPartner GmbH",
+        "points": 1753
+      },
+      {
+        "name": "ubitricity Gesellschaft für verteilte Energiesysteme mbH",
+        "points": 1167
+      },
+      {
+        "name": "Qwello Deutschland GmbH",
+        "points": 605
+      },
+      {
+        "name": "eze.network GmbH",
+        "points": 362
+      },
+      {
+        "name": "TotalEnergies Charging Solutions Deutschland GmbH",
+        "points": 272
       }
     ]
   },
   "brandenburg": {
     "stations": 1730,
     "points": 5002,
-    "fastPoints": 1909,
+    "fastPoints": 1679,
     "connectorBreakdown": [
       {
         "name": "Type 2",
@@ -167,34 +321,90 @@
     "topTowns": [
       {
         "name": "Potsdam",
-        "count": 100
+        "count": 100,
+        "points": 284,
+        "fastPoints": 49
       },
       {
         "name": "Cottbus",
-        "count": 67
+        "count": 67,
+        "points": 169,
+        "fastPoints": 64
       },
       {
         "name": "Frankfurt",
-        "count": 53
+        "count": 53,
+        "points": 123,
+        "fastPoints": 26
       },
       {
         "name": "Schwedt /Oder",
-        "count": 47
+        "count": 47,
+        "points": 112,
+        "fastPoints": 33
       },
       {
         "name": "Eberswalde",
-        "count": 42
+        "count": 42,
+        "points": 100,
+        "fastPoints": 40
       },
       {
         "name": "Oranienburg",
-        "count": 35
+        "count": 35,
+        "points": 80,
+        "fastPoints": 16
+      },
+      {
+        "name": "Neuruppin",
+        "count": 34,
+        "points": 88,
+        "fastPoints": 19
+      },
+      {
+        "name": "Hennigsdorf",
+        "count": 33,
+        "points": 65,
+        "fastPoints": 10
+      }
+    ],
+    "population": 2556747,
+    "areaKm2": 29656,
+    "maxPowerKw": 420.0,
+    "powerBands": {
+      "upTo7": 8,
+      "upTo22": 3238,
+      "upTo49": 77,
+      "upTo149": 343,
+      "from150": 1336
+    },
+    "networks": [
+      {
+        "name": "Tesla Manufacturing Brandenburg SE",
+        "points": 567
+      },
+      {
+        "name": "Tesla Germany GmbH",
+        "points": 190
+      },
+      {
+        "name": "EnBW mobility+ AG und Co.KG",
+        "points": 183
+      },
+      {
+        "name": "Vattenfall Smarter Living GmbH",
+        "points": 180
+      },
+      {
+        "name": "Shell Deutschland GmbH",
+        "points": 178
       }
     ]
   },
   "bremen": {
     "stations": 521,
     "points": 1584,
-    "fastPoints": 470,
+    "fastPoints": 339,
     "connectorBreakdown": [
       {
         "name": "Type 2",
@@ -212,22 +422,60 @@
     "topTowns": [
       {
         "name": "Bremen",
-        "count": 454
+        "count": 454,
+        "points": 1390,
+        "fastPoints": 266
       },
       {
         "name": "Bremerhaven",
-        "count": 66
+        "count": 66,
+        "points": 177,
+        "fastPoints": 73
       },
       {
         "name": "Waldkirch",
-        "count": 1
+        "count": 1,
+        "points": 17,
+        "fastPoints": 0
+      }
+    ],
+    "population": 704881,
+    "areaKm2": 420,
+    "maxPowerKw": 400.0,
+    "powerBands": {
+      "upTo7": 0,
+      "upTo22": 1233,
+      "upTo49": 12,
+      "upTo149": 124,
+      "from150": 215
+    },
+    "networks": [
+      {
+        "name": "Mercedes-Benz AG",
+        "points": 202
+      },
+      {
+        "name": "Eulektro GmbH",
+        "points": 179
+      },
+      {
+        "name": "BREPARK GmbH",
+        "points": 160
+      },
+      {
+        "name": "swb Vertrieb Bremen GmbH",
+        "points": 151
+      },
+      {
+        "name": "EWE Go GmbH",
+        "points": 86
       }
     ]
   },
   "hamburg": {
     "stations": 2038,
     "points": 5976,
-    "fastPoints": 983,
+    "fastPoints": 919,
     "connectorBreakdown": [
       {
         "name": "Type 2",
@@ -249,26 +497,66 @@
     "topTowns": [
       {
         "name": "Hamburg",
-        "count": 2035
-      },
-      {
-        "name": "Hamburg-Duvenstedt",
-        "count": 1
-      },
-      {
-        "name": "Hamburg/ Moorfleet",
-        "count": 1
+        "count": 2035,
+        "points": 5964,
+        "fastPoints": 917
       },
       {
         "name": "Wendlingen am Neckar",
-        "count": 1
+        "count": 1,
+        "points": 7,
+        "fastPoints": 0
+      },
+      {
+        "name": "Hamburg/ Moorfleet",
+        "count": 1,
+        "points": 3,
+        "fastPoints": 2
+      },
+      {
+        "name": "Hamburg-Duvenstedt",
+        "count": 1,
+        "points": 2,
+        "fastPoints": 0
+      }
+    ],
+    "population": 1862565,
+    "areaKm2": 755,
+    "maxPowerKw": 400.0,
+    "powerBands": {
+      "upTo7": 3,
+      "upTo22": 4998,
+      "upTo49": 56,
+      "upTo149": 93,
+      "from150": 826
+    },
+    "networks": [
+      {
+        "name": "Hamburger Energiewerke Mobil GmbH",
+        "points": 2342
+      },
+      {
+        "name": "eze.network GmbH",
+        "points": 504
+      },
+      {
+        "name": "Qwello Deutschland GmbH",
+        "points": 322
+      },
+      {
+        "name": "ubitricity Gesellschaft für verteilte Energiesysteme mbH",
+        "points": 218
+      },
+      {
+        "name": "Wirelane Public 1 GmbH",
+        "points": 200
       }
     ]
   },
   "hessen": {
     "stations": 5046,
     "points": 16105,
-    "fastPoints": 4913,
+    "fastPoints": 4266,
     "connectorBreakdown": [
       {
         "name": "Type 2",
@@ -290,34 +578,90 @@
     "topTowns": [
       {
         "name": "Frankfurt am Main",
-        "count": 353
+        "count": 353,
+        "points": 1882,
+        "fastPoints": 202
       },
       {
         "name": "Wiesbaden",
-        "count": 297
+        "count": 297,
+        "points": 1309,
+        "fastPoints": 194
       },
       {
         "name": "Kassel",
-        "count": 183
+        "count": 183,
+        "points": 640,
+        "fastPoints": 136
       },
       {
         "name": "Rüsselsheim am Main",
-        "count": 176
+        "count": 176,
+        "points": 896,
+        "fastPoints": 24
       },
       {
         "name": "Darmstadt",
-        "count": 138
+        "count": 138,
+        "points": 345,
+        "fastPoints": 63
       },
       {
         "name": "Baunatal",
-        "count": 95
+        "count": 95,
+        "points": 257,
+        "fastPoints": 29
+      },
+      {
+        "name": "Fulda",
+        "count": 93,
+        "points": 425,
+        "fastPoints": 54
+      },
+      {
+        "name": "Hanau",
+        "count": 72,
+        "points": 249,
+        "fastPoints": 80
+      }
+    ],
+    "population": 6280793,
+    "areaKm2": 21115,
+    "maxPowerKw": 600.0,
+    "powerBands": {
+      "upTo7": 57,
+      "upTo22": 11363,
+      "upTo49": 419,
+      "upTo149": 816,
+      "from150": 3450
+    },
+    "networks": [
+      {
+        "name": "ESWE Versorgungs AG",
+        "points": 1091
+      },
+      {
+        "name": "EnBW mobility+ AG und Co.KG",
+        "points": 761
+      },
+      {
+        "name": "Entega Plus GmbH",
+        "points": 735
+      },
+      {
+        "name": "Mainova AG",
+        "points": 674
+      },
+      {
+        "name": "Energieservice Rhein-Main GmbH",
+        "points": 656
       }
     ]
   },
   "mecklenburg-vorpommern": {
     "stations": 1231,
     "points": 3222,
-    "fastPoints": 1348,
+    "fastPoints": 1228,
     "connectorBreakdown": [
       {
         "name": "Type 2",
@@ -339,34 +683,90 @@
     "topTowns": [
       {
         "name": "Rostock",
-        "count": 137
+        "count": 137,
+        "points": 380,
+        "fastPoints": 157
       },
       {
         "name": "Binz Prora",
-        "count": 80
+        "count": 80,
+        "points": 83,
+        "fastPoints": 0
       },
       {
         "name": "Schwerin",
-        "count": 67
+        "count": 67,
+        "points": 218,
+        "fastPoints": 70
       },
       {
         "name": "Stralsund",
-        "count": 64
+        "count": 64,
+        "points": 187,
+        "fastPoints": 70
       },
       {
         "name": "Neubrandenburg",
-        "count": 45
+        "count": 45,
+        "points": 118,
+        "fastPoints": 28
       },
       {
         "name": "Wismar",
-        "count": 33
+        "count": 33,
+        "points": 107,
+        "fastPoints": 66
+      },
+      {
+        "name": "Greifswald",
+        "count": 28,
+        "points": 79,
+        "fastPoints": 34
+      },
+      {
+        "name": "Waren",
+        "count": 20,
+        "points": 57,
+        "fastPoints": 26
+      }
+    ],
+    "population": 1573597,
+    "areaKm2": 23293,
+    "maxPowerKw": 400.0,
+    "powerBands": {
+      "upTo7": 8,
+      "upTo22": 1930,
+      "upTo49": 56,
+      "upTo149": 201,
+      "from150": 1027
+    },
+    "networks": [
+      {
+        "name": "WEMAG AG",
+        "points": 237
+      },
+      {
+        "name": "Vattenfall Smarter Living GmbH",
+        "points": 232
+      },
+      {
+        "name": "SWS Energie GmbH",
+        "points": 172
+      },
+      {
+        "name": "EnBW mobility+ AG und Co.KG",
+        "points": 134
+      },
+      {
+        "name": "Stadtwerke Rostock AG",
+        "points": 122
       }
     ]
   },
   "niedersachsen": {
     "stations": 7781,
     "points": 20783,
-    "fastPoints": 7376,
+    "fastPoints": 6548,
     "connectorBreakdown": [
       {
         "name": "Type 2",
@@ -388,34 +788,90 @@
     "topTowns": [
       {
         "name": "Hannover",
-        "count": 883
+        "count": 883,
+        "points": 2007,
+        "fastPoints": 285
       },
       {
         "name": "Braunschweig",
-        "count": 377
+        "count": 377,
+        "points": 1204,
+        "fastPoints": 236
       },
       {
         "name": "Wolfsburg",
-        "count": 359
+        "count": 359,
+        "points": 1156,
+        "fastPoints": 135
       },
       {
         "name": "Osnabrück",
-        "count": 176
+        "count": 176,
+        "points": 572,
+        "fastPoints": 168
       },
       {
         "name": "Salzgitter",
-        "count": 153
+        "count": 153,
+        "points": 338,
+        "fastPoints": 67
       },
       {
         "name": "Göttingen",
-        "count": 152
+        "count": 152,
+        "points": 361,
+        "fastPoints": 89
+      },
+      {
+        "name": "Oldenburg",
+        "count": 125,
+        "points": 360,
+        "fastPoints": 172
+      },
+      {
+        "name": "Hildesheim",
+        "count": 110,
+        "points": 362,
+        "fastPoints": 103
+      }
+    ],
+    "population": 8004489,
+    "areaKm2": 47710,
+    "maxPowerKw": 550.0,
+    "powerBands": {
+      "upTo7": 140,
+      "upTo22": 13851,
+      "upTo49": 244,
+      "upTo149": 1771,
+      "from150": 4777
+    },
+    "networks": [
+      {
+        "name": "enercity AG",
+        "points": 1703
+      },
+      {
+        "name": "EWE Go GmbH",
+        "points": 1562
+      },
+      {
+        "name": "EnBW mobility+ AG und Co.KG",
+        "points": 1182
+      },
+      {
+        "name": "BS|ENERGY, Braunschweiger Versorgungs-AG & Co. KG",
+        "points": 624
+      },
+      {
+        "name": "Volkswagen AG - Werk Wolfsburg",
+        "points": 543
       }
     ]
   },
   "nordrhein-westfalen": {
     "stations": 15345,
     "points": 41197,
-    "fastPoints": 11370,
+    "fastPoints": 9915,
     "connectorBreakdown": [
       {
         "name": "Type 2",
@@ -437,34 +893,90 @@
     "topTowns": [
       {
         "name": "Köln",
-        "count": 755
+        "count": 755,
+        "points": 2613,
+        "fastPoints": 568
       },
       {
         "name": "Düsseldorf",
-        "count": 751
+        "count": 751,
+        "points": 2552,
+        "fastPoints": 227
       },
       {
         "name": "Dortmund",
-        "count": 635
+        "count": 635,
+        "points": 1368,
+        "fastPoints": 345
       },
       {
         "name": "Essen",
-        "count": 484
+        "count": 484,
+        "points": 1197,
+        "fastPoints": 236
       },
       {
         "name": "Duisburg",
-        "count": 399
+        "count": 399,
+        "points": 1117,
+        "fastPoints": 163
       },
       {
         "name": "Bonn",
-        "count": 394
+        "count": 394,
+        "points": 1212,
+        "fastPoints": 175
+      },
+      {
+        "name": "Oberhausen",
+        "count": 296,
+        "points": 673,
+        "fastPoints": 122
+      },
+      {
+        "name": "Bochum",
+        "count": 293,
+        "points": 971,
+        "fastPoints": 287
+      }
+    ],
+    "population": 18034454,
+    "areaKm2": 34110,
+    "maxPowerKw": 400.0,
+    "powerBands": {
+      "upTo7": 134,
+      "upTo22": 30256,
+      "upTo49": 892,
+      "upTo149": 2589,
+      "from150": 7326
+    },
+    "networks": [
+      {
+        "name": "EnBW mobility+ AG und Co.KG",
+        "points": 2219
+      },
+      {
+        "name": "TankE GmbH",
+        "points": 1596
+      },
+      {
+        "name": "Stadtwerke Düsseldorf AG",
+        "points": 1465
+      },
+      {
+        "name": "Westenergie Metering GmbH",
+        "points": 1110
+      },
+      {
+        "name": "NEW Niederrhein Energie und Wasser GmbH",
+        "points": 954
       }
     ]
   },
   "rheinland-pfalz": {
     "stations": 3017,
     "points": 8021,
-    "fastPoints": 3351,
+    "fastPoints": 2931,
     "connectorBreakdown": [
       {
         "name": "Type 2",
@@ -486,34 +998,90 @@
     "topTowns": [
       {
         "name": "Mainz",
-        "count": 194
+        "count": 194,
+        "points": 567,
+        "fastPoints": 96
       },
       {
         "name": "Koblenz",
-        "count": 124
+        "count": 124,
+        "points": 418,
+        "fastPoints": 188
       },
       {
         "name": "Kaiserslautern",
-        "count": 118
+        "count": 118,
+        "points": 344,
+        "fastPoints": 156
       },
       {
         "name": "Ludwigshafen am Rhein",
-        "count": 82
+        "count": 82,
+        "points": 282,
+        "fastPoints": 114
       },
       {
         "name": "Trier",
-        "count": 81
+        "count": 81,
+        "points": 199,
+        "fastPoints": 74
+      },
+      {
+        "name": "Speyer",
+        "count": 59,
+        "points": 181,
+        "fastPoints": 39
       },
       {
         "name": "Bad Kreuznach",
-        "count": 59
+        "count": 59,
+        "points": 153,
+        "fastPoints": 46
+      },
+      {
+        "name": "Neustadt an der Weinstraße",
+        "count": 54,
+        "points": 131,
+        "fastPoints": 47
+      }
+    ],
+    "population": 4129569,
+    "areaKm2": 19853,
+    "maxPowerKw": 400.0,
+    "powerBands": {
+      "upTo7": 39,
+      "upTo22": 4910,
+      "upTo49": 141,
+      "upTo149": 645,
+      "from150": 2286
+    },
+    "networks": [
+      {
+        "name": "EnBW mobility+ AG und Co.KG",
+        "points": 813
+      },
+      {
+        "name": "Pfalzwerke AG",
+        "points": 710
+      },
+      {
+        "name": "Westenergie Metering GmbH",
+        "points": 470
+      },
+      {
+        "name": "Ladestationen Südwest GmbH & Co. KG",
+        "points": 327
+      },
+      {
+        "name": "Tesla Germany GmbH",
+        "points": 240
       }
     ]
   },
   "saarland": {
     "stations": 584,
     "points": 1509,
-    "fastPoints": 540,
+    "fastPoints": 469,
     "connectorBreakdown": [
       {
         "name": "Type 2",
@@ -535,34 +1103,90 @@
     "topTowns": [
       {
         "name": "Saarbrücken",
-        "count": 90
+        "count": 90,
+        "points": 271,
+        "fastPoints": 83
       },
       {
         "name": "Völklingen",
-        "count": 40
+        "count": 40,
+        "points": 112,
+        "fastPoints": 47
       },
       {
         "name": "Homburg",
-        "count": 38
+        "count": 38,
+        "points": 132,
+        "fastPoints": 60
       },
       {
         "name": "Saarlouis",
-        "count": 36
+        "count": 36,
+        "points": 91,
+        "fastPoints": 14
       },
       {
         "name": "St. Ingbert",
-        "count": 33
+        "count": 33,
+        "points": 67,
+        "fastPoints": 20
       },
       {
         "name": "Merzig",
-        "count": 25
+        "count": 25,
+        "points": 70,
+        "fastPoints": 27
+      },
+      {
+        "name": "Neunkirchen",
+        "count": 22,
+        "points": 68,
+        "fastPoints": 14
+      },
+      {
+        "name": "Losheim am See",
+        "count": 19,
+        "points": 56,
+        "fastPoints": 21
+      }
+    ],
+    "population": 1012141,
+    "areaKm2": 2571,
+    "maxPowerKw": 400.0,
+    "powerBands": {
+      "upTo7": 11,
+      "upTo22": 921,
+      "upTo49": 108,
+      "upTo149": 106,
+      "from150": 363
+    },
+    "networks": [
+      {
+        "name": "energis GmbH",
+        "points": 148
+      },
+      {
+        "name": "EnBW mobility+ AG und Co.KG",
+        "points": 134
+      },
+      {
+        "name": "Pfalzwerke AG",
+        "points": 86
+      },
+      {
+        "name": "Energie SaarLorLux AG",
+        "points": 85
+      },
+      {
+        "name": "Sonnenstrom Saarpfalz OHG",
+        "points": 76
       }
     ]
   },
   "sachsen": {
     "stations": 2791,
     "points": 7126,
-    "fastPoints": 2561,
+    "fastPoints": 2137,
     "connectorBreakdown": [
       {
         "name": "Type 2",
@@ -584,34 +1208,90 @@
     "topTowns": [
       {
         "name": "Leipzig",
-        "count": 542
+        "count": 542,
+        "points": 1364,
+        "fastPoints": 265
       },
       {
         "name": "Dresden",
-        "count": 350
+        "count": 350,
+        "points": 1113,
+        "fastPoints": 328
       },
       {
         "name": "Chemnitz",
-        "count": 188
+        "count": 188,
+        "points": 535,
+        "fastPoints": 197
       },
       {
         "name": "Zwickau",
-        "count": 178
+        "count": 178,
+        "points": 455,
+        "fastPoints": 77
       },
       {
         "name": "Kamenz",
-        "count": 46
+        "count": 46,
+        "points": 111,
+        "fastPoints": 2
       },
       {
         "name": "Pirna",
-        "count": 45
+        "count": 45,
+        "points": 111,
+        "fastPoints": 45
+      },
+      {
+        "name": "Görlitz",
+        "count": 35,
+        "points": 85,
+        "fastPoints": 23
+      },
+      {
+        "name": "Freiberg",
+        "count": 34,
+        "points": 85,
+        "fastPoints": 41
+      }
+    ],
+    "population": 4042422,
+    "areaKm2": 18450,
+    "maxPowerKw": 400.0,
+    "powerBands": {
+      "upTo7": 62,
+      "upTo22": 4680,
+      "upTo49": 247,
+      "upTo149": 513,
+      "from150": 1624
+    },
+    "networks": [
+      {
+        "name": "Stadtwerke Leipzig GmbH",
+        "points": 840
+      },
+      {
+        "name": "SachsenEnergie AG",
+        "points": 754
+      },
+      {
+        "name": "EnBW mobility+ AG und Co.KG",
+        "points": 420
+      },
+      {
+        "name": "envia Mitteldeutsche Energie AG",
+        "points": 277
+      },
+      {
+        "name": "BP Europa SE",
+        "points": 194
       }
     ]
   },
   "sachsen-anhalt": {
     "stations": 1314,
     "points": 3739,
-    "fastPoints": 1650,
+    "fastPoints": 1450,
     "connectorBreakdown": [
       {
         "name": "Type 2",
@@ -633,34 +1313,90 @@
     "topTowns": [
       {
         "name": "Magdeburg",
-        "count": 137
+        "count": 137,
+        "points": 559,
+        "fastPoints": 231
       },
       {
         "name": "Halle",
-        "count": 92
+        "count": 92,
+        "points": 299,
+        "fastPoints": 126
       },
       {
         "name": "Stendal",
-        "count": 49
+        "count": 49,
+        "points": 119,
+        "fastPoints": 43
       },
       {
         "name": "Dessau-Roßlau",
-        "count": 46
+        "count": 46,
+        "points": 119,
+        "fastPoints": 25
       },
       {
         "name": "Wernigerode",
-        "count": 43
+        "count": 43,
+        "points": 122,
+        "fastPoints": 40
       },
       {
         "name": "Köthen",
-        "count": 40
+        "count": 40,
+        "points": 82,
+        "fastPoints": 12
+      },
+      {
+        "name": "Bitterfeld-Wolfen",
+        "count": 34,
+        "points": 123,
+        "fastPoints": 71
+      },
+      {
+        "name": "Sangerhausen",
+        "count": 31,
+        "points": 89,
+        "fastPoints": 40
+      }
+    ],
+    "population": 2135597,
+    "areaKm2": 20454,
+    "maxPowerKw": 400.0,
+    "powerBands": {
+      "upTo7": 19,
+      "upTo22": 2197,
+      "upTo49": 73,
+      "upTo149": 313,
+      "from150": 1137
+    },
+    "networks": [
+      {
+        "name": "EnBW mobility+ AG und Co.KG",
+        "points": 262
+      },
+      {
+        "name": "Stadtwerke Stendal GmbH",
+        "points": 142
+      },
+      {
+        "name": "BP Europa SE",
+        "points": 120
+      },
+      {
+        "name": "Team-Emobility GmbH",
+        "points": 110
+      },
+      {
+        "name": "Allego GmbH",
+        "points": 102
       }
     ]
   },
   "schleswig-holstein": {
     "stations": 2865,
     "points": 8037,
-    "fastPoints": 2440,
+    "fastPoints": 2164,
     "connectorBreakdown": [
       {
         "name": "Type 2",
@@ -682,34 +1418,90 @@
     "topTowns": [
       {
         "name": "Lübeck",
-        "count": 197
+        "count": 197,
+        "points": 738,
+        "fastPoints": 213
       },
       {
         "name": "Kiel",
-        "count": 135
+        "count": 135,
+        "points": 580,
+        "fastPoints": 144
       },
       {
         "name": "Flensburg",
-        "count": 114
+        "count": 114,
+        "points": 338,
+        "fastPoints": 101
       },
       {
         "name": "Neumünster",
-        "count": 87
+        "count": 87,
+        "points": 294,
+        "fastPoints": 79
       },
       {
         "name": "Elmshorn",
-        "count": 51
+        "count": 51,
+        "points": 141,
+        "fastPoints": 64
       },
       {
         "name": "Norderstedt",
-        "count": 50
+        "count": 50,
+        "points": 112,
+        "fastPoints": 26
+      },
+      {
+        "name": "Heide",
+        "count": 47,
+        "points": 107,
+        "fastPoints": 24
+      },
+      {
+        "name": "Rendsburg",
+        "count": 46,
+        "points": 125,
+        "fastPoints": 23
+      }
+    ],
+    "population": 2959517,
+    "areaKm2": 15802,
+    "maxPowerKw": 400.0,
+    "powerBands": {
+      "upTo7": 6,
+      "upTo22": 5590,
+      "upTo49": 277,
+      "upTo149": 502,
+      "from150": 1662
+    },
+    "networks": [
+      {
+        "name": "Stadtwerke Lübeck Energie GmbH",
+        "points": 574
+      },
+      {
+        "name": "GP Joule Connect GmbH",
+        "points": 456
+      },
+      {
+        "name": "EnBW mobility+ AG und Co.KG",
+        "points": 282
+      },
+      {
+        "name": "E.ON Drive Germany GmbH",
+        "points": 279
+      },
+      {
+        "name": "Regioladen+ GmbH & Co.KG",
+        "points": 238
       }
     ]
   },
   "thuringen": {
     "stations": 1398,
     "points": 4211,
-    "fastPoints": 1810,
+    "fastPoints": 1588,
     "connectorBreakdown": [
       {
         "name": "Type 2",
@@ -731,27 +1523,83 @@
     "topTowns": [
       {
         "name": "Erfurt",
-        "count": 136
+        "count": 136,
+        "points": 479,
+        "fastPoints": 139
       },
       {
         "name": "Gera",
-        "count": 92
+        "count": 92,
+        "points": 239,
+        "fastPoints": 98
       },
       {
         "name": "Jena",
-        "count": 66
+        "count": 66,
+        "points": 327,
+        "fastPoints": 60
       },
       {
         "name": "Weimar",
-        "count": 57
+        "count": 57,
+        "points": 193,
+        "fastPoints": 47
       },
       {
         "name": "Gotha",
-        "count": 46
+        "count": 46,
+        "points": 113,
+        "fastPoints": 44
       },
       {
         "name": "Eisenach",
-        "count": 43
+        "count": 43,
+        "points": 190,
+        "fastPoints": 29
+      },
+      {
+        "name": "Ilmenau",
+        "count": 33,
+        "points": 91,
+        "fastPoints": 14
+      },
+      {
+        "name": "Suhl",
+        "count": 30,
+        "points": 75,
+        "fastPoints": 24
+      }
+    ],
+    "population": 2100277,
+    "areaKm2": 16201,
+    "maxPowerKw": 400.0,
+    "powerBands": {
+      "upTo7": 8,
+      "upTo22": 2492,
+      "upTo49": 123,
+      "upTo149": 307,
+      "from150": 1281
+    },
+    "networks": [
+      {
+        "name": "TEAG Mobil GmbH",
+        "points": 817
+      },
+      {
+        "name": "EnBW mobility+ AG und Co.KG",
+        "points": 259
+      },
+      {
+        "name": "SWE Energie GmbH",
+        "points": 139
+      },
+      {
+        "name": "Energieversorgung Gera GmbH",
+        "points": 138
+      },
+      {
+        "name": "Stadtwerke Energie Jena-Pößneck GmbH",
+        "points": 137
       }
     ]
   }

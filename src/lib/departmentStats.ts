@@ -8,17 +8,33 @@
  * department is the real administrative one (from the station's postal code),
  * not a radius around the prefecture.
  */
-export type DepartmentStats = {
+export type PowerBand = "upTo7" | "upTo22" | "upTo49" | "upTo149" | "from150";
+export type Siting = "street" | "publicParking" | "privateParking" | "customerParking" | "fastHub";
+
+/** What both official registers (France, Germany) give for an area. */
+export type AreaStats = {
   stations: number;
   points: number;
-  /** Points delivering DC power at or above `fastThresholdKw`. */
+  /** Points delivering at or above `fastThresholdKw`. */
   fastPoints: number;
   connectorBreakdown: { name: string; count: number }[];
-  topTowns: { name: string; count: number }[];
+  /** `count` is stations. */
+  topTowns: { name: string; count: number; points: number; fastPoints: number }[];
+  /** Official population and area (INSEE for France, Eurostat for Germany). */
+  population: number;
+  areaKm2: number;
+  maxPowerKw: number;
+  /** Points per declared power, in kW. Bands do not overlap. */
+  powerBands: Record<PowerBand, number>;
+  /** Brands or operators running the chargers, biggest first. */
+  networks: { name: string; points: number }[];
 };
 
-/** Same statistics shape for the German states, from the Bundesnetzagentur register. */
-export type AreaStats = DepartmentStats;
+/** The French base also says what kind of site each point is on. */
+export type DepartmentStats = AreaStats & {
+  /** Points per kind of site, as declared by the operator. */
+  siting: Record<Siting, number>;
+};
 
 export type GermanStatsMeta = {
   source: string;

@@ -5,6 +5,7 @@ data.gouv.fr / transport.data.gouv.fr under the Licence Ouverte 2.0.
 
 Writes:
   src/data/department-stats.json       per-department statistics (department pages)
+                                       with population and area from geo.api.gouv.fr
   src/data/department-stats-meta.json  source, license, generation date, national totals
   data/irve/stations.json.gz           every public station, as the map needs it
   data/irve/details.json.gz            per-station detail, loaded lazily when a popup opens
@@ -41,7 +42,20 @@ from official_common import (
 
 SOURCE_URL = "https://proxy.transport.data.gouv.fr/resource/consolidation-transport-irve-statique"
 SOURCE_PAGE = "https://www.data.gouv.fr/datasets/beta-bases-nationales-des-points-de-recharge-pour-vehicules-electriques-en-france-irve"
+GEO_URL = "https://geo.api.gouv.fr/communes?fields=population,surface,codeDepartement&format=json"
 FAST_KW = 50
+ULTRA_KW = 150
+# Above this a declared power is a typo, not a charger: it is kept out of "maximum power".
+MAX_PLAUSIBLE_KW = 600
+# `implantation_station` values of the IRVE schema -> keys the pages translate.
+SITING = {
+    "Voirie": "street",
+    "Parking public": "publicParking",
+    "Parking privé à usage public": "privateParking",
+    "Parking privé réservé à la clientèle": "customerParking",
+    "Station dédiée à la recharge rapide": "fastHub",
+}
+POWER_BANDS = ("upTo7", "upTo22", "upTo49", "upTo149", "from150")
 ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..")
 
 csv.field_size_limit(10**9)
@@ -157,6 +171,47 @@ def parse_kw(raw: str):
     return round(kw, 1) if kw > 0 else None
 
 
+def nominal_kw(raw: str):
+    """Declared power in kW. A few operators file watts (22000 for 22 kW): brought back to kW."""
+    kw = parse_kw(raw)
+    if kw is None:
+        return None
+    return round(kw / 1000, 1) if kw >= 2000 else kw
+
+
+def power_band(kw: float) -> str:
+    if kw <= 7.4:
+        return "upTo7"
+    if kw <= 22.1:  # 22.08 kW is how three-phase 32 A is often declared
+        return "upTo22"
+    if kw < FAST_KW:
+        return "upTo49"
+    return "upTo149" if kw < ULTRA_KW else "from150"
+
+
+BRAND_CODE_RE = re.compile(r"\s*\bFR\*[A-Z0-9]{3}\b\s*")
+
+
+def clean_brand(raw: str):
+    """Brand a driver reads on the charger, without the roaming code some files append."""
+    brand = BRAND_CODE_RE.sub(" ", squash(raw, 60)).strip(" -|")
+    return brand if len(brand) >= 2 and not brand.isdigit() else None
+
+
+def load_population() -> dict:
+    """department code -> (inhabitants, km2), summed over its communes (INSEE figures served by geo.api.gouv.fr)."""
+    print("Downloading", GEO_URL)
+    req = urllib.request.Request(GEO_URL, headers={"User-Agent": "ma-borne-electrique-stats/1.0"})
+    with urllib.request.urlopen(req, timeout=300) as resp:
+        communes = json.load(resp)
+    totals = collections.defaultdict(lambda: [0, 0.0])
+    for c in communes:
+        entry = totals[c.get("codeDepartement")]
+        entry[0] += c.get("population") or 0
+        entry[1] += (c.get("surface") or 0) / 100  # hectares -> km2
+    return {code: (pop, round(area)) for code, (pop, area) in totals.items()}
+
+
 def plugs_for(r: dict, kw):
     """One (OCM connector type id, kW, OCM current type id) per plug this point offers."""
     ac = None if kw is None else (AC_THREE if kw > 7.4 else AC_SINGLE)
@@ -248,6 +303,10 @@ def download(dest: str) -> None:
 
 def main() -> None:
     departments = load_departments()
+    population = load_population()
+    missing = [code for code in departments if not population.get(code, (0, 0))[0]]
+    if missing:
+        sys.exit(f"no population for departments {missing}")
     path = sys.argv[1] if len(sys.argv) > 1 else None
     tmp = None
     if not path:
@@ -262,7 +321,12 @@ def main() -> None:
     points = collections.Counter()
     fast = collections.Counter()
     connectors = {code: collections.Counter() for code in departments}
-    towns = {code: collections.defaultdict(lambda: [set(), collections.Counter()]) for code in departments}
+    # town key -> [station ids, spellings, points, fast points]
+    towns = {code: collections.defaultdict(lambda: [set(), collections.Counter(), 0, 0]) for code in departments}
+    bands = {code: collections.Counter() for code in departments}
+    siting = {code: collections.Counter() for code in departments}
+    brands = {code: collections.defaultdict(lambda: [0, collections.Counter()]) for code in departments}
+    max_kw = collections.Counter()
 
     rows = public_rows = unassigned = via_insee = via_postal = disagree = 0
     national_pdc = set()
@@ -303,11 +367,23 @@ def main() -> None:
 
             stations[code].add(station_id)
             points[code] += 1
-            try:
-                if float(r["puissance_nominale"]) >= FAST_KW:
-                    fast[code] += 1
-            except ValueError:
-                pass
+            kw = nominal_kw(r["puissance_nominale"])
+            is_fast = kw is not None and kw >= FAST_KW
+            if is_fast:
+                fast[code] += 1
+            if kw is not None:
+                bands[code][power_band(kw)] += 1
+                if kw <= MAX_PLAUSIBLE_KW:
+                    max_kw[code] = max(max_kw[code], kw)
+
+            place = SITING.get((r["implantation_station"] or "").strip())
+            if place:
+                siting[code][place] += 1
+            brand = clean_brand(r["nom_enseigne"] or r["nom_operateur"])
+            if brand:
+                entry = brands[code][brand.lower()]
+                entry[0] += 1
+                entry[1][brand] += 1
 
             c = connectors[code]
             if r["prise_type_2"] == "true":
@@ -324,19 +400,35 @@ def main() -> None:
                 entry = towns[code][town_key(town)]
                 entry[0].add(station_id)
                 entry[1][town] += 1
+                entry[2] += 1
+                entry[3] += is_fast
 
     result = {}
     for code, (name, slug) in departments.items():
         top_towns = sorted(
-            ((max(v[1], key=v[1].get), len(v[0])) for v in towns[code].values()),
-            key=lambda t: (-t[1], t[0]),
-        )[:6]
+            ((max(v[1], key=v[1].get), len(v[0]), v[2], v[3]) for v in towns[code].values()),
+            key=lambda t: (-t[1], -t[2], t[0]),
+        )[:8]
+        # Some files put a station name in the brand field: a brand has to weigh
+        # something in the department to be listed as a network.
+        brand_floor = max(10, points[code] * 0.02)
+        top_brands = sorted(
+            ((max(v[1], key=v[1].get), v[0]) for v in brands[code].values() if v[0] >= brand_floor),
+            key=lambda b: (-b[1], b[0]),
+        )[:5]
+        inhabitants, area = population[code]
         result[slug] = {
             "stations": len(stations[code]),
             "points": points[code],
             "fastPoints": fast[code],
             "connectorBreakdown": [{"name": n, "count": c} for n, c in connectors[code].most_common(4)],
-            "topTowns": [{"name": n, "count": c} for n, c in top_towns],
+            "topTowns": [{"name": n, "count": c, "points": p, "fastPoints": f} for n, c, p, f in top_towns],
+            "population": inhabitants,
+            "areaKm2": area,
+            "maxPowerKw": max_kw[code],
+            "powerBands": {band: bands[code][band] for band in POWER_BANDS},
+            "siting": {key: siting[code][key] for key in SITING.values()},
+            "networks": [{"name": n, "points": c} for n, c in top_brands],
         }
 
     generated = datetime.date.today().isoformat()

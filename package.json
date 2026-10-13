@@ -12,6 +12,7 @@
     "generate:irve": "python scripts/generate_irve_data.py",
     "generate:de": "python scripts/generate_de_data.py",
     "generate:region-stats": "tsx scripts/generate-region-stats.ts",
+    "generate:boundaries": "tsx scripts/generate-region-boundaries.ts",
     "generate:networks": "tsx scripts/generate-network-stats.ts"
   },
   "dependencies": {

@@ -5,6 +5,9 @@ import { Link } from "@/i18n/navigation";
 import { site, languageAlternates } from "@/lib/site";
 import { departments, findDepartmentBySlug } from "@/lib/departments";
 import type { DepartmentStats, DepartmentStatsMeta } from "@/lib/departmentStats";
+import { dominantSiting, getAreaInsights, nearestPlaces, percent } from "@/lib/areaInsights";
+import { PointsAreaSections } from "@/components/regions/PointsAreaSections";
+import { FaqItem, NearbyLinks, SectionHeading } from "@/components/regions/StatBlocks";
 import departmentStatsData from "@/data/department-stats.json";
 import departmentStatsMetaData from "@/data/department-stats-meta.json";
 
@@ -26,10 +29,30 @@ export async function generateMetadata({
 
   const t = await getTranslations({ locale, namespace: "DepartmentPage" });
   const path = `/bornes-recharge/${dept.slug}`;
+  const stats: DepartmentStats | null = departmentStats[dept.slug] ?? null;
+  const formatNumber = (n: number) => new Intl.NumberFormat(locale).format(n);
+
+  // The figures go in the title and description so that no two departments share a snippet.
+  const title = stats
+    ? t("metaTitleWithStats", { name: dept.name, code: dept.code, points: formatNumber(stats.points) })
+    : t("metaTitle", { name: dept.name, code: dept.code });
+  const description = stats
+    ? t("metaDescriptionWithStats", {
+        name: dept.name,
+        code: dept.code,
+        points: formatNumber(stats.points),
+        stations: formatNumber(stats.stations),
+        share: percent(stats.fastPoints, stats.points),
+        towns: stats.topTowns
+          .slice(0, 3)
+          .map((town) => town.name)
+          .join(", "),
+      })
+    : t("metaDescription", { name: dept.name, code: dept.code });
 
   return {
-    title: t("metaTitle", { name: dept.name, code: dept.code }),
-    description: t("metaDescription", { name: dept.name, code: dept.code }),
+    title,
+    description,
     alternates: { canonical: `/${locale}${path}`, languages: languageAlternates(path) },
     openGraph: { url: `${site.url}/${locale}${path}` },
   };
@@ -52,12 +75,32 @@ export default async function DepartmentPage({
   // `scripts/generate_irve_data.py` (`npm run generate:irve`),
   // so page generation just reads a local JSON file: fast and deterministic.
   const stats: DepartmentStats | null = departmentStats[dept.slug] ?? null;
+  const insights = stats ? getAreaInsights(departmentStats, dept.slug) : null;
   const formatNumber = (n: number) => new Intl.NumberFormat(locale).format(n);
+  const listFormat = new Intl.ListFormat(locale, { style: "long", type: "conjunction" });
   const dataDate = new Intl.DateTimeFormat(locale, { dateStyle: "long" }).format(
     new Date(departmentStatsMeta.generatedAt)
   );
 
   const path = `/bornes-recharge/${dept.slug}`;
+
+  const nearby = nearestPlaces(departments, dept, 6).filter((other) => departmentStats[other.slug]);
+
+  // Answered from the department's own figures whenever they exist.
+  const faq2Answer =
+    stats && insights?.fastestTown
+      ? t("faq2AnswerWithStats", {
+          name: dept.name,
+          fastCount: formatNumber(stats.fastPoints),
+          ultra: formatNumber(insights.ultraFastPoints),
+          town: insights.fastestTown.name,
+          townFast: formatNumber(insights.fastestTown.fastPoints),
+        })
+      : t("faq2Answer", { name: dept.name });
+  const faq4Answer =
+    stats && stats.networks.length > 0
+      ? t("faq4Answer", { name: dept.name, networks: listFormat.format(stats.networks.map((n) => n.name)) })
+      : null;
 
   const breadcrumbJsonLd = {
     "@context": "https://schema.org",
@@ -97,8 +140,17 @@ export default async function DepartmentPage({
       {
         "@type": "Question",
         name: t("faq2Question", { name: dept.name }),
-        acceptedAnswer: { "@type": "Answer", text: t("faq2Answer", { name: dept.name }) },
+        acceptedAnswer: { "@type": "Answer", text: faq2Answer },
       },
+      ...(faq4Answer
+        ? [
+            {
+              "@type": "Question",
+              name: t("faq4Question", { name: dept.name }),
+              acceptedAnswer: { "@type": "Answer", text: faq4Answer },
+            },
+          ]
+        : []),
       {
         "@type": "Question",
         name: t("faq3Question"),
@@ -173,62 +225,45 @@ export default async function DepartmentPage({
         </Link>
       </div>
 
-      {stats && stats.connectorBreakdown.length > 0 && (
-        <>
-          <h2 className="mt-10 font-display text-2xl font-semibold text-ink-900">
-            {t("connectorsHeading")}
-          </h2>
-          <ul className="mt-3 space-y-2 text-ink-600">
-            {stats.connectorBreakdown.map((c) => (
-              <li key={c.name} className="flex items-center justify-between border-b border-line pb-2">
-                <span>{c.name}</span>
-                <span className="font-semibold text-ink-900">{c.count}</span>
-              </li>
-            ))}
-          </ul>
-        </>
+      {stats && insights && (
+        <PointsAreaSections
+          t={t}
+          locale={locale}
+          name={dept.name}
+          stats={stats}
+          insights={insights}
+          siting={stats.siting}
+          dominantSiting={dominantSiting(stats)}
+        />
       )}
 
-      {stats && stats.topTowns.length > 0 && (
-        <>
-          <h2 className="mt-10 font-display text-2xl font-semibold text-ink-900">{t("townsHeading")}</h2>
-          <ul className="mt-3 space-y-2 text-ink-600">
-            {stats.topTowns.map((town) => (
-              <li key={town.name} className="flex items-center justify-between border-b border-line pb-2">
-                <span>{town.name}</span>
-                <span className="font-semibold text-ink-900">{town.count}</span>
-              </li>
-            ))}
-          </ul>
-        </>
-      )}
+      <NearbyLinks
+        heading={t("nearbyHeading")}
+        items={nearby.map((other) => {
+          const otherStats = departmentStats[other.slug];
+          return {
+            href: `/bornes-recharge/${other.slug}`,
+            label: `${other.name} (${other.code})`,
+            note: t("nearbyItem", {
+              points: formatNumber(otherStats.points),
+              share: percent(otherStats.fastPoints, otherStats.points),
+            }),
+          };
+        })}
+      />
 
-      <h2 className="mt-10 font-display text-2xl font-semibold text-ink-900">{t("faqHeading")}</h2>
+      <SectionHeading>{t("faqHeading")}</SectionHeading>
 
-      <details className="mt-3 rounded-xl border border-line p-4">
-        <summary className="cursor-pointer font-semibold text-ink-900">
-          {t("faq1Question", { name: dept.name })}
-        </summary>
-        <p className="mt-2 text-ink-600">
-          {t("faq1AnswerBefore")}
-          <Link href="/blog/cout-recharge-voiture-electrique" className="font-semibold text-green-700 underline">
-            {t("faq1AnswerLink")}
-          </Link>
-          {t("faq1AnswerAfter")}
-        </p>
-      </details>
-
-      <details className="mt-3 rounded-xl border border-line p-4">
-        <summary className="cursor-pointer font-semibold text-ink-900">
-          {t("faq2Question", { name: dept.name })}
-        </summary>
-        <p className="mt-2 text-ink-600">{t("faq2Answer", { name: dept.name })}</p>
-      </details>
-
-      <details className="mt-3 rounded-xl border border-line p-4">
-        <summary className="cursor-pointer font-semibold text-ink-900">{t("faq3Question")}</summary>
-        <p className="mt-2 text-ink-600">{t("faq3Answer")}</p>
-      </details>
+      <FaqItem question={t("faq1Question", { name: dept.name })}>
+        {t("faq1AnswerBefore")}
+        <Link href="/blog/cout-recharge-voiture-electrique" className="font-semibold text-green-700 underline">
+          {t("faq1AnswerLink")}
+        </Link>
+        {t("faq1AnswerAfter")}
+      </FaqItem>
+      <FaqItem question={t("faq2Question", { name: dept.name })}>{faq2Answer}</FaqItem>
+      {faq4Answer && <FaqItem question={t("faq4Question", { name: dept.name })}>{faq4Answer}</FaqItem>}
+      <FaqItem question={t("faq3Question")}>{t("faq3Answer")}</FaqItem>
 
       <p className="mt-10 text-xs text-ink-400">
         {t("sourceNote", { date: dataDate })}{" "}

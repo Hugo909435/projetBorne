@@ -7,4 +7,8 @@ export const routing = defineRouting({
   locales,
   defaultLocale: "fr",
   localePrefix: "always",
+  // Every page already declares its hreflang alternates in its own metadata.
+  // The middleware's `Link` header repeated them with a different x-default
+  // (the unprefixed URL, which redirects), so search engines got two answers.
+  alternateLinks: false,
 });
