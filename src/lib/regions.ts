@@ -93,6 +93,14 @@ export const regionsByCountry: Record<RegionCountry, Region[]> = {
   gb: ukRegions,
 };
 
+/** Middle of the region's bounding box: where its map link points, and what "nearby regions" are measured from. */
+export function regionCenter(region: Region): { lat: number; lon: number } {
+  return {
+    lat: (region.bbox.south + region.bbox.north) / 2,
+    lon: (region.bbox.west + region.bbox.east) / 2,
+  };
+}
+
 export function findRegionBySlug(country: RegionCountry, slug: string): Region | undefined {
   return regionsByCountry[country].find((r) => r.slug === slug);
 }

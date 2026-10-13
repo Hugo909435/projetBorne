@@ -7,6 +7,8 @@ import { germanStates, spanishRegions, ukRegions } from "@/lib/regions";
 import { evModels } from "@/lib/evModels";
 import { chargingNetworks } from "@/lib/chargingNetworks";
 import reliabilityData from "@/data/reliability-stats.json";
+import departmentStatsMeta from "@/data/department-stats-meta.json";
+import germanStatsMeta from "@/data/de-state-stats-meta.json";
 
 const staticPaths = [
   { path: "/", changeFrequency: "daily" as const, priority: 1, lastModified: "2026-08-27" },
@@ -89,7 +91,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: `${site.url}/${locale}/bornes-recharge/${dept.slug}`,
       changeFrequency: "weekly" as const,
       priority: 0.5,
-      lastModified: "2026-09-16",
+      lastModified: departmentStatsMeta.generatedAt,
       alternates: { languages: languageAlternates(`/bornes-recharge/${dept.slug}`) },
     }))
   );
@@ -99,7 +101,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: `${site.url}/${locale}/bornes-recharge/de/${region.slug}`,
       changeFrequency: "weekly" as const,
       priority: 0.5,
-      lastModified: "2026-09-17",
+      lastModified: germanStatsMeta.generatedAt,
       alternates: { languages: languageAlternates(`/bornes-recharge/de/${region.slug}`) },
     }))
   );

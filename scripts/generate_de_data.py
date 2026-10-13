@@ -40,6 +40,18 @@ PAGE_URL = "https://www.bundesnetzagentur.de/DE/Fachthemen/ElektrizitaetundGas/E
 LICENSE = "CC BY 4.0"
 ATTRIBUTION = "Bundesnetzagentur.de"
 FAST_KW = 50
+ULTRA_KW = 150
+# Above this a declared power is a typo or a truck charger: it is kept out of "maximum power".
+MAX_PLAUSIBLE_KW = 600
+POWER_BANDS = ("upTo7", "upTo22", "upTo49", "upTo149", "from150")
+EUROSTAT_URL = "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/"
+# Bundesland slug -> NUTS 1 code, the level Eurostat publishes population and area at.
+NUTS1 = {
+    "baden-wurttemberg": "DE1", "bayern": "DE2", "berlin": "DE3", "brandenburg": "DE4", "bremen": "DE5",
+    "hamburg": "DE6", "hessen": "DE7", "mecklenburg-vorpommern": "DE8", "niedersachsen": "DE9",
+    "nordrhein-westfalen": "DEA", "rheinland-pfalz": "DEB", "saarland": "DEC", "sachsen": "DED",
+    "sachsen-anhalt": "DEE", "schleswig-holstein": "DEF", "thuringen": "DEG",
+}
 STATION_ID_BASE = 3_100_000_000  # after the French range; Open Charge Map ids stay far below
 STATION_ID_SPAN = 900_000_000
 # South, north, west, east: rejects (0, 0), swapped or foreign coordinates.
@@ -98,6 +110,31 @@ def parse_kw(raw):
     return round(kw, 1) if kw and kw > 0 else None
 
 
+def power_band(kw: float) -> str:
+    if kw <= 7.4:
+        return "upTo7"
+    if kw <= 22.1:
+        return "upTo22"
+    if kw < FAST_KW:
+        return "upTo49"
+    return "upTo149" if kw < ULTRA_KW else "from150"
+
+
+def eurostat(dataset: str, filters: str) -> dict:
+    """NUTS 1 code -> latest value of a Eurostat dataset, for the 16 Bundeslaender."""
+    url = f"{EUROSTAT_URL}{dataset}?format=JSON&lastTimePeriod=1&{filters}" + "".join(f"&geo={g}" for g in NUTS1.values())
+    print("Downloading", url)
+    req = urllib.request.Request(url, headers={"User-Agent": "ma-borne-electrique-stats/1.0"})
+    with urllib.request.urlopen(req, timeout=120) as resp:
+        data = json.load(resp)
+    index = data["dimension"]["geo"]["category"]["index"]
+    values = {geo: data["value"].get(str(i)) for geo, i in index.items()}
+    missing = [geo for geo in NUTS1.values() if not values.get(geo)]
+    if missing:
+        sys.exit(f"Eurostat {dataset} has no value for {missing}")
+    return values
+
+
 def clean_town(raw: str):
     town = re.sub(r"\s*\(.*?\)\s*", " ", raw or "").strip(" ,;-.")
     if len(town) < 2:
@@ -118,6 +155,10 @@ def open_hours(row: dict) -> str:
 
 def main() -> None:
     states = load_states()
+    if set(states) != set(NUTS1):
+        sys.exit(f"NUTS1 table out of step with regions.ts: {sorted(set(states) ^ set(NUTS1))}")
+    population = eurostat("demo_r_d2jan", "sex=T&age=TOTAL&unit=NR")
+    area = eurostat("reg_area3", "landuse=TOTAL&unit=KM2")
     path = sys.argv[1] if len(sys.argv) > 1 else None
     tmp = None
     if not path:
@@ -138,7 +179,11 @@ def main() -> None:
     state_fast = collections.Counter()
     state_plugs = {s: collections.Counter() for s in states}
     state_locations = {s: set() for s in states}
-    state_towns = {s: collections.defaultdict(lambda: [set(), collections.Counter()]) for s in states}
+    # town key -> [location keys, spellings, points, fast points]
+    state_towns = {s: collections.defaultdict(lambda: [set(), collections.Counter(), 0, 0]) for s in states}
+    state_bands = {s: collections.Counter() for s in states}
+    state_operators = {s: collections.Counter() for s in states}
+    state_max_kw = collections.Counter()
     devices = kept = skipped_status = skipped_coords = skipped_state = 0
 
     for row in reader:
@@ -179,14 +224,29 @@ def main() -> None:
         if "kunden" not in row["Informationen zum Parkraum"].lower():
             st["restricted"] = False
 
+        # One "Stecker" column group per charge point. Where the point's own power
+        # is not filled in, the device's rated power is the best figure there is.
+        point_kws = [parse_kw(row[f"Nennleistung Stecker{k}"]) or device_kw for k in range(1, min(points, 6) + 1)]
+        point_kws += [device_kw] * (points - len(point_kws))
+        fast_here = sum(1 for kw in point_kws if kw >= FAST_KW)
+
         state_points[slug] += points
-        if device_kw >= FAST_KW:
-            state_fast[slug] += points
+        state_fast[slug] += fast_here
+        for kw in point_kws:
+            if kw > 0:
+                state_bands[slug][power_band(kw)] += 1
+                if kw <= MAX_PLAUSIBLE_KW:
+                    state_max_kw[slug] = max(state_max_kw[slug], kw)
+        operator = squash(row["Betreiber"], 80)
+        if operator:
+            state_operators[slug][operator] += points
         state_locations[slug].add(key)
         if st["town"]:
             entry = state_towns[slug][town_key(st["town"])]
             entry[0].add(key)
             entry[1][st["town"]] += 1
+            entry[2] += points
+            entry[3] += fast_here
 
         for k in range(1, 7):
             kw = parse_kw(row[f"Nennleistung Stecker{k}"])
@@ -210,15 +270,20 @@ def main() -> None:
     result = {}
     for slug in states:
         towns = sorted(
-            ((max(v[1], key=v[1].get), len(v[0])) for v in state_towns[slug].values()),
-            key=lambda t: (-t[1], t[0]),
-        )[:6]
+            ((max(v[1], key=v[1].get), len(v[0]), v[2], v[3]) for v in state_towns[slug].values()),
+            key=lambda t: (-t[1], -t[2], t[0]),
+        )[:8]
         result[slug] = {
             "stations": len(state_locations[slug]),
             "points": state_points[slug],
             "fastPoints": state_fast[slug],
             "connectorBreakdown": [{"name": n, "count": c} for n, c in state_plugs[slug].most_common(4)],
-            "topTowns": [{"name": n, "count": c} for n, c in towns],
+            "topTowns": [{"name": n, "count": c, "points": p, "fastPoints": f} for n, c, p, f in towns],
+            "population": population[NUTS1[slug]],
+            "areaKm2": round(area[NUTS1[slug]]),
+            "maxPowerKw": state_max_kw[slug],
+            "powerBands": {band: state_bands[slug][band] for band in POWER_BANDS},
+            "networks": [{"name": n, "points": c} for n, c in state_operators[slug].most_common(5)],
         }
 
     # ---- map dataset

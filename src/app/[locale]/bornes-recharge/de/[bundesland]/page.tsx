@@ -3,8 +3,11 @@ import { notFound } from "next/navigation";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { site, languageAlternates } from "@/lib/site";
-import { germanStates, findRegionBySlug } from "@/lib/regions";
+import { germanStates, findRegionBySlug, regionCenter } from "@/lib/regions";
 import type { AreaStats, GermanStatsMeta } from "@/lib/departmentStats";
+import { getAreaInsights, nearestPlaces, percent } from "@/lib/areaInsights";
+import { PointsAreaSections } from "@/components/regions/PointsAreaSections";
+import { FaqItem, NearbyLinks, SectionHeading } from "@/components/regions/StatBlocks";
 import stateStatsData from "@/data/de-state-stats.json";
 import stateStatsMetaData from "@/data/de-state-stats-meta.json";
 
@@ -26,10 +29,29 @@ export async function generateMetadata({
 
   const t = await getTranslations({ locale, namespace: "GermanyRegionPage" });
   const path = `/bornes-recharge/de/${region.slug}`;
+  const stats: AreaStats | null = stateStats[region.slug] ?? null;
+  const formatNumber = (n: number) => new Intl.NumberFormat(locale).format(n);
+
+  // The figures go in the title and description so that no two states share a snippet.
+  const title = stats
+    ? t("metaTitleWithStats", { name: region.name, points: formatNumber(stats.points) })
+    : t("metaTitle", { name: region.name });
+  const description = stats
+    ? t("metaDescriptionWithStats", {
+        name: region.name,
+        points: formatNumber(stats.points),
+        stations: formatNumber(stats.stations),
+        share: percent(stats.fastPoints, stats.points),
+        towns: stats.topTowns
+          .slice(0, 3)
+          .map((town) => town.name)
+          .join(", "),
+      })
+    : t("metaDescription", { name: region.name });
 
   return {
-    title: t("metaTitle", { name: region.name }),
-    description: t("metaDescription", { name: region.name }),
+    title,
+    description,
     alternates: { canonical: `/${locale}${path}`, languages: languageAlternates(path) },
     openGraph: { url: `${site.url}/${locale}${path}` },
   };
@@ -51,13 +73,35 @@ export default async function GermanyRegionPage({
   // Generated offline from the Bundesnetzagentur register by
   // `scripts/generate_de_data.py` (`npm run generate:de`).
   const stats: AreaStats | null = stateStats[region.slug] ?? null;
+  const insights = stats ? getAreaInsights(stateStats, region.slug) : null;
   const formatNumber = (n: number) => new Intl.NumberFormat(locale).format(n);
+  const listFormat = new Intl.ListFormat(locale, { style: "long", type: "conjunction" });
   const dataDate = new Intl.DateTimeFormat(locale, { dateStyle: "long" }).format(
     new Date(stateStatsMeta.registerDate)
   );
   const path = `/bornes-recharge/de/${region.slug}`;
-  const centerLat = (region.bbox.south + region.bbox.north) / 2;
-  const centerLon = (region.bbox.west + region.bbox.east) / 2;
+  const center = regionCenter(region);
+  const nearby = nearestPlaces(
+    germanStates.map((r) => ({ ...r, ...regionCenter(r) })),
+    { ...region, ...center },
+    5
+  ).filter((other) => stateStats[other.slug]);
+
+  // Answered from the state's own figures whenever they exist.
+  const faq2Answer =
+    stats && insights?.fastestTown
+      ? t("faq2AnswerWithStats", {
+          name: region.name,
+          fastCount: formatNumber(stats.fastPoints),
+          ultra: formatNumber(insights.ultraFastPoints),
+          town: insights.fastestTown.name,
+          townFast: formatNumber(insights.fastestTown.fastPoints),
+        })
+      : t("faq2Answer", { name: region.name });
+  const faq4Answer =
+    stats && stats.networks.length > 0
+      ? t("faq4Answer", { name: region.name, networks: listFormat.format(stats.networks.map((n) => n.name)) })
+      : null;
 
   const breadcrumbJsonLd = {
     "@context": "https://schema.org",
@@ -79,7 +123,7 @@ export default async function GermanyRegionPage({
     "@type": "Place",
     name: t("placeName", { name: region.name }),
     containedInPlace: { "@type": "Country", name: "Germany" },
-    geo: { "@type": "GeoCoordinates", latitude: centerLat, longitude: centerLon },
+    geo: { "@type": "GeoCoordinates", latitude: center.lat, longitude: center.lon },
   };
 
   const faqJsonLd = {
@@ -94,8 +138,17 @@ export default async function GermanyRegionPage({
       {
         "@type": "Question",
         name: t("faq2Question", { name: region.name }),
-        acceptedAnswer: { "@type": "Answer", text: t("faq2Answer", { name: region.name }) },
+        acceptedAnswer: { "@type": "Answer", text: faq2Answer },
       },
+      ...(faq4Answer
+        ? [
+            {
+              "@type": "Question",
+              name: t("faq4Question", { name: region.name }),
+              acceptedAnswer: { "@type": "Answer", text: faq4Answer },
+            },
+          ]
+        : []),
       {
         "@type": "Question",
         name: t("faq3Question"),
@@ -104,7 +157,7 @@ export default async function GermanyRegionPage({
     ],
   };
 
-  const mapHref = { pathname: "/", query: { lat: centerLat, lon: centerLon, zoom: 7 }, hash: "carte" };
+  const mapHref = { pathname: "/", query: { lat: center.lat, lon: center.lon, zoom: 7 }, hash: "carte" };
 
   return (
     <article className="mx-auto max-w-3xl px-5 py-16">
@@ -155,7 +208,7 @@ export default async function GermanyRegionPage({
         <p className="mt-2 text-ink-600">
           {t("fastCountLabel", {
             fastCount: formatNumber(stats.fastPoints),
-            share: Math.round((stats.fastPoints / stats.points) * 100),
+            share: percent(stats.fastPoints, stats.points),
           })}
         </p>
       )}
@@ -169,56 +222,33 @@ export default async function GermanyRegionPage({
         </Link>
       </div>
 
-      {stats && stats.connectorBreakdown.length > 0 && (
-        <>
-          <h2 className="mt-10 font-display text-2xl font-semibold text-ink-900">
-            {t("connectorsHeading")}
-          </h2>
-          <ul className="mt-3 space-y-2 text-ink-600">
-            {stats.connectorBreakdown.map((c) => (
-              <li key={c.name} className="flex items-center justify-between border-b border-line pb-2">
-                <span>{c.name}</span>
-                <span className="font-semibold text-ink-900">{c.count}</span>
-              </li>
-            ))}
-          </ul>
-        </>
+      {stats && insights && (
+        <PointsAreaSections t={t} locale={locale} name={region.name} stats={stats} insights={insights} />
       )}
 
-      {stats && stats.topTowns.length > 0 && (
-        <>
-          <h2 className="mt-10 font-display text-2xl font-semibold text-ink-900">{t("townsHeading")}</h2>
-          <ul className="mt-3 space-y-2 text-ink-600">
-            {stats.topTowns.map((town) => (
-              <li key={town.name} className="flex items-center justify-between border-b border-line pb-2">
-                <span>{town.name}</span>
-                <span className="font-semibold text-ink-900">{town.count}</span>
-              </li>
-            ))}
-          </ul>
-        </>
-      )}
+      <NearbyLinks
+        heading={t("nearbyHeading")}
+        items={nearby.map((other) => {
+          const otherStats = stateStats[other.slug];
+          return {
+            href: `/bornes-recharge/de/${other.slug}`,
+            label: other.name,
+            note: t("nearbyItem", {
+              points: formatNumber(otherStats.points),
+              share: percent(otherStats.fastPoints, otherStats.points),
+            }),
+          };
+        })}
+      />
 
-      <h2 className="mt-10 font-display text-2xl font-semibold text-ink-900">{t("faqHeading")}</h2>
+      <SectionHeading>{t("faqHeading")}</SectionHeading>
 
-      <details className="mt-3 rounded-xl border border-line p-4">
-        <summary className="cursor-pointer font-semibold text-ink-900">
-          {t("faq1Question", { name: region.name })}
-        </summary>
-        <p className="mt-2 text-ink-600">{t("faq1Answer", { name: region.name })}</p>
-      </details>
-
-      <details className="mt-3 rounded-xl border border-line p-4">
-        <summary className="cursor-pointer font-semibold text-ink-900">
-          {t("faq2Question", { name: region.name })}
-        </summary>
-        <p className="mt-2 text-ink-600">{t("faq2Answer", { name: region.name })}</p>
-      </details>
-
-      <details className="mt-3 rounded-xl border border-line p-4">
-        <summary className="cursor-pointer font-semibold text-ink-900">{t("faq3Question")}</summary>
-        <p className="mt-2 text-ink-600">{t("faq3Answer", { name: region.name })}</p>
-      </details>
+      <FaqItem question={t("faq1Question", { name: region.name })}>
+        {t("faq1Answer", { name: region.name })}
+      </FaqItem>
+      <FaqItem question={t("faq2Question", { name: region.name })}>{faq2Answer}</FaqItem>
+      {faq4Answer && <FaqItem question={t("faq4Question", { name: region.name })}>{faq4Answer}</FaqItem>}
+      <FaqItem question={t("faq3Question")}>{t("faq3Answer", { name: region.name })}</FaqItem>
 
       <p className="mt-10 text-xs text-ink-400">
         {t("sourceNote", { date: dataDate })}{" "}
