@@ -31,43 +31,44 @@ export default async function HomePage({
   const center: [number, number] = hasTarget ? [parsedLat!, parsedLon!] : [46.7, 2.5];
   const zoom = hasTarget ? (customZoom ?? 12) : 6;
 
-  const jsonLd = {
+  const websiteJsonLd = {
     "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "Organization",
-        name: site.shortName,
-        url: site.url,
-        email: site.email,
-        logo: organizationLogo,
-        description: t("description"),
-        sameAs: [author.linkedin, site.facebook],
-        founder: { "@type": "Person", name: author.name, url: author.url, sameAs: [author.linkedin] },
-      },
-      {
-        "@type": "WebSite",
-        name: site.shortName,
-        url: site.url,
-        description: t("description"),
-        inLanguage: locale,
-      },
-      {
-        "@type": "WebApplication",
-        name: site.shortName,
-        url: `${site.url}/${locale}#carte`,
-        applicationCategory: "UtilitiesApplication",
-        operatingSystem: "Any (web-based)",
-        description: t("description"),
-        offers: { "@type": "Offer", price: "0", priceCurrency: "EUR" },
-      },
-    ],
+    "@type": "WebSite",
+    name: site.shortName,
+    url: site.url,
+    description: t("description"),
+    inLanguage: locale,
+    publisher: {
+      "@type": "Organization",
+      name: site.shortName,
+      url: site.url,
+      email: site.email,
+      logo: organizationLogo,
+      sameAs: [author.linkedin, site.facebook],
+      founder: { "@type": "Person", name: author.name, url: author.url, sameAs: [author.linkedin] },
+    },
+  };
+
+  const webAppJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    name: site.shortName,
+    url: `${site.url}/${locale}#carte`,
+    applicationCategory: "UtilitiesApplication",
+    operatingSystem: "Any (web-based)",
+    description: t("description"),
+    offers: { "@type": "Offer", price: "0", priceCurrency: "EUR" },
   };
 
   return (
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(webAppJsonLd) }}
       />
       <Hero />
 

@@ -42,7 +42,14 @@
     "rights": "© {year} ma-borne-electrique.com. Alle Rechte vorbehalten.",
     "attribution": "Stationsdaten: <irve>Nationale IRVE-Datenbank Frankreichs</irve> (Frankreich), <bnetza>Bundesnetzagentur</bnetza> (Deutschland) und <ocm>Open Charge Map</ocm> (andere Länder) · Kartendaten <osm>© OpenStreetMap-Mitwirkende</osm>",
     "networksLink": "Ladenetze",
-    "reliabilityLink": "Zuverlässigkeitsbarometer"
+    "reliabilityLink": "Zuverlässigkeitsbarometer",
+    "departmentsHeading": "Ladestationen nach Region",
+    "allDepartmentsLink": "Alle Regionen",
+    "modelsHeading": "Laden nach Modell",
+    "allModelsLink": "Alle Modelle",
+    "networksHeading": "Netzwerke & Zuverlässigkeit",
+    "allNetworksLink": "Alle Netzwerke",
+    "guidesHeading": "Ratgeber & Infos"
   },
   "CookieConsent": {
     "title": "Cookie-Einstellungen",
@@ -469,7 +476,11 @@
     "germanyShort": "Deutschland",
     "spainShort": "Spanien",
     "ukHeading": "Vereinigtes Königreich (Regionen)",
-    "ukShort": "Vereinigtes Königreich"
+    "ukShort": "Vereinigtes Königreich",
+    "topFranceHeading": "Am besten ausgestattete Departements in Frankreich",
+    "pointsLabel": "Ladepunkte",
+    "stationsLabel": "Stationen",
+    "allFranceHeading": "Alle französischen Departements (A-Z)"
   },
   "DepartmentPage": {
     "eyebrow": "Standort nach Département",

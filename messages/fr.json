@@ -42,7 +42,14 @@
     "rights": "© {year} ma-borne-electrique.com. Tous droits réservés.",
     "attribution": "Données de bornes : <irve>Base nationale des IRVE</irve> (France), <bnetza>Bundesnetzagentur</bnetza> (Allemagne) et <ocm>Open Charge Map</ocm> (autres pays) · Fonds de carte <osm>© contributeurs OpenStreetMap</osm>",
     "networksLink": "Les réseaux de recharge",
-    "reliabilityLink": "Baromètre de fiabilité"
+    "reliabilityLink": "Baromètre de fiabilité",
+    "departmentsHeading": "Bornes par région",
+    "allDepartmentsLink": "Tous les départements",
+    "modelsHeading": "Recharge par modèle",
+    "allModelsLink": "Tous les modèles",
+    "networksHeading": "Réseaux & Fiabilité",
+    "allNetworksLink": "Tous les réseaux",
+    "guidesHeading": "Guides & Infos"
   },
   "CookieConsent": {
     "title": "Préférences des cookies",
@@ -469,7 +476,11 @@
     "germanyShort": "Allemagne",
     "spainShort": "Espagne",
     "ukHeading": "Royaume-Uni (régions)",
-    "ukShort": "Royaume-Uni"
+    "ukShort": "Royaume-Uni",
+    "topFranceHeading": "Départements les plus équipés en France",
+    "pointsLabel": "points",
+    "stationsLabel": "stations",
+    "allFranceHeading": "Tous les départements français (A-Z)"
   },
   "DepartmentPage": {
     "eyebrow": "Localisation par département",

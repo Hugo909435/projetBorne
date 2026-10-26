@@ -126,37 +126,7 @@ export default async function GermanyRegionPage({
     geo: { "@type": "GeoCoordinates", latitude: center.lat, longitude: center.lon },
   };
 
-  const faqJsonLd = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    mainEntity: [
-      {
-        "@type": "Question",
-        name: t("faq1Question", { name: region.name }),
-        acceptedAnswer: { "@type": "Answer", text: t("faq1Answer", { name: region.name }) },
-      },
-      {
-        "@type": "Question",
-        name: t("faq2Question", { name: region.name }),
-        acceptedAnswer: { "@type": "Answer", text: faq2Answer },
-      },
-      ...(faq4Answer
-        ? [
-            {
-              "@type": "Question",
-              name: t("faq4Question", { name: region.name }),
-              acceptedAnswer: { "@type": "Answer", text: faq4Answer },
-            },
-          ]
-        : []),
-      {
-        "@type": "Question",
-        name: t("faq3Question"),
-        acceptedAnswer: { "@type": "Answer", text: t("faq3Answer", { name: region.name }) },
-      },
-    ],
-  };
-
+  
   const mapHref = { pathname: "/", query: { lat: center.lat, lon: center.lon, zoom: 7 }, hash: "carte" };
 
   return (
@@ -168,10 +138,6 @@ export default async function GermanyRegionPage({
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(placeJsonLd) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
 
       <nav aria-label="Breadcrumb" className="mb-6 text-xs text-ink-400">

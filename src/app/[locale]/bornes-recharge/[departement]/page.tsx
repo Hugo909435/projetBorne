@@ -125,40 +125,7 @@ export default async function DepartmentPage({
     geo: { "@type": "GeoCoordinates", latitude: dept.lat, longitude: dept.lon },
   };
 
-  const faqJsonLd = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    mainEntity: [
-      {
-        "@type": "Question",
-        name: t("faq1Question", { name: dept.name }),
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: `${t("faq1AnswerBefore")}${t("faq1AnswerLink")}${t("faq1AnswerAfter")}`,
-        },
-      },
-      {
-        "@type": "Question",
-        name: t("faq2Question", { name: dept.name }),
-        acceptedAnswer: { "@type": "Answer", text: faq2Answer },
-      },
-      ...(faq4Answer
-        ? [
-            {
-              "@type": "Question",
-              name: t("faq4Question", { name: dept.name }),
-              acceptedAnswer: { "@type": "Answer", text: faq4Answer },
-            },
-          ]
-        : []),
-      {
-        "@type": "Question",
-        name: t("faq3Question"),
-        acceptedAnswer: { "@type": "Answer", text: t("faq3Answer") },
-      },
-    ],
-  };
-
+  
   const mapHref = { pathname: "/", query: { lat: dept.lat, lon: dept.lon, zoom: 9 }, hash: "carte" };
 
   return (
@@ -170,10 +137,6 @@ export default async function DepartmentPage({
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(placeJsonLd) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
 
       <nav aria-label="Breadcrumb" className="mb-6 text-xs text-ink-400">
