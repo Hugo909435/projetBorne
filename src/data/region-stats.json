@@ -1,15 +1,15 @@
 {
   "andalucia": {
-    "total": 2866,
-    "fastCount": 938,
+    "total": 2870,
+    "fastCount": 940,
     "connectorBreakdown": [
       {
         "name": "Type 2 (Socket Only)",
-        "count": 1839
+        "count": 1841
       },
       {
         "name": "CCS (Type 2)",
-        "count": 959
+        "count": 961
       },
       {
         "name": "CHAdeMO",
@@ -68,9 +68,9 @@
     ],
     "powerBands": {
       "upTo7": 401,
-      "upTo22": 1498,
-      "upTo49": 17,
-      "upTo149": 746,
+      "upTo22": 1499,
+      "upTo49": 18,
+      "upTo149": 748,
       "from150": 203
     },
     "maxPowerKw": 400,
@@ -96,7 +96,7 @@
         "count": 168
       }
     ],
-    "operatorKnown": 2136
+    "operatorKnown": 2140
   },
   "aragon": {
     "total": 642,
@@ -198,8 +198,8 @@
     "operatorKnown": 468
   },
   "asturias": {
-    "total": 534,
-    "fastCount": 197,
+    "total": 535,
+    "fastCount": 198,
     "connectorBreakdown": [
       {
         "name": "Type 2 (Socket Only)",
@@ -207,7 +207,7 @@
       },
       {
         "name": "CCS (Type 2)",
-        "count": 200
+        "count": 201
       },
       {
         "name": "Type 2 (Tethered Connector)",
@@ -240,8 +240,8 @@
       },
       {
         "name": "Llanes",
-        "count": 17,
-        "fastCount": 7
+        "count": 18,
+        "fastCount": 8
       },
       {
         "name": "Siero",
@@ -269,7 +269,7 @@
       "upTo22": 184,
       "upTo49": 1,
       "upTo149": 160,
-      "from150": 37
+      "from150": 38
     },
     "maxPowerKw": 400,
     "operators": [
@@ -294,7 +294,7 @@
         "count": 22
       }
     ],
-    "operatorKnown": 441
+    "operatorKnown": 442
   },
   "islas-baleares": {
     "total": 956,
@@ -396,16 +396,16 @@
     "operatorKnown": 817
   },
   "canarias": {
-    "total": 863,
-    "fastCount": 243,
+    "total": 864,
+    "fastCount": 244,
     "connectorBreakdown": [
       {
         "name": "Type 2 (Socket Only)",
-        "count": 649
+        "count": 650
       },
       {
         "name": "CCS (Type 2)",
-        "count": 257
+        "count": 258
       },
       {
         "name": "CHAdeMO",
@@ -466,14 +466,14 @@
       "upTo7": 262,
       "upTo22": 345,
       "upTo49": 11,
-      "upTo149": 196,
+      "upTo149": 197,
       "from150": 49
     },
     "maxPowerKw": 350,
     "operators": [
       {
         "name": "Endesa",
-        "count": 107
+        "count": 108
       },
       {
         "name": "Iberdrola | BP Pulse",
@@ -492,7 +492,7 @@
         "count": 46
       }
     ],
-    "operatorKnown": 552
+    "operatorKnown": 553
   },
   "cantabria": {
     "total": 408,
@@ -594,20 +594,20 @@
     "operatorKnown": 312
   },
   "castilla-la-mancha": {
-    "total": 707,
-    "fastCount": 346,
+    "total": 708,
+    "fastCount": 347,
     "connectorBreakdown": [
       {
         "name": "Type 2 (Socket Only)",
-        "count": 355
+        "count": 356
       },
       {
         "name": "CCS (Type 2)",
-        "count": 353
+        "count": 354
       },
       {
         "name": "CHAdeMO",
-        "count": 186
+        "count": 185
       },
       {
         "name": "Type 2 (Tethered Connector)",
@@ -664,10 +664,10 @@
       "upTo7": 100,
       "upTo22": 254,
       "upTo49": 6,
-      "upTo149": 260,
-      "from150": 87
+      "upTo149": 262,
+      "from150": 86
     },
-    "maxPowerKw": 480,
+    "maxPowerKw": 400,
     "operators": [
       {
         "name": "Repsol - Ibil",
@@ -675,7 +675,7 @@
       },
       {
         "name": "Iberdrola | BP Pulse",
-        "count": 80
+        "count": 81
       },
       {
         "name": "Endesa",
@@ -690,7 +690,7 @@
         "count": 41
       }
     ],
-    "operatorKnown": 562
+    "operatorKnown": 563
   },
   "castilla-y-leon": {
     "total": 1243,
@@ -710,7 +710,7 @@
       },
       {
         "name": "CHAdeMO",
-        "count": 285
+        "count": 284
       },
       {
         "name": "CEE 7/4 - Schuko - Type F",
@@ -792,16 +792,16 @@
     "operatorKnown": 1007
   },
   "cataluna": {
-    "total": 3588,
-    "fastCount": 1210,
+    "total": 3595,
+    "fastCount": 1213,
     "connectorBreakdown": [
       {
         "name": "Type 2 (Socket Only)",
-        "count": 2428
+        "count": 2433
       },
       {
         "name": "CCS (Type 2)",
-        "count": 1262
+        "count": 1265
       },
       {
         "name": "CHAdeMO",
@@ -833,14 +833,14 @@
         "fastCount": 15
       },
       {
+        "name": "Vic",
+        "count": 41,
+        "fastCount": 10
+      },
+      {
         "name": "Manresa",
         "count": 40,
         "fastCount": 17
-      },
-      {
-        "name": "Vic",
-        "count": 40,
-        "fastCount": 9
       },
       {
         "name": "Reus",
@@ -859,17 +859,17 @@
       }
     ],
     "powerBands": {
-      "upTo7": 747,
-      "upTo22": 1557,
+      "upTo7": 749,
+      "upTo22": 1559,
       "upTo49": 64,
-      "upTo149": 986,
-      "from150": 229
+      "upTo149": 987,
+      "from150": 231
     },
     "maxPowerKw": 600,
     "operators": [
       {
         "name": "eTecnic",
-        "count": 520
+        "count": 523
       },
       {
         "name": "Endesa",
@@ -877,7 +877,7 @@
       },
       {
         "name": "Iberdrola | BP Pulse",
-        "count": 257
+        "count": 259
       },
       {
         "name": "Repsol - Ibil",
@@ -888,23 +888,23 @@
         "count": 202
       }
     ],
-    "operatorKnown": 2822
+    "operatorKnown": 2829
   },
   "comunidad-valenciana": {
-    "total": 2314,
-    "fastCount": 798,
+    "total": 2315,
+    "fastCount": 799,
     "connectorBreakdown": [
       {
         "name": "Type 2 (Socket Only)",
-        "count": 1534
+        "count": 1533
       },
       {
         "name": "CCS (Type 2)",
-        "count": 850
+        "count": 852
       },
       {
         "name": "CHAdeMO",
-        "count": 418
+        "count": 419
       },
       {
         "name": "Type 2 (Tethered Connector)",
@@ -912,7 +912,7 @@
       },
       {
         "name": "CEE 7/4 - Schuko - Type F",
-        "count": 159
+        "count": 158
       }
     ],
     "topTowns": [
@@ -958,17 +958,17 @@
       }
     ],
     "powerBands": {
-      "upTo7": 294,
-      "upTo22": 1173,
+      "upTo7": 293,
+      "upTo22": 1174,
       "upTo49": 46,
-      "upTo149": 659,
+      "upTo149": 660,
       "from150": 142
     },
     "maxPowerKw": 400,
     "operators": [
       {
         "name": "Iberdrola | BP Pulse",
-        "count": 595
+        "count": 596
       },
       {
         "name": "Mercadona",
@@ -987,7 +987,7 @@
         "count": 99
       }
     ],
-    "operatorKnown": 1886
+    "operatorKnown": 1887
   },
   "extremadura": {
     "total": 423,
@@ -1089,12 +1089,12 @@
     "operatorKnown": 343
   },
   "galicia": {
-    "total": 899,
+    "total": 901,
     "fastCount": 336,
     "connectorBreakdown": [
       {
         "name": "Type 2 (Socket Only)",
-        "count": 485
+        "count": 486
       },
       {
         "name": "CCS (Type 2)",
@@ -1106,7 +1106,7 @@
       },
       {
         "name": "CHAdeMO",
-        "count": 170
+        "count": 169
       },
       {
         "name": "CEE 7/4 - Schuko - Type F",
@@ -1125,14 +1125,14 @@
         "fastCount": 9
       },
       {
-        "name": "Oleiros",
-        "count": 18,
+        "name": "Sanxenxo",
+        "count": 19,
         "fastCount": 6
       },
       {
-        "name": "Sanxenxo",
+        "name": "Oleiros",
         "count": 18,
-        "fastCount": 7
+        "fastCount": 6
       },
       {
         "name": "Pontevedra",
@@ -1156,11 +1156,11 @@
       }
     ],
     "powerBands": {
-      "upTo7": 158,
+      "upTo7": 160,
       "upTo22": 386,
       "upTo49": 16,
-      "upTo149": 265,
-      "from150": 74
+      "upTo149": 264,
+      "from150": 75
     },
     "maxPowerKw": 600,
     "operators": [
@@ -1174,7 +1174,7 @@
       },
       {
         "name": "Endesa",
-        "count": 57
+        "count": 56
       },
       {
         "name": "Mercadona",
@@ -1188,16 +1188,16 @@
     "operatorKnown": 600
   },
   "madrid": {
-    "total": 2097,
-    "fastCount": 765,
+    "total": 2100,
+    "fastCount": 768,
     "connectorBreakdown": [
       {
         "name": "Type 2 (Socket Only)",
-        "count": 1431
+        "count": 1432
       },
       {
         "name": "CCS (Type 2)",
-        "count": 780
+        "count": 783
       },
       {
         "name": "CHAdeMO",
@@ -1258,7 +1258,7 @@
       "upTo7": 452,
       "upTo22": 860,
       "upTo49": 17,
-      "upTo149": 588,
+      "upTo149": 591,
       "from150": 178
     },
     "maxPowerKw": 600,
@@ -1284,7 +1284,7 @@
         "count": 136
       }
     ],
-    "operatorKnown": 1672
+    "operatorKnown": 1675
   },
   "murcia": {
     "total": 502,
@@ -1308,7 +1308,7 @@
       },
       {
         "name": "CEE 7/4 - Schuko - Type F",
-        "count": 48
+        "count": 49
       }
     ],
     "topTowns": [
@@ -1485,16 +1485,16 @@
     "operatorKnown": 338
   },
   "pais-vasco": {
-    "total": 809,
-    "fastCount": 307,
+    "total": 812,
+    "fastCount": 311,
     "connectorBreakdown": [
       {
         "name": "Type 2 (Socket Only)",
-        "count": 490
+        "count": 491
       },
       {
         "name": "CCS (Type 2)",
-        "count": 314
+        "count": 316
       },
       {
         "name": "Type 2 (Tethered Connector)",
@@ -1553,16 +1553,16 @@
     ],
     "powerBands": {
       "upTo7": 163,
-      "upTo22": 329,
-      "upTo49": 10,
-      "upTo149": 215,
-      "from150": 92
+      "upTo22": 330,
+      "upTo49": 8,
+      "upTo149": 217,
+      "from150": 94
     },
     "maxPowerKw": 400,
     "operators": [
       {
         "name": "Iberdrola | BP Pulse",
-        "count": 170
+        "count": 173
       },
       {
         "name": "Repsol - Ibil",
@@ -1581,7 +1581,7 @@
         "count": 29
       }
     ],
-    "operatorKnown": 671
+    "operatorKnown": 674
   },
   "la-rioja": {
     "total": 154,
@@ -1882,20 +1882,20 @@
     "operatorKnown": 12098
   },
   "south-east-england": {
-    "total": 2778,
-    "fastCount": 638,
+    "total": 2786,
+    "fastCount": 641,
     "connectorBreakdown": [
       {
         "name": "Type 2 (Socket Only)",
-        "count": 2111
+        "count": 2115
       },
       {
         "name": "CCS (Type 2)",
-        "count": 574
+        "count": 576
       },
       {
         "name": "CHAdeMO",
-        "count": 546
+        "count": 547
       },
       {
         "name": "Type 2 (Tethered Connector)",
@@ -1934,7 +1934,7 @@
       },
       {
         "name": "Southampton",
-        "count": 60,
+        "count": 61,
         "fastCount": 9
       },
       {
@@ -1949,17 +1949,17 @@
       }
     ],
     "powerBands": {
-      "upTo7": 1497,
+      "upTo7": 1501,
       "upTo22": 594,
       "upTo49": 14,
-      "upTo149": 509,
-      "from150": 131
+      "upTo149": 511,
+      "from150": 133
     },
     "maxPowerKw": 400,
     "operators": [
       {
         "name": "POD Point",
-        "count": 537
+        "count": 541
       },
       {
         "name": "BP Pulse",
@@ -1978,11 +1978,11 @@
         "count": 162
       }
     ],
-    "operatorKnown": 2681
+    "operatorKnown": 2689
   },
   "south-west-england": {
     "total": 1592,
-    "fastCount": 429,
+    "fastCount": 430,
     "connectorBreakdown": [
       {
         "name": "Type 2 (Socket Only)",
@@ -1990,7 +1990,7 @@
       },
       {
         "name": "CCS (Type 2)",
-        "count": 398
+        "count": 399
       },
       {
         "name": "CHAdeMO",
@@ -2019,7 +2019,7 @@
       {
         "name": "Exeter",
         "count": 68,
-        "fastCount": 12
+        "fastCount": 13
       },
       {
         "name": "Swindon",
@@ -2048,10 +2048,10 @@
       }
     ],
     "powerBands": {
-      "upTo7": 679,
+      "upTo7": 678,
       "upTo22": 438,
       "upTo49": 31,
-      "upTo149": 360,
+      "upTo149": 361,
       "from150": 70
     },
     "maxPowerKw": 360,
@@ -2080,12 +2080,12 @@
     "operatorKnown": 1511
   },
   "east-of-england": {
-    "total": 1392,
-    "fastCount": 354,
+    "total": 1391,
+    "fastCount": 353,
     "connectorBreakdown": [
       {
         "name": "Type 2 (Socket Only)",
-        "count": 1044
+        "count": 1042
       },
       {
         "name": "CCS (Type 2)",
@@ -2093,7 +2093,7 @@
       },
       {
         "name": "CHAdeMO",
-        "count": 289
+        "count": 288
       },
       {
         "name": "Type 2 (Tethered Connector)",
@@ -2147,17 +2147,17 @@
       }
     ],
     "powerBands": {
-      "upTo7": 782,
+      "upTo7": 781,
       "upTo22": 233,
       "upTo49": 6,
-      "upTo149": 249,
-      "from150": 110
+      "upTo149": 248,
+      "from150": 111
     },
     "maxPowerKw": 400,
     "operators": [
       {
         "name": "POD Point",
-        "count": 366
+        "count": 364
       },
       {
         "name": "BP Pulse",
@@ -2176,7 +2176,7 @@
         "count": 59
       }
     ],
-    "operatorKnown": 1309
+    "operatorKnown": 1308
   },
   "east-midlands": {
     "total": 1027,
@@ -2184,7 +2184,7 @@
     "connectorBreakdown": [
       {
         "name": "Type 2 (Socket Only)",
-        "count": 753
+        "count": 752
       },
       {
         "name": "CHAdeMO",
@@ -2196,7 +2196,7 @@
       },
       {
         "name": "Type 2 (Tethered Connector)",
-        "count": 135
+        "count": 136
       },
       {
         "name": "BS1363 3 Pin 13 Amp",
@@ -2246,8 +2246,8 @@
       }
     ],
     "powerBands": {
-      "upTo7": 481,
-      "upTo22": 209,
+      "upTo7": 480,
+      "upTo22": 210,
       "upTo49": 8,
       "upTo149": 277,
       "from150": 50
@@ -2279,7 +2279,7 @@
   },
   "west-midlands": {
     "total": 1511,
-    "fastCount": 371,
+    "fastCount": 370,
     "connectorBreakdown": [
       {
         "name": "Type 2 (Socket Only)",
@@ -2295,7 +2295,7 @@
       },
       {
         "name": "Type 2 (Tethered Connector)",
-        "count": 184
+        "count": 183
       },
       {
         "name": "BS1363 3 Pin 13 Amp",
@@ -2326,7 +2326,7 @@
       {
         "name": "Stafford",
         "count": 33,
-        "fastCount": 5
+        "fastCount": 4
       },
       {
         "name": "Hereford",
@@ -2348,8 +2348,8 @@
       "upTo7": 890,
       "upTo22": 188,
       "upTo49": 42,
-      "upTo149": 321,
-      "from150": 54
+      "upTo149": 320,
+      "from150": 55
     },
     "maxPowerKw": 360,
     "operators": [
@@ -2363,7 +2363,7 @@
       },
       {
         "name": "BP Pulse",
-        "count": 207
+        "count": 206
       },
       {
         "name": "Connected Kerb",
@@ -2377,8 +2377,8 @@
     "operatorKnown": 1414
   },
   "yorkshire-and-the-humber": {
-    "total": 1026,
-    "fastCount": 383,
+    "total": 1030,
+    "fastCount": 384,
     "connectorBreakdown": [
       {
         "name": "Type 2 (Socket Only)",
@@ -2386,15 +2386,15 @@
       },
       {
         "name": "CHAdeMO",
-        "count": 338
+        "count": 334
       },
       {
         "name": "CCS (Type 2)",
-        "count": 313
+        "count": 314
       },
       {
         "name": "Type 2 (Tethered Connector)",
-        "count": 129
+        "count": 128
       },
       {
         "name": "Tesla (Model S/X)",
@@ -2404,13 +2404,13 @@
     "topTowns": [
       {
         "name": "Leeds",
-        "count": 129,
-        "fastCount": 49
+        "count": 128,
+        "fastCount": 48
       },
       {
         "name": "Sheffield",
-        "count": 64,
-        "fastCount": 15
+        "count": 65,
+        "fastCount": 16
       },
       {
         "name": "Bradford",
@@ -2433,28 +2433,28 @@
         "fastCount": 9
       },
       {
+        "name": "Wakefield",
+        "count": 26,
+        "fastCount": 17
+      },
+      {
         "name": "Barnsley",
         "count": 26,
         "fastCount": 4
-      },
-      {
-        "name": "Wakefield",
-        "count": 24,
-        "fastCount": 15
       }
     ],
     "powerBands": {
-      "upTo7": 408,
+      "upTo7": 411,
       "upTo22": 222,
       "upTo49": 4,
-      "upTo149": 335,
-      "from150": 50
+      "upTo149": 332,
+      "from150": 54
     },
     "maxPowerKw": 400,
     "operators": [
       {
         "name": "POD Point",
-        "count": 241
+        "count": 240
       },
       {
         "name": "The GeniePoint Network ( EQUANS EV Solutions )",
@@ -2473,7 +2473,7 @@
         "count": 49
       }
     ],
-    "operatorKnown": 974
+    "operatorKnown": 977
   },
   "north-west-england": {
     "total": 1590,
@@ -2489,7 +2489,7 @@
       },
       {
         "name": "CCS (Type 2)",
-        "count": 300
+        "count": 301
       },
       {
         "name": "Type 2 (Tethered Connector)",
@@ -2508,8 +2508,8 @@
       },
       {
         "name": "Manchester",
-        "count": 135,
-        "fastCount": 31
+        "count": 136,
+        "fastCount": 32
       },
       {
         "name": "Preston",
@@ -2533,8 +2533,8 @@
       },
       {
         "name": "Stockport",
-        "count": 27,
-        "fastCount": 5
+        "count": 26,
+        "fastCount": 4
       },
       {
         "name": "Wigan",
@@ -2546,8 +2546,8 @@
       "upTo7": 953,
       "upTo22": 255,
       "upTo49": 5,
-      "upTo149": 306,
-      "from150": 62
+      "upTo149": 305,
+      "from150": 63
     },
     "maxPowerKw": 350,
     "operators": [
@@ -2674,24 +2674,24 @@
     "operatorKnown": 835
   },
   "scotland": {
-    "total": 1924,
-    "fastCount": 567,
+    "total": 1916,
+    "fastCount": 559,
     "connectorBreakdown": [
       {
         "name": "Type 2 (Socket Only)",
-        "count": 1462
+        "count": 1455
       },
       {
         "name": "CHAdeMO",
-        "count": 549
+        "count": 541
       },
       {
         "name": "CCS (Type 2)",
-        "count": 481
+        "count": 473
       },
       {
         "name": "Type 2 (Tethered Connector)",
-        "count": 414
+        "count": 413
       },
       {
         "name": "Tesla (Model S/X)",
@@ -2701,18 +2701,18 @@
     "topTowns": [
       {
         "name": "Glasgow",
-        "count": 186,
-        "fastCount": 40
+        "count": 183,
+        "fastCount": 37
       },
       {
         "name": "Edinburgh",
-        "count": 85,
-        "fastCount": 20
+        "count": 84,
+        "fastCount": 19
       },
       {
         "name": "Aberdeen",
-        "count": 80,
-        "fastCount": 24
+        "count": 78,
+        "fastCount": 22
       },
       {
         "name": "Dundee",
@@ -2744,7 +2744,7 @@
       "upTo7": 743,
       "upTo22": 590,
       "upTo49": 11,
-      "upTo149": 522,
+      "upTo149": 514,
       "from150": 47
     },
     "maxPowerKw": 360,
@@ -2755,7 +2755,7 @@
       },
       {
         "name": "POD Point",
-        "count": 195
+        "count": 187
       },
       {
         "name": "Tesla (Tesla-only charging)",
@@ -2770,7 +2770,7 @@
         "count": 32
       }
     ],
-    "operatorKnown": 1872
+    "operatorKnown": 1864
   },
   "wales": {
     "total": 907,
@@ -2872,12 +2872,12 @@
     "operatorKnown": 871
   },
   "northern-ireland": {
-    "total": 461,
+    "total": 476,
     "fastCount": 132,
     "connectorBreakdown": [
       {
         "name": "Type 2 (Socket Only)",
-        "count": 320
+        "count": 334
       },
       {
         "name": "CCS (Type 2)",
@@ -2899,7 +2899,7 @@
     "topTowns": [
       {
         "name": "Belfast",
-        "count": 69,
+        "count": 70,
         "fastCount": 23
       },
       {
@@ -2909,7 +2909,7 @@
       },
       {
         "name": "Newry",
-        "count": 15,
+        "count": 16,
         "fastCount": 4
       },
       {
@@ -2918,29 +2918,29 @@
         "fastCount": 5
       },
       {
+        "name": "Craigavon",
+        "count": 14,
+        "fastCount": 1
+      },
+      {
         "name": "Ballymena",
         "count": 13,
         "fastCount": 6
       },
       {
-        "name": "Craigavon",
+        "name": "Bangor",
         "count": 13,
-        "fastCount": 1
+        "fastCount": 8
       },
       {
         "name": "Newtownabbey",
         "count": 13,
         "fastCount": 4
-      },
-      {
-        "name": "Enniskillen",
-        "count": 12,
-        "fastCount": 1
       }
     ],
     "powerBands": {
-      "upTo7": 74,
-      "upTo22": 216,
+      "upTo7": 76,
+      "upTo22": 229,
       "upTo49": 20,
       "upTo149": 88,
       "from150": 45
@@ -2953,7 +2953,7 @@
       },
       {
         "name": "Weev",
-        "count": 93
+        "count": 113
       },
       {
         "name": "EZO",
@@ -2968,6 +2968,6 @@
         "count": 24
       }
     ],
-    "operatorKnown": 421
+    "operatorKnown": 436
   }
 }

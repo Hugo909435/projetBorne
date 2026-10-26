@@ -35,6 +35,20 @@ const DIRECTORY_LINK: Record<Locale, string> = {
   es: "Puntos de recarga por región: número, carga rápida y ciudades mejor equipadas",
 };
 
+const RELIABILITY_LINK: Record<Locale, string> = {
+  fr: "Baromètre national de la recharge : fiabilité et disponibilité des réseaux",
+  en: "National EV charging barometer: reliability and uptime by network",
+  de: "Nationales E-Ladebarometer: Zuverlässigkeit nach Netzwerk",
+  es: "Barómetro de recarga eléctrica: fiabilidad por red",
+};
+
+const CARS_LINK: Record<Locale, string> = {
+  fr: "Guide de recharge par modèle : puissance, temps et coût (Tesla, Renault, Peugeot...)",
+  en: "EV charging guide by model: power, times and costs (Tesla, Renault, Peugeot...)",
+  de: "Ladeleitfaden nach Modell: Leistung, Ladedauer und Kosten (Tesla, Renault, Peugeot...)",
+  es: "Guía de recarga por modelo: potencia, tiempos y costes (Tesla, Renault, Peugeot...)",
+};
+
 export async function generateStaticParams() {
   return blogPosts.map((post) => ({ slug: post.slug }));
 }
@@ -128,12 +142,7 @@ export default async function BlogPostPage({
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      {faqJsonLd && (
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
-        />
-      )}
+      
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
@@ -216,6 +225,40 @@ export default async function BlogPostPage({
             </ul>
           );
         }
+        if (block.type === "table") {
+          return (
+            <div key={index} className="mt-4 overflow-x-auto rounded-xl border border-line">
+              <table className="w-full min-w-[36rem] text-left text-sm text-ink-600">
+                <thead className="bg-card text-ink-900">
+                  <tr>
+                    {block.headers.map((header, headerIndex) => (
+                      <th key={headerIndex} scope="col" className="px-4 py-3 font-semibold">
+                        {header}
+                      </th>
+                    ))}
+                  </tr>
+                </thead>
+                <tbody>
+                  {block.rows.map((row, rowIndex) => (
+                    <tr key={rowIndex} className="border-t border-line">
+                      {row.map((cell, cellIndex) =>
+                        cellIndex === 0 ? (
+                          <th key={cellIndex} scope="row" className="px-4 py-3 font-semibold text-ink-900">
+                            {cell}
+                          </th>
+                        ) : (
+                          <td key={cellIndex} className="px-4 py-3">
+                            {cell}
+                          </td>
+                        ),
+                      )}
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          );
+        }
         return (
           <p key={index} className="mt-3 leading-relaxed text-ink-600">
             {block.text}
@@ -257,6 +300,16 @@ export default async function BlogPostPage({
           <li>
             <Link href="/bornes-recharge" className="font-semibold text-green-700 underline">
               {DIRECTORY_LINK[locale as Locale]}
+            </Link>
+          </li>
+          <li>
+            <Link href="/recharge" className="font-semibold text-green-700 underline">
+              {CARS_LINK[locale as Locale]}
+            </Link>
+          </li>
+          <li>
+            <Link href="/fiabilite-bornes" className="font-semibold text-green-700 underline">
+              {RELIABILITY_LINK[locale as Locale]}
             </Link>
           </li>
         </ul>

@@ -182,10 +182,7 @@ export async function OcmRegionPage({
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(placeJsonLd) }}
       />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
-      />
+      
 
       <nav aria-label="Breadcrumb" className="mb-6 text-xs text-ink-400">
         <Link href="/" className="hover:text-green-700">

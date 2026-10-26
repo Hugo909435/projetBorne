@@ -42,7 +42,14 @@
     "rights": "© {year} ma-borne-electrique.com. Todos los derechos reservados.",
     "attribution": "Datos de puntos de recarga: <irve>Base nacional IRVE de Francia</irve> (Francia), <bnetza>Bundesnetzagentur</bnetza> (Alemania) y <ocm>Open Charge Map</ocm> (otros países) · Datos del mapa <osm>© colaboradores de OpenStreetMap</osm>",
     "networksLink": "Las redes de recarga",
-    "reliabilityLink": "Barómetro de fiabilidad"
+    "reliabilityLink": "Barómetro de fiabilidad",
+    "departmentsHeading": "Puntos por región",
+    "allDepartmentsLink": "Todos los departamentos",
+    "modelsHeading": "Recarga por modelo",
+    "allModelsLink": "Todos los modelos",
+    "networksHeading": "Redes y Fiabilidad",
+    "allNetworksLink": "Todas las redes",
+    "guidesHeading": "Guías e Información"
   },
   "CookieConsent": {
     "title": "Preferencias de cookies",
@@ -469,7 +476,11 @@
     "germanyShort": "Alemania",
     "spainShort": "España",
     "ukHeading": "Reino Unido (regiones)",
-    "ukShort": "Reino Unido"
+    "ukShort": "Reino Unido",
+    "topFranceHeading": "Departamentos mejor equipados en Francia",
+    "pointsLabel": "puntos",
+    "stationsLabel": "estaciones",
+    "allFranceHeading": "Todos los departamentos franceses (A-Z)"
   },
   "DepartmentPage": {
     "eyebrow": "Localización por departamento",

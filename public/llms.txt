@@ -30,7 +30,7 @@ Station data comes from official open registers where they are the most complete
 - [Recharge gratuite en France : une carte qui se réduit en 2026](https://ma-borne-electrique.com/fr/blog/recharge-gratuite-carte-2026)
 - [Électricité : ce que la hausse du tarif réglementé change pour la recharge à domicile](https://ma-borne-electrique.com/fr/blog/tarif-electricite-aout-2026-recharge)
 - [Carrefour baisse de 30 % le prix de la recharge sur ses bornes 22 kW](https://ma-borne-electrique.com/fr/blog/carrefour-prix-recharge-bornes)
-- [Autonomie en hiver : les bons réflexes à adopter avant l'arrivée du froid](https://ma-borne-electrique.com/fr/blog/autonomie-hiver-voiture-electrique)
+- [Autonomie d'une voiture électrique en hiver : combien perd-on vraiment ?](https://ma-borne-electrique.com/fr/blog/autonomie-hiver-voiture-electrique)
 - [Bornes rapides sur autoroute : comment éviter la file d'attente cet été 2026](https://ma-borne-electrique.com/fr/blog/bornes-rapides-autoroute-ete-2026)
 - [Road trip en France : bien recharger sa voiture électrique sans mauvaise surprise](https://ma-borne-electrique.com/fr/blog/road-trip-france-recharge-voiture-electrique)
 - [Batterie de voiture électrique : les bons réflexes pour la faire durer](https://ma-borne-electrique.com/fr/blog/prolonger-duree-vie-batterie-voiture-electrique)
@@ -67,6 +67,7 @@ Station data comes from official open registers where they are the most complete
 - [Étiquette de la recharge publique : les règles non-écrites que tout conducteur devrait connaître](https://ma-borne-electrique.com/fr/blog/etiquette-recharge-publique-voiture-electrique)
 - [Anxiété de l'autonomie : comment la surmonter et rouler sans stress](https://ma-borne-electrique.com/fr/blog/anxiete-autonomie-voiture-electrique)
 - [Recharge AC ou DC : quelle différence, et laquelle vous faut-il ?](https://ma-borne-electrique.com/fr/blog/recharge-ac-dc-voiture-electrique)
+- [Carte de recharge pour voiture électrique : laquelle choisir pour rouler en Europe en 2026 ?](https://ma-borne-electrique.com/fr/blog/ev-charging-cards-europe)
 
 ## Charging by car model
 

@@ -42,7 +42,14 @@
     "rights": "© {year} ma-borne-electrique.com. All rights reserved.",
     "attribution": "Station data: <irve>French national IRVE database</irve> (France), <bnetza>Bundesnetzagentur</bnetza> (Germany) and <ocm>Open Charge Map</ocm> (other countries) · Map data <osm>© OpenStreetMap contributors</osm>",
     "networksLink": "Charging networks",
-    "reliabilityLink": "Reliability barometer"
+    "reliabilityLink": "Reliability barometer",
+    "departmentsHeading": "Charging by region",
+    "allDepartmentsLink": "All departments",
+    "modelsHeading": "Charging by model",
+    "allModelsLink": "All models",
+    "networksHeading": "Networks & Reliability",
+    "allNetworksLink": "All networks",
+    "guidesHeading": "Guides & Info"
   },
   "CookieConsent": {
     "title": "Cookie preferences",
@@ -469,7 +476,11 @@
     "germanyShort": "Germany",
     "spainShort": "Spain",
     "ukHeading": "United Kingdom (regions)",
-    "ukShort": "United Kingdom"
+    "ukShort": "United Kingdom",
+    "topFranceHeading": "Best-equipped departments in France",
+    "pointsLabel": "points",
+    "stationsLabel": "stations",
+    "allFranceHeading": "All French departments (A-Z)"
   },
   "DepartmentPage": {
     "eyebrow": "Location by department",

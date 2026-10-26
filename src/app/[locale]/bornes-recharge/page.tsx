@@ -4,6 +4,21 @@ import { Link } from "@/i18n/navigation";
 import { site, languageAlternates } from "@/lib/site";
 import { departments } from "@/lib/departments";
 import { germanStates, spanishRegions, ukRegions } from "@/lib/regions";
+import departmentStatsData from "@/data/department-stats.json";
+import type { DepartmentStats } from "@/lib/departmentStats";
+
+const departmentStats = departmentStatsData as Record<string, DepartmentStats>;
+
+const topFrenchDeptSlugs = [
+  "nord",
+  "paris",
+  "gironde",
+  "bouches-du-rhone",
+  "rhone",
+  "seine-et-marne",
+  "alpes-maritimes",
+  "yvelines",
+];
 
 export async function generateMetadata({
   params,
@@ -35,6 +50,10 @@ export default async function DepartmentsIndexPage({
   const sortedGermanStates = [...germanStates].sort((a, b) => a.name.localeCompare(b.name, "de"));
   const sortedSpanishRegions = [...spanishRegions].sort((a, b) => a.name.localeCompare(b.name, "es"));
   const sortedUkRegions = [...ukRegions].sort((a, b) => a.name.localeCompare(b.name, "en"));
+
+  const topFrenchDepts = topFrenchDeptSlugs
+    .map((slug) => departments.find((d) => d.slug === slug))
+    .filter((d): d is NonNullable<typeof d> => d !== undefined);
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -111,7 +130,44 @@ export default async function DepartmentsIndexPage({
       <h2 id="france" className="mt-12 scroll-mt-24 font-display text-xl font-semibold text-ink-900">
         {t("franceHeading")}
       </h2>
-      <ul className="mt-4 grid grid-cols-2 gap-x-6 gap-y-2 sm:grid-cols-3 lg:grid-cols-4">
+
+      {/* Top equipped departments cards */}
+      <div className="mt-4">
+        <p className="text-xs font-semibold uppercase tracking-wide text-ink-400">
+          {t("topFranceHeading")}
+        </p>
+        <div className="mt-3 grid grid-cols-2 gap-3 sm:grid-cols-4">
+          {topFrenchDepts.map((dept) => {
+            const st = departmentStats[dept.slug];
+            return (
+              <Link
+                key={dept.slug}
+                href={`/bornes-recharge/${dept.slug}`}
+                className="group rounded-2xl border border-line bg-card p-4 transition hover:border-green-600 hover:shadow-md"
+              >
+                <div className="flex items-center justify-between">
+                  <span className="font-semibold text-ink-900 group-hover:text-green-700">
+                    {dept.name}
+                  </span>
+                  <span className="rounded-full bg-forest-950/5 px-2 py-0.5 text-xs font-medium text-ink-500">
+                    {dept.code}
+                  </span>
+                </div>
+                {st && (
+                  <p className="mt-2 text-xs text-ink-500">
+                    <strong className="text-green-700">{st.points.toLocaleString(locale)}</strong> {t("pointsLabel")} · {st.stations.toLocaleString(locale)} {t("stationsLabel")}
+                  </p>
+                )}
+              </Link>
+            );
+          })}
+        </div>
+      </div>
+
+      <h3 className="mt-8 text-sm font-semibold uppercase tracking-wide text-ink-400">
+        {t("allFranceHeading")}
+      </h3>
+      <ul className="mt-3 grid grid-cols-2 gap-x-6 gap-y-2 sm:grid-cols-3 lg:grid-cols-4">
         {sortedDepartments.map((dept) => (
           <li key={dept.slug}>
             <Link

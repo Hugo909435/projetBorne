@@ -4,7 +4,8 @@ export type BlogBlock =
   | { type: "p"; text: string }
   | { type: "h2"; text: string }
   | { type: "h3"; text: string }
-  | { type: "ul"; items: string[] };
+  | { type: "ul"; items: string[] }
+  | { type: "table"; headers: string[]; rows: string[][] };
 
 export type BlogImageCredit = {
   name: string;
@@ -1565,7 +1566,7 @@ export const blogPosts: BlogPost[] = [
     slug: "comparatif-abonnements-recharge",
     publishedAt: "2026-08-08",
     updatedAt: "2026-09-21",
-    related: ["cout-recharge-voiture-electrique", "carrefour-prix-recharge-bornes", "electric-car-in-france-charging-guide"],
+    related: ["cout-recharge-voiture-electrique", "carrefour-prix-recharge-bornes", "electric-car-in-france-charging-guide", "ev-charging-cards-europe"],
     image: {
       src: "/blog/comparatif-abonnements-recharge.jpg",
       alt: {
@@ -1674,9 +1675,9 @@ export const blogPosts: BlogPost[] = [
         title: "Lade-Abonnements im Vergleich: Was Laden in Frankreich 2026 wirklich kostet",
         excerpt:
           "Laden zu Hause, öffentliche 22-kW-Stationen oder Schnellladen auf der Autobahn: die Preisunterschiede sind erheblich, so finden Sie den passenden Tarif.",
-        metaTitle: "Ladekarte für Frankreich: Tarife im Vergleich 2026",
+        metaTitle: "Lade-Abos in Frankreich: Tarife im Vergleich 2026",
         metaDescription:
-          "Welche Ladekarte oder welches Abo passt? Kosten beim Laden zu Hause, an 22-kW-Stationen und an Autobahn-Schnellladern in Frankreich 2026 im Vergleich.",
+          "Welches Lade-Abo passt? Kosten beim Laden zu Hause, an 22-kW-Stationen und an Autobahn-Schnellladern in Frankreich 2026 im Vergleich.",
         body: [
           {
             type: "p",
@@ -2491,6 +2492,8 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "autonomie-hiver-voiture-electrique",
     publishedAt: "2026-08-21",
+    updatedAt: "2026-10-06",
+    related: ["anxiete-autonomie-voiture-electrique", "prolonger-duree-vie-batterie-voiture-electrique", "temps-de-recharge-voiture-electrique"],
     image: {
       src: "/blog/autonomie-hiver-voiture-electrique.jpg",
       alt: {
@@ -2504,28 +2507,42 @@ export const blogPosts: BlogPost[] = [
     content: {
       fr: {
         eyebrow: "Conseils pratiques",
-        title: "Autonomie en hiver : les bons réflexes à adopter avant l'arrivée du froid",
+        title: "Autonomie d'une voiture électrique en hiver : combien perd-on vraiment ?",
         excerpt:
-          "Le froid réduit l'autonomie d'une voiture électrique : voici pourquoi, et comment limiter la perte avant que l'hiver n'arrive.",
-        metaTitle: "Autonomie d'une voiture électrique en hiver : conseils pratiques",
+          "Autour d'un tiers d'autonomie en moins sur autoroute à 0 °C, près de 40 % par grand froid : les tests de l'hiver 2026 donnent des chiffres précis, et des moyens de limiter la perte.",
+        metaTitle: "Autonomie voiture électrique en hiver : la perte réelle",
         metaDescription:
-          "Chimie de la batterie, chauffage, pneus : pourquoi l'autonomie chute en hiver et comment limiter la perte. Les bons réflexes à adopter avant le froid.",
+          "Combien d'autonomie perd une voiture électrique en hiver ? Les chiffres des tests ADAC et NAF de 2026, les causes, et les réflexes pour limiter la perte.",
         body: [
           {
             type: "p",
-            text: "L'été touche à sa fin, et c'est le bon moment pour anticiper l'hiver : la baisse des températures a un effet bien réel sur l'autonomie d'une voiture électrique. Autant s'y préparer avant que le froid ne s'installe.",
+            text: "Une voiture électrique perd de l'autonomie quand il fait froid, et les tests menés pendant l'hiver 2026 permettent de chiffrer cette perte. Sur autoroute à 0 °C, comptez environ un tiers d'autonomie en moins par rapport à la valeur WLTP. Par grand froid, la perte moyenne approche 40 %. Par un hiver doux, elle reste plutôt autour de 20 %.",
+          },
+          { type: "h2", text: "Combien d'autonomie perd une voiture électrique en hiver ?" },
+          {
+            type: "p",
+            text: "Le test El Prix du club automobile norvégien NAF, mené en janvier 2026 à Folldal avec 24 modèles récents et des températures descendues jusqu'à -32 °C, a mesuré une autonomie inférieure de 38 % en moyenne à la valeur WLTP. Les écarts entre modèles sont nets : de 29 % pour les deux modèles les mieux classés, dont la Hyundai Inster, à 46 % pour la Lucid Air. Lors de l'édition 2025, disputée par des températures nettement plus douces, l'écart moyen était de 19,4 % selon le NAF.",
+          },
+          {
+            type: "p",
+            text: "L'ADAC, le club automobile allemand, a testé pendant l'hiver 2026 quatorze modèles familiaux d'au moins 500 km d'autonomie WLTP sur le trajet autoroutier Munich-Berlin, reproduit sur banc d'essai à 0 °C en moyenne. La consommation dépassait la valeur WLTP de 57 % en moyenne. D'après notre calcul, une consommation supérieure de 57 % revient à environ 36 % d'autonomie en moins. La vitesse compte autant que le froid : ce test se déroule sur autoroute, là où la consommation est déjà la plus élevée.",
           },
           { type: "h2", text: "Pourquoi le froid réduit l'autonomie" },
           {
             type: "p",
             text: "Plusieurs effets se cumulent en hiver : la chimie de la batterie est moins efficace à basse température, le chauffage de l'habitacle consomme une part importante d'énergie puisqu'une voiture électrique ne dispose pas de la chaleur perdue d'un moteur thermique à récupérer, la résistance au roulement des pneus augmente par temps froid, et le préconditionnement de la batterie consomme lui aussi de l'énergie.",
           },
-          { type: "h2", text: "Une perte qui peut être significative" },
+          { type: "h2", text: "La recharge est-elle plus lente par temps froid ?" },
           {
             type: "p",
-            text: "La baisse d'autonomie est généralement bien perceptible, et peut atteindre, par grand froid, environ un tiers d'autonomie en moins par rapport aux conditions habituelles, selon ce que rapportent couramment les conducteurs.",
+            text: "Oui, si la batterie est froide en arrivant à la borne : la voiture limite alors la puissance pour la protéger. Le préconditionnement règle l'essentiel du problème. Lors du test de recharge du NAF, avec un préconditionnement lancé deux heures avant, 14 des 24 modèles ont rechargé de 10 à 80 % en un temps proche de celui annoncé, et six ont fait mieux que le temps annoncé.",
           },
-          { type: "h3", text: "Les bons réflexes à adopter" },
+          { type: "h2", text: "Long trajet en hiver : ce qui change" },
+          {
+            type: "p",
+            text: "Sur un long trajet, la perte se traduit par un arrêt de plus. Dans le test de l'ADAC, sur un trajet simulé de 582 km entre Munich et Berlin, seuls deux des quatorze modèles ont pu se contenter d'un seul arrêt de recharge de vingt minutes. Planifiez avec l'autonomie d'hiver et non la valeur WLTP, et gardez une marge plus large à l'arrivée que le reste de l'année.",
+          },
+          { type: "h3", text: "Les bons réflexes pour limiter la perte" },
           {
             type: "ul",
             items: [
@@ -2533,87 +2550,117 @@ export const blogPosts: BlogPost[] = [
               "Privilégier les sièges et le volant chauffants plutôt que de pousser le chauffage de l'habitacle au maximum.",
               "Modérer la vitesse sur autoroute, la résistance de l'air pesant lourd dans la consommation à haute vitesse.",
               "Vérifier régulièrement la pression des pneus, qui baisse naturellement avec le froid.",
-              "Prévoir des arrêts de recharge plus fréquents en hiver.",
-              "Activer le mode éco ou autonomie du véhicule lorsque les conditions l'exigent.",
+              "Préconditionner la batterie avant chaque recharge rapide.",
+              "Prévoir des arrêts de recharge plus fréquents et une borne de secours par étape.",
             ],
           },
         ],
         faq: [
+          { question: "Combien d'autonomie perd une voiture électrique en hiver ?", answer: "Environ un tiers sur autoroute à 0 °C d'après le test de l'ADAC de l'hiver 2026, et 38 % en moyenne par grand froid (jusqu'à -32 °C) d'après le test El Prix du NAF. Par un hiver doux, la perte se situe plutôt autour de 20 %." },
           { question: "Pourquoi une voiture électrique perd-elle en autonomie l'hiver ?", answer: "Le froid combine plusieurs effets : une chimie de batterie moins efficace, une consommation accrue pour le chauffage de l'habitacle, une résistance au roulement des pneus plus élevée et l'énergie utilisée pour le préconditionnement de la batterie." },
-          { question: "Quelle perte d'autonomie peut-on observer par grand froid ?", answer: "Selon ce que rapportent couramment les conducteurs, la perte peut atteindre environ un tiers d'autonomie en moins par rapport aux conditions habituelles." },
+          { question: "Toutes les voitures électriques perdent-elles autant en hiver ?", answer: "Non. Dans le test du NAF de janvier 2026, la perte allait de 29 % pour les deux modèles les mieux classés à 46 % pour le moins bien classé." },
+          { question: "La recharge rapide est-elle plus lente en hiver ?", answer: "Oui si la batterie est froide. Avec un préconditionnement avant l'arrêt, 14 des 24 modèles testés par le NAF en janvier 2026 ont rechargé de 10 à 80 % en un temps proche de celui annoncé." },
           { question: "Comment limiter la perte d'autonomie en hiver ?", answer: "Préconditionner la batterie et l'habitacle pendant que la voiture est encore branchée, privilégier les sièges chauffants plutôt que le chauffage de l'habitacle, et modérer la vitesse sur autoroute permettent de limiter la perte." },
-          { question: "Faut-il prévoir plus d'arrêts de recharge en hiver ?", answer: "Oui, il est recommandé de prévoir des arrêts de recharge plus fréquents en hiver et de vérifier régulièrement la pression des pneus, qui baisse avec le froid." },
         ],
         ...cta.fr,
       },
       en: {
         eyebrow: "Practical Tips",
-        title: "Winter EV Range: Getting Ready Before the Cold Sets In",
+        title: "EV Range in Cold Weather: How Much Do You Really Lose in Winter?",
         excerpt:
-          "Cold weather reduces an electric car's range, here's why, and how to limit the loss before winter actually arrives.",
-        metaTitle: "Electric Car Range in Winter: Practical Tips",
+          "Around a third less range on the motorway at 0°C, close to 40% in severe cold: the winter 2026 tests give precise figures, and ways to limit the loss.",
+        metaTitle: "EV Range in Cold Weather: The Real Winter Loss",
         metaDescription:
-          "Battery chemistry, heating, tires: why EV range drops in winter and how to limit the loss. The right habits to adopt before the cold arrives.",
+          "How much range does an electric car lose in winter? Figures from the 2026 ADAC and NAF tests, the causes, and the habits that limit the loss.",
         body: [
           {
             type: "p",
-            text: "Summer is winding down, and it's a good time to get ahead of winter: colder temperatures have a very real effect on an electric car's range. Better to prepare before the cold actually settles in.",
+            text: "An electric car loses range in cold weather, and the tests run during winter 2026 put numbers on that loss. On the motorway at 0°C, expect about a third less range than the WLTP figure. In severe cold, the average loss approaches 40%. In a mild winter, it stays closer to 20%.",
+          },
+          { type: "h2", text: "How much range does an electric car lose in winter?" },
+          {
+            type: "p",
+            text: "The El Prix test run by NAF, the Norwegian automobile club, in January 2026 in Folldal, with 24 recent models and temperatures as low as -32°C, measured range that was 38% below the WLTP figure on average. The gaps between models are clear: from 29% for the two best-placed models, including the Hyundai Inster, to 46% for the Lucid Air. In the 2025 edition, held in much milder temperatures, the average gap was 19.4% according to NAF.",
+          },
+          {
+            type: "p",
+            text: "ADAC, the German automobile club, tested fourteen family models with at least 500km of WLTP range during winter 2026 on the Munich to Berlin motorway route, reproduced on a test bench at an average of 0°C. Consumption exceeded the WLTP figure by 57% on average. By our calculation, consumption that is 57% higher means about 36% less range. Speed matters as much as cold: this test takes place on the motorway, where consumption is already at its highest.",
           },
           { type: "h2", text: "Why cold weather cuts into range" },
           {
             type: "p",
             text: "Several effects add up in winter: battery chemistry becomes less efficient at low temperatures, cabin heating draws a significant amount of power since an electric car has no waste engine heat to reuse, tire rolling resistance increases in cold conditions, and battery preconditioning also uses energy.",
           },
-          { type: "h2", text: "A loss that can be substantial" },
+          { type: "h2", text: "Is charging slower in cold weather?" },
           {
             type: "p",
-            text: "The drop in range is usually quite noticeable, and can reach, in the coldest conditions, roughly a third less range than usual, based on what drivers commonly report.",
+            text: "Yes, if the battery is cold when you reach the charger: the car then limits power to protect it. Preconditioning solves most of the problem. In NAF's charging test, with preconditioning started two hours beforehand, 14 of the 24 models charged from 10 to 80% in close to their stated time, and six beat the stated time.",
           },
-          { type: "h3", text: "Habits worth adopting" },
+          { type: "h2", text: "Long winter trips: what changes" },
+          {
+            type: "p",
+            text: "On a long trip, the loss shows up as one more stop. In the ADAC test, on a simulated 582km route from Munich to Berlin, only two of the fourteen models managed with a single twenty-minute charging stop. Plan with the winter range rather than the WLTP figure, and keep a wider margin on arrival than during the rest of the year.",
+          },
+          { type: "h3", text: "Habits that limit the loss" },
           {
             type: "ul",
             items: [
               "Precondition the battery and cabin while the car is still plugged in, before you leave.",
               "Prefer heated seats and steering wheel over cranking up the cabin heater.",
-              "Moderate your highway speed, since air resistance weighs heavily on consumption at high speed.",
+              "Moderate your motorway speed, since air resistance weighs heavily on consumption at high speed.",
               "Check tire pressure regularly, since it naturally drops in cold weather.",
-              "Plan for more frequent charging stops in winter.",
-              "Switch on the car's eco or range mode when conditions call for it.",
+              "Precondition the battery before every rapid charge.",
+              "Plan more frequent charging stops and a backup charger for each leg.",
             ],
           },
         ],
         faq: [
+          { question: "How much range does an electric car lose in winter?", answer: "About a third on the motorway at 0°C according to the ADAC test of winter 2026, and 38% on average in severe cold (down to -32°C) according to NAF's El Prix test. In a mild winter, the loss is closer to 20%." },
           { question: "Why does an electric car lose range in winter?", answer: "Cold weather combines several effects: less efficient battery chemistry, more power used for cabin heating, higher tire rolling resistance, and energy spent on battery preconditioning." },
-          { question: "How much range can be lost in very cold weather?", answer: "Based on what drivers commonly report, the loss can reach roughly a third less range than usual." },
-          { question: "How can I limit range loss in winter?", answer: "Preconditioning the battery and cabin while still plugged in, preferring heated seats over cabin heating, and moderating highway speed all help limit the loss." },
-          { question: "Should I plan more charging stops in winter?", answer: "Yes, it's worth planning more frequent charging stops in winter and checking tire pressure regularly, since it drops in cold weather." },
+          { question: "Do all electric cars lose the same amount of range in winter?", answer: "No. In the NAF test of January 2026, the loss ranged from 29% for the two best-placed models to 46% for the lowest-placed one." },
+          { question: "Is rapid charging slower in winter?", answer: "Yes if the battery is cold. With preconditioning before the stop, 14 of the 24 models tested by NAF in January 2026 charged from 10 to 80% in close to their stated time." },
+          { question: "How can I limit range loss in winter?", answer: "Preconditioning the battery and cabin while still plugged in, preferring heated seats over cabin heating, and moderating motorway speed all help limit the loss." },
         ],
         ...cta.en,
       },
       de: {
         eyebrow: "Praktische Tipps",
-        title: "Reichweite im Winter: So bereiten Sie sich vor der Kälte vor",
+        title: "E-Auto-Reichweite im Winter: Wie viel geht wirklich verloren?",
         excerpt:
-          "Kälte verringert die Reichweite eines Elektroautos, hier erfahren Sie, warum, und wie Sie den Verlust vor dem Winter begrenzen.",
-        metaTitle: "Reichweite eines Elektroautos im Winter: praktische Tipps",
+          "Rund ein Drittel weniger Reichweite auf der Autobahn bei 0 °C, knapp 40 Prozent bei strenger Kälte: Die Tests aus dem Winter 2026 liefern genaue Zahlen und Wege, den Verlust zu begrenzen.",
+        metaTitle: "E-Auto Reichweite im Winter: So viel geht verloren",
         metaDescription:
-          "Batteriechemie, Heizung, Reifen: Warum die Reichweite im Winter sinkt und wie Sie den Verlust begrenzen. Die richtigen Gewohnheiten vor der Kälte.",
+          "Wie viel Reichweite verliert ein Elektroauto im Winter? Die Zahlen aus den Tests von ADAC und NAF 2026, die Ursachen und Tipps gegen den Verlust.",
         body: [
           {
             type: "p",
-            text: "Der Sommer neigt sich dem Ende zu, ein guter Zeitpunkt, um sich auf den Winter vorzubereiten: sinkende Temperaturen wirken sich spürbar auf die Reichweite eines Elektroautos aus. Am besten bereitet man sich vor, bevor die Kälte tatsächlich einsetzt.",
+            text: "Ein Elektroauto verliert bei Kälte an Reichweite, und die Tests aus dem Winter 2026 beziffern diesen Verlust. Auf der Autobahn bei 0 °C ist mit etwa einem Drittel weniger Reichweite als nach WLTP zu rechnen. Bei strenger Kälte liegt der durchschnittliche Verlust bei knapp 40 Prozent. In einem milden Winter bleibt er eher bei rund 20 Prozent.",
+          },
+          { type: "h2", text: "Wie viel Reichweite verliert ein E-Auto im Winter?" },
+          {
+            type: "p",
+            text: "Der El-Prix-Test des norwegischen Automobilclubs NAF, im Januar 2026 in Folldal mit 24 aktuellen Modellen und Temperaturen bis -32 °C durchgeführt, ergab eine Reichweite, die im Schnitt 38 Prozent unter dem WLTP-Wert lag. Die Unterschiede zwischen den Modellen sind deutlich: von 29 Prozent bei den beiden besten Modellen, darunter der Hyundai Inster, bis 46 Prozent beim Lucid Air. Bei der Ausgabe 2025, die bei deutlich milderen Temperaturen stattfand, lag die durchschnittliche Abweichung laut NAF bei 19,4 Prozent.",
+          },
+          {
+            type: "p",
+            text: "Der ADAC testete im Winter 2026 vierzehn familientaugliche Modelle mit mindestens 500 km WLTP-Reichweite auf der Autobahnstrecke München-Berlin, nachgestellt auf dem Prüfstand bei durchschnittlich 0 °C. Der Verbrauch lag im Schnitt 57 Prozent über dem WLTP-Wert. Nach unserer Rechnung entspricht ein um 57 Prozent höherer Verbrauch etwa 36 Prozent weniger Reichweite. Das Tempo zählt ebenso wie die Kälte: Der Test findet auf der Autobahn statt, wo der Verbrauch ohnehin am höchsten ist.",
           },
           { type: "h2", text: "Warum Kälte die Reichweite verringert" },
           {
             type: "p",
             text: "Im Winter summieren sich mehrere Effekte: Die Batteriechemie arbeitet bei niedrigen Temperaturen weniger effizient, die Heizung des Innenraums verbraucht einen erheblichen Teil der Energie, da einem Elektroauto die Abwärme eines Verbrennungsmotors fehlt, der Rollwiderstand der Reifen steigt bei Kälte, und auch die Vorkonditionierung der Batterie kostet Energie.",
           },
-          { type: "h2", text: "Ein Verlust, der erheblich ausfallen kann" },
+          { type: "h2", text: "Lädt ein E-Auto bei Kälte langsamer?" },
           {
             type: "p",
-            text: "Der Reichweitenverlust ist meist deutlich spürbar und kann bei starker Kälte, nach häufigen Erfahrungsberichten von Fahrern, etwa ein Drittel weniger Reichweite als gewohnt bedeuten.",
+            text: "Ja, wenn die Batterie bei der Ankunft an der Ladesäule kalt ist: Das Auto begrenzt dann die Ladeleistung, um sie zu schützen. Die Vorkonditionierung löst den größten Teil des Problems. Im Ladetest des NAF, bei dem die Vorkonditionierung zwei Stunden vorher gestartet wurde, luden 14 der 24 Modelle in annähernd der angegebenen Zeit von 10 auf 80 Prozent, und sechs waren schneller als angegeben.",
           },
-          { type: "h3", text: "Diese Gewohnheiten lohnen sich" },
+          { type: "h2", text: "Langstrecke im Winter: Was sich ändert" },
+          {
+            type: "p",
+            text: "Auf der Langstrecke bedeutet der Verlust einen Ladestopp mehr. Im ADAC-Test schafften auf einer simulierten Strecke von 582 km zwischen München und Berlin nur zwei der vierzehn Modelle die Fahrt mit einem einzigen Ladestopp von zwanzig Minuten. Planen Sie mit der Winterreichweite statt mit dem WLTP-Wert und halten Sie bei der Ankunft eine größere Reserve als im restlichen Jahr.",
+          },
+          { type: "h3", text: "Diese Gewohnheiten begrenzen den Verlust" },
           {
             type: "ul",
             items: [
@@ -2621,43 +2668,58 @@ export const blogPosts: BlogPost[] = [
               "Sitz- und Lenkradheizung bevorzugen, statt die Innenraumheizung voll aufzudrehen.",
               "Die Geschwindigkeit auf der Autobahn moderat halten, da der Luftwiderstand bei hohem Tempo stark ins Gewicht fällt.",
               "Regelmäßig den Reifendruck prüfen, der bei Kälte natürlicherweise sinkt.",
-              "Im Winter häufigere Ladestopps einplanen.",
-              "Den Eco- oder Reichweitenmodus des Fahrzeugs aktivieren, wenn die Bedingungen es erfordern.",
+              "Die Batterie vor jedem Schnellladen vorkonditionieren.",
+              "Häufigere Ladestopps und pro Etappe eine Ersatz-Ladesäule einplanen.",
             ],
           },
         ],
         faq: [
+          { question: "Wie viel Reichweite verliert ein Elektroauto im Winter?", answer: "Etwa ein Drittel auf der Autobahn bei 0 °C laut dem ADAC-Test aus dem Winter 2026 und im Schnitt 38 Prozent bei strenger Kälte (bis -32 °C) laut dem El-Prix-Test des NAF. In einem milden Winter liegt der Verlust eher bei rund 20 Prozent." },
           { question: "Warum verliert ein Elektroauto im Winter an Reichweite?", answer: "Kälte kombiniert mehrere Effekte: weniger effiziente Batteriechemie, mehr Energieverbrauch für die Innenraumheizung, höherer Rollwiderstand der Reifen und Energieaufwand für die Vorkonditionierung der Batterie." },
-          { question: "Wie viel Reichweite kann bei starker Kälte verloren gehen?", answer: "Nach häufigen Erfahrungsberichten von Fahrern kann der Verlust etwa ein Drittel weniger Reichweite als gewohnt bedeuten." },
-          { question: "Wie lässt sich der Reichweitenverlust im Winter begrenzen?", answer: "Batterie und Innenraum vorzukonditionieren, solange das Auto noch angeschlossen ist, Sitzheizung statt Innenraumheizung zu bevorzugen und die Geschwindigkeit auf der Autobahn zu moderieren helfen, den Verlust zu begrenzen." },
-          { question: "Sollte man im Winter mehr Ladestopps einplanen?", answer: "Ja, es lohnt sich, im Winter häufigere Ladestopps einzuplanen und regelmäßig den Reifendruck zu prüfen, der bei Kälte sinkt." },
+          { question: "Verlieren alle Elektroautos im Winter gleich viel Reichweite?", answer: "Nein. Im Test des NAF vom Januar 2026 reichte der Verlust von 29 Prozent bei den beiden besten Modellen bis 46 Prozent beim schwächsten." },
+          { question: "Ist Schnellladen im Winter langsamer?", answer: "Ja, wenn die Batterie kalt ist. Mit Vorkonditionierung vor dem Stopp luden 14 der 24 vom NAF im Januar 2026 getesteten Modelle in annähernd der angegebenen Zeit von 10 auf 80 Prozent." },
+          { question: "Wie lässt sich der Reichweitenverlust im Winter begrenzen?", answer: "Batterie und Innenraum vorzukonditionieren, solange das Auto noch angeschlossen ist, Sitzheizung statt Innenraumheizung zu bevorzugen und das Tempo auf der Autobahn zu drosseln helfen, den Verlust zu begrenzen." },
         ],
         ...cta.de,
       },
       es: {
         eyebrow: "Consejos prácticos",
-        title: "Autonomía en invierno: cómo prepararse antes de que llegue el frío",
+        title: "Autonomía del coche eléctrico en invierno: ¿cuánto se pierde de verdad?",
         excerpt:
-          "El frío reduce la autonomía de un coche eléctrico: te contamos por qué, y cómo limitar la pérdida antes de que llegue el invierno.",
-        metaTitle: "Autonomía de un coche eléctrico en invierno: consejos prácticos",
+          "Alrededor de un tercio menos de autonomía en autopista a 0 °C, cerca del 40 % con frío intenso: las pruebas del invierno de 2026 dan cifras precisas y formas de limitar la pérdida.",
+        metaTitle: "Autonomía del coche eléctrico en invierno: pérdida real",
         metaDescription:
-          "Química de la batería, calefacción, neumáticos: por qué baja la autonomía en invierno y cómo limitar la pérdida. Los hábitos a adoptar antes del frío.",
+          "¿Cuánta autonomía pierde un coche eléctrico en invierno? Las cifras de las pruebas de ADAC y NAF de 2026, las causas y los hábitos que limitan la pérdida.",
         body: [
           {
             type: "p",
-            text: "El verano toca a su fin, y es un buen momento para anticiparse al invierno: la bajada de las temperaturas tiene un efecto muy real sobre la autonomía de un coche eléctrico. Mejor prepararse antes de que llegue el frío de verdad.",
+            text: "Un coche eléctrico pierde autonomía cuando hace frío, y las pruebas realizadas durante el invierno de 2026 permiten cuantificar esa pérdida. En autopista a 0 °C, cuenta con alrededor de un tercio menos de autonomía respecto al valor WLTP. Con frío intenso, la pérdida media se acerca al 40 %. En un invierno suave, se queda más bien en torno al 20 %.",
+          },
+          { type: "h2", text: "¿Cuánta autonomía pierde un coche eléctrico en invierno?" },
+          {
+            type: "p",
+            text: "La prueba El Prix del club automovilístico noruego NAF, realizada en enero de 2026 en Folldal con 24 modelos recientes y temperaturas de hasta -32 °C, midió una autonomía un 38 % inferior de media al valor WLTP. Las diferencias entre modelos son claras: del 29 % en los dos modelos mejor clasificados, entre ellos el Hyundai Inster, al 46 % en el Lucid Air. En la edición de 2025, celebrada con temperaturas mucho más suaves, la diferencia media fue del 19,4 % según el NAF.",
+          },
+          {
+            type: "p",
+            text: "El ADAC, el club automovilístico alemán, probó durante el invierno de 2026 catorce modelos familiares con al menos 500 km de autonomía WLTP en el recorrido por autopista Múnich-Berlín, reproducido en banco de pruebas a 0 °C de media. El consumo superó el valor WLTP en un 57 % de media. Según nuestro cálculo, un consumo un 57 % superior equivale a alrededor de un 36 % menos de autonomía. La velocidad cuenta tanto como el frío: la prueba se realiza en autopista, donde el consumo ya es el más alto.",
           },
           { type: "h2", text: "Por qué el frío reduce la autonomía" },
           {
             type: "p",
             text: "En invierno se suman varios efectos: la química de la batería es menos eficiente a bajas temperaturas, la calefacción del habitáculo consume una parte importante de energía porque un coche eléctrico no tiene calor residual de motor que aprovechar, la resistencia a la rodadura de los neumáticos aumenta con el frío, y el precondicionamiento de la batería también consume energía.",
           },
-          { type: "h2", text: "Una pérdida que puede ser considerable" },
+          { type: "h2", text: "¿Se carga más despacio con frío?" },
           {
             type: "p",
-            text: "La caída de autonomía suele notarse claramente, y puede llegar, con mucho frío, a alrededor de un tercio menos de autonomía de lo habitual, según lo que suelen reportar los conductores.",
+            text: "Sí, si la batería está fría al llegar al cargador: el coche limita entonces la potencia para protegerla. El precondicionamiento resuelve la mayor parte del problema. En la prueba de carga del NAF, con el precondicionamiento iniciado dos horas antes, 14 de los 24 modelos cargaron del 10 al 80 % en un tiempo cercano al anunciado, y seis mejoraron el tiempo anunciado.",
           },
-          { type: "h3", text: "Los hábitos que conviene adoptar" },
+          { type: "h2", text: "Viajes largos en invierno: qué cambia" },
+          {
+            type: "p",
+            text: "En un viaje largo, la pérdida se traduce en una parada más. En la prueba del ADAC, en un recorrido simulado de 582 km entre Múnich y Berlín, solo dos de los catorce modelos pudieron completarlo con una única parada de carga de veinte minutos. Planifica con la autonomía de invierno y no con el valor WLTP, y guarda un margen más amplio a la llegada que el resto del año.",
+          },
+          { type: "h3", text: "Los hábitos que limitan la pérdida" },
           {
             type: "ul",
             items: [
@@ -2665,16 +2727,17 @@ export const blogPosts: BlogPost[] = [
               "Priorizar los asientos y el volante calefactados en lugar de subir al máximo la calefacción del habitáculo.",
               "Moderar la velocidad en autopista, ya que la resistencia del aire pesa mucho en el consumo a alta velocidad.",
               "Revisar regularmente la presión de los neumáticos, que baja de forma natural con el frío.",
-              "Prever paradas de recarga más frecuentes en invierno.",
-              "Activar el modo eco o de autonomía del vehículo cuando las condiciones lo requieran.",
+              "Precondicionar la batería antes de cada carga rápida.",
+              "Prever paradas de recarga más frecuentes y un cargador de reserva por etapa.",
             ],
           },
         ],
         faq: [
+          { question: "¿Cuánta autonomía pierde un coche eléctrico en invierno?", answer: "Alrededor de un tercio en autopista a 0 °C según la prueba del ADAC del invierno de 2026, y un 38 % de media con frío intenso (hasta -32 °C) según la prueba El Prix del NAF. En un invierno suave, la pérdida se sitúa más bien en torno al 20 %." },
           { question: "¿Por qué pierde autonomía un coche eléctrico en invierno?", answer: "El frío combina varios efectos: una química de batería menos eficiente, más consumo por la calefacción del habitáculo, mayor resistencia a la rodadura de los neumáticos y energía usada en el precondicionamiento de la batería." },
-          { question: "¿Cuánta autonomía se puede perder con mucho frío?", answer: "Según lo que suelen reportar los conductores, la pérdida puede llegar a alrededor de un tercio menos de autonomía de lo habitual." },
+          { question: "¿Todos los coches eléctricos pierden lo mismo en invierno?", answer: "No. En la prueba del NAF de enero de 2026, la pérdida fue del 29 % en los dos modelos mejor clasificados al 46 % en el peor clasificado." },
+          { question: "¿La carga rápida es más lenta en invierno?", answer: "Sí, si la batería está fría. Con precondicionamiento antes de la parada, 14 de los 24 modelos probados por el NAF en enero de 2026 cargaron del 10 al 80 % en un tiempo cercano al anunciado." },
           { question: "¿Cómo se puede limitar la pérdida de autonomía en invierno?", answer: "Precondicionar la batería y el habitáculo mientras el coche sigue enchufado, priorizar los asientos calefactados frente a la calefacción del habitáculo, y moderar la velocidad en autopista ayudan a limitar la pérdida." },
-          { question: "¿Hay que prever más paradas de recarga en invierno?", answer: "Sí, conviene prever paradas de recarga más frecuentes en invierno y revisar regularmente la presión de los neumáticos, que baja con el frío." },
         ],
         ...cta.es,
       },
@@ -5352,7 +5415,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "electric-car-in-france-charging-guide",
     publishedAt: "2026-09-21",
-    related: ["road-trip-france-recharge-voiture-electrique", "cout-recharge-voiture-electrique", "electric-car-in-germany-charging-guide", "electric-car-in-belgium-charging-guide", "electric-car-in-switzerland-charging-guide", "electric-car-in-spain-charging-guide", "electric-car-in-uk-charging-guide"],
+    related: ["road-trip-france-recharge-voiture-electrique", "cout-recharge-voiture-electrique", "electric-car-in-germany-charging-guide", "electric-car-in-belgium-charging-guide", "electric-car-in-switzerland-charging-guide", "electric-car-in-spain-charging-guide", "electric-car-in-uk-charging-guide", "ev-charging-cards-europe"],
     image: {
       src: "/blog/electric-car-in-france-charging-guide.jpg",
       alt: {
@@ -5605,7 +5668,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "electric-car-in-germany-charging-guide",
     publishedAt: "2026-10-01",
-    related: ["electric-car-in-france-charging-guide", "electric-car-in-switzerland-charging-guide", "electric-car-in-belgium-charging-guide", "electric-car-in-spain-charging-guide", "electric-car-in-uk-charging-guide"],
+    related: ["electric-car-in-france-charging-guide", "electric-car-in-switzerland-charging-guide", "electric-car-in-belgium-charging-guide", "electric-car-in-spain-charging-guide", "electric-car-in-uk-charging-guide", "ev-charging-cards-europe"],
     image: {
       src: "/blog/electric-car-in-germany-charging-guide.jpg",
       alt: {
@@ -5642,7 +5705,7 @@ export const blogPosts: BlogPost[] = [
           { type: "h2", text: "Comment payer sans compte allemand" },
           {
             type: "p",
-            text: "L'Allemagne a été l'un des premiers pays à imposer un lecteur de carte bancaire sur les bornes neuves, dès juillet 2023. Le règlement européen AFIR va dans le même sens : depuis avril 2024, toute nouvelle borne rapide de 50 kW ou plus doit accepter la carte bancaire, et les bornes rapides existantes situées sur les grands axes européens doivent en être équipées avant le 1er janvier 2027. Sur une borne plus ancienne, prévoyez un QR code, l'application de l'opérateur ou une carte de recharge de votre pays qui fonctionne en itinérance en Allemagne.",
+            text: "Le règlement européen AFIR s'applique en Allemagne : depuis avril 2024, toute nouvelle borne rapide de 50 kW ou plus doit accepter la carte bancaire, et les bornes rapides existantes situées sur les grands axes européens doivent en être équipées avant le 1er janvier 2027. Sur une borne plus ancienne, prévoyez un QR code, l'application de l'opérateur ou une carte de recharge de votre pays qui fonctionne en itinérance en Allemagne.",
           },
           { type: "h2", text: "Ce que coûte une charge en Allemagne" },
           {
@@ -5672,7 +5735,7 @@ export const blogPosts: BlogPost[] = [
           },
         ],
         faq: [
-          { question: "Peut-on payer par carte bancaire aux bornes allemandes ?", answer: "Oui sur la plupart des bornes récentes : l'Allemagne impose un lecteur de carte sur les bornes neuves depuis juillet 2023, et les bornes rapides existantes des grands axes européens doivent en être équipées avant le 1er janvier 2027. Sur une borne plus ancienne, un QR code ou une application peut être nécessaire." },
+          { question: "Peut-on payer par carte bancaire aux bornes allemandes ?", answer: "Oui sur la plupart des bornes récentes : depuis avril 2024, toute nouvelle borne rapide de 50 kW ou plus doit accepter la carte bancaire, et les bornes rapides existantes des grands axes européens doivent en être équipées avant le 1er janvier 2027. Sur une borne plus ancienne, un QR code ou une application peut être nécessaire." },
           { question: "Combien coûte une recharge rapide en Allemagne ?", answer: "Sans abonnement, en général entre 0,69 et 0,89 € le kWh en 2026 selon l'opérateur, soit près de 12,60 € les 100 km pour une compacte à 0,79 € le kWh. Un abonnement fait nettement baisser le prix." },
           { question: "Faut-il la vignette verte avec une voiture électrique étrangère ?", answer: "Dans les villes qui ont une zone environnementale, oui par précaution. La dispense entrée en vigueur à l'automne 2026 concerne les voitures portant le E des plaques allemandes. Pour une plaque étrangère, commandez la vignette verte auprès du TÜV ou de la DEKRA avant le départ." },
           { question: "Les autoroutes allemandes sont-elles payantes pour une voiture électrique ?", answer: "Non. L'Autobahn est gratuite pour les voitures, électriques ou non. Seuls les poids lourds paient un péage." },
@@ -5700,7 +5763,7 @@ export const blogPosts: BlogPost[] = [
           { type: "h2", text: "How to pay without a German account" },
           {
             type: "p",
-            text: "Germany was one of the first countries to require bank card readers on new chargers, from July 2023. The EU's AFIR regulation goes the same way: since April 2024, every new fast charger of 50 kW or more must accept bank cards, and existing fast chargers on the main European corridors must be fitted with readers before January 1, 2027. On an older station, expect to use a QR code, the operator's app or a charging card from your home country that roams in Germany.",
+            text: "The EU's AFIR regulation applies in Germany: since April 2024, every new fast charger of 50 kW or more must accept bank cards, and existing fast chargers on the main European corridors must be fitted with readers before January 1, 2027. On an older station, expect to use a QR code, the operator's app or a charging card from your home country that roams in Germany.",
           },
           { type: "h2", text: "What a charge costs in Germany" },
           {
@@ -5730,7 +5793,7 @@ export const blogPosts: BlogPost[] = [
           },
         ],
         faq: [
-          { question: "Can I pay by bank card at German chargers?", answer: "Yes at most recent stations: Germany has required card readers on new chargers since July 2023, and existing fast chargers on the main European corridors must be fitted with them before January 1, 2027. On an older station, you may need a QR code or an app." },
+          { question: "Can I pay by bank card at German chargers?", answer: "Yes at most recent stations: since April 2024, every new fast charger of 50 kW or more must accept bank cards, and existing fast chargers on the main European corridors must be fitted with them before January 1, 2027. On an older station, you may need a QR code or an app." },
           { question: "How much does fast charging cost in Germany?", answer: "Without a subscription, generally 0.69 to 0.89 euros per kWh in 2026 depending on the operator, roughly 12.60 euros per 100km for a compact EV at 0.79 euros per kWh. A subscription brings the price down sharply." },
           { question: "Do I need the green sticker with a foreign electric car?", answer: "In cities with a low-emission zone, yes as a precaution. The exemption that took effect in autumn 2026 covers cars with the E on German plates. For a foreign plate, order the green sticker from TÜV or DEKRA before you leave." },
           { question: "Are German motorways tolled for electric cars?", answer: "No. The Autobahn is free for cars, electric or not. Only heavy trucks pay a toll." },
@@ -5758,7 +5821,7 @@ export const blogPosts: BlogPost[] = [
           { type: "h2", text: "Bezahlen ohne deutschen Vertrag" },
           {
             type: "p",
-            text: "Deutschland hat als eines der ersten Länder Kartenleser an neuen Ladesäulen vorgeschrieben, bereits ab Juli 2023. Die EU-Verordnung AFIR geht in dieselbe Richtung: Seit April 2024 muss jeder neue Schnelllader ab 50 kW Bankkarten akzeptieren, und bestehende Schnelllader an den europäischen Hauptverkehrsachsen müssen bis zum 1. Januar 2027 nachgerüstet werden. An älteren Säulen brauchen Sie einen QR-Code, die App des Betreibers oder eine Ladekarte aus Ihrem Heimatland, die in Deutschland per Roaming funktioniert.",
+            text: "Die EU-Verordnung AFIR gilt in Deutschland: Seit April 2024 muss jeder neue Schnelllader ab 50 kW Bankkarten akzeptieren, und bestehende Schnelllader an den europäischen Hauptverkehrsachsen müssen bis zum 1. Januar 2027 nachgerüstet werden. An älteren Säulen brauchen Sie einen QR-Code, die App des Betreibers oder eine Ladekarte aus Ihrem Heimatland, die in Deutschland per Roaming funktioniert.",
           },
           { type: "h2", text: "Was das Laden in Deutschland kostet" },
           {
@@ -5788,7 +5851,7 @@ export const blogPosts: BlogPost[] = [
           },
         ],
         faq: [
-          { question: "Kann man an deutschen Ladesäulen mit Bankkarte bezahlen?", answer: "An den meisten neueren Säulen ja: Deutschland schreibt Kartenleser an neuen Ladesäulen seit Juli 2023 vor, und bestehende Schnelllader an den europäischen Hauptachsen müssen bis zum 1. Januar 2027 nachgerüstet werden. An älteren Säulen kann ein QR-Code oder eine App nötig sein." },
+          { question: "Kann man an deutschen Ladesäulen mit Bankkarte bezahlen?", answer: "An den meisten neueren Säulen ja: seit April 2024 muss jeder neue Schnelllader ab 50 kW Bankkarten akzeptieren, und bestehende Schnelllader an den europäischen Hauptachsen müssen bis zum 1. Januar 2027 nachgerüstet werden. An älteren Säulen kann ein QR-Code oder eine App nötig sein." },
           { question: "Was kostet Schnellladen in Deutschland?", answer: "Ohne Abo 2026 je nach Anbieter in der Regel 0,69 bis 0,89 Euro pro kWh, bei 0,79 Euro pro kWh also etwa 12,60 Euro pro 100 km für einen Kompaktwagen. Ein Abo senkt den Preis deutlich." },
           { question: "Braucht ein ausländisches Elektroauto die grüne Plakette?", answer: "In Städten mit Umweltzone sicherheitshalber ja. Die seit Herbst 2026 geltende Befreiung betrifft Fahrzeuge mit deutschem E-Kennzeichen. Für ein ausländisches Kennzeichen bestellen Sie die Plakette vor der Reise bei TÜV oder DEKRA." },
           { question: "Kostet die Autobahn für Elektroautos Maut?", answer: "Nein. Die Autobahn ist für Pkw kostenlos, egal mit welchem Antrieb. Maut zahlen nur Lkw." },
@@ -5816,7 +5879,7 @@ export const blogPosts: BlogPost[] = [
           { type: "h2", text: "Cómo pagar sin cuenta alemana" },
           {
             type: "p",
-            text: "Alemania fue uno de los primeros países en exigir lectores de tarjeta bancaria en los cargadores nuevos, ya desde julio de 2023. El reglamento europeo AFIR va en la misma dirección: desde abril de 2024, todo cargador rápido nuevo de 50 kW o más debe aceptar tarjeta, y los cargadores rápidos existentes en los grandes ejes europeos deben equiparse antes del 1 de enero de 2027. En una estación antigua, cuenta con un código QR, la aplicación del operador o una tarjeta de recarga de tu país que funcione en itinerancia en Alemania.",
+            text: "El reglamento europeo AFIR se aplica en Alemania: desde abril de 2024, todo cargador rápido nuevo de 50 kW o más debe aceptar tarjeta, y los cargadores rápidos existentes en los grandes ejes europeos deben equiparse antes del 1 de enero de 2027. En una estación antigua, cuenta con un código QR, la aplicación del operador o una tarjeta de recarga de tu país que funcione en itinerancia en Alemania.",
           },
           { type: "h2", text: "Cuánto cuesta cargar en Alemania" },
           {
@@ -5846,7 +5909,7 @@ export const blogPosts: BlogPost[] = [
           },
         ],
         faq: [
-          { question: "¿Se puede pagar con tarjeta bancaria en los cargadores alemanes?", answer: "Sí en la mayoría de las estaciones recientes: Alemania exige lectores de tarjeta en los cargadores nuevos desde julio de 2023, y los cargadores rápidos existentes en los grandes ejes europeos deben equiparse antes del 1 de enero de 2027. En una estación antigua puede hacer falta un código QR o una aplicación." },
+          { question: "¿Se puede pagar con tarjeta bancaria en los cargadores alemanes?", answer: "Sí en la mayoría de las estaciones recientes: desde abril de 2024, todo cargador rápido nuevo de 50 kW o más debe aceptar tarjeta, y los cargadores rápidos existentes en los grandes ejes europeos deben equiparse antes del 1 de enero de 2027. En una estación antigua puede hacer falta un código QR o una aplicación." },
           { question: "¿Cuánto cuesta la carga rápida en Alemania?", answer: "Sin abono, normalmente entre 0,69 y 0,89 euros por kWh en 2026 según el operador, es decir, unos 12,60 euros por 100 km para un compacto a 0,79 euros por kWh. Un abono baja mucho el precio." },
           { question: "¿Necesita la pegatina verde un coche eléctrico extranjero?", answer: "En las ciudades con zona ambiental, sí por precaución. La exención en vigor desde el otoño de 2026 afecta a los coches con la E de las matrículas alemanas. Con matrícula extranjera, pide la pegatina a TÜV o DEKRA antes de salir." },
           { question: "¿Las autopistas alemanas son de pago para un coche eléctrico?", answer: "No. La Autobahn es gratuita para los turismos, eléctricos o no. Solo los camiones pagan peaje." },
@@ -5858,7 +5921,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "electric-car-in-spain-charging-guide",
     publishedAt: "2026-10-01",
-    related: ["electric-car-in-france-charging-guide", "electric-car-in-germany-charging-guide", "electric-car-in-uk-charging-guide", "electric-car-in-belgium-charging-guide", "electric-car-in-switzerland-charging-guide"],
+    related: ["electric-car-in-france-charging-guide", "electric-car-in-germany-charging-guide", "electric-car-in-uk-charging-guide", "electric-car-in-belgium-charging-guide", "electric-car-in-switzerland-charging-guide", "ev-charging-cards-europe"],
     image: {
       src: "/blog/electric-car-in-spain-charging-guide.jpg",
       alt: {
@@ -6111,7 +6174,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "electric-car-in-uk-charging-guide",
     publishedAt: "2026-10-01",
-    related: ["electric-car-in-france-charging-guide", "electric-car-in-belgium-charging-guide", "electric-car-in-germany-charging-guide", "electric-car-in-spain-charging-guide", "electric-car-in-switzerland-charging-guide"],
+    related: ["electric-car-in-france-charging-guide", "electric-car-in-belgium-charging-guide", "electric-car-in-germany-charging-guide", "electric-car-in-spain-charging-guide", "electric-car-in-switzerland-charging-guide", "ev-charging-cards-europe"],
     image: {
       src: "/blog/electric-car-in-uk-charging-guide.jpg",
       alt: {
@@ -6364,7 +6427,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "electric-car-in-switzerland-charging-guide",
     publishedAt: "2026-10-01",
-    related: ["electric-car-in-france-charging-guide", "electric-car-in-germany-charging-guide", "electric-car-in-belgium-charging-guide", "electric-car-in-spain-charging-guide", "electric-car-in-uk-charging-guide"],
+    related: ["electric-car-in-france-charging-guide", "electric-car-in-germany-charging-guide", "electric-car-in-belgium-charging-guide", "electric-car-in-spain-charging-guide", "electric-car-in-uk-charging-guide", "ev-charging-cards-europe"],
     image: {
       src: "/blog/electric-car-in-switzerland-charging-guide.jpg",
       alt: {
@@ -6617,7 +6680,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "electric-car-in-belgium-charging-guide",
     publishedAt: "2026-10-01",
-    related: ["electric-car-in-france-charging-guide", "electric-car-in-germany-charging-guide", "electric-car-in-uk-charging-guide", "electric-car-in-switzerland-charging-guide", "electric-car-in-spain-charging-guide"],
+    related: ["electric-car-in-france-charging-guide", "electric-car-in-germany-charging-guide", "electric-car-in-uk-charging-guide", "electric-car-in-switzerland-charging-guide", "electric-car-in-spain-charging-guide", "ev-charging-cards-europe"],
     image: {
       src: "/blog/electric-car-in-belgium-charging-guide.jpg",
       alt: {
@@ -6862,6 +6925,395 @@ export const blogPosts: BlogPost[] = [
           { question: "¿Se puede pagar con tarjeta bancaria en los cargadores belgas?", answer: "Sí en los cargadores rápidos recientes: desde abril de 2024, los nuevos puntos de 50 kW o más deben aceptar tarjeta, y los cargadores rápidos de los grandes ejes europeos deben equiparse antes del 1 de enero de 2027. En los cargadores de calle, cuenta con una aplicación o un código QR." },
           { question: "¿Cuánto cuesta la carga rápida en Bélgica?", answer: "Sin abono, normalmente entre 0,60 y 0,80 euros por kWh en 2026 según el operador, unos 11,20 euros por 100 km para un compacto a 0,70 euros por kWh." },
           { question: "¿Las autopistas belgas son de pago?", answer: "No para los turismos: las autopistas belgas son gratuitas, eléctricos o no. Solo el túnel de Liefkenshoek, en Amberes, es de pago." },
+        ],
+        ...cta.es,
+      },
+    },
+  },
+  {
+    slug: "ev-charging-cards-europe",
+    publishedAt: "2026-10-06",
+    related: ["comparatif-abonnements-recharge", "electric-car-in-france-charging-guide", "electric-car-in-germany-charging-guide", "electric-car-in-spain-charging-guide", "electric-car-in-uk-charging-guide", "electric-car-in-switzerland-charging-guide", "electric-car-in-belgium-charging-guide"],
+    image: {
+      src: "/blog/ev-charging-cards-europe.jpg",
+      alt: {
+        fr: "Écran d'une borne de recharge EnBW à Karlsruhe invitant à s'identifier avec une carte de recharge",
+        en: "Screen of an EnBW charging station in Karlsruhe asking the driver to identify with a charging card",
+        de: "Display einer EnBW-Ladesäule in Karlsruhe mit der Aufforderung, sich mit der Ladekarte zu identifizieren",
+        es: "Pantalla de un punto de recarga de EnBW en Karlsruhe que pide identificarse con una tarjeta de recarga",
+      },
+      credit: {
+        name: "Baranekstuttgart",
+        url: "https://commons.wikimedia.org/wiki/File:Enbw_ladesaeule_2012_3.JPG",
+        license: "CC BY-SA 3.0",
+      },
+    },
+    content: {
+      fr: {
+        eyebrow: "Comparatif",
+        title: "Carte de recharge pour voiture électrique : laquelle choisir pour rouler en Europe en 2026 ?",
+        excerpt:
+          "Quatre cartes de recharge multi-réseaux comparées sur les mêmes critères, avec les seuls chiffres publiés par leurs émetteurs : couverture, pays, coût fixe et frais.",
+        metaTitle: "Carte de recharge électrique : comparatif Europe 2026",
+        metaDescription:
+          "Quelle carte de recharge choisir pour une voiture électrique en Europe ? Quatre cartes multi-réseaux comparées : couverture, pays, coût fixe et frais.",
+        body: [
+          {
+            type: "p",
+            text: "Une carte de recharge multi-réseaux permet de lancer et de payer une recharge sur les bornes de nombreux opérateurs avec un seul compte. Aucune carte n'est la meilleure partout : le bon choix dépend des pays traversés. Pour un trajet dans plusieurs pays, nous conseillons d'emporter deux cartes d'émetteurs différents et une carte bancaire en secours.",
+          },
+          { type: "h2", text: "Quelle carte de recharge choisir ? La réponse courte" },
+          {
+            type: "ul",
+            items: [
+              "Vous partez quelques fois par an : choisissez une carte sans abonnement, vous ne payez que vos recharges.",
+              "Vous traversez plusieurs pays : vérifiez que chaque pays figure dans la liste de la carte, et prenez une seconde carte d'un autre émetteur.",
+              "Vous allez au Royaume-Uni : contrôlez la liste des pays. EnBW mobility+, par exemple, ne couvre pas le Royaume-Uni.",
+              "Vous rechargez souvent sur le même réseau rapide : comparez plutôt les abonnements de ce réseau.",
+            ],
+          },
+          { type: "h2", text: "Quatre cartes de recharge multi-réseaux comparées" },
+          {
+            type: "p",
+            text: "Les chiffres ci-dessous sont ceux que chaque émetteur publie sur son propre site, relevés le 6 octobre 2026. Les cartes sont classées par ordre alphabétique. Le nombre de points annoncé dit peu de chose de votre trajet : contrôlez dans l'application de la carte que les bornes de votre itinéraire sont bien compatibles.",
+          },
+          {
+            type: "table",
+            headers: ["Carte", "Couverture annoncée", "Pays", "Coût fixe et frais"],
+            rows: [
+              ["Chargemap Pass", "Plus de 2 000 réseaux", "19 pays européens", "14,90 € à l'achat en offre limitée (19,90 € hors offre), sans abonnement. Des frais de service s'appliquent, sauf avec l'abonnement Chargemap Boost"],
+              ["Electromaps", "Plus de 430 000 points de recharge publics", "Liste non publiée sur la page consultée", "Recharge par l'application ou avec le porte-clés Electropass"],
+              ["EnBW mobility+", "Plus de 900 000 points de recharge", "17 pays, sans le Royaume-Uni", "Trois tarifs (S, M, L). Chez les autres opérateurs, de 0,56 à 0,89 € le kWh selon l'opérateur"],
+              ["Octopus Electroverse", "Plus de 1,4 million de points de recharge, plus de 1 300 réseaux", "Royaume-Uni et Europe", "Carte gratuite, ni abonnement ni frais de transaction"],
+            ],
+          },
+          {
+            type: "p",
+            text: "Nous ne citons pas de prix au kWh pour chaque carte, à l'exception de la fourchette qu'EnBW publie : ces prix dépendent de la borne, et les comparatifs que nous avons consultés se contredisent. Le prix qui compte est celui que l'application affiche pour la borne où vous vous arrêtez.",
+          },
+          { type: "h2", text: "Carte de recharge ou carte bancaire : faut-il encore une carte ?" },
+          {
+            type: "p",
+            text: "Dans l'Union européenne, le règlement AFIR impose un lecteur de carte bancaire ou un paiement sans contact sur les bornes publiques de 50 kW ou plus mises en service depuis le 13 avril 2024. Les bornes de 50 kW ou plus installées avant cette date sur le réseau routier transeuropéen doivent être équipées à partir du 1er janvier 2027.",
+          },
+          {
+            type: "p",
+            text: "La carte de recharge garde son intérêt dans deux cas. Sur les bornes de moins de 50 kW, le règlement autorise un paiement par QR code à la place du lecteur de carte. Et les bornes de 50 kW ou plus installées avant le 13 avril 2024 n'y sont pas tenues avant 2027. Comparez toujours le prix affiché par l'application avec celui indiqué sur la borne.",
+          },
+          { type: "h2", text: "Quelle carte de recharge selon le pays" },
+          {
+            type: "ul",
+            items: [
+              "Allemagne : le règlement européen s'applique. EnBW mobility+ compte l'Allemagne parmi ses 17 pays.",
+              "Belgique : le règlement européen s'applique. EnBW mobility+ compte la Belgique parmi ses 17 pays.",
+              "Espagne : le règlement européen s'applique. EnBW mobility+ compte l'Espagne parmi ses 17 pays.",
+              "France : le règlement européen s'applique. EnBW mobility+ compte la France parmi ses 17 pays.",
+              "Royaume-Uni : la réglementation britannique impose le paiement sans contact sur les nouvelles bornes de 8 kW ou plus et sur les bornes rapides de 50 kW ou plus. Octopus Electroverse couvre le pays, EnBW mobility+ non.",
+              "Suisse : le règlement européen ne s'y applique pas. EnBW mobility+ compte la Suisse parmi ses 17 pays.",
+            ],
+          },
+          {
+            type: "p",
+            text: "Pour le Chargemap Pass, Electromaps et Octopus Electroverse, vérifiez la liste des pays sur le site de l'émetteur avant de partir. Nos guides par pays détaillent les prises, les prix et les règles de circulation pour chacun de ces six pays.",
+          },
+          { type: "h2", text: "Carte multi-réseaux ou abonnement d'un réseau ?" },
+          {
+            type: "p",
+            text: "Ce sont deux produits différents. Une carte multi-réseaux donne accès aux bornes de nombreux opérateurs avec un seul compte. L'abonnement d'un réseau s'applique aux bornes de ce réseau, contre un montant mensuel. Certaines cartes proposent les deux : EnBW mobility+ existe en trois tarifs, et Chargemap vend l'abonnement Boost, qui supprime les frais de service.",
+          },
+          { type: "h3", text: "Avant de partir" },
+          {
+            type: "ul",
+            items: [
+              "Commandez la carte à l'avance, le temps qu'elle arrive par courrier.",
+              "Installez l'application de la carte et enregistrez un moyen de paiement.",
+              "Vérifiez dans l'application que les bornes de votre itinéraire sont compatibles.",
+              "Gardez une carte bancaire sans contact en secours.",
+            ],
+          },
+        ],
+        faq: [
+          { question: "Quelle est la meilleure carte de recharge pour voiture électrique ?", answer: "Aucune carte n'est la meilleure partout. Octopus Electroverse annonce plus de 1,4 million de points de recharge, EnBW mobility+ plus de 900 000 dans 17 pays, Electromaps plus de 430 000, et le Chargemap Pass plus de 2 000 réseaux dans 19 pays. Le bon choix dépend des pays traversés." },
+          { question: "Faut-il encore une carte de recharge en 2026 ?", answer: "Moins qu'avant sur les bornes rapides récentes : dans l'Union européenne, les bornes de 50 kW ou plus mises en service depuis le 13 avril 2024 doivent accepter la carte bancaire. Une carte de recharge reste utile sur les bornes de moins de 50 kW et sur les bornes rapides plus anciennes." },
+          { question: "Une carte de recharge est-elle payante ?", answer: "Cela dépend de l'émetteur. Octopus Electroverse indique ne facturer ni la carte, ni abonnement, ni frais de transaction. Le Chargemap Pass coûte 14,90 € à l'achat en offre limitée (19,90 € hors offre), sans abonnement, et des frais de service s'appliquent sauf avec l'abonnement Chargemap Boost." },
+          { question: "Une même carte de recharge fonctionne-t-elle dans toute l'Europe ?", answer: "Pas forcément. EnBW mobility+ couvre 17 pays, sans le Royaume-Uni, et le Chargemap Pass 19 pays européens. Vérifiez la liste des pays et les bornes de votre itinéraire avant de partir." },
+          { question: "Quelle différence entre une carte de recharge et un abonnement de recharge ?", answer: "La carte multi-réseaux donne accès aux bornes de nombreux opérateurs avec un seul compte. L'abonnement d'un réseau s'applique aux bornes de ce réseau, contre un montant mensuel." },
+        ],
+        ...cta.fr,
+      },
+      en: {
+        eyebrow: "Comparison",
+        title: "EV Charging Cards in Europe: Which One to Choose in 2026?",
+        excerpt:
+          "Four multi-network charging cards compared on the same criteria, using only the figures their issuers publish: coverage, countries, fixed cost and fees.",
+        metaTitle: "Best EV Charging Card for Europe: 2026 Comparison",
+        metaDescription:
+          "Which EV charging card should you choose for Europe? Four multi-network cards compared: coverage, countries, fixed cost and fees.",
+        body: [
+          {
+            type: "p",
+            text: "A multi-network charging card lets you start and pay for a charge on many operators' chargers with a single account. No card is the best everywhere: the right choice depends on the countries you cross. For a trip through several countries, we advise taking two cards from different issuers and a bank card as a backup.",
+          },
+          { type: "h2", text: "Which charging card should you choose? The short answer" },
+          {
+            type: "ul",
+            items: [
+              "You travel a few times a year: choose a card with no subscription, so you only pay for your charges.",
+              "You cross several countries: check that each country is on the card's list, and take a second card from another issuer.",
+              "You are going to the United Kingdom: check the country list. EnBW mobility+, for example, does not cover the United Kingdom.",
+              "You often charge on the same rapid network: compare that network's subscriptions instead.",
+            ],
+          },
+          { type: "h2", text: "Four multi-network charging cards compared" },
+          {
+            type: "p",
+            text: "The figures below are the ones each issuer publishes on its own website, checked on 6 October 2026. The cards are listed in alphabetical order. The stated number of charge points says little about your own trip: check in the card's app that the chargers on your route are compatible.",
+          },
+          {
+            type: "table",
+            headers: ["Card", "Stated coverage", "Countries", "Fixed cost and fees"],
+            rows: [
+              ["Chargemap Pass", "More than 2,000 networks", "19 European countries", "14.90 euros to buy as a limited offer (19.90 euros otherwise), no subscription. Service fees apply, except with the Chargemap Boost subscription"],
+              ["Electromaps", "More than 430,000 public charge points", "List not published on the page we checked", "Charging through the app or with the Electropass key fob"],
+              ["EnBW mobility+", "More than 900,000 charge points", "17 countries, not the United Kingdom", "Three tariffs (S, M, L). At other operators, 0.56 to 0.89 euros per kWh depending on the operator"],
+              ["Octopus Electroverse", "More than 1.4 million charge points, more than 1,300 networks", "United Kingdom and Europe", "Free card, no subscription or transaction fees"],
+            ],
+          },
+          {
+            type: "p",
+            text: "We do not quote per-kWh prices for each card, apart from the range EnBW publishes: those prices depend on the charger, and the comparisons we consulted contradict each other. The price that matters is the one the app shows for the charger where you stop.",
+          },
+          { type: "h2", text: "Charging card or bank card: do you still need a charging card?" },
+          {
+            type: "p",
+            text: "In the European Union, the AFIR regulation requires a bank card reader or contactless payment on public chargers of 50kW or more deployed since 13 April 2024. Chargers of 50kW or more installed before that date on the trans-European road network must be equipped from 1 January 2027.",
+          },
+          {
+            type: "p",
+            text: "A charging card is still worth having in two cases. On chargers below 50kW, the regulation allows payment by QR code instead of a card reader. And chargers of 50kW or more installed before 13 April 2024 are under no such obligation before 2027. Always compare the price shown in the app with the one displayed on the charger.",
+          },
+          { type: "h2", text: "Which charging card for each country" },
+          {
+            type: "ul",
+            items: [
+              "Belgium: the European regulation applies. EnBW mobility+ lists Belgium among its 17 countries.",
+              "France: the European regulation applies. EnBW mobility+ lists France among its 17 countries.",
+              "Germany: the European regulation applies. EnBW mobility+ lists Germany among its 17 countries.",
+              "Spain: the European regulation applies. EnBW mobility+ lists Spain among its 17 countries.",
+              "Switzerland: the European regulation does not apply there. EnBW mobility+ lists Switzerland among its 17 countries.",
+              "United Kingdom: UK regulations require contactless payment on new chargers of 8kW or more and on rapid chargers of 50kW or more. Octopus Electroverse covers the country, EnBW mobility+ does not.",
+            ],
+          },
+          {
+            type: "p",
+            text: "For the Chargemap Pass, Electromaps and Octopus Electroverse, check the country list on the issuer's website before you leave. Our country guides cover plugs, prices and driving rules for each of these six countries.",
+          },
+          { type: "h2", text: "Multi-network card or a single network's subscription?" },
+          {
+            type: "p",
+            text: "They are two different products. A multi-network card gives access to many operators' chargers with a single account. A network's subscription applies to that network's chargers, for a monthly amount. Some cards offer both: EnBW mobility+ comes in three tariffs, and Chargemap sells the Boost subscription, which removes the service fees.",
+          },
+          { type: "h3", text: "Before you leave" },
+          {
+            type: "ul",
+            items: [
+              "Order the card in advance, to allow for postal delivery.",
+              "Install the card's app and save a payment method.",
+              "Check in the app that the chargers on your route are compatible.",
+              "Keep a contactless bank card as a backup.",
+            ],
+          },
+        ],
+        faq: [
+          { question: "What is the best EV charging card for Europe?", answer: "No card is the best everywhere. Octopus Electroverse states more than 1.4 million charge points, EnBW mobility+ more than 900,000 in 17 countries, Electromaps more than 430,000, and the Chargemap Pass more than 2,000 networks in 19 countries. The right choice depends on the countries you cross." },
+          { question: "Do you still need a charging card in 2026?", answer: "Less than before on recent rapid chargers: in the European Union, chargers of 50kW or more deployed since 13 April 2024 must accept bank cards. A charging card is still useful on chargers below 50kW and on older rapid chargers." },
+          { question: "Do EV charging cards cost money?", answer: "It depends on the issuer. Octopus Electroverse says it charges nothing for the card, no subscription and no transaction fees. The Chargemap Pass costs 14.90 euros to buy as a limited offer (19.90 euros otherwise), with no subscription, and service fees apply except with the Chargemap Boost subscription." },
+          { question: "Does one charging card work across all of Europe?", answer: "Not necessarily. EnBW mobility+ covers 17 countries, not the United Kingdom, and the Chargemap Pass 19 European countries. Check the country list and the chargers on your route before you leave." },
+          { question: "What is the difference between a charging card and a charging subscription?", answer: "A multi-network card gives access to many operators' chargers with a single account. A network's subscription applies to that network's chargers, for a monthly amount." },
+        ],
+        ...cta.en,
+      },
+      de: {
+        eyebrow: "Vergleich",
+        title: "Ladekarte fürs Elektroauto: Welche lohnt sich 2026 für Fahrten durch Europa?",
+        excerpt:
+          "Vier netzübergreifende Ladekarten nach denselben Kriterien verglichen, ausschließlich mit den Zahlen der Anbieter: Abdeckung, Länder, Fixkosten und Gebühren.",
+        metaTitle: "Ladekarte für Europa: Vergleich 2026",
+        metaDescription:
+          "Welche Ladekarte passt für Fahrten mit dem E-Auto durch Europa? Vier netzübergreifende Karten im Vergleich: Abdeckung, Länder, Fixkosten und Gebühren.",
+        body: [
+          {
+            type: "p",
+            text: "Mit einer netzübergreifenden Ladekarte starten und bezahlen Sie Ladevorgänge an den Ladesäulen vieler Betreiber über ein einziges Konto. Keine Karte ist überall die beste: Die richtige Wahl hängt von den bereisten Ländern ab. Für eine Fahrt durch mehrere Länder empfehlen wir zwei Karten verschiedener Anbieter und eine Bankkarte als Reserve.",
+          },
+          { type: "h2", text: "Welche Ladekarte ist die richtige? Die kurze Antwort" },
+          {
+            type: "ul",
+            items: [
+              "Sie verreisen ein paar Mal im Jahr: Wählen Sie eine Karte ohne Abo, dann zahlen Sie nur Ihre Ladevorgänge.",
+              "Sie durchqueren mehrere Länder: Prüfen Sie, ob jedes Land in der Liste der Karte steht, und nehmen Sie eine zweite Karte eines anderen Anbieters mit.",
+              "Sie fahren nach Großbritannien: Prüfen Sie die Länderliste. EnBW mobility+ zum Beispiel deckt Großbritannien nicht ab.",
+              "Sie laden oft im selben Schnellladenetz: Vergleichen Sie lieber die Abos dieses Netzes.",
+            ],
+          },
+          { type: "h2", text: "Vier netzübergreifende Ladekarten im Vergleich" },
+          {
+            type: "p",
+            text: "Die folgenden Zahlen stammen von den Websites der jeweiligen Anbieter, Stand 6. Oktober 2026. Die Karten sind alphabetisch sortiert. Die angegebene Zahl der Ladepunkte sagt wenig über Ihre eigene Strecke aus: Prüfen Sie in der App der Karte, ob die Ladesäulen auf Ihrer Route kompatibel sind.",
+          },
+          {
+            type: "table",
+            headers: ["Karte", "Angegebene Abdeckung", "Länder", "Fixkosten und Gebühren"],
+            rows: [
+              ["Chargemap Pass", "Mehr als 2.000 Netze", "19 europäische Länder", "14,90 Euro beim Kauf als befristetes Angebot (sonst 19,90 Euro), kein Abo. Es fallen Servicegebühren an, außer mit dem Abo Chargemap Boost"],
+              ["Electromaps", "Mehr als 430.000 öffentliche Ladepunkte", "Liste auf der geprüften Seite nicht veröffentlicht", "Laden per App oder mit dem Electropass-Schlüsselanhänger"],
+              ["EnBW mobility+", "Mehr als 900.000 Ladepunkte", "17 Länder, ohne Großbritannien", "Drei Tarife (S, M, L). Bei anderen Betreibern je nach Betreiber 0,56 bis 0,89 Euro pro kWh"],
+              ["Octopus Electroverse", "Mehr als 1,4 Millionen Ladepunkte, mehr als 1.300 Netze", "Großbritannien und Europa", "Kostenlose Karte, weder Abo noch Transaktionsgebühren"],
+            ],
+          },
+          {
+            type: "p",
+            text: "kWh-Preise je Karte nennen wir nicht, abgesehen von der Spanne, die EnBW veröffentlicht: Diese Preise hängen von der Ladesäule ab, und die Vergleiche, die wir geprüft haben, widersprechen sich. Entscheidend ist der Preis, den die App für die Ladesäule anzeigt, an der Sie halten.",
+          },
+          { type: "h2", text: "Ladekarte oder Bankkarte: Braucht man noch eine Ladekarte?" },
+          {
+            type: "p",
+            text: "In der Europäischen Union schreibt die AFIR-Verordnung an öffentlichen Ladepunkten ab 50 kW, die seit dem 13. April 2024 in Betrieb gegangen sind, ein Kartenlesegerät oder kontaktloses Bezahlen vor. Ladepunkte ab 50 kW, die vor diesem Datum am transeuropäischen Straßennetz errichtet wurden, müssen ab dem 1. Januar 2027 nachgerüstet sein.",
+          },
+          {
+            type: "p",
+            text: "Eine Ladekarte lohnt sich weiterhin in zwei Fällen. An Ladepunkten unter 50 kW erlaubt die Verordnung das Bezahlen per QR-Code anstelle eines Kartenlesegeräts. Und Ladepunkte ab 50 kW, die vor dem 13. April 2024 errichtet wurden, unterliegen dieser Pflicht nicht vor 2027. Vergleichen Sie immer den Preis in der App mit dem an der Ladesäule angezeigten.",
+          },
+          { type: "h2", text: "Welche Ladekarte für welches Land" },
+          {
+            type: "ul",
+            items: [
+              "Belgien: Die EU-Verordnung gilt. EnBW mobility+ führt Belgien unter seinen 17 Ländern.",
+              "Deutschland: Die EU-Verordnung gilt. EnBW mobility+ führt Deutschland unter seinen 17 Ländern.",
+              "Frankreich: Die EU-Verordnung gilt. EnBW mobility+ führt Frankreich unter seinen 17 Ländern.",
+              "Großbritannien: Die britischen Vorschriften verlangen kontaktloses Bezahlen an neuen Ladepunkten ab 8 kW und an Schnellladern ab 50 kW. Octopus Electroverse deckt das Land ab, EnBW mobility+ nicht.",
+              "Schweiz: Die EU-Verordnung gilt dort nicht. EnBW mobility+ führt die Schweiz unter seinen 17 Ländern.",
+              "Spanien: Die EU-Verordnung gilt. EnBW mobility+ führt Spanien unter seinen 17 Ländern.",
+            ],
+          },
+          {
+            type: "p",
+            text: "Für Chargemap Pass, Electromaps und Octopus Electroverse prüfen Sie die Länderliste vor der Abfahrt auf der Website des Anbieters. Unsere Länderleitfäden erklären Stecker, Preise und Verkehrsregeln für jedes dieser sechs Länder.",
+          },
+          { type: "h2", text: "Netzübergreifende Karte oder Abo eines Netzes?" },
+          {
+            type: "p",
+            text: "Das sind zwei verschiedene Produkte. Eine netzübergreifende Karte öffnet die Ladesäulen vieler Betreiber mit einem einzigen Konto. Das Abo eines Netzes gilt für die Ladesäulen dieses Netzes, gegen einen monatlichen Betrag. Manche Karten bieten beides: EnBW mobility+ gibt es in drei Tarifen, und Chargemap verkauft das Abo Boost, mit dem die Servicegebühren entfallen.",
+          },
+          { type: "h3", text: "Vor der Abfahrt" },
+          {
+            type: "ul",
+            items: [
+              "Bestellen Sie die Karte rechtzeitig, damit sie per Post ankommt.",
+              "Installieren Sie die App der Karte und hinterlegen Sie ein Zahlungsmittel.",
+              "Prüfen Sie in der App, ob die Ladesäulen auf Ihrer Route kompatibel sind.",
+              "Halten Sie eine kontaktlose Bankkarte als Reserve bereit.",
+            ],
+          },
+        ],
+        faq: [
+          { question: "Welche Ladekarte ist die beste für Europa?", answer: "Keine Karte ist überall die beste. Octopus Electroverse gibt mehr als 1,4 Millionen Ladepunkte an, EnBW mobility+ mehr als 900.000 in 17 Ländern, Electromaps mehr als 430.000 und der Chargemap Pass mehr als 2.000 Netze in 19 Ländern. Die richtige Wahl hängt von den bereisten Ländern ab." },
+          { question: "Braucht man 2026 noch eine Ladekarte?", answer: "An neueren Schnellladern weniger als früher: In der Europäischen Union müssen Ladepunkte ab 50 kW, die seit dem 13. April 2024 in Betrieb gegangen sind, Bankkarten akzeptieren. Eine Ladekarte bleibt an Ladepunkten unter 50 kW und an älteren Schnellladern nützlich." },
+          { question: "Kostet eine Ladekarte Geld?", answer: "Das hängt vom Anbieter ab. Octopus Electroverse gibt an, weder für die Karte noch ein Abo noch Transaktionsgebühren zu berechnen. Der Chargemap Pass kostet 14,90 Euro beim Kauf als befristetes Angebot (sonst 19,90 Euro), ohne Abo, und es fallen Servicegebühren an, außer mit dem Abo Chargemap Boost." },
+          { question: "Funktioniert eine Ladekarte in ganz Europa?", answer: "Nicht unbedingt. EnBW mobility+ deckt 17 Länder ab, ohne Großbritannien, und der Chargemap Pass 19 europäische Länder. Prüfen Sie vor der Abfahrt die Länderliste und die Ladesäulen auf Ihrer Route." },
+          { question: "Was ist der Unterschied zwischen einer Ladekarte und einem Lade-Abo?", answer: "Die netzübergreifende Karte öffnet die Ladesäulen vieler Betreiber mit einem einzigen Konto. Das Abo eines Netzes gilt für die Ladesäulen dieses Netzes, gegen einen monatlichen Betrag." },
+        ],
+        ...cta.de,
+      },
+      es: {
+        eyebrow: "Comparativa",
+        title: "Tarjeta de recarga para coche eléctrico: cuál elegir para viajar por Europa en 2026",
+        excerpt:
+          "Cuatro tarjetas de recarga multirred comparadas con los mismos criterios y solo con las cifras que publican sus emisores: cobertura, países, coste fijo y comisiones.",
+        metaTitle: "Tarjeta de recarga eléctrica: comparativa Europa 2026",
+        metaDescription:
+          "¿Qué tarjeta de recarga elegir para un coche eléctrico en Europa? Cuatro tarjetas multirred comparadas: cobertura, países, coste fijo y comisiones.",
+        body: [
+          {
+            type: "p",
+            text: "Una tarjeta de recarga multirred permite iniciar y pagar una recarga en los cargadores de muchos operadores con una sola cuenta. Ninguna tarjeta es la mejor en todas partes: la elección depende de los países que cruces. Para un viaje por varios países, aconsejamos llevar dos tarjetas de emisores distintos y una tarjeta bancaria de reserva.",
+          },
+          { type: "h2", text: "¿Qué tarjeta de recarga elegir? La respuesta corta" },
+          {
+            type: "ul",
+            items: [
+              "Viajas unas pocas veces al año: elige una tarjeta sin abono, así solo pagas tus recargas.",
+              "Cruzas varios países: comprueba que cada país figura en la lista de la tarjeta y lleva una segunda tarjeta de otro emisor.",
+              "Vas al Reino Unido: revisa la lista de países. EnBW mobility+, por ejemplo, no cubre el Reino Unido.",
+              "Cargas a menudo en la misma red rápida: compara mejor los abonos de esa red.",
+            ],
+          },
+          { type: "h2", text: "Cuatro tarjetas de recarga multirred comparadas" },
+          {
+            type: "p",
+            text: "Las cifras siguientes son las que cada emisor publica en su propia web, consultadas el 6 de octubre de 2026. Las tarjetas aparecen por orden alfabético. El número de puntos declarado dice poco de tu viaje: comprueba en la aplicación de la tarjeta que los cargadores de tu ruta son compatibles.",
+          },
+          {
+            type: "table",
+            headers: ["Tarjeta", "Cobertura declarada", "Países", "Coste fijo y comisiones"],
+            rows: [
+              ["Chargemap Pass", "Más de 2.000 redes", "19 países europeos", "14,90 euros de compra en oferta limitada (19,90 euros sin oferta), sin abono. Se aplican comisiones de servicio, salvo con el abono Chargemap Boost"],
+              ["Electromaps", "Más de 430.000 puntos de recarga públicos", "Lista no publicada en la página consultada", "Recarga con la aplicación o con el llavero Electropass"],
+              ["EnBW mobility+", "Más de 900.000 puntos de recarga", "17 países, sin el Reino Unido", "Tres tarifas (S, M, L). En otros operadores, de 0,56 a 0,89 euros por kWh según el operador"],
+              ["Octopus Electroverse", "Más de 1,4 millones de puntos de recarga, más de 1.300 redes", "Reino Unido y Europa", "Tarjeta gratuita, sin abono ni comisiones por transacción"],
+            ],
+          },
+          {
+            type: "p",
+            text: "No citamos precios por kWh de cada tarjeta, salvo la horquilla que publica EnBW: esos precios dependen del cargador, y las comparativas que hemos consultado se contradicen. El precio que cuenta es el que muestra la aplicación para el cargador en el que paras.",
+          },
+          { type: "h2", text: "Tarjeta de recarga o tarjeta bancaria: ¿sigue haciendo falta una tarjeta?" },
+          {
+            type: "p",
+            text: "En la Unión Europea, el reglamento AFIR exige un lector de tarjeta bancaria o pago sin contacto en los puntos públicos de 50 kW o más puestos en servicio desde el 13 de abril de 2024. Los puntos de 50 kW o más instalados antes de esa fecha en la red transeuropea de carreteras deben estar equipados a partir del 1 de enero de 2027.",
+          },
+          {
+            type: "p",
+            text: "La tarjeta de recarga sigue teniendo interés en dos casos. En los puntos de menos de 50 kW, el reglamento permite el pago con código QR en lugar del lector de tarjeta. Y los puntos de 50 kW o más instalados antes del 13 de abril de 2024 no tienen esa obligación antes de 2027. Compara siempre el precio que muestra la aplicación con el indicado en el cargador.",
+          },
+          { type: "h2", text: "Qué tarjeta de recarga según el país" },
+          {
+            type: "ul",
+            items: [
+              "Alemania: se aplica el reglamento europeo. EnBW mobility+ incluye Alemania entre sus 17 países.",
+              "Bélgica: se aplica el reglamento europeo. EnBW mobility+ incluye Bélgica entre sus 17 países.",
+              "España: se aplica el reglamento europeo. EnBW mobility+ incluye España entre sus 17 países.",
+              "Francia: se aplica el reglamento europeo. EnBW mobility+ incluye Francia entre sus 17 países.",
+              "Reino Unido: la normativa británica exige el pago sin contacto en los puntos nuevos de 8 kW o más y en los cargadores rápidos de 50 kW o más. Octopus Electroverse cubre el país, EnBW mobility+ no.",
+              "Suiza: el reglamento europeo no se aplica allí. EnBW mobility+ incluye Suiza entre sus 17 países.",
+            ],
+          },
+          {
+            type: "p",
+            text: "Para Chargemap Pass, Electromaps y Octopus Electroverse, revisa la lista de países en la web del emisor antes de salir. Nuestras guías por país explican los enchufes, los precios y las normas de circulación de cada uno de estos seis países.",
+          },
+          { type: "h2", text: "¿Tarjeta multirred o abono de una red?" },
+          {
+            type: "p",
+            text: "Son dos productos distintos. Una tarjeta multirred da acceso a los cargadores de muchos operadores con una sola cuenta. El abono de una red se aplica a los cargadores de esa red, a cambio de una cuota mensual. Algunas tarjetas ofrecen las dos cosas: EnBW mobility+ existe en tres tarifas, y Chargemap vende el abono Boost, que elimina las comisiones de servicio.",
+          },
+          { type: "h3", text: "Antes de salir" },
+          {
+            type: "ul",
+            items: [
+              "Pide la tarjeta con antelación, para que llegue por correo a tiempo.",
+              "Instala la aplicación de la tarjeta y guarda un medio de pago.",
+              "Comprueba en la aplicación que los cargadores de tu ruta son compatibles.",
+              "Lleva una tarjeta bancaria sin contacto de reserva.",
+            ],
+          },
+        ],
+        faq: [
+          { question: "¿Cuál es la mejor tarjeta de recarga para coche eléctrico?", answer: "Ninguna tarjeta es la mejor en todas partes. Octopus Electroverse declara más de 1,4 millones de puntos de recarga, EnBW mobility+ más de 900.000 en 17 países, Electromaps más de 430.000 y el Chargemap Pass más de 2.000 redes en 19 países. La elección depende de los países que cruces." },
+          { question: "¿Sigue haciendo falta una tarjeta de recarga en 2026?", answer: "Menos que antes en los cargadores rápidos recientes: en la Unión Europea, los puntos de 50 kW o más puestos en servicio desde el 13 de abril de 2024 deben aceptar tarjeta bancaria. Una tarjeta de recarga sigue siendo útil en los puntos de menos de 50 kW y en los cargadores rápidos más antiguos." },
+          { question: "¿Cuesta dinero una tarjeta de recarga?", answer: "Depende del emisor. Octopus Electroverse indica que no cobra ni la tarjeta, ni abono, ni comisiones por transacción. El Chargemap Pass cuesta 14,90 euros de compra en oferta limitada (19,90 euros sin oferta), sin abono, y se aplican comisiones de servicio salvo con el abono Chargemap Boost." },
+          { question: "¿Funciona una misma tarjeta de recarga en toda Europa?", answer: "No necesariamente. EnBW mobility+ cubre 17 países, sin el Reino Unido, y el Chargemap Pass 19 países europeos. Revisa la lista de países y los cargadores de tu ruta antes de salir." },
+          { question: "¿Qué diferencia hay entre una tarjeta de recarga y un abono de recarga?", answer: "La tarjeta multirred da acceso a los cargadores de muchos operadores con una sola cuenta. El abono de una red se aplica a los cargadores de esa red, a cambio de una cuota mensual." },
         ],
         ...cta.es,
       },

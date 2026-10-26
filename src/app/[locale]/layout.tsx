@@ -47,11 +47,13 @@ export async function generateMetadata({
       locale: ogLocales[locale] ?? "en_US",
       siteName: site.shortName,
       url: `${site.url}/${locale}`,
-      title,
+      title: t("homeTagline"),
       description: t("description"),
     },
     twitter: {
       card: "summary_large_image",
+      title: t("homeTagline"),
+      description: t("description"),
     },
     robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
   };

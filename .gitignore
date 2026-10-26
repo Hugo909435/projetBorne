@@ -46,3 +46,7 @@ next-env.d.ts
 
 # python (data generator scripts)
 __pycache__/
+
+# SEO local audit dumps
+seo-audit-*/
+seo-plan-*/
